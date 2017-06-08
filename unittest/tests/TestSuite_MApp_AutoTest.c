@@ -1,0 +1,5200 @@
+#include "cpptest.h"
+
+CPPTEST_CONTEXT("/UTProject/app/MApp_AutoTest.c");
+CPPTEST_TEST_SUITE_INCLUDED_TO("/UTProject/app/MApp_AutoTest.c");
+
+CPPTEST_TEST_SUITE(TestSuite_MApp_AutoTest);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_RetACK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_Init);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_0);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_9);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_5);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_SetATVManualTuneFreq);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_TV_INIT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_DEFAULT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_COMMA);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_ENTER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_IllegalChar);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_Continuous_COMMA);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_CorrectCmd);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_TooManyParameters);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckCommandHeader_TRUE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckCommandHeader_FALSE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_TRUE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_FALSE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_TRUE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_FALSE);
+#if(AT_IR_SIM)
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_EXIT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_LEFT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_RIGHT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_DEFAULT);
+#endif
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_CmdParseFail);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_KEY_SHORT_PRESS_CMD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_KEY_LONG_PRESS_CMD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DIRECT_CMD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DIRECT_CMD_ResultOnGoing);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_AUDIO_CMD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_AUDIO_CMD_ResultOnGoing);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DEFAULT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_GetAudioStatusFail);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_DEFAULT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_CmdTooLong);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_BACKSPACE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_else);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_startAT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_stopAT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_else);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_else);
+#if(AT_IR_SIM)
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_IRKeySimulation);
+#endif
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_CheckCommandHeader);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DEFAULT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_ER);
+//CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SIGNAL_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ONGOING);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ONGOING);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ONGOING);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ONGOING);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER1);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER2);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER3);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER1);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER2);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER3);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_OK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SIGNAL);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SHOW_PROGRAM);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_COMMON_VIDEO);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING1);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING2);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_CI_MODULE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_SCRAMBLED_PROGRAM);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_CH_BLOCK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_PARENTAL_BLOCK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_AUDIO_ONLY);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_MHEG5_ONLY);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_INVALID_SERVICE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_ATV);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource1);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource2);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_DEFAULT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_LIST);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_RETURN);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_PLUS);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_MINUS);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_AUDIO);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_PLUS);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_MINUS);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UP);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_DOWN);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_LEFT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RIGHT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_POWER);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EXIT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MENU);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SELECT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_0);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_1);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_2);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_3);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_4);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_5);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_6);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_7);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_8);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_9);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MUTE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_UP);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_DOWN);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INFO);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RED);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GREEN);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_YELLOW);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BLUE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INPUT_SOURCE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EPG);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MTS);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_TTX);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SLEEP);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_ZOOM);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INDEX);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PLAY);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAUSE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_STOP);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NEXT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PREVIOUS);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FORWARD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BACKWARD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CC);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RECORD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBTITLE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBCODE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PHOTO);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FREEZE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PIP);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MIX);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GUIDE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_HOLD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UPDATE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_REVEAL);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SIZE);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CLOCK);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_DEFAULT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_RESET_FACTORY);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_REBOOT);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_CLEAR_PROGRAM);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_OADCmdHandler_case_DEFAULT);
+//CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_OADCmdHandler_case_EN_AUTO_TEST_OAD_SOFTWARE_UPDATE_USB);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD_ResultOnGoing);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_KEY_SHORT_PRESS_CMD_ResultOnGoing);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD_ResultOnGoing);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_IndexValue);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_IndexValue);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_Get_SymbolSetting);
+CPPTEST_TEST(TestSuite_MApp_AutoTest_test_MApp_AT_Get_QamSetting);
+CPPTEST_TEST_SUITE_END();
+
+
+
+void TestSuite_MApp_AutoTest_test__MApp_AT_RetACK();
+void TestSuite_MApp_AutoTest_test_MApp_AT_Init();
+void TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_0();
+void TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_9();
+void TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_5();
+void TestSuite_MApp_AutoTest_test_MApp_AT_SetATVManualTuneFreq();
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_ER();
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_OK();
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_TV_INIT();
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_DEFAULT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_COMMA();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_ENTER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_IllegalChar();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_Continuous_COMMA();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_CorrectCmd();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_TooManyParameters();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckCommandHeader_TRUE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckCommandHeader_FALSE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_TRUE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_FALSE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_TRUE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_FALSE();
+#if(AT_IR_SIM)
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_EXIT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_LEFT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_RIGHT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_DEFAULT();
+#endif
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_CmdParseFail();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_KEY_SHORT_PRESS_CMD();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_KEY_LONG_PRESS_CMD();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DIRECT_CMD();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DIRECT_CMD_ResultOnGoing();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_AUDIO_CMD();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_AUDIO_CMD_ResultOnGoing();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DEFAULT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_GetAudioStatusFail();
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_DEFAULT();
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_CmdTooLong();
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_BACKSPACE();
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_else();
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_startAT();
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_stopAT();
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_else();
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_else();
+#if(AT_IR_SIM)
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_IRKeySimulation();
+#endif
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_CheckCommandHeader();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DEFAULT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_ER();
+//void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SIGNAL_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ONGOING();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ONGOING();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ONGOING();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ONGOING();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER1();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER2();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER3();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER1();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER2();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER3();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_OK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SIGNAL();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SHOW_PROGRAM();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_COMMON_VIDEO();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING1();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING2();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_CI_MODULE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_SCRAMBLED_PROGRAM();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_CH_BLOCK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_PARENTAL_BLOCK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_AUDIO_ONLY();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_MHEG5_ONLY();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_INVALID_SERVICE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_ATV();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource1();
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource2();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_DEFAULT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_LIST();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_RETURN();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_PLUS();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_MINUS();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_AUDIO();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_PLUS();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_MINUS();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UP();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_DOWN();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_LEFT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RIGHT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_POWER();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EXIT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MENU();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SELECT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_0();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_1();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_2();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_3();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_4();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_5();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_6();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_7();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_8();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_9();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MUTE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_UP();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_DOWN();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INFO();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RED();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GREEN();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_YELLOW();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BLUE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INPUT_SOURCE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EPG();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MTS();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_TTX();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SLEEP();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_ZOOM();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INDEX();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PLAY();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAUSE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_STOP();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NEXT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PREVIOUS();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FORWARD();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BACKWARD();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CC();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RECORD();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBTITLE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBCODE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PHOTO();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FREEZE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PIP();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MIX();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GUIDE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_HOLD();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UPDATE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_REVEAL();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SIZE();
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CLOCK();
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_DEFAULT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_RESET_FACTORY();
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_REBOOT();
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_CLEAR_PROGRAM();
+void TestSuite_MApp_AutoTest_test__MApp_AT_OADCmdHandler_case_DEFAULT();
+//void TestSuite_MApp_AutoTest_test__MApp_AT_OADCmdHandler_case_EN_AUTO_TEST_OAD_SOFTWARE_UPDATE_USB();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD_ResultOnGoing();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_KEY_SHORT_PRESS_CMD_ResultOnGoing();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD();
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD_ResultOnGoing();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_IndexValue();
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_IndexValue();
+void TestSuite_MApp_AutoTest_test_MApp_AT_Get_SymbolSetting();
+void TestSuite_MApp_AutoTest_test_MApp_AT_Get_QamSetting();
+CPPTEST_TEST_SUITE_REGISTRATION(TestSuite_MApp_AutoTest);
+
+void TestSuite_MApp_AutoTest_setUp()
+{
+}
+
+void TestSuite_MApp_AutoTest_tearDown()
+{
+}
+
+#include "MApp_GlobalSettingSt.h"
+
+#include "MApp_ZUI_APIcommon.h"
+#include "MApp_ZUI_APIwindow.h"
+
+#include "MApp_ZUI_ACTmainpage.h"
+#include "MApp_UiMenuDef.h"
+
+
+extern EN_OSD_TUNE_TYPE_SETTING eTuneType;
+extern COMMON_DLG_MODE _eCommonDlgMode;
+
+
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_RetACK */
+/* CPPTEST_TEST_CASE_CONTEXT void _MApp_AT_RetACK(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_RetACK()
+{
+    /* Pre-condition initialization */
+    {
+        /* Tested function call */
+        _MApp_AT_RetACK();
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_RetACK */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_Init */
+/* CPPTEST_TEST_CASE_CONTEXT void MApp_AT_Init(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_Init()
+{
+    /* Pre-condition initialization */
+
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+
+
+    {
+        /* Tested function call */
+        MApp_AT_Init();
+        /* Post-condition check */
+
+	  #if(AT_IR_SIM)
+        CPPTEST_ASSERT_EQUAL( EN_AT_IR_SIM_NULL, ( s_AT_enIRKeySimulation ) );
+	  #endif
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_Init */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_0 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_OSD_WNDEXEACTION_ENUM MApp_AT_GetDTVManualTuneCH(int) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_0()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (u8Num) */
+    int _u8Num  = 0;
+    {
+        /* Tested function call */
+        //EN_OSD_WNDEXEACTION_ENUM _return  = MApp_AT_GetDTVManualTuneCH(_u8Num);
+        /* Post-condition check */
+        //CPPTEST_ASSERT_EQUAL( EN_EXE_MANUAL_SCAN_NUMBERKEY_0, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_0 */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_9 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_OSD_WNDEXEACTION_ENUM MApp_AT_GetDTVManualTuneCH(int) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_9()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (u8Num) */
+    int _u8Num  = 9;
+    {
+        /* Tested function call */
+        //EN_OSD_WNDEXEACTION_ENUM _return  = MApp_AT_GetDTVManualTuneCH(_u8Num);
+        /* Post-condition check */
+        //CPPTEST_ASSERT_EQUAL( EN_EXE_MANUAL_SCAN_NUMBERKEY_9, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_9 */
+
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_5 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_OSD_WNDEXEACTION_ENUM MApp_AT_GetDTVManualTuneCH(int) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_5()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (u8Num) */
+    int _u8Num  = 5;
+    {
+        /* Tested function call */
+        //EN_OSD_WNDEXEACTION_ENUM _return  = MApp_AT_GetDTVManualTuneCH(_u8Num);
+        /* Post-condition check */
+        //CPPTEST_ASSERT_EQUAL( EN_EXE_MANUAL_SCAN_NUMBERKEY_5, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_GetDTVManualTuneCH_NUMBERKEY_5 */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_SetATVManualTuneFreq */
+/* CPPTEST_TEST_CASE_CONTEXT void MApp_AT_SetATVManualTuneFreq(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_SetATVManualTuneFreq()
+{
+    int iTmp;
+
+    /* Pre-condition initialization */
+    {
+	  #if TN_FREQ_STEP == FREQ_STEP_62_5KHz
+    	iTmp=cpptestLimitsGetMaxUnsignedShort()*625/10;
+    	MS_U16 u16TunerPLL = iTmp*10/625;
+	  #elif TN_FREQ_STEP == FREQ_STEP_50KHz
+    	iTmp=cpptestLimitsGetMaxUnsignedShort()*50;
+    	MS_U16 u16TunerPLL = iTmp/50;
+	  #else
+    	iTmp=cpptestLimitsGetMaxUnsignedShort()*3125/100;
+    	MS_U16 u16TunerPLL = iTmp*100/3125;
+	  #endif // TN_FREQ_STEP
+
+    	BOOLEAN _bCheck = 0;
+    	if( u16TunerPLL <= cpptestLimitsGetMaxUnsignedShort())
+    	{
+    		_bCheck = 1;
+    	}
+    	else
+    	{
+    		_bCheck = 0;
+    	}
+
+    	/* Tested function call */
+    	//MApp_AT_SetATVManualTuneFreq();
+    	/* Post-condition check */
+
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _bCheck ));
+	}
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_SetATVManualTuneFreq */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_RetStatus_ER */
+/* CPPTEST_TEST_CASE_CONTEXT void MApp_AT_RetStatus(EN_AT_Reply) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (eResult) */
+    EN_AT_Reply _eResult  = EN_AT_REPLY_STATUS_ER;
+    {
+        /* Tested function call */
+        MApp_AT_RetStatus(_eResult);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_RetStatus_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_RetStatus_OK */
+/* CPPTEST_TEST_CASE_CONTEXT void MApp_AT_RetStatus(EN_AT_Reply) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (eResult) */
+    EN_AT_Reply _eResult  = EN_AT_REPLY_STATUS_OK;
+    {
+        /* Tested function call */
+        MApp_AT_RetStatus(_eResult);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_RetStatus_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_RetStatus_TV_INIT */
+/* CPPTEST_TEST_CASE_CONTEXT void MApp_AT_RetStatus(EN_AT_Reply) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_TV_INIT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (eResult) */
+    EN_AT_Reply _eResult  = EN_AT_REPLY_STATUS_TV_INIT;
+    {
+        /* Tested function call */
+        MApp_AT_RetStatus(_eResult);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_RetStatus_TV_INIT */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_RetStatus_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT void MApp_AT_RetStatus(EN_AT_Reply) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_RetStatus_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (eResult) */
+    EN_AT_Reply _eResult  = EN_AT_REPLY_STATUS_MAX;
+    {
+        /* Tested function call */
+        MApp_AT_RetStatus(_eResult);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_RetStatus_DEFAULT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_COMMA */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdParser(AT_CMD *) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_COMMA()
+{
+    /* Pre-condition initialization */
+	MS_U8 u8CmdCharIndex = AT_CMD_PARSE_BEGIN_INDEX;
+	MS_U8 u8CheckCommaNum = 0, u8CmdParaIndex = 0;
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    {
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX] = ASCII_COMMA;
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdParser(&_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_COMMA */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_ENTER */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdParser(AT_CMD *) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_ENTER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+	AT_CMD _ATCmd;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    {
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX] = ASCII_ENTER;
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdParser(&_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CmdParser_u8CmdCharIndex_Begin_ENTER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CmdParser_IllegalChar */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdParser(AT_CMD *) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_IllegalChar()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+	AT_CMD _ATCmd;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 11;
+    }
+    {
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX] = '1';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+1] = 'A';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdParser(&_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CmdParser_IllegalChar */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CmdParser_Continuous_COMMA */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdParser(AT_CMD *) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_Continuous_COMMA()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+	AT_CMD _ATCmd;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+    }
+
+    {
+		s_AT_RxBuf.m_u8Index  = AT_CMD_PARSE_BEGIN_INDEX + 4;
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX] = '1';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+1] = '7';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+2] = ASCII_COMMA;
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+3] = ASCII_COMMA;
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdParser(&_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CmdParser_Continuous_COMMA */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CmdParser_CorrectCmd */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdParser(AT_CMD *) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_CorrectCmd()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+	AT_CMD _ATCmd;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+    }
+    {
+        s_AT_RxBuf.m_u8Index  = AT_CMD_PARSE_BEGIN_INDEX + 7;
+		s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX] = '1';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+1] = '7';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+2] = ASCII_COMMA;
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+3] = '1';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+4] = ASCII_COMMA;
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+5] = '2';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+6] = ASCII_ENTER;
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdParser(&_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CmdParser_CorrectCmd */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CmdParser_TooManyParameters */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdParser(AT_CMD *) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CmdParser_TooManyParameters()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+	AT_CMD _ATCmd;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    {
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX] = '1';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+1] = '7';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+2] = ASCII_COMMA;
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+3] = '1';
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+4] = ASCII_COMMA;
+    	s_AT_RxBuf.m_u8Buffer[AT_CMD_PARSE_BEGIN_INDEX+5] = '1';
+    	U8 u8Cnt=AT_CMD_PARSE_BEGIN_INDEX+6;
+    	U8 u8ParaCnt = 1;
+    	for(u8ParaCnt; u8ParaCnt<=AT_MAX_CMD_PARA+1; ++u8ParaCnt)
+    	{
+    		s_AT_RxBuf.m_u8Buffer[u8Cnt] = ASCII_COMMA;
+    		u8Cnt = u8Cnt + 1;
+    		s_AT_RxBuf.m_u8Buffer[u8Cnt] = '2';
+    		u8Cnt = u8Cnt + 1;
+    	}
+    	s_AT_RxBuf.m_u8Buffer[u8Cnt] = ASCII_ENTER;
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdParser(&_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CmdParser_TooManyParameters */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckCommandHeader_TRUE */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckCommandHeader(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckCommandHeader_TRUE()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    {
+		Auto_Test_Index1='a';
+		Auto_Test_Index2='t';
+		Auto_Test_Index3='+';
+		Auto_Test_Index4='w';
+		Auto_Test_Index5='t';
+		Auto_Test_Index6='e';
+		Auto_Test_Index7='s';
+		Auto_Test_Index8='t';
+		Auto_Test_Index9='=';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckCommandHeader();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckCommandHeader_TRUE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckCommandHeader_FALSE */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckCommandHeader(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckCommandHeader_FALSE()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    {
+		Auto_Test_Index1='a';
+		Auto_Test_Index2='b';
+		Auto_Test_Index3='c';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckCommandHeader();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckCommandHeader_FALSE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckStartAutoTest_IndexValue */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckStartAutoTest(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_IndexValue()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+    	s_AT_RxBuf.m_u8Index  = 0;
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckStartAutoTest();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckStartAutoTest_IndexValue */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckStartAutoTest_TRUE */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckStartAutoTest(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_TRUE()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+	{
+        s_AutoTest_Info.bAutoTestActive  = TRUE;
+        s_AT_RxBuf.m_u8Index  = 13;
+    }
+    {
+		s_AT_RxBuf.m_u8Buffer[0]= 's';
+		s_AT_RxBuf.m_u8Buffer[1]= 't';
+		s_AT_RxBuf.m_u8Buffer[2]= 'a';
+		s_AT_RxBuf.m_u8Buffer[3]= 'r';
+		s_AT_RxBuf.m_u8Buffer[4]= 't';
+		s_AT_RxBuf.m_u8Buffer[5]= 'a';
+		s_AT_RxBuf.m_u8Buffer[6]= 'u';
+		s_AT_RxBuf.m_u8Buffer[7]= 't';
+		s_AT_RxBuf.m_u8Buffer[8]= 'o';
+		s_AT_RxBuf.m_u8Buffer[9]= 't';
+		s_AT_RxBuf.m_u8Buffer[10]= 'e';
+		s_AT_RxBuf.m_u8Buffer[11]= 's';
+		s_AT_RxBuf.m_u8Buffer[12]= 't';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckStartAutoTest();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckStartAutoTest_TRUE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckStartAutoTest_FALSE */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckStartAutoTest(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStartAutoTest_FALSE()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+	{
+        s_AutoTest_Info.bAutoTestActive  = TRUE;
+        s_AT_RxBuf.m_u8Index  = 13;
+    }
+    {
+		s_AT_RxBuf.m_u8Buffer[0]= 's';
+		s_AT_RxBuf.m_u8Buffer[1]= 't';
+		s_AT_RxBuf.m_u8Buffer[2]= 'r';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckStartAutoTest();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckStartAutoTest_FALSE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckStopAutoTest_IndexValue */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckStopAutoTest(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_IndexValue()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+        s_AT_RxBuf.m_u8Index  = 0;
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckStopAutoTest();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckStopAutoTest_IndexValue */
+
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckStopAutoTest_TRUE */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckStopAutoTest(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_TRUE()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+	{
+        s_AutoTest_Info.bAutoTestActive  = TRUE;
+        s_AT_RxBuf.m_u8Index  = 12;
+    }
+    {
+		s_AT_RxBuf.m_u8Buffer[0]= 's';
+		s_AT_RxBuf.m_u8Buffer[1]= 't';
+		s_AT_RxBuf.m_u8Buffer[2]= 'o';
+		s_AT_RxBuf.m_u8Buffer[3]= 'p';
+		s_AT_RxBuf.m_u8Buffer[4]= 'a';
+		s_AT_RxBuf.m_u8Buffer[5]= 'u';
+		s_AT_RxBuf.m_u8Buffer[6]= 't';
+		s_AT_RxBuf.m_u8Buffer[7]= 'o';
+		s_AT_RxBuf.m_u8Buffer[8]= 't';
+		s_AT_RxBuf.m_u8Buffer[9]= 'e';
+		s_AT_RxBuf.m_u8Buffer[10]= 's';
+		s_AT_RxBuf.m_u8Buffer[11]= 't';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckStopAutoTest();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckStopAutoTest_TRUE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckStopAutoTest_FALSE */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckStopAutoTest(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckStopAutoTest_FALSE()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 12;
+    }
+    {
+		s_AT_RxBuf.m_u8Buffer[0]= 's';
+		s_AT_RxBuf.m_u8Buffer[1]= 't';
+		s_AT_RxBuf.m_u8Buffer[2]= 'r';
+
+		/* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckStopAutoTest();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckStopAutoTest_FALSE */
+
+#if(AT_IR_SIM)
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckIRKeySimulation_EXIT */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckIRKeySimulation(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_EXIT()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = FALSE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+    {
+    	Auto_Test_Index1= 'e';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckIRKeySimulation();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+        CPPTEST_ASSERT_EQUAL( EN_AT_IR_SIM_EXIT, ( s_AT_enIRKeySimulation ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckIRKeySimulation_EXIT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckIRKeySimulation_LEFT */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckIRKeySimulation(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_LEFT()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = FALSE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+    {
+    	Auto_Test_Index1= 'y';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckIRKeySimulation();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+        CPPTEST_ASSERT_EQUAL( EN_AT_IR_SIM_LEFT, ( s_AT_enIRKeySimulation ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckIRKeySimulation_LEFT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckIRKeySimulation_RIGHT */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckIRKeySimulation(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_RIGHT()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = FALSE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+    {
+    	Auto_Test_Index1= 'n';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckIRKeySimulation();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+        CPPTEST_ASSERT_EQUAL( EN_AT_IR_SIM_RIGHT, ( s_AT_enIRKeySimulation ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckIRKeySimulation_RIGHT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_CheckIRKeySimulation_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CheckIRKeySimulation(void) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_CheckIRKeySimulation_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = FALSE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+    {
+    	Auto_Test_Index1= 'A';
+
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CheckIRKeySimulation();
+        /* Post-condition check */
+        CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+        CPPTEST_ASSERT_EQUAL( EN_AT_IR_SIM_NULL, ( s_AT_enIRKeySimulation ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_CheckIRKeySimulation_DEFAULT */
+#endif
+
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_CmdParseFail */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_CmdParseFail()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_CmdParseFail */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_KEY_SHORT_PRESS_CMD */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_KEY_SHORT_PRESS_CMD()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_KEY_SHORT_PRESS_CMD */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_KEY_LONG_PRESS_CMD */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_KEY_LONG_PRESS_CMD()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_KEY_LONG_PRESS_CMD */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_DIRECT_CMD */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DIRECT_CMD()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_DIRECT_CMD */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_DIRECT_CMD_ResultOnGoing */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DIRECT_CMD_ResultOnGoing()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = 0;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_DIRECT_CMD_ResultOnGoing */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_AUDIO_CMD */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_AUDIO_CMD()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_AUDIO_CMD */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_AUDIO_CMD_ResultOnGoing */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_AUDIO_CMD_ResultOnGoing()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = 0;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_AUDIO_CMD_ResultOnGoing */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = 0;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_DEFAULT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_AudioCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_AUD_CMD_IS_DTV_DECODE_OK;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_AudioCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_AudioCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_AUD_CMD_IS_DTV_DECODE_OK;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_AudioCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_AudioCmdHandler_case_IS_DTV_DECODE_OK_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_GetAudioStatusFail */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_AudioCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_GetAudioStatusFail()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_AUD_CMD_IS_ATV_DECODE_OK;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_AudioCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_GetAudioStatusFail */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_AudioCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_AUD_CMD_IS_ATV_DECODE_OK;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_AudioCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_AudioCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_AUD_CMD_IS_ATV_DECODE_OK;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_AudioCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_AudioCmdHandler_case_IS_ATV_DECODE_OK_ER */
+
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_AudioCmdHandler_case_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_AudioCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_AudioCmdHandler_case_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = 0;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_AudioCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_AudioCmdHandler_case_DEFAULT */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_CmdTooLong */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_CmdTooLong()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = 0;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = AUTO_TEST_INPUT_BUFFER_LEN;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+        /* Tested function call */
+        MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+        //CPPTEST_ASSERT_UINTEGER_EQUAL(0, ( s_AT_RxBuf.m_u8Index ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_CmdTooLong */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_BACKSPACE */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_BACKSPACE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_BACKSPACE;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 2;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_BACKSPACE */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_else */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_else()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_NUMBER_0;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 3;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+    	MS_U8 u8OriIndex= s_AT_RxBuf.m_u8Index;
+
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+        //CPPTEST_ASSERT_UINTEGER_EQUAL(u8OriIndex+1, ( s_AT_RxBuf.m_u8Index ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_else */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_startAT */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_startAT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_ENTER;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = FALSE;
+         s_AT_RxBuf.m_u8Index  = 5;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( s_AutoTest_Info.bAutoTestActive ));
+        //CPPTEST_ASSERT_UINTEGER_EQUAL(NULL, ( s_AT_RxBuf.m_u8Buffer[0] ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_startAT */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_stopAT */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_stopAT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_ENTER;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 5;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(FALSE, ( s_AutoTest_Info.bAutoTestActive ));
+        //CPPTEST_ASSERT_UINTEGER_EQUAL(NULL, ( s_AT_RxBuf.m_u8Buffer[0] ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_stopAT */
+
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_else */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_else()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_ENTER;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = FALSE;
+         s_AT_RxBuf.m_u8Index  = 5;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_else */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_else */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_else()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_ENTER;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 5;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_else */
+
+#if(AT_IR_SIM)
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_IRKeySimulation */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_IRKeySimulation()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_ENTER;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 5;
+    }
+
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+    {
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_IRKeySimulation */
+#endif
+
+
+/* CPPTEST_TEST_CASE_BEGIN test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_CheckCommandHeader */
+/* CPPTEST_TEST_CASE_CONTEXT void MDrv_UART_RecvAutoTestHandler(int) */
+void TestSuite_MApp_AutoTest_test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_CheckCommandHeader()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (c) */
+    int _c  = ASCII_ENTER;
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 5;
+    }
+
+  #if(AT_IR_SIM)
+    /* Initializing global variable s_AT_enIRKeySimulation */
+    {
+         s_AT_enIRKeySimulation  = EN_AT_IR_SIM_NULL;
+    }
+  #endif
+    {
+        /* Tested function call */
+        //MApp_AT_RecvDataHandler(_c);
+        /* Post-condition check */
+
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MDrv_UART_RecvAutoTestHandler_c_is_ENTER_GotCmd_CheckCommandHeader */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = 0;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DEFAULT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_SET_INPUT_SOURCE;
+    _ATCmd.iCmdPara[0] = INPUT_SOURCE_NUM-1;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_SET_INPUT_SOURCE;
+    _ATCmd.iCmdPara[0] = INPUT_SOURCE_NUM;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_SET_INPUT_SOURCE_ER */
+
+#if 0
+//1.IsPIPSupported (Macro) can't stub.
+//2.MApi_XC_GetInfo() get the pointer from utopia, can't assign MApi_XC_GetInfo()->u8MaxWindowNum here directly.
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SIGNAL_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SIGNAL_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_INPUT_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SIGNAL_OK */
+#endif
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ONGOING */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ONGOING()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( OSD_TUNE_TYPE_DTV_ONLY, ( eTuneType ) );
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ONGOING, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_SCAN_ONGOING */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ONGOING */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ONGOING()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( OSD_TUNE_TYPE_ATV_ONLY, ( eTuneType ) );
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ONGOING, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_SCAN_ONGOING */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_DTV_CHANNEL_LIST;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_DTV_CHANNEL_LIST;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_DTV_CHANNEL_LIST_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_ATV_CHANNEL_LIST;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_ATV_CHANNEL_LIST;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_ATV_CHANNEL_LIST_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_INPUT_SOURCE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_INPUT_SOURCE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_INPUT_SOURCE_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_DIRECT_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ONGOING */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ONGOING()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_DIRECT_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ONGOING, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_DIRECT_SCAN_ONGOING */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_DIRECT_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ONGOING */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ONGOING()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_DIRECT_SCAN;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ONGOING, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_DIRECT_SCAN_ONGOING */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER1 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER1()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_ATV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER1 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER2 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER2()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER2 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER3 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER3()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_ATV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_ER3 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_DTV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_DTV_SIGNAL_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER1 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER1()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER1 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER2 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER2()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_ATV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER2 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER3 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER3()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_ER3 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_OK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_OK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_ATV_SIGNAL;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_ATV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_ATV_SIGNAL_OK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SIGNAL */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SIGNAL()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_NOSIGNAL;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SIGNAL */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SHOW_PROGRAM */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SHOW_PROGRAM()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_NO_SHOW_PROGRAM;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_SHOW_PROGRAM */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_COMMON_VIDEO */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_COMMON_VIDEO()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_NULL;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_COMMON_VIDEO */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING1 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING1()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_NOT_RUNNING1;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING1 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING2 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING2()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_NOT_RUNNING2;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NOT_RUNNING2 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_CI_MODULE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_CI_MODULE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_SCRAMBLE;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_NO_CI_MODULE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_SCRAMBLED_PROGRAM */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_SCRAMBLED_PROGRAM()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_SCRAMBLED_PROGRAM;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_SCRAMBLED_PROGRAM */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_CH_BLOCK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_CH_BLOCK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_LOCKED_PROGRAM;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_CH_BLOCK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_PARENTAL_BLOCK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_PARENTAL_BLOCK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_BLOCKRATING;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_PARENTAL_BLOCK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_AUDIO_ONLY */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_AUDIO_ONLY()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_AUDIOONLY;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_AUDIO_ONLY */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_MHEG5_ONLY */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_MHEG5_ONLY()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_MHEGONLY;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_MHEG5_ONLY */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_INVALID_SERVICE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_INVALID_SERVICE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_DTV;
+    	enCurScreenSaver[MAIN_WINDOW]=EN_SCREENSAVER_UNSUPPORT_MODE;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_DTV_INVALID_SERVICE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_ATV */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_ATV()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_ATV;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_ATV */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource1()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_RGB;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource1 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource2 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_DirectCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource2()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AUTO_TEST_DIRECT_CMD_GET_VIDEO_STATE;
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+    	UI_INPUT_SOURCE_TYPE=UI_INPUT_SOURCE_HDMI;
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_DirectCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) );
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_DirectCmdHandler_case_GET_VIDEO_STATE_OtherInputSource2 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = 0;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_NULL, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_DEFAULT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_LIST */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_LIST()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_CHANNEL_LIST;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_CHANNEL_LIST, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_LIST */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_RETURN */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_RETURN()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_CHANNEL_RETURN;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_CHANNEL_RETURN, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_RETURN */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_PLUS */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_PLUS()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_CHANNEL_PLUS;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_CHANNEL_PLUS, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_PLUS */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_MINUS */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_MINUS()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_CHANNEL_MINUS;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_CHANNEL_MINUS, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CHANNEL_MINUS */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_AUDIO */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_AUDIO()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_AUDIO;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_AUDIO, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_AUDIO */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_PLUS */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_PLUS()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_VOLUME_PLUS;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_VOLUME_PLUS, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_PLUS */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_MINUS */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_MINUS()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_VOLUME_MINUS;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_VOLUME_MINUS, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_VOLUME_MINUS */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UP */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UP()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_UP;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_UP, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UP */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_DOWN */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_DOWN()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_DOWN;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_DOWN, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_DOWN */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_LEFT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_LEFT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_LEFT;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_LEFT, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_LEFT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RIGHT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RIGHT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_RIGHT;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_RIGHT, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RIGHT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_POWER */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_POWER()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_POWER;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_POWER, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_POWER */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EXIT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EXIT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_EXIT;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_EXIT, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EXIT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MENU */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MENU()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_MENU;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_MENU, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MENU */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SELECT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SELECT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_SELECT;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_SELECT, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SELECT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_0 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_0()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_0;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_0, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_0 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_1 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_1()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_1;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_1, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_1 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_2 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_2()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_2;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_2, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_2 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_3 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_3()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_3;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_3, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_3 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_4 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_4()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_4;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_4, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_4 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_5 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_5()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_5;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_5, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_5 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_6 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_6()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_6;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_6, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_6 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_7 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_7()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_7;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_7, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_7 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_8 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_8()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_8;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_8, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_8 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_9 */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_9()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NUM_9;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NUM_9, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NUM_9 */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MUTE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MUTE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_MUTE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_MUTE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MUTE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_UP */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_UP()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_PAGE_UP;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_PAGE_UP, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_UP */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_DOWN */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_DOWN()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_PAGE_DOWN;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_PAGE_DOWN, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAGE_DOWN */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INFO */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INFO()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_INFO;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_INFO, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INFO */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RED */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RED()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_RED;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_RED, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RED */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GREEN */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GREEN()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_GREEN;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_GREEN, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GREEN */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_YELLOW */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_YELLOW()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_YELLOW;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_YELLOW, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_YELLOW */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BLUE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BLUE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_BLUE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_BLUE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BLUE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INPUT_SOURCE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INPUT_SOURCE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_INPUT_SOURCE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_INPUT_SOURCE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INPUT_SOURCE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EPG */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EPG()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_EPG;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_EPG, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_EPG */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MTS */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MTS()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_MTS;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_MTS, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MTS */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_TTX */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_TTX()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_TTX;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_TTX, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_TTX */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SLEEP */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SLEEP()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_SLEEP;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_SLEEP, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SLEEP */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_ZOOM */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_ZOOM()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_ZOOM;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_ZOOM, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_ZOOM */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INDEX */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INDEX()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_INDEX;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_INDEX, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_INDEX */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PLAY */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PLAY()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_PLAY;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_PLAY, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PLAY */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAUSE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAUSE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_PAUSE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_PAUSE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PAUSE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_STOP */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_STOP()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_STOP;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_STOP, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_STOP */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NEXT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NEXT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_NEXT;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_NEXT, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_NEXT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PREVIOUS */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PREVIOUS()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_PREVIOUS;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_PREVIOUS, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PREVIOUS */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FORWARD */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FORWARD()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_FORWARD;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_FORWARD, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FORWARD */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BACKWARD */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BACKWARD()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_BACKWARD;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_BACKWARD, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_BACKWARD */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CC */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CC()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_CC;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_CC, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CC */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RECORD */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RECORD()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_RECORD;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_RECORD, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_RECORD */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBTITLE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBTITLE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_SUBTITLE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_SUBTITLE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBTITLE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBCODE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBCODE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_SUBCODE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_SUBCODE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SUBCODE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PHOTO */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PHOTO()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_PHOTO;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_PHOTO, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PHOTO */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FREEZE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FREEZE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_FREEZE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_FREEZE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_FREEZE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PIP */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PIP()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_PIP;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_PIP, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_PIP */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MIX */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MIX()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_MIX;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_MIX, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_MIX */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GUIDE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GUIDE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_GUIDE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_GUIDE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_GUIDE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_HOLD */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_HOLD()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_HOLD;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_HOLD, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_HOLD */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UPDATE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UPDATE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_UPDATE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_UPDATE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_UPDATE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_REVEAL */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_REVEAL()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_REVEAL;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_REVEAL, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_REVEAL */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SIZE */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SIZE()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_SIZE;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_SIZE, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_SIZE */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CLOCK */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_KeyShortPressHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CLOCK()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = EN_AT_KEYCODE_MVK_CLOCK;
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_KeyShortPressHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_AT_KEYCODE_MVK_CLOCK, ( s_AT_enKeyCode_MVK ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_KeyShortPressHandler_case_EN_AT_KEYCODE_MVK_CLOCK */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_MiscCmdHandler_case_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_MiscCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+    memset(&_ATCmd, 0, sizeof(AT_CMD));
+    _ATCmd.u16CmdSubType = 0;
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_MiscCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_MiscCmdHandler_case_DEFAULT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_RESET_FACTORY */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_MiscCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_RESET_FACTORY()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+	AT_CMD _ATCmd ;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+	_ATCmd.u16CmdSubType = EN_AUTO_TEST_MISC_RESET_FACTORY;
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_MiscCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+        CPPTEST_ASSERT_EQUAL( EN_COMMON_DLG_MODE_FACTORY_RESET, ( _eCommonDlgMode ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_RESET_FACTORY */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_REBOOT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_MiscCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_REBOOT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+	_ATCmd.u16CmdSubType = EN_AUTO_TEST_MISC_REBOOT;
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_MiscCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_REBOOT */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_CLEAR_PROGRAM */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_MiscCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_CLEAR_PROGRAM()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+	_ATCmd.u16CmdSubType = EN_AUTO_TEST_MISC_CLEAR_PROGRAM;
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_MiscCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_OK, ( _return ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_MiscCmdHandler_case_EN_AUTO_TEST_MISC_CLEAR_PROGRAM */
+
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_OADCmdHandler_case_DEFAULT */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_OADCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_OADCmdHandler_case_DEFAULT()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+	_ATCmd.u16CmdSubType = EN_AUTO_TEST_MISC_CLEAR_PROGRAM;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_OADCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_OADCmdHandler_case_DEFAULT */
+
+#if 0
+/* CPPTEST_TEST_CASE_BEGIN test__MApp_AT_OADCmdHandler_case_EN_AUTO_TEST_OAD_SOFTWARE_UPDATE_USB */
+/* CPPTEST_TEST_CASE_CONTEXT EN_AT_RESULT _MApp_AT_OADCmdHandler(AT_CMD) */
+void TestSuite_MApp_AutoTest_test__MApp_AT_OADCmdHandler_case_EN_AUTO_TEST_OAD_SOFTWARE_UPDATE_USB()
+{
+    /* Pre-condition initialization */
+    /* Initializing argument 1 (ATCmd) */
+    AT_CMD _ATCmd ;
+	memset(&_ATCmd, 0, sizeof(AT_CMD));
+	_ATCmd.u16CmdSubType = EN_AUTO_TEST_OAD_SOFTWARE_UPDATE_USB;
+    {
+        /* Tested function call */
+        EN_AT_RESULT _return  = _MApp_AT_OADCmdHandler(_ATCmd);
+        /* Post-condition check */
+        CPPTEST_ASSERT_EQUAL( EN_AT_RESULT_ER, ( _return ) )
+    }
+}
+/* CPPTEST_TEST_CASE_END test__MApp_AT_OADCmdHandler_case_EN_AUTO_TEST_OAD_SOFTWARE_UPDATE_USB */
+#endif
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD_ResultOnGoing */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD_ResultOnGoing()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = 0;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+
+
+
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD_ResultOnGoing */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = 0;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+
+
+    {
+        /* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_MISC_CMD */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_KEY_SHORT_PRESS_CMD_ResultOnGoing */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_KEY_SHORT_PRESS_CMD_ResultOnGoing()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = TRUE;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+
+
+    {
+    	/* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_KEY_SHORT_PRESS_CMD_ResultOnGoing */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = 0;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+
+
+    {
+    	/* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD */
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD_ResultOnGoing */
+/* CPPTEST_TEST_CASE_CONTEXT BOOLEAN _MApp_AT_CmdHandler(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD_ResultOnGoing()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable stGenSetting */
+    {
+         stGenSetting.u8VersionCheck  = 0;
+         stGenSetting.stMiscSetting.bRunInstallationGuide  = 0;
+         stGenSetting.stMiscSetting.bDCOnOff  = EN_POWER_DC_ON;
+         stGenSetting.u8VersionCheckCom  = 0;
+    }
+    /* Initializing global variable eTuneType */
+    {
+         eTuneType  = OSD_TUNE_TYPE_DTV_PLUS_ATV;
+    }
+    /* Initializing global variable _eCommonDlgMode */
+    {
+         _eCommonDlgMode  = EN_COMMON_DLG_MODE_INVALID;
+    }
+    /* Initializing global variable s_AT_RxBuf */
+    {
+         s_AutoTest_Info.bAutoTestActive  = 0;
+         s_AT_RxBuf.m_u8Index  = 0;
+    }
+    /* Initializing global variable g_AT_bDTVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable g_AT_bATVManualTuningStart */
+    {
+
+    }
+    /* Initializing global variable s_AT_enKeyCode_MVK */
+    {
+         s_AT_enKeyCode_MVK  = EN_AT_KEYCODE_NULL;
+    }
+
+
+    {
+    	/* Tested function call */
+        BOOLEAN _return  = _MApp_AT_CmdHandler();
+        /* Post-condition check */
+        //CPPTEST_ASSERT_BOOL_EQUAL(TRUE, ( _return ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_CmdHandler_case_EN_AUTO_TEST_CMD_TYPE_OAD_CMD_ResultOnGoing */
+
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_Get_SymbolSetting */
+/* CPPTEST_TEST_CASE_CONTEXT U16 MApp_AT_Get_SymbolSetting(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_Get_SymbolSetting()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_SymbolSetting */ 
+    {
+         s_AT_SymbolSetting  = 0u;
+    }
+    {
+        /* Tested function call */
+        U16 _return  = MApp_AT_Get_SymbolSetting();
+        /* Post-condition check */
+        CPPTEST_POST_CONDITION_UINTEGER("U16 _return", ( _return ));
+        CPPTEST_POST_CONDITION_UINTEGER("U16 s_AT_SymbolSetting", ( s_AT_SymbolSetting ));
+    }
+
+    /* Initializing global variable s_AT_SymbolSetting */
+    {
+         s_AT_SymbolSetting  = 0xFFFF;
+    }
+    {
+        /* Tested function call */
+        U16 _return  = MApp_AT_Get_SymbolSetting();
+        /* Post-condition check */
+        CPPTEST_POST_CONDITION_UINTEGER("U16 _return", ( _return ));
+        CPPTEST_POST_CONDITION_UINTEGER("U16 s_AT_SymbolSetting", ( s_AT_SymbolSetting ));
+    }
+
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_Get_SymbolSetting */
+
+
+/* CPPTEST_TEST_CASE_BEGIN test_MApp_AT_Get_QamSetting */
+/* CPPTEST_TEST_CASE_CONTEXT U16 MApp_AT_Get_QamSetting(void) */
+void TestSuite_MApp_AutoTest_test_MApp_AT_Get_QamSetting()
+{
+    /* Pre-condition initialization */
+    /* Initializing global variable s_AT_QamSetting */ 
+    {
+         s_AT_QamSetting  = 0u;
+    }
+    {
+        /* Tested function call */
+        U16 _return  = MApp_AT_Get_QamSetting();
+        /* Post-condition check */
+        CPPTEST_POST_CONDITION_UINTEGER("U16 _return", ( _return ));
+        CPPTEST_POST_CONDITION_UINTEGER("U16 s_AT_QamSetting", ( s_AT_QamSetting ));
+    }
+}
+/* CPPTEST_TEST_CASE_END test_MApp_AT_Get_QamSetting */

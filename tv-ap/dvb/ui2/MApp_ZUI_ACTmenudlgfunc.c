@@ -174,7 +174,10 @@ extern void _MApp_ZUI_API_ConvertTextComponentToDynamic(U16 u16TextOutIndex, DRA
 extern void _MApp_ZUI_ACT_OpenCommonDialog(COMMON_DLG_MODE dlg);
 void _MApp_ZUI_API_ForceUpdateWindows(HWND aUpdateWindows[],U8 WinCount);
 void MApp_ZUI_SwUpdate_ProgressBar(U8 percent);
+void MApp_UserReset(void);						//Ray LDF 2017.06.16
+void  MApp_FactoryReset(void);						//Ray LDF 2017.06.16
 extern void  MApp_ZUI_ACT_SetTargetMenuState(EN_MENU_STATE MenuState);
+extern void dv_SetImageOrientation(void);				//Ray LDF 2017.06.16
 static U8 USB_Upgrade_Percent = 0xFF;
 //////////////////////////////////////////
 //for user reset
@@ -182,7 +185,7 @@ static U8 USB_Upgrade_Percent = 0xFF;
 static BOOLEAN MApp_ZUI_ACT_UserReset_VideoReset(void)
 {
     MApp_DataBase_RestoreDefaultVideoForUserReset(DATA_INPUT_SOURCE_NUM);
-    MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset(DATA_INPUT_SOURCE_NUM);
+    //MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset(DATA_INPUT_SOURCE_NUM);		//Ray CTP 2017.06.12: Color temp is not reset by OSD load factory default
     #ifdef sAddBacklightPara
     //Ray BKL 2017.02.21: Backlight level is not reset during user reset
     //		stGenSetting.u8Backlight = 100;
@@ -258,6 +261,8 @@ static void MApp_ZUI_ACT_FactoryReset(void)
     MDrv_Sys_WholeChipReset();
 }
 
+
+
 static void MApp_ZUI_ACT_UserSettingReset(void)
 {
 	#ifdef sUserResetIssue
@@ -328,6 +333,39 @@ static void MApp_ZUI_ACT_UserSettingReset(void)
 	#endif
 }
 
+//Ray LDF 2017.06.16
+//Execute OSD setup menu "Restore Factory Default" triggered by user to reset the board
+//This function is also called by execute RS-232 command 0xce
+void MApp_UserReset(void)
+{
+  if(msAPI_AUD_IsAudioMutedByUser())
+  {
+    MApp_UiMenu_MuteWin_Hide();
+  }
+  MApp_ZUI_ACT_UserSettingReset();
+  MApp_DataBase_RestoreDefaultSystem(RESTORE_KEEP_DV_SETTING);		//Ray LDF 2017.06.16: To reset DV parameters like auto source seek, failover,default power,..... But keep backlight setting unchanged
+  dv_SetImageOrientation();		//Apply image orientation setting
+
+}
+
+//Ray LDF 2017.06.16
+//Execute factory reset (restore all parameters including color temperature) by command 0xcf, press SEL DN during power up and load factory default in factory menu
+void MApp_FactoryReset(void)
+{
+  //Ray LDF 2017.06.16: Turn on both red and green LED to signify that load all default is started
+  LED_RED_ON();		//red LED1A on
+  LED_GREEN_ON();	//green LED1A on
+
+  MApp_DB_Factory_ResetAll();
+  msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEON, E_AUDIOMUTESOURCE_ACTIVESOURCE);//Mute before reset audio
+  MApp_ZUI_ACT_FactoryReset_SoundReset();
+  MApp_ZUI_ACT_FactoryReset();
+  _eCommonDlgMode = EN_COMMON_DLG_MODE_INVALID;
+  MApp_ZUI_API_ShowWindow(HWND_MENU_DLG_COMMON, SW_HIDE);
+  MApp_ZUI_API_RestoreFocusCheckpoint();
+}
+
+
 BOOLEAN MApp_ZUI_ACT_ExecuteMenuCommonDialogAction(U16 act)
 {
     //mapping generic command to specific action...
@@ -383,7 +421,8 @@ BOOLEAN MApp_ZUI_ACT_ExecuteMenuCommonDialogAction(U16 act)
 
             _eCommonDlgMode = EN_COMMON_DLG_MODE_INVALID;
             MApp_ZUI_API_ShowWindow(HWND_MENU_DLG_COMMON, SW_HIDE);
-            MApp_ZUI_ACT_ShowMainMenuBackground(HWND_MENU_BOTTOM_BALL_FOCUS_OPTION);
+            MApp_ZUI_ACT_ShowMainMenuBackgroundNoFocusIcon();				//Ray OSD 2017.06.16: After user reset and exit dialog, the setup icon should not show focus one
+            //MApp_ZUI_ACT_ShowMainMenuBackground(HWND_MENU_BOTTOM_BALL_FOCUS_OPTION);
             MApp_ZUI_API_ShowWindow(HWND_MENU_OPTION_PAGE, SW_SHOW);
             MApp_ZUI_API_SetFocus(HWND_MENU_OPTION_FACTORY_RESET);
             //MApp_ZUI_API_SetFocus(_hwndCommonDlgPrevFocus);
@@ -421,6 +460,10 @@ BOOLEAN MApp_ZUI_ACT_ExecuteMenuCommonDialogAction(U16 act)
         case EN_EXE_FACTORY_RESET:
             if (_eCommonDlgMode != EN_COMMON_DLG_MODE_FACTORY_RESET)
                 return TRUE;
+
+            MApp_FactoryReset();			//Ray LDF 2017.06.14: We use MApp_FactoryReset() to execute the commented sentences below
+
+            /*
             //printf("EN_EXE_FACTORY_RESET \n");
             {//Factory default
             		#ifdef sFactoryInitialIssue
@@ -428,7 +471,7 @@ BOOLEAN MApp_ZUI_ACT_ExecuteMenuCommonDialogAction(U16 act)
             	  //MApp_DB_GEN_Init();
             	  MApp_DB_Factory_ResetAll();
             	  #endif
-                MApp_ZUI_ACT_FactoryReset_VideoReset();
+                //MApp_ZUI_ACT_FactoryReset_VideoReset();		//Ray LDF 2017.06.14: This function is duplicated as it will also be called in MApp_ZUI_ACT_FactoryReset()
                 msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEON, E_AUDIOMUTESOURCE_ACTIVESOURCE);//Mute before reset audio
                 MApp_ZUI_ACT_FactoryReset_SoundReset();
             }
@@ -437,18 +480,21 @@ BOOLEAN MApp_ZUI_ACT_ExecuteMenuCommonDialogAction(U16 act)
             MApp_ZUI_API_ShowWindow(HWND_MENU_DLG_COMMON, SW_HIDE);
 
             MApp_ZUI_API_RestoreFocusCheckpoint();
+            */
             return TRUE;
 
         case EN_EXE_USER_SETTING_RESET:
             if (_eCommonDlgMode != EN_COMMON_DLG_MODE_FACTORY_RESET)
                 return TRUE;
             //printf("EN_EXE_USER_SETTING_RESET \n");
+            MApp_UserReset();					//Ray LDF 2017.06.16: We use MApp_UserReset() to execute the commented sentences below
+            /*
             if(msAPI_AUD_IsAudioMutedByUser())
             {
               MApp_UiMenu_MuteWin_Hide();
             }
             MApp_ZUI_ACT_UserSettingReset();
-
+             */
             _eCommonDlgMode = EN_COMMON_DLG_MODE_INVALID;
             MApp_ZUI_API_ShowWindow(HWND_MENU_DLG_COMMON, SW_HIDE);
             return TRUE;

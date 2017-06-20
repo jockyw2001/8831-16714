@@ -1,0 +1,10 @@
+Sleep 相關功能有這些: (請不要搞混)
+1. 無操作 auto sleep: (MApp_NoOperate_AutoSleep.c)
+    就是UI上的Auto Sleep, 可以選 4/6/8 hours
+    
+2. 無訊號 auto sleep: (MApp_NoSignal_AutoSleep.c)
+    default enable, 無UI開關
+    
+3. 多少時間後 auto sleep:
+    就是UI上的 Sleep Timer, 可以選 10/20/30/60/90 min
+    

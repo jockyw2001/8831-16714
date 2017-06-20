@@ -429,6 +429,7 @@ INTERFACE U16 MApp_CalCheckSum_SkipFirst2Byte( BYTE *pBuf, WORD wBufLen );
 INTERFACE void MApp_InitGenSetting(void);
 INTERFACE void MApp_LoadGenSetting(void);
 INTERFACE void MApp_SaveGenSetting(void);
+INTERFACE void MApp_FactoryResetGenSetting(void);		//Ray LDF 2017.06.14
 
 INTERFACE void MApp_ResetGenUserSetting(void);
 INTERFACE void MApp_UpdateGenSettingCS(void);

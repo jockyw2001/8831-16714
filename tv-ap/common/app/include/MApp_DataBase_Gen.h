@@ -109,6 +109,8 @@ BOOL MApp_DB_GEN_Get_DataChanged(void);
 
 void MApp_DB_GEN_Task(void);
 
+void MApp_Check_Sel_Dn_Reset(void);		//Ray LDF 2017.06.15
+
 
 
 //******************************************************************************

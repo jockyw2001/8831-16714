@@ -127,7 +127,7 @@
 
 #define DFFAULT_PWM_FREQUENCY			160		//Ray BKL 2017.02.21: Default PWM frequency is 160Hz
 #define DFFAULT_DA_PWM_FREQUENCY		160		//Ray BKL 2017.04.26: Default PWM frequency in D/A mode is 160Hz
-#define DEFAULT_AUTO_SOURCE_SEEK		DISABLE		//Ray ASS 2017.04.26: Default Auto source seek is disable
+#define DEFAULT_AUTO_SOURCE_SEEK		ENABLE		//Ray ASS 2017.06.14: Default Auto source seek is enable
 #define DEFAULT_FAIL_OVER			DISABLE		//Ray DMP 2017.04.07: Default fail over is disable
 #define DEFAULT_MIN_BKL_LEVEL			6		//Ray BKL 2017.04.25: Default min backlight level is 6
 #define DEFAULT_IMG_ORIENT			MIRROR_NORMAL	//Ray ORI 2017.05.05: Default image orientation is normal
@@ -241,6 +241,7 @@
 #define RESTORE_KEEP_SYSTEM_LANGUAGE            (0x0001)
 #define RESTORE_KEEP_SYSTEM_PASSWORD            (0x0002)
 #define RESTORE_KEEP_SYSTEM_TIME                (0x0004)
+#define RESTORE_KEEP_DV_SETTING			(0x0008)	//Ray LDF 2017.06.13: mask to keep DV setting such as backlight parameters
 
 #define DEFAULT_D_ONTIME_CH  0 // this value must be 1,
                                // bcz when we restore both general and channel setting
@@ -306,6 +307,7 @@ INTERFACE void MApp_DataBase_RestoreDefaultSaturation(void);	//Ray SAT 2017.05.0
 INTERFACE void MApp_DataBase_RestoreDefaultHue(void);		//Ray HUE 2017.05.12
 INTERFACE void MApp_DataBase_RestoreDefaultSharpness(void);	//Ray SHP 2017.05.12
 INTERFACE void MApp_DataBase_RestoreDefaultAspectRatio(void);	//Ray ART 2017.05.23
+INTERFACE void MApp_DataBase_RestoreColorTempSelection(void);	//Ray CTP 2017.06.15
 INTERFACE void MApp_DataBase_RestoreDefaultVideo(E_DATA_INPUT_SOURCE enDataInputSource);
 INTERFACE void MApp_DataBase_RestoreDefaultWhiteBalance(E_DATA_INPUT_SOURCE enDataInputSource);
 INTERFACE void MApp_DataBase_PictureResetWhiteBalance(E_DATA_INPUT_SOURCE enDataInputSource);

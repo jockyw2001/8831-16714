@@ -414,6 +414,7 @@ MS_BOOL MApp_PreInit_State(void)
         case EN_PRE_INIT_STAGE_DATABASE_CHECKING_INIT:
             PRINT_AUTOTEST_CHECKPT_TIME("start DB Check");
             MApp_PreInit_DataBase_Checking();
+            MApp_PreInit_Check_Sel_Dn_Reset();			//Ray LDF 2017.06.15: Check if SEL DN down pressed and do reset
             break;
 
         case EN_PRE_INIT_STAGE_SSC_SETTING_INIT:

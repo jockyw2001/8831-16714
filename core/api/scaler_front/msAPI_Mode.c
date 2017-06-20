@@ -371,10 +371,17 @@ U16 msAPI_Mode_PictureBackLightN100toReallyValue ( U8 u8value )
   	}
 //#endif
 
-     //Ray 2017.04.26: If backlight level is less than min backlight level, set backlight level to min backlight level
-     if(u8value<GET_BACKLIGHT_MIN_LEVEL()){
-	 u8value = GET_BACKLIGHT_MIN_LEVEL();
-     }
+    if(GET_BACKLIGHT_INVERT()==DISABLE){
+       //Ray 2017.04.26: If backlight level is less than min backlight level, set backlight level to min backlight level
+       if(u8value<GET_BACKLIGHT_MIN_LEVEL()){
+	   u8value = GET_BACKLIGHT_MIN_LEVEL();
+       }
+    }else{
+       //Ray 2017.06.16: If backlight is inverted, min backlight level should also be inverted
+       if(u8value>(100-GET_BACKLIGHT_MIN_LEVEL())){
+	   u8value = (100-GET_BACKLIGHT_MIN_LEVEL());
+       }
+    }
     //return msAPI_CalNonLinearCurve(u8value, &stBacklightCurveTbl );
     return msAPI_CalNonLinearCurve_BackLight(u8value, &stBacklightCurveTbl );  //fix me
 }
@@ -471,6 +478,7 @@ U8 GetColorTemperatureScale100Value(U16 wValueFrom, U16 wValueTo, U16 wMinValue,
             wOrgScaleValue++;
         }
     }
+
     return wOrgScaleValue;
 }
 #undef MSAPI_MODE_C

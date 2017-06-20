@@ -1,0 +1,9 @@
+[doyle.huang:~/swork/PERFORCE/THEALE/utopia_misc/verify/maya_nos_r2/SecureR2/Gen_Sig] du -b secu_r2.bin.128
+81924   secu_r2.bin.128
+[doyle.huang:~/swork/PERFORCE/THEALE/utopia_misc/verify/maya_nos_r2/SecureR2/Gen_Sig] ./Gen_sig.sh 81924
+cp /users/doyle.huang/swork/PERFORCE/THEALE/utopia_misc/verify/maya_nos_r2/SecureR2/Gen_Sig/secu_r2.bin.128 /users/doyle.huang/swork/PERFORCE/THEALE/utopia_misc/verify/maya_nos_r2/SecureR2/Gen_Sig/Bin_maya/hash0.bin
+[doyle.huang@swhcsvr03]Mon Jan 26 10:49:06 CST 2015
+/usr/bin/qsub -q ck -cwd -sync yes -V -o /home/ck/grid_log -e /home/ck/grid_err /tools/script/ck/rsa_sign_root.sh /users/doyle.huang/swork/PERFORCE/THEALE/utopia_misc/verify/maya_nos_r2/SecureR2/Gen_Sig/Bin_maya/hash0.bin /users/doyle.huang/swork/PERFORCE/THEALE/utopia_misc/verify/maya_nos_r2/SecureR2/Gen_Sig G_HQ_Maya_CK /users/doyle.huang/swork/PERFORCE/THEALE/utopia_misc/verify/maya_nos_r2/SecureR2/Gen_Sig/Tools 0
+Your job 1005268 ("rsa_sign_root.sh") has been submitted
+Job 1005268 exited with exit code 0.
+MergeBin Done !!

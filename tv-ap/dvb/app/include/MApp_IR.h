@@ -122,6 +122,8 @@ INTERFACE void MApp_SetMBIRFlag(U8 val);
 INTERFACE U8 MApp_GetMBIRFlag(void);
 INTERFACE void MApp_GetMBIR(ST_MBIR* pMBIR);
 
+INTERFACE void MApp_RS232_SetKey(U8 key);		//Ray OSM 2017.06.16
+
 #define KEY_TYPE_KEYPAD         0
 #define KEY_TYPE_IR             1
 

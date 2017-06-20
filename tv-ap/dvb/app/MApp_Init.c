@@ -175,7 +175,9 @@
 #include "MApp_Init.h"
 #include "MApp_SignalMonitor.h"
 #include "MApp_InputSource.h"
-
+#include "msIR.h"		//Ray LDF 2017.06.14: To access IR key code
+#include "msKeypad.h"		//Ray LDF 2017.06.14: To access msKeypad_GetKey()
+#include "MApp_DataBase_Factory.h"	//Ray LDF 2017.06.15: To access MApp_DB_Factory_ResetAll()
 #if ENABLE_EPGTIMER_RECORDER_TURNOFFPANEL
 #include "MApp_TV.h"
 #endif
@@ -435,6 +437,7 @@ extern void *ttf_sbrk(unsigned int size);
 
 extern void hash_sbrk_SetMemPoolSize(unsigned long u32Size);
 extern void *hash_sbrk(unsigned int size);
+extern void  MApp_FactoryReset(void);			//Ray LDF 2017.06.16
 #if(ENABLE_POWERON_VIDEO)
 extern void msAPI_Pan_Task(void);
 #endif
@@ -1721,6 +1724,38 @@ void MApp_PreInit_DateBase_Init(void)
 
     DEBUG_BOOT_TIME(DEBUG_FUNC_TIME_END());
 
+}
+
+
+
+//Ray LDF 2017.06.15: Check if SEL DN is pressed during power up. If yes, do factory reset
+void MApp_PreInit_Check_Sel_Dn_Reset(void)
+{
+  //Ray LDF 2017.06.14: Check if SEL DN key is pressed
+   U8 u8key,u8Repstatus,i;
+   //Ray LDF 2017.06.14: key detection needs to do at least "KEYPAD_KEY_VALIDATION" to become stable
+   for(i=0;i<=(KEYPAD_KEY_VALIDATION+0x10);i++){
+     if(msKeypad_GetKey(&u8key, &u8Repstatus)==MSRET_OK){
+	 //printf("\nRay: Detect key %d, loop;%d\n",u8key,i);	//Ray DBG 2017.06.14
+	 if(u8key==IRKEY_DOWN){
+	     //If SEL DN key is pressed, do factory reset
+	     //printf("\nRay: Detect DOWN key and do factory reset\n");	//Ray DBG 2017.06.14
+	     MApp_FactoryReset();
+	     /*
+	     //Ray LDF 2017.06.16: Turn on both red and green LED to signify that load all default is started
+	     LED_RED_ON();	//red LED1A on
+	     LED_GREEN_ON();	//green LED1A on
+	     MApp_DB_Factory_ResetAll();
+	     MApp_DataBase_RestoreFactoryDefault(RESTORE_GENSETTING);
+	     MApp_DataBase_RestoreFactoryDefault(RESTORE_DATABASE);
+	     //store to flash immediately
+	     MApp_DB_GEN_SaveData_RightNow();
+	     */
+	     break;		//Break the for loop
+	 }
+
+     }
+   }
 }
 
 void MApp_PreInit_ATVProc_Audio_Init(void)

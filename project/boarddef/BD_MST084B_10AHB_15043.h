@@ -169,12 +169,11 @@
 //==========================Triview Function Select===================================
 #ifdef sSP4096Board			//Ray VER 2017.02.07
 #define BOARD_NAME                  						"SP-4096 Rev2"		//Ray VER 2017.01.19
-//#define SOFTWARE_VERSION_NAME							"E0.00.00.04"		//Ray VER 2017.05.23: We use DigitalViewOSDVersion, CustomerSubVersionNumber,DigitalViewRevisionNumber to build verion no.
 #define DigitalViewOSDVersion							"E0.00."		//Ray VER 2017.05.09, For testing with Controller Utility
 #define CustomerSubVersionNumber						"00"			//Ray VER 2017.05.09
 #define DigitalViewRevisionNumber						".06"			//Ray VER 2017.05.09
-#define NameDigitalViewBoardPCBA						"41755"			//Ray VER 2017.05.09: Temporary use SVX-4096 PCBA no. for Controller Utility support
-//#define NameDigitalViewBoardPCBA						"41761"			//Ray VER 2017.05.09: SP-4096 PCBA no.
+//#define NameDigitalViewBoardPCBA						"41755"			//Ray VER 2017.05.09: Temporary use SVX-4096 PCBA no. for Controller Utility support
+#define NameDigitalViewBoardPCBA						"41761"			//Ray VER 2017.05.09: SP-4096 PCBA no.
 #else
 #define BOARD_NAME                  										"TMMYU4020 Rev.A2"	//MingYuan BD Select
 #define SOFTWARE_VERSION_NAME											"V2.01"

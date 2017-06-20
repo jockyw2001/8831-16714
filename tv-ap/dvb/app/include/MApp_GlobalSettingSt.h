@@ -1322,6 +1322,7 @@ typedef struct
     U8 fDefaultPower:1;		   //Ray DPW 2017.05.29: Default power. 0 = OFF, 1 = ON
     E_UI_INPUT_SOURCE	UserPref_DMP_LastUiSrc;		//Ray DMP 2017.04.07: To save last UI source before entering into DMP mode
     MirrorMode_t  g_ImageOrientation;	//Ray ORI 2017.05.05: image orientation:  MIRROR_NORMAL,MIRROR_H_ONLY,MIRROR_V_ONLY,MIRROR_HV,
+    //U8 fRayTest;			//Ray DBG 2017.06.16: Test if reset all default if add a new variable
 
  #if ENABLE_EDID_SWITCH
 //    U8 u8EDID_select:1;

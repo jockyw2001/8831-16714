@@ -266,7 +266,10 @@ void MApp_DB_GEN_Init(void)
 
 #endif
 
+
+
 }
+
 
 void MApp_DB_GEN_SaveData_RightNow(void)
 {

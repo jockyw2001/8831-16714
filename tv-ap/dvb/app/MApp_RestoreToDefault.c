@@ -2426,9 +2426,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -2523,9 +2529,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -2620,9 +2632,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -2718,9 +2736,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -2816,9 +2840,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -2914,9 +2944,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3011,9 +3047,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
             INIT_VIDEO_COLOR_TEMP_USER_G,
             INIT_VIDEO_COLOR_TEMP_USER_B,
 
+	    //Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+	    INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+            INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+            INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+	    /*
             0x32,
             0x32,
             0x32,
+            */
         },
     #endif
         }
@@ -3109,9 +3151,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3207,9 +3255,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3305,9 +3359,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3403,9 +3463,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3501,9 +3567,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3599,9 +3671,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3697,9 +3775,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3795,9 +3879,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3893,9 +3983,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -3991,9 +4087,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_USER_G,
                 INIT_VIDEO_COLOR_TEMP_USER_B,
 
+		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #endif
         }
@@ -4320,14 +4422,17 @@ void MApp_DataBase_RestoreDefaultSystem(U16 u16KeepSetting) //MingYuan Default
     UI_INPUT_SOURCE_TYPE = UI_INPUT_SOURCE_HDMI;
     UI_PREV_INPUT_SOURCE_TYPE = UI_INPUT_SOURCE_HDMI;
 
-    SET_BACKLIGHT_PWM_FREQ(DFFAULT_PWM_FREQUENCY);		//Ray BKL 2017.03.31: Restore default backlight PWM frequency as 160Hz
+    //Ray LDF 2017.06.13: We reset DV setting only if it is not request to keep, or backlight PWM frequency is out of range = 0
+    if(((u16KeepSetting & RESTORE_KEEP_DV_SETTING)==0)||(GET_BACKLIGHT_PWM_FREQ()==0)){
+	SET_BACKLIGHT_PWM_FREQ(DFFAULT_PWM_FREQUENCY);		//Ray BKL 2017.03.31: Restore default backlight PWM frequency as 160Hz
+	SET_BACKLIGHT_INVERT(DISABLE);				//Ray BKL 2017.04.25: Default backlight invert is off
+	SET_BACKLIGHT_CONTROL(BKL_PWM);				//Ray BKL 2017.04.25: Default backlight control mode is PWM
+	SET_BACKLIGHT_MIN_LEVEL(DEFAULT_MIN_BKL_LEVEL);		//Ray BKL 2017.04.25: Default min. backlight level
+    }
     SET_AUTO_SOURCE_SEEK(DEFAULT_AUTO_SOURCE_SEEK);		//Ray ASS 2017.03.31: default auto source seek is ON
     SET_FAIL_OVER(DEFAULT_FAIL_OVER);				//Ray LDF 2017.04.07: default fail over is disable
     UI_INPUT_DMP_PRE_SOURCE = UI_INPUT_SOURCE_NONE;		//Ray DMP 2017.03.23: Default no UI input source before entering DMP mode
-    SET_BACKLIGHT_INVERT(DISABLE);				//Ray BKL 2017.04.25: Default backlight invert is off
-    SET_BACKLIGHT_CONTROL(BKL_PWM);				//Ray BKL 2017.04.25: Default backlight control mode is PWM
     stGenSetting.u8Backlight = 100;				//Ray BKL 2017.05.22: To reset backlight level to 100
-    SET_BACKLIGHT_MIN_LEVEL(DEFAULT_MIN_BKL_LEVEL);		//Ray BKL 2017.04.25: Default min. backlight level
     SET_IMG_ORIENTATION(DEFAULT_IMG_ORIENT);			//Ray ORI 2017.05.05: Default image orientation is normal
     SET_DEFAULT_POWER(DEFAULT_DEFAULT_POWER);			//Ray DPW 2017.05.29: Default default power is on
     MApp_DataBase_RestoreDefault_FactoryLightSensorSetting();	//Ray BKL 2017.05.18: To reset default backlight possible min and max level.
@@ -4657,6 +4762,23 @@ void MApp_DataBase_RestoreDefaultAspectRatio(void)
 }
 
 
+//Ray CTP 2017.06.15: Set color temperature selection to default value
+//*************************************************************************
+//Function name:        MApp_DataBase_RestoreColorTempSelection
+//Passing parameter:    none
+//Return parameter:     none
+//Description:          Restore default color temperature selection for all input port
+//*************************************************************************
+void MApp_DataBase_RestoreColorTempSelection(void)
+{
+  U8 i;
+  for(i = 0; i < DATA_INPUT_SOURCE_NUM; i++)
+  {
+      G_VEDIO_SETTING[i].eColorTemp =  astDefaultVideoDataTbl[i].eColorTemp;
+  }
+}
+
+
 //*************************************************************************
 //Function name:        MApp_DataBase_RestoreDefaultVideo
 //Passing parameter:    none
@@ -4675,16 +4797,18 @@ void MApp_DataBase_RestoreDefaultVideoForUserReset(E_DATA_INPUT_SOURCE enDataInp
         	G_VEDIO_SETTING[i].ePicture = astDefaultVideoDataTbl[i].ePicture;
         	G_VEDIO_SETTING[i].eNRMode = astDefaultVideoDataTbl[i].eNRMode;
         	G_VEDIO_SETTING[i].bBlackLevel = astDefaultVideoDataTbl[i].bBlackLevel;
-        	G_VEDIO_SETTING[i].eColorTemp = astDefaultVideoDataTbl[i].eColorTemp;
+        	//G_VEDIO_SETTING[i].eColorTemp = astDefaultVideoDataTbl[i].eColorTemp;			//Ray CTP 2017.06.12: Move color temp default to MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset
         	G_VEDIO_SETTING[i].eAspectRatio = astDefaultVideoDataTbl[i].eAspectRatio;
         	      	
-        	G_VEDIO_SETTING[i].astPicture[MS_COLOR_TEMP_USER].u8Backlight =  astDefaultVideoDataTbl[i].astPicture[MS_COLOR_TEMP_USER].u8Backlight;
-        	G_VEDIO_SETTING[i].astPicture[MS_COLOR_TEMP_USER].u8Contrast =  astDefaultVideoDataTbl[i].astPicture[MS_COLOR_TEMP_USER].u8Contrast;
-        	G_VEDIO_SETTING[i].astPicture[MS_COLOR_TEMP_USER].u8Brightness =  astDefaultVideoDataTbl[i].astPicture[MS_COLOR_TEMP_USER].u8Brightness;
-        	G_VEDIO_SETTING[i].astPicture[MS_COLOR_TEMP_USER].u8Saturation =  astDefaultVideoDataTbl[i].astPicture[MS_COLOR_TEMP_USER].u8Saturation;
-        	G_VEDIO_SETTING[i].astPicture[MS_COLOR_TEMP_USER].u8Sharpness =  astDefaultVideoDataTbl[i].astPicture[MS_COLOR_TEMP_USER].u8Sharpness;
-        	G_VEDIO_SETTING[i].astPicture[MS_COLOR_TEMP_USER].u8Hue =  astDefaultVideoDataTbl[i].astPicture[MS_COLOR_TEMP_USER].u8Hue;
-        	G_VEDIO_SETTING[i].astPicture[MS_COLOR_TEMP_USER].PicUserMode =  astDefaultVideoDataTbl[i].astPicture[MS_COLOR_TEMP_USER].PicUserMode;
+        	//Ray LDF 2017.06.09: Original firmware use "MS_COLOR_TEMP_USER" in astPicture array.  It should be changed to PICTURE_USER.
+        	//Ray LDF 2017.06.09: Please note the backlight reset below doesn't affect us since we use another backlight parameter "stGenSetting.u8Backlight"
+        	G_VEDIO_SETTING[i].astPicture[PICTURE_USER].u8Backlight =  astDefaultVideoDataTbl[i].astPicture[PICTURE_USER].u8Backlight;
+        	G_VEDIO_SETTING[i].astPicture[PICTURE_USER].u8Contrast =  astDefaultVideoDataTbl[i].astPicture[PICTURE_USER].u8Contrast;
+        	G_VEDIO_SETTING[i].astPicture[PICTURE_USER].u8Brightness =  astDefaultVideoDataTbl[i].astPicture[PICTURE_USER].u8Brightness;
+        	G_VEDIO_SETTING[i].astPicture[PICTURE_USER].u8Saturation =  astDefaultVideoDataTbl[i].astPicture[PICTURE_USER].u8Saturation;
+        	G_VEDIO_SETTING[i].astPicture[PICTURE_USER].u8Sharpness =  astDefaultVideoDataTbl[i].astPicture[PICTURE_USER].u8Sharpness;
+        	G_VEDIO_SETTING[i].astPicture[PICTURE_USER].u8Hue =  astDefaultVideoDataTbl[i].astPicture[PICTURE_USER].u8Hue;
+        	G_VEDIO_SETTING[i].astPicture[PICTURE_USER].PicUserMode =  astDefaultVideoDataTbl[i].astPicture[PICTURE_USER].PicUserMode;
         }
     }
     else
@@ -4693,16 +4817,17 @@ void MApp_DataBase_RestoreDefaultVideoForUserReset(E_DATA_INPUT_SOURCE enDataInp
         	G_VEDIO_SETTING[enDataInputSource].ePicture = astDefaultVideoDataTbl[enDataInputSource].ePicture;
         	G_VEDIO_SETTING[enDataInputSource].eNRMode = astDefaultVideoDataTbl[enDataInputSource].eNRMode;
         	G_VEDIO_SETTING[enDataInputSource].bBlackLevel = astDefaultVideoDataTbl[enDataInputSource].bBlackLevel;
-        	G_VEDIO_SETTING[enDataInputSource].eColorTemp = astDefaultVideoDataTbl[enDataInputSource].eColorTemp;
+        	//G_VEDIO_SETTING[enDataInputSource].eColorTemp = astDefaultVideoDataTbl[enDataInputSource].eColorTemp;		//Ray CTP 2017.06.12: Move color temp default to MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset
         	G_VEDIO_SETTING[enDataInputSource].eAspectRatio = astDefaultVideoDataTbl[enDataInputSource].eAspectRatio;    	
 
-        	G_VEDIO_SETTING[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Backlight =  astDefaultVideoDataTbl[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Backlight;
-        	G_VEDIO_SETTING[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Contrast =  astDefaultVideoDataTbl[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Contrast;
-        	G_VEDIO_SETTING[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Brightness =  astDefaultVideoDataTbl[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Brightness;
-        	G_VEDIO_SETTING[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Saturation =  astDefaultVideoDataTbl[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Saturation;
-        	G_VEDIO_SETTING[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Sharpness =  astDefaultVideoDataTbl[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Sharpness;
-        	G_VEDIO_SETTING[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Hue =  astDefaultVideoDataTbl[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].u8Hue;
-        	G_VEDIO_SETTING[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].PicUserMode =  astDefaultVideoDataTbl[enDataInputSource].astPicture[MS_COLOR_TEMP_USER].PicUserMode;
+        	//Ray LDF 2017.06.09: Original firmware use "MS_COLOR_TEMP_USER" in astPicture array.  It should be changed to PICTURE_USER.
+        	G_VEDIO_SETTING[enDataInputSource].astPicture[PICTURE_USER].u8Backlight =  astDefaultVideoDataTbl[enDataInputSource].astPicture[PICTURE_USER].u8Backlight;
+        	G_VEDIO_SETTING[enDataInputSource].astPicture[PICTURE_USER].u8Contrast =  astDefaultVideoDataTbl[enDataInputSource].astPicture[PICTURE_USER].u8Contrast;
+        	G_VEDIO_SETTING[enDataInputSource].astPicture[PICTURE_USER].u8Brightness =  astDefaultVideoDataTbl[enDataInputSource].astPicture[PICTURE_USER].u8Brightness;
+        	G_VEDIO_SETTING[enDataInputSource].astPicture[PICTURE_USER].u8Saturation =  astDefaultVideoDataTbl[enDataInputSource].astPicture[PICTURE_USER].u8Saturation;
+        	G_VEDIO_SETTING[enDataInputSource].astPicture[PICTURE_USER].u8Sharpness =  astDefaultVideoDataTbl[enDataInputSource].astPicture[PICTURE_USER].u8Sharpness;
+        	G_VEDIO_SETTING[enDataInputSource].astPicture[PICTURE_USER].u8Hue =  astDefaultVideoDataTbl[enDataInputSource].astPicture[PICTURE_USER].u8Hue;
+        	G_VEDIO_SETTING[enDataInputSource].astPicture[PICTURE_USER].PicUserMode =  astDefaultVideoDataTbl[enDataInputSource].astPicture[PICTURE_USER].PicUserMode;
     }
 }
 void MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset(E_DATA_INPUT_SOURCE enDataInputSource)
@@ -4714,6 +4839,9 @@ void MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset(E_DATA_INPUT_SOURCE en
     {
         for(i = 0; i < DATA_INPUT_SOURCE_NUM; i++)
         {
+
+            G_VEDIO_SETTING[i].eColorTemp = astDefaultVideoDataTbl[i].eColorTemp;			//Ray CTP 2017.06.12: Move color temp default to MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset
+
         	  G_WHITE_BALANCE_SETTING[i].wWhiteBalanceDataCS = astDefaultWhiteBalanceDataTbl[i].wWhiteBalanceDataCS;
         	  #if(MS_COLOR_TEMP_COUNT ==5)			//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             G_WHITE_BALANCE_SETTING[i].astColorTemp[MS_COLOR_TEMP_USER].cRedOffset       =  astDefaultWhiteBalanceDataTbl[i].astColorTemp[MS_COLOR_TEMP_USER].cRedOffset;
@@ -4731,7 +4859,10 @@ void MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset(E_DATA_INPUT_SOURCE en
     }
     else
     {
-        	  G_WHITE_BALANCE_SETTING[i].wWhiteBalanceDataCS = astDefaultWhiteBalanceDataTbl[i].wWhiteBalanceDataCS;
+	  G_VEDIO_SETTING[enDataInputSource].eColorTemp = astDefaultVideoDataTbl[enDataInputSource].eColorTemp;			//Ray CTP 2017.06.12: Move color temp default to MApp_DataBase_RestoreDefaultWhiteBalanceForUserReset
+		//Ray CTP 2017.06.12: The sentence below should be changed from i to enDataInputSource
+		     G_WHITE_BALANCE_SETTING[enDataInputSource].wWhiteBalanceDataCS = astDefaultWhiteBalanceDataTbl[enDataInputSource].wWhiteBalanceDataCS;
+        	  //G_WHITE_BALANCE_SETTING[i].wWhiteBalanceDataCS = astDefaultWhiteBalanceDataTbl[i].wWhiteBalanceDataCS;
         	  #if(MS_COLOR_TEMP_COUNT ==5)			//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             G_WHITE_BALANCE_SETTING[enDataInputSource].astColorTemp[MS_COLOR_TEMP_USER].cRedOffset       =  astDefaultWhiteBalanceDataTbl[enDataInputSource].astColorTemp[MS_COLOR_TEMP_USER].cRedOffset;
             G_WHITE_BALANCE_SETTING[enDataInputSource].astColorTemp[MS_COLOR_TEMP_USER].cGreenOffset     =  astDefaultWhiteBalanceDataTbl[enDataInputSource].astColorTemp[MS_COLOR_TEMP_USER].cGreenOffset;
@@ -5408,9 +5539,26 @@ void MApp_DataBase_RestoreDefault_DvbsSetting(void)
 //*************************************************************************
 void MApp_DataBase_RestoreDefaultValue(U16 u16KeepSetting) //MingYuan Default
 {
+    //Ray LDF 2017.06.14: Follows variables are used to temporary store backlight parameters
+    int blPwmFreq=0;
+    BYTE blInvert=0;
+    BYTE blCtrl=0;
+    BYTE blMinLv=0;
+
     EN_LANGUAGE eLanguge = GET_OSD_MENU_LANGUAGE();
 
     //printf("\e[31;1m >> %s(0x%X) \33[m \n", __FUNCTION__, u16KeepSetting);
+
+    //Ray LDF 2017.06.14: If we need to keep DV parameters before restore default
+    if ((RESTORE_KEEP_DV_SETTING& u16KeepSetting))
+    {
+	//Ray LDF 2017.06.14: keep the current backlight parameters
+	blPwmFreq = GET_BACKLIGHT_PWM_FREQ();
+	blInvert = GET_BACKLIGHT_INVERT();
+	blCtrl = GET_BACKLIGHT_CONTROL();
+	blMinLv = GET_BACKLIGHT_MIN_LEVEL();
+    }
+
 
     /* Set entire database to 0 */
     if (!(RESTORE_KEEP_SYSTEM_PASSWORD& u16KeepSetting))
@@ -5424,7 +5572,7 @@ void MApp_DataBase_RestoreDefaultValue(U16 u16KeepSetting) //MingYuan Default
     stGenSetting.u8VersionCheckCom = DEFAULT_DATABASE_VERSION_COM;
 
 		#ifdef sAddBacklightPara
-		stGenSetting.u8Backlight = 100;
+		stGenSetting.u8Backlight = 100;			//Ray LDF 2017.06.14: Need to consider whether backlight level can be reset by factory reset
 		#endif		
     //*************************************************************************
     // Restore default SystemSetting
@@ -5435,6 +5583,17 @@ void MApp_DataBase_RestoreDefaultValue(U16 u16KeepSetting) //MingYuan Default
     // Restore Video setting
     MApp_DataBase_RestoreDefaultVideo(DATA_INPUT_SOURCE_NUM);
 
+
+    //Ray LDF 2017.06.14: Check if we need to keep DV parameters
+     if ((RESTORE_KEEP_DV_SETTING& u16KeepSetting))
+     {
+ 	//Ray LDF 2017.06.14: If yes, restore the current backlight parameters
+ 	SET_BACKLIGHT_PWM_FREQ(blPwmFreq);
+ 	SET_BACKLIGHT_INVERT(blInvert);
+ 	SET_BACKLIGHT_CONTROL(blCtrl);
+ 	SET_BACKLIGHT_MIN_LEVEL(blMinLv);
+
+     }
 
     //*************************************************************************
     // Restore default AudioSetting
@@ -5613,7 +5772,8 @@ void MApp_DataBase_RestoreFactoryDefault(U8 u8RestoreMask)
     if(u8RestoreMask&RESTORE_GENSETTING)
     {
         //reset general setting structure
-        MApp_InitGenSetting();
+        //MApp_InitGenSetting();
+	MApp_FactoryResetGenSetting();		//Ray LDF 2017.06.14: Factory reset GenSetting. The DV parameters like backlight settings are kept without reset
     }
 
     if(u8RestoreMask&RESTORE_DATABASE)

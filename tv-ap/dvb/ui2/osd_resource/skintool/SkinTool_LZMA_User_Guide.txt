@@ -1,0 +1,9 @@
+1. LZMA compress feature requirement:
+		a. SkinTool.exe -> V.3.2.1.1
+		b. 7lzma.exe 		-> LZMA Utility 9.12 beta
+2. Turn on config
+		a. SkinTool.ini -> [Preference] GenerateBmpBinTvDVBTWithLZSS=5
+		b. ZUI.xml			-> <SkinToolProject> 
+											 	<SkinToolProject> 
+													<ProjectProperties ... GenBmpBinTvDVBTWithLZSS="5" .../>
+3. Use skintool.exe to generate related files.

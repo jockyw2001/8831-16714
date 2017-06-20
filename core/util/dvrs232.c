@@ -38,9 +38,14 @@
 #include "drvGPIO.h"			//Ray EDD 2017.02.24: For test SDA SCL set high low
 #include "EXT_GPIO.h"			//Ray IOE 2017.02.27: To access external IO expander functions
 #include "dvExtAudio.h"			//Ray EXA 2017.02.27: To access external audio board functions
+#include "msAPI_audio.h"		//Ray VOL 2017.06.19: To access msAPI_AUD_AdjustAudioFactor
+#include "MApp_Audio.h"			//Ray VOL 2017.06.19: To access MAX_NUM_OF_VOL_LEVEL
 #include "MApp_ZUI_ACTglobal.h"		//Ray BRI 2017.05.08: To access MApp_ZUI_ACT_DecIncValue function
 #include "MApp_ZUI_ACTinputsource.h"	//Ray SRC 2017.05.08: To access MApp_ZUI_ACT_InputSourceSwitch
 #include "apiXC_Ace.h"			//Ray SAT 2017.05.09: To access MApi_XC_ACE_PicSetSaturation
+#include "MApp_PCMode.h"		//Ray SRC 2017.06.15: To access input source resolution, h and v freq
+#include "MApp_IR.h"			//Ray OSM 2017.06.16: To access MApp_RS232_SetKey
+#include "msIR.h"			//Ray OSM 2017.06.16: To access IR key definition like IRKEY_MENU
 #include <string.h>			//Ray VER 2017.05.09: To access strcpy, strcat functions
 
 //******************************************************************************
@@ -96,12 +101,38 @@ void dv_Serial_Gamma_Para0(BYTE ucCmdPara);
 void dv_Serial_Info_Para0(BYTE ucCmdPara);
 void dv_Serial_PWMFrequency_Para0(BYTE ucCmdPara);
 void dv_Serial_PWMFrequency_Para2(BYTE *ucCmdPara);
+void dv_Serial_DispOrient_Para0(BYTE ucCmdPara);
+void dv_Serial_ColorTemp_Para0(BYTE ucCmdPara);
+void dv_Serial_ColorTemp_Para2(BYTE *ucCmdPara);
+void dv_Serial_ColorTemp_Para3(BYTE *ucCmdPara);
+void dv_Serial_QuerySource(void);
+void dv_Serial_QuerySourceTx(E_DATA_INPUT_SOURCE ucSource);
+void dv_Serial_BackLightControl_Para0(BYTE ucCmdPara);
+void dv_Serial_BackLightControl_Para1(BYTE *ucCmdPara);
+void dv_Serial_BackLight_PWM_DA_Para0(BYTE ucCmdPara);
+void dv_Serial_BackLightInvert_Para0(BYTE ucCmdPara);
+void dv_Serial_MinBackLightValue_Para0(BYTE ucCmdPara);
+void dv_Serial_MinBackLightValue_Para1(BYTE *ucCmdPara);
+void dv_Serial_DefaultPower_Para2(BYTE *ucCmdPara);
+void dv_Serial_Power_Para0(BYTE ucCmdPara);
+void dv_Serial_CommandQuery_Para1(BYTE *ucCmdPara);
+void dv_Serial_CommandQuery_Para3(BYTE *ucCmdPara);
+void dv_Serial_CommandQuery_Para5(BYTE *ucCmdPara);
+void dv_Serial_Volume_Para1(BYTE *ucCmdPara);
+void dv_Serial_Volume_Para2(BYTE *ucCmdPara);
 void dv_Serial_TestCmd_Para1(BYTE *ucCmdPara);
 WORD dv_DataInputSourceValue(E_DATA_INPUT_SOURCE ucSource);
 WORD dv_UiInputSourceValue(E_UI_INPUT_SOURCE ucSource);
 
 
 extern void MApp_Scaler_Setting_SetVDScale (EN_MENU_AspectRatio eAspect, SCALER_WIN eWindow);	//Ray ART 2017.05.24
+extern void dv_SetImageOrientation(void);		//Ray ORI 2017.05.05
+extern void MApp_UserReset(void);			//Ray LDF 2017.06.16
+extern void  MApp_FactoryReset(void);			//Ray LDF 2017.06.16
+extern void MApp_UiMenuFunc_AdjustBacklightPWM(BOOLEAN bEnable);	//Ray BKL 2017.06.19
+extern BOOL MApp_WriteDatabase(U32 dstIndex, U8* srcAddr, U16 size);	//Ray BKL 2017.06.19: To save backlight level
+extern void MApp_UiMenu_MuteWin_Show(void);		//Ray VOL 2017.06.19
+extern void MApp_UiMenu_MuteWin_Hide(void);		//Ray VOL 2017.06.19
 
 /*
 
@@ -112,12 +143,10 @@ extern void MApp_Scaler_Setting_SetVDScale (EN_MENU_AspectRatio eAspect, SCALER_
 				//Ray 2016.12.15
 void dv_SendBCDValuesToUART(BYTE ucSendByteNo,WORD usSendValue);	//Ray 2016.12.15
 void dv_SendValuesToUART(BYTE ucSendByteNo,WORD usSendValue);
-void dv_Serial_QuerySource(void);
-void dv_Serial_QuerySourceTx(EnumSourceSearchPort videoInput);
 
 
-void dv_Serial_BackLightControl_Para0(BYTE ucCmdPara);
-void dv_Serial_BackLightControl_Para1(BYTE *ucCmdPara);
+
+
 
 
 
@@ -142,16 +171,14 @@ void dv_Serial_PipHPosn_Para0(BYTE ucCmdPara);
 void dv_Serial_PipHPosn_Para1(BYTE *ucCmdPara);
 void dv_Serial_PipVPosn_Para0(BYTE ucCmdPara);
 void dv_Serial_PipVPosn_Para1(BYTE *ucCmdPara);
-void dv_Serial_ColorTemp_Para0(BYTE ucCmdPara);
+
 void dv_Serial_TempRed_Para0(BYTE ucCmdPara);
 void dv_Serial_TempRed_Para1(BYTE *ucCmdPara);
 void dv_Serial_TempGreen_Para0(BYTE ucCmdPara);
 void dv_Serial_TempGreen_Para1(BYTE *ucCmdPara);
 void dv_Serial_TempBlue_Para0(BYTE ucCmdPara);
 void dv_Serial_TempBlue_Para1(BYTE *ucCmdPara);
-void dv_Serial_CommandQuery_Para1(BYTE *ucCmdPara);
-void dv_Serial_CommandQuery_Para3(BYTE *ucCmdPara);
-void dv_Serial_CommandQuery_Para5(BYTE *ucCmdPara);
+
 void dv_Serial_NewInputDisp_Para0(BYTE ucCmdPara);
 void dv_Serial_Timeout_Para0(BYTE ucCmdPara);
 void dv_Serial_Timeout_Para1(BYTE *ucCmdPara);
@@ -163,15 +190,13 @@ void dv_Serial_PipSize_Para0(BYTE ucCmdPara);
 void dv_Serial_PipSize_Para1(BYTE *ucCmdPara);
 void dv_Serial_SourceLayout_Para0(BYTE ucCmdPara);
 void dv_Serial_AutoPowerSave_Para0(BYTE ucCmdPara);
-void dv_Serial_DispOrient_Para0(BYTE ucCmdPara);
 void dv_Serial_AckSet_Para0(BYTE ucCmdPara);
-void dv_Serial_Power_Para0(BYTE ucCmdPara);
-void dv_Serial_TestPattern_Para0(BYTE ucCmdPara);		//Ray 2016.10.14
-void dv_Serial_BackLight_PWM_DA_Para0(BYTE ucCmdPara);
 
-void dv_Serial_BackLightInvert_Para0(BYTE ucCmdPara);
-void dv_Serial_MinBackLightValue_Para0(BYTE ucCmdPara);
-void dv_Serial_MinBackLightValue_Para1(BYTE *ucCmdPara);
+void dv_Serial_TestPattern_Para0(BYTE ucCmdPara);		//Ray 2016.10.14
+
+
+
+
 void dv_Serial_OSDSwitchMountLock_Para0(BYTE ucCmdPara);
 void dv_Serial_Vx1PinState_Para1(BYTE *ucCmdPara);
 void dv_Serial_EEPanelTime_Para0(BYTE *ucCmdPara);
@@ -185,8 +210,7 @@ void dv_Serial_MEMC_Para1(BYTE *ucCmdPara);
 void dv_Serial_NT72324_Para2(BYTE *ucCmdPara);
 void dv_Serial_PIP_Blender_Para0(BYTE ucCmdPara);
 void dv_Serial_PIP_Blender_Para1(BYTE *ucCmdPara);
-void dv_Serial_Volume_Para1(BYTE *ucCmdPara);
-void dv_Serial_Volume_Para2(BYTE *ucCmdPara);
+
 
 void dv_Serial_PipSource_Para1(BYTE *ucCmdPara);
 void dv_Serial_PipSource_Para2(BYTE *ucCmdPara);
@@ -195,7 +219,7 @@ void dv_Serial_PipSource_Para2(BYTE *ucCmdPara);
 
 
 
-void dv_Serial_DefaultPower_Para2(BYTE *ucCmdPara);		//Ray 2016.10.14
+
 void dv_Serial_ColorEffectExt_Para2(BYTE *ucCmdPara);
 
 BYTE dv_writeEDID(BYTE port);
@@ -238,6 +262,61 @@ typedef enum{
   _GAMMA_24,
 };
 
+
+//Implemented/Supported RS-232 commands table
+BYTE code SerialCommandTable[] = {
+    //Single byte commands
+    Serial_Plus,
+    Serial_Minus,
+    Serial_Down,
+    Serial_Up,
+    Serial_Menu,
+    Serial_HRes,
+    Serial_VRes,
+    Serial_HFreq,
+    Serial_VFreq,
+    Serial_QuerySource,
+    Serial_LoadDefault,
+    Serial_ALLLoadDefault,
+
+    //Two bytes commands
+    Serial_BackLightControl,
+    Serial_BackLightOnOff,
+    Serial_Brightness,
+    Serial_ColorSat,
+    Serial_Hue,
+    Serial_Sharpness,
+    Serial_Source,
+    Serial_ColorTemp,
+    Serial_AutoSource,
+    Serial_ScaleMode,
+    Serial_DispOrient,
+    Serial_Power,
+    Serial_Info,
+    Serial_PWMFrequency,
+    Serial_BackLight_PWM_DA,
+    Serial_BackLightInvert,
+    //3 bytes command
+    Serial_Volume,
+    Serial_Contrast,
+    Serial_CommandQuery,
+    //4 bytes commands
+
+};
+
+//Implemented/Supported RS-232 extend commands table 0xEE
+BYTE code SerialExtCommandTable[] = {
+    Serial_MinBackLightValue,
+};
+
+//RS-232 extend commands table 0xEE with two command bytes
+WORD code SerialExtCommand2ByteTable[]={
+    Serial_DefaultPower,			//default power on/off
+};
+
+
+
+
 //extern BYTE g_ucUart2Data[];		//Ray 2016.10.04: UART2 receive buffer with length UART_RD_SIZE
 
 //extern StructAdcDataType g_stAdcData;			//Ray 2016.04.19: To read color gain ADC data of VGA (test cmd 0xf2 0x52 0x30)
@@ -264,100 +343,7 @@ BYTE code tEDID_TABLE_D4[] =
 };
 */
 /*
-//Ray 2016.05.27: Implemented/Supported RS-232 commands table
-BYTE code SerialCommandTable[] = {
-    //Single byte commands
-    Serial_Plus,
-    Serial_Minus,
-    Serial_Down,
-    Serial_Up,
-    Serial_Menu,
-    Serial_HRes,
-    Serial_VRes,
-    Serial_HFreq,
-    Serial_VFreq,
-    Serial_QuerySource,
-    Serial_LoadDefault,
-    Serial_ALLLoadDefault,
-    //Serial_SaveUserDefault,
-    //Serial_LoadUserDefault,
-    Serial_OsdStatus,
-    Serial_OsdOff,
-    Serial_Auto,
-    Serial_Calibrate,
-    Serial_SwapMainAndPip,
-    //Two bytes commands
-    //Serial_CopyRight,					//Ray 2016.11.04: hidden
-    Serial_BackLightControl,
-    Serial_BackLightOnOff,
-    Serial_Brightness,
-    Serial_ColorSat,
-    Serial_Hue,
-    Serial_Phase,
-    Serial_HorzPosn,
-    Serial_VertPosn,
-    Serial_VgaClock,
-    Serial_Sharpness,
-    Serial_OsdRotate,
-    Serial_OsdHPosn,
-    Serial_OsdVPosn,
-    Serial_OsdTransparency,
-    Serial_Timeout,
-    Serial_Source,
-    Serial_PipHPosn,
-    Serial_PipVPosn,
-    Serial_PipSource,
-    Serial_PipSize,
-    Serial_ColorTemp,
-    Serial_TempRed,
-    Serial_TempGreen,
-    Serial_TempBlue,
-    Serial_NewInputDisp,
-    Serial_SourceLayout,
-    Serial_Gamma,
-    Serial_AutoSource,
-    Serial_AutoPowerSave,
-    Serial_ScaleMode,
-    Serial_DispOrient,
-    Serial_AckSet,
-    Serial_Power,
-    Serial_Info,
-    //Serial_TestPattern,				//Ray 2016.11.04: Not yet announce to implement
-    Serial_PWMFrequency,
-    Serial_BackLight_PWM_DA,
-    Serial_BackLightInvert,
-    Serial_PIP_Blender,
-    Serial_Runtime,
-    //3 bytes command
-    Serial_Volume,
-    Serial_Contrast,
-    Serial_HotKeys,
-    //Serial_TestCmd,					//Ray 2016.11.04: Hidden
-    Serial_CommandQuery,
-#if(_SVX4096_120==_ON)		//Ray 2017.01.09: MEMC command is available only in SVX4096-120
-    Serial_MEMC,
-#endif
-    //4 bytes commands
 
-};
-
-//Ray 2016.05.27: Implemented/Supported RS-232 extend commands table 0xEE
-BYTE code SerialExtCommandTable[] = {
-    Serial_MinBackLightValue,
-    Serial_OSDSwitchMountLock,
-    Serial_Vx1PinState,
-    Serial_UserEDID,		//Ray 2017.01.09: Move user EDID download to here
-#if(_SVX4096_120==_OFF)		//Ray 2016.11.10: EE panel timing download command is not available in SVX4096-120
-    Serial_EEPanelTime,
-#endif
-
-};
-
-//Ray 2016.06.24: RS-232 extend commands table 0xEE with two command bytes
-WORD code SerialExtCommand2ByteTable[]={
-    Serial_ColorEffectExt,			//Only put 0x71 as extend command byte of color effect
-    Serial_DefaultPower,			//Ray 2016.10.14: default power on/off
-};
 
 */
 //******************************************************************************
@@ -495,75 +481,75 @@ BYTE dv_ProcessUart1IncomingData(void)
 //**********************************************************
 void dv_RS232_bCmdParaPtr_0(BYTE ucCmd)
 {
-  /*
+
+  U16 usValue,u16Fx10;
   int nTemp1;
   BYTE ucTemp2;
   BYTE ucTemp3[2];
 
   switch(ucCmd)
   {
-    case Serial_Plus:					//Command 0xFC
-      SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Execute Press Plus key function as RIGHT in RTD2796 firmware
-      break;
-
-    case Serial_Minus:					//Command 0xFD
-      SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Execute Press Minus key function as LEFT in RTD2796 firmware
-      break;
-
-    case Serial_Down:					//Command 0xFA
-      SET_KEYMESSAGE(_DOWN_KEY_MESSAGE);		//Execute Press Down key function as DOWN in RTD2796 firmware
-      break;
-
-    case Serial_Up:					//Command 0xFB
-      SET_KEYMESSAGE(_EXIT_KEY_MESSAGE);		//Execute Press UP key function as EXIT in RTD2796 firmware
-      break;
-
-    case Serial_Menu:					//Command 0xF7
-      SET_KEYMESSAGE(_MENU_KEY_MESSAGE);		//Execute Press MENU key function
-      break;
-
-    case Serial_HRes:					//Command 0xB7
-      nTemp1 = GET_INPUT_TIMING_HWIDTH();		//Read Horizontal Resolution
+      case Serial_HRes:					//Command 0xB7
+	if (IsVgaInUse()){
+	    usValue = MApp_PCMode_Get_HResolution(MAIN_WINDOW , TRUE);
+	}else{
+	    usValue = MApp_PCMode_Get_HResolution(MAIN_WINDOW, FALSE);
+	}
       //Ray 2016.03.17: Need to check if we need to show 0x1000 for 4096x2160 input
-      if((nTemp1/256)<0x10){
-	ucTemp2 = 0x0f & (BYTE)(nTemp1/256);		//Get the 3rd digit hex byte
+      if((usValue/256)<0x10){
+	ucTemp2 = 0x0f & (BYTE)(usValue/256);		//Get the 3rd digit hex byte
 	ucTemp2 = dv_HexDigitToAscii(ucTemp2);		//Convert hex digital to ASCII
-	dv_TxByteToUART(ucTemp2);				//Send 3rd digit hex byte in ASCII to UART1
+	dv_TxByteToUART(ucTemp2);			//Send 3rd digit hex byte in ASCII to UART1
       }
       else{
-	ucTemp2 = 0x1f & (BYTE)(nTemp1/256);		//Ray 2016.03.17: Need to show 0x1000 for 4096x2160 input. So change from 0x0f to 0x1f
+	ucTemp2 = 0x1f & (BYTE)(usValue/256);		//Ray 2016.03.17: Need to show 0x1000 for 4096x2160 input. So change from 0x0f to 0x1f
 	dv_SerialTransmitHex(ucTemp2);
       }
-      ucTemp2 = (BYTE)nTemp1;				//Get 2nd & 1st digit hex value and then send to UART1
+      ucTemp2 = (BYTE)usValue;				//Get 2nd & 1st digit hex value and then send to UART1
       dv_SerialTransmitHex(ucTemp2);
       break;
 
     case Serial_VRes:					//Command 0xB8
-      nTemp1 = GET_INPUT_TIMING_VHEIGHT();		//Read Vertical Resolution
-      ucTemp2 = 0x0f & (BYTE)(nTemp1/256);		//Get the 3rd digit hex byte
+	if (IsVgaInUse()){
+	    usValue = MApp_PCMode_Get_VResolution(MAIN_WINDOW , TRUE);
+	}else{
+	    usValue = MApp_PCMode_Get_VResolution(MAIN_WINDOW, FALSE);
+	}
+      ucTemp2 = 0x0f & (BYTE)(usValue/256);		//Get the 3rd digit hex byte
       ucTemp2 = dv_HexDigitToAscii(ucTemp2);		//Convert hex digital to ASCII
       dv_TxByteToUART(ucTemp2);				//Send 3rd digit hex byte in ASCII to UART1
-      ucTemp2 = (BYTE)nTemp1;				//Get 2nd & 1st digit hex value and then send to UART1
+      ucTemp2 = (BYTE)usValue;				//Get 2nd & 1st digit hex value and then send to UART1
       dv_SerialTransmitHex(ucTemp2);
       break;
 
     case Serial_HFreq:					//Command 0xB9
-      nTemp1 = GET_INPUT_TIMING_HFREQ();		//Read Horizontal Frequency (unit: 0.1kHz)
-      ucTemp2 = 0x0f & (BYTE)(nTemp1/256);		//Get the 3rd digit hex byte
+      if (IsVgaInUse()){
+	  usValue = (MApi_XC_Getu16HorizontalFrequency(MApp_PCMode_Get_Mode_Idx(MAIN_WINDOW))+5)/10; 	//Ray OSD 2017.04.19: Get horizontal freq (+5 is for round off before /10)
+      }else{
+	  usValue = (MApi_XC_PCMonitor_Get_HFreqx10(MAIN_WINDOW)+5)/10;		//(+5 is for round off before /10)
+      }
+      usValue *=10;					//From unit of kHz and change to unit of 100Hz
+      ucTemp2 = 0x0f & (BYTE)(usValue/256);		//Get the 3rd digit hex byte
       ucTemp2 = dv_HexDigitToAscii(ucTemp2);		//Convert hex digital to ASCII
       dv_TxByteToUART(ucTemp2);				//Send 3rd digit hex byte in ASCII to UART1
-      ucTemp2 = (BYTE)nTemp1;				//Get 2nd & 1st digit hex value and then send to UART1
+      ucTemp2 = (BYTE)usValue;				//Get 2nd & 1st digit hex value and then send to UART1
       dv_SerialTransmitHex(ucTemp2);
       break;
 
     case Serial_VFreq:					//Command 0xBA
-      nTemp1 = GET_INPUT_TIMING_VFREQ()/10;		//Read Vertical Frequency (Divide 10 to convert from unit 0.1Hz to 1Hz)
-      ucTemp2 = 0x0f & (BYTE)(nTemp1/256);		//Get the 3rd digit hex byte
+      if (IsVgaInUse()){
+          u16Fx10 = MApi_XC_GetVerticalFrequency(MApp_PCMode_Get_Mode_Idx(MAIN_WINDOW));
+          usValue = u16Fx10 / 10;
+      }else{
+	  u16Fx10 = MApi_XC_PCMonitor_Get_VFreqx10(MAIN_WINDOW);
+	  usValue = (u16Fx10+5)/10;
+      }
+      ucTemp2 = 0x0f & (BYTE)(usValue/256);		//Get the 3rd digit hex byte
       ucTemp2 = dv_HexDigitToAscii(ucTemp2);		//Convert hex digital to ASCII
       dv_TxByteToUART(ucTemp2);				//Send 3rd digit hex byte in ASCII to UART1
-      ucTemp2 = (BYTE)nTemp1;				//Get 2nd & 1st digit hex value and then send to UART1
+      ucTemp2 = (BYTE)usValue;				//Get 2nd & 1st digit hex value and then send to UART1
       dv_SerialTransmitHex(ucTemp2);
-      if(g_stMDomainInputData.b1Interlace==TRUE){
+      if ((MApi_XC_PCMonitor_GetSyncStatus(MAIN_WINDOW) & XC_MD_INTERLACE_BIT)&& IsHDMIInUse()){
 	  dv_TxByteToUART('i');				//Send 'i' for interlace mode
       }
       else{
@@ -571,24 +557,42 @@ void dv_RS232_bCmdParaPtr_0(BYTE ucCmd)
       }
       break;
 
+
+    case Serial_Plus:					//Command 0xFC
+      MApp_RS232_SetKey(IRKEY_RIGHT);			//Execute Press Plus key function as RIGHT
+      break;
+
+    case Serial_Minus:					//Command 0xFD
+      MApp_RS232_SetKey(IRKEY_LEFT);			//Execute Press Minus key function as LEFT
+      break;
+
+    case Serial_Down:					//Command 0xFA
+      MApp_RS232_SetKey(IRKEY_DOWN);			//Execute Press Down key function
+      break;
+
+    case Serial_Up:					//Command 0xFB
+      MApp_RS232_SetKey(IRKEY_UP);				//Execute Press UP key function
+      break;
+
+    case Serial_Menu:					//Command 0xF7
+      MApp_RS232_SetKey(IRKEY_MENU);			//Execute Press MENU key function
+      break;
+
     case Serial_QuerySource:				//Command 0xC9
       dv_Serial_QuerySource();
       break;
 
     case Serial_LoadDefault:				//Command 0xCE
-      OsdDispOsdReset();				//Load the default setting by reset
+      MApp_UserReset();					//Load the default setting by reset
       dv_TxByteToUART(0x31);				//Transmit 0x31 to denote reset success
       break;
 
     case Serial_ALLLoadDefault:				//Command 0xCF
-      ucTemp3[0]=0xff;
-      ucTemp3[1]=0xff;
-      UserCommonEepromWrite(_EEPROM_CHECKSUM_ADDRESS, 2, ucTemp3);	//Ray 2016.01.05: Intentionally overwrite the checksum and version no. inside EEPROM so as to do all reset
-      RTDEepromStartup(0);						//Ray 2016.11.29: arg 0 means won't overwrite input port during Load all default setting by reset
-      OsdDispOsdReset();				//Load the default setting by reset
       dv_TxByteToUART(0x31);				//Transmit 0x31 to denote reset success
+      MApp_FactoryReset();				//Load all default setting, including color temperature
       break;
 
+/*
     case Serial_SaveUserDefault:			//Command 0xD7
       //Ray 2015.11.13: No such function in RTD2796 demo code.  Need to implement later on
       break;
@@ -648,30 +652,13 @@ void dv_RS232_bCmdParaPtr_0(BYTE ucCmd)
       }
       break;
 
-
-    case Serial_SwapMainAndPip:				//Command 0xE3, swap PIP or PBP video source
-#if(_PIP_DISPLAY_SUPPORT == _ON||_PBP_LR_DISPLAY_SUPPORT == _ON||_PBP_TB_DISPLAY_SUPPORT == _ON)
-      switch(SysModeGetDisplayMode())
-      {
-	case _DISPLAY_MODE_PIP:
-	case _DISPLAY_MODE_PBP_LR:
-	case _DISPLAY_MODE_PBP_TB:
-	  UserAdjustSwapInputPort();
-	  dv_TxByteToUART(0x31);			//send 0x31 after success swap source
-	  break;
-	default:
-	  dv_TxByteToUART(0x30);			//If it is not PIP or PBP mode, we cannot swap source, send 0x30
-	  break;
-      }
-#endif
-      break;
-
+*/
 
     default:
       break;
 
   }
-  */
+
 }
 
 //*********************************************************
@@ -704,6 +691,10 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_ScaleMode_Para0(ucCmdPara[0]);
       break;
 
+    case Serial_DispOrient:			//command 0x8e, change display orientation
+      dv_Serial_DispOrient_Para0(ucCmdPara[0]);
+      break;
+
     case Serial_Source:				//command 0x98, Input 1P source selection
       dv_Serial_Source_Para0(ucCmdPara[0]);
       break;
@@ -716,28 +707,46 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_Gamma_Para0(ucCmdPara[0]);
       break;
 
+    case Serial_ColorTemp:			//command 0xb3, color temperature control
+      dv_Serial_ColorTemp_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_Power:				//command 0xc8, Soft power on/off
+      dv_Serial_Power_Para0(ucCmdPara[0]);
+      break;
+
     case Serial_Info:				//command 0xcb, Check board information
       dv_Serial_Info_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_BackLightControl:		//Command 0xE0
+      dv_Serial_BackLightControl_Para0(ucCmdPara[0]);
       break;
 
     case Serial_BackLightOnOff:			//Command 0xE1
       dv_Serial_BackLightOnOff_Para0(ucCmdPara[0]);
       break;
 
+    case Serial_BackLight_PWM_DA:		//command 0xe5, PWM or D/A backlight control
+      dv_Serial_BackLight_PWM_DA_Para0(ucCmdPara[0]);
+      break;
+
     case Serial_PWMFrequency:			//command 0xE6, PWM frequency
       dv_Serial_PWMFrequency_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_BackLightInvert:		//command 0xE7, backlight invert control
+      dv_Serial_BackLightInvert_Para0(ucCmdPara[0]);
       break;
 
     case Serial_CopyRight:			//Command 0xF8
       dv_Serial_CopyRight_Para0(ucCmdPara[0]);	//Transmit "DIGITALVIEW LTD." text to UART
       break;
 
+
+
+
 /*
-    case Serial_BackLightControl:		//Command 0xE0
-      dv_Serial_BackLightControl_Para0(ucCmdPara[0]);
-      break;
-
-
 
 
 
@@ -806,9 +815,7 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_PipSize_Para0(ucCmdPara[0]);
       break;
 
-    case Serial_ColorTemp:			//command 0xb3, color temperature control
-      dv_Serial_ColorTemp_Para0(ucCmdPara[0]);
-      break;
+
 
     case Serial_TempRed:			//command 0xb4, red color temperature setting
       dv_Serial_TempRed_Para0(ucCmdPara[0]);
@@ -839,32 +846,17 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
       break;
 
 
-
-    case Serial_DispOrient:			//command 0x8e, change display orientation
-      dv_Serial_DispOrient_Para0(ucCmdPara[0]);
-      break;
-
     case Serial_AckSet:				//command 0xc1, RS-232 acknowledge
       dv_Serial_AckSet_Para0(ucCmdPara[0]);
       break;
 
-    case Serial_Power:				//command 0xc8, Soft power on/off
-      dv_Serial_Power_Para0(ucCmdPara[0]);
-      break;
+
 
     case Serial_TestPattern:			//command 0xcd, Display test pattern
       dv_Serial_TestPattern_Para0(ucCmdPara[0]);
       break;
 
-    case Serial_BackLight_PWM_DA:		//command 0xe5, PWM or D/A backlight control
-      dv_Serial_BackLight_PWM_DA_Para0(ucCmdPara[0]);
-      break;
 
-
-
-    case Serial_BackLightInvert:		//command 0xe7, backlight invert control
-      dv_Serial_BackLightInvert_Para0(ucCmdPara[0]);
-      break;
 
     case Serial_PIP_Blender:			//command 0xed, PIP transparency control
       dv_Serial_PIP_Blender_Para0(ucCmdPara[0]);
@@ -886,6 +878,10 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
 {
   switch(ucCmd)
   {
+    case Serial_Volume:				//0x80, volume control
+      dv_Serial_Volume_Para1(ucCmdPara);
+      break;
+
     case Serial_Brightness:
       dv_Serial_Brightness_Para1(ucCmdPara);	//0x81, brightness control
       break;
@@ -910,10 +906,17 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_Source_Para1(ucCmdPara);
       break;
 
-    /*
-    case Serial_Volume:				//0x80, volume control
-      dv_Serial_Volume_Para1(ucCmdPara);
+    case Serial_CommandQuery:			//command 0xc4, RS-232 command query
+      dv_Serial_CommandQuery_Para1(ucCmdPara);
       break;
+
+    case Serial_BackLightControl:		//Command 0xE0
+      dv_Serial_BackLightControl_Para1(ucCmdPara);
+      break;
+
+
+    /*
+
 
     case Serial_Sharpness:			//0x8a, sharpness control
       dv_Serial_Sharpness_Para1(ucCmdPara);
@@ -992,17 +995,12 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_TempBlue_Para1(ucCmdPara);
       break;
 
-    case Serial_CommandQuery:			//command 0xc4, RS-232 command query
-      dv_Serial_CommandQuery_Para1(ucCmdPara);
-      break;
+
 
     case Serial_MEMC:				//command 0xca, MEMC setting
       dv_Serial_MEMC_Para1(ucCmdPara);
       break;
 
-    case Serial_BackLightControl:		//Command 0xE0
-      dv_Serial_BackLightControl_Para1(ucCmdPara);
-      break;
 
     case Serial_PIP_Blender:			//Command 0xED, PIP transparency control
        dv_Serial_PIP_Blender_Para1(ucCmdPara);
@@ -1011,12 +1009,13 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
     case Serial_TestCmd:			//command 0xF2, internal test command
       dv_Serial_TestCmd_Para1(ucCmdPara);
       break;
-   /*
+
     case Serial_Command_Extend:			//Command 0xEE, extended command
       if(*ucCmdPara==Serial_MinBackLightValue){			//Command 0x5C, backlight minimum value
 	  ucCmdPara++;						//Go to parameter byte
 	  dv_Serial_MinBackLightValue_Para0(ucCmdPara[0]);
       }
+      /*
       if(*ucCmdPara==Serial_OSDSwitchMountLock){		//Command 0x62, OSD switch mount lock
 	  ucCmdPara++;						//Go to parameter byte
 	  dv_Serial_OSDSwitchMountLock_Para0(ucCmdPara[0]);
@@ -1025,9 +1024,9 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
 	  ucCmdPara++;						//Go to parameter byte
 	  dv_Serial_EEPanelTime_Para0(ucCmdPara);
       }
-
+      */
       break;
-    */
+
     default:
       break;
   }
@@ -1043,8 +1042,14 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
 //**********************************************************
 void dv_RS232_bCmdParaPtr_3(BYTE ucCmd, BYTE *ucCmdPara)
 {
+  WORD usPara;
+
   switch(ucCmd)
   {
+
+    case Serial_Volume:				//command 0x80, volume change
+      dv_Serial_Volume_Para2(ucCmdPara);
+      break;
 
     case Serial_Brightness:
       dv_Serial_Brightness_Para2(ucCmdPara);	//0x81, brightness control
@@ -1066,6 +1071,10 @@ void dv_RS232_bCmdParaPtr_3(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_Sharpness_Para2(ucCmdPara);
       break;
 
+    case Serial_ColorTemp:			//command 0xb3, color temperature control
+      dv_Serial_ColorTemp_Para2(ucCmdPara);
+      break;
+
     case Serial_PWMFrequency:			//command 0xe6, PWM frequency
       dv_Serial_PWMFrequency_Para2(ucCmdPara);
       break;
@@ -1073,27 +1082,23 @@ void dv_RS232_bCmdParaPtr_3(BYTE ucCmd, BYTE *ucCmdPara)
 
     /*
 
-    case Serial_Volume:				//command 0x80, volume change
-      dv_Serial_Volume_Para2(ucCmdPara);
-      break;
+
 
 
 
     case Serial_PipSource:			//command 0xa7, PBP P3/P4 source change
       dv_Serial_PipSource_Para2(ucCmdPara);
       break;
-
+    */
 
 
     case Serial_Command_Extend:			//Command 0xEE, extended command
+      /*
       if(*(WORD*)ucCmdPara== Serial_ColorEffectExt){		//Command 0x71 0x30, Color effect
 	  ucCmdPara+=2;						//Go to parameter byte
 	  dv_Serial_ColorEffectExt_Para2(ucCmdPara);
       }
-      if(*(WORD*)ucCmdPara== Serial_DefaultPower){		//Ray 2016.10.14: Command 0x6B 0x50, Default power
-	  ucCmdPara+=2;						//Go to parameter byte
-	  dv_Serial_DefaultPower_Para2(ucCmdPara);
-      }
+
 
       if(*ucCmdPara== Serial_Vx1PinState){			//Command 0x73, Vx1 Pin state setting
 	  ucCmdPara++;						//Go to parameter byte
@@ -1103,14 +1108,20 @@ void dv_RS232_bCmdParaPtr_3(BYTE ucCmd, BYTE *ucCmdPara)
 	  ucCmdPara++;						//Go to parameter byte
 	  dv_Serial_EEPanelTime_Para1(ucCmdPara,1);		//1 means timing value send to UART
       }
-
+      */
+      usPara = ucCmdPara[0]<<8;
+      usPara |= ucCmdPara[1];
+      if(usPara == Serial_DefaultPower){			//Command 0x6B 0x50, Default power
+	  ucCmdPara+=2;						//Go to parameter byte
+	  dv_Serial_DefaultPower_Para2(ucCmdPara);
+      }
       if(*ucCmdPara==Serial_MinBackLightValue){			//Command 0x5C, backlight minimum value
 	  ucCmdPara++;						//Go to parameter byte
 	  dv_Serial_MinBackLightValue_Para1(ucCmdPara);
       }
 
       break;
-*/
+
     default:
       break;
   }
@@ -1131,10 +1142,16 @@ void dv_RS232_bCmdParaPtr_4(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_Contrast_Para3(ucCmdPara);
       break;
 
-    /*
+    case Serial_ColorTemp:				//command 0xb3, color temperature control
+      dv_Serial_ColorTemp_Para3(ucCmdPara);
+      break;
+
     case Serial_CommandQuery:				//command 0xC4, RS-232 command query
       dv_Serial_CommandQuery_Para3(ucCmdPara);
       break;
+
+    /*
+
 
     case Serial_Command_Extend:				//Command 0xEE, extended command
       if(*ucCmdPara== Serial_EEPanelTime){		//Command 0x74, panel timing setting
@@ -1218,10 +1235,13 @@ void dv_RS232_bCmdParaPtr_6(BYTE ucCmd, BYTE *ucCmdPara)
     case Serial_Contrast:			//command 0x82, contrast change
       dv_Serial_Contrast_Para5(ucCmdPara);
       break;
-    /*
+
     case Serial_CommandQuery:				//command 0xC4, RS-232 command query
       dv_Serial_CommandQuery_Para5(ucCmdPara);
       break;
+
+    /*
+
 
     case Serial_Command_Extend:				//Command 0xEE, extended command
       if(*ucCmdPara== Serial_EEPanelTime){		//Command 0x74, panel timing setting
@@ -1335,7 +1355,145 @@ void dv_TxByteToUART(BYTE ucData)
   }
 }
 
-#if(0)		//Ray URT 2017.02.03
+
+//Ray VOL 2017.06.19: dv_Serial_Volume_Para1
+//*********************************************************
+// Routine: dv_Serial_Volume_Para1
+// Usage: Process RS232 0x80 volume control with parameter:
+//	  'A'/'a': '+': increase, '-': decrease, 'r'/'R': reset, '?' query
+//	   'M/n' : '1': unmute, '0': mute, 'r'/'R': reset, '?' query
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_Volume_Para1(BYTE *ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucVol;
+  BOOLEAN bIsAudioMuted;
+
+  //All volume control command
+  if(ucCmdPara[0]=='A'||ucCmdPara[0]=='a'){
+      if(ucCmdPara[1] == '?'){
+    	ucCmd = 0xff;			//Denote we need to send status to UART
+      }
+      else if(ucCmdPara[1] == 'R'||ucCmdPara[1] == 'r'){
+	  ucCmd = 0xfe;				//Denote we need to change audio level
+          stGenSetting.g_SoundSetting.Volume = DEFAULT_VOLUME_SETTING;		//Restore default volume level
+      }
+      else if(ucCmdPara[1] == '+'||ucCmdPara[1] == '-'){
+	  ucCmd = 0xfe;						//Denote we need to change audio level
+          if(ucCmdPara[1] == '+'){
+              if ( stGenSetting.g_SoundSetting.Volume < MAX_NUM_OF_VOL_LEVEL )
+              {
+                  stGenSetting.g_SoundSetting.Volume++;			//Increase volume
+              }
+          }
+          else{
+              if ( stGenSetting.g_SoundSetting.Volume > 0 )
+	      {
+		  stGenSetting.g_SoundSetting.Volume --;		//Decrease volume
+
+	      }
+          }
+
+      }
+
+   //Check if we need to change audio
+   if(ucCmd == 0xfe){
+       ucCmd = 0xff;			//Denote we need to send status to UART
+       bIsAudioMuted = msAPI_AUD_IsAudioMutedByUser();		//Get mute status
+       if(bIsAudioMuted == TRUE){
+	   //Cancel mute if it's muted before
+      	      msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEOFF, E_AUDIOMUTESOURCE_ACTIVESOURCE);
+      	      MApp_UiMenu_MuteWin_Hide();
+      }
+       msAPI_AUD_AdjustAudioFactor(E_ADJUST_VOLUME,  stGenSetting.g_SoundSetting.Volume, 0);		//Apply new volume
+
+   }
+   //Dump volume value to UART
+   if(ucCmd == 0xff){
+       dv_SerialTransmitHex(stGenSetting.g_SoundSetting.Volume);
+   }
+
+  }
+
+  //Volume mute control
+  if(ucCmdPara[0]=='M'||ucCmdPara[0]=='m'){
+      if(ucCmdPara[1] == '0'||ucCmdPara[1] == '1'){
+	//Mute volume
+	if(ucCmdPara[1]=='0'){
+	  msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEON, E_AUDIOMUTESOURCE_ACTIVESOURCE);
+	  MApp_UiMenu_MuteWin_Show();
+	}
+	//Enable volume output
+	if(ucCmdPara[1]=='1'){
+	  msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEOFF, E_AUDIOMUTESOURCE_ACTIVESOURCE);
+	  MApp_UiMenu_MuteWin_Hide();
+	}
+      }
+      else if(ucCmdPara[1] == 'R'||ucCmdPara[1] == 'r'){
+	  //If audio is muted, restore it to enable volume output
+	  bIsAudioMuted = msAPI_AUD_IsAudioMutedByUser();		//Get mute status
+	  if(bIsAudioMuted == TRUE){
+	      //Cancel mute if it's muted before
+	      msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEOFF, E_AUDIOMUTESOURCE_ACTIVESOURCE);
+	      MApp_UiMenu_MuteWin_Hide();
+	  }
+      }
+
+      //Dump volume mute status to UART
+      bIsAudioMuted = msAPI_AUD_IsAudioMutedByUser();		//Get mute status
+      if(bIsAudioMuted == TRUE){
+	  ucVol = '0';
+      }
+      else{
+	  ucVol = '1';
+      }
+      dv_TxByteToUART(ucVol);
+
+  }
+}
+
+//Ray VOL 2017.06.19: dv_Serial_Volume_Para2
+//*********************************************************
+// Routine: dv_Serial_Volume_Para2
+// Usage: Process RS232 0x80 volume control with parameter 'A'/'a'.
+//	  nn: 2 hex digit input to set volume
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_Volume_Para2(BYTE *ucCmdPara)
+{
+  BYTE ucVol;
+  BOOLEAN bIsAudioMuted;
+
+  //We only process all volume control command
+  if(ucCmdPara[0]=='A'||ucCmdPara[0]=='a'){
+
+      ucVol = dv_GetAsciiValue(&ucCmdPara[1]);			//transform ASCII to digit value
+      //SP-4096 volume range is 0x00 to 0x64 (0~100)
+      if(ucVol > MAX_NUM_OF_VOL_LEVEL){
+	  ucVol = MAX_NUM_OF_VOL_LEVEL;		//Set it to max if input value is larger than max
+      }
+
+      bIsAudioMuted = msAPI_AUD_IsAudioMutedByUser();		//Get mute status
+      if(bIsAudioMuted == TRUE){
+	  //Cancel mute if it's muted before
+	  msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEOFF, E_AUDIOMUTESOURCE_ACTIVESOURCE);
+	  MApp_UiMenu_MuteWin_Hide();
+      }
+
+      stGenSetting.g_SoundSetting.Volume = ucVol;			//Set volume
+      msAPI_AUD_AdjustAudioFactor(E_ADJUST_VOLUME, stGenSetting.g_SoundSetting.Volume, 0);	//Apply new volume
+      dv_SerialTransmitHex(ucVol);
+
+  }
+  else{
+      dv_SerialTransmitHex('?');	//Transmit '?' to denote unknown command
+  }
+
+}
+
+
+//Ray BKL 2017.06.19
 //*********************************************************
 // Routine: dv_Serial_BackLightControl_Para0
 // Usage: Process RS232 0xE0 backlight control command parameter byte 0 including:
@@ -1352,35 +1510,27 @@ void dv_Serial_BackLightControl_Para0(BYTE ucCmdPara)
   }
   else if(ucCmdPara == '+'){		//Increase backlight value
 	  ucCmd = 0xff;	  			//Denote we need to send backlight value to UART
-	  value1 = UserCommonAdjustRealValueToPercent(GET_OSD_BACKLIGHT(), _BACKLIGHT_MAX, _BACKLIGHT_MIN, _BACKLIGHT_CENTER);	//Convert backlight value to 0%~100%
-	  if(value1<100)
-	    value1++;				//Increase backlight value if it's less than max 100%
-	  SET_OSD_BACKLIGHT(UserCommonAdjustPercentToRealValue(value1, _BACKLIGHT_MAX, _BACKLIGHT_MIN, _BACKLIGHT_CENTER));  //Save new backlight level by convert %value to real value
-	  UserAdjustBacklight(GET_OSD_BACKLIGHT());	//Actual set backlight
-	  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);		//Going to save value into system EEPROM
+	  MApp_UiMenuFunc_AdjustBacklightPWM(ENABLE);		//Increase backlight level by 1
   }
   else if(ucCmdPara == '-'){		//Decrease backlight value
 	  ucCmd = 0xff;	  			//Denote we need to send backlight value to UART
-	  value1 = UserCommonAdjustRealValueToPercent(GET_OSD_BACKLIGHT(), _BACKLIGHT_MAX, _BACKLIGHT_MIN, _BACKLIGHT_CENTER);	//Convert backlight value to 0%~100%
-	  if(value1>0)
-	    value1--;				//Decrease backlight value if it's more than min 0%
-	  SET_OSD_BACKLIGHT(UserCommonAdjustPercentToRealValue(value1, _BACKLIGHT_MAX, _BACKLIGHT_MIN, _BACKLIGHT_CENTER));  //Save new backlight level by convert %value to real value
-	  UserAdjustBacklight(GET_OSD_BACKLIGHT());	//Actual set backlight
-	  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);		//Going to save value into system EEPROM
+	  MApp_UiMenuFunc_AdjustBacklightPWM(DISABLE);		//Decrease backlight level by 1
   }
   else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
 	  ucCmd = 0xff;				//Denote we need to send backlight value to UART
-	  RTDEepromRestoreBacklight();		//Restore default backlight level
-	  UserAdjustBacklight(GET_OSD_BACKLIGHT());	//Actual set backlight
+	  stGenSetting.u8Backlight = 100;	//To reset backlight level to 100
+	  Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));       //Apply reset backlight level
+	  MApp_WriteDatabase(RM_GEN_BACKLIGHT_ADDRESS, (U8*)&(stGenSetting.u8Backlight), 1);    		//Save the value to Flash
   }
   if (ucCmd == 0xff){
 	  //We need to send backlight value back to UART
-	  value1 = UserCommonAdjustRealValueToPercent(GET_OSD_BACKLIGHT(), _BACKLIGHT_MAX, _BACKLIGHT_MIN, _BACKLIGHT_CENTER);	//Convert backlight value to 0%~100%
+	  value1 = stGenSetting.u8Backlight;
 	  dv_SerialTransmitHex((BYTE)value1);
   }
 }
 
 
+//Ray BKL 2017.06.19
 //*********************************************************
 // Routine: dv_Serial_BackLightControl_Para1
 // Usage: Process RS232 0xE0 backlight control 2-digit input
@@ -1395,20 +1545,18 @@ void dv_Serial_BackLightControl_Para1(BYTE *ucCmdPara)
   if(ucValue > 100){
       ucValue = 100;		//Set it to max if input value is larger than max
   }
-  if(ucValue < 0){
-      ucValue = 0;
-  }
-  //Save and set new value
-  SET_OSD_BACKLIGHT(UserCommonAdjustPercentToRealValue(ucValue, _BACKLIGHT_MAX, _BACKLIGHT_MIN, _BACKLIGHT_CENTER));  //Save new backlight level by convert %value to real value
-  UserAdjustBacklight(GET_OSD_BACKLIGHT());	//Actual set backlight
-  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);		//Going to save value into system EEPROM
 
-  ucValue = UserCommonAdjustRealValueToPercent(GET_OSD_BACKLIGHT(), _BACKLIGHT_MAX, _BACKLIGHT_MIN, _BACKLIGHT_CENTER);	//Convert backlight value to 0%~100%
+  //set new value
+  stGenSetting.u8Backlight = ucValue;	//To reset backlight level to 100
+  Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));        //Apply reset backlight level
+  MApp_WriteDatabase(RM_GEN_BACKLIGHT_ADDRESS, (U8*)&(stGenSetting.u8Backlight), 1);    		//Save the value to Flash
+
+  ucValue = stGenSetting.u8Backlight;
   dv_SerialTransmitHex(ucValue);	//Send value to UART
 
 }
 
-#endif			//Ray URT 2017.02.17 #endif
+
 //*********************************************************
 // Routine: dv_Serial_BackLightOnOff_Para0
 // Usage: Process RS232 0xE1 backlight on/off command parameter byte 0 including:
@@ -1817,7 +1965,7 @@ void dv_Serial_Info_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_Contrast_Para1(BYTE *ucCmdPara)
 {
-  BYTE ucValue,ucCmd;
+  BYTE ucCmd;
   BOOLEAN action=0;
   ucCmd = 0;
 
@@ -2542,6 +2690,89 @@ void  dv_Serial_ScaleMode_Para0(BYTE ucCmdPara)
 
 }
 
+//Ray ORI 2017.06.15: RS-232 0x8e image orientation command
+//*********************************************************
+// Routine: dv_Serial_DispOrient_Para0
+// Usage: Process RS232 0x8e display orientation command
+//        '?': Query, 'R'|'r': reset,
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void  dv_Serial_DispOrient_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd=0;
+  BYTE ucRotation=0;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xff;
+      SET_IMG_ORIENTATION(MIRROR_NORMAL);	//Restore to normal
+      dv_SetImageOrientation();		//Apply image orientation setting
+  }
+
+
+  else if(ucCmdPara == '0'||ucCmdPara == '1'||ucCmdPara == '2'||ucCmdPara == '3'){
+      ucCmd = 0xff;			//Denote we need to send status to UART
+      switch(ucCmdPara){
+	case '0':
+	  if(GET_IMG_ORIENTATION()!=MIRROR_NORMAL){
+	      ucCmd = 0xfc;				//Denote we need to change the video
+	      SET_IMG_ORIENTATION(MIRROR_NORMAL);	//Restore to normal degree
+	  }
+	  break;
+	case '1':
+	  if(GET_IMG_ORIENTATION()!=MIRROR_V_ONLY){
+	      ucCmd = 0xfc;				//Denote we need to change the video
+	      SET_IMG_ORIENTATION(MIRROR_V_ONLY);	//Do vertical flip
+	  }
+
+	  break;
+	case '2':
+	  if(GET_IMG_ORIENTATION()!=MIRROR_H_ONLY){
+	      ucCmd = 0xfc;				//Denote we need to change the video
+	      SET_IMG_ORIENTATION(MIRROR_H_ONLY);	//Do horizontal flip
+	  }
+	  break;
+	case '3':
+	  if(GET_IMG_ORIENTATION()!=MIRROR_HV){
+	      ucCmd = 0xfc;				//Denote we need to change the video
+	      SET_IMG_ORIENTATION(MIRROR_HV);		//Do vertical and horizontal flip
+	  }
+	  break;
+
+	default:
+	  break;
+      }
+      //Check if we need to rotate the video
+      if(ucCmd==0xfc){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+	dv_SetImageOrientation();	//Apply image orientation setting
+      }
+  }
+  if (ucCmd == 0xff){		//See if require to send image rotation setting to UART
+      ucCmd = GET_IMG_ORIENTATION();
+      switch(ucCmd){
+	case MIRROR_NORMAL:
+	  ucRotation = '0';					//'0' = 0x30
+	  break;
+	case MIRROR_V_ONLY:
+	  ucRotation = '1';
+	  break;
+	case MIRROR_H_ONLY:
+	  ucRotation = '2';
+	  break;
+	case MIRROR_HV:
+	  ucRotation = '3';
+	  break;
+	default:
+	  break;
+      }
+      dv_TxByteToUART(ucRotation);	//Send to UART
+  }
+
+}
+
 
 //Ray GAM 2017.05.12: Function below only has dump response to serve for Controller Utility. Actual function needed to be implemented later.
 //*********************************************************
@@ -2611,6 +2842,364 @@ void dv_Serial_Gamma_Para0(BYTE ucCmdPara)
 
   }
 
+
+}
+
+
+//Ray CTP 2017.06.15
+//*********************************************************
+// Routine: dv_GetMAppColorTemp
+// Usage: Get color temp value for MStar MApp: MS_COLOR_TEMP_9300K,...,MS_COLOR_TEMP_USER
+// Input: ucCmd:  5: 9300K, 6:7500K, 2:6500K, 3:5000K, 4: USER
+// Output: color temp value for MStar MApp: MS_COLOR_TEMP_9300K,...,MS_COLOR_TEMP_USER. For unknown value, return '?'
+//**********************************************************
+BYTE dv_GetMAppColorTemp(BYTE ucCmd)
+{
+  if(ucCmd == '5'){			//Set color temp to 9300K
+      return MS_COLOR_TEMP_9300K;
+  }
+  else if(ucCmd == '6'){		//Set color temp to 7500K
+      return MS_COLOR_TEMP_7500K;
+  }
+  else if(ucCmd == '2'){		//Set color temp to 6500K
+      return MS_COLOR_TEMP_6500K;
+  }
+  else if(ucCmd == '3'){		//Set color temp to 5000K
+      return MS_COLOR_TEMP_5000K;
+  }
+  else if(ucCmd == '4'){		//Set color temp to USER
+      return MS_COLOR_TEMP_USER;
+  }
+  else{
+      return '?';
+  }
+}
+
+//Ray CTP 2017.06.15
+//*********************************************************
+// Routine: dv_GetColorTempCmdValue
+// Usage: Get color temp value of MStar MApp to RS-232 command value
+// Input: color temp value for MStar MApp: MS_COLOR_TEMP_9300K,...,MS_COLOR_TEMP_USER
+// Output: RS-232 color temp command value 5: 9300K, 6:7500K, 2:6500K, 3:5000K, 4: USER, '?' for undefined input
+//**********************************************************
+BYTE dv_GetColorTempCmdValue(BYTE ucTempValue)
+{
+  if(ucTempValue == MS_COLOR_TEMP_9300K)
+    return '5';
+  else if(ucTempValue == MS_COLOR_TEMP_7500K)
+    return '6';
+  else if(ucTempValue == MS_COLOR_TEMP_6500K)
+    return '2';
+  else if(ucTempValue == MS_COLOR_TEMP_5000K)
+    return '3';
+  else if(ucTempValue == MS_COLOR_TEMP_USER)
+    return '4';
+  else
+    return '?';
+}
+
+
+//Ray CTP 2017.06.15
+//*********************************************************
+// Routine: dv_Serial_ColorTemp_Para0
+// Usage: Process RS232 0xB3 color temperature control command parameter byte 0 including:
+//        ?: inquiry(2,3,4,5,6), R/r: restore default, 5: 9300K, 6:7500K, 2:6500K, 3:5000K, 4: USER
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_ColorTemp_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd;
+  BYTE value1;
+  if(ucCmdPara!='i'&& ucCmdPara!='o')
+  {
+    if(ucCmdPara == '?'){
+	  ucCmd = 0xff;			//Denote we need to send status to UART
+    }
+    else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+	ucCmd = 0xff;					//Denote we need to send status to UART
+	MApp_DataBase_RestoreColorTempSelection();	//Restore default color temperature selection
+    }
+    else{
+	value1 = dv_GetMAppColorTemp(ucCmdPara);		//Get color temp value for MStar MApp
+	if(value1!='?'){			//If user input is not undefined value
+	    ucCmd = 0xfc;			//Denote we will set new color temp
+	}else{
+	    ucCmd = 0xff;			//If it is undefined value, dump '?' to UART
+	}
+    }
+
+    if(ucCmd == 0xfc){			//Check if we need to set new color temp
+	ucCmd = 0xff;			//Denote we need to send status to UART
+	ST_VIDEO.eColorTemp = (EN_MS_COLOR_TEMP)value1;		//value1 contains color temperature to be set
+	MApp_PQ_Set_ColorTemp(MAIN_WINDOW);	//Adjust new color temperature setting
+    }
+    if(ucCmd == 0xff){			//Check if we need to send value back to UART
+      ucCmd = dv_GetColorTempCmdValue(ST_VIDEO.eColorTemp);  //Get color temperature
+      dv_TxByteToUART(ucCmd);
+    }
+  }
+
+}
+
+
+//Ray CTP 2017.06.15
+//*********************************************************
+// Routine: dv_Serial_ColorTemp_Para2
+// Usage: Process RS232 0xB3 color temperature control. Read selected color temperature of specified input port
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_ColorTemp_Para2(BYTE *ucCmdPara)
+{
+  BYTE bValue;
+  BYTE bSource=0xff;	//Set an invalid value first
+  WORD usInput;
+
+  //Make sure we process this command at here if 1st parameter is 'o'
+  if(ucCmdPara[0]=='o')
+  {
+    //Get the input source
+    usInput = (BYTE)ucCmdPara[2];
+    usInput = (usInput<<8) &0xff00;
+    usInput = usInput|(BYTE)ucCmdPara[1];
+    //Translate to firmware code input source value
+    for(bValue=DATA_INPUT_SOURCE_RGB;bValue<=DATA_INPUT_SOURCE_HDMI4;bValue++){
+      if(dv_DataInputSourceValue((E_DATA_INPUT_SOURCE)bValue)==usInput){
+	  bSource = bValue;
+      }
+    }
+    //If valid input source is entered
+    if(bSource!=0xff){
+      //Show the color temperature the input source
+	bValue = dv_GetColorTempCmdValue(G_VEDIO_SETTING[bSource].eColorTemp);  //Get color temperature cmd value
+	dv_TxByteToUART(bValue);
+    }
+  }
+}
+
+
+//Ray CTP 2017.06.15
+//*********************************************************
+// Routine: dv_Serial_ColorTemp_Para3
+// Usage: Process RS232 0xB3 color temperature control. Set color temp in "5: 9300K, 6:7500K, 2:6500K, 3:5000K, 4: USER" with user specified input port
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_ColorTemp_Para3(BYTE *ucCmdPara)
+{
+  BYTE bValue;
+  BYTE bSource=0xff;	//Set an invalid value first
+  WORD usInput;
+
+
+  //Make sure we process this command at here if 1st parameter is 'i'
+  if(ucCmdPara[0]=='i')
+  {
+    //Get the input source
+    usInput = (BYTE)ucCmdPara[2];
+    usInput = (usInput<<8) &0xff00;
+    usInput = usInput|(BYTE)ucCmdPara[1];
+    //Translate to firmware code input source value
+    for(bValue=DATA_INPUT_SOURCE_RGB;bValue<=DATA_INPUT_SOURCE_HDMI4;bValue++){
+      if(dv_DataInputSourceValue((E_DATA_INPUT_SOURCE)bValue)==usInput){
+	  bSource = bValue;
+      }
+    }
+
+    //If valid input source is entered
+    if(bSource!=0xff){
+	bValue = dv_GetMAppColorTemp(ucCmdPara[3]);	//Transform user input to MStar color temp value
+	if(bValue!='?'){
+	  //Set color temp if user input valid color temp value
+	   G_VEDIO_SETTING[bSource].eColorTemp = (EN_MS_COLOR_TEMP)bValue;	//Set color temperature
+	  //If entered input source is current source, the color temp is changed immediately
+	  if(bSource==g_enDataInputSourceType[MAIN_WINDOW]){
+	      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);	//Adjust new color temperature setting
+	  }
+	  dv_SerialTransmitHex(dv_GetColorTempCmdValue(G_VEDIO_SETTING[bSource].eColorTemp));
+	}else{
+	    dv_SerialTransmitHex(bValue);		//Send '?' value back to UART
+	}
+    }
+  }
+  else{
+      dv_SerialTransmitHex('?');	//Tx unknown command
+  }
+}
+
+
+
+//*********************************************************
+// Routine: dv_Serial_Power_Para0
+// Usage: Process RS232 0xc8 soft power on/off comand
+//        0: power off; 1: power on; ?: query
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_Power_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucStatus;
+
+
+  if(ucCmdPara == '?'){
+      ucCmd = 0xff;		//Denote we need to dump status to UART
+  }
+  else if(ucCmdPara == '1'){
+      ucCmd = 0xfe;		//Denote we need to dump status to UART
+      ucStatus = '1';
+      //Check if it's in power saving mode
+      if((sFlagSimPowerShutDown&0x01)==0x01){
+	  MApp_RS232_SetKey(IRKEY_POWER);			//If yes, execute Press POWER key function to go to normal mode
+      }
+  }
+  else if(ucCmdPara == '0'){
+      ucCmd = 0xfe;		//Denote we need to dump status to UART
+      ucStatus = '0';
+      //Check if it's in normal mode
+      if((sFlagSimPowerShutDown&0x01)==0x00){
+	  MApp_RS232_SetKey(IRKEY_POWER);			//If yes, execute Press POWER key function to go to power saving mode
+      }
+  }
+
+  //Check if we need to show power on/off status to UART
+  if(ucCmd==0xff||ucCmd==0xfe){
+
+      if(ucCmd==0xff){
+	  //Check if it's in power saving mode
+	  if((sFlagSimPowerShutDown&0x01)==0x01){
+	  ucStatus ='0';
+	}
+	else{
+	  ucStatus = '1';
+	}
+      }
+
+      dv_TxByteToUART(ucStatus);
+  }
+
+}
+
+
+//*********************************************************
+// Routine: dv_Serial_CommandQuery_Para1
+// Usage: Process RS232 0xC4 RS-232 command query parameter 2 digits input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_CommandQuery_Para1(BYTE *ucCmdPara)
+{
+  BYTE ucValue;
+  BYTE i=0;
+
+  ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+
+  //We won't process extend serial command inquiry here, instead it will process in dv_Serial_CommandQuery_Para3()
+  if(ucValue != Serial_Command_Extend){
+    //Check if the query command is implemented
+    do{
+	if(SerialCommandTable[i]==ucValue){
+	    i=0xff;						//Assign i = 0xff means we found that command is available and quit the searching process
+	}
+	else{
+	    i++;							//Go to search next item
+	}
+
+    }while(i<sizeof(SerialCommandTable));
+
+
+    if(i==0xff){
+	dv_TxByteToUART('1');      				//1 means command is implemented
+    }
+    else{
+	dv_TxByteToUART('0'); 					//0 means command is not implemented
+    }
+  }
+}
+
+//*********************************************************
+// Routine: dv_Serial_CommandQuery_Para3
+// Usage: Process RS232 0xC4 RS-232 command query parameter 4 digits input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_CommandQuery_Para3(BYTE *ucCmdPara)
+{
+  BYTE ucLowB,ucHighB;
+  BYTE i=0;
+  BYTE ucExt2ByteCmd;
+
+  ucHighB = dv_GetAsciiValue(&ucCmdPara[0]);			//transform high byte ASCII to digit value
+  ucLowB = dv_GetAsciiValue(&ucCmdPara[2]);			//transform high byte ASCII to digit value
+
+  if(ucHighB == Serial_Command_Extend){				//Check if looking for extend command byte
+    //Check if the query extend command is implemented
+    do{
+	if(SerialExtCommandTable[i]==ucLowB){
+	    i=0xff;						//Assign i = 0xff means we found that command is available and quit the searching process
+	}
+	else{
+	    i++;							//Go to search next item
+	}
+
+    }while(i<sizeof(SerialExtCommandTable));
+
+    //If query cmd is not done in extend command, Check if query extend command 2 bytes is implemented
+    if(i!=0xff){
+      i = 0;
+      do{
+	  ucExt2ByteCmd = (SerialExtCommand2ByteTable[i]>>8);
+	  if(ucExt2ByteCmd==ucLowB){					//We only check first byte of two byte command
+	      i=0xfe;							//Assign i = 0xfe means we found that command is available but no need to print
+	  }
+	  else{
+	      i++;							//Go to search next item
+	  }
+
+	  }while(i<sizeof(SerialExtCommand2ByteTable));
+    }
+    if(i==0xff){
+	dv_TxByteToUART('1');      				//1 means command is implemented
+    }
+    else if(i==0xfe){
+	;							//Will go to check if next byte
+    }
+    else{
+	dv_TxByteToUART('0'); 					//0 means command is not implemented
+    }
+  }
+}
+
+
+//*********************************************************
+// Routine: dv_Serial_CommandQuery_Para5
+// Usage: Process RS232 0xC4 RS-232 command query parameter 6 digits input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_CommandQuery_Para5(BYTE *ucCmdPara)
+{
+  BYTE ucCmdB;
+  WORD usPara;
+  BYTE i=0;
+
+  ucCmdB = dv_GetAsciiValue(&ucCmdPara[0]);			//transform 0xee cmd byte ASCII to digit value
+  usPara = dv_GetAsciiValue(&ucCmdPara[2])*256;			//transform 1st byte ASCII to digit value
+  usPara += dv_GetAsciiValue(&ucCmdPara[4]);			//transform 2nd byte ASCII to digit value
+
+  if(ucCmdB == Serial_Command_Extend){				//Check if looking for extend command byte
+    //Check if the query extend command is implemented
+    do{
+	if(SerialExtCommand2ByteTable[i]==usPara){
+	    i=0xff;						//Assign i = 0xff means we found that command is available and quit the searching process
+	}
+	else{
+	    i++;							//Go to search next item
+	}
+
+    }while(i<sizeof(SerialExtCommand2ByteTable));
+  }
+
+  if(i==0xff){
+      dv_TxByteToUART('1');      				//1 means command is implemented
+  }
+  else{
+      dv_TxByteToUART('0'); 					//0 means command is not implemented
+  }
 
 }
 
@@ -3581,90 +4170,7 @@ void dv_Serial_PipVPosn_Para1(BYTE *ucCmdPara)
 }
 
 
-//*********************************************************
-// Routine: dv_Serial_ColorTemp_Para0
-// Usage: Process RS232 0xB3 color temperature control command parameter byte 0 including:
-//        ?: inquiry(2,4,5,6,7,8), R/r: restore default, 5: 9300K, 6:7500K, 2:6500K, 7:5800K, 8: sRGB, 4: USER
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_ColorTemp_Para0(BYTE ucCmdPara)
-{
-  BYTE ucCmd;
-  int value1;
 
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      RTDEepromRestoreColorTemp();	//Restore default color temperature from EEPROM
-  }
-  else if(ucCmdPara == '5'){		//Set color temp to 9300K
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_9300;
-  }
-  else if(ucCmdPara == '6'){		//Set color temp to 7500K
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_7500;
-  }
-  else if(ucCmdPara == '2'){		//Set color temp to 6500K
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_6500;
-  }
-  else if(ucCmdPara == '7'){		//Set color temp to 5800K
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_5800;
-  }
-  else if(ucCmdPara == '8'){		//Set color temp to sRGB
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_SRGB;
-  }
-  else if(ucCmdPara == '9'){		//Ray 2016.08.12: Set color temp to 3200K
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_3200;
-  }
-#if(_COLOR_TEMP_2600K==_ON)
-  else if(ucCmdPara == 'A'){		//Ray 2016.08.24: Set color temp to 2600K
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_2600;
-  }
-#endif
-  else if(ucCmdPara == '4'){		//Set color temp to USER
-      ucCmd = 0xfc;			//Denote we will set new color temp
-      value1 = _CT_USER;
-  }
-  if(ucCmd == 0xfc){			//Check if we need to set new color temp
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      SET_COLOR_TEMP_TYPE(GET_OSD_SELECT_REGION(), value1);	//value1 contains color temperature to be set
-      RTDNVRamLoadColorSetting(GET_OSD_SELECT_REGION());
-      UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_REGIONDATA_MSG);	//Going to save new setting into system EEPROM
-
-  }
-  if(ucCmd == 0xff){			//Check if we need to send value back to UART
-    value1 = GET_COLOR_TEMP_TYPE(GET_OSD_SELECT_REGION());	//Get color temperature
-    if(value1 == _CT_9300)
-      ucCmd = '5';
-    else if(value1 == _CT_7500)
-      ucCmd = '6';
-    else if(value1 == _CT_6500)
-      ucCmd = '2';
-    else if(value1 == _CT_5800)
-      ucCmd = '7';
-    else if(value1 == _CT_SRGB)
-      ucCmd = '8';
-    else if(value1 == _CT_3200)
-      ucCmd = '9';
-#if(_COLOR_TEMP_2600K==_ON)
-    else if(value1 == _CT_2600)		//Ray 2016.08.24: Set color temp to 2600K
-      ucCmd = 'A';
-#endif
-    else if(value1 == _CT_USER)
-      ucCmd = '4';
-    dv_TxByteToUART(ucCmd);
-  }
-
-}
 
 
 //*********************************************************
@@ -3881,130 +4387,7 @@ void dv_Serial_TempBlue_Para1(BYTE *ucCmdPara)
 }
 
 
-//*********************************************************
-// Routine: dv_Serial_CommandQuery_Para1
-// Usage: Process RS232 0xC4 RS-232 command query parameter 2 digits input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_CommandQuery_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-  BYTE i=0;
 
-  ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-
-  //We won't process extend serial command inquiry here, instead it will process in dv_Serial_CommandQuery_Para3()
-  if(ucValue != Serial_Command_Extend){
-    //Check if the query command is implemented
-    do{
-	if(SerialCommandTable[i]==ucValue){
-	    i=0xff;						//Assign i = 0xff means we found that command is available and quit the searching process
-	}
-	else{
-	    i++;							//Go to search next item
-	}
-
-    }while(i<sizeof(SerialCommandTable));
-
-
-    if(i==0xff){
-	dv_TxByteToUART('1');      				//1 means command is implemented
-    }
-    else{
-	dv_TxByteToUART('0'); 					//0 means command is not implemented
-    }
-  }
-}
-
-//*********************************************************
-// Routine: dv_Serial_CommandQuery_Para3
-// Usage: Process RS232 0xC4 RS-232 command query parameter 4 digits input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_CommandQuery_Para3(BYTE *ucCmdPara)
-{
-  BYTE ucLowB,ucHighB;
-  BYTE i=0;
-  BYTE ucExt2ByteCmd;
-
-  ucHighB = dv_GetAsciiValue(&ucCmdPara[0]);			//transform high byte ASCII to digit value
-  ucLowB = dv_GetAsciiValue(&ucCmdPara[2]);			//transform high byte ASCII to digit value
-
-  if(ucHighB == Serial_Command_Extend){				//Check if looking for extend command byte
-    //Check if the query extend command is implemented
-    do{
-	if(SerialExtCommandTable[i]==ucLowB){
-	    i=0xff;						//Assign i = 0xff means we found that command is available and quit the searching process
-	}
-	else{
-	    i++;							//Go to search next item
-	}
-
-    }while(i<sizeof(SerialExtCommandTable));
-
-    //If query cmd is not done in extend command, Check if query extend command 2 bytes is implemented
-    if(i!=0xff){
-      i = 0;
-      do{
-	  ucExt2ByteCmd = (SerialExtCommand2ByteTable[i]>>8);
-	  if(ucExt2ByteCmd==ucLowB){					//We only check first byte of two byte command
-	      i=0xfe;							//Assign i = 0xfe means we found that command is available but no need to print
-	  }
-	  else{
-	      i++;							//Go to search next item
-	  }
-
-	  }while(i<sizeof(SerialExtCommand2ByteTable));
-    }
-    if(i==0xff){
-	dv_TxByteToUART('1');      				//1 means command is implemented
-    }
-    else if(i==0xfe){
-	;							//Will go to check if next byte
-    }
-    else{
-	dv_TxByteToUART('0'); 					//0 means command is not implemented
-    }
-  }
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_CommandQuery_Para5
-// Usage: Process RS232 0xC4 RS-232 command query parameter 6 digits input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_CommandQuery_Para5(BYTE *ucCmdPara)
-{
-  BYTE ucCmdB;
-  WORD usPara;
-  BYTE i=0;
-
-  ucCmdB = dv_GetAsciiValue(&ucCmdPara[0]);			//transform 0xee cmd byte ASCII to digit value
-  usPara = dv_GetAsciiValue(&ucCmdPara[2])*256;			//transform 1st byte ASCII to digit value
-  usPara += dv_GetAsciiValue(&ucCmdPara[4]);			//transform 2nd byte ASCII to digit value
-
-  if(ucCmdB == Serial_Command_Extend){				//Check if looking for extend command byte
-    //Check if the query extend command is implemented
-    do{
-	if(SerialExtCommand2ByteTable[i]==usPara){
-	    i=0xff;						//Assign i = 0xff means we found that command is available and quit the searching process
-	}
-	else{
-	    i++;							//Go to search next item
-	}
-
-    }while(i<sizeof(SerialExtCommand2ByteTable));
-  }
-
-  if(i==0xff){
-      dv_TxByteToUART('1');      				//1 means command is implemented
-  }
-  else{
-      dv_TxByteToUART('0'); 					//0 means command is not implemented
-  }
-
-}
 
 //*********************************************************
 // Routine: dv_Serial_NewInputDisp_Para0
@@ -4528,159 +4911,7 @@ void dv_Serial_AutoPowerSave_Para0(BYTE ucCmdPara)
 
 
 
-//*********************************************************
-// Routine: dv_Serial_DispOrient_Para0
-// Usage: Process RS232 0x8e display orientation command
-//        '?': Query, 'R'|'r': reset,
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void  dv_Serial_DispOrient_Para0(BYTE ucCmdPara)
-{
-  BYTE ucCmd,ucRotation;
 
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
-      ucCmd = 0xff;
-      if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.11.10: For SVX-4096 120 board
-	      dv_NT72324VFlip(_DISABLE);		//Disable V Flip
-	      dv_NT72324HFlip(_DISABLE);		//Disable H Flip
-	      SET_OSD_V_FLIP(_DISABLE);
-	      SET_OSD_H_FLIP(_DISABLE);
-	  }
-      RTDEepromRestoreDisplayRotation();	//Restore display rotation
-  }
-
-
-  else if(ucCmdPara == '0'||ucCmdPara == '1'||ucCmdPara == '2'||ucCmdPara == '3'||
-      ucCmdPara == '4'||ucCmdPara == '5'||ucCmdPara == '6'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      switch(ucCmdPara){
-	case '0':
-	  if(GET_OSD_DISP_ROTATE()!=_DISP_ROTATE_0){
-	      ucCmd = 0xfc;					//Denote we need to rotate the video
-	      SET_OSD_DISP_ROTATE(_DISP_ROTATE_0);	//Rotate 0 degree
-	  }
-	  if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.08.24: For SVX-4096 120 board
-	      dv_NT72324VFlip(_DISABLE);		//Disable V Flip
-	      dv_NT72324HFlip(_DISABLE);		//Disable H Flip
-	      SET_OSD_V_FLIP(_DISABLE);
-	      SET_OSD_H_FLIP(_DISABLE);
-	      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting in NVRAM
-	  }
-	  break;
-	case '1':
-	  if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.08.24: For SVX-4096 120 board
-	      if(GET_OSD_DISP_ROTATE()!=_DISP_ROTATE_0){	//Ray 2016.11.11: Restore to 0 degree
-		  ucCmd = 0xfc;					//Denote we need to rotate the video
-		  SET_OSD_DISP_ROTATE(_DISP_ROTATE_0);	//Rotate 0 degree
-	      }
-	      dv_NT72324HFlip(_DISABLE);		//Ray 2016.10.28: Disable H Flip
-	      dv_NT72324VFlip(_ENABLE);			//Enable V Flip
-	      SET_OSD_H_FLIP(_DISABLE);
-	      SET_OSD_V_FLIP(_ENABLE);
-	      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting in NVRAM
-	  }
-	  break;
-	case '2':
-	  if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.08.24: For SVX-4096 120 board
-	      if(GET_OSD_DISP_ROTATE()!=_DISP_ROTATE_0){	//Ray 2016.11.11: Restore to 0 degree
-		  ucCmd = 0xfc;					//Denote we need to rotate the video
-		  SET_OSD_DISP_ROTATE(_DISP_ROTATE_0);		//Rotate 0 degree
-	      }
-	      dv_NT72324VFlip(_DISABLE);		//Ray 2016.10.28: Disable V Flip
-	      dv_NT72324HFlip(_ENABLE);			//Enable H Flip
-	      SET_OSD_V_FLIP(_DISABLE);
-	      SET_OSD_H_FLIP(_ENABLE);
-	      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting in NVRAM
-	  }
-	  break;
-	case '3':
-	  if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.08.24: For SVX-4096 120 board
-	      if(GET_OSD_DISP_ROTATE()!=_DISP_ROTATE_0){	//Ray 2016.11.11: Restore to 0 degree
-		  ucCmd = 0xfc;					//Denote we need to rotate the video
-		  SET_OSD_DISP_ROTATE(_DISP_ROTATE_0);		//Rotate 0 degree
-	      }
-	      dv_NT72324VFlip(_ENABLE);			//Enable V Flip
-	      dv_NT72324HFlip(_ENABLE);			//Enable H Flip
-	      SET_OSD_V_FLIP(_ENABLE);
-	      SET_OSD_H_FLIP(_ENABLE);
-	      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting in NVRAM
-	  }
-	  break;
-	case '4':
-	  ucCmd = 0xfc;					//Denote we need to rotate the video
-	  SET_OSD_DISP_ROTATE(_DISP_ROTATE_90);		//Rotate 90 degree
-	  if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.11.11: For SVX-4096 120 board
-	      dv_NT72324VFlip(_DISABLE);		//Disable V Flip
-	      dv_NT72324HFlip(_DISABLE);		//Disable H Flip
-	      SET_OSD_V_FLIP(_DISABLE);
-	      SET_OSD_H_FLIP(_DISABLE);
-	  }
-	  break;
-	case '5':
-	  ucCmd = 0xfc;					//Denote we need to rotate the video
-	  SET_OSD_DISP_ROTATE(_DISP_ROTATE_180);	//Rotate 180 degree
-	  if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.11.11: For SVX-4096 120 board
-	      dv_NT72324VFlip(_DISABLE);		//Disable V Flip
-	      dv_NT72324HFlip(_DISABLE);		//Disable H Flip
-	      SET_OSD_V_FLIP(_DISABLE);
-	      SET_OSD_H_FLIP(_DISABLE);
-	  }
-	  break;
-	case '6':
-	  ucCmd = 0xfc;					//Denote we need to rotate the video
-	  SET_OSD_DISP_ROTATE(_DISP_ROTATE_270);	//Rotate 270 degree
-	  if(ucBoardVersion == _SVX4096_120_V00){	//Ray 2016.11.11: For SVX-4096 120 board
-	      dv_NT72324VFlip(_DISABLE);		//Disable V Flip
-	      dv_NT72324HFlip(_DISABLE);		//Disable H Flip
-	      SET_OSD_V_FLIP(_DISABLE);
-	      SET_OSD_H_FLIP(_DISABLE);
-	  }
-	  break;
-	default:
-	  break;
-      }
-      //Check if we need to rotate the video
-      if(ucCmd==0xfc){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-	//Image rotation is only allowed in 1P mode
-	if(GET_OSD_DISPLAY_MODE()==_OSD_DM_1P){
-	  SysModeSetDisplayTarget(_DISPLAY_RGN_1P);
-	  SysModeSetResetTarget(_MODE_ACTION_RESET_TO_DISPLAY_INITIAL);	//Ray 2016.03.01: To solve 180 to 90 hang up issue, we reset mode state to a initial one
-	  //SysModeSetResetTarget(_MODE_ACTION_RESET_TO_DISPLAY_SETTING);
-	}
-	SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Going to save value into system EEPROM
-      }
-  }
-  if (ucCmd == 0xff){		//See if require to send image rotation setting to UART
-      ucCmd = GET_OSD_DISP_ROTATE();
-      switch(ucCmd){
-	case _DISP_ROTATE_0:
-	  ucRotation = '0';					//'0' = 0x30
-	  if(ucBoardVersion == _SVX4096_120_V00){
-	      ucRotation |=dv_NT72324VFlipStatus();		//Ray 2016.08.25: If V Flip enable, value is 0x31 (0x30 | 1)
-	      ucRotation |=(dv_NT72324HFlipStatus())<<1;	//Ray 2016.08.25: If H Flip enable, value is 0x32 (0x30 | 2)
-								//If both enable, it is 0x33 (0x30|1|2)
-	  }
-	  break;
-	case _DISP_ROTATE_90:
-	  ucRotation = '4';
-	  break;
-	case _DISP_ROTATE_180:
-	  ucRotation = '5';
-	  break;
-	case _DISP_ROTATE_270:
-	  ucRotation = '6';
-	  break;
-	default:
-	  break;
-      }
-      dv_TxByteToUART(ucRotation);	//Send to UART
-  }
-
-}
 
 
 //*********************************************************
@@ -4705,54 +4936,7 @@ void dv_Serial_AckSet_Para0(BYTE ucCmdPara)
 }
 
 
-//*********************************************************
-// Routine: dv_Serial_Power_Para0
-// Usage: Process RS232 0xc8 soft power on/off comand
-//        0: power off; 1: power on; ?: query
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_Power_Para0(BYTE ucCmdPara)
-{
-  BYTE ucCmd = 0;
-  BYTE ucStatus;
 
-
-  if(ucCmdPara == '?'){
-      ucCmd = 0xff;		//Denote we need to dump status to UART
-  }
-  else if(ucCmdPara == '1'){
-      ucCmd = 0xfe;		//Denote we need to dump status to UART
-      ucStatus = '1';
-      if(SysPowerGetPowerStatus()==_POWER_STATUS_OFF){
-          SET_OSD_STATE(_MENU_NONE);
-          SET_OSD_IN_FACTORY_MENU_STATUS(FALSE);
-	  SysPowerSetTargetPowerStatus(_POWER_STATUS_NORMAL);
-      }
-  }
-  else if(ucCmdPara == '0'){
-      ucCmd = 0xfe;		//Denote we need to dump status to UART
-      ucStatus = '0';
-      if(SysPowerGetPowerStatus()!=_POWER_STATUS_OFF){
-	  SysPowerSetTargetPowerStatus(_POWER_STATUS_OFF);
-      }
-  }
-
-  //Check if we need to show power on/off status to UART
-  if(ucCmd==0xff||ucCmd==0xfe){
-
-      if(ucCmd==0xff){
-	if(GET_TARGET_POWER_STATUS()==_POWER_STATUS_OFF){
-	  ucStatus ='0';
-	}
-	else{
-	  ucStatus = '1';
-	}
-      }
-
-      dv_TxByteToUART(ucStatus);
-  }
-
-}
 
 
 
@@ -4796,7 +4980,10 @@ void dv_Serial_TestPattern_Para0(BYTE ucCmdPara)
   }
 
 }
+#endif   //Ray 2017.02.20
 
+
+//Ray BKL 2017.06.19: dv_Serial_BackLight_PWM_DA_Para0
 //*********************************************************
 // Routine: dv_Serial_BackLight_PWM_DA_Para0
 // Usage: Process RS232 0xe5 PWM D/A selection command
@@ -4813,28 +5000,36 @@ void dv_Serial_BackLight_PWM_DA_Para0(BYTE ucCmdPara)
 
   else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
       ucCmd = 0xff;				//Denote we need to send status to UART
-      RTDEepromRestoreBacklightPwmDa();		//Restore default PWM D/A selection
+      SET_BACKLIGHT_CONTROL(BKL_PWM);		//Default backlight control mode is PWM
+      dv_AdjustBacklightPWMFreq(GET_BACKLIGHT_PWM_FREQ());				//Update backlight level after changing to PWM
 
   }
   else if(ucCmdPara == '0'||ucCmdPara == '1'){
       ucCmd = 0xff;				//Denote we need to send status to UART
       if(ucCmdPara == '0'){
-	  SET_BACKLIGHT_DA_PWM(_OFF);	//_OFF = 0 means using PWM
+	  SET_BACKLIGHT_CONTROL(BKL_PWM);	//backlight control mode is PWM
+     	  dv_AdjustBacklightPWMFreq(GET_BACKLIGHT_PWM_FREQ());				//Update backlight level after changing to PWM
       }
       else{
-	  SET_BACKLIGHT_DA_PWM(_ON);	//_ON = 1 means using D/A
+	  SET_BACKLIGHT_CONTROL(BKL_DA);	//Default backlight control mode is D/A
+	  dv_AdjustBacklightPWMFreq(160);			//Update backlight PWM frequency to D/A one (160Hz) and then update backlight level
       }
-      UserAdjustBacklightPWMFreq(GET_BACKLIGHT_PWM_FREQ());		//Need to change PWM frequency according to D/A or PWM mode
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting of backlight D/A PWM in NVRAM
+
   }
 
   if(ucCmd==0xff){
-      dv_TxByteToUART(GET_BACKLIGHT_DA_PWM()+0x30);	//Send current backlight D/A PWM setting to UART
+      //Send current backlight D/A PWM setting to UART
+      if(GET_BACKLIGHT_CONTROL()==BKL_PWM){
+	  dv_TxByteToUART('0');
+      }else{
+	  dv_TxByteToUART('1');
+      }
+
   }
 
 }
 
-#endif   //Ray 2017.02.20
+
 
 
 
@@ -4947,7 +5142,8 @@ void dv_Serial_PWMFrequency_Para2(BYTE *ucCmdPara)
 
 }
 
-#if 0			//Ray 2017.02.20
+
+//Ray BKL 2017.06.19: dv_Serial_BackLightInvert_Para0
 //*********************************************************
 // Routine: dv_Serial_BackLightInvert_Para0
 // Usage: Process RS232 0xe7 backlight invert selection command
@@ -4964,19 +5160,21 @@ void dv_Serial_BackLightInvert_Para0(BYTE ucCmdPara)
 
   else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
       ucCmd = 0xff;				//Denote we need to send status to UART
-      RTDEepromRestoreBacklightInvert();	//Restore default backlight invert selection
+      SET_BACKLIGHT_INVERT(DISABLE);				//Ray BKL 2017.04.25: Default backlight invert is off
+      //Update backlight level after changing backlight invert
+      Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));
 
   }
   else if(ucCmdPara == '0'||ucCmdPara == '1'){
       ucCmd = 0xff;				//Denote we need to send status to UART
       if(ucCmdPara == '0'){
-	  SET_BACKLIGHT_INVERT(_OFF);	//_OFF = 0 means no invert
+	  SET_BACKLIGHT_INVERT(DISABLE);	//DISABLE = 0 means no invert
       }
       else{
-	  SET_BACKLIGHT_INVERT(_ON);	//_ON = 1 means set backlight invert
+	  SET_BACKLIGHT_INVERT(ENABLE);		//ENABLE = 1 means set backlight invert
       }
-      UserAdjustBacklight(GET_OSD_BACKLIGHT());				//Once backlight invert is selected, we need to set the update backlight value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting of backlight D/A PWM in NVRAM
+	//Update backlight level after changing backlight invert
+	Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));
   }
 
   if(ucCmd==0xff){
@@ -4986,6 +5184,7 @@ void dv_Serial_BackLightInvert_Para0(BYTE ucCmdPara)
 }
 
 
+//Ray BKL 2017.06.19: dv_Serial_MinBackLightValue_Para0
 //*********************************************************
 // Routine: dv_Serial_MinBackLightValue_Para0
 // Usage: Process RS232 0xee 0x5c min backlight setting command
@@ -5003,30 +5202,30 @@ void dv_Serial_MinBackLightValue_Para0(BYTE ucCmdPara)
 
   else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
       ucCmd = 0xff;				//Denote we need to send status to UART
-      RTDEepromRestoreMinBacklightLevel();	//Restore default backlight min level
-
+      SET_BACKLIGHT_MIN_LEVEL(DEFAULT_MIN_BKL_LEVEL);		//Default min. backlight level
+	//Update backlight level after changing min. backlight level
+	Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));
   }
   else if(ucCmdPara == '+'||ucCmdPara == '-'){
       ucCmd = 0xff;					//Denote we need to send status to UART
       if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Right key message means increase value
+	  value = ENABLE;				//ENABLE means increase value in routine MApp_ZUI_ACT_DecIncValue
       }
       else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Left key message means decrease value
+	  value = DISABLE;				//DISABLE means decrease value in routine MApp_ZUI_ACT_DecIncValue
       }
-      value= (BYTE)OsdDisplayDetOverRangeStep(GET_BACKLIGHT_MIN(), _BL_MIN_MAX, _BL_MIN_MIN,_BL_MIN_STEP, _OFF);		//This function need to input Step size
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);		//Clear key message after changing value
-      SET_BACKLIGHT_MIN(value);				//Save the new value in variable
 
-      //Since backlight min level is confirmed, we need to set the update backlight value according to new backlight min level
-      OsdAdjBlLevelPerMinVal();
-
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting of backlight min level in NVRAM
+	//Increase/decrease min. backlight level by 1 step, with max value = 50
+	SET_BACKLIGHT_MIN_LEVEL(MApp_ZUI_ACT_DecIncValue(
+	    value,
+	    GET_BACKLIGHT_MIN_LEVEL(), 0, 50, 1));
+	//Update backlight level after changing min. backlight level
+	Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));
 
   }
 
   if(ucCmd==0xff){
-      dv_SerialTransmitHex(GET_BACKLIGHT_MIN());			//Send backlight min value to UART
+      dv_SerialTransmitHex(GET_BACKLIGHT_MIN_LEVEL());			//Send backlight min value to UART
   }
 
 }
@@ -5041,27 +5240,58 @@ void dv_Serial_MinBackLightValue_Para1(BYTE *ucCmdPara)
   BYTE ucValue;
 
   ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-  //SVX-4096 min backlight range is 0~50
-  if(ucValue > _BL_MIN_MAX){
-      ucValue = _BL_MIN_MAX;				//Set it to max if input value is larger than max
-  }
-  if(ucValue < _BL_MIN_MIN){
-      ucValue = _BL_MIN_MIN;
+  //SP-4096 min backlight range is 0~50
+  if(ucValue > 50){
+      ucValue = 50;						//Set it to max if input value is larger than max
   }
 
-  SET_BACKLIGHT_MIN(ucValue);				//Save the new value in variable
 
-  //Since backlight min level is confirmed, we need to set the update backlight value according to new backlight min level
-  OsdAdjBlLevelPerMinVal();
+  SET_BACKLIGHT_MIN_LEVEL(ucValue);				//Save the new value in variable
 
-  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting of backlight min level in NVRAM
+  //Update backlight level after changing min. backlight level
+  Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));
 
-  dv_SerialTransmitHex(GET_BACKLIGHT_MIN());			//Send backlight min value to UART
+  dv_SerialTransmitHex(GET_BACKLIGHT_MIN_LEVEL());		//Send backlight min value to UART
 
 
 }
 
 
+//*********************************************************
+//Ray DPW 2017.06.19: dv_Serial_DefaultPower_Para2
+// Routine: dv_Serial_DefaultPower_Para2
+// Usage: Process RS232 0xee 0x6b 0x50 default power on/off command
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_DefaultPower_Para2(BYTE *ucCmdPara)
+{
+
+  BYTE ucCmd = 0;
+
+  switch (ucCmdPara[0]){
+    case '?':
+      ucCmd = 0xff;			//Denote we need to send status to UART
+      break;
+    case '0':
+      ucCmd = 0xff;			//Denote we need to send status to UART
+      SET_DEFAULT_POWER(_OFF);		//Set default power as off
+      break;
+    case '1':
+      ucCmd = 0xff;			//Denote we need to send status to UART
+      SET_DEFAULT_POWER(_ON);		//Set default power as on
+      break;
+    default:
+      break;
+  }
+
+  if(ucCmd == 0xff){
+      dv_TxByteToUART(GET_DEFAULT_POWER()+0x30);		//Send the default power status to UART
+  }
+
+
+}
+
+#if 0			//Ray 2017.02.20
 //*********************************************************
 // Routine: dv_UserEDID_InputSrc
 // Usage: Get user EDID EEPROM input source
@@ -6217,192 +6447,6 @@ BYTE dv_GetDisplayRegion(BYTE ucPicture)
 }
 
 
-//*********************************************************
-// Routine: dv_Serial_Volume_Para1
-// Usage: Process RS232 0x80 volume control with parameter:
-//	  'A'/'a': '+': increase, '-': decrease, 'r'/'R': reset, '?' query
-//	   'M/n' : '1': unmute, '0': mute, 'r'/'R': reset, '?' query
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_Volume_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucCmd = 0;
-  BYTE ucVol;
-  BYTE ucNewAudioSrc;
-
-  //All volume control command
-  if(ucCmdPara[0]=='A'||ucCmdPara[0]=='a'){
-      if(ucCmdPara[1] == '?'){
-    	ucCmd = 0xff;			//Denote we need to send status to UART
-      }
-      else if(ucCmdPara[1] == 'R'||ucCmdPara[1] == 'r'){
-          ucCmd = 0xff;				//Denote we need to send status to UART
-          RTDEepromRestoreVolume();		//Restore default volume level
-
-      }
-      else if(ucCmdPara[1] == '+'||ucCmdPara[1] == '-'){
-          ucCmd = 0xff;				//Denote we need to send status to UART
-          ucVol = GET_OSD_VOLUME();
-          if(ucCmdPara[1] == '+'){
-	    if(ucVol < _OSD_VOLUME_MAX){
-		ucVol++;				//Increase volume
-	    }
-          }
-          else{
-	    if(ucVol > _OSD_VOLUME_MIN){
-		ucVol--;				//Increase volume
-	    }
-          }
-          SET_OSD_VOLUME(ucVol);			//Save volume
-          UserAdjustAudioVolume(GET_OSD_VOLUME());	//Execute new volume
-          SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new volume into System EEPROM
-      }
-
-   //Dump volume value to UART
-   if(ucCmd == 0xff){
-       ucVol = GET_OSD_VOLUME();
-       dv_SerialTransmitHex(ucVol);
-   }
-
-  }
-  //Volume mute control
-  if(ucCmdPara[0]=='M'||ucCmdPara[0]=='m'){
-
-      if(ucCmdPara[1] == '0'||ucCmdPara[1] == '1'){
-	//Mute volume
-	if(ucCmdPara[1]=='0'){
-	    SET_OSD_VOLUME_MUTE(_ON);
-	}
-	//Enable volume output
-	if(ucCmdPara[1]=='1'){
-	    SET_OSD_VOLUME_MUTE(_OFF);
-	}
-	UserAdjustAudioMuteSwitch();		//Execute mute status
-	SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG); 	//Save mute status in System EEPROM
-      }
-      else if(ucCmdPara[1] == 'R'||ucCmdPara[1] == 'r'){
-          RTDEepromRestoreMute();		//Restore default mute status
-      }
-
-      //Dump volume mute status to UART
-      if(GET_OSD_VOLUME_MUTE()==_ON){
-	  ucVol = '0';
-      }
-      else{
-	  ucVol = '1';
-      }
-      dv_TxByteToUART(ucVol);
-
-  }
-
-
-  //PIP/PBP audio source selection
-  if(ucCmdPara[0] == 'P'){
-      ucCmd = 0;
-      if(ucCmdPara[1] == '0'){
-	  SET_OSD_AUDIO_SOURCE(_OSD_AUDIO_SOURCE_DIGITAL_REGION_1);
-	  ucCmd = 0xfe;		//Denote it's valid input
-      }
-      else if(ucCmdPara[1] == '1'){
-	 if(GET_OSD_DISPLAY_MODE() >= _OSD_DM_2P_LR){		//Ray 2016.11.10: Region 2 is available only if it's more than 1P shown on screen
-	  SET_OSD_AUDIO_SOURCE(_OSD_AUDIO_SOURCE_DIGITAL_REGION_2);
-	  ucCmd = 0xfe;		//Denote it's valid input
-	}
-      }
-      else if(ucCmdPara[1] == '2'){
-	  if(GET_OSD_DISPLAY_MODE() == _OSD_DM_4P){		//Ray 2016.11.10: Region 3 is available only if it's 4P mode
-	      SET_OSD_AUDIO_SOURCE(_OSD_AUDIO_SOURCE_DIGITAL_REGION_3);
-	      ucCmd = 0xfe;		//Denote it's valid input
-	  }
-      }
-      else if(ucCmdPara[1] == '3'){
-	  if(GET_OSD_DISPLAY_MODE() == _OSD_DM_4P){		//Ray 2016.11.10: Region 3 is available only if it's 4P mode
-	      SET_OSD_AUDIO_SOURCE(_OSD_AUDIO_SOURCE_DIGITAL_REGION_4);
-	      ucCmd = 0xfe;		//Denote it's valid input
-	  }
-      }
-      else if(ucCmdPara[1] == 'A'||ucCmdPara[1] == 'a'){
-	  SET_OSD_AUDIO_SOURCE(_OSD_AUDIO_SOURCE_ANALOG);
-	  ucCmd = 0xfe;		//Denote it's valid input
-      }
-      else if(ucCmdPara[1] == 'R'||ucCmdPara[1] == 'r'){
-	  SET_OSD_AUDIO_SOURCE(_OSD_AUDIO_SOURCE_DIGITAL_REGION_1);		//Ray 2016.11.01: Default audio source is changed from analog to Digital 1
-	  ucCmd = 0xfe;		//Denote it's valid input
-      }
-      else{
-	  ucCmd  = 0;		//Denote it's invalid input
-      }
-
-      if(ucCmd == 0xfe){	//Execute below only if input a valid value
-	  ucNewAudioSrc = OsdSelectAudioSource(GET_OSD_AUDIO_SOURCE());		//Ray 2016.11.04: If user select digit region which is VGA/DVI source, ucNewAudioSrc will be changed to analog audio
-	  SET_OSD_AUDIO_SOURCE(ucNewAudioSrc);
-	  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_DISPLAYMODEDATA_MSG);	//Save into System EEPROM
-      }
-
-      //Dump audio source selection to UART
-      switch(GET_OSD_AUDIO_SOURCE()){
-	case _OSD_AUDIO_SOURCE_DIGITAL_REGION_1:
-	  ucCmd = '0';
-	  break;
-	case _OSD_AUDIO_SOURCE_DIGITAL_REGION_2:
-	  ucCmd = '1';
-	  break;
-	case _OSD_AUDIO_SOURCE_DIGITAL_REGION_3:
-	  ucCmd = '2';
-	  break;
-	case _OSD_AUDIO_SOURCE_DIGITAL_REGION_4:
-	  ucCmd = '3';
-	  break;
-	case _OSD_AUDIO_SOURCE_ANALOG:
-	  ucCmd = 'A';
-	  break;
-	default:
-	  ucCmd = '?';
-	  break;
-      }
-      dv_TxByteToUART(ucCmd);
-
-  }
-
-
-
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_Volume_Para2
-// Usage: Process RS232 0x80 volume control with parameter 'A'/'a'.
-//	  nn: 2 hex digit input to set volume
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_Volume_Para2(BYTE *ucCmdPara)
-{
-  BYTE ucCmd = 0;
-  BYTE ucVol;
-
-  //We only process all volume control command
-  if(ucCmdPara[0]=='A'||ucCmdPara[0]=='a'){
-
-      ucVol = dv_GetAsciiValue(&ucCmdPara[1]);			//transform ASCII to digit value
-      //SVX-4096 volume range is 0x00 to 0x64 (0%~100%)
-      if(ucVol > _OSD_VOLUME_MAX){
-	  ucVol = _OSD_VOLUME_MAX;		//Set it to max if input value is larger than max
-      }
-
-      SET_OSD_VOLUME(ucVol);			//Save volume
-      UserAdjustAudioVolume(GET_OSD_VOLUME());	//Execute new volume
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new volume into System EEPROM
-
-     ucVol = GET_OSD_VOLUME();
-     dv_SerialTransmitHex(ucVol);
-
-
-  }
-  else{
-      dv_SerialTransmitHex('?');	//Transmit '?' to denote unknown command
-  }
-
-}
 
 
 
@@ -6581,41 +6625,7 @@ void dv_Serial_PipSource_Para2(BYTE *ucCmdPara)
 }
 
 
-//*********************************************************
-//Ray 2016.10.14
-// Routine: dv_Serial_DefaultPower_Para2
-// Usage: Process RS232 0xee 0x6b 0x50 default power on/off command
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_DefaultPower_Para2(BYTE *ucCmdPara)
-{
 
-  BYTE ucCmd = 0;
-
-  switch (ucCmdPara[0]){
-    case '?':
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      break;
-    case '0':
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      SET_DEFAULT_POWER(_OFF);		//Set default power as off
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting of default power in NVRAM
-      break;
-    case '1':
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      SET_DEFAULT_POWER(_ON);		//Set default power as on
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_OSDUSERDATA_MSG);	//Save new setting of default power in NVRAM
-      break;
-    default:
-      break;
-  }
-
-  if(ucCmd == 0xff){
-      dv_TxByteToUART(GET_DEFAULT_POWER()+0x30);		//Send the default power status to UART
-  }
-
-
-}
 
 
 //*********************************************************
@@ -7431,202 +7441,56 @@ BYTE dv_GetAsciiBCDValue(BYTE *para)
 }
 
 
-#if 0		//Ray 2017.02.21
+//Ray SRC 2017.06.16
 //*********************************************************
 // Routine: dv_Serial_QuerySource
 // Usage: To process 0xC9 command by checking the input sources and reply to PC
 //**********************************************************
 void dv_Serial_QuerySource(void)
 {
-  switch(GET_OSD_DISPLAY_MODE())
-  {
-
-      case _OSD_DM_1P:
-	//Check if region 0 video signal is valid (main video)
-	if(GET_RGN_DISPLAY_STATE(0)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort0());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in first input
-	  dv_TxByteToUART('0');
-	}
-	dv_TxByteToUART('0');	//No second video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No third video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No forth video source
-	dv_TxByteToUART('0');
-        break;
-
-#if(_PIP_DISPLAY_SUPPORT == _ON)
-      case _OSD_DM_2P_PIP:
-	//Check if region 0 video signal is valid (main video)
-	if(GET_RGN_DISPLAY_STATE(0)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort0());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in first input
-	  dv_TxByteToUART('0');
-	}
-	//Check if region 1 video signal is valid (sub video)
-	if(GET_RGN_DISPLAY_STATE(1)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort1());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in second input
-	  dv_TxByteToUART('0');
-	}
-	dv_TxByteToUART('0');	//No third video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No forth video source
-	dv_TxByteToUART('0');
-        break;
-#endif
-
-#if(_PBP_LR_DISPLAY_SUPPORT == _ON)
-      case _OSD_DM_2P_LR:
-	//Check if region 0 video signal is valid (left video)
-	if(GET_RGN_DISPLAY_STATE(0)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort0());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in first input
-	  dv_TxByteToUART('0');
-	}
-	//Check if region 1 video signal is valid (right video)
-	if(GET_RGN_DISPLAY_STATE(1)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort1());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in second input
-	  dv_TxByteToUART('0');
-	}
-	dv_TxByteToUART('0');	//No third video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No forth video source
-	dv_TxByteToUART('0');
-	break;
-#endif
-
-#if(_PBP_TB_DISPLAY_SUPPORT == _ON)
-      case _OSD_DM_2P_TB:
-	//Check if region 0 video signal is valid (top video)
-	if(GET_RGN_DISPLAY_STATE(0)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort0());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in first input
-	  dv_TxByteToUART('0');
-	}
-	//Check if region 1 video signal is valid (bottom video)
-	if(GET_RGN_DISPLAY_STATE(1)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort1());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in second input
-	  dv_TxByteToUART('0');
-	}
-	dv_TxByteToUART('0');	//No third video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No forth video source
-	dv_TxByteToUART('0');
-	break;
-#endif
-
-#if(_4P_DISPLAY_SUPPORT == _ON)
-      case _OSD_DM_4P:
-	//Check if region 0 video signal is valid (left top)
-	if(GET_RGN_DISPLAY_STATE(0)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort0());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in first input
-	  dv_TxByteToUART('0');
-	}
-	//Check if region 1 video signal is valid (left bottom)
-	if(GET_RGN_DISPLAY_STATE(1)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort1());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in second input
-	  dv_TxByteToUART('0');
-	}
-	//Check if region 2 video signal is valid (right top)
-	if(GET_RGN_DISPLAY_STATE(2)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort2());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in third input
-	  dv_TxByteToUART('0');
-	}
-	//Check if region 3 video signal is valid (right bottom)
-	if(GET_RGN_DISPLAY_STATE(3)==_DISPLAY_STATE_ACTIVE){
-	    dv_Serial_QuerySourceTx(UserInterfaceGetInputPort3());
-	}
-	else{
-	  dv_TxByteToUART('0');	//No valid video source in forth input
-	  dv_TxByteToUART('0');
-	}
-	break;
-#endif
-      default:			//Undefine state
-	dv_TxByteToUART('0');	//No first video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No second video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No third video source
-	dv_TxByteToUART('0');
-	dv_TxByteToUART('0');	//No forth video source
-	dv_TxByteToUART('0');
-	  break;
-  }
+    //Check if input source has valid stable sync
+    if(MApi_XC_PCMonitor(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW), MAIN_WINDOW)==E_XC_PCMONITOR_STABLE_SYNC){
+	dv_Serial_QuerySourceTx(g_enDataInputSourceType[MAIN_WINDOW]);
+    }else{
+	    dv_TxByteToUART('0');	//No valid video source in input
+	    dv_TxByteToUART('0');
+    }
 }
 
+//Ray SRC 2017.06.16
 //*********************************************************
 // Routine: dv_Serial_QuerySourceTx
 // Usage: To transmit video source Two Byte values to PC for the command 0xC9
-// Input: EnumSourceSearchPort videoInput
+// Input: E_DATA_INPUT_SOURCE ucSource
 //**********************************************************
-void dv_Serial_QuerySourceTx(EnumSourceSearchPort videoInput)
+void dv_Serial_QuerySourceTx(E_DATA_INPUT_SOURCE ucSource)
 {
-  switch(videoInput)
+  switch(ucSource)
   {
-    case _A0_INPUT_PORT:	//ARGB source
+    case DATA_INPUT_SOURCE_RGB:		//ARGB source
 	dv_TxByteToUART('A');
 	dv_TxByteToUART('1');
 	break;
-    case _D0_INPUT_PORT:	//DisplayPort source
-	dv_TxByteToUART('P');
-	dv_TxByteToUART('1');
-	break;
-    case _D1_INPUT_PORT:	//HDMI 1 source
+    case DATA_INPUT_SOURCE_HDMI:	//HDMI 1 source
 	dv_TxByteToUART('H');
 	dv_TxByteToUART('1');
 	break;
-    case _D2_INPUT_PORT:	//HDMI 2 source
+    case DATA_INPUT_SOURCE_HDMI2:	//HDMI 2 source
 	dv_TxByteToUART('H');
 	dv_TxByteToUART('2');
 	break;
-    case _D3_INPUT_PORT:
-#if(_HD3000S_SUPPORT==_ON)
-	dv_TxByteToUART('E');	//Ray 2016.11.29: HD-SDI 1 source for D3
-	dv_TxByteToUART('1');
-#else
-	dv_TxByteToUART('H');	//HDMI 3 source
+    case DATA_INPUT_SOURCE_HDMI4:
+	dv_TxByteToUART('H');		//HDMI 3 source
 	dv_TxByteToUART('3');
-#endif
 	break;
-    case _D4_INPUT_PORT:	//DVI source
+    case DATA_INPUT_SOURCE_HDMI3:	//DVI source
 	dv_TxByteToUART('F');
 	dv_TxByteToUART('1');
 	break;
     default:
-	dv_TxByteToUART('0');	//Invalid source
+	dv_TxByteToUART('0');		//Invalid source
 	dv_TxByteToUART('0');
       break;
   }
 }
 
-
-
-#endif		//Ray URT 2017.02.03

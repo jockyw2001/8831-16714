@@ -892,6 +892,16 @@ BOOL MApp_SaveData_Check_IfDataChanged(U8 u8SaveDataId)
     return bChanged;
 }
 
+//Ray LDF 2017.06.14: Factory reset GenSetting. The DV parameters like backlight settings are kept without reset
+void MApp_FactoryResetGenSetting(void)
+{
+
+    MApp_DataBase_RestoreDefaultValue(RESTORE_KEEP_DV_SETTING);
+
+    MApp_SaveGenSetting();
+}
+
+
 void MApp_InitGenSetting(void)
 {
     //printf("MApp_InitGenSetting()\n");
@@ -1153,8 +1163,9 @@ void MApp_InitSysSetting(void)
 {
     SET_OSD_MENU_LANGUAGE(LANGUAGE_ENGLISH); // menu language
 
-    MApp_DataBase_RestoreDefaultSystem(RESTORE_KEEP_NONE);
-
+    //Ray LDF 2017.06.16: If MApp_SysSetting_IfCheckSumCorrect() is failed, it is because we add new variables in SysSetting, we still need to keep backlight parameter unchanged.
+    MApp_DataBase_RestoreDefaultSystem(RESTORE_KEEP_DV_SETTING);
+    //MApp_DataBase_RestoreDefaultSystem(RESTORE_KEEP_NONE);
     MApp_SaveSysSetting();
 #if ENABLE_ATSC_TTS
     MApp_TTSControlSetLanguage(stGenSetting.g_SysSetting.Language);

@@ -149,7 +149,7 @@ INTERFACE  void MApp_PreInit_Display_Step1_Init(void);
 INTERFACE  void MApp_PreInit_Source_Change_Init(void);
 INTERFACE  void MApp_PreInit_Display_Step2_Init(void);
 INTERFACE  void MApp_PreInit_Others_Init(void);
-
+INTERFACE  void MApp_PreInit_Check_Sel_Dn_Reset(void);		//Ray LDF 2017.06.15
 
 void MApp_Power_On_Init_On(void);
 

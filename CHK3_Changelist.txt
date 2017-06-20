@@ -1,0 +1,32 @@
+CHK3-1.01.01
+    2013/05/01 - Eden 64M solution. SZ PV System test.
+    CL496179+CL507205
+
+CHK3-1.01.01.a3
+    2013/4/29 - SQC system test for Euler Divx.
+    CL 521906
+
+CHK3-1.01.01.a2
+    2013/4/15 - SQC system test for Emerald MHL.
+    CL 513484
+
+CHK3-1.01.01.a1
+    2013/4/11 - SQC system test for Emerald Divx.
+    CL 510721
+
+CHK3-1.00.01.a3
+    2013/4/3 - SQC system test and pip intergration test .
+    CL 505770
+
+CHK3-1.00.01.a2
+    2013/04/01 - SQC system test and pip intergration test.
+    CL.503182
+
+CHK3-1.00.01.a1
+    2013/03/20 - SQC system test and pip intergration test.
+    CL.493508
+
+
+
+
+

@@ -221,6 +221,7 @@ static void MApp_SetKeyRepeatState(U8 u8KeyData);
 static U8 sPassNum=0;
 #endif
 static KEYSTAT stKeyStatus;
+static U8 rs232KeyCmd = IRKEY_DUMY;			//Ray OSM 2017.06.16: To store key from RS-232 command (like 0xF7 = MENU key)
 
 #define OSD_REPEAT_MASK     (BIT1|BIT0)
 #define OSD_REPEAT_DISABLE  (0x00)
@@ -1275,6 +1276,16 @@ static void MApp_CheckKeyStatus(void)
             stKeyStatus.keyrepeat=mbir.repeat;
             mbir.empty=TRUE;
         }
+
+        //Ray OSM 2017.06.16: Check if RS-232 command set key. If yes, set the key into stKeyStatus.keydata
+        if(rs232KeyCmd != IRKEY_DUMY){
+            stKeyStatus.keytype = KEY_TYPE_KEYPAD;
+            stKeyStatus.keydown = TRUE;
+            stKeyStatus.keydata = rs232KeyCmd;
+            stKeyStatus.keyrepeat = FALSE;
+            rs232KeyCmd = IRKEY_DUMY;		//Clear RS-232 command key
+        }
+
     }
 #endif
 
@@ -2127,6 +2138,19 @@ U8 MApp_GetMBIRFlag(void)
 {
     return mbir.flag;
 }
+
+//Ray OSM 2017.06.16
+//*************************************************************************
+//Function name:        MApp_RS232_SetKey
+//Input:    		key value like IRKEY_MENU etc
+//Output:     		none
+//Description:          Put RS-232 command key into rs232KeyCmd
+//*************************************************************************
+void MApp_RS232_SetKey(U8 key)
+{
+  rs232KeyCmd = key;
+}
+
 
 #if (FRONTEND_IF_DEMODE_TYPE == MSTAR_VIF_MSB1210)
 #if (MSTAR_VIF_MSB1210_DEBUG_MODE==1)

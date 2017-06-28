@@ -2644,6 +2644,8 @@ void MApi_XC_Sys_Init(void)
     //MApi_XC_ModeParse_SetVGAEIA(TRUE);
 #endif
 
+    //MApi_XC_SetVGASogEn(ENABLE);		//Ray VGA 2017.06.21: Enable VGA SOG function. But after enabling it, scalar fails to receive any video signal
+
     // Init timing monitor
     MApi_XC_PCMonitor_Init(MApi_XC_GetInfo()->u8MaxWindowNum);
 

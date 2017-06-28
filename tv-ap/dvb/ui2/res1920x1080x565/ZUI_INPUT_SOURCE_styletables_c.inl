@@ -294,7 +294,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Source_Input_Item_Pc_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Souce_Input_Item_Pc_Ais_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_173 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_172 },
     { CP_NOON, 0 },
 };
 #define _Zui_Souce_Input_Item_Pc_Ais_Icon_Focus_DrawStyle _Zui_Souce_Input_Item_Pc_Ais_Icon_Normal_DrawStyle

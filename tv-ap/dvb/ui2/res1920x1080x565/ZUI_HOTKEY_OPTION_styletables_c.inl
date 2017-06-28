@@ -44,7 +44,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Bg_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Picture_Mode_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_203 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_202 },
     { CP_NOON, 0 },
 };
 
@@ -63,7 +63,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Picture_Mode_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Sound_Mode_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_204 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_203 },
     { CP_NOON, 0 },
 };
 
@@ -78,7 +78,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Sound_Mode_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Zoom_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_205 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_204 },
     { CP_NOON, 0 },
 };
 
@@ -97,7 +97,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Zoom_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Sleep_Timer_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_206 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_205 },
     { CP_NOON, 0 },
 };
 
@@ -146,7 +146,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Mts_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Pip_Mode_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_207 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_206 },
     { CP_NOON, 0 },
 };
 

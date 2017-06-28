@@ -53,7 +53,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Bg_Top_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_248 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_247 },
     { CP_NOON, 0 },
 };
 
@@ -62,7 +62,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Bg_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_249 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_248 },
     { CP_NOON, 0 },
 };
 
@@ -71,7 +71,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Bg_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_250 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_249 },
     { CP_NOON, 0 },
 };
 
@@ -116,7 +116,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Page_Title_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_251 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_250 },
     { CP_NOON, 0 },
 };
 
@@ -125,7 +125,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_252 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_251 },
     { CP_NOON, 0 },
 };
 
@@ -134,7 +134,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_253 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_252 },
     { CP_NOON, 0 },
 };
 
@@ -143,7 +143,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_Up_Arrow_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_254 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_253 },
     { CP_NOON, 0 },
 };
 
@@ -152,7 +152,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_Up_Arrow_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Page_Bg_Down_Arrow_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_255 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_254 },
     { CP_NOON, 0 },
 };
 
@@ -220,7 +220,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Selection_Item1_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Input_Pin_Page_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_256 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_255 },
     { CP_NOON, 0 },
 };
 
@@ -229,7 +229,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Input_Pin_Page_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Input_Pin_Page_Bg_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_257 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_256 },
     { CP_NOON, 0 },
 };
 
@@ -238,7 +238,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Input_Pin_Page_Bg_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Cimmi_Input_Pin_Page_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_258 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_257 },
     { CP_NOON, 0 },
 };
 

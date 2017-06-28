@@ -2337,6 +2337,7 @@ INTERFACE E_DATA_INPUT_SOURCE g_enDataInputSourceType[2];
 #define ST_WHITEBALANCE         (G_WHITE_BALANCE_SETTING[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)])
 #ifdef sColorTempNotByPictureMode
 #define ST_COLOR_TEMP            ST_WHITEBALANCE.astColorTemp[ST_VIDEO.eColorTemp]
+#define USER_COLOR_TEMP		 ST_WHITEBALANCE.astColorTemp[MS_COLOR_TEMP_USER]		//Ray CTP 2017.06.26: To access user color temperature RGB setting
 #else
 #define ST_COLOR_TEMP           (ST_WHITEBALANCE.astColorTemp[ST_PICTURE.eColorTemp])
 #endif

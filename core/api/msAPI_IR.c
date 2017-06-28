@@ -462,7 +462,8 @@ BOOLEAN msAPI_GetKeyPad(U8 *u8key,U8 *u8Repstatus)
 	  //Only check menu key pressed continuously in normal mode (not power saving mode)
 	  if((sFlagSimPowerShutDown&0x01)==0x00){
 	      //Checking MENU key pressed continuously only carries out when there is no OSD menu shown
-	      if(E_OSD_EMPTY==MApp_ZUI_GetActiveOSD()){
+	      //Ray DMP 2017.06.21: Support MENU key to power saving mode in DMP by adding E_OSD_DMP == MApp_ZUI_GetActiveOSD()
+	      if(E_OSD_EMPTY==MApp_ZUI_GetActiveOSD()||E_OSD_DMP == MApp_ZUI_GetActiveOSD()){
 		//Check if MENU key is pressed
 		 if(msKeypad_CheckMenuKeyPress()){
 		    if(u16MenuKeyCounter==0){

@@ -35,7 +35,7 @@
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Bg_Pane_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_166 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_165 },
     { CP_NOON, 0 },
 };
 
@@ -44,7 +44,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Bg_Pane_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Bg_Pane_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_167 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_166 },
     { CP_NOON, 0 },
 };
 
@@ -53,7 +53,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Bg_Pane_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Bg_Pane_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_168 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_167 },
     { CP_NOON, 0 },
 };
 
@@ -136,7 +136,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Storage_Right_Arrow_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Storage_Pane_Inc_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_160 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_159 },
     { CP_NOON, 0 },
 };
 
@@ -145,7 +145,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Storage_Pane_Inc_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Storage_Pane_Dec_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_165 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_164 },
     { CP_NOON, 0 },
 };
 
@@ -367,7 +367,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Frequency_Value_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Atune_Key_Save_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_169 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_168 },
     { CP_NOON, 0 },
 };
 

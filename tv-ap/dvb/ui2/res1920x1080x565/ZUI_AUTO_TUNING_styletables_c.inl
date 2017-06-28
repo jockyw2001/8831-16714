@@ -54,7 +54,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Tune_Title_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Tune_Bg_Pane_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_170 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_169 },
     { CP_NOON, 0 },
 };
 
@@ -63,7 +63,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Tune_Bg_Pane_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Tune_Bg_Pane_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_171 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_170 },
     { CP_NOON, 0 },
 };
 
@@ -72,7 +72,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Tune_Bg_Pane_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Tune_Bg_Pane_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_172 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_171 },
     { CP_NOON, 0 },
 };
 
@@ -1483,7 +1483,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Favorite_Network_Sel_Bar_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Favorite_Network_Sel_Left_Arw_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_165 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_164 },
     { CP_NOON, 0 },
 };
 #define _Zui_Favorite_Network_Sel_Left_Arw_Focus_DrawStyle _Zui_Favorite_Network_Sel_Left_Arw_Normal_DrawStyle
@@ -1493,7 +1493,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Favorite_Network_Sel_Left_Arw_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Favorite_Network_Sel_Right_Arw_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_160 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_159 },
     { CP_NOON, 0 },
 };
 #define _Zui_Favorite_Network_Sel_Right_Arw_Focus_DrawStyle _Zui_Favorite_Network_Sel_Right_Arw_Normal_DrawStyle

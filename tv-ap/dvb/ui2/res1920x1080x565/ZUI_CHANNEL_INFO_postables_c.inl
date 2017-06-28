@@ -342,7 +342,7 @@ WINDOWPOSDATA _MP_TBLSEG _GUI_WindowPositionList_Zui_Channel_Info[] =
     // 52 = HWND_CHINFO_POP_LEFT_AREA
     {
         HWND_CHINFO_POP_PANE, HWND_CHINFO_POP_FIRST_SRC_ICON,
-        { 4, 39, 960, 310 },
+        { 2, 37, 960, 310 },
     },
 
     // 53 = HWND_CHINFO_POP_LEFT_TV_INFO

@@ -356,7 +356,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Ews_Frame_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Disaster_Symbol_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_208 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_207 },
     { CP_NOON, 0 },
 };
 
@@ -365,7 +365,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Disaster_Symbol_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Author_Symbol_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_209 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_208 },
     { CP_NOON, 0 },
 };
 

@@ -394,7 +394,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if ENABLE_DTV
     {// DTV
         0,//CS
-        PICTURE_NORMAL, // default Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode   default Picture mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -508,7 +508,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #endif
     {// ATV
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -623,7 +623,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_AV_VIDEO_COUNT >= 1)
     {// VIDEO
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -737,7 +737,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_AV_VIDEO_COUNT >= 2)
     {// VIDEO2
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -851,7 +851,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_AV_VIDEO_COUNT >= 3)
     {// VIDEO3
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -965,7 +965,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_YPBPR_VIDEO_COUNT >= 1)
     {// YPBPR
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1079,7 +1079,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_YPBPR_VIDEO_COUNT >= 2)
     {// YPBPR
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1193,7 +1193,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #endif
     {// RGB
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1306,7 +1306,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_HDMI_VIDEO_COUNT > 0)
     {// HDMI1
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1420,7 +1420,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_HDMI_VIDEO_COUNT >= 2)
     {// HDMI2
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1534,7 +1534,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_HDMI_VIDEO_COUNT >= 3)
     {// HDMI3
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1648,7 +1648,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_HDMI_VIDEO_COUNT >= 4)
     {// HDMI4
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1763,7 +1763,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_SCART_VIDEO_COUNT >= 1)
     {// SCART
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1877,7 +1877,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_SCART_VIDEO_COUNT >= 2)
     {// SCART2
         0,//CS
-        PICTURE_NORMAL, // Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -1991,7 +1991,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_SV_VIDEO_COUNT >= 1)
     {// S-VIDEO
         0,//CS
-        PICTURE_NORMAL,// Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -2105,7 +2105,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if (INPUT_SV_VIDEO_COUNT >= 2)
     {// S-VIDEO2
         0,//CS
-        PICTURE_NORMAL,// Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -2219,7 +2219,7 @@ static T_MS_VIDEO code astDefaultVideoDataTbl[DATA_INPUT_SOURCE_NUM] =
 #if ENABLE_DMP
     {// Storage
         0,//CS
-        PICTURE_NORMAL, // default Picture mode
+	PICTURE_USER, //Ray LDF 2017.06.21: Fix to use picture user mode
         {
             {//Dynamic
                 DYNAMIC_BACKLIGHT,
@@ -2354,9 +2354,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -2372,9 +2379,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -2391,10 +2404,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -2411,10 +2429,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -2457,9 +2480,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -2475,9 +2505,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -2494,10 +2530,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -2514,10 +2555,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -2560,9 +2606,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -2578,9 +2631,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -2597,10 +2656,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -2617,10 +2681,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -2664,9 +2733,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -2682,9 +2758,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -2701,10 +2783,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -2721,10 +2808,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -2768,9 +2860,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -2786,9 +2885,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -2805,10 +2910,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -2825,10 +2935,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -2872,9 +2987,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -2890,9 +3012,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -2909,10 +3037,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -2929,10 +3062,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -2962,109 +3100,6 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
     {// YPBPR2
         0,//CS
         {
-            INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
-            INIT_VIDEO_COLOR_BRIGHTNESS_WARM_G,
-            INIT_VIDEO_COLOR_BRIGHTNESS_WARM_B,
-
-		//Ray CTP 2017.05.18: Change to use default 5000K color temp
-		INIT_VIDEO_COLOR_TEMP_5000K_R,
-		INIT_VIDEO_COLOR_TEMP_5000K_G,
-		INIT_VIDEO_COLOR_TEMP_5000K_B,
-		/*
-            INIT_VIDEO_COLOR_TEMP_WARM_R,
-            INIT_VIDEO_COLOR_TEMP_WARM_G,
-            INIT_VIDEO_COLOR_TEMP_WARM_B,
-		*/
-            0x32,
-            0x32,
-            0x32,
-        },
-        {
-            INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
-            INIT_VIDEO_COLOR_BRIGHTNESS_WARM_G,
-            INIT_VIDEO_COLOR_BRIGHTNESS_WARM_B,
-
-		//Ray CTP 2017.05.18: Change to use default 6500K color temp
-		INIT_VIDEO_COLOR_TEMP_6500K_R,
-		INIT_VIDEO_COLOR_TEMP_6500K_G,
-		INIT_VIDEO_COLOR_TEMP_6500K_B,
-		/*
-            INIT_VIDEO_COLOR_TEMP_WARM_R,
-            INIT_VIDEO_COLOR_TEMP_WARM_G,
-            INIT_VIDEO_COLOR_TEMP_WARM_B,
-		*/
-            0x32,
-            0x32,
-            0x32,
-        },
-        {
-            INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
-            INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_G,
-            INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_B,
-
-		//Ray CTP 2017.05.18: Change to use default 7500K color temp
-		INIT_VIDEO_COLOR_TEMP_7500K_R,
-		INIT_VIDEO_COLOR_TEMP_7500K_G,
-		INIT_VIDEO_COLOR_TEMP_7500K_B,
-
-		/*
-            INIT_VIDEO_COLOR_TEMP_NORMAL_R,
-            INIT_VIDEO_COLOR_TEMP_NORMAL_G,
-            INIT_VIDEO_COLOR_TEMP_NORMAL_B,
-		*/
-
-            0x32,
-            0x32,
-            0x32,
-        },
-        {
-            INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
-            INIT_VIDEO_COLOR_BRIGHTNESS_COOL_G,
-            INIT_VIDEO_COLOR_BRIGHTNESS_COOL_B,
-
-		//Ray CTP 2017.05.18: Change to use default 9300K color temp
-		INIT_VIDEO_COLOR_TEMP_9300K_R,
-		INIT_VIDEO_COLOR_TEMP_9300K_G,
-		INIT_VIDEO_COLOR_TEMP_9300K_B,
-
-		/*
-            INIT_VIDEO_COLOR_TEMP_COOL_R,
-            INIT_VIDEO_COLOR_TEMP_COOL_G,
-            INIT_VIDEO_COLOR_TEMP_COOL_B,
-		*/
-
-            0x32,
-            0x32,
-            0x32,
-        },
-    #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
-        {
-            INIT_VIDEO_COLOR_BRIGHTNESS_USER_R,
-            INIT_VIDEO_COLOR_BRIGHTNESS_USER_G,
-            INIT_VIDEO_COLOR_BRIGHTNESS_USER_B,
-
-            INIT_VIDEO_COLOR_TEMP_USER_R,
-            INIT_VIDEO_COLOR_TEMP_USER_G,
-            INIT_VIDEO_COLOR_TEMP_USER_B,
-
-	    //Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
-	    INIT_VIDEO_COLOR_TEMP_USER_R - 28,
-            INIT_VIDEO_COLOR_TEMP_USER_G - 28,
-            INIT_VIDEO_COLOR_TEMP_USER_B - 28,
-	    /*
-            0x32,
-            0x32,
-            0x32,
-            */
-        },
-    #endif
-        }
-    },
-#endif
-
-    {// RGB
-        0,//CS
-        {
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_G,
@@ -3079,9 +3114,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3097,9 +3139,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3116,10 +3164,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3136,10 +3189,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3164,6 +3222,134 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
         #endif
         }
     },
+#endif
+
+    {// RGB
+        0,//CS
+        {
+
+                {
+                    INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_WARM_G,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_WARM_B,
+
+    		//Ray CTP 2017.05.18: Change to use default 5000K color temp
+    		INIT_VIDEO_COLOR_TEMP_5000K_R,
+    		INIT_VIDEO_COLOR_TEMP_5000K_G,
+    		INIT_VIDEO_COLOR_TEMP_5000K_B,
+    		/*
+                    INIT_VIDEO_COLOR_TEMP_WARM_R,
+                    INIT_VIDEO_COLOR_TEMP_WARM_G,
+                    INIT_VIDEO_COLOR_TEMP_WARM_B,
+    		*/
+
+    		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+    		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+    		/*
+                    0x32,
+                    0x32,
+                    0x32,
+                    */
+                },
+                {
+                    INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_WARM_G,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_WARM_B,
+
+    		//Ray CTP 2017.05.18: Change to use default 6500K color temp
+    		INIT_VIDEO_COLOR_TEMP_6500K_R,
+    		INIT_VIDEO_COLOR_TEMP_6500K_G,
+    		INIT_VIDEO_COLOR_TEMP_6500K_B,
+    		/*
+                    INIT_VIDEO_COLOR_TEMP_WARM_R,
+                    INIT_VIDEO_COLOR_TEMP_WARM_G,
+                    INIT_VIDEO_COLOR_TEMP_WARM_B,
+    		*/
+    		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+    		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+    		/*
+                    0x32,
+                    0x32,
+                    0x32,
+                    */
+                },
+                {
+                    INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_G,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_B,
+
+    		//Ray CTP 2017.05.18: Change to use default 7500K color temp
+    		INIT_VIDEO_COLOR_TEMP_7500K_R,
+    		INIT_VIDEO_COLOR_TEMP_7500K_G,
+    		INIT_VIDEO_COLOR_TEMP_7500K_B,
+
+    		/*
+                    INIT_VIDEO_COLOR_TEMP_NORMAL_R,
+                    INIT_VIDEO_COLOR_TEMP_NORMAL_G,
+                    INIT_VIDEO_COLOR_TEMP_NORMAL_B,
+    		*/
+    		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+    		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+    		/*
+                    0x32,
+                    0x32,
+                    0x32,
+                    */
+                },
+                {
+                    INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_COOL_G,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_COOL_B,
+
+    		//Ray CTP 2017.05.18: Change to use default 9300K color temp
+    		INIT_VIDEO_COLOR_TEMP_9300K_R,
+    		INIT_VIDEO_COLOR_TEMP_9300K_G,
+    		INIT_VIDEO_COLOR_TEMP_9300K_B,
+
+    		/*
+                    INIT_VIDEO_COLOR_TEMP_COOL_R,
+                    INIT_VIDEO_COLOR_TEMP_COOL_G,
+                    INIT_VIDEO_COLOR_TEMP_COOL_B,
+    		*/
+    		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+    		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+    		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+    		/*
+                    0x32,
+                    0x32,
+                    0x32,
+                    */
+                },
+            #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
+                {
+                    INIT_VIDEO_COLOR_BRIGHTNESS_USER_R,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_USER_G,
+                    INIT_VIDEO_COLOR_BRIGHTNESS_USER_B,
+
+                    INIT_VIDEO_COLOR_TEMP_USER_R,
+                    INIT_VIDEO_COLOR_TEMP_USER_G,
+                    INIT_VIDEO_COLOR_TEMP_USER_B,
+
+    		//Ray CTP 2017.06.09: Default color temperature user scale value should be actual one -28
+    		INIT_VIDEO_COLOR_TEMP_USER_R - 28,
+                    INIT_VIDEO_COLOR_TEMP_USER_G - 28,
+                    INIT_VIDEO_COLOR_TEMP_USER_B - 28,
+    		/*
+                    0x32,
+                    0x32,
+                    0x32,
+                    */
+                },
+            #endif
+        }
+    },
 
 #if (INPUT_HDMI_VIDEO_COUNT > 0)
     {// HDMI1
@@ -3183,9 +3369,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3201,9 +3394,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3220,10 +3419,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3240,10 +3444,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3287,9 +3496,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3305,9 +3521,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3324,10 +3546,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3344,10 +3571,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3391,9 +3623,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3409,9 +3648,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3428,10 +3673,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3448,10 +3698,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3495,9 +3750,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3513,9 +3775,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3532,10 +3800,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3552,10 +3825,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3599,9 +3877,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3617,9 +3902,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3636,10 +3927,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3656,10 +3952,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3703,9 +4004,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3721,9 +4029,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3740,10 +4054,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3760,10 +4079,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3807,9 +4131,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3825,9 +4156,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3844,10 +4181,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3864,10 +4206,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -3911,9 +4258,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -3929,9 +4283,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -3948,10 +4308,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -3968,10 +4333,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -4015,9 +4385,16 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_5000K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_5000K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_WARM_R,
@@ -4033,9 +4410,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_WARM_G,
                 INIT_VIDEO_COLOR_TEMP_WARM_B,
 		*/
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_6500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_6500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_NORMAL_R,
@@ -4052,10 +4435,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_NORMAL_G,
                 INIT_VIDEO_COLOR_TEMP_NORMAL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_7500K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_7500K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
             {
                 INIT_VIDEO_COLOR_BRIGHTNESS_COOL_R,
@@ -4072,10 +4460,15 @@ static T_MS_WHITEBALANCE code astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_NU
                 INIT_VIDEO_COLOR_TEMP_COOL_G,
                 INIT_VIDEO_COLOR_TEMP_COOL_B,
 		*/
-
+		//Ray CTP 2017.06.23: scale value is change to use default color temp - MIN_USER_RGB (28)
+		INIT_VIDEO_COLOR_TEMP_9300K_R - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_G - MIN_USER_RGB,
+		INIT_VIDEO_COLOR_TEMP_9300K_B - MIN_USER_RGB,
+		/*
                 0x32,
                 0x32,
                 0x32,
+                */
             },
         #if (MS_COLOR_TEMP_COUNT == 5)				//Ray CTP 2017.05.18: Change MS_COLOR_TEMP_COUNT from 4 to 5
             {
@@ -4778,6 +5171,113 @@ void MApp_DataBase_RestoreColorTempSelection(void)
   }
 }
 
+
+//Ray CTP 2017.06.23: Set selected red color temperature to default value
+//*************************************************************************
+//Function name:        MApp_DataBase_RestoreSelColorTempRed
+//Passing parameter:    none
+//Return parameter:     none
+//Description:          Restore default selected color temperature red value for current port
+//*************************************************************************
+void MApp_DataBase_RestoreSelColorTempRed(void)
+{
+
+    G_WHITE_BALANCE_SETTING[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cRedColor        =  astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cRedColor;
+    G_WHITE_BALANCE_SETTING[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cRedScaleValue   =  astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cRedScaleValue;
+
+}
+
+
+//Ray CTP 2017.06.23: Set selected green color temperature to default value
+//*************************************************************************
+//Function name:        MApp_DataBase_RestoreSelColorTempGreen
+//Passing parameter:    none
+//Return parameter:     none
+//Description:          Restore default selected color temperature green value for current port
+//*************************************************************************
+void MApp_DataBase_RestoreSelColorTempGreen(void)
+{
+
+    G_WHITE_BALANCE_SETTING[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cGreenColor        =  astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cGreenColor;
+    G_WHITE_BALANCE_SETTING[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cGreenScaleValue   =  astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cGreenScaleValue;
+
+}
+
+
+//Ray CTP 2017.06.23: Set selected blue color temperature to default value
+//*************************************************************************
+//Function name:        MApp_DataBase_RestoreSelColorTempBlue
+//Passing parameter:    none
+//Return parameter:     none
+//Description:          Restore default selected color temperature blue value for current port
+//*************************************************************************
+void MApp_DataBase_RestoreSelColorTempBlue(void)
+{
+
+    G_WHITE_BALANCE_SETTING[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cBlueColor        =  astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cBlueColor;
+    G_WHITE_BALANCE_SETTING[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cBlueScaleValue   =  astDefaultWhiteBalanceDataTbl[DATA_INPUT_SOURCE_TYPE(MAIN_WINDOW)].astColorTemp[ST_VIDEO.eColorTemp].cBlueScaleValue;
+
+}
+
+
+//Ray CTP 2017.06.26: Set user red color temperature to default value
+//*************************************************************************
+//Function name:        MApp_DataBase_RestoreUserColorTempRed
+//Passing parameter:    none
+//Return parameter:     none
+//Description:          Restore default user color temperature red value for all ports
+//*************************************************************************
+void MApp_DataBase_RestoreUserColorTempRed(void)
+{
+
+  U8 i;
+  for(i = 0; i < DATA_INPUT_SOURCE_NUM; i++)
+  {
+    G_WHITE_BALANCE_SETTING[i].astColorTemp[MS_COLOR_TEMP_USER].cRedColor        =  astDefaultWhiteBalanceDataTbl[i].astColorTemp[MS_COLOR_TEMP_USER].cRedColor;
+    G_WHITE_BALANCE_SETTING[i].astColorTemp[MS_COLOR_TEMP_USER].cRedScaleValue   =  astDefaultWhiteBalanceDataTbl[i].astColorTemp[MS_COLOR_TEMP_USER].cRedScaleValue;
+  }
+
+}
+
+
+//Ray CTP 2017.06.26: Set user Green color temperature to default value
+//*************************************************************************
+//Function name:        MApp_DataBase_RestoreUserColorTempGreen
+//Passing parameter:    none
+//Return parameter:     none
+//Description:          Restore default user color temperature Green value for all ports
+//*************************************************************************
+void MApp_DataBase_RestoreUserColorTempGreen(void)
+{
+
+  U8 i;
+  for(i = 0; i < DATA_INPUT_SOURCE_NUM; i++)
+  {
+    G_WHITE_BALANCE_SETTING[i].astColorTemp[MS_COLOR_TEMP_USER].cGreenColor        =  astDefaultWhiteBalanceDataTbl[i].astColorTemp[MS_COLOR_TEMP_USER].cGreenColor;
+    G_WHITE_BALANCE_SETTING[i].astColorTemp[MS_COLOR_TEMP_USER].cGreenScaleValue   =  astDefaultWhiteBalanceDataTbl[i].astColorTemp[MS_COLOR_TEMP_USER].cGreenScaleValue;
+  }
+
+}
+
+
+//Ray CTP 2017.06.26: Set user Blue color temperature to default value
+//*************************************************************************
+//Function name:        MApp_DataBase_RestoreUserColorTempBlue
+//Passing parameter:    none
+//Return parameter:     none
+//Description:          Restore default user color temperature Blue value for all ports
+//*************************************************************************
+void MApp_DataBase_RestoreUserColorTempBlue(void)
+{
+
+  U8 i;
+  for(i = 0; i < DATA_INPUT_SOURCE_NUM; i++)
+  {
+    G_WHITE_BALANCE_SETTING[i].astColorTemp[MS_COLOR_TEMP_USER].cBlueColor        =  astDefaultWhiteBalanceDataTbl[i].astColorTemp[MS_COLOR_TEMP_USER].cBlueColor;
+    G_WHITE_BALANCE_SETTING[i].astColorTemp[MS_COLOR_TEMP_USER].cBlueScaleValue   =  astDefaultWhiteBalanceDataTbl[i].astColorTemp[MS_COLOR_TEMP_USER].cBlueScaleValue;
+  }
+
+}
 
 //*************************************************************************
 //Function name:        MApp_DataBase_RestoreDefaultVideo

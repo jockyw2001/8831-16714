@@ -548,11 +548,13 @@ static void MApp_ParseKey(void)
             	        	    u8KeyCode = KEY_MENU;	//In no menu mode, press the key to show main menu
             	        	}
             		}
-                //Ray DPW 2017.05.24: When it's in power saving mode and press MENU key, set sFlagSimPowerShutDown bit 1 to 1 to request back to normal mode
+                //Ray DPW 2017.05.24: When it's in power saving mode and press MENU key (not IR MNEU key), set sFlagSimPowerShutDown bit 1 to 1 to request back to normal mode
                 if((sFlagSimPowerShutDown&0x01)==0x01){
-                    u8KeyCode = KEY_POWER;
-                    //printf("\nRay: Menu key assign to KEY POWER");			//Ray DBG 2017.06.05
-                    sFlagSimPowerShutDown = ((sFlagSimPowerShutDown&0x01)|0x10);
+                    if(stKeyStatus.keytype == KEY_TYPE_KEYPAD){
+		      u8KeyCode = KEY_POWER;
+		      //printf("\nRay: Menu key assign to KEY POWER");			//Ray DBG 2017.06.05
+		      sFlagSimPowerShutDown = ((sFlagSimPowerShutDown&0x01)|0x10);
+                    }
                 }
             		#else
             			u8KeyCode = KEY_MENU;

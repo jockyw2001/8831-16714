@@ -1934,6 +1934,7 @@ static void _MApp_PCMode_StatusHandler(INPUT_SOURCE_TYPE_t src, XC_PCMONITOR_STA
     		}
 
             sIsPollingSwitch = 0;
+            return;			//Ray ASS 2017.06.21: Add return without change previous_status[eWindow] so that we can continuous detect if auto source seek changed between disabled and enabled
       	  }
       	  else
       	  {

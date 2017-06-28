@@ -344,6 +344,7 @@ void MApp_UserReset(void)
   }
   MApp_ZUI_ACT_UserSettingReset();
   MApp_DataBase_RestoreDefaultSystem(RESTORE_KEEP_DV_SETTING);		//Ray LDF 2017.06.16: To reset DV parameters like auto source seek, failover,default power,..... But keep backlight setting unchanged
+  MApp_InputSource_ChangeInputSource(MAIN_WINDOW);		//Ray LDF 2017.06.23: After changing source to default HDMI1 in routine MApp_DataBase_RestoreDefaultSystem, it has to apply the change
   dv_SetImageOrientation();		//Apply image orientation setting
 
 }

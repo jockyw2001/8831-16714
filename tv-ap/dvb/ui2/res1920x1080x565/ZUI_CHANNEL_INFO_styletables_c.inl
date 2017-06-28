@@ -276,11 +276,6 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Ch_Audio_Text_Normal_DrawStyle[] =
 /////////////////////////////////////////////////////
 // CHINFO_EXT_FIRST_SRC_ICON styles..
 
-static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_First_Src_Icon_Normal_DrawStyle[] =
-{
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_141 },
-    { CP_NOON, 0 },
-};
 
 /////////////////////////////////////////////////////
 // CHINFO_EXT_S2_SATLITENAME_TEXT styles..
@@ -326,7 +321,6 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pip_Src1_Info_Bg_Normal_DrawStyle[] =
 /////////////////////////////////////////////////////
 // CHINFO_PIP_SRC1_ICON styles..
 
-#define _Zui_Chinfo_Pip_Src1_Icon_Normal_DrawStyle _Zui_Chinfo_Ext_First_Src_Icon_Normal_DrawStyle
 
 /////////////////////////////////////////////////////
 // CHINFO_PIP_SRC1_SOURCE_TYPE_TEXT styles..
@@ -356,7 +350,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pip_Src1_Source_Type_Text_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pip_Src2_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_142 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_141 },
     { CP_NOON, 0 },
 };
 
@@ -387,7 +381,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pip_Src2_Icon_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Tv_Bg_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_143 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_142 },
     { CP_NOON, 0 },
 };
 
@@ -396,7 +390,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Tv_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Tv_Bg_Down_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_144 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_143 },
     { CP_NOON, 0 },
 };
 
@@ -868,7 +862,7 @@ WINDOWDRAWSTYLEDATA _MP_TBLSEG _GUI_WindowsDrawStyleList_Zui_Channel_Info[] =
     { _Zui_Chinfo_Ext_Teletext_Text_Normal_DrawStyle, NULL, NULL     },
 
     // 35 = HWND_CHINFO_EXT_FIRST_SRC_ICON
-    { _Zui_Chinfo_Ext_First_Src_Icon_Normal_DrawStyle, NULL, NULL     },
+    { NULL, NULL, NULL     },
 
     // 36 = HWND_CHINFO_EXT_S2_SATLITENAME_TEXT
     { _Zui_Chinfo_Ext_S2_Satlitename_Text_Normal_DrawStyle, NULL, NULL     },
@@ -892,7 +886,7 @@ WINDOWDRAWSTYLEDATA _MP_TBLSEG _GUI_WindowsDrawStyleList_Zui_Channel_Info[] =
     { _Zui_Chinfo_Pip_Src1_Info_Bg_Normal_DrawStyle, NULL, NULL     },
 
     // 43 = HWND_CHINFO_PIP_SRC1_ICON
-    { _Zui_Chinfo_Pip_Src1_Icon_Normal_DrawStyle, NULL, NULL     },
+    { NULL, NULL, NULL     },
 
     // 44 = HWND_CHINFO_PIP_SRC1_SOURCE_TYPE_TEXT
     { _Zui_Chinfo_Pip_Src1_Source_Type_Text_Normal_DrawStyle, NULL, NULL     },

@@ -154,6 +154,7 @@
 static ST_DMP_VAR     m_enDmpVar;
 
 extern void MApp_DMP_NotifyUiState(EN_DMP_UI_STATE enDmpUiState);
+extern void MApp_PCMode_SetFirstNoSignalSource(E_UI_INPUT_SOURCE eUiInputSource);	//Ray DMP 2017.06.21
 extern BOOLEAN ucUSBNoMediaFile;		//Ray DMP 2017.03.23: 1 = USB doesn't have media file
 
 //////////////////////////////////////////////////////////
@@ -551,6 +552,11 @@ EN_RET MApp_DMP_Main(void)
 
         case DMP_STATE_GOTO_STANDBY:
             MApp_ZUI_ACT_ShutdownOSD();
+            ////Ray DMP 2017.06.21:In DMP mode and go to power saving mode, we need to quit DMP mode
+            MApp_DMP_Exit();
+            MApp_PCMode_SetFirstNoSignalSource(UI_INPUT_SOURCE_NONE);	//Reset no signal source as NONE when exiting DMP
+            MApp_InputSource_RestoreSource();				//Go back to previous input source
+            ////
             u8KeyCode = KEY_POWER;
             enRetVal =EXIT_MPLAYER_TRAN_STANDBY;
             break;

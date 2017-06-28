@@ -56,7 +56,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Catune_Transparent_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Catune_Bottom_Half_Bg_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_278 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_277 },
     { CP_NOON, 0 },
 };
 
@@ -376,7 +376,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Catune_Scan_Result_Data_Txt_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_279 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_278 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_C_Focus_DrawStyle _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_C_Normal_DrawStyle
@@ -386,7 +386,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_C_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_280 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_279 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_L_Focus_DrawStyle _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_L_Normal_DrawStyle
@@ -396,7 +396,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_L_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_281 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_280 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_R_Focus_DrawStyle _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_R_Normal_DrawStyle
@@ -406,7 +406,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_R_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_V_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_282 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_281 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_V_Focus_DrawStyle _Zui_Menu_Dlg_Dvb_Scan_Menu_Bg_V_Normal_DrawStyle

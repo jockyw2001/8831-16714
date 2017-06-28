@@ -180,7 +180,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Darrow_Normal_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Exit_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_320 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_319 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Help_Bar_Exit_Disabled_DrawStyle _Zui_Menu_Dishsetup_Help_Bar_Exit_Normal_DrawStyle
@@ -204,7 +204,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Exit_Text_Disabled_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Ok_Disabled_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_321 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_320 },
     { CP_NOON, 0 },
 };
 
@@ -227,7 +227,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Ok_Text_Disabled_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Blue_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_246 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_245 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Help_Bar_Blue_Disabled_DrawStyle _Zui_Menu_Dishsetup_Help_Bar_Blue_Normal_DrawStyle
@@ -256,7 +256,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Blue_Text_Disabled_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Goto_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_322 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_321 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Satlist_Helpbar_Goto_Disabled_DrawStyle _Zui_Menu_Dishsetup_Satlist_Helpbar_Goto_Normal_DrawStyle
@@ -280,7 +280,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Goto_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Green_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_179 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_178 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Satlist_Helpbar_Green_Disabled_DrawStyle _Zui_Menu_Dishsetup_Satlist_Helpbar_Green_Normal_DrawStyle
@@ -304,7 +304,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Green_Text_Disab
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Red_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_178 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_177 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Satlist_Helpbar_Red_Disabled_DrawStyle _Zui_Menu_Dishsetup_Satlist_Helpbar_Red_Normal_DrawStyle
@@ -328,7 +328,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Red_Text_Disable
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Yellow_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_247 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_246 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Satlist_Helpbar_Yellow_Disabled_DrawStyle _Zui_Menu_Dishsetup_Satlist_Helpbar_Yellow_Normal_DrawStyle
@@ -510,7 +510,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Item1_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Item1_Selicon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_323 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_322 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Satlist_Item1_Selicon_Focus_DrawStyle _Zui_Menu_Dishsetup_Satlist_Item1_Selicon_Normal_DrawStyle
@@ -706,7 +706,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Option_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Larrow_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_173 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_172 },
     { CP_NOON, 0 },
 };
 
@@ -715,7 +715,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Larrow_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Rarrow_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_240 },
     { CP_NOON, 0 },
 };
 
@@ -1551,7 +1551,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Disablelimit_Text_Disab
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Title_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_324 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_323 },
     { CP_NOON, 0 },
 };
 
@@ -2286,7 +2286,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_182 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_181 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Softkeyboard_Title_L_Focus_DrawStyle _Zui_Menu_Dishsetup_Softkeyboard_Title_L_Normal_DrawStyle
@@ -2296,7 +2296,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_L_Normal_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_M_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_183 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_182 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1442 },
     { CP_NOON, 0 },
 };
@@ -2307,7 +2307,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_M_Normal_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_183 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Softkeyboard_Title_R_Focus_DrawStyle _Zui_Menu_Dishsetup_Softkeyboard_Title_R_Normal_DrawStyle
@@ -2317,13 +2317,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_R_Normal_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Extend_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1443 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Extend_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1443 },
     { CP_NOON, 0 },
 };
@@ -2333,13 +2333,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Extend_Focus_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Capson_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1444 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Capson_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1444 },
     { CP_NOON, 0 },
 };
@@ -2349,13 +2349,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Capson_Focus_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Backspace_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1445 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Backspace_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1445 },
     { CP_NOON, 0 },
 };
@@ -2365,13 +2365,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Backspace_Focus
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Ok_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1446 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Ok_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1446 },
     { CP_NOON, 0 },
 };
@@ -2381,13 +2381,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Ok_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Cancel_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1447 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Cancel_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1447 },
     { CP_NOON, 0 },
 };
@@ -2397,13 +2397,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Cancel_Focus_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_1_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_1_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1448 },
     { CP_NOON, 0 },
 };
@@ -2414,7 +2414,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_1_Focus_DrawSty
 #define _Zui_Menu_Dishsetup_Softkeyboard_Key_2_Normal_DrawStyle _Zui_Menu_Dishsetup_Softkeyboard_Key_1_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_2_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
     { CP_NOON, 0 },
 };
@@ -3020,7 +3020,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Msg_Title_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Msg_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_325 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_324 },
     { CP_NOON, 0 },
 };
 

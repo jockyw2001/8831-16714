@@ -92,12 +92,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Ttx_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_195 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_194 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Ttx_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_196 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_195 },
     { CP_NOON, 0 },
 };
 
@@ -106,12 +106,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Ttx_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Hoh_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_197 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_196 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Hoh_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_198 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_197 },
     { CP_NOON, 0 },
 };
 
@@ -134,12 +134,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Hd_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_199 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_198 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Hd_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_200 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_199 },
     { CP_NOON, 0 },
 };
 

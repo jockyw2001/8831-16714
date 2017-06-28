@@ -49,7 +49,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Transparent_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Panel_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_210 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_209 },
     { CP_NOON, 0 },
 };
 
@@ -58,7 +58,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Panel_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Panel_Bg_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_211 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_210 },
     { CP_NOON, 0 },
 };
 
@@ -67,7 +67,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Panel_Bg_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Panel_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_212 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_211 },
     { CP_NOON, 0 },
 };
 
@@ -80,7 +80,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Panel_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Focus_L_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_213 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_212 },
     { CP_NOON, 0 },
 };
 
@@ -89,7 +89,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Focus_L_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Focus_C_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_214 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_213 },
     { CP_NOON, 0 },
 };
 
@@ -98,7 +98,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Focus_C_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Focus_R_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_215 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_214 },
     { CP_NOON, 0 },
 };
 
@@ -711,7 +711,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Down_Arrow_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Red_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_216 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_215 },
     { CP_NOON, 0 },
 };
 
@@ -720,7 +720,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Red_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Green_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_217 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_216 },
     { CP_NOON, 0 },
 };
 
@@ -729,7 +729,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Green_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Yellow_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_218 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_217 },
     { CP_NOON, 0 },
 };
 
@@ -738,7 +738,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Yellow_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Blue_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_219 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_218 },
     { CP_NOON, 0 },
 };
 
@@ -751,7 +751,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Control_Icon_Blue_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Index_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_220 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_219 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Help_Index_Icon_Focus_DrawStyle _Zui_Epg_Help_Index_Icon_Normal_DrawStyle
@@ -765,7 +765,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Index_Icon_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Desc_Bg_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_221 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_220 },
     { CP_NOON, 0 },
 };
 
@@ -774,7 +774,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Desc_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Desc_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_222 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_221 },
     { CP_NOON, 0 },
 };
 
@@ -783,7 +783,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Desc_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Desc_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_223 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_222 },
     { CP_NOON, 0 },
 };
 
@@ -1111,12 +1111,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Mode_Setting_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Mode_Star_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_224 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_223 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Mode_Star_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_225 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_224 },
     { CP_NOON, 0 },
 };
 
@@ -1223,7 +1223,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Timer_Save_Dlg_Msgbox_Text1_Normal
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Timer_Save_Dlg_Msgbox_Btn_Ok_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_226 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_225 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Reminder_Timer_Save_Dlg_Msgbox_Btn_Ok_Focus_DrawStyle _Zui_Epg_Reminder_Timer_Save_Dlg_Msgbox_Btn_Ok_Normal_DrawStyle
@@ -1237,7 +1237,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Timer_Save_Dlg_Msgbox_Btn_Ok_Norma
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Page_Back_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_227 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_226 },
     { CP_NOON, 0 },
 };
 
@@ -1308,7 +1308,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Bgnd_Title_Date_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_228 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_227 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Head_Focus_DrawStyle _Zui_Epg_Schedule_List_Head_Normal_DrawStyle
@@ -1358,7 +1358,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Channel_Name_Normal_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Bg_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_229 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_228 },
     { CP_NOON, 0 },
 };
 
@@ -1367,7 +1367,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Bg_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_230 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_229 },
     { CP_NOON, 0 },
 };
 
@@ -1412,12 +1412,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Title_Focus_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_231 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_230 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Icon_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_232 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_231 },
     { CP_NOON, 0 },
 };
 
@@ -1426,12 +1426,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Icon_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Mode_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_233 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_232 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Mode_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_234 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_233 },
     { CP_NOON, 0 },
 };
 
@@ -1590,12 +1590,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Mode_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg__Help_Btn_Schedule_List_Delete_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_235 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_234 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg__Help_Btn_Schedule_List_Delete_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_236 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_235 },
     { CP_NOON, 0 },
 };
 
@@ -1618,7 +1618,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Btn_Schedule_List_Delete_Txt_Normal_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_237 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_236 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Recorder_Bg_Focus_DrawStyle _Zui_Epg_Recorder_Bg_Normal_DrawStyle
@@ -1628,7 +1628,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_238 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_237 },
     { CP_NOON, 0 },
 };
 
@@ -1637,7 +1637,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_239 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_238 },
     { CP_NOON, 0 },
 };
 
@@ -1650,7 +1650,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_Back_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_240 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_239 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Recorder_Bg_Back_Focus_DrawStyle _Zui_Epg_Recorder_Bg_Back_Normal_DrawStyle
@@ -2342,7 +2342,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Txt_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_L_Arrow_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_173 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_172 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Rec_Time_Steeing_Year_L_Arrow_Focus_DrawStyle _Zui_Epg_Rec_Time_Steeing_Year_L_Arrow_Normal_DrawStyle
@@ -2352,7 +2352,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_L_Arrow_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_R_Arrow_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_240 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Rec_Time_Steeing_Year_R_Arrow_Focus_DrawStyle _Zui_Epg_Rec_Time_Steeing_Year_R_Arrow_Normal_DrawStyle
@@ -2539,7 +2539,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Close_Normal_DrawStyle[] =
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Close_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_242 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1052 },
     { CP_NOON, 0 },
 };
@@ -3147,7 +3147,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_1_Focus_DrawSty
 #define _Zui_Epg_Pvr_Alternate_Btn_Btn_Ok_Normal_DrawStyle _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Ok_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Btn_Ok_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_242 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_898 },
     { CP_NOON, 0 },
 };
@@ -3162,7 +3162,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Cancel_Normal_DrawStyle[]
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Cancel_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_242 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_453 },
     { CP_NOON, 0 },
 };
@@ -3218,7 +3218,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Dynamic_Txt_1_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Panel_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_243 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_242 },
     { CP_NOON, 0 },
 };
 
@@ -3227,7 +3227,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Panel_Bg_L_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Panel_Bg_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_244 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_243 },
     { CP_NOON, 0 },
 };
 
@@ -3236,7 +3236,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Panel_Bg_C_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Panel_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_245 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_244 },
     { CP_NOON, 0 },
 };
 
@@ -3586,7 +3586,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Panel_Ett_Text_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Up_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_246 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_245 },
     { CP_NOON, 0 },
 };
 
@@ -3604,7 +3604,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Up_Text_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Down_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_247 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_246 },
     { CP_NOON, 0 },
 };
 

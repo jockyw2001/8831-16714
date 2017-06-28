@@ -329,11 +329,13 @@ U16 MApp_ZUI_GetCurrentInputSourceStringID(E_UI_INPUT_SOURCE src)
 
         #if (INPUT_HDMI_VIDEO_COUNT >= 2)
             case UI_INPUT_SOURCE_HDMI:	
+		 u16TempID=en_str_HDMI1;			//Ray HDM 2017.06.26: We fix the name as HDMI1 even if it's DVI signal. And comment old code below
+		 /*
                  if (g_HdmiPollingStatus.bIsHDMIMode)
                     u16TempID=en_str_HDMI1;
                  else
                     u16TempID=en_str_DVI1;
-
+		*/
                 break;
 
             case UI_INPUT_SOURCE_HDMI2:
@@ -343,10 +345,13 @@ U16 MApp_ZUI_GetCurrentInputSourceStringID(E_UI_INPUT_SOURCE src)
                 //else
                     u16TempID=en_str_DVI;            	
             	#else
+                u16TempID=en_str_HDMI2;    			//Ray HDM 2017.06.26: We fix the name as HDMI2 even if it's DVI signal. And comment old code below
+                /*
                 if (g_HdmiPollingStatus.bIsHDMIMode)
                     u16TempID=en_str_HDMI2;
                 else
                     u16TempID=en_str_DVI2;
+                */
 							#endif
                 break;
         #endif
@@ -379,11 +384,13 @@ U16 MApp_ZUI_GetCurrentInputSourceStringID(E_UI_INPUT_SOURCE src)
                 else
                     u16TempID=en_str_DVI3;
 		#elif defined(sHDMI3StrToDVI)			//Ray HDM 2017.03.29: Change HDMI4 to HDMI3 string
+                u16TempID=en_str_HDMI3;				//Ray HDM 2017.06.26: We fix the name as HDMI3 even if it's DVI signal. And comment old code below
+                /*
                 if (g_HdmiPollingStatus.bIsHDMIMode)
                   u16TempID=en_str_HDMI3;
                 else
                   u16TempID=en_str_DVI3;
-
+                */
             	#else
                 if (g_HdmiPollingStatus.bIsHDMIMode)
                     u16TempID=en_str_HDMI4;

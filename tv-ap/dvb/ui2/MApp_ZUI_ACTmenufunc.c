@@ -3976,7 +3976,9 @@ static U16 MApp_ZUI_ACT_GetPcModeAdjustValue(HWND hwnd)
         case HWND_MENU_PCMODE_HPOS_OPTION:
         //from case EN_DNUM_Getu16B7_PCMenu_PositionH:
         {
-            U32 tmp;
+          //Ray VGA 2017.06.23: Change from U32 to U16
+	    U16 tmp;
+            //U32 tmp;
             #if (ENABLE_PIP)
             if((MApp_Get_PIPMode() != EN_PIP_MODE_OFF)&& (IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(SUB_WINDOW))||IsSrcTypeYPbPr(SYS_INPUT_SOURCE_TYPE(SUB_WINDOW))))
             {
@@ -3987,7 +3989,9 @@ static U16 MApp_ZUI_ACT_GetPcModeAdjustValue(HWND hwnd)
             #endif
             {
                 tmp = g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalStart;
-                tmp = (tmp - MIN_PC_H_START(MAIN_WINDOW) ) * 100 / ( MAX_PC_H_START(MAIN_WINDOW) - MIN_PC_H_START(MAIN_WINDOW) );//46lu) * 100lu / 292lu;
+        	//Ray VGA 2017.06.23: Change real value to 0~100 value conversion
+                //tmp = (tmp - MIN_PC_H_START(MAIN_WINDOW) ) * 100 / ( MAX_PC_H_START(MAIN_WINDOW) - MIN_PC_H_START(MAIN_WINDOW) );//46lu) * 100lu / 292lu;
+        	tmp = GetScale100Value(tmp,MIN_PC_H_START(MAIN_WINDOW),MAX_PC_H_START(MAIN_WINDOW));
             }
 
             return tmp;
@@ -3997,7 +4001,9 @@ static U16 MApp_ZUI_ACT_GetPcModeAdjustValue(HWND hwnd)
         case HWND_MENU_PCMODE_VPOS_OPTION:
         //from case EN_DNUM_Getu16B7_PCMenu_PositionV:
         {
-            U32 tmp;
+          //Ray VGA 2017.06.23: Change from U32 to U16
+	    U16 tmp;
+            //U32 tmp;
             #if (ENABLE_PIP)
             if((MApp_Get_PIPMode() != EN_PIP_MODE_OFF)&& (IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(SUB_WINDOW))||IsSrcTypeYPbPr(SYS_INPUT_SOURCE_TYPE(SUB_WINDOW))))
             {
@@ -4008,7 +4014,9 @@ static U16 MApp_ZUI_ACT_GetPcModeAdjustValue(HWND hwnd)
             #endif
             {
                 tmp = g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart;
-                tmp = (tmp - MIN_PC_V_START ) * 100 / ( MAX_PC_V_START(MAIN_WINDOW) - MIN_PC_V_START );//46lu) * 100lu / 292lu;
+                //Ray VGA 2017.06.23: Change real value to 0~100 value conversion
+                //tmp = (tmp - MIN_PC_V_START ) * 100 / ( MAX_PC_V_START(MAIN_WINDOW) - MIN_PC_V_START );//46lu) * 100lu / 292lu;
+                tmp = GetScale100Value(tmp,MIN_PC_V_START,MAX_PC_V_START(MAIN_WINDOW));
             }
 
 

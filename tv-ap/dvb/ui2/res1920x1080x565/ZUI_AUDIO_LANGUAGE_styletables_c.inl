@@ -119,12 +119,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Lang_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Audio_Type_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_187 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Audio_Type_Icon_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_188 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_187 },
     { CP_NOON, 0 },
 };
 
@@ -133,12 +133,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Audio_Type_Icon_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Audio_Type2_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_189 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_188 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Audio_Type2_Icon_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_190 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_189 },
     { CP_NOON, 0 },
 };
 
@@ -147,12 +147,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Audio_Type2_Icon_Focus_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_L_Sound_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_191 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_190 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_L_Sound_Icon_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_192 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_191 },
     { CP_NOON, 0 },
 };
 
@@ -161,12 +161,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_L_Sound_Icon_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_R_Sound_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_193 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_192 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_R_Sound_Icon_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_194 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_193 },
     { CP_NOON, 0 },
 };
 

@@ -44,7 +44,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Bg_Clean_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bg_C_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_145 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_144 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Browser_Bg_C_Focus_DrawStyle _Zui_Pvr_Browser_Bg_C_Normal_DrawStyle
@@ -54,7 +54,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bg_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bg_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_146 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_145 },
     { CP_NOON, 0 },
 };
 
@@ -63,7 +63,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bg_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_147 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_146 },
     { CP_NOON, 0 },
 };
 
@@ -94,7 +94,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Top_Half_Banner_Title_Type_Normal_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bottom_Index_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_220 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_219 },
     { CP_NOON, 0 },
 };
 
@@ -103,7 +103,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bottom_Index_Btn_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bottom_Info_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_217 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_216 },
     { CP_NOON, 0 },
 };
 
@@ -112,7 +112,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bottom_Info_Btn_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bottom_Delete_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_148 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_147 },
     { CP_NOON, 0 },
 };
 
@@ -138,7 +138,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Item0_Bg_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Item0_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_277 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_276 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Browser_Item0_Icon_Focus_DrawStyle _Zui_Pvr_Browser_Item0_Icon_Normal_DrawStyle
@@ -422,7 +422,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Item_L_Arrow_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Bg_Up_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_222 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_221 },
     { CP_NOON, 0 },
 };
 
@@ -431,7 +431,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Bg_Up_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Bg_Middle_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_221 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_220 },
     { CP_NOON, 0 },
 };
 
@@ -440,7 +440,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Bg_Middle_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Bg_Down_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_223 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_222 },
     { CP_NOON, 0 },
 };
 

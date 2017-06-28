@@ -1219,12 +1219,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Nosignal_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Play_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_259 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_258 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Play_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_260 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_259 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Play_Disabled_DrawStyle _Zui_Pvr_Timeshift_Icon_Play_Normal_DrawStyle
@@ -1234,7 +1234,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Play_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Play_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_261 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_260 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Play_Icon_Focus_DrawStyle _Zui_Pvr_Timeshift_Icon_Play_Icon_Normal_DrawStyle
@@ -1261,13 +1261,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Play_String_Normal_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Fb_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_262 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_261 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Fb_Icon_Focus_DrawStyle _Zui_Pvr_Timeshift_Icon_Fb_Icon_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Fb_Icon_Disabled_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_263 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_262 },
     { CP_NOON, 0 },
 };
 
@@ -1298,13 +1298,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Fb_String_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Ff_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_264 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_263 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Ff_Icon_Focus_DrawStyle _Zui_Pvr_Timeshift_Icon_Ff_Icon_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Ff_Icon_Disabled_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_265 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_264 },
     { CP_NOON, 0 },
 };
 
@@ -1335,13 +1335,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Ff_String_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Prev_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_266 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_265 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Prev_Icon_Focus_DrawStyle _Zui_Pvr_Timeshift_Icon_Prev_Icon_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Prev_Icon_Disabled_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_267 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_266 },
     { CP_NOON, 0 },
 };
 
@@ -1372,13 +1372,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Prev_String_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Next_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_268 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_267 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Next_Icon_Focus_DrawStyle _Zui_Pvr_Timeshift_Icon_Next_Icon_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Next_Icon_Disabled_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_269 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_268 },
     { CP_NOON, 0 },
 };
 
@@ -1409,13 +1409,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Next_String_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Pause_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_270 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_269 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Pause_Icon_Focus_DrawStyle _Zui_Pvr_Timeshift_Icon_Pause_Icon_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Pause_Icon_Disabled_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_271 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_270 },
     { CP_NOON, 0 },
 };
 
@@ -1446,7 +1446,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Pause_String_Disabled_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Stop_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_272 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_271 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Icon_Stop_Icon_Focus_DrawStyle _Zui_Pvr_Timeshift_Icon_Stop_Icon_Normal_DrawStyle
@@ -1478,7 +1478,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Icon_Stop_String_Normal_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Info_Icon_Ab_Loop_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_273 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_272 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Info_Icon_Ab_Loop_Focus_DrawStyle _Zui_Pvr_Timeshift_Info_Icon_Ab_Loop_Normal_DrawStyle
@@ -1488,7 +1488,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Info_Icon_Ab_Loop_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Timeshift_Info_Icon_Ab_Set_A_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_274 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_273 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Timeshift_Info_Icon_Ab_Set_A_Focus_DrawStyle _Zui_Pvr_Timeshift_Info_Icon_Ab_Set_A_Normal_DrawStyle
@@ -1586,7 +1586,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Playback_Info_Event_Title_Txt_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Play_Icon_Play_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_275 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_274 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Play_Icon_Play_Icon_Focus_DrawStyle _Zui_Pvr_Play_Icon_Play_Icon_Normal_DrawStyle
@@ -1989,7 +1989,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Recording_Disk_Remain_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Recording_Info_Icon_Rec_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_276 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_275 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Recording_Info_Icon_Rec_Focus_DrawStyle _Zui_Pvr_Recording_Info_Icon_Rec_Normal_DrawStyle

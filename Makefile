@@ -46,7 +46,7 @@ BL_NAME = BL
 AP_COMPRESS_NAME = AP_C
 #Ray 2017.02.23: Please set the compiled bin file name at here. It should be in format of SP4096_E0.00.00.01, 
 #                where version no. E0.00.00.01 is not checked during firmware download
-MERGE_NAME = SP4096_E0.00.00.06
+MERGE_NAME = SP4096_V1.00.00.00
 #MERGE_NAME = TMMYU4020
 RES_NAME = RES
 

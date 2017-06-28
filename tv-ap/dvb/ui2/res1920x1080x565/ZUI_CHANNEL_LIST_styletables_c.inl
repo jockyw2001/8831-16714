@@ -94,7 +94,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Top_Half_Banner_Title_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Op_Menu_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_174 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_173 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Bottom_Half_Op_Menu_Btn_Focus_DrawStyle _Zui_Chlist_Bottom_Half_Op_Menu_Btn_Normal_DrawStyle
@@ -104,7 +104,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Op_Menu_Btn_Normal_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Op_Bottom_Half_Exit_Op_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_175 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_174 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Op_Bottom_Half_Exit_Op_Btn_Focus_DrawStyle _Zui_Chlist_Op_Bottom_Half_Exit_Op_Btn_Normal_DrawStyle
@@ -114,7 +114,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Op_Bottom_Half_Exit_Op_Btn_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Op_Menu_Bottom_Half_Enter_Op_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_176 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_175 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Op_Menu_Bottom_Half_Enter_Op_Btn_Focus_DrawStyle _Zui_Chlist_Op_Bottom_Half_Exit_Op_Btn_Normal_DrawStyle
@@ -124,7 +124,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Op_Menu_Bottom_Half_Enter_Op_Btn_Normal_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Op_Menu_Bottom_Half_Delete_Profile_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_177 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_176 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Op_Menu_Bottom_Half_Delete_Profile_Btn_Focus_DrawStyle _Zui_Chlist_Op_Menu_Bottom_Half_Delete_Profile_Btn_Normal_DrawStyle
@@ -138,7 +138,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Op_Menu_Bottom_Half_Delete_Profile_Btn_N
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Find_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_178 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_177 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Bottom_Half_Find_Btn_Focus_DrawStyle _Zui_Chlist_Bottom_Half_Find_Btn_Normal_DrawStyle
@@ -162,7 +162,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Find_Text_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Sort_Btn_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_179 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_178 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Bottom_Half_Sort_Btn_Focus_DrawStyle _Zui_Chlist_Bottom_Half_Sort_Btn_Normal_DrawStyle
@@ -195,12 +195,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Type_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_154 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_153 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Type_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_155 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_154 },
     { CP_NOON, 0 },
 };
 
@@ -223,12 +223,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Fav_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Lock_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_156 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_155 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Lock_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_157 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_156 },
     { CP_NOON, 0 },
 };
 
@@ -251,12 +251,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Scramble_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_180 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_179 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Scramble_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_181 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_180 },
     { CP_NOON, 0 },
 };
 
@@ -899,7 +899,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Fg_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_L_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_182 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_181 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Chlist_Softkeyboard_Title_L_Focus_DrawStyle _Zui_Menu_Chlist_Softkeyboard_Title_L_Normal_DrawStyle
@@ -909,13 +909,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_L_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_M_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_183 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_182 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_M_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_183 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_182 },
     { CP_NOON, 0 },
 };
 
@@ -924,7 +924,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_M_Focus_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_R_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_183 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Chlist_Softkeyboard_Title_R_Focus_DrawStyle _Zui_Menu_Chlist_Softkeyboard_Title_R_Normal_DrawStyle
@@ -934,13 +934,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_R_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Extend_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_914 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Extend_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_914 },
     { CP_NOON, 0 },
 };
@@ -950,13 +950,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Extend_Focus_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Capson_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_915 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Capson_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_915 },
     { CP_NOON, 0 },
 };
@@ -966,13 +966,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Capson_Focus_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Backspace_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_916 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Backspace_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_916 },
     { CP_NOON, 0 },
 };
@@ -982,13 +982,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Backspace_Focus_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Ok_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_917 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Ok_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_917 },
     { CP_NOON, 0 },
 };
@@ -998,13 +998,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Ok_Focus_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Cancel_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_918 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Cancel_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_918 },
     { CP_NOON, 0 },
 };
@@ -1014,13 +1014,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Cancel_Focus_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_1_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_1_Focus_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_186 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
     { CP_NOON, 0 },
 };

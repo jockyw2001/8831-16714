@@ -46,6 +46,9 @@
 #include "MApp_PCMode.h"		//Ray SRC 2017.06.15: To access input source resolution, h and v freq
 #include "MApp_IR.h"			//Ray OSM 2017.06.16: To access MApp_RS232_SetKey
 #include "msIR.h"			//Ray OSM 2017.06.16: To access IR key definition like IRKEY_MENU
+#include "MApp_Menu_Main.h"		//Ray DMP 2017.06.22: To access EN_MENU_STATE
+#include "MApp_TopStateMachine.h"	//Ray DMP 2017.06.22: To access MApp_TopStateMachine_SetTopState
+#include "MApp_UiMenuDef.h"		//Ray VGA 2017.06.22: To access stLMGenSetting
 #include <string.h>			//Ray VER 2017.05.09: To access strcpy, strcat functions
 
 //******************************************************************************
@@ -97,6 +100,7 @@ void dv_Serial_ScaleMode_Para0(BYTE ucCmdPara);
 void dv_Serial_Source_Para0(BYTE ucCmdPara);
 void dv_Serial_Source_Para1(BYTE *ucCmdPara);
 void dv_Serial_AutoSource_Para0(BYTE ucCmdPara);
+void dv_Serial_AutoSource_Para2(BYTE *ucCmdPara);
 void dv_Serial_Gamma_Para0(BYTE ucCmdPara);
 void dv_Serial_Info_Para0(BYTE ucCmdPara);
 void dv_Serial_PWMFrequency_Para0(BYTE ucCmdPara);
@@ -105,6 +109,12 @@ void dv_Serial_DispOrient_Para0(BYTE ucCmdPara);
 void dv_Serial_ColorTemp_Para0(BYTE ucCmdPara);
 void dv_Serial_ColorTemp_Para2(BYTE *ucCmdPara);
 void dv_Serial_ColorTemp_Para3(BYTE *ucCmdPara);
+void dv_Serial_TempRed_Para0(BYTE ucCmdPara);
+void dv_Serial_TempRed_Para1(BYTE *ucCmdPara);
+void dv_Serial_TempGreen_Para0(BYTE ucCmdPara);
+void dv_Serial_TempGreen_Para1(BYTE *ucCmdPara);
+void dv_Serial_TempBlue_Para0(BYTE ucCmdPara);
+void dv_Serial_TempBlue_Para1(BYTE *ucCmdPara);
 void dv_Serial_QuerySource(void);
 void dv_Serial_QuerySourceTx(E_DATA_INPUT_SOURCE ucSource);
 void dv_Serial_BackLightControl_Para0(BYTE ucCmdPara);
@@ -120,6 +130,14 @@ void dv_Serial_CommandQuery_Para3(BYTE *ucCmdPara);
 void dv_Serial_CommandQuery_Para5(BYTE *ucCmdPara);
 void dv_Serial_Volume_Para1(BYTE *ucCmdPara);
 void dv_Serial_Volume_Para2(BYTE *ucCmdPara);
+void dv_Serial_Phase_Para0(BYTE ucCmdPara);
+void dv_Serial_Phase_Para1(BYTE *ucCmdPara);
+void dv_Serial_HorzPosn_Para0(BYTE ucCmdPara);
+void dv_Serial_HorzPosn_Para1(BYTE *ucCmdPara);
+void dv_Serial_VertPosn_Para0(BYTE ucCmdPara);
+void dv_Serial_VertPosn_Para1(BYTE *ucCmdPara);
+void dv_Serial_VgaClock_Para0(BYTE ucCmdPara);
+void dv_Serial_VgaClock_Para1(BYTE *ucCmdPara);
 void dv_Serial_TestCmd_Para1(BYTE *ucCmdPara);
 WORD dv_DataInputSourceValue(E_DATA_INPUT_SOURCE ucSource);
 WORD dv_UiInputSourceValue(E_UI_INPUT_SOURCE ucSource);
@@ -133,6 +151,11 @@ extern void MApp_UiMenuFunc_AdjustBacklightPWM(BOOLEAN bEnable);	//Ray BKL 2017.
 extern BOOL MApp_WriteDatabase(U32 dstIndex, U8* srcAddr, U16 size);	//Ray BKL 2017.06.19: To save backlight level
 extern void MApp_UiMenu_MuteWin_Show(void);		//Ray VOL 2017.06.19
 extern void MApp_UiMenu_MuteWin_Hide(void);		//Ray VOL 2017.06.19
+extern void MApp_DMP_Exit(void);							//Ray DMP 2017.06.22
+extern void MApp_PCMode_SetFirstNoSignalSource(E_UI_INPUT_SOURCE eUiInputSource);	//Ray DMP 2017.06.22
+extern void MApp_InputSource_RestoreSource(void);					//Ray DMP 2017.06.22
+
+
 
 /*
 
@@ -151,14 +174,9 @@ void dv_SendValuesToUART(BYTE ucSendByteNo,WORD usSendValue);
 
 
 
-void dv_Serial_Phase_Para0(BYTE ucCmdPara);
-void dv_Serial_Phase_Para1(BYTE *ucCmdPara);
-void dv_Serial_HorzPosn_Para0(BYTE ucCmdPara);
-void dv_Serial_HorzPosn_Para1(BYTE *ucCmdPara);
-void dv_Serial_VertPosn_Para0(BYTE ucCmdPara);
-void dv_Serial_VertPosn_Para1(BYTE *ucCmdPara);
-void dv_Serial_VgaClock_Para0(BYTE ucCmdPara);
-void dv_Serial_VgaClock_Para1(BYTE *ucCmdPara);
+
+
+
 
 void dv_Serial_OsdRotate_Para0(BYTE ucCmdPara);
 void dv_Serial_OsdHPosn_Para0(BYTE ucCmdPara);
@@ -172,12 +190,7 @@ void dv_Serial_PipHPosn_Para1(BYTE *ucCmdPara);
 void dv_Serial_PipVPosn_Para0(BYTE ucCmdPara);
 void dv_Serial_PipVPosn_Para1(BYTE *ucCmdPara);
 
-void dv_Serial_TempRed_Para0(BYTE ucCmdPara);
-void dv_Serial_TempRed_Para1(BYTE *ucCmdPara);
-void dv_Serial_TempGreen_Para0(BYTE ucCmdPara);
-void dv_Serial_TempGreen_Para1(BYTE *ucCmdPara);
-void dv_Serial_TempBlue_Para0(BYTE ucCmdPara);
-void dv_Serial_TempBlue_Para1(BYTE *ucCmdPara);
+
 
 void dv_Serial_NewInputDisp_Para0(BYTE ucCmdPara);
 void dv_Serial_Timeout_Para0(BYTE ucCmdPara);
@@ -275,6 +288,8 @@ BYTE code SerialCommandTable[] = {
     Serial_VRes,
     Serial_HFreq,
     Serial_VFreq,
+    Serial_Auto,
+    Serial_Calibrate,
     Serial_QuerySource,
     Serial_LoadDefault,
     Serial_ALLLoadDefault,
@@ -296,10 +311,16 @@ BYTE code SerialCommandTable[] = {
     Serial_PWMFrequency,
     Serial_BackLight_PWM_DA,
     Serial_BackLightInvert,
+    Serial_Phase,
+    Serial_HorzPosn,
+    Serial_VertPosn,
+    Serial_VgaClock,
+
     //3 bytes command
     Serial_Volume,
     Serial_Contrast,
     Serial_CommandQuery,
+
     //4 bytes commands
 
 };
@@ -578,6 +599,37 @@ void dv_RS232_bCmdParaPtr_0(BYTE ucCmd)
       MApp_RS232_SetKey(IRKEY_MENU);			//Execute Press MENU key function
       break;
 
+    case Serial_Auto:					//Ray VGA 2017.06.23: Command 0xC3, VGA auto adjust
+      if(IsVgaInUse() && MApp_IsSrcHasSignal(MAIN_WINDOW))	//command is only available when input source is VGA and signal exist
+      {
+          if(MApp_PCMode_Enable_SelfAuto(ENABLE, MAIN_WINDOW))
+          {   // to do Auto adjust
+              MApp_PCMode_RunSelfAuto(MAIN_WINDOW);
+              dv_TxByteToUART(0x31);			//send success result state
+          }else{
+              dv_TxByteToUART(0x30);			//send fail result state
+          }
+      }else{
+	  dv_TxByteToUART(0x30);			//when input source is not VGA or no signal, auto adjust is reported as fail
+      }
+      break;
+
+    case Serial_Calibrate:				//Ray VGA 2017.06.23: Command 0xC5, VGA auto color gain calibration
+      if(IsVgaInUse() && MApp_IsSrcHasSignal(MAIN_WINDOW))	//command is only available when input source is VGA and signal exist
+      {
+          //Do auto color gain and get result
+         if(MApp_RGB_Setting_Auto(E_XC_EXTERNAL_CALIBRATION,MAIN_WINDOW)){
+             dv_TxByteToUART(0x31);			//send success result state
+         }else{
+             dv_TxByteToUART(0x30);			//send fail result state
+         }
+      }
+      else{
+	  dv_TxByteToUART(0x30);			//when input source is not VGA or no signal, auto calibration is reported as fail
+      }
+      break;
+
+
     case Serial_QuerySource:				//Command 0xC9
       dv_Serial_QuerySource();
       break;
@@ -621,36 +673,7 @@ void dv_RS232_bCmdParaPtr_0(BYTE ucCmd)
       }
       break;
 
-    case Serial_Auto:					//Command 0xC3, VGA auto adjust
-      if(SysVgaGetRegion() != _NON_REGION)		//command is only available when input source is VGA
-      {
-	Menu_VgaAutoAdjust();				//Do VGA auto adjust
-	if(g_usAdjustValue==100){				//Check if VGA auto adjust all processes are finished.  100 = _AUTO_CONFIG_H_POSITION_FINISH finish state of auto adjust
-	    dv_TxByteToUART(0x31);			//Yes. means success
-	}
-	else{
-	    dv_TxByteToUART(0x30);			//No. means one process is failed and jump out auto adjust routine without reaching _AUTO_CONFIG_H_POSITION_FINISH state
-	}
-      }
-      else{
-	  dv_TxByteToUART(0x30);			//when input source is not VGA, auto adjust is reported as fail
-      }
-      break;
 
-    case Serial_Calibrate:				//Command 0xC5, VGA auto color gain calibration
-      if(SysVgaGetRegion() != _NON_REGION)		//command is only available when input source is VGA
-      {
-	if(Menu_VgaAutoColorGainSet()==_SUCCESS){		//Do VGA auto color gain
-	    dv_TxByteToUART(0x31);			//send success result state
-	}
-	else{
-	    dv_TxByteToUART(0x30);			//send fail result state
-	}
-      }
-      else{
-	  dv_TxByteToUART(0x30);			//when input source is not VGA, auto calibration is reported as fail
-      }
-      break;
 
 */
 
@@ -683,6 +706,22 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_Hue_Para0(ucCmdPara[0]);
       break;
 
+    case Serial_Phase:				//command 0x85, VGA phase control
+      dv_Serial_Phase_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_HorzPosn:			//command 0x86, VGA horizontal position control
+      dv_Serial_HorzPosn_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_VertPosn:			//command 0x87, VGA vertical position control
+      dv_Serial_VertPosn_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_VgaClock:			//command 0x8B, VGA Clock control
+      dv_Serial_VgaClock_Para0(ucCmdPara[0]);
+      break;
+
     case Serial_Sharpness:			//command 0x8A, sharpness control
       dv_Serial_Sharpness_Para0(ucCmdPara[0]);
       break;
@@ -709,6 +748,18 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
 
     case Serial_ColorTemp:			//command 0xb3, color temperature control
       dv_Serial_ColorTemp_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_TempRed:			//command 0xb4, red color temperature setting
+      dv_Serial_TempRed_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_TempGreen:			//command 0xb5, green color temperature setting
+      dv_Serial_TempGreen_Para0(ucCmdPara[0]);
+      break;
+
+    case Serial_TempBlue:			//command 0xb6, blue color temperature setting
+      dv_Serial_TempBlue_Para0(ucCmdPara[0]);
       break;
 
     case Serial_Power:				//command 0xc8, Soft power on/off
@@ -753,21 +804,11 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
 
 
 
-    case Serial_Phase:				//command 0x85, VGA phase control
-      dv_Serial_Phase_Para0(ucCmdPara[0]);
-      break;
 
-    case Serial_HorzPosn:			//command 0x86, VGA horizontal position control
-      dv_Serial_HorzPosn_Para0(ucCmdPara[0]);
-      break;
 
-    case Serial_VertPosn:			//command 0x87, VGA vertical position control
-      dv_Serial_VertPosn_Para0(ucCmdPara[0]);
-      break;
 
-    case Serial_VgaClock:			//command 0x8B, VGA Clock control
-      dv_Serial_VgaClock_Para0(ucCmdPara[0]);
-      break;
+
+
 
 
 
@@ -817,17 +858,7 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
 
 
 
-    case Serial_TempRed:			//command 0xb4, red color temperature setting
-      dv_Serial_TempRed_Para0(ucCmdPara[0]);
-      break;
 
-    case Serial_TempGreen:			//command 0xb5, green color temperature setting
-      dv_Serial_TempGreen_Para0(ucCmdPara[0]);
-      break;
-
-    case Serial_TempBlue:			//command 0xb6, blue color temperature setting
-      dv_Serial_TempBlue_Para0(ucCmdPara[0]);
-      break;
 
     case Serial_NewInputDisp:			//command 0xbc, new input video info display setting
       dv_Serial_NewInputDisp_Para0(ucCmdPara[0]);
@@ -898,12 +929,40 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_Hue_Para1(ucCmdPara);
       break;
 
+    case Serial_Phase:				//command 0x85, VGA phase control
+      dv_Serial_Phase_Para1(ucCmdPara);
+      break;
+
+    case Serial_HorzPosn:			//command 0x86, VGA horizontal position control
+      dv_Serial_HorzPosn_Para1(ucCmdPara);
+      break;
+
+    case Serial_VertPosn:			//command 0x87, VGA vertical position control
+      dv_Serial_VertPosn_Para1(ucCmdPara);
+      break;
+
+    case Serial_VgaClock:			//command 0x8B, VGA clock control
+      dv_Serial_VgaClock_Para1(ucCmdPara);
+      break;
+
     case Serial_Sharpness:			//0x8a, sharpness control
       dv_Serial_Sharpness_Para1(ucCmdPara);
       break;
 
     case Serial_Source:				//0x98, input 1P main source
       dv_Serial_Source_Para1(ucCmdPara);
+      break;
+
+    case Serial_TempRed:			//command 0xb4, red color temperature setting
+      dv_Serial_TempRed_Para1(ucCmdPara);
+      break;
+
+    case Serial_TempGreen:			//command 0xb5, green color temperature setting
+      dv_Serial_TempGreen_Para1(ucCmdPara);
+      break;
+
+    case Serial_TempBlue:			//command 0xb6, blue color temperature setting
+      dv_Serial_TempBlue_Para1(ucCmdPara);
       break;
 
     case Serial_CommandQuery:			//command 0xc4, RS-232 command query
@@ -935,21 +994,11 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
 
 
 
-    case Serial_Phase:				//command 0x85, VGA phase control
-      dv_Serial_Phase_Para1(ucCmdPara);
-      break;
 
-    case Serial_HorzPosn:			//command 0x86, VGA horizontal position control
-      dv_Serial_HorzPosn_Para1(ucCmdPara);
-      break;
 
-    case Serial_VertPosn:			//command 0x87, VGA vertical position control
-      dv_Serial_VertPosn_Para1(ucCmdPara);
-      break;
 
-    case Serial_VgaClock:			//command 0x8B, VGA clock control
-      dv_Serial_VgaClock_Para1(ucCmdPara);
-      break;
+
+
 
     case Serial_OsdHPosn:			//command 0x90, OSD horizontal position
       dv_Serial_OsdHPosn_Para1(ucCmdPara);
@@ -983,17 +1032,7 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_PipSize_Para1(ucCmdPara);
       break;
 
-    case Serial_TempRed:			//command 0xb4, red color temperature setting
-      dv_Serial_TempRed_Para1(ucCmdPara);
-      break;
 
-    case Serial_TempGreen:			//command 0xb5, green color temperature setting
-      dv_Serial_TempGreen_Para1(ucCmdPara);
-      break;
-
-    case Serial_TempBlue:			//command 0xb6, blue color temperature setting
-      dv_Serial_TempBlue_Para1(ucCmdPara);
-      break;
 
 
 
@@ -1069,6 +1108,10 @@ void dv_RS232_bCmdParaPtr_3(BYTE ucCmd, BYTE *ucCmdPara)
 
     case Serial_Sharpness:			//0x8a, sharpness control
       dv_Serial_Sharpness_Para2(ucCmdPara);
+      break;
+
+    case Serial_AutoSource:			//0x99, Auto source seek
+      dv_Serial_AutoSource_Para2(ucCmdPara);
       break;
 
     case Serial_ColorTemp:			//command 0xb3, color temperature control
@@ -1503,7 +1546,7 @@ void dv_Serial_Volume_Para2(BYTE *ucCmdPara)
 void dv_Serial_BackLightControl_Para0(BYTE ucCmdPara)
 {
   int value1;
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
 
   if(ucCmdPara == '?'){
 	  ucCmd = 0xff;				//Denote we need to send backlight value to UART
@@ -1565,7 +1608,7 @@ void dv_Serial_BackLightControl_Para1(BYTE *ucCmdPara)
 //**********************************************************
 void dv_Serial_BackLightOnOff_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
 
   if(ucCmdPara == '?'){
 	  ucCmd = 0xff;			//Denote we need to send backlight status to UART
@@ -1616,7 +1659,7 @@ void dv_Serial_BackLightOnOff_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_Brightness_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BOOLEAN action=0;
 
   ucCmd = 0;
@@ -1768,6 +1811,407 @@ void dv_Serial_Brightness_Para4(BYTE *ucCmdPara)
   }
 }
 
+//Ray VGA 2017.06.22: dv_Serial_Phase_Para0
+//*********************************************************
+// Routine: dv_Serial_Phase_Para0
+// Usage: Process RS232 0x85 VGA phase control command parameter byte 0 including:
+//        ?: inquiry (0~100), +: increase, -: decrease,
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_Phase_Para0(BYTE ucCmdPara)
+{
+
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U16 u16ValueTmp;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;			//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;		//ENABLE action means increase
+      }
+      else{
+	  ucAct = DISABLE;		//DISABLE action means increase
+      }
+
+      //Go to increase/decrease phase value
+      u16ValueTmp = msAPI_Mode_GetPcPhaseValue(g_PcadcModeSetting[MAIN_WINDOW].u16Phase);	//Convert to 0~100 value
+      u16ValueTmp = MApp_ZUI_ACT_DecIncValue(ucAct, u16ValueTmp, 0,100, 1);
+      //Convert new value from 0~100 to real phase value and assign into phase variables
+      stLMGenSetting.stMB.u16B7_PCMenu_Phase = g_PcadcModeSetting[MAIN_WINDOW].u16Phase=N100toReallyValue(u16ValueTmp,MIN_PC_PHASE, MAX_PC_PHASE );
+
+      //Check if current input source is VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+       {
+	  MApi_XC_ADC_SetPhase(stLMGenSetting.stMB.u16B7_PCMenu_Phase);		//Apply new phase
+       }
+      MApp_SetSaveModeDataFlag();	//Save new phase value to memory
+  }
+
+  if(ucCmd==0xff){
+	//We need to send phase value back to UART
+     dv_SerialTransmitHex(msAPI_Mode_GetPcPhaseValue(g_PcadcModeSetting[MAIN_WINDOW].u16Phase));
+  }
+
+}
+
+//Ray VGA 2017.06.22: dv_Serial_Phase_Para1
+//*********************************************************
+// Routine: dv_Serial_Phase_Para1
+// Usage: Process RS232 0x85 VGA phase control 2-digit input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_Phase_Para1(BYTE *ucCmdPara)
+{
+  BYTE ucValue;
+  U16 u16ValueTmp;
+
+  //Only accept digit value between 0x00~0x64  (0~100)
+  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
+  {
+     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+      //SVX-4096 phase range is 0x00 to 0x64 (0%~100%)
+      if(ucValue > 100){
+	  ucValue = 100;		//Set it to max if input value is larger than max
+      }
+
+      u16ValueTmp = g_PcadcModeSetting[MAIN_WINDOW].u16Phase;	//backup old value
+      //Convert from 0~100 to real phase value and assign into phase variables
+      stLMGenSetting.stMB.u16B7_PCMenu_Phase = g_PcadcModeSetting[MAIN_WINDOW].u16Phase=N100toReallyValue((U16)ucValue,MIN_PC_PHASE, MAX_PC_PHASE );
+
+      //Check if current input source is VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+       {
+           if(g_PcadcModeSetting[MAIN_WINDOW].u16Phase != u16ValueTmp)
+           {
+               MApi_XC_ADC_SetPhase(stLMGenSetting.stMB.u16B7_PCMenu_Phase);		//Apply new phase only if phase is really changed
+           }
+       }
+      MApp_SetSaveModeDataFlag();	//Save new phase value to memory
+
+      dv_SerialTransmitHex(msAPI_Mode_GetPcPhaseValue(g_PcadcModeSetting[MAIN_WINDOW].u16Phase));						//Send new value to UART
+
+  }
+  else{
+      dv_SerialTransmitHex('?');	//Tx unknown command
+    }
+
+}
+
+//Ray VGA 2017.06.23: dv_Serial_HorzPosn_Para0
+//*********************************************************
+// Routine: dv_Serial_HorzPosn_Para0
+// Usage: Process RS232 0x86 VGA horizontal position control command parameter byte 0 including:
+//        ?: inquiry (0~100), +: increase, -: decrease, R/r: reset to 50
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_HorzPosn_Para0(BYTE ucCmdPara)
+{
+
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U16 u16ValueTmp;
+
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xfe;			//Denote we need to change horizontal position
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;		//ENABLE action means increase
+      }
+      else{
+	  ucAct = DISABLE;		//DISABLE action means increase
+      }
+
+      u16ValueTmp = g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalStart;
+      //Change horizontal start to 0~100 range
+      u16ValueTmp = GetScale100Value(u16ValueTmp,MIN_PC_H_START(MAIN_WINDOW),MAX_PC_H_START(MAIN_WINDOW));
+      u16ValueTmp = MApp_ZUI_ACT_DecIncValue(ucAct,u16ValueTmp,0,100,1);	//Increase/decrease horizontal start by 1
+
+
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xfe;			//Denote we need to change horizontal position
+      u16ValueTmp = 50;			//default value = 50
+  }
+
+  //Check if we need to change horizontal start position
+  if(ucCmd==0xfe){
+      ucCmd = 0xff;		//Denote we need to send status to UART
+      //Change horizontal start from 0~100 back to original value
+      g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalStart = N100toReallyValue(u16ValueTmp,MIN_PC_H_START(MAIN_WINDOW),MAX_PC_H_START(MAIN_WINDOW));
+      //Apply new horizontal start if it's in VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+      {
+	  MApi_XC_Set_PC_HPosition((g_PcadcModeSetting[MAIN_WINDOW].u16DefaultHStart* 2 -g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalStart), MAIN_WINDOW);
+      }
+      MApp_SetSaveModeDataFlag();	//Save new horizontal position to memory
+
+  }
+
+  if(ucCmd==0xff){
+      //We need to send value back to UART
+     u16ValueTmp = g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalStart;
+     //Change horizontal start to 0~100 range
+     u16ValueTmp = GetScale100Value(u16ValueTmp,MIN_PC_H_START(MAIN_WINDOW),MAX_PC_H_START(MAIN_WINDOW));
+     dv_SerialTransmitHex((BYTE)u16ValueTmp);
+  }
+
+}
+
+
+//*********************************************************
+// Routine: dv_Serial_HorzPosn_Para1
+// Usage: Process RS232 0x86 VGA horizontal position control 2-digit input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_HorzPosn_Para1(BYTE *ucCmdPara)
+{
+  BYTE ucValue;
+
+  //Only accept digit value between 0x00~0x64  (0~100)
+  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
+  {
+     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+      //SVX-4096 horizontal position range is 0x00 to 0x64 (0%~100%)
+      if(ucValue > 100){
+	  ucValue = 100;		//Set it to max if input value is larger than max
+      }
+
+      //Change horizontal start from 0~100 back to original value
+      g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalStart = N100toReallyValue(ucValue,MIN_PC_H_START(MAIN_WINDOW),MAX_PC_H_START(MAIN_WINDOW));
+      //Apply new horizontal start if it's in VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+      {
+	  MApi_XC_Set_PC_HPosition((g_PcadcModeSetting[MAIN_WINDOW].u16DefaultHStart* 2 -g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalStart), MAIN_WINDOW);
+      }
+      MApp_SetSaveModeDataFlag();	//Save new horizontal position to memory
+      dv_SerialTransmitHex(ucValue);						//Send new value to UART
+
+  }
+  else{
+      dv_SerialTransmitHex('?');	//Tx unknown command
+    }
+
+}
+
+//Ray VGA 2017.06.23: dv_Serial_VertPosn_Para0
+//*********************************************************
+// Routine: dv_Serial_VertPosn_Para0
+// Usage: Process RS232 0x87 VGA vertical position control command parameter byte 0 including:
+//        ?: inquiry (0~100), +: increase, -: decrease, R/r: reset
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_VertPosn_Para0(BYTE ucCmdPara)
+{
+
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U16 u16ValueTmp;
+
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xfe;			//Denote we need to change vertical position
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;		//ENABLE action means increase
+      }
+      else{
+	  ucAct = DISABLE;		//DISABLE action means increase
+      }
+
+      //Go to increase/decrease value. Since toal no. of step is less than 100, each increase/decrease unit maybe 1 or even more
+      u16ValueTmp = g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart;
+      g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart = MApp_ZUI_ACT_DecIncValue(ucAct,u16ValueTmp, MIN_PC_V_START, MAX_PC_V_START(MAIN_WINDOW), 1);
+      //Change horizontal start to 0~100 range
+      //u16ValueTmp = GetScale100Value(u16ValueTmp,MIN_PC_V_START,MAX_PC_V_START(MAIN_WINDOW));
+      //u16ValueTmp = MApp_ZUI_ACT_DecIncValue(ucAct,u16ValueTmp,0,100,1);	//Increase/decrease vertical start by 1
+
+
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xfe;			//Denote we need to change vertical position
+      u16ValueTmp = 50;			//default value = 50
+      //Change vertical start from 0~100 back to original value
+      g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart = N100toReallyValue(u16ValueTmp,MIN_PC_V_START,MAX_PC_V_START(MAIN_WINDOW));
+  }
+
+  //Check if we need to change vertical start position
+  if(ucCmd==0xfe){
+      ucCmd = 0xff;		//Denote we need to send status to UART
+
+      //Apply new vertical start if it's in VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+      {
+	  MApi_XC_Set_PC_VPosition(g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart,MAIN_WINDOW);
+      }
+      MApp_SetSaveModeDataFlag();	//Save new vertical position to memory
+
+  }
+
+  if(ucCmd==0xff){
+      //We need to send value back to UART
+     u16ValueTmp = g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart;
+     //Change vertical start to 0~100 range
+     u16ValueTmp = GetScale100Value(u16ValueTmp,MIN_PC_V_START,MAX_PC_V_START(MAIN_WINDOW));
+     dv_SerialTransmitHex((BYTE)u16ValueTmp);
+  }
+
+}
+
+
+//Ray VGA 2017.06.23: dv_Serial_VertPosn_Para1
+//*********************************************************
+// Routine: dv_Serial_VertPosn_Para1
+// Usage: Process RS232 0x87 VGA vertical position control 2-digit input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_VertPosn_Para1(BYTE *ucCmdPara)
+{
+  BYTE ucValue;
+
+  //Only accept digit value between 0x00~0x64  (0~100)
+  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
+  {
+     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+      //SVX-4096 horizontal position range is 0x00 to 0x64 (0%~100%)
+      if(ucValue > 100){
+	  ucValue = 100;		//Set it to max if input value is larger than max
+      }
+      //Change vertical start from 0~100 back to original value
+      g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart = N100toReallyValue(ucValue,MIN_PC_V_START,MAX_PC_V_START(MAIN_WINDOW));
+      //Apply new vertical start if it's in VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+      {
+	  MApi_XC_Set_PC_VPosition(g_PcadcModeSetting[MAIN_WINDOW].u16VerticalStart,MAIN_WINDOW);
+      }
+      MApp_SetSaveModeDataFlag();	//Save new vertical position to memory
+      dv_SerialTransmitHex(ucValue);						//Send new value to UART
+
+  }
+  else{
+      dv_SerialTransmitHex('?');	//Tx unknown command
+    }
+
+}
+
+
+//*********************************************************
+// Routine: dv_Serial_VgaClock_Para0
+// Usage: Process RS232 0x8B VGA clock control command parameter byte 0 including:
+//        ?: inquiry (0~100), +: increase, -: decrease,
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_VgaClock_Para0(BYTE ucCmdPara)
+{
+
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;			//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;		//ENABLE action means increase
+      }
+      else{
+	  ucAct = DISABLE;		//DISABLE action means increase
+      }
+      //Go to increase/decrease clock value. Since toal no. of step is less than 100, each increase/decrease unit maybe 1 or even more
+      g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal =
+          MApp_ZUI_ACT_DecIncValue(
+              ucAct,
+              g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal, MIN_PC_CLOCK(MAIN_WINDOW), MAX_PC_CLOCK(MAIN_WINDOW), 1);
+      stLMGenSetting.stMB.u16B7_PCMenu_Size = g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal;
+
+      //Check if current input source is VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+       {
+	  MApi_XC_ADC_SetPcClock(stLMGenSetting.stMB.u16B7_PCMenu_Size);	//Apply new clock
+       }
+      MApp_SetSaveModeDataFlag();	//Save new phase value to memory
+  }
+
+  if(ucCmd==0xff){
+	//We need to send clock value back to UART
+     dv_SerialTransmitHex(msAPI_Mode_GetPcClockValue( MAIN_WINDOW, g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal));
+  }
+
+
+}
+
+
+//*********************************************************
+// Routine: dv_Serial_VgaClock_Para1
+// Usage: Process RS232 0x8B VGA clock control 2-digit input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_VgaClock_Para1(BYTE *ucCmdPara)
+{
+  BYTE ucValue;
+  U16 u16ValueTmp;
+
+  //Only accept digit value between 0x00~0x64  (0~100)
+  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
+  {
+     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+      //SVX-4096 phase range is 0x00 to 0x64 (0%~100%)
+      if(ucValue > 100){
+	  ucValue = 100;		//Set it to max if input value is larger than max
+      }
+
+      u16ValueTmp = g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal;	//backup old value
+      //Convert from 0~100 to real phase value and assign into phase variables
+      stLMGenSetting.stMB.u16B7_PCMenu_Size = g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal=N100toReallyValue((U16)ucValue,MIN_PC_CLOCK(MAIN_WINDOW), MAX_PC_CLOCK(MAIN_WINDOW));
+
+      //Check if current input source is VGA
+      if(IsSrcTypeVga(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+       {
+           if(g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal != u16ValueTmp)
+           {
+               MApi_XC_ADC_SetPcClock(stLMGenSetting.stMB.u16B7_PCMenu_Size);	//Apply new clock only if phase is really changed
+           }
+       }
+      MApp_SetSaveModeDataFlag();	//Save new clock value to memory
+
+      dv_SerialTransmitHex(msAPI_Mode_GetPcClockValue( MAIN_WINDOW, g_PcadcModeSetting[MAIN_WINDOW].u16HorizontalTotal));						//Send new value to UART
+
+  }
+  else{
+      dv_SerialTransmitHex('?');	//Tx unknown command
+    }
+
+}
+
+
+
+//Ray SRC 2017.06.22
+//*********************************************************
+// Routine: dv_CheckExitDMPMode
+// Usage: Check if it is currently in DMP mode before changing input source. If yes, exit DMP mode first.
+//**********************************************************
+void dv_CheckExitDMPMode(void)
+{
+  if( UI_INPUT_SOURCE_TYPE == UI_INPUT_SOURCE_DMP){
+    ////Ray DMP 2017.06.22: Following are procedures to quit DMP mode
+    MApp_ZUI_ACT_ShutdownOSD();
+    MApp_DMP_Exit();
+    MApp_PCMode_SetFirstNoSignalSource(UI_INPUT_SOURCE_NONE);	//Reset no signal source as NONE when exiting DMP
+    MApp_TopStateMachine_SetTopState(STATE_TOP_DIGITALINPUTS);
+    MApp_InputSource_RestoreSource();	//Go back to previous source
+  }
+
+}
+
 //Ray SRC 2017.05.08
 //*********************************************************
 // Routine: dv_Serial_Source_Para0
@@ -1777,7 +2221,7 @@ void dv_Serial_Brightness_Para4(BYTE *ucCmdPara)
 //**********************************************************
 void dv_Serial_Source_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   WORD usInput;
   BOOLEAN action;
   //The input source change sequence is: HDMI1 <-> HDMI2 <-> HDMI3 <-> DVI<-> VGA
@@ -1790,10 +2234,12 @@ void dv_Serial_Source_Para0(BYTE ucCmdPara)
   }
   else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
       ucCmd = 0xff;				//Denote we need to send status to UART
+      dv_CheckExitDMPMode();			//Check and exit DMP mode
       MApp_ZUI_ACT_InputSourceSwitch(UI_INPUT_SOURCE_HDMI);	//Change to new input source
   }
   else if(ucCmdPara == '+'||ucCmdPara == '-'){
       ucCmd = 0xff;			//Denote we need to send status to UART
+      dv_CheckExitDMPMode();		//Check and exit DMP mode
       if(ucCmdPara == '+'){
 	  action = 1;			//1 = increase value
       }
@@ -1807,9 +2253,19 @@ void dv_Serial_Source_Para0(BYTE ucCmdPara)
 	  }
       }
 
-      newSource = MApp_ZUI_ACT_DecIncValue(
-          action,
-          (U16)currentSource, 0, 4, 1);		//Increase/decrease input source value by 1
+      //Ray SRC 2017.06.20: If currentSource is max and increase, change to min
+      if(currentSource==4&&ucCmdPara == '+'){
+	  newSource = 0;
+      }
+      //Ray SRC 2017.06.20: If currentSource is min and decrease, change to max
+      else if(currentSource==0&&ucCmdPara == '-'){
+	  newSource = 4;
+      }
+      else{
+	newSource = MApp_ZUI_ACT_DecIncValue(
+	    action,
+	    (U16)currentSource, 0, 4, 1);		//Increase/decrease input source value by 1
+      }
       MApp_ZUI_ACT_InputSourceSwitch(UI_SRC[newSource]);	//Change to new input source
   }
 
@@ -1854,6 +2310,7 @@ void dv_Serial_Source_Para1(BYTE *ucCmdPara)
 
   //Check if user input the correct source value
   if(bSource!=0xff){
+      dv_CheckExitDMPMode();				//Check and exit DMP mode
       MApp_ZUI_ACT_InputSourceSwitch(UI_SRC[bSource]);	//Change to new input source
 
   }
@@ -1874,7 +2331,7 @@ void dv_Serial_Source_Para1(BYTE *ucCmdPara)
 //**********************************************************
 void dv_Serial_AutoSource_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
 
   if(ucCmdPara == '?'){
 	ucCmd = 0xff;			//Denote we need to send status to UART
@@ -1896,6 +2353,46 @@ void dv_Serial_AutoSource_Para0(BYTE ucCmdPara)
   if(ucCmd==0xff)
   {
       dv_TxByteToUART(GET_AUTO_SOURCE_SEEK()+0x30);	//Send Auto source seek state to UART (+0x30 to transform 0,1 to their ASCII value)
+  }
+
+}
+
+//Ray DMP 2017.06.22
+//*********************************************************
+// Routine: dv_Serial_AutoSource_Para2
+// Usage: Process RS232 0x99 Auto source seek command.  We treat failover on/off as enable/disable DMP input source
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_AutoSource_Para2(BYTE *ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  WORD usInput;
+
+  //Get the input source
+  usInput = (BYTE)ucCmdPara[1];
+  usInput = (usInput<<8) &0xff00;
+  usInput = usInput|(BYTE)ucCmdPara[0];
+
+  //If failover (DMP) source is entered
+  if(usInput ==0x3159){
+      if(ucCmdPara[2]=='?'){
+	  ucCmd = 0xff;
+      }
+      if(ucCmdPara[2]=='1'){
+	  ucCmd = 0xff;
+	  SET_FAIL_OVER(ENABLE);		//Enable failover
+      }
+      if(ucCmdPara[2]=='0'){
+	  ucCmd = 0xff;
+	  SET_FAIL_OVER(DISABLE);		//Disable failover
+      }
+
+
+      if(ucCmd==0xff){
+	  dv_TxByteToUART(GET_FAIL_OVER()+0x30);	//Dump Failover status
+
+      }
+
   }
 
 }
@@ -1938,7 +2435,7 @@ void dv_Serial_Info_Para0(BYTE ucCmdPara)
   }
 
   if(ucCmdPara == '2'){			//Check if external memory 24C256 supported
-      dv_TxByteToUART('1');		//Reply support, in order to work of DV software
+      dv_TxByteToUART('0');		//Reply not support
   }
 
    if(ucCmdPara == '3'){			//Read Revision no.
@@ -1965,7 +2462,7 @@ void dv_Serial_Info_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_Contrast_Para1(BYTE *ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BOOLEAN action=0;
   ucCmd = 0;
 
@@ -2149,7 +2646,7 @@ void dv_Serial_Contrast_Para5(BYTE *ucCmdPara)
 //**********************************************************
 void dv_Serial_ColorSat_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BOOLEAN action=0;
 
   ucCmd = 0;
@@ -2311,7 +2808,7 @@ void dv_Serial_ColorSat_Para4(BYTE *ucCmdPara)
 //**********************************************************
 void dv_Serial_Hue_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BOOLEAN action=0;
 
   ucCmd = 0;
@@ -2473,7 +2970,7 @@ void dv_Serial_Hue_Para4(BYTE *ucCmdPara)
 //**********************************************************
 void dv_Serial_Sharpness_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BOOLEAN action=0;
 
   ucCmd = 0;
@@ -2634,7 +3131,8 @@ void dv_Serial_Sharpness_Para4(BYTE *ucCmdPara)
 //**********************************************************
 void  dv_Serial_ScaleMode_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd,ucARatio;
+  BYTE ucCmd = 0;
+  BYTE ucARatio;
 
   if(ucCmdPara == '?'){
 	ucCmd = 0xff;			//Denote we need to send status to UART
@@ -2783,7 +3281,7 @@ void  dv_Serial_DispOrient_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_Gamma_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BYTE ucValue=_GAMMA_22;
 
   if(ucCmdPara == '?'){
@@ -2908,7 +3406,7 @@ BYTE dv_GetColorTempCmdValue(BYTE ucTempValue)
 //**********************************************************
 void dv_Serial_ColorTemp_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BYTE value1;
   if(ucCmdPara!='i'&& ucCmdPara!='o')
   {
@@ -2918,6 +3416,7 @@ void dv_Serial_ColorTemp_Para0(BYTE ucCmdPara)
     else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
 	ucCmd = 0xff;					//Denote we need to send status to UART
 	MApp_DataBase_RestoreColorTempSelection();	//Restore default color temperature selection
+	MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Adjust new color temperature setting
     }
     else{
 	value1 = dv_GetMAppColorTemp(ucCmdPara);		//Get color temp value for MStar MApp
@@ -3014,18 +3513,550 @@ void dv_Serial_ColorTemp_Para3(BYTE *ucCmdPara)
 	  if(bSource==g_enDataInputSourceType[MAIN_WINDOW]){
 	      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);	//Adjust new color temperature setting
 	  }
-	  dv_SerialTransmitHex(dv_GetColorTempCmdValue(G_VEDIO_SETTING[bSource].eColorTemp));
+	  dv_TxByteToUART(dv_GetColorTempCmdValue(G_VEDIO_SETTING[bSource].eColorTemp));
 	}else{
-	    dv_SerialTransmitHex(bValue);		//Send '?' value back to UART
+	    dv_TxByteToUART(bValue);		//Send '?' value back to UART
 	}
     }
   }
+  /*
   else{
       dv_SerialTransmitHex('?');	//Tx unknown command
   }
+  */
 }
 
 
+//Ray CTP 2017.06.26: dv_Serial_TempRed_Para0
+//Tuning color temperature is expected on the displayed video (i.e. current selected source) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempRed_Para0
+// Usage: Process RS232 0xB4 red of selected input source user color temperature setting command parameter byte 0 including:
+//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_TempRed_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U8 u8ValueTmp;
+  BOOLEAN bIsNeedToReset = FALSE;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xff;				//Denote we need to send status to UART
+      MApp_DataBase_RestoreUserColorTempRed();	//Restore default selected user color temperature red
+      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);	//Apply new color temp only if there is new change value
+  }
+
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;					//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;				//ENABLE means increase value
+      }
+      else{
+	  ucAct = DISABLE;				//DISABLE means decrease value
+      }
+      //Go to increase/decrease both actual and scale color temp
+      u8ValueTmp = USER_COLOR_TEMP.cRedColor;
+      USER_COLOR_TEMP.cRedColor = MApp_ZUI_ACT_DecIncValue(
+	  ucAct,
+          USER_COLOR_TEMP.cRedColor, MIN_USER_RGB, MAX_USER_RGB, 1);
+      USER_COLOR_TEMP.cRedScaleValue = GetColorTemperatureScale100Value(
+          u8ValueTmp, USER_COLOR_TEMP.cRedColor,
+          MIN_USER_RGB, MAX_USER_RGB, USER_COLOR_TEMP.cRedScaleValue, &bIsNeedToReset);
+      if (bIsNeedToReset == TRUE) USER_COLOR_TEMP.cRedColor = u8ValueTmp;
+
+      if ((USER_COLOR_TEMP.cRedColor == u8ValueTmp) && !bIsNeedToReset)
+      {
+          //bRet = FALSE;
+      }
+      else
+      {
+          //bRet = TRUE;
+          MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+      }
+
+  }
+
+  //Check if it is requested to send status to UART
+  if(ucCmd == 0xff){
+      dv_SerialTransmitHex(GetScale100Value(USER_COLOR_TEMP.cRedColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+  }
+
+}
+
+
+//Ray CTP 2017.06.26: dv_Serial_TempRed_Para1
+//Tuning color temperature is expected on the displayed video (i.e. current selected source) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempRed_Para1
+// Usage: Process RS232 0xB4 red color temperature setting command parameter 2 digits input 0x00~0x64
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_TempRed_Para1(BYTE *ucCmdPara)
+{
+  BYTE u8Value;
+
+  u8Value = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+
+  if(u8Value>100){
+      u8Value = 100;
+  }
+  USER_COLOR_TEMP.cRedScaleValue = u8Value;
+
+  //Convert 0~100 to actual value
+  USER_COLOR_TEMP.cRedColor = N100toReallyValue((U16)u8Value,MIN_USER_RGB, MAX_USER_RGB);
+  MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp
+  dv_SerialTransmitHex(GetScale100Value(USER_COLOR_TEMP.cRedColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+}
+
+
+//Ray CTP 2017.06.26: dv_Serial_TempGreen_Para0
+//Tuning color temperature is expected on the displayed video (i.e. current selected source) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempGreen_Para0
+// Usage: Process RS232 0xB5 green color temperature setting command parameter byte 0 including:
+//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_TempGreen_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U8 u8ValueTmp;
+  BOOLEAN bIsNeedToReset = FALSE;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xff;				//Denote we need to send status to UART
+      MApp_DataBase_RestoreUserColorTempGreen();	//Restore default selected color temperature Green
+      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+  }
+
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;					//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;				//ENABLE means increase value
+      }
+      else{
+	  ucAct = DISABLE;				//DISABLE means decrease value
+      }
+      //Go to increase/decrease both actual and scale color temp
+      u8ValueTmp = USER_COLOR_TEMP.cGreenColor;
+      USER_COLOR_TEMP.cGreenColor = MApp_ZUI_ACT_DecIncValue(
+	  ucAct,
+          USER_COLOR_TEMP.cGreenColor, MIN_USER_RGB, MAX_USER_RGB, 1);
+      USER_COLOR_TEMP.cGreenScaleValue = GetColorTemperatureScale100Value(
+          u8ValueTmp, USER_COLOR_TEMP.cGreenColor,
+          MIN_USER_RGB, MAX_USER_RGB, USER_COLOR_TEMP.cGreenScaleValue, &bIsNeedToReset);
+      if (bIsNeedToReset == TRUE) USER_COLOR_TEMP.cGreenColor = u8ValueTmp;
+
+      if ((USER_COLOR_TEMP.cGreenColor == u8ValueTmp) && !bIsNeedToReset)
+      {
+          //bRet = FALSE;
+      }
+      else
+      {
+          //bRet = TRUE;
+          MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+      }
+
+  }
+
+  //Check if it is requested to send status to UART
+  if(ucCmd == 0xff){
+      dv_SerialTransmitHex(GetScale100Value(USER_COLOR_TEMP.cGreenColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+  }
+
+}
+
+//Ray CTP 2017.06.26: dv_Serial_TempGreen_Para1
+//Tuning color temperature is expected on the displayed video (i.e. current selected source) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempGreen_Para1
+// Usage: Process RS232 0xB5 green color temperature setting command parameter 2 digits input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_TempGreen_Para1(BYTE *ucCmdPara)
+{
+  BYTE u8Value;
+
+  u8Value = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+
+  if(u8Value>100){
+      u8Value = 100;
+  }
+  USER_COLOR_TEMP.cGreenScaleValue = u8Value;
+
+  //Convert 0~100 to actual value
+  USER_COLOR_TEMP.cGreenColor = N100toReallyValue((U16)u8Value,MIN_USER_RGB, MAX_USER_RGB);
+  MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp
+  dv_SerialTransmitHex(GetScale100Value(USER_COLOR_TEMP.cGreenColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+}
+
+//Ray CTP 2017.06.26: dv_Serial_TempBlue_Para0
+//Tuning color temperature is expected on the displayed video (i.e. current selected source) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempBlue_Para0
+// Usage: Process RS232 0xB6 blue color temperature setting command parameter byte 0 including:
+//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_TempBlue_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U8 u8ValueTmp;
+  BOOLEAN bIsNeedToReset = FALSE;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xff;				//Denote we need to send status to UART
+      MApp_DataBase_RestoreUserColorTempBlue();	//Restore default selected color temperature Blue
+      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+  }
+
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;					//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;				//ENABLE means increase value
+      }
+      else{
+	  ucAct = DISABLE;				//DISABLE means decrease value
+      }
+      //Go to increase/decrease both actual and scale color temp
+      u8ValueTmp = USER_COLOR_TEMP.cBlueColor;
+      USER_COLOR_TEMP.cBlueColor = MApp_ZUI_ACT_DecIncValue(
+	  ucAct,
+          USER_COLOR_TEMP.cBlueColor, MIN_USER_RGB, MAX_USER_RGB, 1);
+      USER_COLOR_TEMP.cBlueScaleValue = GetColorTemperatureScale100Value(
+          u8ValueTmp, USER_COLOR_TEMP.cBlueColor,
+          MIN_USER_RGB, MAX_USER_RGB, USER_COLOR_TEMP.cBlueScaleValue, &bIsNeedToReset);
+      if (bIsNeedToReset == TRUE) USER_COLOR_TEMP.cBlueColor = u8ValueTmp;
+
+      if ((USER_COLOR_TEMP.cBlueColor == u8ValueTmp) && !bIsNeedToReset)
+      {
+          //bRet = FALSE;
+      }
+      else
+      {
+          //bRet = TRUE;
+          MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+      }
+
+  }
+
+  //Check if it is requested to send status to UART
+  if(ucCmd == 0xff){
+      dv_SerialTransmitHex(GetScale100Value(USER_COLOR_TEMP.cBlueColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+  }
+
+}
+
+//Ray CTP 2017.06.26: dv_Serial_TempBlue_Para1
+//Tuning color temperature is expected on the displayed video (i.e. current selected source) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempBlue_Para1
+// Usage: Process RS232 0xB6 blue color temperature setting command parameter 2 digits input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_TempBlue_Para1(BYTE *ucCmdPara)
+{
+  BYTE u8Value;
+
+  u8Value = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+
+  if(u8Value>100){
+      u8Value = 100;
+  }
+  USER_COLOR_TEMP.cBlueScaleValue = u8Value;
+
+  //Convert 0~100 to actual value
+  USER_COLOR_TEMP.cBlueColor = N100toReallyValue((U16)u8Value,MIN_USER_RGB, MAX_USER_RGB);
+  MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp
+  dv_SerialTransmitHex(GetScale100Value(USER_COLOR_TEMP.cBlueColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+}
+
+
+//Ray CTP 2017.06.26: Disable selected color temp R,G,B gain adjustment.  We only need user color temp R,G,B gain adjustment
+#if 0
+//Ray CTP 2017.06.23: dv_Serial_TempRed_Para0
+//Tuning color temperature is expected on the displayed video (i.e. current selected source and selected color temp) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempRed_Para0
+// Usage: Process RS232 0xB4 red of selected color temperature setting command parameter byte 0 including:
+//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_TempRed_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U8 u8ValueTmp;
+  BOOLEAN bIsNeedToReset = FALSE;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xff;				//Denote we need to send status to UART
+      MApp_DataBase_RestoreSelColorTempRed();	//Restore default selected color temperature red
+      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+  }
+
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;					//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;				//ENABLE means increase value
+      }
+      else{
+	  ucAct = DISABLE;				//DISABLE means decrease value
+      }
+      //Go to increase/decrease both actual and scale color temp
+      u8ValueTmp = ST_COLOR_TEMP.cRedColor;
+      ST_COLOR_TEMP.cRedColor = MApp_ZUI_ACT_DecIncValue(
+	  ucAct,
+          ST_COLOR_TEMP.cRedColor, MIN_USER_RGB, MAX_USER_RGB, 1);
+      ST_COLOR_TEMP.cRedScaleValue = GetColorTemperatureScale100Value(
+          u8ValueTmp, ST_COLOR_TEMP.cRedColor,
+          MIN_USER_RGB, MAX_USER_RGB, ST_COLOR_TEMP.cRedScaleValue, &bIsNeedToReset);
+      if (bIsNeedToReset == TRUE) ST_COLOR_TEMP.cRedColor = u8ValueTmp;
+
+      if ((ST_COLOR_TEMP.cRedColor == u8ValueTmp) && !bIsNeedToReset)
+      {
+          //bRet = FALSE;
+      }
+      else
+      {
+          //bRet = TRUE;
+          MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+      }
+
+  }
+
+  //Check if it is requested to send status to UART
+  if(ucCmd == 0xff){
+      dv_SerialTransmitHex(GetScale100Value(ST_COLOR_TEMP.cRedColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+  }
+
+}
+
+
+//Ray CTP 2017.06.23: dv_Serial_TempRed_Para1
+//Tuning color temperature is expected on the displayed video (i.e. current selected source and selected color temp) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempRed_Para1
+// Usage: Process RS232 0xB4 red color temperature setting command parameter 2 digits input 0x00~0x64
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_TempRed_Para1(BYTE *ucCmdPara)
+{
+  BYTE u8Value;
+
+  u8Value = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+
+  if(u8Value>100){
+      u8Value = 100;
+  }
+  ST_COLOR_TEMP.cRedScaleValue = u8Value;
+
+  //Convert 0~100 to actual value
+  ST_COLOR_TEMP.cRedColor = N100toReallyValue((U16)u8Value,MIN_USER_RGB, MAX_USER_RGB);
+  MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp
+  dv_SerialTransmitHex(GetScale100Value(ST_COLOR_TEMP.cRedColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+}
+
+
+//Ray CTP 2017.06.23: dv_Serial_TempGreen_Para0
+//Tuning color temperature is expected on the displayed video (i.e. current selected source and selected color temp) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempGreen_Para0
+// Usage: Process RS232 0xB5 green color temperature setting command parameter byte 0 including:
+//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_TempGreen_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U8 u8ValueTmp;
+  BOOLEAN bIsNeedToReset = FALSE;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xff;				//Denote we need to send status to UART
+      MApp_DataBase_RestoreSelColorTempGreen();	//Restore default selected color temperature Green
+      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+  }
+
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;					//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;				//ENABLE means increase value
+      }
+      else{
+	  ucAct = DISABLE;				//DISABLE means decrease value
+      }
+      //Go to increase/decrease both actual and scale color temp
+      u8ValueTmp = ST_COLOR_TEMP.cGreenColor;
+      ST_COLOR_TEMP.cGreenColor = MApp_ZUI_ACT_DecIncValue(
+	  ucAct,
+          ST_COLOR_TEMP.cGreenColor, MIN_USER_RGB, MAX_USER_RGB, 1);
+      ST_COLOR_TEMP.cGreenScaleValue = GetColorTemperatureScale100Value(
+          u8ValueTmp, ST_COLOR_TEMP.cGreenColor,
+          MIN_USER_RGB, MAX_USER_RGB, ST_COLOR_TEMP.cGreenScaleValue, &bIsNeedToReset);
+      if (bIsNeedToReset == TRUE) ST_COLOR_TEMP.cGreenColor = u8ValueTmp;
+
+      if ((ST_COLOR_TEMP.cGreenColor == u8ValueTmp) && !bIsNeedToReset)
+      {
+          //bRet = FALSE;
+      }
+      else
+      {
+          //bRet = TRUE;
+          MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+      }
+
+  }
+
+  //Check if it is requested to send status to UART
+  if(ucCmd == 0xff){
+      dv_SerialTransmitHex(GetScale100Value(ST_COLOR_TEMP.cGreenColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+  }
+
+}
+
+//Ray CTP 2017.06.23: dv_Serial_TempGreen_Para1
+//Tuning color temperature is expected on the displayed video (i.e. current selected source and selected color temp) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempGreen_Para1
+// Usage: Process RS232 0xB5 green color temperature setting command parameter 2 digits input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_TempGreen_Para1(BYTE *ucCmdPara)
+{
+  BYTE u8Value;
+
+  u8Value = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+
+  if(u8Value>100){
+      u8Value = 100;
+  }
+  ST_COLOR_TEMP.cGreenScaleValue = u8Value;
+
+  //Convert 0~100 to actual value
+  ST_COLOR_TEMP.cGreenColor = N100toReallyValue((U16)u8Value,MIN_USER_RGB, MAX_USER_RGB);
+  MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp
+  dv_SerialTransmitHex(GetScale100Value(ST_COLOR_TEMP.cGreenColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+}
+
+//Ray CTP 2017.06.23: dv_Serial_TempBlue_Para0
+//Tuning color temperature is expected on the displayed video (i.e. current selected source and selected color temp) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempBlue_Para0
+// Usage: Process RS232 0xB6 blue color temperature setting command parameter byte 0 including:
+//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
+// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
+//**********************************************************
+void dv_Serial_TempBlue_Para0(BYTE ucCmdPara)
+{
+  BYTE ucCmd = 0;
+  BYTE ucAct = 0;
+  U8 u8ValueTmp;
+  BOOLEAN bIsNeedToReset = FALSE;
+
+  if(ucCmdPara == '?'){
+	ucCmd = 0xff;			//Denote we need to send status to UART
+  }
+  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
+      ucCmd = 0xff;				//Denote we need to send status to UART
+      MApp_DataBase_RestoreSelColorTempBlue();	//Restore default selected color temperature Blue
+      MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+  }
+
+  else if(ucCmdPara == '+'||ucCmdPara == '-'){
+      ucCmd = 0xff;					//Denote we need to send status to UART
+      if(ucCmdPara == '+'){
+	  ucAct = ENABLE;				//ENABLE means increase value
+      }
+      else{
+	  ucAct = DISABLE;				//DISABLE means decrease value
+      }
+      //Go to increase/decrease both actual and scale color temp
+      u8ValueTmp = ST_COLOR_TEMP.cBlueColor;
+      ST_COLOR_TEMP.cBlueColor = MApp_ZUI_ACT_DecIncValue(
+	  ucAct,
+          ST_COLOR_TEMP.cBlueColor, MIN_USER_RGB, MAX_USER_RGB, 1);
+      ST_COLOR_TEMP.cBlueScaleValue = GetColorTemperatureScale100Value(
+          u8ValueTmp, ST_COLOR_TEMP.cBlueColor,
+          MIN_USER_RGB, MAX_USER_RGB, ST_COLOR_TEMP.cBlueScaleValue, &bIsNeedToReset);
+      if (bIsNeedToReset == TRUE) ST_COLOR_TEMP.cBlueColor = u8ValueTmp;
+
+      if ((ST_COLOR_TEMP.cBlueColor == u8ValueTmp) && !bIsNeedToReset)
+      {
+          //bRet = FALSE;
+      }
+      else
+      {
+          //bRet = TRUE;
+          MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp only if there is new change value
+      }
+
+  }
+
+  //Check if it is requested to send status to UART
+  if(ucCmd == 0xff){
+      dv_SerialTransmitHex(GetScale100Value(ST_COLOR_TEMP.cBlueColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+  }
+
+}
+
+//Ray CTP 2017.06.23: dv_Serial_TempBlue_Para1
+//Tuning color temperature is expected on the displayed video (i.e. current selected source and selected color temp) since user need to watch the effect in tuning
+//*********************************************************
+// Routine: dv_Serial_TempBlue_Para1
+// Usage: Process RS232 0xB6 blue color temperature setting command parameter 2 digits input
+// Input: ucCmdPara: pointer to memory saving command parameter byte
+//**********************************************************
+void dv_Serial_TempBlue_Para1(BYTE *ucCmdPara)
+{
+  BYTE u8Value;
+
+  u8Value = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
+
+  if(u8Value>100){
+      u8Value = 100;
+  }
+  ST_COLOR_TEMP.cBlueScaleValue = u8Value;
+
+  //Convert 0~100 to actual value
+  ST_COLOR_TEMP.cBlueColor = N100toReallyValue((U16)u8Value,MIN_USER_RGB, MAX_USER_RGB);
+  MApp_PQ_Set_ColorTemp(MAIN_WINDOW);		//Apply new color temp
+  dv_SerialTransmitHex(GetScale100Value(ST_COLOR_TEMP.cBlueColor,MIN_USER_RGB, MAX_USER_RGB));	//Send color temperature value
+
+}
+
+#endif
 
 //*********************************************************
 // Routine: dv_Serial_Power_Para0
@@ -3304,304 +4335,12 @@ void dv_Serial_Hue_Para1(BYTE *ucCmdPara)
 
 
 
-//*********************************************************
-// Routine: dv_Serial_Phase_Para0
-// Usage: Process RS232 0x85 VGA phase control command parameter byte 0 including:
-//        ?: inquiry (0~100), +: increase, -: decrease,
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_Phase_Para0(BYTE ucCmdPara)
-{
-
-  BYTE ucCmd;
-  int value1;
-
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == '+'||ucCmdPara == '-'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Set right key message = increase value
-      }
-      else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Set left key message = decrease value
-      }
-      value1= (BYTE)OsdDisplayDetOverRange(UserCommonGetPhase(), _OSD_PHASE_MAX, _OSD_PHASE_MIN, _OFF);	//Go to increase/decrease value
-      UserCommonSetPhase(value1);      					//Save new value to memory
-      UserCommonAdjustPhase(UserCommonGetPhase());		//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);	//Save new value to NVRAM
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);				//Cancel key message after change value
-  }
-
-  if(ucCmd==0xff){
-	//We need to send value back to UART
-     value1 = UserCommonGetPhase();		//Get VGA phase value
-     dv_SerialTransmitHex((BYTE)value1);
-  }
-
-}
-
-//*********************************************************
-// Routine: dv_Serial_Phase_Para1
-// Usage: Process RS232 0x85 VGA phase control 2-digit input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_Phase_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-
-  //Only accept digit value between 0x00~0x64  (0~100)
-  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
-  {
-     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-      //SVX-4096 phase range is 0x00 to 0x64 (0%~100%)
-      if(ucValue > 100){
-	  ucValue = 100;		//Set it to max if input value is larger than max
-      }
-      if(ucValue < 0){
-	  ucValue = 0;
-      }
-      UserCommonSetPhase(ucValue);      					//Save new value to memory
-      UserCommonAdjustPhase(UserCommonGetPhase());				//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);		//Save new value to NVRAM
-      dv_SerialTransmitHex(ucValue);						//Send new value to UART
-
-  }
-  else{
-      dv_SerialTransmitHex('?');	//Tx unknown command
-    }
-
-}
 
 
-//*********************************************************
-// Routine: dv_Serial_HorzPosn_Para0
-// Usage: Process RS232 0x86 VGA horizontal position control command parameter byte 0 including:
-//        ?: inquiry (0~100), +: increase, -: decrease, R/r: reset to 50
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_HorzPosn_Para0(BYTE ucCmdPara)
-{
-
-  BYTE ucCmd;
-  int value1;
-
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == '+'||ucCmdPara == '-'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Set right key message = increase value
-      }
-      else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Set left key message = decrease value
-      }
-
-      value1 = OsdDisplayDetOverRange(UserCommonGetHPosition(), 100, 0, _OFF);		//Go to increase/decrease value
-      UserCommonSetHPosition(value1);							//Save new value to memory
-      UserCommonAdjustHPosition(UserCommonGetHPosition(), SysVgaGetRegion());		//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);			//Save new value to NVRAM
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);						//Cancel key message after change value
-  }
-  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      UserCommonSetHPosition(50);							//Save default value 50 to memory
-      UserCommonAdjustHPosition(UserCommonGetHPosition(), SysVgaGetRegion());		//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);			//Save new value to NVRAM
-  }
-
-  if(ucCmd==0xff){
-	//We need to send value back to UART
-     value1 = UserCommonGetHPosition();		//Get VGA horizontal position value
-     dv_SerialTransmitHex((BYTE)value1);
-  }
-
-}
 
 
-//*********************************************************
-// Routine: dv_Serial_HorzPosn_Para1
-// Usage: Process RS232 0x86 VGA horizontal position control 2-digit input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_HorzPosn_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-
-  //Only accept digit value between 0x00~0x64  (0~100)
-  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
-  {
-     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-      //SVX-4096 horizontal position range is 0x00 to 0x64 (0%~100%)
-      if(ucValue > 100){
-	  ucValue = 100;		//Set it to max if input value is larger than max
-      }
-      if(ucValue < 0){
-	  ucValue = 0;
-      }
-      UserCommonSetHPosition(ucValue);      					//Save new value to memory
-      UserCommonAdjustHPosition(UserCommonGetHPosition(), SysVgaGetRegion());	//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);		//Save new value to NVRAM
-      dv_SerialTransmitHex(ucValue);						//Send new value to UART
-
-  }
-  else{
-      dv_SerialTransmitHex('?');	//Tx unknown command
-    }
-
-}
-
-//*********************************************************
-// Routine: dv_Serial_VertPosn_Para0
-// Usage: Process RS232 0x87 VGA vertical position control command parameter byte 0 including:
-//        ?: inquiry (0~100), +: increase, -: decrease, R/r: reset
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_VertPosn_Para0(BYTE ucCmdPara)
-{
-
-  BYTE ucCmd;
-  int value1;
-
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == '+'||ucCmdPara == '-'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Set right key message = increase value
-      }
-      else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Set left key message = decrease value
-      }
-
-      value1 = OsdDisplayDetOverRange(UserCommonGetVPosition(), 100, 0, _OFF);		//Go to increase/decrease value
-      UserCommonSetVPosition(value1);							//Save new value to memory
-      UserCommonAdjustVPosition(UserCommonGetVPosition(), SysVgaGetRegion());		//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);			//Save new value to NVRAM
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);						//Cancel key message after change value
-  }
-  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      UserCommonSetVPosition(50);							//Save default value 50 to memory
-      UserCommonAdjustVPosition(UserCommonGetVPosition(), SysVgaGetRegion());		//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);			//Save new value to NVRAM
-  }
-  if(ucCmd==0xff){
-	//We need to send value back to UART
-     value1 = UserCommonGetVPosition();		//Get VGA vertical position value
-     dv_SerialTransmitHex((BYTE)value1);
-  }
-
-}
 
 
-//*********************************************************
-// Routine: dv_Serial_VertPosn_Para1
-// Usage: Process RS232 0x87 VGA vertical position control 2-digit input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_VertPosn_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-
-  //Only accept digit value between 0x00~0x64  (0~100)
-  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
-  {
-     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-      //SVX-4096 vertical position range is 0x00 to 0x64 (0%~100%)
-      if(ucValue > 100){
-	  ucValue = 100;		//Set it to max if input value is larger than max
-      }
-      if(ucValue < 0){
-	  ucValue = 0;
-      }
-      UserCommonSetVPosition(ucValue);      					//Save new value to memory
-      UserCommonAdjustVPosition(UserCommonGetVPosition(), SysVgaGetRegion());	//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);		//Save new value to NVRAM
-      dv_SerialTransmitHex(ucValue);						//Send new value to UART
-
-  }
-  else{
-      dv_SerialTransmitHex('?');	//Tx unknown command
-    }
-
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_VgaClock_Para0
-// Usage: Process RS232 0x8B VGA clock control command parameter byte 0 including:
-//        ?: inquiry (0~100), +: increase, -: decrease,
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_VgaClock_Para0(BYTE ucCmdPara)
-{
-
-  BYTE ucCmd;
-  int value1;
-
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == '+'||ucCmdPara == '-'){
-      ucCmd = 0xff;			//Denote we need to send status to UART
-      if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Set right key message = increase value
-      }
-      else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Set left key message = decrease value
-      }
-
-      value1 = OsdDisplayDetOverRange(UserCommonGetVgaClock(), 100, 0, _OFF);	//Go to increase/decrease value
-      UserCommonSetVgaClock(value1);						//Save new value to memory
-      UserCommonAdjustClock(UserCommonGetVgaClock());				//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);		//Save new value to NVRAM
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);					//Cancel key message after change value
-  }
-
-  if(ucCmd==0xff){
-	//We need to send value back to UART
-     value1 = UserCommonGetVgaClock();			//Get VGA clock value
-     dv_SerialTransmitHex((BYTE)value1);
-  }
-
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_VgaClock_Para1
-// Usage: Process RS232 0x8B VGA clock control 2-digit input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_VgaClock_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-
-  //Only accept digit value between 0x00~0x64  (0~100)
-  if(ucCmdPara[0]>='0'&& ucCmdPara[0]<='6')
-  {
-     ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-      //SVX-4096 clock range is 0x00 to 0x64 (0%~100%)
-      if(ucValue > 100){
-	  ucValue = 100;		//Set it to max if input value is larger than max
-      }
-      if(ucValue < 0){
-	  ucValue = 0;
-      }
-      UserCommonSetVgaClock(ucValue);      					//Save new value to memory
-      UserCommonAdjustClock(UserCommonGetVgaClock());				//Apply new value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_MODEUSERDATA_MSG);		//Save new value to NVRAM
-      dv_SerialTransmitHex(ucValue);						//Send new value to UART
-
-  }
-  else{
-      dv_SerialTransmitHex('?');	//Tx unknown command
-    }
-
-}
 
 
 
@@ -4173,218 +4912,7 @@ void dv_Serial_PipVPosn_Para1(BYTE *ucCmdPara)
 
 
 
-//*********************************************************
-// Routine: dv_Serial_TempRed_Para0
-// Usage: Process RS232 0xB4 red color temperature setting command parameter byte 0 including:
-//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_TempRed_Para0(BYTE ucCmdPara)
-{
-  BYTE ucCmd;
-  int value;
 
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
-      ucCmd = 0xff;				//Denote we need to send status to UART
-      RTDEepromRestoreOneColorSetting(GET_COLOR_TEMP_TYPE(GET_OSD_SELECT_REGION()),_CT_RED);	//Restore default selected color temperature red from EEPROM
-      UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-  }
-  else if(ucCmdPara == 'm'){
-      dv_SerialTransmitHex((BYTE)_USER_RGB_MAX);	//Send max value of color temperature
-  }
-  else if(ucCmdPara == 'n'){
-      dv_SerialTransmitHex((BYTE)_USER_RGB_MIN);	//Send min value of color temperature
-  }
-
-  else if(ucCmdPara == '+'||ucCmdPara == '-'){
-      ucCmd = 0xff;					//Denote we need to send status to UART
-      if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Right key message means increase value
-      }
-      else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Left key message means decrease value
-      }
-      value = (BYTE)OsdDisplayDetOverRange(GET_COLOR_TEMP_TYPE_USER_R(), _USER_RGB_MAX, _USER_RGB_MIN, _OFF);  //Increase/decrease value
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);		//Clear key message after changing value
-      SET_COLOR_TEMP_TYPE_USER_R(value);		//Save the new value in variable
-      UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_COLORPROC_MSG);	//Go to save new color temp value in NVRAM
-  }
-
-  //Check if it is requested to send status to UART
-  if(ucCmd == 0xff){
-      dv_SerialTransmitHex(GET_COLOR_TEMP_TYPE_USER_R());	//Send color temperature value
-
-  }
-
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_TempRed_Para1
-// Usage: Process RS232 0xB4 red color temperature setting command parameter 2 digits input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_TempRed_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-
-  ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-
-  //Since color temp value is ranged between 0 and 255, no need to check if the 2 digit input value out of range
-  SET_COLOR_TEMP_TYPE_USER_R(ucValue);				//Save the new value in variable
-  UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_COLORPROC_MSG);	//Go to save new color temp value in NVRAM
-
-  dv_SerialTransmitHex(GET_COLOR_TEMP_TYPE_USER_R());		//Send color temperature value
-
-}
-
-
-
-//*********************************************************
-// Routine: dv_Serial_TempGreen_Para0
-// Usage: Process RS232 0xB5 green color temperature setting command parameter byte 0 including:
-//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_TempGreen_Para0(BYTE ucCmdPara)
-{
-  BYTE ucCmd;
-  int value;
-
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
-      ucCmd = 0xff;				//Denote we need to send status to UART
-      RTDEepromRestoreOneColorSetting(GET_COLOR_TEMP_TYPE(GET_OSD_SELECT_REGION()),_CT_GREEN);	//Restore default selected color temperature green from EEPROM
-      UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-  }
-  else if(ucCmdPara == 'm'){
-      dv_SerialTransmitHex((BYTE)_USER_RGB_MAX);	//Send max value of color temperature
-  }
-  else if(ucCmdPara == 'n'){
-      dv_SerialTransmitHex((BYTE)_USER_RGB_MIN);	//Send min value of color temperature
-  }
-
-  else if(ucCmdPara == '+'||ucCmdPara == '-'){
-      ucCmd = 0xff;					//Denote we need to send status to UART
-      if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Right key message means increase value
-      }
-      else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Left key message means decrease value
-      }
-      value = (BYTE)OsdDisplayDetOverRange(GET_COLOR_TEMP_TYPE_USER_G(), _USER_RGB_MAX, _USER_RGB_MIN, _OFF);  //Increase/decrease value
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);		//Clear key message after changing value
-      SET_COLOR_TEMP_TYPE_USER_G(value);		//Save the new value in variable
-      UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_COLORPROC_MSG);	//Go to save new color temp value in NVRAM
-  }
-
-  //Check if it is requested to send status to UART
-  if(ucCmd == 0xff){
-      dv_SerialTransmitHex(GET_COLOR_TEMP_TYPE_USER_G());	//Send color temperature value
-
-  }
-
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_TempGreen_Para1
-// Usage: Process RS232 0xB5 green color temperature setting command parameter 2 digits input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_TempGreen_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-
-  ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-
-  //Since color temp value is ranged between 0 and 255, no need to check if the 2 digit input value out of range
-  SET_COLOR_TEMP_TYPE_USER_G(ucValue);				//Save the new value in variable
-  UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_COLORPROC_MSG);	//Go to save new color temp value in NVRAM
-
-  dv_SerialTransmitHex(GET_COLOR_TEMP_TYPE_USER_G());		//Send color temperature value
-
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_TempBlue_Para0
-// Usage: Process RS232 0xB6 blue color temperature setting command parameter byte 0 including:
-//        ?: inquiry, R/r: restore default, +: increase, -: decrease; m: max query; n: min query
-// Input: ucCmdPara: ucCmdPara[0] first command parameter byte
-//**********************************************************
-void dv_Serial_TempBlue_Para0(BYTE ucCmdPara)
-{
-  BYTE ucCmd;
-  int value;
-
-  if(ucCmdPara == '?'){
-	ucCmd = 0xff;			//Denote we need to send status to UART
-  }
-  else if(ucCmdPara == 'R'||ucCmdPara == 'r'){
-      ucCmd = 0xff;				//Denote we need to send status to UART
-      RTDEepromRestoreOneColorSetting(GET_COLOR_TEMP_TYPE(GET_OSD_SELECT_REGION()),_CT_BLUE);	//Restore default selected color temperature blue from EEPROM
-      UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-  }
-  else if(ucCmdPara == 'm'){
-      dv_SerialTransmitHex((BYTE)_USER_RGB_MAX);	//Send max value of color temperature
-  }
-  else if(ucCmdPara == 'n'){
-      dv_SerialTransmitHex((BYTE)_USER_RGB_MIN);	//Send min value of color temperature
-  }
-
-  else if(ucCmdPara == '+'||ucCmdPara == '-'){
-      ucCmd = 0xff;					//Denote we need to send status to UART
-      if(ucCmdPara == '+'){
-	  SET_KEYMESSAGE(_RIGHT_KEY_MESSAGE);		//Right key message means increase value
-      }
-      else{
-	  SET_KEYMESSAGE(_LEFT_KEY_MESSAGE);		//Left key message means decrease value
-      }
-      value = (BYTE)OsdDisplayDetOverRange(GET_COLOR_TEMP_TYPE_USER_B(), _USER_RGB_MAX, _USER_RGB_MIN, _OFF);  //Increase/decrease value
-      SET_KEYMESSAGE(_NONE_KEY_MESSAGE);		//Clear key message after changing value
-      SET_COLOR_TEMP_TYPE_USER_B(value);		//Save the new value in variable
-      UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-      SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_COLORPROC_MSG);	//Go to save new color temp value in NVRAM
-  }
-
-  //Check if it is requested to send status to UART
-  if(ucCmd == 0xff){
-      dv_SerialTransmitHex(GET_COLOR_TEMP_TYPE_USER_B());	//Send color temperature value
-
-  }
-
-}
-
-
-//*********************************************************
-// Routine: dv_Serial_TempBlue_Para1
-// Usage: Process RS232 0xB6 blue color temperature setting command parameter 2 digits input
-// Input: ucCmdPara: pointer to memory saving command parameter byte
-//**********************************************************
-void dv_Serial_TempBlue_Para1(BYTE *ucCmdPara)
-{
-  BYTE ucValue;
-
-  ucValue = dv_GetAsciiValue(&ucCmdPara[0]);			//transform ASCII to digit value
-
-  //Since color temp value is ranged between 0 and 255, no need to check if the 2 digit input value out of range
-  SET_COLOR_TEMP_TYPE_USER_B(ucValue);				//Save the new value in variable
-  UserAdjustContrast(GET_OSD_SYSTEM_SELECT_REGION(), GET_OSD_CONTRAST(GET_OSD_SELECT_REGION()));		//Apply the new color temp value
-  SET_OSD_EVENT_MESSAGE(_OSDEVENT_SAVE_NVRAM_COLORPROC_MSG);	//Go to save new color temp value in NVRAM
-
-  dv_SerialTransmitHex(GET_COLOR_TEMP_TYPE_USER_B());		//Send color temperature value
-
-}
 
 
 
@@ -4992,7 +5520,7 @@ void dv_Serial_TestPattern_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_BackLight_PWM_DA_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
 
   if(ucCmdPara == '?'){
 	ucCmd = 0xff;				//Denote we need to send status to UART
@@ -5044,7 +5572,7 @@ void dv_Serial_BackLight_PWM_DA_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_PWMFrequency_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   WORD sFreq;
 
   if(ucCmdPara == '?'){
@@ -5099,7 +5627,7 @@ void dv_Serial_PWMFrequency_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_PWMFrequency_Para2(BYTE *ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   DWORD sFreq;					//Ray BKL 2017.02.21: Since the period arg of MDrv_PWM_Period( ) is DWORD unit
   BYTE * ucCmdPointer;
 
@@ -5152,7 +5680,7 @@ void dv_Serial_PWMFrequency_Para2(BYTE *ucCmdPara)
 //**********************************************************
 void dv_Serial_BackLightInvert_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
 
   if(ucCmdPara == '?'){
 	ucCmd = 0xff;				//Denote we need to send status to UART
@@ -5193,7 +5721,7 @@ void dv_Serial_BackLightInvert_Para0(BYTE ucCmdPara)
 //**********************************************************
 void dv_Serial_MinBackLightValue_Para0(BYTE ucCmdPara)
 {
-  BYTE ucCmd;
+  BYTE ucCmd = 0;
   BYTE value;
 
   if(ucCmdPara == '?'){
@@ -7307,8 +7835,11 @@ WORD dv_DataInputSourceValue(E_DATA_INPUT_SOURCE ucSource)
     case DATA_INPUT_SOURCE_HDMI4:
       return 0x3348;
       break;
+    case DATA_INPUT_SOURCE_STORAGE:
+      return 0x3159;
+      break;
     default:
-      return 0;
+      return '?';
       break;
   }
 

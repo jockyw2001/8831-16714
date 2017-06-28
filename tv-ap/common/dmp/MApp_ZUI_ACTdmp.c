@@ -16741,6 +16741,9 @@ BOOLEAN MApp_UiMediaPlayer_Notify(enumMPlayerNotifyType eNotify, void *pInfo)
             #if (ENABLE_MPLAYER_MOVIE)
         case E_MPLAYER_NOTIFY_PLAY_NEXT_FILE:
             DMP_DBG(printf("    - E_MPLAYER_NOTIFY_PLAY_NEXT_FILE\n"));
+            MApp_DMP_GotoPreSrc();		//Ray DMP 2017.06.27: Go back to previous input source to inspect if any source exist
+            //Ray DMP 2017.06.27: Comment following original codes
+            /*
             #if ENABLE_LAST_MEMORY
                 if(MApp_MPlayer_QueryCurrentMediaType() == E_MPLAYER_TYPE_MOVIE)
                 {
@@ -16758,7 +16761,7 @@ BOOLEAN MApp_UiMediaPlayer_Notify(enumMPlayerNotifyType eNotify, void *pInfo)
                     }
                 }
             #endif
-
+            */
             break;
         case E_MPLAYER_NOTIFY_PLAY_PREVIOUS_FILE:
             DMP_DBG(printf("    - E_MPLAYER_NOTIFY_PLAY_PREVIOUS_FILE\n"));

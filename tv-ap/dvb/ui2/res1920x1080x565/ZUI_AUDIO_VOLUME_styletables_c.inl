@@ -68,7 +68,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Mute_Icon_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Mute_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_201 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_200 },
     { CP_NOON, 0 },
 };
 
@@ -95,7 +95,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Mute_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Config_Pane_Icon_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_202 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_201 },
     { CP_NOON, 0 },
 };
 

@@ -27,7 +27,7 @@
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Mainframe_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_319 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_318 },
     { CP_NOON, 0 },
 };
 

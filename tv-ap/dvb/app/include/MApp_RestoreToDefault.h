@@ -308,6 +308,12 @@ INTERFACE void MApp_DataBase_RestoreDefaultHue(void);		//Ray HUE 2017.05.12
 INTERFACE void MApp_DataBase_RestoreDefaultSharpness(void);	//Ray SHP 2017.05.12
 INTERFACE void MApp_DataBase_RestoreDefaultAspectRatio(void);	//Ray ART 2017.05.23
 INTERFACE void MApp_DataBase_RestoreColorTempSelection(void);	//Ray CTP 2017.06.15
+INTERFACE void MApp_DataBase_RestoreSelColorTempRed(void);	//Ray CTP 2017.06.23
+INTERFACE void MApp_DataBase_RestoreSelColorTempGreen(void);	//Ray CTP 2017.06.23
+INTERFACE void MApp_DataBase_RestoreSelColorTempBlue(void);	//Ray CTP 2017.06.23
+INTERFACE void MApp_DataBase_RestoreUserColorTempRed(void);	//Ray CTP 2017.06.26
+INTERFACE void MApp_DataBase_RestoreUserColorTempGreen(void);	//Ray CTP 2017.06.26
+INTERFACE void MApp_DataBase_RestoreUserColorTempBlue(void);	//Ray CTP 2017.06.26
 INTERFACE void MApp_DataBase_RestoreDefaultVideo(E_DATA_INPUT_SOURCE enDataInputSource);
 INTERFACE void MApp_DataBase_RestoreDefaultWhiteBalance(E_DATA_INPUT_SOURCE enDataInputSource);
 INTERFACE void MApp_DataBase_PictureResetWhiteBalance(E_DATA_INPUT_SOURCE enDataInputSource);

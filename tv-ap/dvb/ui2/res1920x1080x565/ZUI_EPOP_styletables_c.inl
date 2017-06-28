@@ -44,7 +44,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epop_Frame_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epop_Img_Dl_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_326 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_325 },
     { CP_NOON, 0 },
 };
 
@@ -53,7 +53,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epop_Img_Dl_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epop_Img_Dr_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_327 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_326 },
     { CP_NOON, 0 },
 };
 
@@ -62,7 +62,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epop_Img_Dr_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epop_Img_U_Normal_DrawStyle[] =
 {
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_328 },
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_327 },
     { CP_NOON, 0 },
 };
 

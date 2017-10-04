@@ -1861,7 +1861,9 @@ static void _MApi_XC_Sys_HDMI_Init(void)
 
 
 #if (HDCP_KEY_TYPE==HDCP_KEY_IN_CODE)
-    memcpy(u8HdcpKey, _u8HdcpKey, HDCP_KEY_SIZE);
+#if(_CUSTOMER_SVDU6!=_ON)
+     memcpy(u8HdcpKey, _u8HdcpKey, HDCP_KEY_SIZE);				//Ray HDM 2017.10.03: Disable HDCP1.4 key for SVDU6 project
+#endif
 #elif (HDCP_KEY_TYPE==HDCP_KEY_IN_DB)  // readkey from db
     MApp_DB_LoadHDCP_KEY((MS_U8 *)u8HdcpKey);
 #elif(HDCP_KEY_TYPE==HDCP_KEY_IN_EFUSE)

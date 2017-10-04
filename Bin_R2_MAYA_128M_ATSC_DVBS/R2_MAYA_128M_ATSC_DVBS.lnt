@@ -637,5 +637,6 @@ scripts/co-gnu3.lnt
 ./device/cofdm/demodulator_T2.c
 ./device/ursa/drvTcon_Inx8903.c
 ./device/IE2000/dvNT72324.c
+./device/light_sensor/dvLightDetect.c
 ./device/ExtAudio/dvExtAudio.c
 ./device/cofdm/INTERN_DVBS.c

@@ -120,7 +120,22 @@ INTERFACE BOOLEAN MApp_ZUI_ACT_HandleHotkeyOptionKey(VIRTUAL_KEY_CODE key);
 INTERFACE void MApp_ZUI_ACT_TerminateHotkeyOption(void);
 INTERFACE BOOLEAN MApp_ZUI_ACT_ExecuteHotkeyOptionAction(U16 act);
 INTERFACE LPTSTR MApp_ZUI_ACT_GetHotkeyOptionDynamicText(HWND hwnd);
-//INTERFACE S16 MApp_ZUI_ACT_GetHotkeyOptionDynamicValue(HWND hwnd);
+INTERFACE S16 MApp_ZUI_ACT_GetHotkeyOptionDynamicValue(void);		//Ray HKY 2017.09.28: Enable hot key dynamic value for display level ball
+
+
+//Ray HKY 2017.10.04: Define available hot keys
+typedef enum{
+  HotKey_Input,
+  HotKey_Backlight,
+  HotKey_Contrast,
+  HotKey_Brightness,
+  HotKey_Saturation,
+  HotKey_Sharpness,
+  HotKey_Hue,
+  HotKey_AspectRatio,
+  HotKey_Volume,
+  HotKey_NoFunction,
+}HOT_KEY;
 
 
 #undef INTERFACE

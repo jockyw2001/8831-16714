@@ -140,7 +140,7 @@
 //-------------------------------------------------------------------------------------------------
 //  Local Defines
 //-------------------------------------------------------------------------------------------------
-#define msg_hdmi(x)                 //x
+#define msg_hdmi(x)                 x		//Ray DBG 2017.07.27
 #define HDMI_AUDIO_STABLE_CNT       (40)
 
 
@@ -446,7 +446,7 @@ BOOLEAN MApi_XC_HDMI_Monitor( INPUT_SOURCE_TYPE_t enInputSourceType)
 
     if(g_HdmiPacketInfo.enPKT_Value.PKT_GC_VALUE)
     {
-        msg_hdmi(printf(" PKT_GC_VALUE == FALSE %bu \r\n", g_HdmiPacketInfo.enPKT_Value.PKT_GC_VALUE));
+        //msg_hdmi(printf(" PKT_GC_VALUE == FALSE %bu \r\n", g_HdmiPacketInfo.enPKT_Value.PKT_GC_VALUE));	//Ray DBG 2017.07.27
         if ( g_HdmiPacketInfo.enPKT_Status.AVMuteStatus ) // AV Mute control
         {
             bResult = FALSE;
@@ -529,7 +529,7 @@ BOOLEAN MApi_XC_HDMI_Monitor( INPUT_SOURCE_TYPE_t enInputSourceType)
         if ( g_HdmiPacketInfo.enPKT_Value.PKT_AVI_VALUE )
         {
             //we need to monitor aspectratio...
-            msg_hdmi(printf(" bAVI_PKT_Received? OK %bu \r\n", (U8)g_HdmiPacketInfo.enPKT_Value.PKT_AVI_VALUE));
+            //msg_hdmi(printf(" bAVI_PKT_Received? OK %bu \r\n", (U8)g_HdmiPacketInfo.enPKT_Value.PKT_AVI_VALUE));	//Ray DBG 2017.07.27
         }
         else
         {

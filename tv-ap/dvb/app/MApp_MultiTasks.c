@@ -355,7 +355,7 @@ extern void MApp_UiMenu_MuteWin_Hide(void);
 extern void MApp_ZUI_SwUpdate_ProgressBar(U8 percent);  //Ray FWD 2017.01.24: To support USB firmware download function
 extern void msAPI_BLoader_Reboot(void);			//Ray FWD 2017.01.24: To support USB firmware download function
 extern  void msAPI_OCP_LoadAllStringToMem(void);	//Ray FWD 2017.01.25: To support USB firmware download function
-
+extern void dvLightDetectHandler(void);			//Ray LGD 2017.07.26
 
 #if ENABLE_DTV
 BOOLEAN gu8VerChange = FALSE;
@@ -2131,6 +2131,10 @@ void MApp_MultiTasks(void)
 
 #endif
     MApp_ProcessUserInput();
+
+#if(LIGHT_DETECTOR==_ON)
+    dvLightDetectHandler();		//Ray LGD 2017.07.26: Go to read light detector value
+#endif
 
     MT_CHECK_POINT();
 

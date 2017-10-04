@@ -14661,8 +14661,8 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
     },
     {   // CP_RECT_INDEX_8
         0xFFFFFFFF, //RcolorFrom;
-        0xFFFFFF00, //Rcolorto;
-        OSD_COLOR_GRADIENT_X, //eRectGradient;
+        0xFFDDDDDD, //Rcolorto;
+        OSD_COLOR_GRADIENT_Y, //eRectGradient;
         0xFFFFFFFF, //BroderColor;
         eRectBorderRound, //attrib;
         0, //sizeBorder;
@@ -14671,7 +14671,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
     },
     {   // CP_RECT_INDEX_9
         0xFFFFFFFF, //RcolorFrom;
-        0xFF00FFFF, //Rcolorto;
+        0xFFFFFF00, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
         0xFFFFFFFF, //BroderColor;
         eRectBorderRound, //attrib;
@@ -14681,7 +14681,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
     },
     {   // CP_RECT_INDEX_10
         0xFFFFFFFF, //RcolorFrom;
-        0xFFFF0000, //Rcolorto;
+        0xFF00FFFF, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
         0xFFFFFFFF, //BroderColor;
         eRectBorderRound, //attrib;
@@ -14691,7 +14691,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
     },
     {   // CP_RECT_INDEX_11
         0xFFFFFFFF, //RcolorFrom;
-        0xFF00FF00, //Rcolorto;
+        0xFFFF0000, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
         0xFFFFFFFF, //BroderColor;
         eRectBorderRound, //attrib;
@@ -14700,6 +14700,16 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         5, // radius
     },
     {   // CP_RECT_INDEX_12
+        0xFFFFFFFF, //RcolorFrom;
+        0xFF00FF00, //Rcolorto;
+        OSD_COLOR_GRADIENT_X, //eRectGradient;
+        0xFFFFFFFF, //BroderColor;
+        eRectBorderRound, //attrib;
+        0, //sizeBorder;
+        //FALSE, //bShadow;
+        5, // radius
+    },
+    {   // CP_RECT_INDEX_13
         0xFF149DD1, //RcolorFrom;
         0xFFFFFFFF, //Rcolorto;
         OSD_COLOR_GRADIENT_Y, //eRectGradient;
@@ -14709,7 +14719,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_13
+    {   // CP_RECT_INDEX_14
         0xFFB1B4B4, //RcolorFrom;
         0xFFECE9D8, //Rcolorto;
         OSD_COLOR_GRADIENT_Y_CENTER, //eRectGradient;
@@ -14719,7 +14729,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_14
+    {   // CP_RECT_INDEX_15
         0xFFFFFFFF, //RcolorFrom;
         0xFFFFFFFF, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14729,7 +14739,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_15
+    {   // CP_RECT_INDEX_16
         0xFFFBFBFF, //RcolorFrom;
         0xFFFBFBFF, //Rcolorto;
         OSD_COLOR_GRADIENT_X_CENTER, //eRectGradient;
@@ -14739,7 +14749,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_16
+    {   // CP_RECT_INDEX_17
         0xFF99CFFB, //RcolorFrom;
         0xFF217EB8, //Rcolorto;
         OSD_COLOR_GRADIENT_X_CENTER, //eRectGradient;
@@ -14749,7 +14759,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_17
+    {   // CP_RECT_INDEX_18
         0xFFBFDDFB, //RcolorFrom;
         0xFFBFDDFB, //Rcolorto;
         OSD_COLOR_GRADIENT_X_CENTER, //eRectGradient;
@@ -14759,7 +14769,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_18
+    {   // CP_RECT_INDEX_19
         0xFFB1B4B4, //RcolorFrom;
         0xFFFFFFFF, //Rcolorto;
         OSD_COLOR_GRADIENT_Y_CENTER, //eRectGradient;
@@ -14769,7 +14779,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_19
+    {   // CP_RECT_INDEX_20
         0xFF44AFDA, //RcolorFrom;
         0xFF44AFDA, //Rcolorto;
         OSD_COLOR_GRADIENT_Y, //eRectGradient;
@@ -14779,7 +14789,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_20
+    {   // CP_RECT_INDEX_21
         0xFF44AFDA, //RcolorFrom;
         0xFF44AFDA, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
@@ -14789,7 +14799,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_21
+    {   // CP_RECT_INDEX_22
         0xFF011A38, //RcolorFrom;
         0xFF000000, //Rcolorto;
         OSD_COLOR_GRADIENT_Y, //eRectGradient;
@@ -14799,7 +14809,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         1, // radius
     },
-    {   // CP_RECT_INDEX_22
+    {   // CP_RECT_INDEX_23
         0xFF000000, //RcolorFrom;
         0xFF012147, //Rcolorto;
         OSD_COLOR_GRADIENT_Y, //eRectGradient;
@@ -14809,7 +14819,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         1, // radius
     },
-    {   // CP_RECT_INDEX_23
+    {   // CP_RECT_INDEX_24
         0xFF101010, //RcolorFrom;
         0xFF101010, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14819,7 +14829,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_24
+    {   // CP_RECT_INDEX_25
         0xFF101010, //RcolorFrom;
         0xFF101010, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14829,7 +14839,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         10, // radius
     },
-    {   // CP_RECT_INDEX_25
+    {   // CP_RECT_INDEX_26
         0xFF0A0A0A, //RcolorFrom;
         0xFF000000, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14839,7 +14849,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         10, // radius
     },
-    {   // CP_RECT_INDEX_26
+    {   // CP_RECT_INDEX_27
         0xFF404040, //RcolorFrom;
         0xFF404040, //Rcolorto;
         OSD_COLOR_GRADIENT_X_CENTER, //eRectGradient;
@@ -14849,7 +14859,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_27
+    {   // CP_RECT_INDEX_28
         0xFF101010, //RcolorFrom;
         0xFF101010, //Rcolorto;
         OSD_COLOR_GRADIENT_X_CENTER, //eRectGradient;
@@ -14859,7 +14869,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_28
+    {   // CP_RECT_INDEX_29
         0xFF646464, //RcolorFrom;
         0xFFA2A2A2, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14869,7 +14879,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_29
+    {   // CP_RECT_INDEX_30
         0xFF0080FF, //RcolorFrom;
         0xFF484848, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14879,7 +14889,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         7, // radius
     },
-    {   // CP_RECT_INDEX_30
+    {   // CP_RECT_INDEX_31
         0xFF9462E8, //RcolorFrom;
         0xFF484848, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14889,7 +14899,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         7, // radius
     },
-    {   // CP_RECT_INDEX_31
+    {   // CP_RECT_INDEX_32
         0xFF093F53, //RcolorFrom;
         0xFF093F53, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14899,7 +14909,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         7, // radius
     },
-    {   // CP_RECT_INDEX_32
+    {   // CP_RECT_INDEX_33
         0xFFFFFF00, //RcolorFrom;
         0xFFFFFF00, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
@@ -14909,7 +14919,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_33
+    {   // CP_RECT_INDEX_34
         0xFF0A6496, //RcolorFrom;
         0xFF0A6496, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14919,7 +14929,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_34
+    {   // CP_RECT_INDEX_35
         0xFF969696, //RcolorFrom;
         0xFF969696, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
@@ -14929,7 +14939,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_35
+    {   // CP_RECT_INDEX_36
         0xFF646464, //RcolorFrom;
         0xFF646464, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
@@ -14939,7 +14949,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_36
+    {   // CP_RECT_INDEX_37
         0xFFFFFF00, //RcolorFrom;
         0xFFFFFF00, //Rcolorto;
         OSD_COLOR_GRADIENT_X_CENTER, //eRectGradient;
@@ -14949,7 +14959,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_37
+    {   // CP_RECT_INDEX_38
         0xFF505050, //RcolorFrom;
         0xFF505050, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
@@ -14959,7 +14969,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_38
+    {   // CP_RECT_INDEX_39
         0xFFFFFF00, //RcolorFrom;
         0xFFFFFF00, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14969,7 +14979,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_39
+    {   // CP_RECT_INDEX_40
         0xFF505050, //RcolorFrom;
         0xFF525252, //Rcolorto;
         OSD_COLOR_GRADIENT_X, //eRectGradient;
@@ -14979,7 +14989,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_40
+    {   // CP_RECT_INDEX_41
         0xFFC8C8C8, //RcolorFrom;
         0xFF7D7D7D, //Rcolorto;
         OSD_COLOR_GRADIENT_Y, //eRectGradient;
@@ -14989,7 +14999,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_41
+    {   // CP_RECT_INDEX_42
         0xFF646464, //RcolorFrom;
         0xFF646464, //Rcolorto;
         OSD_GRADIENT_DISABLE, //eRectGradient;
@@ -14999,7 +15009,7 @@ DRAW_RECT _MP_TBLSEG _Zui_Rect_List[] =
         //FALSE, //bShadow;
         5, // radius
     },
-    {   // CP_RECT_INDEX_42
+    {   // CP_RECT_INDEX_43
         0xFF919191, //RcolorFrom;
         0xFF919191, //Rcolorto;
         OSD_COLOR_GRADIENT_X_CENTER, //eRectGradient;

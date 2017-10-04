@@ -211,6 +211,7 @@
 
 extern ZUI_STATE _eZUIState;
 extern E_OSD_ID _eActiveOSD;
+extern BYTE ucFailOverMode;			//Ray DMP 2017.06.28: Denote if it's failover mode. 1 = in failover mode.
 
 /////////////////////////////////////////////////////////
 // for customize
@@ -672,7 +673,7 @@ BOOLEAN MApp_ZUI_ACT_StartupOSD2(U32 id)
             break;
 
         case E_OSD_CHANNEL_INFO:
-            MApp_ZUI_ACT_AppShowChannelInfo();
+	    MApp_ZUI_ACT_AppShowChannelInfo();
             break;
 #if (ENABLE_ATSC)
         case E_OSD_CHANNEL_INFO_ATSC:
@@ -708,7 +709,10 @@ BOOLEAN MApp_ZUI_ACT_StartupOSD2(U32 id)
             break;
 
         case E_OSD_SCREEN_SAVER:
-            MApp_ZUI_ACT_AppShowScreenSaver();
+          //Ray DMP 2017.06.28: Show "No Signal" screen saver if it's not in Failover mode( which is between finishing play a movie and jump to input src to check if sync exists)
+          if(ucFailOverMode==0){
+        	MApp_ZUI_ACT_AppShowScreenSaver();
+            }
             break;
 
         case E_OSD_INPUT_SOURCE:
@@ -2354,8 +2358,9 @@ S16 MApp_ZUI_ACT_GetDynamicValue(HWND hwnd)
             //return MApp_ZUI_ACT_GetEpgDynamicValue(hwnd);
     #endif  //#if (ENABLE_DTV_EPG)
 
-        //case E_OSD_HOTKEY_OPTION:
-            //return MApp_ZUI_ACT_GetHotkeyOptionDynamicValue(hwnd);
+        //Ray HKY 2017.09.28: Enable hot key dynamic value for display level ball
+        case E_OSD_HOTKEY_OPTION:
+            return MApp_ZUI_ACT_GetHotkeyOptionDynamicValue();
 
     #if ENABLE_DMP
         case E_OSD_DMP:

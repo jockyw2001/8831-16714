@@ -380,6 +380,8 @@ typedef enum
     EN_EXE_INC_SCALE_HOTKEY_OPTION,             ///< increase option: scale hotkey
     EN_EXE_DEC_ATV_MTS_HOTKEY_OPTION,           ///< decrease option: ATV MTS hotkey
     EN_EXE_INC_ATV_MTS_HOTKEY_OPTION,           ///< increase option: ATV MTS hotkey
+    EN_EXE_DEC_VOLUME_HOTKEY_OPTION,             ///Ray HKY 2017.09.28: decrease option: volume hotkey
+    EN_EXE_INC_VOLUME_HOTKEY_OPTION,             ///Ray HKY 2017.09.28: increase option: volume hotkey
     //for atv manual tuning
     EN_EXE_DEC_STORAGE_TO_OPTION,               ///< decrease storage to vaule
     EN_EXE_INC_STORAGE_TO_OPTION,               ///< increase storage to vaule
@@ -468,6 +470,9 @@ typedef enum
     EN_EXE_SHOW_FREEZE_HOTKEY,                  ///< show freeze hotkey
     EN_EXE_INC_CC_HOTKEY_OPTION,                ///< adjust ccd
     EN_EXE_SHOW_CC_HOTKEY,                      ///< show cc hotkey
+    EN_EXE_SHOW_VOLUME_HOTKEY,			///Ray HKY 2017.09.27: volume increase/decrease hot key
+    EN_EXE_SHOW_BRIGHTNESS_HOTKEY,		///Ray HKY 2017.09.29: brightness hot key
+
 
     //channel info (channel banner):
     EN_EXE_HIDE_CH_INFO,                        ///< hide CH INFO

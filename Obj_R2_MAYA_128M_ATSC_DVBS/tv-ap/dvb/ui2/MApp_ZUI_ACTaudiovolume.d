@@ -140,7 +140,10 @@ Obj_R2_MAYA_128M_ATSC_DVBS/./tv-ap/dvb/ui2/MApp_ZUI_ACTaudiovolume.o:  \
   tv-ap/dvb/ui2/osdcomposer/include/OSDcp_Bitmap_EnumIndex.h \
   tv-ap/dvb/ui2/include/MApp_ZUI_ACTaudiovolume.h \
   tv-ap/common/zui/include/MApp_ZUI_APIcommon.h \
-  tv-ap/dvb/func/include/MApp_Func_AudioVolume.h
+  tv-ap/dvb/func/include/MApp_Func_AudioVolume.h \
+  tv-ap/dvb/ui2/osdcomposer/include/OSDcp_String_EnumIndex.h \
+  tv-ap/dvb/ui2/osdcomposer/include/../../res1920x1080x565/osdcomposer/include/ZUI_strings_enum.h \
+  tv-ap/dvb/ui2/include/MApp_ZUI_ACTcoexistWin.h
 
 include/datatype.h:
 
@@ -463,3 +466,9 @@ tv-ap/dvb/ui2/include/MApp_ZUI_ACTaudiovolume.h:
 tv-ap/common/zui/include/MApp_ZUI_APIcommon.h:
 
 tv-ap/dvb/func/include/MApp_Func_AudioVolume.h:
+
+tv-ap/dvb/ui2/osdcomposer/include/OSDcp_String_EnumIndex.h:
+
+tv-ap/dvb/ui2/osdcomposer/include/../../res1920x1080x565/osdcomposer/include/ZUI_strings_enum.h:
+
+tv-ap/dvb/ui2/include/MApp_ZUI_ACTcoexistWin.h:

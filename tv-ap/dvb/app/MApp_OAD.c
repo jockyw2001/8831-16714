@@ -714,7 +714,7 @@ void MApp_OAD_SetInfo(void)
         || (dl_info.u16DL_OAD_TID != wTransportStream_ID_OAD)
         || (dl_info.u16DL_OAD_SID != wService_ID_OAD)
         || (dl_info.u16DL_OAD_AssociationTag != untDescriptor.untLocation.association_tag)
-        || (TRUE == memcmp(dl_info.auDLSchedule_time, untDescriptor.untSchedule, (sizeof(UNT_SCHEDULE)*MAX_SCHEDULE_COUNT)))
+        || (TRUE == memcmp(dl_info.auDLSchedule_time, untDescriptor.untSchedule, (sizeof(UNT_SCHEDULE)*MAX_SCHEDULE_COUNT))))
     {
         msAPI_rmWriteByte(EEPROM_OFFSET(u8DL_OAD_MonitorState),MApp_OAD_GetMonitorState());
 

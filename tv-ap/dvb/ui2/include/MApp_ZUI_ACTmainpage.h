@@ -216,6 +216,7 @@ typedef enum _COMMON_PAGE_MODE
     EN_COMMON_TIME_CLOCK_PAGE,
     EN_COMMON_SET_MFC_PAGE,
     EN_COMMON_BKL_SETUP_PAGE,			//Ray BKL 2017.04.25: backlight setup page
+    EN_COMMON_HOTKEY_PAGE,			//Ray HKY 2017.10.04: hot key setup page
 #if ENABLE_ATSC_TTS
     EN_COMMON_OPTION_TTS_PAGE,
 #endif

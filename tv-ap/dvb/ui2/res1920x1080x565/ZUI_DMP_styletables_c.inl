@@ -35,7 +35,7 @@
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Bg_Gradient_Top_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_21 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_22 },
     { CP_NOON, 0 },
 };
 
@@ -44,7 +44,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Bg_Gradient_Top_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Bg_Gradient_Bottom_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_22 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_23 },
     { CP_NOON, 0 },
 };
 
@@ -1347,7 +1347,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_File_Page_Submenu_Sort_String_Disabled_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_File_Page_Submenu_Sort_Group_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_23 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_24 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_12 },
     { CP_NOON, 0 },
 };
@@ -2408,7 +2408,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Playback_Playlist_Group_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Playback_Playlist_Border_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_24 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_25 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_12 },
     { CP_NOON, 0 },
 };
@@ -3668,7 +3668,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Playback_Music_Eq_Bar_00_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Playback_Movieinfo_Divx_Group_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_25 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_26 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_12 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1285 },
     { CP_NOON, 0 },
@@ -4173,7 +4173,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Progress_Bar_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Copy_Confirm_Dialog_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_26 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_27 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_12 },
     { CP_NOON, 0 },
 };
@@ -4211,48 +4211,6 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Copy_Confirm_No_Focus_DrawStyle[] =
 };
 
 /////////////////////////////////////////////////////
-// DMP_CANCEL_CONFIRM_DIALOG styles..
-
-#define _Zui_Dmp_Cancel_Confirm_Dialog_Normal_DrawStyle _Zui_Dmp_Copy_Confirm_Dialog_Normal_DrawStyle
-
-/////////////////////////////////////////////////////
-// DMP_CANCEL_CONFIRM_TEXT styles..
-
-#define _Zui_Dmp_Cancel_Confirm_Text_Normal_DrawStyle _Zui_Dmp_File_Page_Submenu_Sort_Type_Text_Normal_DrawStyle
-
-/////////////////////////////////////////////////////
-// DMP_CANCEL_CONFIRM_YES styles..
-
-static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Cancel_Confirm_Yes_Normal_DrawStyle[] =
-{
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_307 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1276 },
-    { CP_NOON, 0 },
-};
-static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Cancel_Confirm_Yes_Focus_DrawStyle[] =
-{
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_314 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1277 },
-    { CP_NOON, 0 },
-};
-
-/////////////////////////////////////////////////////
-// DMP_CANCEL_CONFIRM_NO styles..
-
-static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Cancel_Confirm_No_Normal_DrawStyle[] =
-{
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_307 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1278 },
-    { CP_NOON, 0 },
-};
-static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Cancel_Confirm_No_Focus_DrawStyle[] =
-{
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_314 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1279 },
-    { CP_NOON, 0 },
-};
-
-/////////////////////////////////////////////////////
 // DMP_DELETE_CONFIRM_DIALOG styles..
 
 #define _Zui_Dmp_Delete_Confirm_Dialog_Normal_DrawStyle _Zui_Dmp_Copy_Confirm_Dialog_Normal_DrawStyle
@@ -4265,21 +4223,63 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Cancel_Confirm_No_Focus_DrawStyle[] =
 /////////////////////////////////////////////////////
 // DMP_DELETE_CONFIRM_YES styles..
 
-#define _Zui_Dmp_Delete_Confirm_Yes_Normal_DrawStyle _Zui_Dmp_Cancel_Confirm_Yes_Normal_DrawStyle
-#define _Zui_Dmp_Delete_Confirm_Yes_Focus_DrawStyle _Zui_Dmp_Cancel_Confirm_Yes_Focus_DrawStyle
+static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Delete_Confirm_Yes_Normal_DrawStyle[] =
+{
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_307 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1276 },
+    { CP_NOON, 0 },
+};
+static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Delete_Confirm_Yes_Focus_DrawStyle[] =
+{
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_314 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1277 },
+    { CP_NOON, 0 },
+};
 
 /////////////////////////////////////////////////////
 // DMP_DELETE_CONFIRM_NO styles..
 
-#define _Zui_Dmp_Delete_Confirm_No_Normal_DrawStyle _Zui_Dmp_Cancel_Confirm_No_Normal_DrawStyle
-#define _Zui_Dmp_Delete_Confirm_No_Focus_DrawStyle _Zui_Dmp_Cancel_Confirm_No_Focus_DrawStyle
+static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Delete_Confirm_No_Normal_DrawStyle[] =
+{
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_307 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1278 },
+    { CP_NOON, 0 },
+};
+static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Delete_Confirm_No_Focus_DrawStyle[] =
+{
+    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_314 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1279 },
+    { CP_NOON, 0 },
+};
+
+/////////////////////////////////////////////////////
+// DMP_CANCEL_CONFIRM_DIALOG styles..
+
+#define _Zui_Dmp_Cancel_Confirm_Dialog_Normal_DrawStyle _Zui_Dmp_Copy_Confirm_Dialog_Normal_DrawStyle
+
+/////////////////////////////////////////////////////
+// DMP_CANCEL_CONFIRM_TEXT styles..
+
+#define _Zui_Dmp_Cancel_Confirm_Text_Normal_DrawStyle _Zui_Dmp_File_Page_Submenu_Sort_Type_Text_Normal_DrawStyle
+
+/////////////////////////////////////////////////////
+// DMP_CANCEL_CONFIRM_YES styles..
+
+#define _Zui_Dmp_Cancel_Confirm_Yes_Normal_DrawStyle _Zui_Dmp_Delete_Confirm_Yes_Normal_DrawStyle
+#define _Zui_Dmp_Cancel_Confirm_Yes_Focus_DrawStyle _Zui_Dmp_Delete_Confirm_Yes_Focus_DrawStyle
+
+/////////////////////////////////////////////////////
+// DMP_CANCEL_CONFIRM_NO styles..
+
+#define _Zui_Dmp_Cancel_Confirm_No_Normal_DrawStyle _Zui_Dmp_Delete_Confirm_No_Normal_DrawStyle
+#define _Zui_Dmp_Cancel_Confirm_No_Focus_DrawStyle _Zui_Dmp_Delete_Confirm_No_Focus_DrawStyle
 
 /////////////////////////////////////////////////////
 // DMP_FORMAT_CONFIRM_DIALOG styles..
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Format_Confirm_Dialog_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_27 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_28 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_12 },
     { CP_NOON, 0 },
 };
@@ -4311,16 +4311,6 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Format_Confirm_Dialog_Normal_DrawStyle[] =
 #define _Zui_Dmp_Volume_Config_Pane_Normal_DrawStyle _Zui_Dmp_Playback_Zoommap_Image_Normal_DrawStyle
 
 /////////////////////////////////////////////////////
-// DMP_VOLUME_CONFIG_ICON styles..
-
-static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Volume_Config_Icon_Normal_DrawStyle[] =
-{
-    { CP_BITMAP, CP_ZUI_BITMAP_INDEX_201 },
-    { CP_NOON, 0 },
-};
-#define _Zui_Dmp_Volume_Config_Icon_Focus_DrawStyle _Zui_Dmp_Volume_Config_Icon_Normal_DrawStyle
-
-/////////////////////////////////////////////////////
 // DMP_VOLUME_CONFIG_BAR styles..
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Volume_Config_Bar_Normal_DrawStyle[] =
@@ -4337,6 +4327,11 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dmp_Volume_Config_Text_Normal_DrawStyle[] =
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_805 },
     { CP_NOON, 0 },
 };
+
+/////////////////////////////////////////////////////
+// DMP_VOLUME_TITLE_TEXT styles..
+
+#define _Zui_Dmp_Volume_Title_Text_Normal_DrawStyle _Zui_Dmp_Volume_Config_Text_Normal_DrawStyle
 
 /////////////////////////////////////////////////////
 // DMP_VOLUME_POWER_AMPLIFIER styles..
@@ -6410,29 +6405,29 @@ WINDOWDRAWSTYLEDATA _MP_TBLSEG _GUI_WindowsDrawStyleList_Zui_Dmp[] =
     // 629 = HWND_DMP_COPY_CONFIRM_NO
     { _Zui_Dmp_Copy_Confirm_No_Normal_DrawStyle, _Zui_Dmp_Copy_Confirm_No_Focus_DrawStyle, NULL     },
 
-    // 630 = HWND_DMP_CANCEL_CONFIRM_DIALOG
-    { _Zui_Dmp_Cancel_Confirm_Dialog_Normal_DrawStyle, NULL, NULL     },
-
-    // 631 = HWND_DMP_CANCEL_CONFIRM_TEXT
-    { _Zui_Dmp_Cancel_Confirm_Text_Normal_DrawStyle, NULL, NULL     },
-
-    // 632 = HWND_DMP_CANCEL_CONFIRM_YES
-    { _Zui_Dmp_Cancel_Confirm_Yes_Normal_DrawStyle, _Zui_Dmp_Cancel_Confirm_Yes_Focus_DrawStyle, NULL     },
-
-    // 633 = HWND_DMP_CANCEL_CONFIRM_NO
-    { _Zui_Dmp_Cancel_Confirm_No_Normal_DrawStyle, _Zui_Dmp_Cancel_Confirm_No_Focus_DrawStyle, NULL     },
-
-    // 634 = HWND_DMP_DELETE_CONFIRM_DIALOG
+    // 630 = HWND_DMP_DELETE_CONFIRM_DIALOG
     { _Zui_Dmp_Delete_Confirm_Dialog_Normal_DrawStyle, NULL, NULL     },
 
-    // 635 = HWND_DMP_DELETE_CONFIRM_TEXT
+    // 631 = HWND_DMP_DELETE_CONFIRM_TEXT
     { _Zui_Dmp_Delete_Confirm_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 636 = HWND_DMP_DELETE_CONFIRM_YES
+    // 632 = HWND_DMP_DELETE_CONFIRM_YES
     { _Zui_Dmp_Delete_Confirm_Yes_Normal_DrawStyle, _Zui_Dmp_Delete_Confirm_Yes_Focus_DrawStyle, NULL     },
 
-    // 637 = HWND_DMP_DELETE_CONFIRM_NO
+    // 633 = HWND_DMP_DELETE_CONFIRM_NO
     { _Zui_Dmp_Delete_Confirm_No_Normal_DrawStyle, _Zui_Dmp_Delete_Confirm_No_Focus_DrawStyle, NULL     },
+
+    // 634 = HWND_DMP_CANCEL_CONFIRM_DIALOG
+    { _Zui_Dmp_Cancel_Confirm_Dialog_Normal_DrawStyle, NULL, NULL     },
+
+    // 635 = HWND_DMP_CANCEL_CONFIRM_TEXT
+    { _Zui_Dmp_Cancel_Confirm_Text_Normal_DrawStyle, NULL, NULL     },
+
+    // 636 = HWND_DMP_CANCEL_CONFIRM_YES
+    { _Zui_Dmp_Cancel_Confirm_Yes_Normal_DrawStyle, _Zui_Dmp_Cancel_Confirm_Yes_Focus_DrawStyle, NULL     },
+
+    // 637 = HWND_DMP_CANCEL_CONFIRM_NO
+    { _Zui_Dmp_Cancel_Confirm_No_Normal_DrawStyle, _Zui_Dmp_Cancel_Confirm_No_Focus_DrawStyle, NULL     },
 
     // 638 = HWND_DMP_FORMAT_CONFIRM_DIALOG
     { _Zui_Dmp_Format_Confirm_Dialog_Normal_DrawStyle, NULL, NULL     },
@@ -6452,14 +6447,14 @@ WINDOWDRAWSTYLEDATA _MP_TBLSEG _GUI_WindowsDrawStyleList_Zui_Dmp[] =
     // 643 = HWND_DMP_VOLUME_CONFIG_PANE
     { _Zui_Dmp_Volume_Config_Pane_Normal_DrawStyle, NULL, NULL     },
 
-    // 644 = HWND_DMP_VOLUME_CONFIG_ICON
-    { _Zui_Dmp_Volume_Config_Icon_Normal_DrawStyle, _Zui_Dmp_Volume_Config_Icon_Focus_DrawStyle, NULL     },
-
-    // 645 = HWND_DMP_VOLUME_CONFIG_BAR
+    // 644 = HWND_DMP_VOLUME_CONFIG_BAR
     { _Zui_Dmp_Volume_Config_Bar_Normal_DrawStyle, NULL, NULL     },
 
-    // 646 = HWND_DMP_VOLUME_CONFIG_TEXT
+    // 645 = HWND_DMP_VOLUME_CONFIG_TEXT
     { _Zui_Dmp_Volume_Config_Text_Normal_DrawStyle, NULL, NULL     },
+
+    // 646 = HWND_DMP_VOLUME_TITLE_TEXT
+    { _Zui_Dmp_Volume_Title_Text_Normal_DrawStyle, NULL, NULL     },
 
     // 647 = HWND_DMP_VOLUME_POWER_AMPLIFIER
     { _Zui_Dmp_Volume_Power_Amplifier_Normal_DrawStyle, NULL, NULL     },

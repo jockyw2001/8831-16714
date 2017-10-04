@@ -257,7 +257,7 @@ void msAPI_rmPageWrite(U16 wIndex, U8 *pBuf, U8 ucBufLen)
     MDrv_MST_IIC_SetSpeed(4);
     #else
     //Ray DBG 2017.02.13: Add debug message on check if any IIC write happen
-    printf("Ray:msAPI_rmPageWrite write ID:%x, write addr:%x,write first byte:%x\n",u8ID,pu8addr[0],*pBuf);
+    printf("Ray:msAPI_rmPageWrite write ID:%x, write addr:%02x,len: %d, write first 2 byte:%02x\n",u8ID,(pu8addr[1]|(pu8addr[0]<<8)),ucBufLen,(pBuf[0]|(pBuf[1]<<8)));
     if (FALSE == MDrv_IIC_WriteBytes(u8ID, u8AddrLen, pu8addr, (U16)ucBufLen, pBuf))
     {
         MS_DEBUG_MSG(printf("read write fail---%x\n",u8ID));

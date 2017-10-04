@@ -171,4 +171,32 @@ WINDOWDATA _MP_TBLSEG _GUI_WindowList_Zui_Hotkey_Option[] =
         NULL,
     },
 
+    // 19 = HWND_HOTKEY_LEVEL_PANE
+    {
+        EN_ZUI_DEFAULTWINPROC, NULL, WS_VISIBLE,
+        NULL,
+        NULL,
+    },
+
+    // 20 = HWND_HOTKEY_LEVEL_BAR
+    {
+        EN_ZUI_BALLPROGRESSBAR_WINPROC, NULL, WS_VISIBLE|WS_FOCUSABLE,
+        NULL,
+        NULL,
+    },
+
+    // 21 = HWND_HOTKEY_LEVEL_VALUE_TEXT
+    {
+        EN_ZUI_DYNAMICTEXT_WINPROC, NULL, WS_VISIBLE,
+        NULL,
+        NULL,
+    },
+
+    // 22 = HWND_HOTKEY_LEVEL_TITLE_TEXT
+    {
+        EN_ZUI_DYNAMICTEXT_WINPROC, NULL, WS_VISIBLE,
+        NULL,
+        NULL,
+    },
+
 };

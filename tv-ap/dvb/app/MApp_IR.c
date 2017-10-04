@@ -656,10 +656,11 @@ static void MApp_ParseKey(void)
                 	}            		
                 	else */if((E_OSD_EMPTY == MApp_ZUI_GetActiveOSD())
                    ||(E_OSD_MESSAGE_BOX == MApp_ZUI_GetActiveOSD())
-                   ||(E_OSD_AUDIO_VOLUME == MApp_ZUI_GetActiveOSD())
+		   ||(E_OSD_AUDIO_VOLUME == MApp_ZUI_GetActiveOSD())
                   )
                   {
-                    u8KeyCode = KEY_VOLUME_PLUS;
+                	    u8KeyCode = KEY_RIGHT;			//Ray HKY 2017.09.28: When no OSD, it is act as hot key
+                    //u8KeyCode = KEY_VOLUME_PLUS;
                   }
                   else
                   {
@@ -701,7 +702,8 @@ static void MApp_ParseKey(void)
                    ||(E_OSD_AUDIO_VOLUME == MApp_ZUI_GetActiveOSD())                   
                   )
                   {
-                    u8KeyCode = KEY_VOLUME_MINUS;
+		      u8KeyCode = KEY_LEFT;			//Ray HKY 2017.09.28: When no OSD, it is act as hot key
+		      //u8KeyCode = KEY_VOLUME_MINUS;
                   }
                   else
                   {

@@ -7062,6 +7062,8 @@ case HWND_MENU_SOUND_VIDEO_DESCRIPTION_TEXT_OPTION:
                 u16TempID = en_str_Clock;
             else if(g_mainpage_common == EN_COMMON_BKL_SETUP_PAGE)		//Ray BKL 2017.04.12: Backlight setup title
                 u16TempID = en_str_BL_Setup;
+            else if(g_mainpage_common == EN_COMMON_HOTKEY_PAGE)			//Ray HKY 2017.10.04: Hot key setup title
+                u16TempID = en_str_Hot_Key;
 #if (ENABLE_MFC_6M20 || ENABLE_MFC_6M30)
             else if(g_mainpage_common == EN_COMMON_SET_MFC_PAGE)
                 u16TempID = en_str_MFC;

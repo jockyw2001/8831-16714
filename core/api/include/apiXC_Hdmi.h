@@ -112,7 +112,7 @@
 
 #define DEBUG_HDMI_HOT_PLUG(x)  //x
 
-#define DEBUG_HDMI_COLOR(x)     //x
+#define DEBUG_HDMI_COLOR(x)     x		//Ray DBG 2017.07.27
 
 #define HDMI_COLOR_CHANGE_NO_MODE_CHANGE    1
 

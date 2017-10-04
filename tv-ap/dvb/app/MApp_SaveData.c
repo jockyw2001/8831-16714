@@ -178,11 +178,13 @@ extern BOOLEAN b_isWriteCIkey;
 extern BOOLEAN b_isCIkeyFileExit;
 #endif
 
+#define EEPROM_DEBUG			//Ray SEE 2017.07.17: Enable System EEPROM debug message
+
 #ifdef EEPROM_DEBUG
-    #define EE_PUTSTR(str)          //printf(str)
-    #define EE_PRINTF(str,val)      //printf(str,val)
-    #define EE_VALIDATE(x)          //x
-    #define EE_LOAD(x)              //x
+    #define EE_PUTSTR(str)          printf(str)
+    #define EE_PRINTF(str,val)      printf(str,val)
+    #define EE_VALIDATE(x)          x
+    #define EE_LOAD(x)              x
 #else
     #define EE_PUTSTR(str)
     #define EE_PRINTF(str,val)
@@ -254,6 +256,8 @@ BOOL MApp_ReadDatabase(U32 srcIndex, U8* dstAddr, U16 size)
 
 BOOL MApp_WriteDatabase(U32 dstIndex, U8* srcAddr, U16 size)
 {
+
+    printf("\nRay: Write Flash dstIndex: %x,srcAddr:%x,size:%d\n",dstIndex,(U16)*srcAddr,size);	//Ray DBG 2017.06.29
     if (g_SaveData_bDebug)
     {
         ;//printf("MApp_WriteDatabase(dstIndex=0x%X, size=%u)\n", dstIndex, size);
@@ -433,6 +437,22 @@ void MApp_CheckEEPROM(void)
         //msAPI_ATV_InitATVDataManager();
         #endif
     }
+
+    ////Ray SEE 2017.07.17: Also load factory setting
+    // Load Factory setting
+  #if( ENABLE_FACTORY_SETTING_IN_SEPERATE_BANK == FALSE )
+    if( bInitEEPROM )  			// Load factory failed
+    {
+        // Init all factory setting
+        MApp_DB_Factory_ResetAll();
+    }
+    else
+    {
+        MApp_DB_Factory_LoadSettingAndCheck();
+    }
+  #endif
+    ////
+
 }
 #endif
 
@@ -1026,6 +1046,10 @@ void MApp_LoadGenSetting(void)
 
     MApp_SaveData_Check_IfDataCorrect(E_SAVE_DATA_ID_GEN_ALL);
 
+    //Ray SRC 2017.07.19: Retrieve saved current & previous input source from EEPROM
+    UI_INPUT_SOURCE_TYPE = UI_INPUT_SOURCE_TYPE_EEPROM;
+    UI_PREV_INPUT_SOURCE_TYPE = UI_PREV_INPUT_SOURCE_TYPE_EEPROM;
+
     EE_VALIDATE(printf("Reload Period: %Lu ms\n", msAPI_Timer_DiffTimeFromNow(StartTime)));
 }
 
@@ -1204,7 +1228,6 @@ void MApp_SaveSysSetting(void)
     MApp_SysSetting_UpdateChecksum();
 
     MApp_WriteDatabase(RM_SYS_SETTING_ADDRESS, (BYTE *)&(stGenSetting.g_SysSetting), SIZE_SYS_SETTING);
-
     EE_PUTSTR("\n MApp_SaveSysSetting!\n");
 }
 

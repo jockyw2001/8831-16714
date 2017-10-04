@@ -49,6 +49,7 @@
 #include "MApp_Menu_Main.h"		//Ray DMP 2017.06.22: To access EN_MENU_STATE
 #include "MApp_TopStateMachine.h"	//Ray DMP 2017.06.22: To access MApp_TopStateMachine_SetTopState
 #include "MApp_UiMenuDef.h"		//Ray VGA 2017.06.22: To access stLMGenSetting
+#include "ZUI_exefunc.h"		//Ray HKY 2017.09.29: To access hot key action like EN_EXE_SHOW_VOLUME_HOTKEY
 #include <string.h>			//Ray VER 2017.05.09: To access strcpy, strcat functions
 
 //******************************************************************************
@@ -154,6 +155,7 @@ extern void MApp_UiMenu_MuteWin_Hide(void);		//Ray VOL 2017.06.19
 extern void MApp_DMP_Exit(void);							//Ray DMP 2017.06.22
 extern void MApp_PCMode_SetFirstNoSignalSource(E_UI_INPUT_SOURCE eUiInputSource);	//Ray DMP 2017.06.22
 extern void MApp_InputSource_RestoreSource(void);					//Ray DMP 2017.06.22
+extern void MApp_TV_ShowHotKeyOSD(U16 action);						//Ray HKY 2017.09.29
 
 
 
@@ -1517,6 +1519,10 @@ void dv_Serial_Volume_Para2(BYTE *ucCmdPara)
 	  ucVol = MAX_NUM_OF_VOL_LEVEL;		//Set it to max if input value is larger than max
       }
 
+#if(_CUSTOMER_SVDU6==_ON)
+          MApp_TV_ShowHotKeyOSD(EN_EXE_SHOW_VOLUME_HOTKEY);		//Ray HKY 2017.09.29: For SVUD6, we need to show volume OSD.
+#endif
+
       bIsAudioMuted = msAPI_AUD_IsAudioMutedByUser();		//Get mute status
       if(bIsAudioMuted == TRUE){
 	  //Cancel mute if it's muted before
@@ -1722,6 +1728,9 @@ void dv_Serial_Brightness_Para1(BYTE *ucCmdPara)
       ST_PICTURE.u8Brightness = bValue;		//save input value to picture user mode
       MApp_XC_PQ_Set_Brightness(MAIN_WINDOW, TRUE);			//Apply new brightness value
       dv_SerialTransmitHex(bValue);		//Send brightness value back to UART
+#if(_CUSTOMER_SVDU6==_ON)
+      MApp_TV_ShowHotKeyOSD(EN_EXE_SHOW_BRIGHTNESS_HOTKEY);		//Ray HKY 2017.09.29: For SVUD6, we need to show level on OSD.
+#endif
 
   }
 }
@@ -7635,17 +7644,27 @@ void dv_Serial_TestCmd_Para1(BYTE *ucCmdPara)
 #endif
   if(ucCmd[0] == 'P'){			//0x50 0xYY, dump system EEPROM address as debug message
       //Ray SSE 2017.02.13: system parameter memory usage dump
+      printf("Ray:RM_BOOTLOADER_ADDR: %x\n",RM_BOOTLOADER_ADDR);
+      printf("Ray:RM_BOOTLOADER_END_ADDR: %x\n",RM_BOOTLOADER_END_ADDR);
+      printf("Ray:RM_HDCP_KEY_ADDR: %x\n",RM_HDCP_KEY_ADDR);
+      printf("Ray:RM_HDCP_KEY_END_ADDR: %x\n",RM_HDCP_KEY_END_ADDR);
+      printf("Ray:RM_FACTORY_START_ADDR: %x\n",RM_FACTORY_START_ADDR);
+      printf("Ray:RM_FACTORY_END_ADDR: %x\n",RM_FACTORY_END_ADDR);
       printf("Ray:RM_GENSET_START_ADR: %x\n",RM_GENSET_START_ADR);
-      printf("Ray:RM_SIZE_GENSET: %x\n",RM_SIZE_GENSET);
       printf("Ray:RM_GENSET_END_ADR: %x\n",RM_GENSET_END_ADR);
+      printf("Ray://///Below are MS_GENSETTING data:\n");
       printf("Ray:RM_SYS_SETTING_ADDRESS: %x\n",RM_SYS_SETTING_ADDRESS);
       printf("Ray:RM_SOUND_SETTING_ADDRESS: %x\n",RM_SOUND_SETTING_ADDRESS);
+      printf("Ray:RM_VIDEO_DATA_ADDRESS(0): %x\n",( RM_GENSET_START_ADR + (U32)&(((MS_GENSETTING*)0)->g_astVideo[0]) ));
+      printf("Ray:RM_VIDEO_DATA_ADDRESS(DATA_INPUT_SOURCE_NUM): %x\n",( RM_GENSET_START_ADR + (U32)&(((MS_GENSETTING*)0)->g_astVideo[DATA_INPUT_SOURCE_NUM]) ));
       printf("Ray:RM_TIME_DATA_ADDRESS: %x\n",RM_TIME_DATA_ADDRESS);
       printf("Ray:RM_SCANMENU_SETTING_ADDRESS: %x\n",RM_SCANMENU_SETTING_ADDRESS);
       printf("Ray:RM_BLOCK_DATA_ADDRESS: %x\n",RM_BLOCK_DATA_ADDRESS);
-      printf("Ray:RM_FACTORY_SETTING_DATA_ADDRESS: %x\n",RM_FACTORY_SETTING_DATA_ADDRESS);
+      printf("Ray:RM_NONLINER_SETTING_ADDRESS: %x\n",RM_NONLINER_SETTING_ADDRESS);
+      printf("Ray:RM_DRM_DATA_ADDRESS: %x\n",RM_DRM_DATA_ADDRESS);
       printf("Ray:RM_GEN_VERSION_1_ADDRESS: %x\n",RM_GEN_VERSION_1_ADDRESS);
       printf("Ray:RM_GEN_VERSION_2_ADDRESS: %x\n",RM_GEN_VERSION_2_ADDRESS);
+      printf("Ray:RM_GEN_BACKLIGHT_ADDRESS: %x\n",RM_GEN_BACKLIGHT_ADDRESS);
       }
 
 #if 0						//Ray URT 2017.02.13

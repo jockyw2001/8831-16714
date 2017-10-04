@@ -126,6 +126,8 @@
 #define sClosePictureNoiseReductionItem
 #define sClosePictureMpegNoiseReductionItem
 #define sOpenPictureModeColorTintSharpItem 
+
+#define LIGHT_DETECTOR		_OFF		//Ray LGD 2017.07.25: Define enable/disable light detector function
 //--------------------
 #define sColorRangeBySource
 #define sColorTempNotByPictureMode
@@ -167,13 +169,34 @@
 //--------------------
 #endif
 //==========================Triview Function Select===================================
-#ifdef sSP4096Board			//Ray VER 2017.02.07
+
+//==========================Digital View Parameters definition ===============================================================
+#ifdef sSP4096Board						//Ray VER 2017.02.07
+
+#define _CUSTOMER_Z_CROSSING				_OFF			//Ray 2017.07.26: Z-Crossing light detector control board power saving
+#define _CUSTOMER_SVDU6					_ON			//Ray 2017.09.22: Thales SVDU6 project
+
+
 #define BOARD_NAME                  						"SP-4096 Rev2"		//Ray VER 2017.01.19
-#define DigitalViewOSDVersion							"V1.00."		//Ray VER 2017.05.09, For testing with Controller Utility
+#define DigitalViewOSDVersion							"E1.00."		//Ray VER 2017.05.09, For testing with Controller Utility
+#if(_CUSTOMER_Z_CROSSING==_ON)
+#define CustomerSubVersionNumber						"ZC"			//Ray VER 2017.07.26: custom version
+#elif(_CUSTOMER_SVDU6)
+#define CustomerSubVersionNumber						"SV"			//Ray VER 2017.09.222: custom version SVDU6
+#else
 #define CustomerSubVersionNumber						"00"			//Ray VER 2017.05.09
-#define DigitalViewRevisionNumber						".00"			//Ray VER 2017.05.09
+#endif
+#define DigitalViewRevisionNumber						".01"			//Ray VER 2017.05.09
 //#define NameDigitalViewBoardPCBA						"41755"			//Ray VER 2017.05.09: Temporary use SVX-4096 PCBA no. for Controller Utility support
 #define NameDigitalViewBoardPCBA						"41761"			//Ray VER 2017.05.09: SP-4096 PCBA no.
+
+
+#if(_CUSTOMER_Z_CROSSING==_ON)
+#undef	LIGHT_DETECTOR
+#define LIGHT_DETECTOR			_ON			//Ray LGD 2017.07.26: Enable light detector for customer Z-crossing
+#endif
+
+
 #else
 #define BOARD_NAME                  										"TMMYU4020 Rev.A2"	//MingYuan BD Select
 #define SOFTWARE_VERSION_NAME											"V2.01"

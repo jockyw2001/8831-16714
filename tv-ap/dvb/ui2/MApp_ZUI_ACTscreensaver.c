@@ -284,6 +284,9 @@ void MApp_ZUI_ACT_AppShowScreenSaver(void)
     MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
     MApp_ZUI_API_ShowWindow(HWND_SCREEN_SAVER_BG_PANE, SW_SHOW);
     MApp_ZUI_API_ShowWindow(HWND_SCREEN_SAVER_FRAME, SW_HIDE);
+#if(_CUSTOMER_SVDU6==_ON)
+    MApp_ZUI_API_ShowWindow(HWND_SCREEN_SAVER_SVDU6_FRAME, SW_HIDE);	//Ray NSG 2017.09.22: For SVDU6 project, a larger size no signal message box is shown
+#endif
     MApp_ZUI_API_ShowWindow(HWND_SUB_SCREEN_SAVER_FRAME_L, SW_HIDE);
     MApp_ZUI_API_ShowWindow(HWND_SUB_SCREEN_SAVER_FRAME_R, SW_HIDE);
 
@@ -316,7 +319,11 @@ void MApp_ZUI_ACT_AppShowScreenSaver(void)
     else
     #endif
     {
+#if(_CUSTOMER_SVDU6==_ON)
+	MApp_ZUI_API_ShowWindow(HWND_SCREEN_SAVER_SVDU6_FRAME, SW_SHOW);	//Ray NSG 2017.09.22: For SVDU6 project, a larger size no signal message box is shown
+#else
         MApp_ZUI_API_ShowWindow(HWND_SCREEN_SAVER_FRAME, SW_SHOW);
+#endif
     }
     //#endif
 #if ENABLE_ATSC_TTS
@@ -376,9 +383,18 @@ LPTSTR MApp_ZUI_ACT_GetScreenSaverDynamicText(HWND hwnd)
     U16 u16TempID_sub = Empty;
     #endif
 
+#if(_CUSTOMER_SVDU6==_ON)
+    const char *tmpString = "Please wait for your entertainment to be available";  //Ray NSG 2017.08.30
+    char u8NoSignalStr[strlen(tmpString)+2];		//Ray NSG 2017.08.30
+#endif
+
+
     switch(hwnd)
     {
         case HWND_SCREEN_SAVER_TEXT:
+#if(_CUSTOMER_SVDU6==_ON)
+        case HWND_SCREEN_SAVER_SVDU6_TEXT:			//Ray NSG 2017.09.22: For SVDU6 no signal message box
+#endif
         case HWND_SUB_SCREEN_SAVER_TEXT_L:
             switch(SYS_SCREEN_SAVER_TYPE(MAIN_WINDOW))
             {
@@ -422,7 +438,13 @@ LPTSTR MApp_ZUI_ACT_GetScreenSaverDynamicText(HWND hwnd)
                 default:
                 case EN_SCREENSAVER_NO_SHOW_PROGRAM:
                 case EN_SCREENSAVER_NOSIGNAL:
-                    u16TempID_main = en_str_NO_SIGNAL;
+#if(_CUSTOMER_SVDU6==_ON)
+		    //Ray NSG 2017.08.30: Test no signal string defined in array
+		    strcpy(u8NoSignalStr, tmpString);
+                    return  MApp_ZUI_API_StringBuffU8toU16(CHAR_BUFFER, (U8*)u8NoSignalStr, strlen(tmpString));
+#else
+                    u16TempID_main = en_str_NO_SIGNAL;		//Ray NSG 2017.08.30: Original code
+#endif
 #if (ENABLE_ATSC_TTS)
                     if (!bNoSignal)
                     {
@@ -515,7 +537,11 @@ S32 MApp_ZUI_ACT_ScreenSaverWinProc(HWND hwnd, PMSG msg)
     {
         case MSG_CREATE:
             {
+#if(_CUSTOMER_SVDU6==_ON)
+              if(hwnd == HWND_SCREEN_SAVER_SVDU6_FRAME)        		//Ray NSG 2017.09.22: For SVDU6, a larger no signal message box is used
+#else
                 if(hwnd == HWND_SCREEN_SAVER_FRAME)
+#endif
                 {
                     U16 x, y;
                     //MApi_GOP_GWIN_Enable(MApp_ZUI_API_QueryGWinID(), FALSE); //hide it first!
@@ -572,13 +598,20 @@ S32 MApp_ZUI_ACT_ScreenSaverWinProc(HWND hwnd, PMSG msg)
                         _ss_move_x_positive_main    = 0;
                     if ((rand()%2) == 0)
                         _ss_move_y_positive_main    = 0;
-
+#if(_CUSTOMER_SVDU6==_ON)
+                    ////Ray NSG 2017.09.22: Move no signal message to center of the screen
+                    x = (ZUI_SCREEN_SAVER_WIDTH - SCREEN_SAVER_FRAME_WIDTH)/2;
+                    y = (ZUI_SCREEN_SAVER_HEIGHT - SCREEN_SAVER_FRAME_HEIGHT)/2;
+                    ////
+#endif
                     main_rect.left = x;
                     main_rect.top = y;
                     main_rect.width = SCREEN_SAVER_FRAME_WIDTH;
                     main_rect.height = SCREEN_SAVER_FRAME_HEIGHT;
                     MApp_ZUI_API_MoveAllSuccessors(hwnd, main_rect.left, main_rect.top);
+#if(_CUSTOMER_SVDU6!=_ON) 	                    //Ray NSG 2017.09.22: Disable movement of no signal message for SVDU6 project
                     MApp_ZUI_API_SetTimer(hwnd, 0, SCREEN_SAVER_MOVE_INTERVAL);
+#endif
                 }
                 #if (ENABLE_PIP)
                 else if(hwnd == HWND_SUB_SCREEN_SAVER_FRAME_L && (MApp_Get_PIPMode() != EN_PIP_MODE_OFF))
@@ -683,8 +716,14 @@ S32 MApp_ZUI_ACT_ScreenSaverWinProc(HWND hwnd, PMSG msg)
                     else
                     #endif
                     {
+
+#if(_CUSTOMER_SVDU6==_ON)	   				//Ray NSG 2017.09.22: For SVDU6, a larger no signal message box is used
+                        MApp_ZUI_API_ShowWindow(HWND_SCREEN_SAVER_SVDU6_FRAME, SW_SHOW);
+                        MApp_ZUI_API_SetTimer(HWND_SCREEN_SAVER_SVDU6_FRAME, 0, SCREEN_SAVER_MOVE_INTERVAL);
+#else
                         MApp_ZUI_API_ShowWindow(HWND_SCREEN_SAVER_FRAME, SW_SHOW);
                         MApp_ZUI_API_SetTimer(HWND_SCREEN_SAVER_FRAME, 0, SCREEN_SAVER_MOVE_INTERVAL);
+#endif
                         #if (ENABLE_PIP)
                         if(IsPIPSupported() && (SYS_SCREEN_SAVER_TYPE(SUB_WINDOW) == EN_SCREENSAVER_NULL))
                         {
@@ -722,7 +761,11 @@ S32 MApp_ZUI_ACT_ScreenSaverWinProc(HWND hwnd, PMSG msg)
                 }
                 #endif
 
+#if(_CUSTOMER_SVDU6==_ON)	   				//Ray NSG 2017.09.22: For SVDU6, a larger no signal message box is used
+              if(hwnd == HWND_SCREEN_SAVER_SVDU6_FRAME)
+#else
                 if(hwnd == HWND_SCREEN_SAVER_FRAME)
+#endif
                 {
                     MApp_ZUI_API_GetWindowRect(hwnd, &main_rect);
 

@@ -6270,6 +6270,9 @@ void MApp_VDPlayer_Stop(void)
     }
     _gbCoprocessorEnable = FALSE;
 
+    //Ray DMP 2017.06.29: Try to freeze image before quit DMP
+    //MApi_XC_FreezeImg(ENABLE,MAIN_WINDOW);
+
 //move before cmd VDPLAYER stop to avoid screen has green garbage
 #if SEAMLESS_PLAYING_ENABLE
     if (!_bEnableSeamlessPlaying || !MApi_XC_IsFreezeImg(MAIN_WINDOW))

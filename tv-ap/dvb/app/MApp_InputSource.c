@@ -925,6 +925,7 @@ void MApp_InputSource_ChangeAudioSource(INPUT_SOURCE_TYPE_t enInputSourceType)
                     MApi_AUDIO_SPDIF_ChannelStatus_CTRL((AUDIO_SPDIF_CS_TYPE)SPDIF_CS_CategoryCode_, (AUDIO_SPDIF_CS_TYPE_STATUS)SPDIF_CS_Category_General_);
                     break;
                 }
+
            case INPUT_SOURCE_DVI:
                 printf("\r\n Now is in DVI mode !!! Not HDMI ......");
                 msAPI_AUD_AdjustAudioFactor(E_ADJUST_CHANGE_AUDIOSOURCE, E_AUDIOSOURCE_PC, 0);		//Ray DVI 2017.04.06: Change audio source of DVI to line in
@@ -1138,7 +1139,6 @@ void MApp_InputSource_ChangeAudioSource(INPUT_SOURCE_TYPE_t enInputSourceType)
          #if(INPUT_HDMI_VIDEO_COUNT>3)
            case INPUT_SOURCE_HDMI4:
          #endif
-
                     if(g_HdmiPollingStatus.bIsHDMIMode)
                     {
                         MApi_AUDIO_SetSourceInfo(E_AUDIO_INFO_HDMI_IN);
@@ -2955,7 +2955,6 @@ can't be arbitraraily change, like the ADC table (MApi_XC_Mux_CreatePath)
          SIGNAL_PATH_DBG(printf("\r\n create path success src = %d dest = %d ",PathInfo.src ,PathInfo.dest  ));
         MApi_XC_Mux_EnablePath( (U16)s16PathId );
     }
-
     //Ray DMP 2017.04.21: Create another path to monitor HDMI1 sync status
     /*
     if(IsSrcTypeStorage(stSystemInfo[eWindow].enInputSourceType))
@@ -3105,7 +3104,6 @@ can't be arbitraraily change, like the ADC table (MApi_XC_Mux_CreatePath)
     }
 
 
-
     if( IsSrcTypeAnalog(SYS_INPUT_SOURCE_TYPE(eWindow))
       ||IsSrcTypeHDMI(SYS_INPUT_SOURCE_TYPE(eWindow))
       ||IsSrcTypeDVI(SYS_INPUT_SOURCE_TYPE(eWindow)) )
@@ -3163,18 +3161,15 @@ can't be arbitraraily change, like the ADC table (MApi_XC_Mux_CreatePath)
     }
 
     DEBUG_CHG_SRC_TIME2();
-
   #if ( (EEPROM_DB_STORAGE!=EEPROM_SAVE_ALL) && (!DB_IN_NAND) )
     while (FALSE==MDrv_FLASH_CheckWriteDone());
   #endif
-
   #if (ENABLE_PIP)
     if( (MApp_Get_PIPMode() == EN_PIP_MODE_OFF) || UI_IS_AUDIO_SOURCE_IN(eWindow))
   #endif
     {
         MApp_InputSource_ChangeAudioSource( SYS_INPUT_SOURCE_TYPE(eWindow));
     }
-
     MApp_CheckBlockProgramme();
 
     DEBUG_CHG_SRC_TIME2();
@@ -3215,7 +3210,6 @@ Power saving do IP power on/off, so the code flow related to IP power on/off
 can't be arbitraraily change, like the ADC table (MApi_XC_Mux_CreatePath)
 ******************************************************************************/
     MApp_InputSource_SetInputSource( eWindow, &stSystemInfo[eWindow] );
-
     DEBUG_CHG_SRC_TIME2();
 
 /***************************************************

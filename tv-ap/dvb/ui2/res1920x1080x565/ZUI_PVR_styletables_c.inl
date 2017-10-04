@@ -498,7 +498,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Select_Disk_Usb_Txt_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Select_Disk_Disk_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_19 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_20 },
     { CP_NOON, 0 },
 };
 
@@ -715,7 +715,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_File_System_Setting_Pane_Title_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_File_System_Setting_Type_Item_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_20 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_21 },
     { CP_NOON, 0 },
 };
 

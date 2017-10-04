@@ -1387,6 +1387,7 @@ typedef enum
     en_str_Color_Temp_7500K=1329,
     en_str_Color_Temp_9300K=1330,
     en_str_Default_Power=1331,
+    en_str_Hot_Key=1332,
     E_ZUI_STR_MAX,
 
 } OSDCP_EN_STRING_INDEX;

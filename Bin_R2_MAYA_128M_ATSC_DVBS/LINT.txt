@@ -840,6 +840,8 @@
 
 --- Module:   ./device/IE2000/dvNT72324.c (C)
 
+--- Module:   ./device/light_sensor/dvLightDetect.c (C)
+
 --- Module:   ./device/ExtAudio/dvExtAudio.c (C)
 
 --- Module:   ./device/cofdm/INTERN_DVBS.c (C)

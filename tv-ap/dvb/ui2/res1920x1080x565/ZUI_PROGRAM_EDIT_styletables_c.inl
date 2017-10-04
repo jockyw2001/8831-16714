@@ -154,7 +154,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Bottom_Half_Lock_Btn_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Selection_Yellow_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_8 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_9 },
     { CP_NOON, 0 },
 };
 
@@ -163,7 +163,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Selection_Yellow_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Selection_Blue_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_9 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_10 },
     { CP_NOON, 0 },
 };
 
@@ -172,7 +172,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Selection_Blue_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Selection_Red_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_10 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_11 },
     { CP_NOON, 0 },
 };
 
@@ -181,7 +181,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Selection_Red_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Predit_Selection_Green_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_11 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_12 },
     { CP_NOON, 0 },
 };
 

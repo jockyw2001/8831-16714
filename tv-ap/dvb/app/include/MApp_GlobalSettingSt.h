@@ -190,8 +190,13 @@
 #define SCREEN_SAVER_FRAME_WIDTH        300
 #define SCREEN_SAVER_FRAME_HEIGHT       100
 #elif(UI_SKIN_SEL== UI_SKIN_1920X1080X565)
+#if(_CUSTOMER_SVDU6==_ON)
+#define SCREEN_SAVER_FRAME_WIDTH        1200		//Ray NSG 2017.09.22: No signal message box length is larger (1200) to show more characters
+#define SCREEN_SAVER_FRAME_HEIGHT       140
+#else
 #define SCREEN_SAVER_FRAME_WIDTH        421
 #define SCREEN_SAVER_FRAME_HEIGHT       140
+#endif
 #else
 #define SCREEN_SAVER_FRAME_WIDTH        300
 #define SCREEN_SAVER_FRAME_HEIGHT       100
@@ -2114,6 +2119,15 @@ typedef struct
     //////////////////////////////////////////////////////////////////////////////////////////
 } MS_GENSETTING;
 
+
+//Ray SRC 2017.07.19: Add typedef of current and previous input source temporary space
+typedef struct
+{
+  E_UI_INPUT_SOURCE enUiInputSourceTemp;   // input source selection temporary space
+  E_UI_INPUT_SOURCE enUiPrevInputSourceTemp;   // Previous input source selection temporary space
+} MS_TEMP_INPUTSRC;
+
+
 typedef struct
 {
     //MS_ADC_SETTING g_AdcSetting[ADC_SET_NUMS];
@@ -2279,6 +2293,9 @@ INTERFACE POWER_GENSETTING stPowerGenSetting;
 INTERFACE MS_GENSETTING stGenSetting;
 //INTERFACE MS_GENSETTING_EXT stGenSettingExt;
 
+//Ray SRC 2017.07.19: Add temporary input source struct variables
+INTERFACE MS_TEMP_INPUTSRC stTempInputSrc;
+
 INTERFACE MS_FACTORY_SETTING g_stFactorySetting;
 
 
@@ -2307,10 +2324,18 @@ INTERFACE E_DATA_INPUT_SOURCE g_enDataInputSourceType[2];
 #define SUBTITLE_DEFAULT_LANGUAGE_2         (stGenSetting.g_SysSetting.SubtitleDefaultLanguage_2) //current menu language
 #define LAST_SECLECT_LANGUAGE               (stGenSetting.g_SysSetting.Last_Select_HotKey_SubtitleLanguage)
 #define LAST_SECLECT_AUDIO_LANGUAGE         (EN_LANGUAGE)(stGenSetting.g_SoundSetting.enSoundAudioLan1) //current menu language
-
-#define UI_INPUT_SOURCE_TYPE                (stGenSetting.g_SysSetting.enUiInputSourceType)
-#define UI_PREV_INPUT_SOURCE_TYPE           (stGenSetting.g_SysSetting.enUiPrevInputSourceType)
+//Ray SRC 2017.07.18: Input source auto save in System EEPROM
+#define UI_INPUT_SOURCE_TYPE_EEPROM         (stGenSetting.g_SysSetting.enUiInputSourceType)
+#define UI_PREV_INPUT_SOURCE_TYPE_EEPROM    (stGenSetting.g_SysSetting.enUiPrevInputSourceType)
+//#define UI_INPUT_SOURCE_TYPE                (stGenSetting.g_SysSetting.enUiInputSourceType)
+//#define UI_PREV_INPUT_SOURCE_TYPE           (stGenSetting.g_SysSetting.enUiPrevInputSourceType)
 #define UI_INPUT_DMP_PRE_SOURCE		    (stGenSetting.g_SysSetting.UserPref_DMP_LastUiSrc)	//Ray DMP 2017.04.07 To save last UI source before entering into DMP mode
+
+//Ray SRC 2017.07.18: Input source in RAM, not auto save in System EEPROM.  This is to prevent frequent saving into EEPROM during auto source seek
+#define UI_INPUT_SOURCE_TYPE                (stTempInputSrc.enUiInputSourceTemp)
+#define UI_PREV_INPUT_SOURCE_TYPE           (stTempInputSrc.enUiPrevInputSourceTemp)
+
+
 
 #if (ENABLE_PIP)
 #define UI_SUB_INPUT_SOURCE_TYPE            (stGenSetting.g_stPipSetting.enSubInputSourceType)

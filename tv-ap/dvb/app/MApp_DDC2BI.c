@@ -142,7 +142,7 @@
 #endif
 
 #if ENABLE_DDCCI
-#define DDC_MSG(x)// x
+#define DDC_MSG(x)  //x		//Ray DBG 2017.08.22
 
 //==================================================================
 // define for Command type.
@@ -263,6 +263,8 @@ U8 MApp_DDC2BI_AlignControl(U8 *pDDCBuffData)
 
     CommandCode = pDDCBuffData[1];
     PageValue = 0;
+    //DDC_MSG(printf("DDC Cmd Code 0x%x\n", CommandCode));				//Ray DBG 2017.08.22
+    //DDC_MSG(printf("DDC CP Code 0x%x\n", pDDCBuffData[2]));				//Ray DBG 2017.08.22
 
     //111----------------------------------------------------------Start
     if(CommandCode == VCP_SetVCPFeature)               // 1-1

@@ -230,6 +230,9 @@ void msKeypad_Init(void)
     MDrv_WriteByte(REG_SAR3_UPB, KEYPAD_CH3_UB);
     MDrv_WriteByte(REG_SAR3_LOB, KEYPAD_CH3_LB);
     msKeypad_AllocChan(KEYPAD_ADC_CHANNEL_3);
+  #elif (LIGHT_DETECTOR==_ON)
+    MDrv_WriteByte(REG_SAR3_UPB, 0xFF);
+    MDrv_WriteByte(REG_SAR3_LOB, 0xFF);		//Ray LGB 2017.07.26: Enable ADC3 Low byte for light detector
   #else
     MDrv_WriteByte(REG_SAR3_UPB, 0xFF);
     MDrv_WriteByte(REG_SAR3_LOB, 0x00);
@@ -286,7 +289,8 @@ void msKeypad_Init(void)
     MDrv_WriteByte(REG_SAR_GPIOOEN, MDrv_ReadByte(REG_SAR_GPIOOEN)|(SAR_GPIOOEN_CH1_MSK));
   #endif
 
-  #if(ENABLE_KPDCHAN_3==ENABLE)//channel 3
+    //Ray LGD 2017.07.26: Add (LIGHT_DETECTOR==_ON) condition to enable ADC channel 3 for light detector
+  #if((ENABLE_KPDCHAN_3==ENABLE)||(LIGHT_DETECTOR==_ON))//channel 3
     //select pad as analog input
     MDrv_WriteByte(REG_SAR_AISEL, MDrv_ReadByte(REG_SAR_AISEL)|(SAR_AISEL_CH2_MSK));
     //select pad direction as input mode
@@ -993,6 +997,8 @@ BOOLEAN msKeypad_CheckMenuKeyPress(void)
   U8 u8CHLVLs[KEYPAD_CHANNEL_SUPPORT]={ADC_CH1_LEVELS,ADC_CH2_LEVELS,ADC_CH3_LEVELS,ADC_CH4_LEVELS};
   U8 pkey;
   pkey = 0xFF;
+  u8Temp[0]=0;		//Ray DPW 2017.07.26: Init the variable
+  u8Temp[1]=0;
 
   Channel = 0;		//We only read channel 0 which includes MENU key
   for(i=0; i<ADC_KEY_LEVEL; i++)

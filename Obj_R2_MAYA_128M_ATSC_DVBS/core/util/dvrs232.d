@@ -274,7 +274,8 @@ Obj_R2_MAYA_128M_ATSC_DVBS/./core/util/dvrs232.o: core/util/dvrs232.c \
   core/drv_bsp/maya_nos_r2m/include/apiVDEC_EX.h \
   core/middleware/closedcaption/lib/include/msAPI_cc_parser.h \
   core/middleware/closedcaption/lib/include/msAPI_cc_sysinfo.h \
-  tv-ap/dvb/app/include/MApp_Exit.h tv-ap/dvb/app/include/MApp_Sleep.h
+  tv-ap/dvb/app/include/MApp_Exit.h tv-ap/dvb/app/include/MApp_Sleep.h \
+  tv-ap/dvb/ui2/include/ZUI_exefunc.h
 
 include/datatype.h:
 
@@ -965,3 +966,5 @@ core/middleware/closedcaption/lib/include/msAPI_cc_sysinfo.h:
 tv-ap/dvb/app/include/MApp_Exit.h:
 
 tv-ap/dvb/app/include/MApp_Sleep.h:
+
+tv-ap/dvb/ui2/include/ZUI_exefunc.h:

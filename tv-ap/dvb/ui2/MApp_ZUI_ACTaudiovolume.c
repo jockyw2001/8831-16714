@@ -117,6 +117,8 @@
 #include "MApp_TTSControlHandler.h"
 #include "MApp_GlobalFunction.h"
 #endif
+#include "OSDcp_String_EnumIndex.h"		//Ray OSD 2017.09.25: To access en_str_Volume string
+#include "MApp_ZUI_ACTcoexistWin.h"		//Ray OSD 2017.09.25: To access MApp_UiMenu_MuteWin_Hide() and MApp_UiMenu_ARCDeviceStatusWin_Hide()
 /////////////////////////////////////////////////////////////////////
 
 extern BOOLEAN _MApp_ZUI_API_AllocateVarData(void);
@@ -126,7 +128,8 @@ void MApp_ZUI_ACT_AppShowAudioVolume(void)
 {
     HWND wnd;
     RECT rect;
-    E_OSD_ID osd_id = E_OSD_AUDIO_VOLUME;
+    E_OSD_ID osd_id = E_OSD_DMP;			//Ray OSD 2017.09.25: Show volume level bar in DMP OSD
+    //E_OSD_ID osd_id = E_OSD_AUDIO_VOLUME;
 
     g_GUI_WindowList = GetWindowListOfOsdTable(osd_id);
     g_GUI_WinDrawStyleList = GetWindowStyleOfOsdTable(osd_id);
@@ -145,9 +148,16 @@ void MApp_ZUI_ACT_AppShowAudioVolume(void)
         return;
     }
 
+    //Ray OSD 2017.09.25: Use DMP osd size
+    /*
     RECT_SET(rect,
         ZUI_AUDIO_VOLUME_XSTART, ZUI_AUDIO_VOLUME_YSTART,
         ZUI_AUDIO_VOLUME_WIDTH, ZUI_AUDIO_VOLUME_HEIGHT);
+    */
+    RECT_SET(rect,
+        ZUI_DMP_XSTART, ZUI_DMP_YSTART,
+        ZUI_DMP_WIDTH, ZUI_DMP_HEIGHT);
+
 
     if (!MApp_ZUI_API_InitGDI(&rect))
     {
@@ -156,15 +166,27 @@ void MApp_ZUI_ACT_AppShowAudioVolume(void)
         return;
     }
     //Ray VOL 2017.03.09: Show all windows of volume through function below. MSG_CREATE is to call MApp_ZUI_API_InvalidateWindow and then repaint the window.
-    for (wnd = 0; wnd < HWND_MAX; wnd++)
+    //for (wnd = 0; wnd < HWND_MAX; wnd++)
+
+    //MApp_ZUI_API_SendMessage(HWND_DMP_ROOT_TRANSPARENT_BG, MSG_CREATE, 0);		//Ray OSD 2017.09.25: create transparent background
+    /*
+    for (wnd = HWND_DMP_VOLUME_CONFIG_PANE; wnd < HWND_DMP_VOLUME_POWER_AMPLIFIER; wnd++)
     {
         //printf("create msg: %lu\n", (U32)wnd);		//Ray DBG 2017.03.09
         MApp_ZUI_API_SendMessage(wnd, MSG_CREATE, 0);
     }
+    */
 
-    MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_SHOW);
-    MApp_ZUI_API_ShowWindow(HWND_VOLUME_MUTE_PANE, SW_HIDE);
-    MApp_ZUI_API_ShowWindow(HWND_VOLUME_EAS_PANE, SW_HIDE);
+    //MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_SHOW);
+    //MApp_ZUI_API_ShowWindow(HWND_VOLUME_MUTE_PANE, SW_HIDE);
+    //MApp_ZUI_API_ShowWindow(HWND_VOLUME_EAS_PANE, SW_HIDE);
+
+    //Ray OSD 2017.09.25: Show volume panes
+    //MApp_ZUI_API_ShowWindow(HWND_DMP_ROOT_TRANSPARENT_BG, SW_SHOW);
+    MApp_ZUI_API_ShowWindow(HWND_DMP_VOLUME_CONFIG_PANE, SW_SHOW);
+    MApp_UiMenu_MuteWin_Hide();
+    MApp_UiMenu_ARCDeviceStatusWin_Hide();
+    MApp_ZUI_API_InvalidateAllSuccessors(HWND_DMP_VOLUME_CONFIG_PANE);
 
     //MApp_ZUI_ACT_TransitionEffectBegin(EN_EFFMODE_PAGE_SHOWUP, E_ZUI_STATE_RUNNING);
 
@@ -200,7 +222,8 @@ void MApp_Ui_AudioVolumePage_Notify(AUDIO_VOLUME_PAGE_NOTIFY_TYPE enAudioVolumeN
             MApp_ZUI_API_ShowWindow(HWND_VOLUME_POWER_AMPLIFIER,para1);
             break;
         case EN_AUDIO_VOLUME_PAGE_NOTIFY_VOLUME:
-            MApp_ZUI_API_InvalidateAllSuccessors(HWND_VOLUME_CONFIG_PANE);
+            MApp_ZUI_API_InvalidateAllSuccessors(HWND_DMP_VOLUME_CONFIG_PANE);		//Ray OSD 2017.09.25: Use DMP volume bar to show volume level
+            //MApp_ZUI_API_InvalidateAllSuccessors(HWND_VOLUME_CONFIG_PANE);
 #if ENABLE_ATSC_TTS
             printf("\nRay: Enter into MApp_TTSControlSetInputHWndID");
             MApp_TTSControlSetInputHWndID(HWND_VOLUME_CONFIG_TEXT);
@@ -255,6 +278,19 @@ LPTSTR MApp_ZUI_ACT_GetAudioVolumeDynamicText(HWND hwnd)
             //printf("\nRay:MApp_ZUI_ACT_GetAudioVolumeDynamicText ");	//Ray DBG 2017.03.09
             return MApp_ZUI_API_GetU16String(tempflag);
         }
+
+        //Ray OSD 2017.09.25: HWND_DMP_VOLUME_CONFIG_TEXT for showing volume on right side of level bar
+        case HWND_DMP_VOLUME_CONFIG_TEXT:
+          {
+	    U8 tempflag;
+	    MApp_FuncExec_AudioVolume(EN_FUNC_AUDIO_VOLUME_GET_VOLUME,&tempflag);
+	   return MApp_ZUI_API_GetU16String(tempflag);
+          }
+
+        //Ray OSD 2017.09.25: DMP_VOLUME_TITLE_TEXT for adding title of "Volume" in front of volume level bar
+        case HWND_DMP_VOLUME_TITLE_TEXT:
+          return MApp_ZUI_API_GetString(en_str_Volume);
+
     }
 
     return 0; //for empty string....

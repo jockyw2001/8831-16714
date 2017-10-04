@@ -2319,7 +2319,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Item_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_12 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_13 },
     { CP_NOON, 0 },
 };
 
@@ -2524,7 +2524,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Min_Txt_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Bar_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_13 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_14 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_3 },
     { CP_NOON, 0 },
 };
@@ -2562,7 +2562,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Bgnd_Title_Normal_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Bg_Rnd_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_14 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_15 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Recorder_Schedule_List_Bg_Rnd_Focus_DrawStyle _Zui_Epg_Recorder_Schedule_List_Bg_Rnd_Normal_DrawStyle
@@ -2636,19 +2636,19 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Mode_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Item_0_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_15 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_16 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_5 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Item_0_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_16 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_17 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_7 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Item_0_Disabled_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_17 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_18 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_6 },
     { CP_NOON, 0 },
 };
@@ -3137,7 +3137,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Recording_Txt_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_1_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_18 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_19 },
     { CP_NOON, 0 },
 };
 

@@ -155,7 +155,9 @@ static ST_DMP_VAR     m_enDmpVar;
 
 extern void MApp_DMP_NotifyUiState(EN_DMP_UI_STATE enDmpUiState);
 extern void MApp_PCMode_SetFirstNoSignalSource(E_UI_INPUT_SOURCE eUiInputSource);	//Ray DMP 2017.06.21
+extern BOOLEAN MApp_ZUI_ACT_ExecuteDmpAction(U16 act);		//Ray DMP 2017.06.30
 extern BOOLEAN ucUSBNoMediaFile;		//Ray DMP 2017.03.23: 1 = USB doesn't have media file
+extern BYTE ucFailOverMode;			//Ray DMP 2017.06.28: Denote if it's failover mode. 1 = in failover mode.
 
 //////////////////////////////////////////////////////////
 #if 0
@@ -222,7 +224,6 @@ static void _MApp_DMP_Init(void)
     if(!(m_enDmpVar.enDmpFlag & DMP_FLAG_INITED))
     {
         DMP_DBG(printf("MApp_UiMediaPlayer_Init()\n"));
-
         MApp_MPlayer_InitializeKernel();
         MApp_DMP_SetCurDrvIdxAndCalPageIdx(0);
 
@@ -264,12 +265,18 @@ static void _MApp_DMP_Switch2Dmp(void)
         DMP_DBG(printf("MApp_MPlayer_SetCurrentMediaType fail"););
     }
 
+
     if(m_enDmpVar.enDmpFlag & DMP_FLAG_INITED)
     {
-        DMP_DBG(printf("\n\n\n*******************MApp_DMP_Reset()\n"));
-        MApp_DMP_Reset();
-        MApp_MPlayer_ConnectDrive(m_enDmpVar.stDrvInfo.au8MapTbl[m_enDmpVar.stDrvInfo.u8Idx]);
+	//Ray DMP 2017.06.30: If it's failover, don't do DMP init
+	//if(ucFailOverMode==0){
+	  DMP_DBG(printf("\n\n\n*******************MApp_DMP_Reset()\n"));
+	  MApp_DMP_Reset();
+	  MApp_MPlayer_ConnectDrive(m_enDmpVar.stDrvInfo.au8MapTbl[m_enDmpVar.stDrvInfo.u8Idx]);
+	//}
+
     }
+
     else
     {
         DMP_DBG(printf("\n\n\n*******************_MApp_DMP_Init()\n"));
@@ -405,11 +412,24 @@ EN_RET MApp_DMP_Main(void)
             srand(msAPI_Timer_GetTime0());
             //_MApp_DMP_StretchOSD(TRUE);
             MApp_ZUI_ACT_StartupOSD(E_OSD_DMP);
-            _MApp_DMP_Switch2Dmp();
+            //Ray DMP 2017.06.30: If it's failover, no init
+            //if(ucFailOverMode==0){
+        	_MApp_DMP_Switch2Dmp();
+            //}
+
             u32time = msAPI_Timer_GetTime0();
             m_enDmpVar.enDmpState = DMP_STATE_CONNECTING;
             u8GWinId = MApp_ZUI_API_QueryGWinID();
             u8DMPStartFlag = TRUE;
+            //Ray DMP 2017.06.30: If it's failover, go to play media
+            /*
+            if(ucFailOverMode==1){
+        	m_enDmpVar.enDmpState = DMP_STATE_WAIT;
+                MApp_MPlayer_SetCurrentMediaType(E_MPLAYER_TYPE_MOVIE, TRUE);
+                MApp_ZUI_ACT_ExecuteDmpAction(EN_EXE_DMP_FILE_PAGE_PLAYBACK);
+        	//MApp_MPlayer_Play();
+            }
+            */
             break;
 
         case DMP_STATE_CONNECTING:
@@ -582,7 +602,10 @@ EN_RET MApp_DMP_Main(void)
             MApp_ZUI_ACT_ShutdownOSD();
             m_enDmpVar.enDmpState = DMP_STATE_INIT;
             enRetVal =EXIT_MPLAYER_EXIT;
-            MApp_DMP_Exit();
+            //Ray DMP 2017.06.30: If it's failover, don't exit DMP
+            //if(ucFailOverMode==0){
+        	MApp_DMP_Exit();
+            //}
             MApp_InputSource_RestoreSource();
             //UI_INPUT_SOURCE_TYPE = MApp_InputSource_GetRecordSource();
             //MApp_InputSource_ChangeInputSource();
@@ -596,8 +619,11 @@ EN_RET MApp_DMP_Main(void)
             }
             else//non DTV/ATV sources
             {
-                MApp_ZUI_ACT_Startup_ChannelInfo_OSD();
-                MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_SHOW_SOURCE_BANNER);
+    	    //Ray DMP 2017.06.29: Show channel info if it's not in Failover mode( which is between finishing play a movie and jump to input src to check if sync exists)
+                if(ucFailOverMode==0){
+		  MApp_ZUI_ACT_Startup_ChannelInfo_OSD();
+		  MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_SHOW_SOURCE_BANNER);
+                }
             }
           #endif
             break;

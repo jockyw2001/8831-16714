@@ -44,7 +44,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Cover_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_28 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_29 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Bg_Focus_DrawStyle _Zui_Menu_Dishsetup_Bg_Normal_DrawStyle
@@ -85,7 +85,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Sat_Frame_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_29 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_30 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_13 },
     { CP_NOON, 0 },
 };
@@ -95,7 +95,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Sat_Frame_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satinfo_Frame_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_30 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_31 },
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_14 },
     { CP_NOON, 0 },
 };
@@ -468,7 +468,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Green_Text_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Title_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_31 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_32 },
     { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1339 },
     { CP_NOON, 0 },
 };
@@ -501,7 +501,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Vscrollbar_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Item1_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_32 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_33 },
     { CP_NOON, 0 },
 };
 
@@ -657,7 +657,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Item1_Text_Focus_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Items_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_33 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_34 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Items_Bg_Focus_DrawStyle _Zui_Menu_Dishsetup_Items_Bg_Normal_DrawStyle
@@ -667,7 +667,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Items_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_8 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_9 },
     { CP_NOON, 0 },
 };
 
@@ -1013,7 +1013,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Qulity_Bar_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Loflist_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_34 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_35 },
     { CP_NOON, 0 },
 };
 
@@ -1113,7 +1113,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Loflist_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_35 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_36 },
     { CP_NOON, 0 },
 };
 
@@ -1122,7 +1122,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_36 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_37 },
     { CP_NOON, 0 },
 };
 
@@ -1306,7 +1306,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Title_M_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Items_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_37 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_38 },
     { CP_NOON, 0 },
 };
 
@@ -1315,7 +1315,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Items_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movecontinue_Focus_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_38 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_39 },
     { CP_NOON, 0 },
 };
 
@@ -1830,7 +1830,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Title_M_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Items_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_39 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_40 },
     { CP_NOON, 0 },
 };
 
@@ -2272,7 +2272,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Bond_Text_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_40 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_41 },
     { CP_NOON, 0 },
 };
 
@@ -2997,7 +2997,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelsearch_Servicetype_Option
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Msg_Bg_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_41 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_42 },
     { CP_NOON, 0 },
 };
 
@@ -3035,7 +3035,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Msg_Icon_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Resetallchannels_Normal_DrawStyle[] =
 {
-    { CP_RECT, CP_ZUI_RECT_INDEX_42 },
+    { CP_RECT, CP_ZUI_RECT_INDEX_43 },
     { CP_NOON, 0 },
 };
 

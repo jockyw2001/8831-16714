@@ -262,7 +262,7 @@ void console_init(void)
     {
         //MDrv_UART_Init(E_UART_AEON_R2, 115200);
         //MDrv_UART_Init(E_UART_AEON_R2, 38400);
-        MDrv_UART_Init(E_UART_AEON_R2, 2400);			//Ray URT 2017.05.09: Use DV standard baudrate
+        MDrv_UART_Init(E_UART_AEON_R2, 9600);			//Ray URT 2017.05.09: Use DV standard baudrate
         mdrv_uart_connect(E_UART_PORT0,E_UART_AEON_R2);		//Ray URT 2017.01.19: Original UART setting which uses DDCA port
         //mdrv_uart_connect(E_UART_PORT3,E_UART_AEON_R2);	//Ray URT 2017.01.19: New UART setting which uses pin 95 and 96
         //mdrv_uart_connect(E_UART_PORT3,E_UART_AEON);		//Ray URT 2017.01.19: New UART setting which uses pin 95 and 96

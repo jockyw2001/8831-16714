@@ -188,7 +188,7 @@
 #define DEBUG_HDMI_FLOW(x)  //x
 #define PCMSG(x)            //x
 #define PC_SelfAuto_MSG(x)  //x
-#define HDMI_4KX2K_MSG(x)   //x
+#define HDMI_4KX2K_MSG(x)   x			//Ray DBG 2017.07.27
 
 // Range of RGB OOR
 #if ENABLE_VGA_EIA_TIMING
@@ -248,6 +248,9 @@
 
 #define HRESOLUTION_TOLERANCE 1
 
+#define NORMAL_POLL_TIME		200		//Ray ASS 2017.09.20: Original sPollingCheckC poll time for non-HDMI2.0 channel
+#define HDMI2_POLL_TIME			500		//Ray ASS 2017.09.20: Longer sPollingCheckC poll time to support AMD graphic card HDMI2.0 inputs
+
 /********************************************************************************/
 /*                               Local Defines                                 */
 /********************************************************************************/
@@ -275,10 +278,11 @@ typedef struct
 void _MApp_PCMode_SetHdmiAvgMode(BOOLEAN bEnable);
 //#define PC_POLLING_COUNTER          50  // (30/TIMER_PERIOD), unit ms
 #if(TVE_NoSignalFunctionType==TVE_NoSignalToPollingSource)
-static U8 sPollingCheckC = 0;
+static U16 sPollingCheckC = 0;		//Ray HDM 2017.09.19: Increase sPollingCheckC size from U8 to U16 to increase no signal polling time to get valid HDMI signal
 #endif
 BOOLEAN ucUSBNoMediaFile = 0;		//Ray DMP 2017.04.07: 1 = USB doesn't have media file
 static U8 USBConnectCheckF = 0;		//Ray DMP 2017.04.07: no. of time to check if USB is connected
+//U32  u32ASSCounter = 0;			//Ray ASS 2017.09.20: Counter to save the time to do auto source seek from one to next input
 
 /********************************************************************************/
 /*                               Functions                                      */
@@ -294,6 +298,8 @@ static U8 Enable_SelfAuto[MAX_WINDOW] = {DISABLE, DISABLE};
 static BOOLEAN s_bIsHdmiAvgMode = FALSE;
 
 static BYTE ucFirstNoSignalSource=UI_INPUT_SOURCE_NONE;		//Ray DMP 2017.04.07: ucFirstNoSignalSource to denote the input source which has no signal first
+BYTE ucFailOverMode = 0;					//Ray DMP 2017.06.28: Denote if it's failover mode. 1 = in failover mode.
+								//                    If it is, when doing failover recovery, it won't display OSD message "No Signal" and input channel info bar at bottom of screen.
 
 //Ray DMP 2017.04.07: To set ucFirstNoSignalSource by external function
 void MApp_PCMode_SetFirstNoSignalSource(E_UI_INPUT_SOURCE eUiInputSource)
@@ -308,6 +314,7 @@ void msApiPrintfHDMI_STATUSMode(E_XC_HDMI_Status eE_XC_HDMI_Status)
         default:
         case E_HDMI_STATUS_UNKNOWN:
             MS_DEBUG_MSG(printf("\r\n Unknown Mode"));
+            printf("\r\n Unknown Mode");		//Ray DBG 2017.07.27
             break;
 
         case E_HDMI_STATUS_DVI:
@@ -1550,6 +1557,7 @@ static void _MApp_PCMode_StatusHandler(INPUT_SOURCE_TYPE_t src, XC_PCMONITOR_STA
         // Disable all destination as soon as possiable.
         //printf("[PCMode] stable -> unstable or no sync(%u) at %u\n", current_status, MsOS_GetSystemTime());
 
+	//u32ASSCounter = MsOS_GetSystemTime();			//Ray ASS 2017.09.20J: joint down the start time that signal loss
     #if(DEBUG_CHG_SRC_TIME)
         msDebug_PrintChgSrcTime("Sync unstable");
     #endif
@@ -1642,8 +1650,9 @@ static void _MApp_PCMode_StatusHandler(INPUT_SOURCE_TYPE_t src, XC_PCMONITOR_STA
     else if( current_status == E_XC_PCMONITOR_STABLE_SYNC &&
              previous_status[eWindow] != current_status)
     {
-        //printf("[PCMode] unstable or no sync -> stable at %u\n", MsOS_GetSystemTime());
+        printf("[PCMode] unstable or no sync -> stable at %u\n", MsOS_GetSystemTime());		//Ray DBG 2017.07.27
 	ucFirstNoSignalSource=UI_INPUT_SOURCE_NONE;	 //Ray DMP 2017.04.07:As it is stable again, ucFirstNoSignalSource is set to NONE
+	ucFailOverMode = 0;				//Ray DMP 2017.06.28: As it is stable, FailOverMode = 0 denote to quit failover
     #if(DEBUG_CHG_SRC_TIME)
         msDebug_PrintChgSrcTime("Sync stable");
     #endif
@@ -1696,6 +1705,10 @@ static void _MApp_PCMode_StatusHandler(INPUT_SOURCE_TYPE_t src, XC_PCMONITOR_STA
             if(_MApp_PCMode_SetMode(eWindow))
             {
                 //printf("[PCMode] Set Mode ok at %u\n", MsOS_GetSystemTime());
+
+        	//Ray SRC 2017.07.19: As input source is stable and mode is got, we save current & previous input source to EEPROM
+        	UI_INPUT_SOURCE_TYPE_EEPROM = UI_INPUT_SOURCE_TYPE;
+        	UI_PREV_INPUT_SOURCE_TYPE_EEPROM = UI_PREV_INPUT_SOURCE_TYPE;
 
                 MApp_AnalogInputs_Force2MonitorWindows(eWindow);
                 // switch audio between HDMI/DVI
@@ -1851,11 +1864,23 @@ static void _MApp_PCMode_StatusHandler(INPUT_SOURCE_TYPE_t src, XC_PCMONITOR_STA
 					return;
 				}	
 				#endif	        
-        if (MApp_ZUI_GetActiveOSD() == E_OSD_SCREEN_SAVER)
+	//Ray DMP 2017.06.28: If it's in Failover mode, no need to wait for MApp_ZUI_GetActiveOSD() == E_OSD_SCREEN_SAVER and just jump back to failover
+        if (MApp_ZUI_GetActiveOSD() == E_OSD_SCREEN_SAVER|| ucFailOverMode==1)
+        //if (MApp_ZUI_GetActiveOSD() == E_OSD_SCREEN_SAVER)
         {
 	        sPollingCheckC++;
-  	      msAPI_Timer_Delayms(1);  	    
-          if(sPollingCheckC>=200)
+  	      //msAPI_Timer_Delayms(1);		//Ray HDM 2017.09.19: Comment according to TriView suggestion after increasing  sPollingCheckC time
+  	 //Ray DMP 2017.06.28: If it's in Failover mode, no need to wait for sPollingCheckC>=200 and just jump back to failover
+
+	  U16 sPollingMax;
+	  if(UI_INPUT_SOURCE_TYPE==UI_INPUT_SOURCE_HDMI||UI_INPUT_SOURCE_TYPE==UI_INPUT_SOURCE_HDMI2){
+	      sPollingMax = HDMI2_POLL_TIME; 		//Ray HDM 2017.09.20: Change  sPollingCheckC>=200 to sPollingCheckC>=500 in order to have easier detection of AMD graphic card HDMI2.0 signal
+	  }else{
+	      sPollingMax = NORMAL_POLL_TIME;		//Ray HDM 2017.09.20: For non-HDMI2.0 input, keep the original 200 max polling time
+	  }
+
+          if(sPollingCheckC>=sPollingMax || ucFailOverMode==1)
+          //if(sPollingCheckC>=200)
           {
           	sIsPollingSwitch = 1;
           	sPollingCheckC = 0;
@@ -1883,6 +1908,11 @@ static void _MApp_PCMode_StatusHandler(INPUT_SOURCE_TYPE_t src, XC_PCMONITOR_STA
 		    }
 
 #ifdef sSP4096Board					//Ray ASS 2017.03.29: Set auto source seek sequence
+
+		    //Ray ASS 2017.09.20: Check the auto source seek change from one to next input time period
+		        //printf("\nRay: Go to next input period = %ld ms\n", msAPI_Timer_DiffTimeFromNow(u32ASSCounter));
+		        //u32ASSCounter = MsOS_GetSystemTime();			//Ray ASS 2017.09.20: joint down the start time that change to next input
+
 		    if(UI_INPUT_SOURCE_TYPE==UI_INPUT_SOURCE_HDMI3)
 		    {
 			MApp_ZUI_ACT_InputSourceSwitch(UI_INPUT_SOURCE_RGB);  //Ray ASS 2017.03.29: Go to VGA

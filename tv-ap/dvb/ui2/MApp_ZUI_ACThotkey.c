@@ -190,6 +190,8 @@ typedef enum _HOTKEY_MODE
     EN_HOTKEY_MODE_FREEZE,
     EN_HOTKEY_MODE_CC,
     EN_HOTKEY_MODE_PIP,
+    EN_HOTKEY_MODE_VOLUME,		//Ray HKY 2017.09.27: Add volume hot key mode
+    EN_HOTKEY_MODE_BRIGHTNESS,		//Ray HKY 2017.09.27: Add brightness hot key mode
 } HOTKEY_MODE;
 
 static HOTKEY_MODE _eHotkeyMode;
@@ -198,9 +200,18 @@ extern AUDIOMODE_TYPE   m_eAudioMode;
 
 extern BOOLEAN _MApp_ZUI_API_AllocateVarData(void);
 
+//Ray HKY 2017.09.28: External function for hot key function control
+extern BYTE g_ucSerialAcknowledge;
+extern void dv_Serial_Volume_Para1(BYTE *ucCmdPara);
+
+
 #if ENABLE_DTV
 extern void Mapp_DTV_ProcessMTS(void);
 #endif
+
+
+
+
 
 void MApp_ZUI_ACT_AppShowHotkeyOption(void)
 {
@@ -243,7 +254,6 @@ void MApp_ZUI_ACT_AppShowHotkeyOption(void)
     }
 
     MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_SHOW);
-
     _eHotkeyMode = EN_HOTKEY_MODE_INVALID;
 
     //MApp_ZUI_ACT_TransitionEffectBegin(EN_EFFMODE_PAGE_SHOWUP, E_ZUI_STATE_RUNNING);
@@ -285,6 +295,24 @@ void _MApp_ZUI_ACT_DecIncSleepTimer_Cycle(BOOLEAN bInc)
         STATE_SLEEP_OFF, STATE_SLEEP_TOTAL-1, 1);
     enSleepTimeState=(EN_SLEEP_TIME_STATE)(U8)stLMGenSetting.stMD.enD4_SleepTimer;
     MApp_Sleep_SetCurrentSleepTime(enSleepTimeState);
+}
+
+//Ray HKY 2017.09.28: Inc/Dec volume
+//Input: bInc =1 for increase, = 0 or decrease
+void _MApp_ZUI_ACT_DecIncVolume(BOOLEAN bInc)
+{
+  BYTE uartCmd[]={'A','+'};
+  BYTE ackBackup;
+
+  if(bInc==0){
+      uartCmd[1]='-';
+  }
+
+  ackBackup = g_ucSerialAcknowledge;		//backup ack uart cmd status
+  g_ucSerialAcknowledge = FALSE;		//No tx of cmd to uart
+  dv_Serial_Volume_Para1(uartCmd);
+  g_ucSerialAcknowledge = ackBackup;
+
 }
 
 #if 0//ENABLE_T_C_COMBO
@@ -486,6 +514,51 @@ BOOLEAN MApp_ZUI_ACT_ExecuteHotkeyOptionAction(U16 act)
                 MApp_ZUI_API_SetFocus(HWND_HOTKEY_SLEEP_TIMER_TEXT);
             }
             return TRUE;
+
+        ////Ray HKY 2017.09.27: Volume hot key exe action to update hot key OSD
+        case EN_EXE_SHOW_VOLUME_HOTKEY:
+            if (_eHotkeyMode != EN_HOTKEY_MODE_VOLUME)
+            {
+                _eHotkeyMode = EN_HOTKEY_MODE_VOLUME;
+                MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
+                MApp_ZUI_API_ShowWindow(HWND_HOTKEY_LEVEL_PANE, SW_SHOW);
+                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_TITLE_TEXT);	//Display title
+                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Display volume level ball
+                MApp_ZUI_API_SetFocus(HWND_HOTKEY_LEVEL_VALUE_TEXT);		//Display volume level value
+            }
+            return TRUE;
+        ////
+
+        ////Ray HKY 2017.09.27: increase/decrease volume hot key
+        case EN_EXE_DEC_VOLUME_HOTKEY_OPTION:
+        case EN_EXE_INC_VOLUME_HOTKEY_OPTION:
+            {
+                if (_eHotkeyMode != EN_HOTKEY_MODE_VOLUME) //do nothing if not volume mode...
+                    return TRUE;
+                //Inc/Dec volume
+                _MApp_ZUI_ACT_DecIncVolume(
+                    act==EN_EXE_INC_VOLUME_HOTKEY_OPTION);
+
+                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Update volume level ball
+                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_VALUE_TEXT);	//Update volume level
+
+            }
+            return TRUE;
+        ////
+
+	////Ray HKY 2017.09.27: brightness hot key exe action to update hot key OSD
+	case EN_EXE_SHOW_BRIGHTNESS_HOTKEY:
+	    if (_eHotkeyMode != EN_HOTKEY_MODE_BRIGHTNESS)
+	    {
+		_eHotkeyMode = EN_HOTKEY_MODE_BRIGHTNESS;
+		MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
+		MApp_ZUI_API_ShowWindow(HWND_HOTKEY_LEVEL_PANE, SW_SHOW);
+		MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_TITLE_TEXT);	//Display title
+		MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Display volume level ball
+		MApp_ZUI_API_SetFocus(HWND_HOTKEY_LEVEL_VALUE_TEXT);		//Display volume level value
+	    }
+	    return TRUE;
+	////
 
         case EN_EXE_DEC_ATV_MTS_HOTKEY_OPTION:
         case EN_EXE_INC_ATV_MTS_HOTKEY_OPTION:
@@ -897,6 +970,53 @@ static LPTSTR _MApp_ZUI_ACT_GeHotkeySleepDynamicText(void)
     return CHAR_BUFFER;
 }
 
+
+//Ray HKY 2017.09.27: Get hot key title text
+static LPTSTR _MApp_ZUI_ACT_GeHotkeyTitleDynamicText(void)
+{
+  //Check the current hot key mode and display corresponding value on level text
+  switch(_eHotkeyMode){
+    case EN_HOTKEY_MODE_VOLUME:
+      return MApp_ZUI_API_GetString(en_str_Volume);
+      break;
+    case  EN_HOTKEY_MODE_BRIGHTNESS:
+      return MApp_ZUI_API_GetString(en_str_Brightness);
+      break;
+    default:
+      return NULL;
+  }
+}
+
+
+//Ray HKY 2017.09.27: Get dynamic value for hot key to show level ball
+S16 MApp_ZUI_ACT_GetHotkeyOptionDynamicValue(void)
+{
+  S16 value = 0;
+
+  //Check the current hot key mode and Get corresponding value
+  switch(_eHotkeyMode){
+    case EN_HOTKEY_MODE_VOLUME:
+      value = stGenSetting.g_SoundSetting.Volume ;
+      break;
+    case  EN_HOTKEY_MODE_BRIGHTNESS:
+      value = ST_PICTURE.u8Brightness ;
+      break;
+    default:
+      break;
+  }
+
+  return value;
+}
+
+
+//Ray HKY 2017.09.27: Get level value for hot key
+static LPTSTR _MApp_ZUI_ACT_GeHotkeyLevelValueDynamicText(void)
+{
+    return MApp_ZUI_API_GetU16String(MApp_ZUI_ACT_GetHotkeyOptionDynamicValue());
+}
+
+
+
 static LPTSTR _MApp_ZUI_ACT_GeHotkeyFreezeDynamicText(void)
 {
     LPTSTR str = CHAR_BUFFER;
@@ -1149,6 +1269,14 @@ LPTSTR MApp_ZUI_ACT_GetHotkeyOptionDynamicText(HWND hwnd)
 
         case HWND_HOTKEY_SLEEP_TIMER_TEXT:
             return _MApp_ZUI_ACT_GeHotkeySleepDynamicText();
+
+	//Ray HKY 2017.09.27: Show hot key title text
+	case HWND_HOTKEY_LEVEL_TITLE_TEXT:
+	  return _MApp_ZUI_ACT_GeHotkeyTitleDynamicText();
+
+        //Ray HKY 2017.09.27: Show hot key level value
+        case HWND_HOTKEY_LEVEL_VALUE_TEXT:
+          return _MApp_ZUI_ACT_GeHotkeyLevelValueDynamicText();
 
         case HWND_HOTKEY_MTS_TEXT:
 			#if ENABLE_ATSC

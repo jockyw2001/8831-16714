@@ -376,6 +376,7 @@ DEVICES_FILES += \
         $(ROOT)/device/cofdm/demodulator_T2.c                       \
         $(ROOT)/device/ursa/drvTcon_Inx8903.c                       \
         $(ROOT)/device/IE2000/dvNT72324.c                           \
+        $(ROOT)/device/light_sensor/dvLightDetect.c                 \
         $(ROOT)/device/ExtAudio/dvExtAudio.c                        \        
 
 DVBS_FILES +=                                                       \

@@ -110,6 +110,26 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Sub_Screen_Saver_Frame_R_Normal_DrawStyle[] =
 #define _Zui_Sub_Screen_Saver_Text_R_Normal_DrawStyle _Zui_Sub_Screen_Saver_Text_L_Normal_DrawStyle
 #define _Zui_Sub_Screen_Saver_Text_R_Focus_DrawStyle _Zui_Sub_Screen_Saver_Text_L_Normal_DrawStyle
 
+/////////////////////////////////////////////////////
+// SCREEN_SAVER_SVDU6_FRAME styles..
+
+static DRAWSTYLE _MP_TBLSEG _Zui_Screen_Saver_Svdu6_Frame_Normal_DrawStyle[] =
+{
+    { CP_RECT, CP_ZUI_RECT_INDEX_8 },
+    { CP_NOON, 0 },
+};
+
+/////////////////////////////////////////////////////
+// SCREEN_SAVER_SVDU6_BG styles..
+
+#define _Zui_Screen_Saver_Svdu6_Bg_Normal_DrawStyle _Zui_Sub_Screen_Saver_Bg_L_Normal_DrawStyle
+
+/////////////////////////////////////////////////////
+// SCREEN_SAVER_SVDU6_TEXT styles..
+
+#define _Zui_Screen_Saver_Svdu6_Text_Normal_DrawStyle _Zui_Screen_Saver_Text_Normal_DrawStyle
+#define _Zui_Screen_Saver_Svdu6_Text_Focus_DrawStyle _Zui_Screen_Saver_Text_Focus_DrawStyle
+
 //////////////////////////////////////////////////////
 // Window Draw Style List  (normal, focused, disable)
 
@@ -147,5 +167,14 @@ WINDOWDRAWSTYLEDATA _MP_TBLSEG _GUI_WindowsDrawStyleList_Zui_Screen_Saver[] =
 
     // 10 = HWND_SUB_SCREEN_SAVER_TEXT_R
     { _Zui_Sub_Screen_Saver_Text_R_Normal_DrawStyle, _Zui_Sub_Screen_Saver_Text_R_Focus_DrawStyle, NULL     },
+
+    // 11 = HWND_SCREEN_SAVER_SVDU6_FRAME
+    { _Zui_Screen_Saver_Svdu6_Frame_Normal_DrawStyle, NULL, NULL     },
+
+    // 12 = HWND_SCREEN_SAVER_SVDU6_BG
+    { _Zui_Screen_Saver_Svdu6_Bg_Normal_DrawStyle, NULL, NULL     },
+
+    // 13 = HWND_SCREEN_SAVER_SVDU6_TEXT
+    { _Zui_Screen_Saver_Svdu6_Text_Normal_DrawStyle, _Zui_Screen_Saver_Svdu6_Text_Focus_DrawStyle, NULL     },
 
 };

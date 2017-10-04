@@ -464,8 +464,8 @@
 
 
 #ifndef ENABLE_SAVE_DATA_TO_EEPROM
-    #define ENABLE_SAVE_DATA_TO_EEPROM  0
-    //#define ENABLE_SAVE_DATA_TO_EEPROM  1		//Ray SEE 2017.02.13: Change to 1 to enable save system parameter into system EEPROM
+    //#define ENABLE_SAVE_DATA_TO_EEPROM  0
+    #define ENABLE_SAVE_DATA_TO_EEPROM  1		//Ray SEE 2017.02.13: Change to 1 to enable save system parameter into system EEPROM
 #endif
 
 //******************************************************************************

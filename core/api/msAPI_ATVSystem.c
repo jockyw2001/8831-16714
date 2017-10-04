@@ -1405,7 +1405,6 @@ BOOLEAN msAPI_ATV_GetAudioMode(AUDIOSOURCE_TYPE eSource, AUDIOMODE_TYPE *peAudio
 
     memset(&Misc,0,sizeof(ATV_MISC));
     eAudioMode = E_AUDIOMODE_INVALID;
-
     switch ( eSource )
     {
         case E_AUDIOSOURCE_MPEG:
@@ -1474,7 +1473,6 @@ BOOLEAN msAPI_ATV_GetAudioMode(AUDIOSOURCE_TYPE eSource, AUDIOMODE_TYPE *peAudio
         *peAudioMode = DEFAULT_LR_AUDIOMODE;
         return FALSE;
     }
-
     //printf(" eAudioMode=%u\n", eAudioMode);
 
     if ( eSource == E_AUDIOSOURCE_ATV )
@@ -1517,7 +1515,9 @@ BOOLEAN msAPI_ATV_GetAudioMode(AUDIOSOURCE_TYPE eSource, AUDIOMODE_TYPE *peAudio
         }
         else
         {
-            msAPI_ATV_SetAudioMode(eSource, DEFAULT_LR_AUDIOMODE);
+            //Ray SRC 2017.07.20: When input source is changed during auto source seek, this routine is called to save audio mode. This shorten EERPOM life cycle.
+            //         Since audio mode can be fixed to LR mode.  We cancel to save audio mode at below.
+            //msAPI_ATV_SetAudioMode(eSource, DEFAULT_LR_AUDIOMODE);
             *peAudioMode = DEFAULT_LR_AUDIOMODE;
         }
     }

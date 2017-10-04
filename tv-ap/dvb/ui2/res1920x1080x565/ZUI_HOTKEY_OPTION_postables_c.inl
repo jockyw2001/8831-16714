@@ -29,116 +29,140 @@ WINDOWPOSDATA _MP_TBLSEG _GUI_WindowPositionList_Zui_Hotkey_Option[] =
 {
     // 0 = HWND_MAINFRAME
     {
-        HWND_MAINFRAME, HWND_HOTKEY_CC_TEXT,
-        { 0, 0, 562, 210 },
+        HWND_MAINFRAME, HWND_HOTKEY_LEVEL_TITLE_TEXT,
+        { 0, 0, 1920, 1071 },
     },
 
     // 1 = HWND_HOTKEY_BG
     {
         HWND_MAINFRAME, HWND_HOTKEY_BG_C,
-        { 24, 28, 255, 81 },
+        { 28, 28, 255, 81 },
     },
 
     // 2 = HWND_HOTKEY_BG_C
     {
         HWND_HOTKEY_BG, HWND_HOTKEY_BG_C,
-        { 24, 28, 255, 81 },
+        { 28, 28, 255, 81 },
     },
 
     // 3 = HWND_HOTKEY_PICTURE_MODE
     {
         HWND_MAINFRAME, HWND_HOTKEY_PICTURE_MODE_TEXT,
-        { 24, 28, 91, 81 },
+        { 28, 28, 91, 81 },
     },
 
     // 4 = HWND_HOTKEY_PICTURE_MODE_TEXT
     {
         HWND_HOTKEY_PICTURE_MODE, HWND_HOTKEY_PICTURE_MODE_TEXT,
-        { 114, 28, 165, 81 },
+        { 118, 28, 165, 81 },
     },
 
     // 5 = HWND_HOTKEY_SOUND_MODE
     {
         HWND_MAINFRAME, HWND_HOTKEY_SOUND_MODE_TEXT,
-        { 24, 28, 91, 81 },
+        { 28, 28, 91, 81 },
     },
 
     // 6 = HWND_HOTKEY_SOUND_MODE_TEXT
     {
         HWND_HOTKEY_SOUND_MODE, HWND_HOTKEY_SOUND_MODE_TEXT,
-        { 114, 28, 165, 81 },
+        { 118, 28, 165, 81 },
     },
 
     // 7 = HWND_HOTKEY_ZOOM
     {
         HWND_MAINFRAME, HWND_HOTKEY_ZOOM_TEXT,
-        { 24, 28, 91, 81 },
+        { 28, 28, 91, 81 },
     },
 
     // 8 = HWND_HOTKEY_ZOOM_TEXT
     {
         HWND_HOTKEY_ZOOM, HWND_HOTKEY_ZOOM_TEXT,
-        { 114, 28, 165, 81 },
+        { 118, 28, 165, 81 },
     },
 
     // 9 = HWND_HOTKEY_SLEEP_TIMER
     {
         HWND_MAINFRAME, HWND_HOTKEY_SLEEP_TIMER_TEXT,
-        { 24, 28, 91, 81 },
+        { 28, 28, 91, 81 },
     },
 
     // 10 = HWND_HOTKEY_SLEEP_TIMER_TEXT
     {
         HWND_HOTKEY_SLEEP_TIMER, HWND_HOTKEY_SLEEP_TIMER_TEXT,
-        { 114, 28, 165, 81 },
+        { 118, 28, 165, 81 },
     },
 
     // 11 = HWND_HOTKEY_MTS
     {
         HWND_MAINFRAME, HWND_HOTKEY_MTS_TEXT,
-        { 24, 28, 1, 1 },
+        { 28, 28, 1, 1 },
     },
 
     // 12 = HWND_HOTKEY_MTS_TEXT
     {
         HWND_HOTKEY_MTS, HWND_HOTKEY_MTS_TEXT,
-        { 24, 28, 255, 81 },
+        { 28, 28, 255, 81 },
     },
 
     // 13 = HWND_HOTKEY_FREEZE
     {
         HWND_MAINFRAME, HWND_HOTKEY_FREEZE_TEXT,
-        { 24, 28, 1, 1 },
+        { 28, 28, 1, 1 },
     },
 
     // 14 = HWND_HOTKEY_FREEZE_TEXT
     {
         HWND_HOTKEY_FREEZE, HWND_HOTKEY_FREEZE_TEXT,
-        { 24, 28, 255, 81 },
+        { 28, 28, 255, 81 },
     },
 
     // 15 = HWND_HOTKEY_PIP_MODE
     {
         HWND_MAINFRAME, HWND_HOTKEY_PIP_MODE_TEXT,
-        { 33, 28, 78, 81 },
+        { 37, 28, 78, 81 },
     },
 
     // 16 = HWND_HOTKEY_PIP_MODE_TEXT
     {
         HWND_HOTKEY_PIP_MODE, HWND_HOTKEY_PIP_MODE_TEXT,
-        { 114, 28, 165, 81 },
+        { 118, 28, 165, 81 },
     },
 
     // 17 = HWND_HOTKEY_CC
     {
         HWND_MAINFRAME, HWND_HOTKEY_CC_TEXT,
-        { 24, 28, 1, 1 },
+        { 28, 28, 1, 1 },
     },
 
     // 18 = HWND_HOTKEY_CC_TEXT
     {
         HWND_HOTKEY_CC, HWND_HOTKEY_CC_TEXT,
-        { 24, 28, 255, 81 },
+        { 28, 28, 255, 81 },
+    },
+
+    // 19 = HWND_HOTKEY_LEVEL_PANE
+    {
+        HWND_MAINFRAME, HWND_HOTKEY_LEVEL_TITLE_TEXT,
+        { 250, 891, 1200, 70 },
+    },
+
+    // 20 = HWND_HOTKEY_LEVEL_BAR
+    {
+        HWND_HOTKEY_LEVEL_PANE, HWND_HOTKEY_LEVEL_BAR,
+        { 583, 908, 716, 36 },
+    },
+
+    // 21 = HWND_HOTKEY_LEVEL_VALUE_TEXT
+    {
+        HWND_HOTKEY_LEVEL_PANE, HWND_HOTKEY_LEVEL_VALUE_TEXT,
+        { 1309, 891, 84, 70 },
+    },
+
+    // 22 = HWND_HOTKEY_LEVEL_TITLE_TEXT
+    {
+        HWND_HOTKEY_LEVEL_PANE, HWND_HOTKEY_LEVEL_TITLE_TEXT,
+        { 300, 891, 250, 70 },
     },
 
 };

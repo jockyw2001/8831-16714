@@ -790,6 +790,7 @@ extern U16 u16APageID;
 #endif //ENABLE_INTERNAL_SUBTITLE
 #endif //ENABLE_SUBTITLE_DMP
 
+extern BYTE ucFailOverMode;			//Ray DMP 2017.06.30: Denote if it's failover mode. 1 = in failover mode.
 
 #ifdef ENABLE_PTP
 static BOOLEAN _MApp_MPlayer_PTP_PlayerInit(enumMPlayerIdx eMPlayerIdx, enumMPlayerMediaType eMediaType, BOOLEAN bPreview);
@@ -8110,6 +8111,7 @@ enumMPlayerRet MApp_MPlayer_InitializeKernel(void)
     m_eMPlayerKnlFlags |= E_MPLAYER_KNL_FLG_INITIALIZED;
 
     _MApp_Mplayer_InitializeCoProcessor();
+
 
     //Init FS
     MApp_MassStorage_Init();

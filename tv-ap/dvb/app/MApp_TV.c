@@ -283,6 +283,26 @@ static BOOLEAN bIsEASExitUI= FALSE;
 /*******************************************************************************/
 /*                               Functions                                     */
 /*******************************************************************************/
+//Ray HKY 2017.09.28: To show hot key level bar OSD for RS-232 cmd
+//Input: action: the hot key to be shown such as EN_EXE_SHOW_VOLUME_HOTKEY,...
+void MApp_TV_ShowHotKeyOSD(U16 action)
+{
+  //Ray HKY 2017.09.29: For SVUD6, we need to show volume OSD. If it's first time change volume, init hot key OSD
+  if (MApp_ZUI_GetActiveOSD() != E_OSD_HOTKEY_OPTION)
+  {
+	MApp_ZUI_ACT_StartupOSD(E_OSD_HOTKEY_OPTION);
+	MApp_ZUI_ACT_ExecuteWndAction(action);		//Show OSD
+  }
+  //reset timer if any key
+  MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_RESET_AUTO_CLOSE_TIMER);
+  MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Update level ball
+  MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_VALUE_TEXT);	//Update level
+  u32TVModeWinTimer = msAPI_Timer_GetTime0();
+  MApp_AnalogInputs_ResetTimer(MAIN_WINDOW);
+}
+
+
+
 #if (ENABLE_UPDATE_MULTIPLEX_VIA_NIT)
 static void _MApp_TV_CheckNetworkChange(void);
 static void _MApp_TV_LossSignal_CheckOriginalRF(void);
@@ -3101,6 +3121,9 @@ BOOLEAN MApp_TV_ProcessHotkeyOptionKey(U8 key)
         { KEY_REVEAL, EN_EXE_SHOW_PICTURE_HOTKEY}, //after inc action
         { KEY_LEFT, EN_EXE_DEC_PICTURE_HOTKEY_OPTION},
         { KEY_RIGHT, EN_EXE_INC_PICTURE_HOTKEY_OPTION},
+	//Ray HKY 2017.09.28: Add volume inc/dec hot key event
+        { KEY_LEFT, EN_EXE_DEC_VOLUME_HOTKEY_OPTION},
+        { KEY_RIGHT, EN_EXE_INC_VOLUME_HOTKEY_OPTION},
         #ifdef sAddIRPictureKey
         { KEY_PICTURE, EN_EXE_INC_PICTURE_HOTKEY_OPTION},
         { KEY_PICTURE, EN_EXE_SHOW_PICTURE_HOTKEY}, //after inc action        
@@ -3483,6 +3506,25 @@ void MApp_TV_ProcessUserInput(void)
     {
         case KEY_RIGHT:
         case KEY_LEFT:
+	    //Ray HKY 2017.09.27: volume plus and minus are hot key 1 keys
+	    //If it's first time pressing hot key, init hot key OSD, else perform hot key +/- action
+	    if (MApp_ZUI_GetActiveOSD() != E_OSD_HOTKEY_OPTION)
+	    {
+		MApp_ZUI_ACT_StartupOSD(E_OSD_HOTKEY_OPTION);
+	    }
+	    else
+	    {
+		MApp_TV_ProcessHotkeyOptionKey(u8KeyCode);
+	    }
+	    //Ray HKY 2017.09.27: Now we test to do hot key volume +/- only. In future, this action should be config as hot key 1
+	    MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_SHOW_VOLUME_HOTKEY);		//Update hot key OSD
+	    u32TVModeWinTimer = msAPI_Timer_GetTime0();
+	    MApp_AnalogInputs_ResetTimer(MAIN_WINDOW);
+	    u8KeyCode = KEY_NULL;
+	    break;
+
+	    //Ray HKY 2017.09.27: Comment the original code which is for TV source
+	    /*
             if (IsAnyTVSourceInUse())
             {
               #ifndef PVR_8051
@@ -3491,6 +3533,7 @@ void MApp_TV_ProcessUserInput(void)
             }
             u8KeyCode = KEY_NULL;
             break;
+	    */
 
     #if FOR_BENCH_CODE
         case KEY_GREEN:
@@ -4126,6 +4169,7 @@ void MApp_TV_ProcessUserInput(void)
         case KEY_VOLUME_PLUS:
         case KEY_VOLUME_MINUS:
         {
+
             MApp_ZUI_ACT_StartupOSD(E_OSD_AUDIO_VOLUME);
 #if ENABLE_ATSC_TTS
             enTVState = STATE_TV_WAIT;
@@ -4159,6 +4203,7 @@ void MApp_TV_ProcessUserInput(void)
       #endif
         u8KeyCode = KEY_NULL;
         break;
+
 
         case KEY_COUNTDOWN_EXIT_TT_SUBTITLE:
             if (MApp_ZUI_GetActiveOSD() != E_OSD_MESSAGE_BOX ||

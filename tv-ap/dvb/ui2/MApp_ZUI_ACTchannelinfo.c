@@ -497,6 +497,7 @@ void MApp_ZUI_ACT_AppShowChannelInfo(void)
     MApp_ZUI_API_ShowWindow(HWND_CHINFO_TRANSPARENT_BG, SW_SHOW);
 
     MApp_ZUI_ACT_TransitionEffectBegin(EN_EFFMODE_OPEN, E_ZUI_STATE_RUNNING);
+
 }
 
 
@@ -1795,7 +1796,7 @@ static LPTSTR _MApp_ZUI_ACT_GetInputSourceResolution(SCALER_WIN eWindow)
             __MApp_UlongToString( ( U32 )u16V, str, MApp_GetNoOfDigit( u16V ) );
             str += MApp_ZUI_API_Strlen(str);
             ////Ray OSD 2017.04.19: Replace @ symbol by two space
-            //*str++ = CHAR_AT;
+
             *str++ = CHAR_SPACE;
             *str++ = CHAR_SPACE;
             ////
@@ -1861,7 +1862,7 @@ static LPTSTR _MApp_ZUI_ACT_GetInputSourceResolution(SCALER_WIN eWindow)
             u16F = 23;
         }
         ////Ray OSD 2017.04.19: Replace @ symbol by two space
-        //*str++ = CHAR_AT;
+
         *str++ = CHAR_SPACE;
         *str++ = CHAR_SPACE;
         ////

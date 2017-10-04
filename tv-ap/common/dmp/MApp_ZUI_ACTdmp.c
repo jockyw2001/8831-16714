@@ -948,6 +948,7 @@ static ST_DMP_PLAYBACK_VAR  _stDmpPlayVar;
 
 extern BOOLEAN _MApp_ZUI_API_AllocateVarData(void);
 extern BOOLEAN _MApp_ZUI_API_WindowProcOnIdle(void);
+extern BYTE ucFailOverMode;			//Ray DMP 2017.06.28: Denote if it's failover mode. 1 = in failover mode.
 
 #if (DMP_PHOTO_THUMBNAIL || DMP_MOVIE_THUMBNAIL || DMP_MUSIC_THUMBNAIL)
 static U16 _ThumbNOIdx = 0xFFFF;
@@ -3132,11 +3133,14 @@ void MApp_ZUI_ACT_AppShowDmp(void)
     //To show "Loading..." symbol
     MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
     MApp_ZUI_API_ShowWindow(HWND_DMP_ROOT_TRANSPARENT_BG, SW_SHOW);
+    //Ray DMP 2017.06.28: Disable show "LOADING" message
+    /*
     DMP_DBG(printf("show DMP_MSG_TYPE_LOADING\n"););
     if (DMP_STATE_UI != MApp_DMP_GetDMPStat())
     {
        _MApp_ACTdmp_ShowAlertWin(DMP_MSG_TYPE_LOADING);
     }
+    */
 
     //Do not show transition effect to avoid a small block show up before entering MM main page.
     MApp_ZUI_ACT_TransitionEffectBegin(EN_EFFMODE_PAGE_EXIT, E_ZUI_STATE_RUNNING);
@@ -14398,6 +14402,9 @@ LPTSTR MApp_ZUI_ACT_GetDmpDynamicText(HWND hwnd)
                 return MApp_ZUI_API_GetU16String(stGenSetting.g_SoundSetting.Volume);
             }
 
+//Ray OSD 2017.09.25: DMP_VOLUME_TITLE_TEXT for adding title of "Volume" in front of volume level bar
+        case HWND_DMP_VOLUME_TITLE_TEXT:
+          return MApp_ZUI_API_GetString(en_str_Volume);
 
         case HWND_DMP_PLAYBACK_CONFIRM_TEXT:
         {
@@ -16741,6 +16748,7 @@ BOOLEAN MApp_UiMediaPlayer_Notify(enumMPlayerNotifyType eNotify, void *pInfo)
             #if (ENABLE_MPLAYER_MOVIE)
         case E_MPLAYER_NOTIFY_PLAY_NEXT_FILE:
             DMP_DBG(printf("    - E_MPLAYER_NOTIFY_PLAY_NEXT_FILE\n"));
+            ucFailOverMode = 1;							//Ray DMP 2017.06.28: FailOverMode = 1 to denote it's failover mode
             MApp_DMP_GotoPreSrc();		//Ray DMP 2017.06.27: Go back to previous input source to inspect if any source exist
             //Ray DMP 2017.06.27: Comment following original codes
             /*
@@ -17230,9 +17238,12 @@ void MApp_DMP_NotifyUiState(EN_DMP_UI_STATE enDmpUiState)
                 {
                     // normal mode
                     DMP_DBG(printf("DMP_UI_STATE_LOADING normal mode\n"););
+                    //Ray DMP 2017.06.28: Stop "LOADING" OSD message from displaying
+                    /*
                     MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
                     MApp_ZUI_API_ShowWindow(HWND_DMP_ROOT_TRANSPARENT_BG, SW_SHOW);
                     _MApp_ACTdmp_ShowAlertWin(DMP_MSG_TYPE_LOADING);
+                    */
                     MApp_MPlayer_Play();
                 }
             }

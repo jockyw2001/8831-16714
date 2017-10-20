@@ -65,7 +65,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Bg_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_921 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_924 },
     { CP_NOON, 0 },
 };
 #define _Zui_Audlang_Bg_Title_Text_Focus_DrawStyle _Zui_Audlang_Bg_Title_Text_Normal_DrawStyle
@@ -110,7 +110,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Lang_Text_Normal_DrawStyle[] =
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Audlang_Item0_Lang_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_922 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_925 },
     { CP_NOON, 0 },
 };
 

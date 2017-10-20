@@ -192,6 +192,13 @@ typedef enum _HOTKEY_MODE
     EN_HOTKEY_MODE_PIP,
     EN_HOTKEY_MODE_VOLUME,		//Ray HKY 2017.09.27: Add volume hot key mode
     EN_HOTKEY_MODE_BRIGHTNESS,		//Ray HKY 2017.09.27: Add brightness hot key mode
+    EN_HOTKEY_MODE_INPUT,		//Ray HKY 2017.10.17: Input source hot key mode
+    EN_HOTKEY_MODE_BACKLIGHT,		//Ray HKY 2017.10.17: backlight hot key mode
+    EN_HOTKEY_MODE_CONTRAST,		//Ray HKY 2017.10.17: contrast hot key mode
+    EN_HOTKEY_MODE_SATURATION,		//Ray HKY 2017.10.17: saturation hot key mode
+    EN_HOTKEY_MODE_HUE,			//Ray HKY 2017.10.17: hue hot key mode
+    EN_HOTKEY_MODE_SHARPNESS,		//Ray HKY 2017.10.17: sharpness hot key mode
+    EN_HOTKEY_MODE_ASPECT_RATIO,	//Ray HKY 2017.10.17: aspect ratio hot key mode
 } HOTKEY_MODE;
 
 static HOTKEY_MODE _eHotkeyMode;
@@ -203,14 +210,39 @@ extern BOOLEAN _MApp_ZUI_API_AllocateVarData(void);
 //Ray HKY 2017.09.28: External function for hot key function control
 extern BYTE g_ucSerialAcknowledge;
 extern void dv_Serial_Volume_Para1(BYTE *ucCmdPara);
+extern void dv_Serial_Contrast_Para1(BYTE *uartCmd);
+extern void dv_Serial_Brightness_Para0(BYTE uartCmd);
+extern void dv_Serial_Source_Para0(BYTE uartCmd);
+extern void dv_Serial_BackLightControl_Para0(BYTE uartCmd);
+extern void dv_Serial_ColorSat_Para0(BYTE uartCmd);
+extern void dv_Serial_Hue_Para0(BYTE uartCmd);
+extern void dv_Serial_Sharpness_Para0(BYTE uartCmd);
+extern void dv_Serial_ScaleMode_Para0(BYTE uartCmd);
 
+extern U16 MApp_ZUI_GetCurrentInputSourceStringID(E_UI_INPUT_SOURCE src);
+extern U16 _MApp_ZUI_ACT_GetAspectRatioStringID(void);
 
 #if ENABLE_DTV
 extern void Mapp_DTV_ProcessMTS(void);
 #endif
 
 
+HOTKEY_TYPE eHotKeyType = HotKeyTypeNone;  //Ray HKY 2017.10.20: variable storing currnet hot key type in either 1 (-ve/+ve) or 2 (up/down)
 
+
+//Ray HKY 2017.10.20: Function to set hot key type in either 1 (-ve/+ve) or 2 (up/down) or none
+//Input: type of hotkey: HotKeyTypeNone, HotKeyType1 or HotKeyType2
+void MApp_ZUI_ACT_SetHotKeyType(HOTKEY_TYPE type)
+{
+  eHotKeyType = type;
+}
+
+//Ray HKY 2017.10.20: Function to get hot key type in either 1 (-ve/+ve) or 2 (up/down) or none
+//Output: type of hotkey: HotKeyTypeNone, HotKeyType1 or HotKeyType2
+HOTKEY_TYPE MApp_ZUI_ACT_GetHotKeyType(void)
+{
+  return eHotKeyType;
+}
 
 
 void MApp_ZUI_ACT_AppShowHotkeyOption(void)
@@ -277,6 +309,7 @@ BOOLEAN MApp_ZUI_ACT_HandleHotkeyOptionKey(VIRTUAL_KEY_CODE key)
 void MApp_ZUI_ACT_TerminateHotkeyOption(void)
 {
     ZUI_MSG(printf("[]term:hotkey\n");)
+    MApp_ZUI_ACT_SetHotKeyType(HotKeyTypeNone);		//Ray HKY 2017.10.20: Denote it's now no more hot key
     //enHotkeyOptionState = _enTargetHotkeyOptionState;
 
 }
@@ -297,9 +330,9 @@ void _MApp_ZUI_ACT_DecIncSleepTimer_Cycle(BOOLEAN bInc)
     MApp_Sleep_SetCurrentSleepTime(enSleepTimeState);
 }
 
-//Ray HKY 2017.09.28: Inc/Dec volume
+//Ray HKY 2017.10.17: increase/decrease hot key value calling RS-232 Para1 routine based on hot key mode _eHotkeyMode
 //Input: bInc =1 for increase, = 0 or decrease
-void _MApp_ZUI_ACT_DecIncVolume(BOOLEAN bInc)
+void _MApp_ZUI_ACT_DecIncDVHotKeyPara1(BOOLEAN bInc)
 {
   BYTE uartCmd[]={'A','+'};
   BYTE ackBackup;
@@ -310,8 +343,150 @@ void _MApp_ZUI_ACT_DecIncVolume(BOOLEAN bInc)
 
   ackBackup = g_ucSerialAcknowledge;		//backup ack uart cmd status
   g_ucSerialAcknowledge = FALSE;		//No tx of cmd to uart
-  dv_Serial_Volume_Para1(uartCmd);
+  switch(_eHotkeyMode){
+    case EN_HOTKEY_MODE_VOLUME:
+      dv_Serial_Volume_Para1(uartCmd);
+      break;
+    case EN_HOTKEY_MODE_CONTRAST:
+      dv_Serial_Contrast_Para1(uartCmd);
+      break;
+    default:
+      break;
+  }
+
   g_ucSerialAcknowledge = ackBackup;
+
+}
+
+
+//Ray HKY 2017.10.17: increase/decrease hot key value calling RS-232 Para0 routine based on hot key mode _eHotkeyMode
+//Input: bInc =1 for increase, = 0 or decrease
+void _MApp_ZUI_ACT_DecIncDVHotKeyPara0(BOOLEAN bInc)
+{
+  BYTE uartCmd='+';
+  BYTE ackBackup;
+
+  if(bInc==0){
+      uartCmd='-';
+  }
+
+  ackBackup = g_ucSerialAcknowledge;		//backup ack uart cmd status
+  g_ucSerialAcknowledge = FALSE;		//No tx of cmd to uart
+
+  switch(_eHotkeyMode){
+    case EN_HOTKEY_MODE_BRIGHTNESS:
+      dv_Serial_Brightness_Para0(uartCmd);
+      break;
+    case EN_HOTKEY_MODE_INPUT:
+      dv_Serial_Source_Para0(uartCmd);
+      break;
+    case EN_HOTKEY_MODE_BACKLIGHT:
+      dv_Serial_BackLightControl_Para0(uartCmd);
+      break;
+    case EN_HOTKEY_MODE_SATURATION:
+      dv_Serial_ColorSat_Para0(uartCmd);
+      break;
+    case EN_HOTKEY_MODE_HUE:
+      dv_Serial_Hue_Para0(uartCmd);
+      break;
+    case EN_HOTKEY_MODE_SHARPNESS:
+      dv_Serial_Sharpness_Para0(uartCmd);
+      break;
+    case EN_HOTKEY_MODE_ASPECT_RATIO:
+      dv_Serial_ScaleMode_Para0(uartCmd);
+      break;
+    default:
+      break;
+
+  }
+
+  g_ucSerialAcknowledge = ackBackup;		//Restore ack uart cmd status
+
+}
+
+
+//Ray HKY 2017.10.17: increase/decrease aspect ratio hot key value calling RS-232 routine
+//Input: bInc =1 for increase, = 0 or decrease
+void _MApp_ZUI_ACT_DecIncDVApectRatioHotKey(BOOLEAN bInc)
+{
+  EN_MENU_AspectRatio apsectRatioCmd[]={EN_AspectRatio_JustScan,EN_AspectRatio_4X3,EN_AspectRatio_16X9,EN_AspectRatio_Point_to_Point};		//This is aspect ratio sequence in OSD
+  BYTE ucARatioIndex;
+
+  //Get current select aspect ratio index
+  for(ucARatioIndex=0;ucARatioIndex<4;ucARatioIndex++){
+      if(apsectRatioCmd[ucARatioIndex]==ST_VIDEO.eAspectRatio){
+	  break;
+      }
+  }
+
+  //Go to previous/next aspect ratio item
+  ST_VIDEO.eAspectRatio = apsectRatioCmd[MApp_ZUI_ACT_DecIncValue_Cycle(bInc,(U16)ucARatioIndex, 0, 3, 1)];
+  MApp_Scaler_Setting_SetVDScale( ST_VIDEO.eAspectRatio , MAIN_WINDOW );		//adjust new aspect ratio
+
+}
+
+
+//Ray HKY 2017.10.17: Set hot key mode, show OSD Hot key title, level ball and value generic routine
+//Input: hotkey: HotKey_Input, HotKey_Backlight,......
+void _MApp_ZUI_ACT_ShowOSDHotKeyTitleLevel(HOT_KEY hotkey)
+{
+  BYTE showTitle = TRUE;
+  BYTE showText = FALSE;		//For input and aspect ratio, we show text
+
+      switch(hotkey){
+	case HotKey_Input:
+	  _eHotkeyMode = EN_HOTKEY_MODE_INPUT;
+	  showTitle = FALSE;			//Input source hot key doesn't show level but show text
+	  showText = TRUE;
+	   break;
+	case HotKey_Backlight:
+	  _eHotkeyMode = EN_HOTKEY_MODE_BACKLIGHT;
+	   break;
+	case HotKey_Contrast:
+	  _eHotkeyMode = EN_HOTKEY_MODE_CONTRAST;
+	   break;
+	case HotKey_Brightness:
+	  _eHotkeyMode = EN_HOTKEY_MODE_BRIGHTNESS;
+	   break;
+	case HotKey_Saturation:
+	  _eHotkeyMode = EN_HOTKEY_MODE_SATURATION;
+	   break;
+	case HotKey_Sharpness:
+	  _eHotkeyMode = EN_HOTKEY_MODE_SHARPNESS;
+	   break;
+	case HotKey_Hue:
+	  _eHotkeyMode = EN_HOTKEY_MODE_HUE;
+	   break;
+	case HotKey_AspectRatio:
+	  _eHotkeyMode = EN_HOTKEY_MODE_ASPECT_RATIO;
+	  showTitle = FALSE;			//aspect ratio hot key doesn't show level but show text
+	  showText = TRUE;
+	   break;
+	case HotKey_Volume:
+	  _eHotkeyMode = EN_HOTKEY_MODE_VOLUME;
+	   break;
+	case HotKey_NoFunction:
+	default:
+	  _eHotkeyMode = EN_HOTKEY_MODE_INVALID;
+	  showTitle = FALSE;			//doesn't show OSD
+	   break;
+      }
+
+      //Display hot key level only if it has
+      if(showTitle==TRUE){
+	MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
+	MApp_ZUI_API_ShowWindow(HWND_HOTKEY_LEVEL_PANE, SW_SHOW);
+	MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_TITLE_TEXT);	//Display title
+	MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Display level ball
+	MApp_ZUI_API_SetFocus(HWND_HOTKEY_LEVEL_VALUE_TEXT);		//Display level value
+      }
+
+      //Display hot key text only if it has
+      if(showText==TRUE){
+	MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
+	MApp_ZUI_API_ShowWindow(HWND_HOTKEY_TEXT_PANE, SW_SHOW);
+	MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_TEXT_PANE_TEXT);	//Display text
+      }
 
 }
 
@@ -515,50 +690,61 @@ BOOLEAN MApp_ZUI_ACT_ExecuteHotkeyOptionAction(U16 act)
             }
             return TRUE;
 
-        ////Ray HKY 2017.09.27: Volume hot key exe action to update hot key OSD
-        case EN_EXE_SHOW_VOLUME_HOTKEY:
-            if (_eHotkeyMode != EN_HOTKEY_MODE_VOLUME)
-            {
-                _eHotkeyMode = EN_HOTKEY_MODE_VOLUME;
-                MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
-                MApp_ZUI_API_ShowWindow(HWND_HOTKEY_LEVEL_PANE, SW_SHOW);
-                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_TITLE_TEXT);	//Display title
-                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Display volume level ball
-                MApp_ZUI_API_SetFocus(HWND_HOTKEY_LEVEL_VALUE_TEXT);		//Display volume level value
-            }
+        ////Ray HKY 2017.10.18:Hot key 1 exe action to update hot key 1 OSD
+        case EN_EXE_SHOW_DV_HOTKEY_1:
+	    _MApp_ZUI_ACT_ShowOSDHotKeyTitleLevel(GET_HOTKEY_1());
             return TRUE;
         ////
 
-        ////Ray HKY 2017.09.27: increase/decrease volume hot key
-        case EN_EXE_DEC_VOLUME_HOTKEY_OPTION:
-        case EN_EXE_INC_VOLUME_HOTKEY_OPTION:
-            {
-                if (_eHotkeyMode != EN_HOTKEY_MODE_VOLUME) //do nothing if not volume mode...
-                    return TRUE;
-                //Inc/Dec volume
-                _MApp_ZUI_ACT_DecIncVolume(
-                    act==EN_EXE_INC_VOLUME_HOTKEY_OPTION);
-
-                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Update volume level ball
-                MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_VALUE_TEXT);	//Update volume level
-
-            }
-            return TRUE;
-        ////
-
-	////Ray HKY 2017.09.27: brightness hot key exe action to update hot key OSD
-	case EN_EXE_SHOW_BRIGHTNESS_HOTKEY:
-	    if (_eHotkeyMode != EN_HOTKEY_MODE_BRIGHTNESS)
-	    {
-		_eHotkeyMode = EN_HOTKEY_MODE_BRIGHTNESS;
-		MApp_ZUI_API_ShowWindow(HWND_MAINFRAME, SW_HIDE);
-		MApp_ZUI_API_ShowWindow(HWND_HOTKEY_LEVEL_PANE, SW_SHOW);
-		MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_TITLE_TEXT);	//Display title
-		MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);		//Display volume level ball
-		MApp_ZUI_API_SetFocus(HWND_HOTKEY_LEVEL_VALUE_TEXT);		//Display volume level value
-	    }
+	////Ray HKY 2017.10.18:Hot key 2 exe action to update hot key 2 OSD
+	case EN_EXE_SHOW_DV_HOTKEY_2:
+	    _MApp_ZUI_ACT_ShowOSDHotKeyTitleLevel(GET_HOTKEY_2());
 	    return TRUE;
 	////
+
+
+        ////Ray HKY 2017.10.17: change to increase/decrease digital view hot key
+        case EN_EXE_DEC_DV_HOTKEY_OPTION:
+        case EN_EXE_INC_DV_HOTKEY_OPTION:
+            {
+                switch(_eHotkeyMode){
+                  //Ray HKY 2017.10.18: Volume and contrast calls RS-232 Para1 routine to change value.  So we group them together
+                  case EN_HOTKEY_MODE_VOLUME:
+                  case EN_HOTKEY_MODE_CONTRAST:
+                    _MApp_ZUI_ACT_DecIncDVHotKeyPara1(act==EN_EXE_INC_DV_HOTKEY_OPTION);	//Inc/Dec value
+                    MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);			//Update level ball
+                    MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_VALUE_TEXT);		//Update level
+                    break;
+                  //Ray HKY 2017.10.18: For other hot keys, they calls RS-232 Para0 routine to change value
+                  case EN_HOTKEY_MODE_BRIGHTNESS:
+                  case EN_HOTKEY_MODE_BACKLIGHT:
+                  case EN_HOTKEY_MODE_SATURATION:
+                  case EN_HOTKEY_MODE_HUE:
+                  case EN_HOTKEY_MODE_SHARPNESS:
+                    _MApp_ZUI_ACT_DecIncDVHotKeyPara0(act==EN_EXE_INC_DV_HOTKEY_OPTION);	//Inc/Dec value
+                    MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_BAR);			//Update level ball
+                    MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_LEVEL_VALUE_TEXT);		//Update level
+                    break;
+                  //Ray HKY 2017.10.18: For Input and aspect ratio key, there is OSD update of text
+                  case EN_HOTKEY_MODE_INPUT:
+                    _MApp_ZUI_ACT_DecIncDVHotKeyPara0(act==EN_EXE_INC_DV_HOTKEY_OPTION);	//Inc/Dec value
+                    MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_TEXT_PANE_TEXT);		//Update text
+                    break;
+                  case EN_HOTKEY_MODE_ASPECT_RATIO:
+                    _MApp_ZUI_ACT_DecIncDVApectRatioHotKey(act==EN_EXE_INC_DV_HOTKEY_OPTION);
+                    MApp_ZUI_API_InvalidateWindow(HWND_HOTKEY_TEXT_PANE_TEXT);		//Update text
+                    break;
+                  default:
+                    return TRUE;		//Do nothing if it's not DV hot key
+                    break;
+                }
+
+
+            }
+            return TRUE;
+        ////
+
+
 
         case EN_EXE_DEC_ATV_MTS_HOTKEY_OPTION:
         case EN_EXE_INC_ATV_MTS_HOTKEY_OPTION:
@@ -979,8 +1165,27 @@ static LPTSTR _MApp_ZUI_ACT_GeHotkeyTitleDynamicText(void)
     case EN_HOTKEY_MODE_VOLUME:
       return MApp_ZUI_API_GetString(en_str_Volume);
       break;
-    case  EN_HOTKEY_MODE_BRIGHTNESS:
+    case EN_HOTKEY_MODE_BRIGHTNESS:
       return MApp_ZUI_API_GetString(en_str_Brightness);
+      break;
+    //Ray HKY 2017.10.17: Add hot key modes string except input, since input source doesn't shown any OSD hot key menu
+    case EN_HOTKEY_MODE_BACKLIGHT:
+      return MApp_ZUI_API_GetString(en_str_Backlight);
+      break;
+    case EN_HOTKEY_MODE_CONTRAST:
+      return MApp_ZUI_API_GetString(en_str_Contrast);
+      break;
+    case EN_HOTKEY_MODE_SATURATION:
+      return MApp_ZUI_API_GetString(en_str_Color);
+      break;
+    case EN_HOTKEY_MODE_HUE:
+      return MApp_ZUI_API_GetString(en_str_Tint);
+      break;
+    case EN_HOTKEY_MODE_SHARPNESS:
+      return MApp_ZUI_API_GetString(en_str_Sharpness);
+      break;
+    case EN_HOTKEY_MODE_ASPECT_RATIO:
+      return MApp_ZUI_API_GetString(en_str_Aspect_Ratio);
       break;
     default:
       return NULL;
@@ -998,8 +1203,23 @@ S16 MApp_ZUI_ACT_GetHotkeyOptionDynamicValue(void)
     case EN_HOTKEY_MODE_VOLUME:
       value = stGenSetting.g_SoundSetting.Volume ;
       break;
-    case  EN_HOTKEY_MODE_BRIGHTNESS:
+    case EN_HOTKEY_MODE_BRIGHTNESS:
       value = ST_PICTURE.u8Brightness ;
+      break;
+    case EN_HOTKEY_MODE_BACKLIGHT:
+      value = stGenSetting.u8Backlight;
+      break;
+    case EN_HOTKEY_MODE_CONTRAST:
+      value = ST_PICTURE.u8Contrast;
+      break;
+    case EN_HOTKEY_MODE_SATURATION:
+      value = ST_PICTURE.u8Saturation;
+      break;
+    case EN_HOTKEY_MODE_HUE:
+      value = ST_PICTURE.u8Hue;
+      break;
+    case EN_HOTKEY_MODE_SHARPNESS:
+      value = ST_PICTURE.u8Sharpness;
       break;
     default:
       break;
@@ -1015,6 +1235,21 @@ static LPTSTR _MApp_ZUI_ACT_GeHotkeyLevelValueDynamicText(void)
     return MApp_ZUI_API_GetU16String(MApp_ZUI_ACT_GetHotkeyOptionDynamicValue());
 }
 
+
+//Ray HKY 2017.10.20: Get text for input source/aspect ratio hot key
+static LPTSTR _MApp_ZUI_ACT_GetHotKeyTextDynamicText(void)
+{
+  //Check the current hot key mode and Get corresponding text
+  if(_eHotkeyMode==EN_HOTKEY_MODE_INPUT){
+      return MApp_ZUI_API_GetString(MApp_ZUI_GetCurrentInputSourceStringID(UI_INPUT_SOURCE_TYPE));
+  }
+  if(_eHotkeyMode==EN_HOTKEY_MODE_ASPECT_RATIO){
+      return MApp_ZUI_API_GetString(_MApp_ZUI_ACT_GetAspectRatioStringID());
+
+  }
+
+  return 0; //for empty string
+}
 
 
 static LPTSTR _MApp_ZUI_ACT_GeHotkeyFreezeDynamicText(void)
@@ -1277,6 +1512,11 @@ LPTSTR MApp_ZUI_ACT_GetHotkeyOptionDynamicText(HWND hwnd)
         //Ray HKY 2017.09.27: Show hot key level value
         case HWND_HOTKEY_LEVEL_VALUE_TEXT:
           return _MApp_ZUI_ACT_GeHotkeyLevelValueDynamicText();
+
+	//Ray HKY 2017.10.20: Show hot key text value
+	case HWND_HOTKEY_TEXT_PANE_TEXT:
+	  return _MApp_ZUI_ACT_GetHotKeyTextDynamicText();
+
 
         case HWND_HOTKEY_MTS_TEXT:
 			#if ENABLE_ATSC

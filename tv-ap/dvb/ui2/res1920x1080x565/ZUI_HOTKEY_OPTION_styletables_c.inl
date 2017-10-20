@@ -53,7 +53,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Picture_Mode_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Picture_Mode_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_964 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_967 },
     { CP_NOON, 0 },
 };
 #define _Zui_Hotkey_Picture_Mode_Text_Focus_DrawStyle _Zui_Hotkey_Picture_Mode_Text_Normal_DrawStyle
@@ -87,7 +87,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Zoom_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Zoom_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_965 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_968 },
     { CP_NOON, 0 },
 };
 #define _Zui_Hotkey_Zoom_Text_Focus_DrawStyle _Zui_Hotkey_Zoom_Text_Normal_DrawStyle
@@ -106,7 +106,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Sleep_Timer_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Sleep_Timer_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_966 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_969 },
     { CP_NOON, 0 },
 };
 #define _Zui_Hotkey_Sleep_Timer_Text_Focus_DrawStyle _Zui_Hotkey_Sleep_Timer_Text_Normal_DrawStyle
@@ -125,7 +125,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Mts_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Mts_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_967 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_970 },
     { CP_NOON, 0 },
 };
 #define _Zui_Hotkey_Mts_Text_Focus_DrawStyle _Zui_Hotkey_Mts_Text_Normal_DrawStyle
@@ -190,7 +190,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Level_Bar_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Level_Value_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_805 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_808 },
     { CP_NOON, 0 },
 };
 
@@ -198,6 +198,22 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Level_Value_Text_Normal_DrawStyle[] =
 // HOTKEY_LEVEL_TITLE_TEXT styles..
 
 #define _Zui_Hotkey_Level_Title_Text_Normal_DrawStyle _Zui_Hotkey_Level_Value_Text_Normal_DrawStyle
+
+/////////////////////////////////////////////////////
+// HOTKEY_TEXT_PANE styles..
+
+#define _Zui_Hotkey_Text_Pane_Normal_DrawStyle _Zui_Hotkey_Picture_Mode_Normal_DrawStyle
+
+/////////////////////////////////////////////////////
+// HOTKEY_TEXT_PANE_TEXT styles..
+
+static DRAWSTYLE _MP_TBLSEG _Zui_Hotkey_Text_Pane_Text_Normal_DrawStyle[] =
+{
+    { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_12 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_967 },
+    { CP_NOON, 0 },
+};
+#define _Zui_Hotkey_Text_Pane_Text_Focus_DrawStyle _Zui_Hotkey_Picture_Mode_Text_Normal_DrawStyle
 
 //////////////////////////////////////////////////////
 // Window Draw Style List  (normal, focused, disable)
@@ -272,5 +288,11 @@ WINDOWDRAWSTYLEDATA _MP_TBLSEG _GUI_WindowsDrawStyleList_Zui_Hotkey_Option[] =
 
     // 22 = HWND_HOTKEY_LEVEL_TITLE_TEXT
     { _Zui_Hotkey_Level_Title_Text_Normal_DrawStyle, NULL, NULL     },
+
+    // 23 = HWND_HOTKEY_TEXT_PANE
+    { _Zui_Hotkey_Text_Pane_Normal_DrawStyle, NULL, NULL     },
+
+    // 24 = HWND_HOTKEY_TEXT_PANE_TEXT
+    { _Zui_Hotkey_Text_Pane_Text_Normal_DrawStyle, _Zui_Hotkey_Text_Pane_Text_Focus_DrawStyle, NULL     },
 
 };

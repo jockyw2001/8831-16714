@@ -1645,6 +1645,7 @@ void MApp_ZUI_ACT_MainPageMenuKey(void)
        case HWND_MENU_OPTION_FAILOVER:			//Ray DMP 2017.04.12
        case HWND_MENU_OPTION_DEFAULT_POWER:		//Ray DPW 2017.05.29
        case HWND_MENU_OPTION_BL_SETUP:			//Ray BKL 2017.04.26
+       case HWND_MENU_OPTION_HOTKEY:			//Ray HKY 2017.10.06
 	    MApp_ZUI_ACT_ShowMainMenuBackground(HWND_MENU_BOTTOM_BALL_FOCUS_OPTION);
 	    MApp_ZUI_API_SetFocus(HWND_MENU_OPTION_TITLE);
 	    break;
@@ -2074,6 +2075,12 @@ void MApp_ZUI_ACT_MainPageMenuKey(void)
             MApp_ZUI_API_ShowWindow(HWND_MENU_OPTION_PAGE, SW_SHOW);
             MApp_ZUI_ACT_ShowMainMenuBackgroundNoFocusIcon();
             MApp_ZUI_API_SetFocus(HWND_MENU_OPTION_BL_SETUP);
+        }
+        else if(g_mainpage_common == EN_COMMON_HOTKEY_PAGE)					//Ray HKY 2017.10.06: After exit hot key page, go back to option menu
+        {
+            MApp_ZUI_API_ShowWindow(HWND_MENU_OPTION_PAGE, SW_SHOW);
+            MApp_ZUI_ACT_ShowMainMenuBackgroundNoFocusIcon();
+            MApp_ZUI_API_SetFocus(HWND_MENU_OPTION_HOTKEY);
         }
         else if(g_mainpage_common == EN_COMMON_SOUND_SWITCH_PAGE)
         {
@@ -5916,6 +5923,16 @@ BOOLEAN MApp_ZUI_ACT_ExecuteMainMenuAction(U16 act)
             MApp_ZUI_API_SetFocus(HWND_MENU_COMMON_ADJ_ITEM2);			//Focus to item2 which is first menu subitem.  item1 is title
             return TRUE;
 
+        //Ray HKY 2017.10.06: Go to display hot key page
+        case EN_EXE_GOTO_HOTKEY_PAGE:
+            g_mainpage_common = EN_COMMON_HOTKEY_PAGE;
+
+            MApp_ZUI_API_ShowWindow(HWND_MENU_OPTION_PAGE, SW_HIDE);
+            MApp_ZUI_API_ShowWindow(HWND_MENU_MASK_BACKGROUND, SW_HIDE);
+            MApp_ZUI_API_ShowWindow(HWND_MENU_TRANSPARENT_BG, SW_SHOW);
+            MApp_ZUI_API_ShowWindow(HWND_MENU_COMMON_ADJ_PAGE, SW_SHOW);
+            MApp_ZUI_API_SetFocus(HWND_MENU_COMMON_ADJ_ITEM2);			//Focus to item2 which is first menu subitem.  item1 is title
+            return TRUE;
 #if 0
         case EN_EXE_RETURN_PICTURE_COLOR_PAGE:
         {

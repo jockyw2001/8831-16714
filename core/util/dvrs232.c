@@ -155,7 +155,7 @@ extern void MApp_UiMenu_MuteWin_Hide(void);		//Ray VOL 2017.06.19
 extern void MApp_DMP_Exit(void);							//Ray DMP 2017.06.22
 extern void MApp_PCMode_SetFirstNoSignalSource(E_UI_INPUT_SOURCE eUiInputSource);	//Ray DMP 2017.06.22
 extern void MApp_InputSource_RestoreSource(void);					//Ray DMP 2017.06.22
-extern void MApp_TV_ShowHotKeyOSD(U16 action);						//Ray HKY 2017.09.29
+extern void MApp_TV_ShowHotKeyOSD(HOT_KEY hotkey);						//Ray HKY 2017.09.29
 
 
 
@@ -1520,7 +1520,7 @@ void dv_Serial_Volume_Para2(BYTE *ucCmdPara)
       }
 
 #if(_CUSTOMER_SVDU6==_ON)
-          MApp_TV_ShowHotKeyOSD(EN_EXE_SHOW_VOLUME_HOTKEY);		//Ray HKY 2017.09.29: For SVUD6, we need to show volume OSD.
+          MApp_TV_ShowHotKeyOSD(HotKey_Volume);		//Ray HKY 2017.09.29: For SVUD6, we need to show volume OSD.
 #endif
 
       bIsAudioMuted = msAPI_AUD_IsAudioMutedByUser();		//Get mute status
@@ -1729,7 +1729,7 @@ void dv_Serial_Brightness_Para1(BYTE *ucCmdPara)
       MApp_XC_PQ_Set_Brightness(MAIN_WINDOW, TRUE);			//Apply new brightness value
       dv_SerialTransmitHex(bValue);		//Send brightness value back to UART
 #if(_CUSTOMER_SVDU6==_ON)
-      MApp_TV_ShowHotKeyOSD(EN_EXE_SHOW_BRIGHTNESS_HOTKEY);		//Ray HKY 2017.09.29: For SVUD6, we need to show level on OSD.
+      MApp_TV_ShowHotKeyOSD(HotKey_Brightness);		//Ray HKY 2017.09.29: For SVUD6, we need to show level on OSD.
 #endif
 
   }

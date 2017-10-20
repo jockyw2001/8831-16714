@@ -169,6 +169,7 @@ typedef enum
     EN_EXE_GOTO_SOUND_EQ_PAGE,                  ///< go to sound EQ page
     EN_EXE_GOTO_SOUND_SWITCH_PAGE,              ///< go to sound switch page
     EN_EXE_GOTO_BKL_SETUP_PAGE,			//Ray BKL 2017.04.25
+    EN_EXE_GOTO_HOTKEY_PAGE,			//Ray HKY 2017.10.06
 #if 1//def (ATSC_CC == ATV_CC)
     EN_EXE_GOTO_OPTION_CC_OPTION_PAGE,
 #endif
@@ -380,8 +381,8 @@ typedef enum
     EN_EXE_INC_SCALE_HOTKEY_OPTION,             ///< increase option: scale hotkey
     EN_EXE_DEC_ATV_MTS_HOTKEY_OPTION,           ///< decrease option: ATV MTS hotkey
     EN_EXE_INC_ATV_MTS_HOTKEY_OPTION,           ///< increase option: ATV MTS hotkey
-    EN_EXE_DEC_VOLUME_HOTKEY_OPTION,             ///Ray HKY 2017.09.28: decrease option: volume hotkey
-    EN_EXE_INC_VOLUME_HOTKEY_OPTION,             ///Ray HKY 2017.09.28: increase option: volume hotkey
+    EN_EXE_DEC_DV_HOTKEY_OPTION,             	///Ray HKY 2017.10.17: decrease option: Digital View hot key
+    EN_EXE_INC_DV_HOTKEY_OPTION,             	///Ray HKY 2017.09.28: increase option: Digital View hot key
     //for atv manual tuning
     EN_EXE_DEC_STORAGE_TO_OPTION,               ///< decrease storage to vaule
     EN_EXE_INC_STORAGE_TO_OPTION,               ///< increase storage to vaule
@@ -470,9 +471,8 @@ typedef enum
     EN_EXE_SHOW_FREEZE_HOTKEY,                  ///< show freeze hotkey
     EN_EXE_INC_CC_HOTKEY_OPTION,                ///< adjust ccd
     EN_EXE_SHOW_CC_HOTKEY,                      ///< show cc hotkey
-    EN_EXE_SHOW_VOLUME_HOTKEY,			///Ray HKY 2017.09.27: volume increase/decrease hot key
-    EN_EXE_SHOW_BRIGHTNESS_HOTKEY,		///Ray HKY 2017.09.29: brightness hot key
-
+    EN_EXE_SHOW_DV_HOTKEY_1,			///Ray HKY 2017.10.18: Digital View increase/decrease hot key 1
+    EN_EXE_SHOW_DV_HOTKEY_2,			///Ray HKY 2017.10.18: Digital View up/down hot key 2
 
     //channel info (channel banner):
     EN_EXE_HIDE_CH_INFO,                        ///< hide CH INFO

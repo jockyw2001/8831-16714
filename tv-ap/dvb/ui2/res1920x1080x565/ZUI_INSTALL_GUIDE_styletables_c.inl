@@ -103,7 +103,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Background_Bar1_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_953 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_956 },
     { CP_NOON, 0 },
 };
 #define _Zui_Install_Main_Title_Focus_DrawStyle _Zui_Install_Main_Title_Normal_DrawStyle
@@ -118,13 +118,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Title_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Page_Grid1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_436 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_439 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Page_Grid1_Focus_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_3 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_464 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_467 },
     { CP_NOON, 0 },
 };
 
@@ -273,17 +273,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Page_Grid_Right_Arrow_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Text_1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_954 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_957 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Text_1_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_955 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_958 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Text_1_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_956 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_959 },
     { CP_NOON, 0 },
 };
 
@@ -292,17 +292,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Text_1_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Text_2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_957 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_960 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Text_2_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_958 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_961 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Text_2_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_959 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_962 },
     { CP_NOON, 0 },
 };
 

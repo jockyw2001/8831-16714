@@ -53,12 +53,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Screen_Saver_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Screen_Saver_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_700 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_703 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Screen_Saver_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_701 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_704 },
     { CP_NOON, 0 },
 };
 
@@ -85,7 +85,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Sub_Screen_Saver_Bg_L_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Sub_Screen_Saver_Text_L_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_702 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_705 },
     { CP_NOON, 0 },
 };
 #define _Zui_Sub_Screen_Saver_Text_L_Focus_DrawStyle _Zui_Sub_Screen_Saver_Text_L_Normal_DrawStyle

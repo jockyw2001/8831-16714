@@ -4829,7 +4829,8 @@ void MApp_DataBase_RestoreDefaultSystem(U16 u16KeepSetting) //MingYuan Default
     SET_IMG_ORIENTATION(DEFAULT_IMG_ORIENT);			//Ray ORI 2017.05.05: Default image orientation is normal
     SET_DEFAULT_POWER(DEFAULT_DEFAULT_POWER);			//Ray DPW 2017.05.29: Default default power is on
     MApp_DataBase_RestoreDefault_FactoryLightSensorSetting();	//Ray BKL 2017.05.18: To reset default backlight possible min and max level.
-
+    SET_HOTKEY_1(DEFAULT_HOTKEY);				//Ray HKY 2017.10.06: Default hot key 1 is no function
+    SET_HOTKEY_2(DEFAULT_HOTKEY);				//Ray HKY 2017.10.06: Default hot key 2 is no function
 
 
 

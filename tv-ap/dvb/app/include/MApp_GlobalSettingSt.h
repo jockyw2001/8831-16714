@@ -145,6 +145,8 @@
 #endif
 
 
+
+
 /********************************************************************************/
 /*                                 Macro                                        */
 /********************************************************************************/
@@ -1327,6 +1329,8 @@ typedef struct
     U8 fDefaultPower:1;		   //Ray DPW 2017.05.29: Default power. 0 = OFF, 1 = ON
     E_UI_INPUT_SOURCE	UserPref_DMP_LastUiSrc;		//Ray DMP 2017.04.07: To save last UI source before entering into DMP mode
     MirrorMode_t  g_ImageOrientation;	//Ray ORI 2017.05.05: image orientation:  MIRROR_NORMAL,MIRROR_H_ONLY,MIRROR_V_ONLY,MIRROR_HV,
+    HOT_KEY g_HotKey1;			//Ray HKY 2017.10.06: Store hot key 1 (+/- keys)
+    HOT_KEY g_HotKey2;			//Ray HKY 2017.10.06: Store hot key 2 (up/down keys)
     //U8 fRayTest;			//Ray DBG 2017.06.16: Test if reset all default if add a new variable
 
  #if ENABLE_EDID_SWITCH
@@ -2404,6 +2408,12 @@ INTERFACE E_DATA_INPUT_SOURCE g_enDataInputSourceType[2];
 //Ray ORI 2017.05.05: Define Macro for image orientation
 #define GET_IMG_ORIENTATION()	(stGenSetting.g_SysSetting.g_ImageOrientation)
 #define SET_IMG_ORIENTATION(x)	(stGenSetting.g_SysSetting.g_ImageOrientation=(x))
+
+//Ray HKY 2017.10.06: Define Macro for hot key
+#define GET_HOTKEY_1()		(stGenSetting.g_SysSetting.g_HotKey1)
+#define SET_HOTKEY_1(x)		(stGenSetting.g_SysSetting.g_HotKey1=(x))
+#define GET_HOTKEY_2()		(stGenSetting.g_SysSetting.g_HotKey2)
+#define SET_HOTKEY_2(x)		(stGenSetting.g_SysSetting.g_HotKey2=(x))
 
 //------------------------------------------------------------------
 #if(ENABLE_3D_PROCESS)

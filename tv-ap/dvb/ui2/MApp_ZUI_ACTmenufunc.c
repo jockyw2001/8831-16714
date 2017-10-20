@@ -1445,6 +1445,15 @@ BOOLEAN MApp_ZUI_ACT_ExecuteMenuItemAction(U16 act)
         	}
 	    }
             ////
+            ////Ray HKY 2017.10.06: Adjust hot key 2
+            else if(g_mainpage_common == EN_COMMON_HOTKEY_PAGE)
+	    {
+        	//Change hot key 2 to previous/next item
+                SET_HOTKEY_2((HOT_KEY)MApp_ZUI_ACT_DecIncValue_Cycle(
+                    act==EN_EXE_INC_COMMON_ADJ_ITEM3,
+                    (U16)GET_HOTKEY_2(), (U16)HotKey_Input, (U16)HotKey_NoFunction, 1));
+	    }
+            ////
             else if(g_mainpage_common == EN_COMMON_PICTURE_COLOR_PAGE)
             {
                 BOOLEAN bIsNeedToReset = FALSE;
@@ -1890,6 +1899,15 @@ BOOLEAN MApp_ZUI_ACT_ExecuteMenuItemAction(U16 act)
 		//Update backlight level after changing backlight invert
 		Panel_Backlight_PWM_ADJ(msAPI_Mode_PictureBackLightN100toReallyValue(stGenSetting.u8Backlight));
 
+	    }
+            ////
+            ////Ray HKY 2017.10.06: Adjust hot key 1
+            else if(g_mainpage_common == EN_COMMON_HOTKEY_PAGE)
+	    {
+        	//Change hot key 1 to previous/next item
+                SET_HOTKEY_1((HOT_KEY)MApp_ZUI_ACT_DecIncValue_Cycle(
+                    act==EN_EXE_INC_COMMON_ADJ_ITEM2,
+                    (U16)GET_HOTKEY_1(), (U16)HotKey_Input, (U16)HotKey_NoFunction, 1));
 	    }
             ////
             else if(g_mainpage_common == EN_COMMON_PICTURE_COLOR_PAGE)
@@ -4484,6 +4502,48 @@ U16 _MApp_ZUI_ACT_GetLanguageStringID(EN_LANGUAGE lang, BOOLEAN bDefaultEnglish)
     return u16TempID;
 }
 
+//Ray HKY 2017.10.06: Get the string ID of hot key
+//Input hotkey = HotKey_Input, HotKey_Backlight, ...
+//Output is string ID of the hot key string
+U16 _MApp_ZUI_ACT_GetHotKeyStringID(HOT_KEY hotkey)
+{
+    U16 u16TempID = en_str_No;
+    switch(hotkey){
+      case HotKey_Input:
+	u16TempID = en_str_Input_Source;
+	break;
+      case HotKey_Backlight:
+	u16TempID = en_str_Backlight;
+	break;
+      case HotKey_Contrast:
+	u16TempID = en_str_Contrast;
+	break;
+      case HotKey_Brightness:
+	u16TempID = en_str_Brightness;
+	break;
+      case HotKey_Saturation:
+	u16TempID = en_str_Color;
+	break;
+      case HotKey_Sharpness:
+	u16TempID = en_str_Sharpness;
+	break;
+      case HotKey_Hue:
+	u16TempID = en_str_Tint;
+	break;
+      case HotKey_AspectRatio:
+	u16TempID = en_str_Aspect_Ratio;
+	break;
+      case HotKey_Volume:
+	u16TempID = en_str_Volume;
+	break;
+      case HotKey_NoFunction:
+	u16TempID = en_str_Off;
+	break;
+    }
+    return u16TempID;
+}
+
+
 LPTSTR _MApp_ZUI_ACT_CombineTextAndOption(HWND hwnd)
 {
     LPTSTR u16str = CHAR_BUFFER;
@@ -4624,6 +4684,21 @@ LPTSTR _MApp_ZUI_ACT_CombineTextAndOption(HWND hwnd)
                 MApp_ZUI_API_Strcat(u16str,(U16*)u16con_buffer);		//Put together two string
                 return u16str;
             }
+            ////Ray HKY 2017.10.06: hot key menu item 2: hot key 1
+            else if(g_mainpage_common == EN_COMMON_HOTKEY_PAGE)
+            {
+                MApp_ZUI_API_LoadString(en_str_Hot_Key, u16str);		//Load "Hot Key" string
+                u16len = MApp_ZUI_API_Strlen(u16str);
+                u16str[u16len++] = CHAR_SPACE;
+                u16str[u16len++] = CHAR_1;					//Put char "1"
+                u16str[u16len++] = CHAR_COLON;
+                u16str[u16len++] = CHAR_SPACE;
+                u16str[u16len++] = 0;
+                MApp_ZUI_API_LoadString(_MApp_ZUI_ACT_GetHotKeyStringID(GET_HOTKEY_1()), u16con_buffer);	//Get selected hot key function string
+                MApp_ZUI_API_Strcat(u16str,(U16*)u16con_buffer);		//Put together two string
+                return u16str;
+            }
+            ////
             else if(g_mainpage_common == EN_COMMON_PICTURE_COLOR_PAGE)
             {
                 u16TextID = en_str_Red;
@@ -4731,6 +4806,21 @@ LPTSTR _MApp_ZUI_ACT_CombineTextAndOption(HWND hwnd)
                 MApp_ZUI_API_Strcat(u16str,(U16*)u16con_buffer);		//Put together two string
                 return u16str;
             }
+            ////Ray HKY 2017.10.06: hot key menu item 3: hot key 2
+            else if(g_mainpage_common == EN_COMMON_HOTKEY_PAGE)
+            {
+                MApp_ZUI_API_LoadString(en_str_Hot_Key, u16str);		//Load "Hot Key" string
+                u16len = MApp_ZUI_API_Strlen(u16str);
+                u16str[u16len++] = CHAR_SPACE;
+                u16str[u16len++] = CHAR_2;					//Put char "2"
+                u16str[u16len++] = CHAR_COLON;
+                u16str[u16len++] = CHAR_SPACE;
+                u16str[u16len++] = 0;
+                MApp_ZUI_API_LoadString(_MApp_ZUI_ACT_GetHotKeyStringID(GET_HOTKEY_2()), u16con_buffer);	//Get selected hot key function string
+                MApp_ZUI_API_Strcat(u16str,(U16*)u16con_buffer);		//Put together two string
+                return u16str;
+            }
+            ////
             else if(g_mainpage_common == EN_COMMON_PICTURE_COLOR_PAGE)
             {
                 u16TextID = en_str_Green;
@@ -7285,6 +7375,8 @@ case HWND_MENU_SOUND_VIDEO_DESCRIPTION_TEXT_OPTION:
                 return _MApp_ZUI_ACT_CombineTextAndOption(hwnd);
             else if(g_mainpage_common == EN_COMMON_BKL_SETUP_PAGE)		//Ray BKL 2017.04.25: Display Backlight setup menu items
                 return _MApp_ZUI_ACT_CombineTextAndOption(hwnd);
+            else if(g_mainpage_common == EN_COMMON_HOTKEY_PAGE)			//Ray HKY 2017.10.06: Display hot key menu items
+                return _MApp_ZUI_ACT_CombineTextAndOption(hwnd);
             else if(g_mainpage_common == EN_COMMON_PICTURE_COLOR_PAGE)
                 return _MApp_ZUI_ACT_CombineTextAndOption(hwnd);
             else if(g_mainpage_common == EN_COMMON_SOUND_BALANCE_PAGE)
@@ -9146,6 +9238,7 @@ GUI_ENUM_DYNAMIC_LIST_STATE MApp_ZUI_ACT_QueryMainMenuItemStatus(HWND hwnd)
              || g_mainpage_common == EN_COMMON_SOUND_BALANCE_PAGE
              || g_mainpage_common == EN_COMMON_SOUND_AUDIO_DELAY_PAGE
 	     || g_mainpage_common == EN_COMMON_BKL_SETUP_PAGE			//Ray BKL 2017.04.26: Disable to access backlight setup title item
+	     || g_mainpage_common == EN_COMMON_HOTKEY_PAGE			//Ray HKY 2017.10.06: Disable to access hot key title item
 	     || g_mainpage_common == EN_COMMON_PICTURE_MODE_PAGE		//Ray OSD 2017.05.17: Disable to access picture setting title item
 #if (ENABLE_MFC_6M20 || ENABLE_MFC_6M30)
              || g_mainpage_common == EN_COMMON_SET_MFC_PAGE
@@ -9237,6 +9330,12 @@ GUI_ENUM_DYNAMIC_LIST_STATE MApp_ZUI_ACT_QueryMainMenuItemStatus(HWND hwnd)
                       return EN_DL_STATE_NORMAL;
                   }
                 }
+            }
+            else if (g_mainpage_common == EN_COMMON_HOTKEY_PAGE)		//Ray BKL 2017.10.06: Define hot key page menu available display items
+            {
+        	if(hwnd >= HWND_MENU_COMMON_ADJ_ITEM4)				//There are only 3 items (including title) to be displayed
+                    return EN_DL_STATE_HIDDEN;
+
             }
             else if (g_mainpage_common ==EN_COMMON_PICTURE_COLOR_PAGE)
             {

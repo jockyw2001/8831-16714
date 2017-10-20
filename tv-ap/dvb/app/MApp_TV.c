@@ -223,6 +223,9 @@ extern U8 g_u8ShowChannelList;
 #include "mapi_cc_brazil_decode.h"
 #endif
 extern void _SubmitPalette(void);
+extern void _MApp_ZUI_ACT_ShowOSDHotKeyTitleLevel(HOT_KEY hotkey);		//Ray HKY 2017.10.18
+extern void MApp_ZUI_ACT_SetHotKeyType(HOTKEY_TYPE type);			//Ray HKY 2017.10.20
+extern HOTKEY_TYPE MApp_ZUI_ACT_GetHotKeyType(void);				//Ray HKY 2017.10.20
 /******************************************************************************/
 /*                              Macro                                         */
 /******************************************************************************/
@@ -284,14 +287,15 @@ static BOOLEAN bIsEASExitUI= FALSE;
 /*                               Functions                                     */
 /*******************************************************************************/
 //Ray HKY 2017.09.28: To show hot key level bar OSD for RS-232 cmd
-//Input: action: the hot key to be shown such as EN_EXE_SHOW_VOLUME_HOTKEY,...
-void MApp_TV_ShowHotKeyOSD(U16 action)
+//Input: hot key: HotKey_Brightness,....
+void MApp_TV_ShowHotKeyOSD(HOT_KEY hotkey)
 {
   //Ray HKY 2017.09.29: For SVUD6, we need to show volume OSD. If it's first time change volume, init hot key OSD
   if (MApp_ZUI_GetActiveOSD() != E_OSD_HOTKEY_OPTION)
   {
 	MApp_ZUI_ACT_StartupOSD(E_OSD_HOTKEY_OPTION);
-	MApp_ZUI_ACT_ExecuteWndAction(action);		//Show OSD
+	//MApp_ZUI_ACT_ExecuteWndAction(action);		//Show OSD
+	_MApp_ZUI_ACT_ShowOSDHotKeyTitleLevel(hotkey);
   }
   //reset timer if any key
   MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_RESET_AUTO_CLOSE_TIMER);
@@ -3121,9 +3125,12 @@ BOOLEAN MApp_TV_ProcessHotkeyOptionKey(U8 key)
         { KEY_REVEAL, EN_EXE_SHOW_PICTURE_HOTKEY}, //after inc action
         { KEY_LEFT, EN_EXE_DEC_PICTURE_HOTKEY_OPTION},
         { KEY_RIGHT, EN_EXE_INC_PICTURE_HOTKEY_OPTION},
-	//Ray HKY 2017.09.28: Add volume inc/dec hot key event
-        { KEY_LEFT, EN_EXE_DEC_VOLUME_HOTKEY_OPTION},
-        { KEY_RIGHT, EN_EXE_INC_VOLUME_HOTKEY_OPTION},
+	//Ray HKY 2017.10.10: Change to digital view right/left hot key 1 event
+        { KEY_LEFT, EN_EXE_DEC_DV_HOTKEY_OPTION},
+        { KEY_RIGHT, EN_EXE_INC_DV_HOTKEY_OPTION},
+	//Ray HKY 2017.10.18: Change to digital view up/down hot key 2 event
+        { KEY_DOWN, EN_EXE_DEC_DV_HOTKEY_OPTION},
+        { KEY_UP, EN_EXE_INC_DV_HOTKEY_OPTION},
         #ifdef sAddIRPictureKey
         { KEY_PICTURE, EN_EXE_INC_PICTURE_HOTKEY_OPTION},
         { KEY_PICTURE, EN_EXE_SHOW_PICTURE_HOTKEY}, //after inc action        
@@ -3240,8 +3247,12 @@ BOOLEAN MApp_TV_ProcessChannelInfoKey(U8 key)
     if (key == KEY_NULL)
         return TRUE;
 
+    //Ray HKY 2017.10.20: To enable processing hot key
+    if (((key == KEY_UP)||(key == KEY_DOWN)||(key == KEY_LEFT)||(key == KEY_RIGHT)))
+      return FALSE;
+
     if ((u8IsBriefChInfo == TRUE)&&((key == KEY_UP)||(key == KEY_DOWN)||(key == KEY_LEFT)||(key == KEY_RIGHT)))
-        return TRUE;
+	return TRUE;
 
     //reset timer if any key
     MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_RESET_AUTO_CLOSE_TIMER);
@@ -3398,8 +3409,10 @@ void MApp_TV_ProcessUserInput(void)
     //2008/3/27: handle keys here! don't handle these keys in MApp_ZUI_ACTxxx.c
     switch ( MApp_ZUI_GetActiveOSD()  )
     {
+#if 0 			//Ray HKY 2017.10.20: Let's routine below (at line 3516) to process hot key so that we can handle both up/down & +ve/-ve hot keys
         case E_OSD_HOTKEY_OPTION:
         		#ifdef sAddIRPictureKey
+		//Ray HKY 2017.10.18: When hot key OSD is showing, hot key is processed here.
                 if (MApp_TV_ProcessHotkeyOptionKey(u8KeyCode))
                     u8KeyCode = KEY_NULL;        		
         		#else
@@ -3418,6 +3431,8 @@ void MApp_TV_ProcessUserInput(void)
             }
             #endif
             break;
+#endif
+
         case E_OSD_AUDIO_VOLUME:
             if (MApp_TV_ProcessAudioVolumeKey(u8KeyCode))
                 u8KeyCode = KEY_NULL;
@@ -3506,20 +3521,28 @@ void MApp_TV_ProcessUserInput(void)
     {
         case KEY_RIGHT:
         case KEY_LEFT:
-	    //Ray HKY 2017.09.27: volume plus and minus are hot key 1 keys
+	    //Ray HKY 2017.09.27: plus and minus are hot key 1 keys
 	    //If it's first time pressing hot key, init hot key OSD, else perform hot key +/- action
-	    if (MApp_ZUI_GetActiveOSD() != E_OSD_HOTKEY_OPTION)
-	    {
-		MApp_ZUI_ACT_StartupOSD(E_OSD_HOTKEY_OPTION);
+	    if(GET_HOTKEY_1()!=HotKey_NoFunction){
+	      if (MApp_ZUI_GetActiveOSD() != E_OSD_HOTKEY_OPTION)
+	      {
+		  MApp_ZUI_ACT_SetHotKeyType(HotKeyType1);		//Denote it's now in hot key 1 type
+		  MApp_ZUI_ACT_StartupOSD(E_OSD_HOTKEY_OPTION);
+
+	      }
+	      else if(MApp_ZUI_ACT_GetHotKeyType()!=HotKeyType1){	//If it's change from hot key 2 type
+		  MApp_ZUI_ACT_SetHotKeyType(HotKeyType1);		//Denote it's now in hot key 1 type and we don't do inc/dec action
+	      }
+	      else
+	      {
+		  MApp_TV_ProcessHotkeyOptionKey(u8KeyCode);
+	      }
+	      //Ray HKY 2017.10.18: show the hot key 1
+	      MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_SHOW_DV_HOTKEY_1);		//Update hot key OSD
+	      u32TVModeWinTimer = msAPI_Timer_GetTime0();
+	      MApp_AnalogInputs_ResetTimer(MAIN_WINDOW);
+	      MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_RESET_AUTO_CLOSE_TIMER);	//Ray HKY 2017.10.20: Reset OSD timeout timer
 	    }
-	    else
-	    {
-		MApp_TV_ProcessHotkeyOptionKey(u8KeyCode);
-	    }
-	    //Ray HKY 2017.09.27: Now we test to do hot key volume +/- only. In future, this action should be config as hot key 1
-	    MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_SHOW_VOLUME_HOTKEY);		//Update hot key OSD
-	    u32TVModeWinTimer = msAPI_Timer_GetTime0();
-	    MApp_AnalogInputs_ResetTimer(MAIN_WINDOW);
 	    u8KeyCode = KEY_NULL;
 	    break;
 
@@ -3542,6 +3565,34 @@ void MApp_TV_ProcessUserInput(void)
             u8KeyCode = KEY_NULL;
         break;
     #endif
+
+        //Ray HKY 2017.10.18: Add key up and down hot key 2 process
+        case KEY_UP:
+        case KEY_DOWN:
+	    //If it's first time pressing hot key, init hot key OSD, else perform hot key +/- action
+	    if(GET_HOTKEY_2()!=HotKey_NoFunction){
+	      //If it's first time pressing hot key, init hot key OSD, else perform hot key +/- action
+	      if (MApp_ZUI_GetActiveOSD() != E_OSD_HOTKEY_OPTION)
+	      {
+		  MApp_ZUI_ACT_SetHotKeyType(HotKeyType2);		//Denote it's now in hot key 2 type
+		  MApp_ZUI_ACT_StartupOSD(E_OSD_HOTKEY_OPTION);
+
+	      }
+	      else if(MApp_ZUI_ACT_GetHotKeyType()!=HotKeyType2){		//If it's change from hot key 1 type
+		  MApp_ZUI_ACT_SetHotKeyType(HotKeyType2);		//Denote it's now in hot key 2 type and we don't do inc/dec action
+	      }
+	      else
+	      {
+		  MApp_TV_ProcessHotkeyOptionKey(u8KeyCode);
+	      }
+	      //Ray HKY 2017.10.18: show the hot key 2
+	      MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_SHOW_DV_HOTKEY_2);		//Update hot key OSD
+	      u32TVModeWinTimer = msAPI_Timer_GetTime0();
+	      MApp_AnalogInputs_ResetTimer(MAIN_WINDOW);
+	      MApp_ZUI_ACT_ExecuteWndAction(EN_EXE_RESET_AUTO_CLOSE_TIMER);	//Ray HKY 2017.10.20: Reset OSD timeout timer
+	    }
+	    u8KeyCode = KEY_NULL;
+	    break;
 
         case KEY_RED:
             if (IsAnyTVSourceInUse())
@@ -4203,7 +4254,6 @@ void MApp_TV_ProcessUserInput(void)
       #endif
         u8KeyCode = KEY_NULL;
         break;
-
 
         case KEY_COUNTDOWN_EXIT_TT_SUBTITLE:
             if (MApp_ZUI_GetActiveOSD() != E_OSD_MESSAGE_BOX ||

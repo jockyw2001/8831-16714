@@ -74,7 +74,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Background_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Title_Atsc_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_925 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_928 },
     { CP_NOON, 0 },
 };
 #define _Zui_Install_Main_Title_Atsc_Focus_DrawStyle _Zui_Install_Main_Title_Atsc_Normal_DrawStyle
@@ -93,7 +93,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Title_Atsc_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_926 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_929 },
     { CP_NOON, 0 },
 };
 
@@ -115,17 +115,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Focus_Bg_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_927 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_930 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_928 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_931 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_929 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_932 },
     { CP_NOON, 0 },
 };
 
@@ -134,17 +134,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Text_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_930 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_933 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_931 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_934 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_932 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_935 },
     { CP_NOON, 0 },
 };
 
@@ -180,17 +180,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Right_Arrow_Focus_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Next_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_933 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_936 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Next_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_934 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_937 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Next_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_935 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_938 },
     { CP_NOON, 0 },
 };
 
@@ -207,7 +207,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Language_Next_Text_Disabled_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_936 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_939 },
     { CP_NOON, 0 },
 };
 
@@ -244,17 +244,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Text_Disabled_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_937 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_940 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_938 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_941 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_939 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_942 },
     { CP_NOON, 0 },
 };
 
@@ -317,17 +317,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Dst_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Dst_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_940 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_943 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Dst_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_941 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_944 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Dst_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_942 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_945 },
     { CP_NOON, 0 },
 };
 
@@ -374,17 +374,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Format_Text_Disabled_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Format_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_943 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_946 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Format_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_944 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_947 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Format_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_945 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_948 },
     { CP_NOON, 0 },
 };
 
@@ -411,7 +411,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Time_Format_Option_Disabled_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Ant_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_946 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_949 },
     { CP_NOON, 0 },
 };
 
@@ -448,17 +448,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Ant_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Ant_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_947 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_950 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Ant_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_948 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_951 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Ant_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_949 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_952 },
     { CP_NOON, 0 },
 };
 
@@ -501,7 +501,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Main_Osd_Ant_Option_Disabled_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Found_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_672 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_675 },
     { CP_NOON, 0 },
 };
 #define _Zui_Install_Scan_Result_Sub_Page_Item_Found_Text_Focus_DrawStyle _Zui_Install_Scan_Result_Sub_Page_Item_Found_Text_Normal_DrawStyle
@@ -511,7 +511,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Found_Text_No
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Found_Value_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_950 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_953 },
     { CP_NOON, 0 },
 };
 #define _Zui_Install_Scan_Result_Sub_Page_Item_Found_Value_Focus_DrawStyle _Zui_Install_Scan_Result_Sub_Page_Item_Found_Value_Normal_DrawStyle
@@ -521,7 +521,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Found_Value_N
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Found_Program_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_673 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_676 },
     { CP_NOON, 0 },
 };
 
@@ -534,7 +534,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Found_Program
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Analog_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_674 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_677 },
     { CP_NOON, 0 },
 };
 #define _Zui_Install_Scan_Result_Sub_Page_Item_Analog_Text_Focus_DrawStyle _Zui_Install_Scan_Result_Sub_Page_Item_Analog_Text_Normal_DrawStyle
@@ -559,7 +559,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Analog_Text_N
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Digital_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_675 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_678 },
     { CP_NOON, 0 },
 };
 #define _Zui_Install_Scan_Result_Sub_Page_Item_Digital_Text_Focus_DrawStyle _Zui_Install_Scan_Result_Sub_Page_Item_Digital_Text_Normal_DrawStyle
@@ -584,7 +584,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Digital_Text_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Percent_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_951 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_954 },
     { CP_NOON, 0 },
 };
 
@@ -593,7 +593,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Percent_Norma
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Percent_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_677 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_680 },
     { CP_NOON, 0 },
 };
 
@@ -602,7 +602,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Percent_Text_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Rfch_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_678 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_681 },
     { CP_NOON, 0 },
 };
 #define _Zui_Install_Scan_Result_Sub_Page_Item_Rfch_Text_Focus_DrawStyle _Zui_Install_Scan_Result_Sub_Page_Item_Rfch_Text_Normal_DrawStyle
@@ -622,7 +622,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Rfch_Value_No
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Install_Scan_Result_Sub_Page_Item_Ch_Type_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_952 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_955 },
     { CP_NOON, 0 },
 };
 

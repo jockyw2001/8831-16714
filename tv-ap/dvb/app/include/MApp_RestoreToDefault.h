@@ -132,6 +132,7 @@
 #define DEFAULT_MIN_BKL_LEVEL			6		//Ray BKL 2017.04.25: Default min backlight level is 6
 #define DEFAULT_IMG_ORIENT			MIRROR_NORMAL	//Ray ORI 2017.05.05: Default image orientation is normal
 #define DEFAULT_DEFAULT_POWER			1		//Ray DPW 2017.05.29: Default default power is on (1)
+#define DEFAULT_HOTKEY				HotKey_NoFunction	//Ray HKY 2017.10.06: Default hot key is no function
 
 ////////////////////////////////////////////////////////////////////////////////
 // default base date = 1980 Jan/1 00:00:00

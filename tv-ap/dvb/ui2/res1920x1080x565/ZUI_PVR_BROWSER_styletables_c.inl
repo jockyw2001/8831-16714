@@ -72,7 +72,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Top_Half_Banner_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1169 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1172 },
     { CP_NOON, 0 },
 };
 
@@ -81,7 +81,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Top_Half_Banner_Title_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Top_Half_Banner_Title_Type_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_804 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_807 },
     { CP_NOON, 0 },
 };
 
@@ -153,7 +153,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Item0_Text_Normal_DrawStyle[] =
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Item0_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1170 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1173 },
     { CP_NOON, 0 },
 };
 
@@ -449,7 +449,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Bg_Down_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Pvr_Browser_Info_Date_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1171 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1174 },
     { CP_NOON, 0 },
 };
 #define _Zui_Pvr_Browser_Info_Date_Focus_DrawStyle _Zui_Pvr_Browser_Info_Date_Normal_DrawStyle

@@ -53,7 +53,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Tenkey_Bg_C_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Tenkey_Channel_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1082 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1085 },
     { CP_NOON, 0 },
 };
 #define _Zui_Tenkey_Channel_Title_Focus_DrawStyle _Zui_Tenkey_Channel_Title_Normal_DrawStyle
@@ -64,7 +64,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Tenkey_Channel_Title_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Tenkey_Chnumber_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_436 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_439 },
     { CP_NOON, 0 },
 };
 #define _Zui_Tenkey_Chnumber_Focus_DrawStyle _Zui_Tenkey_Chnumber_Normal_DrawStyle

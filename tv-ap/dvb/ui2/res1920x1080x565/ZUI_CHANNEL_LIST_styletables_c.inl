@@ -79,7 +79,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Top_Half_Banner_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_902 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_905 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Top_Half_Banner_Title_Focus_DrawStyle _Zui_Chlist_Top_Half_Banner_Title_Normal_DrawStyle
@@ -148,7 +148,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Find_Btn_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Find_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_903 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_906 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Bottom_Half_Find_Text_Focus_DrawStyle _Zui_Chlist_Bottom_Half_Find_Text_Normal_DrawStyle
@@ -172,7 +172,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Sort_Btn_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Bottom_Half_Sort_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_904 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_907 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chlist_Bottom_Half_Sort_Text_Focus_DrawStyle _Zui_Chlist_Bottom_Half_Sort_Text_Normal_DrawStyle
@@ -242,7 +242,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Text_Normal_DrawStyle[] =
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_714 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_717 },
     { CP_NOON, 0 },
 };
 
@@ -274,7 +274,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chlist_Item0_Updown_Arrow_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Op_Menu_Item0_Delivery_Sys_Type_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_905 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_908 },
     { CP_NOON, 0 },
 };
 #define _Zui_Op_Menu_Item0_Delivery_Sys_Type_Focus_DrawStyle _Zui_Op_Menu_Item0_Delivery_Sys_Type_Normal_DrawStyle
@@ -764,7 +764,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item1_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item1_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_906 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_909 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Optionlist_Item1_Option_Focus_DrawStyle _Zui_Channel_List_Optionlist_Item1_Option_Normal_DrawStyle
@@ -779,7 +779,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item1_Option_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item2_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_907 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_910 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Optionlist_Item2_Option_Focus_DrawStyle _Zui_Channel_List_Optionlist_Item2_Option_Normal_DrawStyle
@@ -794,7 +794,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item2_Option_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item3_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_908 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_911 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Optionlist_Item3_Option_Focus_DrawStyle _Zui_Channel_List_Optionlist_Item3_Option_Normal_DrawStyle
@@ -809,7 +809,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item3_Option_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item4_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_909 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_912 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Optionlist_Item4_Option_Focus_DrawStyle _Zui_Channel_List_Optionlist_Item4_Option_Normal_DrawStyle
@@ -824,7 +824,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item4_Option_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item5_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_910 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_913 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Optionlist_Item5_Option_Focus_DrawStyle _Zui_Channel_List_Optionlist_Item5_Option_Normal_DrawStyle
@@ -839,7 +839,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item5_Option_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item6_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_911 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_914 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Optionlist_Item6_Option_Focus_DrawStyle _Zui_Channel_List_Optionlist_Item6_Option_Normal_DrawStyle
@@ -853,7 +853,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Item6_Option_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Title_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_912 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_915 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Optionlist_Title_Option_Focus_DrawStyle _Zui_Channel_List_Optionlist_Title_Option_Normal_DrawStyle
@@ -863,7 +863,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Optionlist_Title_Option_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Channel_List_Dlg_Common_Text1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_913 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_916 },
     { CP_NOON, 0 },
 };
 #define _Zui_Channel_List_Dlg_Common_Text1_Focus_DrawStyle _Zui_Channel_List_Dlg_Common_Text1_Normal_DrawStyle
@@ -910,7 +910,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_L_Normal_DrawSty
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_M_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_182 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_723 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_M_Focus_DrawStyle[] =
@@ -935,13 +935,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Title_R_Normal_DrawSty
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Extend_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_914 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_917 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Extend_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_914 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_917 },
     { CP_NOON, 0 },
 };
 
@@ -951,13 +951,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Extend_Focus_DrawS
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Capson_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_915 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_918 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Capson_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_915 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_918 },
     { CP_NOON, 0 },
 };
 
@@ -967,13 +967,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Capson_Focus_DrawS
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Backspace_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_916 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_919 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Backspace_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_916 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_919 },
     { CP_NOON, 0 },
 };
 
@@ -983,13 +983,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Backspace_Focus_Dr
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Ok_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_917 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_920 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Ok_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_917 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_920 },
     { CP_NOON, 0 },
 };
 
@@ -999,13 +999,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Ok_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Cancel_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_918 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_921 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Cancel_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_918 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_921 },
     { CP_NOON, 0 },
 };
 
@@ -1015,13 +1015,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_Cancel_Focus_DrawS
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_1_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_723 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Chlist_Softkeyboard_Key_1_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_723 },
     { CP_NOON, 0 },
 };
 
@@ -1326,7 +1326,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Op_Btn_Yes_Left_Arrow_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Op_Btn_Yes_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_808 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_811 },
     { CP_NOON, 0 },
 };
 #define _Zui_Op_Btn_Yes_Text_Focus_DrawStyle _Zui_Op_Btn_Yes_Text_Normal_DrawStyle
@@ -1350,7 +1350,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Op_Btn_No_Right_Arrow_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Op_Btn_No_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_810 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_813 },
     { CP_NOON, 0 },
 };
 #define _Zui_Op_Btn_No_Text_Focus_DrawStyle _Zui_Op_Btn_No_Text_Normal_DrawStyle
@@ -1360,7 +1360,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Op_Btn_No_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Op_Msgbox_Delete_Op_1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_919 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_922 },
     { CP_NOON, 0 },
 };
 
@@ -1369,7 +1369,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Op_Msgbox_Delete_Op_1_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Op_Msgbox_Delete_Op_2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_920 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_923 },
     { CP_NOON, 0 },
 };
 
@@ -1378,7 +1378,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Op_Msgbox_Delete_Op_2_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Op_Msgbox_Delete_Op_3_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_436 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_439 },
     { CP_NOON, 0 },
 };
 

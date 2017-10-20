@@ -80,7 +80,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Upgrade_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Upgrade_Info_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_436 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_439 },
     { CP_NOON, 0 },
 };
 
@@ -113,7 +113,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Upgrade_Yes_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Upgrade_Ok_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1315 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1318 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Upgrade_Ok_Txt_Focus_DrawStyle _Zui_Menu_Upgrade_Ok_Txt_Normal_DrawStyle
@@ -123,7 +123,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Upgrade_Ok_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Upgrade_Exit_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1316 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1319 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Upgrade_Exit_Txt_Focus_DrawStyle _Zui_Menu_Upgrade_Exit_Txt_Normal_DrawStyle

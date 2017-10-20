@@ -36,7 +36,7 @@
 static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Power_Amplifier_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_14 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_960 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_963 },
     { CP_NOON, 0 },
 };
 
@@ -46,7 +46,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Power_Amplifier_Normal_DrawStyle[] =
 static DRAWSTYLE _MP_TBLSEG _Zui_Arc_Disconnect_Window_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_14 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_961 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_964 },
     { CP_NOON, 0 },
 };
 
@@ -77,7 +77,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Mute_Icon_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Mute_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_962 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_965 },
     { CP_NOON, 0 },
 };
 
@@ -104,7 +104,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Config_Pane_Icon_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Config_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_417 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_420 },
     { CP_NOON, 0 },
 };
 
@@ -118,12 +118,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Config_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Eas_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_522 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_525 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Volume_Eas_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_963 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_966 },
     { CP_NOON, 0 },
 };
 #define _Zui_Volume_Eas_Text_Disabled_DrawStyle _Zui_Volume_Eas_Text_Focus_DrawStyle

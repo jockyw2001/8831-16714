@@ -89,7 +89,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Btn_Yes_Left_Arrow_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Btn_Yes_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_808 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_811 },
     { CP_NOON, 0 },
 };
 #define _Zui_Oad_Btn_Yes_Text_Focus_DrawStyle _Zui_Oad_Btn_Yes_Text_Normal_DrawStyle
@@ -113,7 +113,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Btn_No_Right_Arrow_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Btn_No_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_810 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_813 },
     { CP_NOON, 0 },
 };
 #define _Zui_Oad_Btn_No_Text_Focus_DrawStyle _Zui_Oad_Btn_No_Text_Normal_DrawStyle
@@ -127,7 +127,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Btn_No_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Btn_Exit_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1216 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1219 },
     { CP_NOON, 0 },
 };
 #define _Zui_Oad_Btn_Exit_Text_Focus_DrawStyle _Zui_Oad_Btn_Exit_Text_Normal_DrawStyle
@@ -141,7 +141,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Btn_Exit_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Text1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1217 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1220 },
     { CP_NOON, 0 },
 };
 
@@ -150,7 +150,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Text1_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Text2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_480 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_483 },
     { CP_NOON, 0 },
 };
 
@@ -168,7 +168,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Text2_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Tv_Version_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1218 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1221 },
     { CP_NOON, 0 },
 };
 
@@ -177,7 +177,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Tv_Version_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Ts_Version_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1219 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1222 },
     { CP_NOON, 0 },
 };
 
@@ -186,7 +186,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Ts_Version_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Yes_To_Upgrade_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1220 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1223 },
     { CP_NOON, 0 },
 };
 
@@ -195,7 +195,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Yes_To_Upgrade_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Oad_Ignore_Upgrade_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1221 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1224 },
     { CP_NOON, 0 },
 };
 

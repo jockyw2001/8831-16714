@@ -106,12 +106,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satinfo_Frame_Normal_DrawStyle[]
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Title_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_27 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1317 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1320 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1317 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1320 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Title_Disabled_DrawStyle _Zui_Menu_Dishsetup_Title_Focus_DrawStyle
@@ -190,12 +190,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Exit_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Exit_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1318 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1321 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Exit_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1319 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1322 },
     { CP_NOON, 0 },
 };
 
@@ -213,12 +213,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Ok_Disabled_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Ok_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1320 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1323 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Ok_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1321 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1324 },
     { CP_NOON, 0 },
 };
 
@@ -237,12 +237,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Blue_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Blue_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1322 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1325 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Help_Bar_Blue_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1323 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1326 },
     { CP_NOON, 0 },
 };
 
@@ -266,12 +266,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Goto_Normal_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Goto_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1324 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1327 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Goto_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1325 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1328 },
     { CP_NOON, 0 },
 };
 
@@ -290,12 +290,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Green_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Green_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1326 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1329 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Green_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1327 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1330 },
     { CP_NOON, 0 },
 };
 
@@ -314,12 +314,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Red_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Red_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1328 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1331 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Red_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1329 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1332 },
     { CP_NOON, 0 },
 };
 
@@ -338,12 +338,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Yellow_Normal_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Yellow_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1330 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1333 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Yellow_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1331 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1334 },
     { CP_NOON, 0 },
 };
 
@@ -356,12 +356,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Helpbar_Yellow_Text_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Help_Bar_Ok_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1332 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1335 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Help_Bar_Ok_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1333 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1336 },
     { CP_NOON, 0 },
 };
 
@@ -404,12 +404,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Help_Bar_Ok_Text_Disable
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Red_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1334 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1337 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Red_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1335 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1338 },
     { CP_NOON, 0 },
 };
 
@@ -423,7 +423,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Red_Text_Disabl
 #define _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Ok_Text_Normal_DrawStyle _Zui_Menu_Dishsetup_Satlist_Help_Bar_Ok_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Ok_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1336 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1339 },
     { CP_NOON, 0 },
 };
 
@@ -438,12 +438,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Ok_Text_Disable
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Green_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1337 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1340 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Green_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1338 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1341 },
     { CP_NOON, 0 },
 };
 
@@ -469,7 +469,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc12_Helpbar_Green_Text_Disa
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Title_Normal_DrawStyle[] =
 {
     { CP_RECT, CP_ZUI_RECT_INDEX_32 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1339 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1342 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Satlist_Title_Focus_DrawStyle _Zui_Menu_Dishsetup_Satlist_Title_Normal_DrawStyle
@@ -520,12 +520,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Item1_Selicon_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Item1_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1059 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1062 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satlist_Item1_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1340 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1343 },
     { CP_NOON, 0 },
 };
 
@@ -676,17 +676,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1341 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1344 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1342 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1345 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1343 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1346 },
     { CP_NOON, 0 },
 };
 
@@ -697,7 +697,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Text_Disabled_DrawStyle[
 #define _Zui_Menu_Dishsetup_Lnbtype_Option_Focus_DrawStyle _Zui_Menu_Dishsetup_Satlist_Item1_Text_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1084 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1087 },
     { CP_NOON, 0 },
 };
 
@@ -729,17 +729,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbtype_Rarrow_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbpower_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1344 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1347 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbpower_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1345 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1348 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbpower_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1346 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1349 },
     { CP_NOON, 0 },
 };
 
@@ -770,17 +770,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Lnbpower_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_22k_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1347 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1350 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_22k_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1348 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1351 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_22k_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1349 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1352 },
     { CP_NOON, 0 },
 };
 
@@ -811,17 +811,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_22k_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Toneburst_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1350 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1353 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Toneburst_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1351 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1354 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Toneburst_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1352 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1355 },
     { CP_NOON, 0 },
 };
 
@@ -852,17 +852,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Toneburst_Text_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc10_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1353 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1356 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc10_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1354 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1357 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc10_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1355 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1358 },
     { CP_NOON, 0 },
 };
 
@@ -893,17 +893,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc10_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc11_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1356 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1359 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc11_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1357 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1360 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc11_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1358 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1361 },
     { CP_NOON, 0 },
 };
 
@@ -934,17 +934,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Diseqc11_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Motor_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1359 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1362 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Motor_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1360 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1363 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Motor_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1361 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1364 },
     { CP_NOON, 0 },
 };
 
@@ -970,7 +970,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Motor_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Name_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1362 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1365 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Satellite_Name_Focus_DrawStyle _Zui_Menu_Dishsetup_Satellite_Name_Normal_DrawStyle
@@ -990,7 +990,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Qulity_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Qulity_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1363 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1366 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Qulity_Text_Focus_DrawStyle _Zui_Menu_Dishsetup_Qulity_Text_Normal_DrawStyle
@@ -1131,12 +1131,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1364 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1367 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1365 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1368 },
     { CP_NOON, 0 },
 };
 
@@ -1152,18 +1152,18 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Text_Focus_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Mask_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1085 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1088 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Mask_Focus_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_36 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1366 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1369 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Mask_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1087 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1090 },
     { CP_NOON, 0 },
 };
 
@@ -1177,17 +1177,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Llof_Mask_Disabled_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1367 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1370 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1368 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1371 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1369 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1372 },
     { CP_NOON, 0 },
 };
 
@@ -1198,7 +1198,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Text_Disabled_DrawSt
 #define _Zui_Menu_Dishsetup_Setlof_Hlof_Value_Focus_DrawStyle _Zui_Menu_Dishsetup_Satlist_Item1_Text_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Value_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1370 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1373 },
     { CP_NOON, 0 },
 };
 
@@ -1209,7 +1209,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Value_Disabled_DrawS
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Mask_Focus_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_37 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1366 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1369 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Setlof_Hlof_Mask_Disabled_DrawStyle _Zui_Menu_Dishsetup_Setlof_Llof_Mask_Disabled_DrawStyle
@@ -1224,12 +1224,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlof_Hlof_Mask_Focus_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Sethlof_Channel_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1371 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1374 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Sethlof_Channel_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1372 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1375 },
     { CP_NOON, 0 },
 };
 
@@ -1250,12 +1250,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Sethlof_Channel_Text_Focus_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Sethlof_Freq_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1373 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1376 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Sethlof_Freq_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1374 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1377 },
     { CP_NOON, 0 },
 };
 
@@ -1292,7 +1292,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Title_L_Normal_DrawStyl
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Title_M_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_38 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1375 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1378 },
     { CP_NOON, 0 },
 };
 
@@ -1324,17 +1324,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movecontinue_Focus_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movecontinue_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1376 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1379 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movecontinue_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1377 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1380 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movecontinue_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1378 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1381 },
     { CP_NOON, 0 },
 };
 
@@ -1364,17 +1364,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movecontinue_Text_Disab
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movestep_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1379 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1382 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movestep_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1380 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1383 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movestep_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1381 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1384 },
     { CP_NOON, 0 },
 };
 
@@ -1404,17 +1404,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Movestep_Text_Disabled_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Setwestlimit_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1382 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1385 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Setwestlimit_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1383 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1386 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Setwestlimit_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1384 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1387 },
     { CP_NOON, 0 },
 };
 
@@ -1441,17 +1441,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Setwestlimit_Text_Disab
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Seteastlimit_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1385 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1388 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Seteastlimit_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1386 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1389 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Seteastlimit_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1387 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1390 },
     { CP_NOON, 0 },
 };
 
@@ -1478,17 +1478,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Seteastlimit_Text_Disab
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Gotoref_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1388 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1391 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Gotoref_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1389 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1392 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Gotoref_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1390 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1393 },
     { CP_NOON, 0 },
 };
 
@@ -1515,17 +1515,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Gotoref_Text_Disabled_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Disablelimit_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1391 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1394 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Disablelimit_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1392 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1395 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlimit_Disablelimit_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1393 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1396 },
     { CP_NOON, 0 },
 };
 
@@ -1561,7 +1561,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Title_L_Normal_DrawS
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Title_M_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_38 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1394 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1397 },
     { CP_NOON, 0 },
 };
 
@@ -1585,17 +1585,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Title_M_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Location_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1395 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1398 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Location_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1396 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1399 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Location_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1397 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1400 },
     { CP_NOON, 0 },
 };
 
@@ -1625,17 +1625,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Location_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1398 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1401 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1399 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1402 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1400 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1403 },
     { CP_NOON, 0 },
 };
 
@@ -1644,17 +1644,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_T
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_Set_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1401 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1404 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_Set_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1402 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1405 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_Set_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1403 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1406 },
     { CP_NOON, 0 },
 };
 
@@ -1678,17 +1678,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Longitudedirection_S
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1404 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1407 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1405 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1408 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1406 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1409 },
     { CP_NOON, 0 },
 };
 
@@ -1699,7 +1699,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Text_Dis
 #define _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Set_Focus_DrawStyle _Zui_Menu_Dishsetup_Satlist_Item1_Text_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Set_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1407 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1410 },
     { CP_NOON, 0 },
 };
 
@@ -1722,17 +1722,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Mask_Foc
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1408 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1411 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1409 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1412 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1410 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1413 },
     { CP_NOON, 0 },
 };
 
@@ -1741,17 +1741,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Te
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Set_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1411 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1414 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Set_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1412 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1415 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Set_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1413 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1416 },
     { CP_NOON, 0 },
 };
 
@@ -1775,17 +1775,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Latitudedirection_Se
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylatitude_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1414 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1417 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylatitude_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1415 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1418 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylatitude_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1416 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1419 },
     { CP_NOON, 0 },
 };
 
@@ -1816,7 +1816,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setlocation_Mylatitude_Text_Disa
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Title_M_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_38 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1417 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1420 },
     { CP_NOON, 0 },
 };
 
@@ -1844,17 +1844,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Items_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Moveauto_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1418 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1421 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Moveauto_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1419 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1422 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Moveauto_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1420 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1423 },
     { CP_NOON, 0 },
 };
 
@@ -1863,12 +1863,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Moveauto_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Moveauto_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1302 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1305 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Moveauto_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1421 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1424 },
     { CP_NOON, 0 },
 };
 
@@ -1948,17 +1948,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Moveauto_Option_Focu
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Store_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1422 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1425 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Store_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1423 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1426 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Store_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1424 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1427 },
     { CP_NOON, 0 },
 };
 
@@ -1985,17 +1985,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Store_Text_Disabled_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotopos_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1425 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1428 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotopos_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1426 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1429 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotopos_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1427 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1430 },
     { CP_NOON, 0 },
 };
 
@@ -2047,17 +2047,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotopos_Text_Disable
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotox_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1428 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1431 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotox_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1429 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1432 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotox_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1430 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1433 },
     { CP_NOON, 0 },
 };
 
@@ -2089,7 +2089,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Setposition_Gotox_Text_Disabled_
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_M_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_38 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1431 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1434 },
     { CP_NOON, 0 },
 };
 
@@ -2112,17 +2112,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_M_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_No_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1432 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1435 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_No_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1433 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1436 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_No_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1434 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1437 },
     { CP_NOON, 0 },
 };
 
@@ -2142,17 +2142,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_No_Text_Dis
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Satellitename_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1435 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1438 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Satellitename_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1436 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1439 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Satellitename_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1437 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1440 },
     { CP_NOON, 0 },
 };
 
@@ -2208,7 +2208,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Satellitena
 #define _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Longitude_Text_Focus_DrawStyle _Zui_Menu_Dishsetup_Setlocation_Mylongitude_Text_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Longitude_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1438 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1441 },
     { CP_NOON, 0 },
 };
 
@@ -2237,17 +2237,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Longitude_M
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Bond_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1439 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1442 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Bond_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1440 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1443 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Satellite_Edit_Itmes_Bond_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1441 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1444 },
     { CP_NOON, 0 },
 };
 
@@ -2297,7 +2297,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_L_Normal_Draw
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_M_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_182 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1442 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1445 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Softkeyboard_Title_M_Focus_DrawStyle _Zui_Menu_Dishsetup_Softkeyboard_Title_M_Normal_DrawStyle
@@ -2318,13 +2318,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Title_R_Normal_Draw
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Extend_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1443 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1446 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Extend_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1443 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1446 },
     { CP_NOON, 0 },
 };
 
@@ -2334,13 +2334,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Extend_Focus_Dr
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Capson_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1444 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1447 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Capson_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1444 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1447 },
     { CP_NOON, 0 },
 };
 
@@ -2350,13 +2350,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Capson_Focus_Dr
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Backspace_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1445 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1448 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Backspace_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1445 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1448 },
     { CP_NOON, 0 },
 };
 
@@ -2366,13 +2366,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Backspace_Focus
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Ok_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1446 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1449 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Ok_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1446 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1449 },
     { CP_NOON, 0 },
 };
 
@@ -2382,13 +2382,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Ok_Focus_DrawSt
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Cancel_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1447 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1450 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Cancel_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1447 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1450 },
     { CP_NOON, 0 },
 };
 
@@ -2398,13 +2398,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_Cancel_Focus_Dr
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_1_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_184 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_723 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_1_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1448 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1451 },
     { CP_NOON, 0 },
 };
 
@@ -2415,7 +2415,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_1_Focus_DrawSty
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_2_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_185 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_723 },
     { CP_NOON, 0 },
 };
 
@@ -2680,17 +2680,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Softkeyboard_Key_2_Focus_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Number_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1449 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1452 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Number_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1450 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1453 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Number_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1451 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1454 },
     { CP_NOON, 0 },
 };
 
@@ -2710,17 +2710,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Number_Text_Disabled_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Freq_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1452 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1455 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Freq_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1453 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1456 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Freq_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1454 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1457 },
     { CP_NOON, 0 },
 };
 
@@ -2745,17 +2745,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Freq_Text_Disabled_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Symbolrate_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1455 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1458 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Symbolrate_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1456 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1459 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Symbolrate_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1457 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1460 },
     { CP_NOON, 0 },
 };
 
@@ -2780,17 +2780,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Symbolrate_Text_Disabled
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Polarity_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1458 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1461 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Polarity_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1459 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1462 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Polarity_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1460 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1463 },
     { CP_NOON, 0 },
 };
 
@@ -2825,7 +2825,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Tp_Edit_Polarity_Text_Disabled_D
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Title_M_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_38 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1461 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1464 },
     { CP_NOON, 0 },
 };
 
@@ -2849,17 +2849,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Title_M_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Tp_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1462 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1465 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Tp_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1463 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1466 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Tp_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1464 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1467 },
     { CP_NOON, 0 },
 };
 
@@ -2868,17 +2868,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Tp_Text_Disabled_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Mode_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1465 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1468 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Mode_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1466 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1469 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Mode_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1467 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1470 },
     { CP_NOON, 0 },
 };
 
@@ -2902,17 +2902,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Mode_Option_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Prog_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1468 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1471 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Prog_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1469 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1472 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Prog_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1470 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1473 },
     { CP_NOON, 0 },
 };
 
@@ -2921,12 +2921,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Prog_Text_Disabled
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Prog_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1471 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1474 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Prog_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1472 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1475 },
     { CP_NOON, 0 },
 };
 
@@ -2950,17 +2950,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelserach_Prog_Option_Focus_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelsearch_Servicetype_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1473 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1476 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelsearch_Servicetype_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1474 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1477 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelsearch_Servicetype_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1475 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1478 },
     { CP_NOON, 0 },
 };
 
@@ -2969,12 +2969,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelsearch_Servicetype_Text_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelsearch_Servicetype_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1476 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1479 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Channelsearch_Servicetype_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1477 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1480 },
     { CP_NOON, 0 },
 };
 
@@ -3006,12 +3006,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Msg_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Msg_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1478 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1481 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Msg_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1479 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1482 },
     { CP_NOON, 0 },
 };
 
@@ -3044,7 +3044,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Resetallchannels_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Resetallchannels_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1480 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1483 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Resetallchannels_Text_Focus_DrawStyle _Zui_Menu_Dishsetup_Resetallchannels_Text_Normal_DrawStyle
@@ -3054,7 +3054,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Resetallchannels_Text_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Resetallchannels_Ok_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1481 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1484 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Resetallchannels_Ok_Focus_DrawStyle _Zui_Menu_Dishsetup_Resetallchannels_Ok_Normal_DrawStyle
@@ -3064,7 +3064,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Resetallchannels_Ok_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dishsetup_Resetallchannels_Exit_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1482 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1485 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dishsetup_Resetallchannels_Exit_Focus_DrawStyle _Zui_Menu_Dishsetup_Resetallchannels_Exit_Normal_DrawStyle

@@ -3756,7 +3756,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_281
         FONT_NORMAL, // eSystemFont;
-        en_str_Restore_Factory_Default, // StringID;
+        en_str_Img_Orient, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3765,8 +3765,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_282
         FONT_NORMAL, // eSystemFont;
-        en_str_Restore_Factory_Default, // StringID;
-        0x101010, // TextColor;
+        en_str_Img_Orient, // StringID;
+        0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -3774,7 +3774,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_283
         FONT_NORMAL, // eSystemFont;
-        en_str_Restore_Factory_Default, // StringID;
+        en_str_Img_Orient, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3783,7 +3783,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_284
         FONT_NORMAL, // eSystemFont;
-        en_str_Img_Orient, // StringID;
+        en_str_Img_Normal, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3792,7 +3792,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_285
         FONT_NORMAL, // eSystemFont;
-        en_str_Img_Orient, // StringID;
+        en_str_Img_Normal, // StringID;
         0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3801,7 +3801,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_286
         FONT_NORMAL, // eSystemFont;
-        en_str_Img_Orient, // StringID;
+        en_str_Img_Normal, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3810,7 +3810,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_287
         FONT_NORMAL, // eSystemFont;
-        en_str_Img_Normal, // StringID;
+        en_str_HDMI_CEC, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3819,8 +3819,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_288
         FONT_NORMAL, // eSystemFont;
-        en_str_Img_Normal, // StringID;
-        0x80808, // TextColor;
+        en_str_HDMI_CEC, // StringID;
+        0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -3828,7 +3828,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_289
         FONT_NORMAL, // eSystemFont;
-        en_str_Img_Normal, // StringID;
+        en_str_HDMI_CEC, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3837,7 +3837,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_290
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_CEC, // StringID;
+        en_str_HDMI_ARC, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3846,7 +3846,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_291
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_CEC, // StringID;
+        en_str_HDMI_ARC, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3855,7 +3855,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_292
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_CEC, // StringID;
+        en_str_HDMI_ARC, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3864,7 +3864,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_293
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_ARC, // StringID;
+        en_str_OSD_Animation, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3873,7 +3873,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_294
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_ARC, // StringID;
+        en_str_OSD_Animation, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3882,7 +3882,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_295
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_ARC, // StringID;
+        en_str_OSD_Animation, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3891,7 +3891,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_296
         FONT_NORMAL, // eSystemFont;
-        en_str_OSD_Animation, // StringID;
+        en_str_Divx_Video_on_Demand, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3900,7 +3900,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_297
         FONT_NORMAL, // eSystemFont;
-        en_str_OSD_Animation, // StringID;
+        en_str_Divx_Video_on_Demand, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3909,7 +3909,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_298
         FONT_NORMAL, // eSystemFont;
-        en_str_OSD_Animation, // StringID;
+        en_str_Divx_Video_on_Demand, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -3917,33 +3917,6 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_299
-        FONT_NORMAL, // eSystemFont;
-        en_str_Divx_Video_on_Demand, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_300
-        FONT_NORMAL, // eSystemFont;
-        en_str_Divx_Video_on_Demand, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_301
-        FONT_NORMAL, // eSystemFont;
-        en_str_Divx_Video_on_Demand, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_302
         FONT_BIG, // eSystemFont;
         en_str_CC_Mode, // StringID;
         0xFF080808, // TextColor;
@@ -3952,7 +3925,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_303
+    {   // CP_TEXT_OUT_INDEX_300
         FONT_NORMAL, // eSystemFont;
         en_str_CC_Mode, // StringID;
         0xFFFFFF, // TextColor;
@@ -3961,43 +3934,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_304
+    {   // CP_TEXT_OUT_INDEX_301
         FONT_NORMAL, // eSystemFont;
         en_str_CC_Mode, // StringID;
         0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_302
+        FONT_NORMAL, // eSystemFont;
+        en_str_CC_Mode, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_303
+        FONT_NORMAL, // eSystemFont;
+        en_str_CC_On, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_304
+        FONT_NORMAL, // eSystemFont;
+        en_str_CC_On, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_305
-        FONT_NORMAL, // eSystemFont;
-        en_str_CC_Mode, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_306
-        FONT_NORMAL, // eSystemFont;
-        en_str_CC_On, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_307
-        FONT_NORMAL, // eSystemFont;
-        en_str_CC_On, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_308
         FONT_BIG, // eSystemFont;
         en_str_Caption, // StringID;
         0xFF080808, // TextColor;
@@ -4006,7 +3979,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_309
+    {   // CP_TEXT_OUT_INDEX_306
         FONT_NORMAL, // eSystemFont;
         en_str_CC_1, // StringID;
         0x101010, // TextColor;
@@ -4015,7 +3988,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_310
+    {   // CP_TEXT_OUT_INDEX_307
         FONT_NORMAL, // eSystemFont;
         en_str_CC_1, // StringID;
         0x808080, // TextColor;
@@ -4024,7 +3997,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_311
+    {   // CP_TEXT_OUT_INDEX_308
         FONT_NORMAL, // eSystemFont;
         en_str_Color_Range, // StringID;
         0x101010, // TextColor;
@@ -4033,9 +4006,36 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_312
+    {   // CP_TEXT_OUT_INDEX_309
         FONT_NORMAL, // eSystemFont;
         en_str_0_255, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_310
+        FONT_NORMAL, // eSystemFont;
+        en_str_0_255, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_311
+        FONT_NORMAL, // eSystemFont;
+        en_str_3D_Type, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_312
+        FONT_NORMAL, // eSystemFont;
+        en_str_3D_Type, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4044,7 +4044,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_313
         FONT_NORMAL, // eSystemFont;
-        en_str_0_255, // StringID;
+        en_str_3D_Type, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4053,7 +4053,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_314
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_Type, // StringID;
+        en_str_3D_to_2D, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4062,7 +4062,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_315
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_Type, // StringID;
+        en_str_3D_to_2D, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4071,7 +4071,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_316
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_Type, // StringID;
+        en_str_3D_to_2D, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4080,7 +4080,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_317
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_to_2D, // StringID;
+        en_str_3D_Detect, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4089,7 +4089,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_318
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_to_2D, // StringID;
+        en_str_3D_Detect, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4098,7 +4098,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_319
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_to_2D, // StringID;
+        en_str_3D_Detect, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4107,7 +4107,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_320
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_Detect, // StringID;
+        en_str_3D_LR, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4116,7 +4116,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_321
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_Detect, // StringID;
+        en_str_3D_LR, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4125,7 +4125,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_322
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_Detect, // StringID;
+        en_str_3D_LR, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4134,7 +4134,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_323
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_LR, // StringID;
+        en_str_HdashSHIFT, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4143,7 +4143,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_324
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_LR, // StringID;
+        en_str_HdashSHIFT, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4152,7 +4152,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_325
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_LR, // StringID;
+        en_str_HdashSHIFT, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4161,7 +4161,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_326
         FONT_NORMAL, // eSystemFont;
-        en_str_HdashSHIFT, // StringID;
+        en_str_ViewdashPoint, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4170,7 +4170,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_327
         FONT_NORMAL, // eSystemFont;
-        en_str_HdashSHIFT, // StringID;
+        en_str_ViewdashPoint, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4179,7 +4179,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_328
         FONT_NORMAL, // eSystemFont;
-        en_str_HdashSHIFT, // StringID;
+        en_str_ViewdashPoint, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4188,7 +4188,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_329
         FONT_NORMAL, // eSystemFont;
-        en_str_ViewdashPoint, // StringID;
+        en_str_MFC, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4197,7 +4197,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_330
         FONT_NORMAL, // eSystemFont;
-        en_str_ViewdashPoint, // StringID;
+        en_str_MFC, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4206,7 +4206,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_331
         FONT_NORMAL, // eSystemFont;
-        en_str_ViewdashPoint, // StringID;
+        en_str_MFC, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4215,7 +4215,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_332
         FONT_NORMAL, // eSystemFont;
-        en_str_MFC, // StringID;
+        en_str_6M30_MIRROR, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4224,7 +4224,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_333
         FONT_NORMAL, // eSystemFont;
-        en_str_MFC, // StringID;
+        en_str_6M30_MIRROR, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4233,7 +4233,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_334
         FONT_NORMAL, // eSystemFont;
-        en_str_MFC, // StringID;
+        en_str_6M30_MIRROR, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4242,8 +4242,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_335
         FONT_NORMAL, // eSystemFont;
-        en_str_6M30_MIRROR, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_PressbracketsExit_to_exit, // StringID;
+        0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4251,8 +4251,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_336
         FONT_NORMAL, // eSystemFont;
-        en_str_6M30_MIRROR, // StringID;
-        0x101010, // TextColor;
+        en_str_PressbracketsExit_to_exit, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4260,8 +4260,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_337
         FONT_NORMAL, // eSystemFont;
-        en_str_6M30_MIRROR, // StringID;
-        0x808080, // TextColor;
+        en_str_3D_6M30_SW_VERcolon, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4269,7 +4269,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_338
         FONT_NORMAL, // eSystemFont;
-        en_str_PressbracketsExit_to_exit, // StringID;
+        en_str_3D_6M30_SW_VERcolon, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4278,7 +4278,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_339
         FONT_NORMAL, // eSystemFont;
-        en_str_PressbracketsExit_to_exit, // StringID;
+        en_str_3D_6M30_SW_VERcolon, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4287,7 +4287,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_340
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_6M30_SW_VERcolon, // StringID;
+        en_str_Epop, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4296,7 +4296,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_341
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_6M30_SW_VERcolon, // StringID;
+        en_str_Epop, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4305,7 +4305,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_342
         FONT_NORMAL, // eSystemFont;
-        en_str_3D_6M30_SW_VERcolon, // StringID;
+        en_str_Epop, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4314,7 +4314,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_343
         FONT_NORMAL, // eSystemFont;
-        en_str_Epop, // StringID;
+        en_str_EDID_Switch, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4323,8 +4323,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_344
         FONT_NORMAL, // eSystemFont;
-        en_str_Epop, // StringID;
-        0x101010, // TextColor;
+        en_str_EDID_Switch, // StringID;
+        0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4332,7 +4332,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_345
         FONT_NORMAL, // eSystemFont;
-        en_str_Epop, // StringID;
+        en_str_EDID_Switch, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4341,8 +4341,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_346
         FONT_NORMAL, // eSystemFont;
-        en_str_EDID_Switch, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_EDID_1dot4, // StringID;
+        0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4350,8 +4350,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_347
         FONT_NORMAL, // eSystemFont;
-        en_str_EDID_Switch, // StringID;
-        0x80808, // TextColor;
+        en_str_EDID_1dot4, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4359,8 +4359,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_348
         FONT_NORMAL, // eSystemFont;
-        en_str_EDID_Switch, // StringID;
-        0x808080, // TextColor;
+        en_str_Transparent, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4368,8 +4368,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_349
         FONT_NORMAL, // eSystemFont;
-        en_str_EDID_1dot4, // StringID;
-        0x80808, // TextColor;
+        en_str_Transparent, // StringID;
+        0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4377,7 +4377,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_350
         FONT_NORMAL, // eSystemFont;
-        en_str_EDID_1dot4, // StringID;
+        en_str_Transparent, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4386,8 +4386,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_351
         FONT_NORMAL, // eSystemFont;
-        en_str_Transparent, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_0parency, // StringID;
+        0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4395,8 +4395,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_352
         FONT_NORMAL, // eSystemFont;
-        en_str_Transparent, // StringID;
-        0x101010, // TextColor;
+        en_str_0parency, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4404,8 +4404,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_353
         FONT_NORMAL, // eSystemFont;
-        en_str_Transparent, // StringID;
-        0x808080, // TextColor;
+        en_str_Scart_In, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4413,8 +4413,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_354
         FONT_NORMAL, // eSystemFont;
-        en_str_0parency, // StringID;
-        0x101010, // TextColor;
+        en_str_Scart_In, // StringID;
+        0xFF080808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4422,7 +4422,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_355
         FONT_NORMAL, // eSystemFont;
-        en_str_0parency, // StringID;
+        en_str_Scart_In, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4431,8 +4431,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_356
         FONT_NORMAL, // eSystemFont;
-        en_str_Scart_In, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_TTS, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4440,8 +4440,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_357
         FONT_NORMAL, // eSystemFont;
-        en_str_Scart_In, // StringID;
-        0xFF080808, // TextColor;
+        en_str_TTS, // StringID;
+        0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4449,7 +4449,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_358
         FONT_NORMAL, // eSystemFont;
-        en_str_Scart_In, // StringID;
+        en_str_TTS, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4458,7 +4458,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_359
         FONT_NORMAL, // eSystemFont;
-        en_str_TTS, // StringID;
+        en_strAutoSeekText, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4467,7 +4467,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_360
         FONT_NORMAL, // eSystemFont;
-        en_str_TTS, // StringID;
+        en_strAutoSeekText, // StringID;
         0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4476,7 +4476,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_361
         FONT_NORMAL, // eSystemFont;
-        en_str_TTS, // StringID;
+        en_strAutoSeekText, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4485,7 +4485,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_362
         FONT_NORMAL, // eSystemFont;
-        en_strAutoSeekText, // StringID;
+        en_str_Failover, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4494,7 +4494,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_363
         FONT_NORMAL, // eSystemFont;
-        en_strAutoSeekText, // StringID;
+        en_str_Failover, // StringID;
         0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4503,7 +4503,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_364
         FONT_NORMAL, // eSystemFont;
-        en_strAutoSeekText, // StringID;
+        en_str_Failover, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4512,7 +4512,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_365
         FONT_NORMAL, // eSystemFont;
-        en_str_Failover, // StringID;
+        en_str_Default_Power, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4521,7 +4521,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_366
         FONT_NORMAL, // eSystemFont;
-        en_str_Failover, // StringID;
+        en_str_Default_Power, // StringID;
         0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4530,7 +4530,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_367
         FONT_NORMAL, // eSystemFont;
-        en_str_Failover, // StringID;
+        en_str_Default_Power, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4539,7 +4539,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_368
         FONT_NORMAL, // eSystemFont;
-        en_str_Default_Power, // StringID;
+        en_str_Restore_Factory_Default, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4548,8 +4548,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_369
         FONT_NORMAL, // eSystemFont;
-        en_str_Default_Power, // StringID;
-        0x80808, // TextColor;
+        en_str_Restore_Factory_Default, // StringID;
+        0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4557,7 +4557,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_370
         FONT_NORMAL, // eSystemFont;
-        en_str_Default_Power, // StringID;
+        en_str_Restore_Factory_Default, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4566,7 +4566,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_371
         FONT_NORMAL, // eSystemFont;
-        en_str_BL_Setup, // StringID;
+        en_str_Hot_Key, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4575,6 +4575,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_372
         FONT_NORMAL, // eSystemFont;
+        en_str_Hot_Key, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_373
+        FONT_NORMAL, // eSystemFont;
+        en_str_Hot_Key, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_374
+        FONT_NORMAL, // eSystemFont;
+        en_str_BL_Setup, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_375
+        FONT_NORMAL, // eSystemFont;
         en_str_BL_Setup, // StringID;
         0x80808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -4582,7 +4609,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_373
+    {   // CP_TEXT_OUT_INDEX_376
         FONT_NORMAL, // eSystemFont;
         en_str_BL_Setup, // StringID;
         0x808080, // TextColor;
@@ -4591,7 +4618,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_374
+    {   // CP_TEXT_OUT_INDEX_377
         FONT_BIG, // eSystemFont;
         en_str_LOCK, // StringID;
         0xFFFFFF, // TextColor;
@@ -4600,36 +4627,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_375
-        FONT_NORMAL, // eSystemFont;
-        en_str_Lock_System, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_376
-        FONT_NORMAL, // eSystemFont;
-        en_str_Lock_System, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_377
-        FONT_NORMAL, // eSystemFont;
-        en_str_Lock_System, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_378
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_Password, // StringID;
+        en_str_Lock_System, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4638,7 +4638,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_379
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_Password, // StringID;
+        en_str_Lock_System, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4647,7 +4647,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_380
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_Password, // StringID;
+        en_str_Lock_System, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4656,7 +4656,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_381
         FONT_NORMAL, // eSystemFont;
-        en_str_Block_Program, // StringID;
+        en_str_Set_Password, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4665,7 +4665,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_382
         FONT_NORMAL, // eSystemFont;
-        en_str_Block_Program, // StringID;
+        en_str_Set_Password, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4674,7 +4674,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_383
         FONT_NORMAL, // eSystemFont;
-        en_str_Block_Program, // StringID;
+        en_str_Set_Password, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4683,7 +4683,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_384
         FONT_NORMAL, // eSystemFont;
-        en_str_Parental_Guidance, // StringID;
+        en_str_Block_Program, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4692,7 +4692,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_385
         FONT_NORMAL, // eSystemFont;
-        en_str_Parental_Guidance, // StringID;
+        en_str_Block_Program, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4701,7 +4701,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_386
         FONT_NORMAL, // eSystemFont;
-        en_str_Parental_Guidance, // StringID;
+        en_str_Block_Program, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4710,7 +4710,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_387
         FONT_NORMAL, // eSystemFont;
-        en_str_Enter_Password, // StringID;
+        en_str_Parental_Guidance, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4719,7 +4719,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_388
         FONT_NORMAL, // eSystemFont;
-        en_str_Enter_Password, // StringID;
+        en_str_Parental_Guidance, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4727,9 +4727,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_389
-        FONT_BIG, // eSystemFont;
-        en_str_Enter_Password, // StringID;
-        0xFF808080, // TextColor;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Parental_Guidance, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4737,7 +4737,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_390
         FONT_NORMAL, // eSystemFont;
-        en_str_System_Lock, // StringID;
+        en_str_Enter_Password, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4746,7 +4746,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_391
         FONT_NORMAL, // eSystemFont;
-        en_str_System_Lock, // StringID;
+        en_str_Enter_Password, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4754,6 +4754,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_392
+        FONT_BIG, // eSystemFont;
+        en_str_Enter_Password, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_393
+        FONT_NORMAL, // eSystemFont;
+        en_str_System_Lock, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_394
+        FONT_NORMAL, // eSystemFont;
+        en_str_System_Lock, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_395
         FONT_NORMAL, // eSystemFont;
         en_str_System_Lock, // StringID;
         0x7F7F7F, // TextColor;
@@ -4762,7 +4789,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_393
+    {   // CP_TEXT_OUT_INDEX_396
         FONT_NORMAL, // eSystemFont;
         en_str_colon, // StringID;
         0xC0C0C0, // TextColor;
@@ -4771,36 +4798,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_394
-        FONT_NORMAL, // eSystemFont;
-        en_str_Input_Block, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_395
-        FONT_NORMAL, // eSystemFont;
-        en_str_Input_Block, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_396
-        FONT_NORMAL, // eSystemFont;
-        en_str_Input_Block, // StringID;
-        0x7F7F7F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_397
         FONT_NORMAL, // eSystemFont;
-        en_str_US, // StringID;
+        en_str_Input_Block, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4809,7 +4809,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_398
         FONT_NORMAL, // eSystemFont;
-        en_str_US, // StringID;
+        en_str_Input_Block, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4818,7 +4818,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_399
         FONT_NORMAL, // eSystemFont;
-        en_str_US, // StringID;
+        en_str_Input_Block, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4827,7 +4827,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_400
         FONT_NORMAL, // eSystemFont;
-        en_str_Canada, // StringID;
+        en_str_US, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4836,7 +4836,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_401
         FONT_NORMAL, // eSystemFont;
-        en_str_Canada, // StringID;
+        en_str_US, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4845,7 +4845,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_402
         FONT_NORMAL, // eSystemFont;
-        en_str_Canada, // StringID;
+        en_str_US, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4854,7 +4854,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_403
         FONT_NORMAL, // eSystemFont;
-        en_str_RRT_Setting, // StringID;
+        en_str_Canada, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4863,7 +4863,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_404
         FONT_NORMAL, // eSystemFont;
-        en_str_RRT_Setting, // StringID;
+        en_str_Canada, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4872,7 +4872,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_405
         FONT_NORMAL, // eSystemFont;
-        en_str_RRT_Setting, // StringID;
+        en_str_Canada, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4881,7 +4881,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_406
         FONT_NORMAL, // eSystemFont;
-        en_str_Reset_RTT, // StringID;
+        en_str_RRT_Setting, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4890,7 +4890,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_407
         FONT_NORMAL, // eSystemFont;
-        en_str_Reset_RTT, // StringID;
+        en_str_RRT_Setting, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4899,7 +4899,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_408
         FONT_NORMAL, // eSystemFont;
-        en_str_Reset_RTT, // StringID;
+        en_str_RRT_Setting, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4908,7 +4908,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_409
         FONT_NORMAL, // eSystemFont;
-        en_str_Unratd, // StringID;
+        en_str_Reset_RTT, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4917,7 +4917,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_410
         FONT_NORMAL, // eSystemFont;
-        en_str_Unratd, // StringID;
+        en_str_Reset_RTT, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4926,7 +4926,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_411
         FONT_NORMAL, // eSystemFont;
-        en_str_Unratd, // StringID;
+        en_str_Reset_RTT, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4935,7 +4935,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_412
         FONT_NORMAL, // eSystemFont;
-        en_str_Applications, // StringID;
+        en_str_Unratd, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4944,8 +4944,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_413
         FONT_NORMAL, // eSystemFont;
-        en_str_Applications, // StringID;
-        0x808080, // TextColor;
+        en_str_Unratd, // StringID;
+        0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4953,8 +4953,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_414
         FONT_NORMAL, // eSystemFont;
-        en_str_DMP, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Unratd, // StringID;
+        0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4962,8 +4962,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_415
         FONT_NORMAL, // eSystemFont;
-        en_str_DMP, // StringID;
-        0x101010, // TextColor;
+        en_str_Applications, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -4971,7 +4971,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_416
         FONT_NORMAL, // eSystemFont;
-        en_str_DMP, // StringID;
+        en_str_Applications, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -4980,34 +4980,34 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_417
         FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
+        en_str_DMP, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_418
         FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_DMP, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_419
         FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
+        en_str_DMP, // StringID;
         0x808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_420
         FONT_NORMAL, // eSystemFont;
-        en_str_Auto_Adjust, // StringID;
+        en_str_3Dot, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5016,7 +5016,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_421
         FONT_NORMAL, // eSystemFont;
-        en_str_Auto_Adjust, // StringID;
+        en_str_3Dot, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5025,7 +5025,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_422
         FONT_NORMAL, // eSystemFont;
-        en_str_Auto_Adjust, // StringID;
+        en_str_3Dot, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5034,7 +5034,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_423
         FONT_NORMAL, // eSystemFont;
-        en_str_AutoGain, // StringID;
+        en_str_Auto_Adjust, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5043,7 +5043,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_424
         FONT_NORMAL, // eSystemFont;
-        en_str_AutoGain, // StringID;
+        en_str_Auto_Adjust, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5052,7 +5052,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_425
         FONT_NORMAL, // eSystemFont;
-        en_str_AutoGain, // StringID;
+        en_str_Auto_Adjust, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5061,7 +5061,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_426
         FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
+        en_str_AutoGain, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5070,6 +5070,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_427
         FONT_NORMAL, // eSystemFont;
+        en_str_AutoGain, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_428
+        FONT_NORMAL, // eSystemFont;
+        en_str_AutoGain, // StringID;
+        0x808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_429
+        FONT_NORMAL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_430
+        FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFF080808, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -5077,7 +5104,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_428
+    {   // CP_TEXT_OUT_INDEX_431
         FONT_NORMAL, // eSystemFont;
         en_str_VGA_Setup, // StringID;
         0x2C2C2C, // TextColor;
@@ -5086,37 +5113,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_429
-        FONT_SMALL, // eSystemFont;
-        en_str_BracketsYes, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_430
-        FONT_SMALL, // eSystemFont;
-        en_str_BracketsYes, // StringID;
-        0xACCC08, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_431
-        FONT_SMALL, // eSystemFont;
-        en_str_BracketsNo, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_432
         FONT_SMALL, // eSystemFont;
-        en_str_BracketsNo, // StringID;
-        0xACCC08, // TextColor;
+        en_str_BracketsYes, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5124,8 +5124,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_433
         FONT_SMALL, // eSystemFont;
-        en_str_BrcketsDone, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_BracketsYes, // StringID;
+        0xACCC08, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5133,8 +5133,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_434
         FONT_SMALL, // eSystemFont;
-        en_str_BrcketsDone, // StringID;
-        0xACCC08, // TextColor;
+        en_str_BracketsNo, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5142,8 +5142,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_435
         FONT_SMALL, // eSystemFont;
-        en_str_Not_Available, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_BracketsNo, // StringID;
+        0xACCC08, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5151,7 +5151,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_436
         FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
+        en_str_BrcketsDone, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5160,8 +5160,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_437
         FONT_SMALL, // eSystemFont;
-        en_str_Please_enter_password, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_BrcketsDone, // StringID;
+        0xACCC08, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5169,7 +5169,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_438
         FONT_SMALL, // eSystemFont;
-        en_str_Reenter_password, // StringID;
+        en_str_Not_Available, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5178,7 +5178,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_439
         FONT_SMALL, // eSystemFont;
-        en_str_Wrong_password, // StringID;
+        en_str_dashdash, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5187,7 +5187,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_440
         FONT_SMALL, // eSystemFont;
-        en_str_Divx_Video_on_Demand, // StringID;
+        en_str_Please_enter_password, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5196,7 +5196,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_441
         FONT_SMALL, // eSystemFont;
-        en_str_Please_enter_old_password, // StringID;
+        en_str_Reenter_password, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5205,8 +5205,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_442
         FONT_SMALL, // eSystemFont;
-        en_str_Please_enter_old_password, // StringID;
-        0xC2C2C2, // TextColor;
+        en_str_Wrong_password, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5214,7 +5214,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_443
         FONT_SMALL, // eSystemFont;
-        en_str_Please_enter_new_password, // StringID;
+        en_str_Divx_Video_on_Demand, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5223,8 +5223,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_444
         FONT_SMALL, // eSystemFont;
-        en_str_Please_enter_new_password, // StringID;
-        0xC2C2C2, // TextColor;
+        en_str_Please_enter_old_password, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5232,6 +5232,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_445
         FONT_SMALL, // eSystemFont;
+        en_str_Please_enter_old_password, // StringID;
+        0xC2C2C2, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_446
+        FONT_SMALL, // eSystemFont;
+        en_str_Please_enter_new_password, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_447
+        FONT_SMALL, // eSystemFont;
+        en_str_Please_enter_new_password, // StringID;
+        0xC2C2C2, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_448
+        FONT_SMALL, // eSystemFont;
         en_str_Confirm_new_password, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -5239,7 +5266,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_446
+    {   // CP_TEXT_OUT_INDEX_449
         FONT_SMALL, // eSystemFont;
         en_str_Confirm_new_password, // StringID;
         0xC2C2C2, // TextColor;
@@ -5248,46 +5275,19 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_447
-        FONT_SMALL, // eSystemFont;
-        en_str_No, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_448
-        FONT_SMALL, // eSystemFont;
-        en_str_No, // StringID;
-        0xABCC08, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_449
-        FONT_SMALL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_450
         FONT_SMALL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xABCC08, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        en_str_No, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_451
         FONT_SMALL, // eSystemFont;
-        en_str_Clear, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_No, // StringID;
+        0xABCC08, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5295,6 +5295,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_452
         FONT_SMALL, // eSystemFont;
+        en_str_Yes, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_453
+        FONT_SMALL, // eSystemFont;
+        en_str_Yes, // StringID;
+        0xABCC08, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_454
+        FONT_SMALL, // eSystemFont;
+        en_str_Clear, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_455
+        FONT_SMALL, // eSystemFont;
         en_str_Clear, // StringID;
         0xABCC08, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -5302,7 +5329,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_453
+    {   // CP_TEXT_OUT_INDEX_456
         FONT_SMALL, // eSystemFont;
         en_str_Cancel, // StringID;
         0xFFFFFF, // TextColor;
@@ -5311,7 +5338,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_454
+    {   // CP_TEXT_OUT_INDEX_457
         FONT_SMALL, // eSystemFont;
         en_str_Cancel, // StringID;
         0xABCC08, // TextColor;
@@ -5320,7 +5347,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_455
+    {   // CP_TEXT_OUT_INDEX_458
         FONT_SMALL, // eSystemFont;
         en_str_BracketsYes, // StringID;
         0xFF8000, // TextColor;
@@ -5329,7 +5356,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_456
+    {   // CP_TEXT_OUT_INDEX_459
         FONT_SMALL, // eSystemFont;
         en_str_BracketsNo, // StringID;
         0xFF8000, // TextColor;
@@ -5338,37 +5365,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_457
-        FONT_SMALL, // eSystemFont;
-        en_str_Please_Input_local_Postal_codes, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_458
-        FONT_SMALL, // eSystemFont;
-        en_str_Please_Input_local_Postal_codes, // StringID;
-        0xC2C2C2, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_459
-        FONT_SMALL, // eSystemFont;
-        en_str_PICTURE, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_460
         FONT_SMALL, // eSystemFont;
-        en_str_PICTURE, // StringID;
-        0xFF8000, // TextColor;
+        en_str_Please_Input_local_Postal_codes, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5376,7 +5376,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_461
         FONT_SMALL, // eSystemFont;
-        en_str_PICTURE, // StringID;
+        en_str_Please_Input_local_Postal_codes, // StringID;
         0xC2C2C2, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5385,7 +5385,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_462
         FONT_SMALL, // eSystemFont;
-        en_str_Use_0dash9_Digit_key_to_input, // StringID;
+        en_str_PICTURE, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5394,6 +5394,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_463
         FONT_SMALL, // eSystemFont;
+        en_str_PICTURE, // StringID;
+        0xFF8000, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_464
+        FONT_SMALL, // eSystemFont;
+        en_str_PICTURE, // StringID;
+        0xC2C2C2, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_465
+        FONT_SMALL, // eSystemFont;
+        en_str_Use_0dash9_Digit_key_to_input, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_466
+        FONT_SMALL, // eSystemFont;
         en_str_Use_0dash9_Digit_key_to_input, // StringID;
         0xC2C2C2, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -5401,7 +5428,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_464
+    {   // CP_TEXT_OUT_INDEX_467
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x101010, // TextColor;
@@ -5410,54 +5437,27 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_465
-        FONT_NORMAL, // eSystemFont;
-        en_str_Tune_Type, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_466
-        FONT_NORMAL, // eSystemFont;
-        en_str_Tune_Type, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_467
-        FONT_NORMAL, // eSystemFont;
-        en_str_DTV_plus_ATV, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_468
         FONT_NORMAL, // eSystemFont;
-        en_str_DTV_plus_ATV, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_Tune_Type, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_469
         FONT_NORMAL, // eSystemFont;
-        en_str_DVB_Select_type, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_Tune_Type, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_470
         FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashT, // StringID;
+        en_str_DTV_plus_ATV, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5466,8 +5466,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_471
         FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashT, // StringID;
-        0x202020, // TextColor;
+        en_str_DTV_plus_ATV, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5475,7 +5475,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_472
         FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashC, // StringID;
+        en_str_DVB_Select_type, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5484,8 +5484,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_473
         FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashC, // StringID;
-        0x202020, // TextColor;
+        en_str_DVBdashT, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5493,8 +5493,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_474
         FONT_NORMAL, // eSystemFont;
-        en_str_BW_SELECT, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_DVBdashT, // StringID;
+        0x202020, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5502,7 +5502,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_475
         FONT_NORMAL, // eSystemFont;
-        en_str_7M, // StringID;
+        en_str_DVBdashC, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5511,7 +5511,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_476
         FONT_NORMAL, // eSystemFont;
-        en_str_7M, // StringID;
+        en_str_DVBdashC, // StringID;
         0x202020, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5520,7 +5520,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_477
         FONT_NORMAL, // eSystemFont;
-        en_str_8M, // StringID;
+        en_str_BW_SELECT, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5529,8 +5529,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_478
         FONT_NORMAL, // eSystemFont;
-        en_str_8M, // StringID;
-        0x202020, // TextColor;
+        en_str_7M, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5538,16 +5538,16 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_479
         FONT_NORMAL, // eSystemFont;
-        en_str_Signal_Information, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_7M, // StringID;
+        0x202020, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_480
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_8M, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5556,61 +5556,61 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_481
         FONT_NORMAL, // eSystemFont;
-        en_str_PIP_Mode, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_8M, // StringID;
+        0x202020, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_482
         FONT_NORMAL, // eSystemFont;
-        en_str_PIP_Mode, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_483
-        FONT_NORMAL, // eSystemFont;
-        en_str_PIP_Mode, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_484
-        FONT_NORMAL, // eSystemFont;
-        en_str_Off, // StringID;
+        en_str_Signal_Information, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
+    {   // CP_TEXT_OUT_INDEX_483
+        FONT_SMALL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_484
+        FONT_NORMAL, // eSystemFont;
+        en_str_PIP_Mode, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
     {   // CP_TEXT_OUT_INDEX_485
         FONT_NORMAL, // eSystemFont;
-        en_str_Off, // StringID;
+        en_str_PIP_Mode, // StringID;
         0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_486
         FONT_NORMAL, // eSystemFont;
-        en_str_Off, // StringID;
+        en_str_PIP_Mode, // StringID;
         0x808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_487
         FONT_NORMAL, // eSystemFont;
-        en_str_DTV, // StringID;
+        en_str_Off, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5619,7 +5619,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_488
         FONT_NORMAL, // eSystemFont;
-        en_str_DTV, // StringID;
+        en_str_Off, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5628,7 +5628,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_489
         FONT_NORMAL, // eSystemFont;
-        en_str_DTV, // StringID;
+        en_str_Off, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5637,7 +5637,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_490
         FONT_NORMAL, // eSystemFont;
-        en_str_Small, // StringID;
+        en_str_DTV, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5646,7 +5646,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_491
         FONT_NORMAL, // eSystemFont;
-        en_str_Small, // StringID;
+        en_str_DTV, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5655,7 +5655,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_492
         FONT_NORMAL, // eSystemFont;
-        en_str_Small, // StringID;
+        en_str_DTV, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5664,7 +5664,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_493
         FONT_NORMAL, // eSystemFont;
-        en_str_LeftdashTop, // StringID;
+        en_str_Small, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5673,7 +5673,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_494
         FONT_NORMAL, // eSystemFont;
-        en_str_LeftdashTop, // StringID;
+        en_str_Small, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5682,7 +5682,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_495
         FONT_NORMAL, // eSystemFont;
-        en_str_LeftdashTop, // StringID;
+        en_str_Small, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5691,7 +5691,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_496
         FONT_NORMAL, // eSystemFont;
-        en_str_Main, // StringID;
+        en_str_LeftdashTop, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5700,7 +5700,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_497
         FONT_NORMAL, // eSystemFont;
-        en_str_Main, // StringID;
+        en_str_LeftdashTop, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5709,7 +5709,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_498
         FONT_NORMAL, // eSystemFont;
-        en_str_Main, // StringID;
+        en_str_LeftdashTop, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5718,7 +5718,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_499
         FONT_NORMAL, // eSystemFont;
-        en_str_Swap, // StringID;
+        en_str_Main, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5727,7 +5727,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_500
         FONT_NORMAL, // eSystemFont;
-        en_str_Swap, // StringID;
+        en_str_Main, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5736,7 +5736,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_501
         FONT_NORMAL, // eSystemFont;
-        en_str_Swap, // StringID;
+        en_str_Main, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5745,26 +5745,26 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_502
         FONT_NORMAL, // eSystemFont;
-        en_str_Picture_Mode_Colon, // StringID;
+        en_str_Swap, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_503
         FONT_NORMAL, // eSystemFont;
-        en_str_Picture_Mode_Colon, // StringID;
+        en_str_Swap, // StringID;
         0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_504
         FONT_NORMAL, // eSystemFont;
-        en_str_Standard, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Swap, // StringID;
+        0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5772,6 +5772,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_505
         FONT_NORMAL, // eSystemFont;
+        en_str_Picture_Mode_Colon, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_506
+        FONT_NORMAL, // eSystemFont;
+        en_str_Picture_Mode_Colon, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_507
+        FONT_NORMAL, // eSystemFont;
+        en_str_Standard, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_508
+        FONT_NORMAL, // eSystemFont;
         en_str_Standard, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -5779,7 +5806,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_506
+    {   // CP_TEXT_OUT_INDEX_509
         FONT_NORMAL, // eSystemFont;
         en_str_Standard, // StringID;
         0x808080, // TextColor;
@@ -5788,7 +5815,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_507
+    {   // CP_TEXT_OUT_INDEX_510
         FONT_NORMAL, // eSystemFont;
         en_str_Sound_Mode, // StringID;
         0x2C2C2C, // TextColor;
@@ -5797,7 +5824,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_508
+    {   // CP_TEXT_OUT_INDEX_511
         FONT_NORMAL, // eSystemFont;
         en_str_Audio_Language, // StringID;
         0x2C2C2C, // TextColor;
@@ -5806,7 +5833,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_509
+    {   // CP_TEXT_OUT_INDEX_512
         FONT_NORMAL, // eSystemFont;
         en_str_Primary, // StringID;
         0xFFFFFF, // TextColor;
@@ -5815,7 +5842,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_510
+    {   // CP_TEXT_OUT_INDEX_513
         FONT_NORMAL, // eSystemFont;
         en_str_Primary, // StringID;
         0x2C2C2C, // TextColor;
@@ -5824,7 +5851,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_511
+    {   // CP_TEXT_OUT_INDEX_514
         FONT_NORMAL, // eSystemFont;
         en_str_Primary, // StringID;
         0x808080, // TextColor;
@@ -5833,7 +5860,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_512
+    {   // CP_TEXT_OUT_INDEX_515
         FONT_NORMAL, // eSystemFont;
         en_str_Subtitle_Language, // StringID;
         0x2C2C2C, // TextColor;
@@ -5842,36 +5869,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_513
-        FONT_NORMAL, // eSystemFont;
-        en_str_Language, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_514
-        FONT_NORMAL, // eSystemFont;
-        en_str_Language, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_515
-        FONT_NORMAL, // eSystemFont;
-        en_str_Language, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_516
         FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
+        en_str_Language, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5880,7 +5880,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_517
         FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
+        en_str_Language, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5889,8 +5889,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_518
         FONT_NORMAL, // eSystemFont;
-        en_str_Time_Zone, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Language, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -5898,25 +5898,25 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_519
         FONT_NORMAL, // eSystemFont;
-        en_str_Not_Supported, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_3Dot, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_520
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_CEC, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_3Dot, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_521
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI_CEC, // StringID;
+        en_str_Time_Zone, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5925,6 +5925,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_522
         FONT_NORMAL, // eSystemFont;
+        en_str_Not_Supported, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_523
+        FONT_NORMAL, // eSystemFont;
+        en_str_HDMI_CEC, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_524
+        FONT_NORMAL, // eSystemFont;
+        en_str_HDMI_CEC, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_525
+        FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignRight, // eTextAttrib;
@@ -5932,7 +5959,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_523
+    {   // CP_TEXT_OUT_INDEX_526
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x2C2C2C, // TextColor;
@@ -5941,7 +5968,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_524
+    {   // CP_TEXT_OUT_INDEX_527
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x808080, // TextColor;
@@ -5950,7 +5977,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_525
+    {   // CP_TEXT_OUT_INDEX_528
         FONT_NORMAL, // eSystemFont;
         en_str_HDMI_ARC, // StringID;
         0x2C2C2C, // TextColor;
@@ -5959,36 +5986,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_526
-        FONT_NORMAL, // eSystemFont;
-        en_str_Auto_Standby, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_527
-        FONT_NORMAL, // eSystemFont;
-        en_str_Auto_Standby, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_528
-        FONT_NORMAL, // eSystemFont;
-        en_str_Auto_Standby, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_529
         FONT_NORMAL, // eSystemFont;
-        en_str_Auto_TV_On, // StringID;
+        en_str_Auto_Standby, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -5997,7 +5997,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_530
         FONT_NORMAL, // eSystemFont;
-        en_str_Auto_TV_On, // StringID;
+        en_str_Auto_Standby, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6006,7 +6006,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_531
         FONT_NORMAL, // eSystemFont;
-        en_str_Auto_TV_On, // StringID;
+        en_str_Auto_Standby, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6015,7 +6015,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_532
         FONT_NORMAL, // eSystemFont;
-        en_str_Device_Control, // StringID;
+        en_str_Auto_TV_On, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6024,7 +6024,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_533
         FONT_NORMAL, // eSystemFont;
-        en_str_Device_Control, // StringID;
+        en_str_Auto_TV_On, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6033,7 +6033,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_534
         FONT_NORMAL, // eSystemFont;
-        en_str_Device_Control, // StringID;
+        en_str_Auto_TV_On, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6042,7 +6042,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_535
         FONT_NORMAL, // eSystemFont;
-        en_str_Device_List, // StringID;
+        en_str_Device_Control, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6051,7 +6051,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_536
         FONT_NORMAL, // eSystemFont;
-        en_str_Device_List, // StringID;
+        en_str_Device_Control, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6060,7 +6060,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_537
         FONT_NORMAL, // eSystemFont;
-        en_str_Device_List, // StringID;
+        en_str_Device_Control, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6071,32 +6071,32 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         FONT_NORMAL, // eSystemFont;
         en_str_Device_List, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_539
         FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
+        en_str_Device_List, // StringID;
         0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_540
-        FONT_BIG, // eSystemFont;
-        en_str_HDMI_Device_Searching, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Device_List, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_541
         FONT_NORMAL, // eSystemFont;
-        en_str_CC_Off, // StringID;
+        en_str_Device_List, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6105,17 +6105,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_542
         FONT_NORMAL, // eSystemFont;
-        en_str_CC_Off, // StringID;
-        0x101010, // TextColor;
+        en_str_dashdash, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_543
-        FONT_NORMAL, // eSystemFont;
-        en_str_CC_Off, // StringID;
-        0x7F7F7F, // TextColor;
+        FONT_BIG, // eSystemFont;
+        en_str_HDMI_Device_Searching, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6123,7 +6123,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_544
         FONT_NORMAL, // eSystemFont;
-        en_str_CC_1, // StringID;
+        en_str_CC_Off, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6132,7 +6132,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_545
         FONT_NORMAL, // eSystemFont;
-        en_str_CC_1, // StringID;
+        en_str_CC_Off, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6141,7 +6141,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_546
         FONT_NORMAL, // eSystemFont;
-        en_str_CC_1, // StringID;
+        en_str_CC_Off, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6150,8 +6150,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_547
         FONT_NORMAL, // eSystemFont;
-        en_str_Off, // StringID;
-        0x101010, // TextColor;
+        en_str_CC_1, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6159,8 +6159,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_548
         FONT_NORMAL, // eSystemFont;
-        en_str_Off, // StringID;
-        0x7F7F7F, // TextColor;
+        en_str_CC_1, // StringID;
+        0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6168,8 +6168,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_549
         FONT_NORMAL, // eSystemFont;
-        en_str_Option, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_CC_1, // StringID;
+        0x7F7F7F, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6177,7 +6177,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_550
         FONT_NORMAL, // eSystemFont;
-        en_str_Option, // StringID;
+        en_str_Off, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6186,7 +6186,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_551
         FONT_NORMAL, // eSystemFont;
-        en_str_Option, // StringID;
+        en_str_Off, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6194,54 +6194,54 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_552
-        FONT_BIG, // eSystemFont;
-        en_str_Mode, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Option, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_553
-        FONT_BIG, // eSystemFont;
-        en_str_Mode, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Option, // StringID;
         0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_554
-        FONT_BIG, // eSystemFont;
-        en_str_Mode, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Option, // StringID;
         0x7F7F7F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_555
         FONT_BIG, // eSystemFont;
-        en_str_Default, // StringID;
+        en_str_Mode, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_556
         FONT_BIG, // eSystemFont;
-        en_str_Default, // StringID;
+        en_str_Mode, // StringID;
         0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_557
         FONT_BIG, // eSystemFont;
-        en_str_Font_Style, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Mode, // StringID;
+        0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6249,6 +6249,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_558
         FONT_BIG, // eSystemFont;
+        en_str_Default, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_559
+        FONT_BIG, // eSystemFont;
+        en_str_Default, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_560
+        FONT_BIG, // eSystemFont;
+        en_str_Font_Style, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_561
+        FONT_BIG, // eSystemFont;
         en_str_Font_Style, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -6256,7 +6283,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_559
+    {   // CP_TEXT_OUT_INDEX_562
         FONT_BIG, // eSystemFont;
         en_str_Font_Style, // StringID;
         0x7F7F7F, // TextColor;
@@ -6265,7 +6292,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_560
+    {   // CP_TEXT_OUT_INDEX_563
         FONT_BIG, // eSystemFont;
         en_str_Default, // StringID;
         0x808080, // TextColor;
@@ -6274,36 +6301,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_561
-        FONT_BIG, // eSystemFont;
-        en_str_Font_Size, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_562
-        FONT_BIG, // eSystemFont;
-        en_str_Font_Size, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_563
-        FONT_BIG, // eSystemFont;
-        en_str_Font_Size, // StringID;
-        0x7F7F7F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_564
         FONT_BIG, // eSystemFont;
-        en_str_Font_Edge_Style, // StringID;
+        en_str_Font_Size, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6312,7 +6312,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_565
         FONT_BIG, // eSystemFont;
-        en_str_Font_Edge_Style, // StringID;
+        en_str_Font_Size, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6321,7 +6321,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_566
         FONT_BIG, // eSystemFont;
-        en_str_Font_Edge_Style, // StringID;
+        en_str_Font_Size, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6330,7 +6330,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_567
         FONT_BIG, // eSystemFont;
-        en_str_Font_Edge_Color, // StringID;
+        en_str_Font_Edge_Style, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6339,7 +6339,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_568
         FONT_BIG, // eSystemFont;
-        en_str_Font_Edge_Color, // StringID;
+        en_str_Font_Edge_Style, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6348,7 +6348,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_569
         FONT_BIG, // eSystemFont;
-        en_str_Font_Edge_Color, // StringID;
+        en_str_Font_Edge_Style, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6357,7 +6357,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_570
         FONT_BIG, // eSystemFont;
-        en_str_FG_Color, // StringID;
+        en_str_Font_Edge_Color, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6366,7 +6366,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_571
         FONT_BIG, // eSystemFont;
-        en_str_FG_Color, // StringID;
+        en_str_Font_Edge_Color, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6375,8 +6375,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_572
         FONT_BIG, // eSystemFont;
-        en_str_FG_Color, // StringID;
-        0x808080, // TextColor;
+        en_str_Font_Edge_Color, // StringID;
+        0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6384,7 +6384,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_573
         FONT_BIG, // eSystemFont;
-        en_str_BG_Color, // StringID;
+        en_str_FG_Color, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6393,7 +6393,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_574
         FONT_BIG, // eSystemFont;
-        en_str_BG_Color, // StringID;
+        en_str_FG_Color, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6402,8 +6402,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_575
         FONT_BIG, // eSystemFont;
-        en_str_BG_Color, // StringID;
-        0x7F7F7F, // TextColor;
+        en_str_FG_Color, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6411,7 +6411,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_576
         FONT_BIG, // eSystemFont;
-        en_str_FG_Opacity, // StringID;
+        en_str_BG_Color, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6420,7 +6420,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_577
         FONT_BIG, // eSystemFont;
-        en_str_FG_Opacity, // StringID;
+        en_str_BG_Color, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6429,7 +6429,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_578
         FONT_BIG, // eSystemFont;
-        en_str_FG_Opacity, // StringID;
+        en_str_BG_Color, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6438,7 +6438,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_579
         FONT_BIG, // eSystemFont;
-        en_str_BG_Opacity, // StringID;
+        en_str_FG_Opacity, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6447,7 +6447,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_580
         FONT_BIG, // eSystemFont;
-        en_str_BG_Opacity, // StringID;
+        en_str_FG_Opacity, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6456,7 +6456,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_581
         FONT_BIG, // eSystemFont;
-        en_str_BG_Opacity, // StringID;
+        en_str_FG_Opacity, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6465,7 +6465,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_582
         FONT_BIG, // eSystemFont;
-        en_str_Window_Color, // StringID;
+        en_str_BG_Opacity, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6474,7 +6474,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_583
         FONT_BIG, // eSystemFont;
-        en_str_Window_Color, // StringID;
+        en_str_BG_Opacity, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6483,7 +6483,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_584
         FONT_BIG, // eSystemFont;
-        en_str_Window_Color, // StringID;
+        en_str_BG_Opacity, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6492,7 +6492,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_585
         FONT_BIG, // eSystemFont;
-        en_str_Window_Opacity, // StringID;
+        en_str_Window_Color, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6501,7 +6501,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_586
         FONT_BIG, // eSystemFont;
-        en_str_Window_Opacity, // StringID;
+        en_str_Window_Color, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6510,7 +6510,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_587
         FONT_BIG, // eSystemFont;
-        en_str_Window_Opacity, // StringID;
+        en_str_Window_Color, // StringID;
         0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6518,6 +6518,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_588
+        FONT_BIG, // eSystemFont;
+        en_str_Window_Opacity, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_589
+        FONT_BIG, // eSystemFont;
+        en_str_Window_Opacity, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_590
+        FONT_BIG, // eSystemFont;
+        en_str_Window_Opacity, // StringID;
+        0x7F7F7F, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_591
         FONT_NORMAL, // eSystemFont;
         en_str_Input_Block, // StringID;
         0xFFFFFF, // TextColor;
@@ -6526,55 +6553,28 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_589
-        FONT_BIG, // eSystemFont;
-        en_str_TV, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_590
-        FONT_BIG, // eSystemFont;
-        en_str_TV, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_591
-        FONT_BIG, // eSystemFont;
-        en_str_TV, // StringID;
-        0xFF7F7F7F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_592
         FONT_BIG, // eSystemFont;
-        en_str_colon, // StringID;
+        en_str_TV, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_593
         FONT_BIG, // eSystemFont;
-        en_str_colon, // StringID;
+        en_str_TV, // StringID;
         0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_594
         FONT_BIG, // eSystemFont;
-        en_str_AV, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_TV, // StringID;
+        0xFF7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6582,6 +6582,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_595
         FONT_BIG, // eSystemFont;
+        en_str_colon, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_596
+        FONT_BIG, // eSystemFont;
+        en_str_colon, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_597
+        FONT_BIG, // eSystemFont;
+        en_str_AV, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_598
+        FONT_BIG, // eSystemFont;
         en_str_AV, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -6589,7 +6616,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_596
+    {   // CP_TEXT_OUT_INDEX_599
         FONT_BIG, // eSystemFont;
         en_str_AV, // StringID;
         0xFF7F7F7F, // TextColor;
@@ -6598,7 +6625,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_597
+    {   // CP_TEXT_OUT_INDEX_600
         FONT_BIG, // eSystemFont;
         en_str_colon, // StringID;
         0xFFC0C0C0, // TextColor;
@@ -6607,36 +6634,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_598
-        FONT_BIG, // eSystemFont;
-        en_str_SdashVideo, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_599
-        FONT_BIG, // eSystemFont;
-        en_str_SdashVideo, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_600
-        FONT_BIG, // eSystemFont;
-        en_str_SdashVideo, // StringID;
-        0x7F7F7F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_601
         FONT_BIG, // eSystemFont;
-        en_str_Component, // StringID;
+        en_str_SdashVideo, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6645,7 +6645,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_602
         FONT_BIG, // eSystemFont;
-        en_str_Component, // StringID;
+        en_str_SdashVideo, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6654,8 +6654,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_603
         FONT_BIG, // eSystemFont;
-        en_str_Component, // StringID;
-        0xFF7F7F7F, // TextColor;
+        en_str_SdashVideo, // StringID;
+        0x7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -6663,7 +6663,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_604
         FONT_BIG, // eSystemFont;
-        en_str_HDMI, // StringID;
+        en_str_Component, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6672,7 +6672,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_605
         FONT_BIG, // eSystemFont;
-        en_str_HDMI, // StringID;
+        en_str_Component, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6681,7 +6681,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_606
         FONT_BIG, // eSystemFont;
-        en_str_HDMI, // StringID;
+        en_str_Component, // StringID;
         0xFF7F7F7F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6690,7 +6690,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_607
         FONT_BIG, // eSystemFont;
-        en_str_PC, // StringID;
+        en_str_HDMI, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6699,7 +6699,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_608
         FONT_BIG, // eSystemFont;
-        en_str_PC, // StringID;
+        en_str_HDMI, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6708,6 +6708,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_609
         FONT_BIG, // eSystemFont;
+        en_str_HDMI, // StringID;
+        0xFF7F7F7F, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_610
+        FONT_BIG, // eSystemFont;
+        en_str_PC, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_611
+        FONT_BIG, // eSystemFont;
+        en_str_PC, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_612
+        FONT_BIG, // eSystemFont;
         en_str_PC, // StringID;
         0xFF0082BF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -6715,7 +6742,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_610
+    {   // CP_TEXT_OUT_INDEX_613
         FONT_NORMAL, // eSystemFont;
         en_str_US, // StringID;
         0xFFFFFF, // TextColor;
@@ -6724,7 +6751,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_611
+    {   // CP_TEXT_OUT_INDEX_614
         FONT_NORMAL, // eSystemFont;
         en_str_US, // StringID;
         0x101010, // TextColor;
@@ -6733,7 +6760,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_612
+    {   // CP_TEXT_OUT_INDEX_615
         FONT_NORMAL, // eSystemFont;
         en_str_US, // StringID;
         0x808080, // TextColor;
@@ -6742,36 +6769,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_613
-        FONT_BIG, // eSystemFont;
-        en_str_TV, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_614
-        FONT_BIG, // eSystemFont;
-        en_str_TV, // StringID;
-        0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_615
-        FONT_BIG, // eSystemFont;
-        en_str_TV, // StringID;
-        0xFF7F7F7F, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_616
         FONT_BIG, // eSystemFont;
-        en_str_MPAA, // StringID;
+        en_str_TV, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6780,7 +6780,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_617
         FONT_BIG, // eSystemFont;
-        en_str_MPAA, // StringID;
+        en_str_TV, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6789,7 +6789,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_618
         FONT_BIG, // eSystemFont;
-        en_str_MPAA, // StringID;
+        en_str_TV, // StringID;
         0xFF7F7F7F, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6797,6 +6797,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_619
+        FONT_BIG, // eSystemFont;
+        en_str_MPAA, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_620
+        FONT_BIG, // eSystemFont;
+        en_str_MPAA, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_621
+        FONT_BIG, // eSystemFont;
+        en_str_MPAA, // StringID;
+        0xFF7F7F7F, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_622
         FONT_NORMAL, // eSystemFont;
         en_str_Canada, // StringID;
         0xFFFFFF, // TextColor;
@@ -6805,7 +6832,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_620
+    {   // CP_TEXT_OUT_INDEX_623
         FONT_NORMAL, // eSystemFont;
         en_str_Canada, // StringID;
         0x101010, // TextColor;
@@ -6814,7 +6841,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_621
+    {   // CP_TEXT_OUT_INDEX_624
         FONT_NORMAL, // eSystemFont;
         en_str_Canada, // StringID;
         0x808080, // TextColor;
@@ -6823,36 +6850,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_622
-        FONT_BIG, // eSystemFont;
-        en_str_Canada_Eng, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_623
-        FONT_BIG, // eSystemFont;
-        en_str_Canada_Eng, // StringID;
-        0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_624
-        FONT_BIG, // eSystemFont;
-        en_str_Canada_Eng, // StringID;
-        0xFF7F7F7F, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_625
         FONT_BIG, // eSystemFont;
-        en_str_Canada_Fre, // StringID;
+        en_str_Canada_Eng, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6861,7 +6861,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_626
         FONT_BIG, // eSystemFont;
-        en_str_Canada_Fre, // StringID;
+        en_str_Canada_Eng, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6870,7 +6870,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_627
         FONT_BIG, // eSystemFont;
-        en_str_Canada_Fre, // StringID;
+        en_str_Canada_Eng, // StringID;
         0xFF7F7F7F, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -6878,6 +6878,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_628
+        FONT_BIG, // eSystemFont;
+        en_str_Canada_Fre, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_629
+        FONT_BIG, // eSystemFont;
+        en_str_Canada_Fre, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_630
+        FONT_BIG, // eSystemFont;
+        en_str_Canada_Fre, // StringID;
+        0xFF7F7F7F, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_631
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x808080, // TextColor;
@@ -6886,7 +6913,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_629
+    {   // CP_TEXT_OUT_INDEX_632
         FONT_BIG, // eSystemFont;
         en_str_colon, // StringID;
         0x7F7F7F, // TextColor;
@@ -6895,7 +6922,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_630
+    {   // CP_TEXT_OUT_INDEX_633
         FONT_BIG, // eSystemFont;
         en_str_colon, // StringID;
         0xFF7F7F7F, // TextColor;
@@ -6904,7 +6931,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_631
+    {   // CP_TEXT_OUT_INDEX_634
         FONT_BIG, // eSystemFont;
         en_str_colon, // StringID;
         0xFF0082BF, // TextColor;
@@ -6913,7 +6940,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_632
+    {   // CP_TEXT_OUT_INDEX_635
         FONT_NORMAL, // eSystemFont;
         en_str_TV_RATING, // StringID;
         0xFFFFFF, // TextColor;
@@ -6922,7 +6949,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_633
+    {   // CP_TEXT_OUT_INDEX_636
         FONT_BIG, // eSystemFont;
         en_str_TVdashNone, // StringID;
         0xFFFFFF, // TextColor;
@@ -6931,7 +6958,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_634
+    {   // CP_TEXT_OUT_INDEX_637
         FONT_BIG, // eSystemFont;
         en_str_TVdashY, // StringID;
         0xFFFFFF, // TextColor;
@@ -6940,7 +6967,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_635
+    {   // CP_TEXT_OUT_INDEX_638
         FONT_BIG, // eSystemFont;
         en_str_TVdashY7, // StringID;
         0xFFFFFF, // TextColor;
@@ -6949,7 +6976,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_636
+    {   // CP_TEXT_OUT_INDEX_639
         FONT_BIG, // eSystemFont;
         en_str_TVdashG, // StringID;
         0xFFFFFF, // TextColor;
@@ -6958,7 +6985,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_637
+    {   // CP_TEXT_OUT_INDEX_640
         FONT_BIG, // eSystemFont;
         en_str_TVdashPG, // StringID;
         0xFFFFFF, // TextColor;
@@ -6967,7 +6994,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_638
+    {   // CP_TEXT_OUT_INDEX_641
         FONT_BIG, // eSystemFont;
         en_str_TVdash14, // StringID;
         0xFFFFFF, // TextColor;
@@ -6976,7 +7003,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_639
+    {   // CP_TEXT_OUT_INDEX_642
         FONT_BIG, // eSystemFont;
         en_str_TVdashMA, // StringID;
         0xFFFFFF, // TextColor;
@@ -6985,35 +7012,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_640
-        FONT_NORMAL, // eSystemFont;
-        en_str_RRT_Setting, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_641
-        FONT_NORMAL, // eSystemFont;
-        en_str_RRT_Setting, // StringID;
-        0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_642
-        FONT_NORMAL, // eSystemFont;
-        en_str_RRT_Setting, // StringID;
-        0x808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_643
-        FONT_BIG, // eSystemFont;
+        FONT_NORMAL, // eSystemFont;
         en_str_RRT_Setting, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -7022,7 +7022,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_644
-        FONT_BIG, // eSystemFont;
+        FONT_NORMAL, // eSystemFont;
         en_str_RRT_Setting, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -7031,7 +7031,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_645
-        FONT_BIG, // eSystemFont;
+        FONT_NORMAL, // eSystemFont;
         en_str_RRT_Setting, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -7041,6 +7041,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_646
         FONT_BIG, // eSystemFont;
+        en_str_RRT_Setting, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_647
+        FONT_BIG, // eSystemFont;
+        en_str_RRT_Setting, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_648
+        FONT_BIG, // eSystemFont;
+        en_str_RRT_Setting, // StringID;
+        0x808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_649
+        FONT_BIG, // eSystemFont;
         en_str_colon, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -7048,7 +7075,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_647
+    {   // CP_TEXT_OUT_INDEX_650
         FONT_BIG, // eSystemFont;
         en_str_Audio_Option, // StringID;
         0xFFFFFF, // TextColor;
@@ -7057,7 +7084,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_648
+    {   // CP_TEXT_OUT_INDEX_651
         FONT_BIG, // eSystemFont;
         en_str_Audio_Option, // StringID;
         0x101010, // TextColor;
@@ -7066,7 +7093,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_649
+    {   // CP_TEXT_OUT_INDEX_652
         FONT_BIG, // eSystemFont;
         en_str_Audio_Option, // StringID;
         0xFF808080, // TextColor;
@@ -7075,36 +7102,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_650
-        FONT_BIG, // eSystemFont;
-        en_str_Accessibility, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_651
-        FONT_BIG, // eSystemFont;
-        en_str_Accessibility, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_652
-        FONT_BIG, // eSystemFont;
-        en_str_Accessibility, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_653
         FONT_BIG, // eSystemFont;
-        en_str_CM, // StringID;
+        en_str_Accessibility, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7113,7 +7113,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_654
         FONT_BIG, // eSystemFont;
-        en_str_CM, // StringID;
+        en_str_Accessibility, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7122,7 +7122,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_655
         FONT_BIG, // eSystemFont;
-        en_str_CM, // StringID;
+        en_str_Accessibility, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7131,7 +7131,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_656
         FONT_BIG, // eSystemFont;
-        en_str_Audio_Language, // StringID;
+        en_str_CM, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7140,7 +7140,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_657
         FONT_BIG, // eSystemFont;
-        en_str_Audio_Language, // StringID;
+        en_str_CM, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7149,7 +7149,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_658
         FONT_BIG, // eSystemFont;
-        en_str_Audio_Language, // StringID;
+        en_str_CM, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7158,7 +7158,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_659
         FONT_BIG, // eSystemFont;
-        en_str_English, // StringID;
+        en_str_Audio_Language, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7167,7 +7167,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_660
         FONT_BIG, // eSystemFont;
-        en_str_English, // StringID;
+        en_str_Audio_Language, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7176,7 +7176,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_661
         FONT_BIG, // eSystemFont;
-        en_str_English, // StringID;
+        en_str_Audio_Language, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7185,7 +7185,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_662
         FONT_BIG, // eSystemFont;
-        en_str_First_Priority, // StringID;
+        en_str_English, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7194,7 +7194,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_663
         FONT_BIG, // eSystemFont;
-        en_str_First_Priority, // StringID;
+        en_str_English, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7203,7 +7203,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_664
         FONT_BIG, // eSystemFont;
-        en_str_First_Priority, // StringID;
+        en_str_English, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7212,7 +7212,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_665
         FONT_BIG, // eSystemFont;
-        en_str_Equalizer, // StringID;
+        en_str_First_Priority, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7221,7 +7221,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_666
         FONT_BIG, // eSystemFont;
-        en_str_Equalizer, // StringID;
+        en_str_First_Priority, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7230,6 +7230,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_667
         FONT_BIG, // eSystemFont;
+        en_str_First_Priority, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_668
+        FONT_BIG, // eSystemFont;
+        en_str_Equalizer, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_669
+        FONT_BIG, // eSystemFont;
+        en_str_Equalizer, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_670
+        FONT_BIG, // eSystemFont;
         en_str_Equalizer, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -7237,7 +7264,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_668
+    {   // CP_TEXT_OUT_INDEX_671
         FONT_BIG, // eSystemFont;
         en_str_Standard, // StringID;
         0xFFFFFF, // TextColor;
@@ -7246,7 +7273,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_669
+    {   // CP_TEXT_OUT_INDEX_672
         FONT_BIG, // eSystemFont;
         en_str_Standard, // StringID;
         0x101010, // TextColor;
@@ -7255,7 +7282,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_670
+    {   // CP_TEXT_OUT_INDEX_673
         FONT_BIG, // eSystemFont;
         en_str_Standard, // StringID;
         0xC0C0C0, // TextColor;
@@ -7264,7 +7291,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_671
+    {   // CP_TEXT_OUT_INDEX_674
         FONT_NORMAL, // eSystemFont;
         en_str_Auto_Scan, // StringID;
         0xFFFFFF, // TextColor;
@@ -7273,7 +7300,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_672
+    {   // CP_TEXT_OUT_INDEX_675
         FONT_NORMAL, // eSystemFont;
         en_str_Found, // StringID;
         0xFFFFFF, // TextColor;
@@ -7282,7 +7309,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_673
+    {   // CP_TEXT_OUT_INDEX_676
         FONT_NORMAL, // eSystemFont;
         en_str_Programmes, // StringID;
         0xFFFFFF, // TextColor;
@@ -7291,7 +7318,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_674
+    {   // CP_TEXT_OUT_INDEX_677
         FONT_NORMAL, // eSystemFont;
         en_str_Analog, // StringID;
         0xFFFFFF, // TextColor;
@@ -7300,7 +7327,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_675
+    {   // CP_TEXT_OUT_INDEX_678
         FONT_NORMAL, // eSystemFont;
         en_str_Digital_colon, // StringID;
         0xFFFFFF, // TextColor;
@@ -7309,45 +7336,18 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_676
-        FONT_BIG, // eSystemFont;
-        en_str_colon, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_677
-        FONT_NORMAL, // eSystemFont;
-        en_str_Percentdot, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_678
-        FONT_NORMAL, // eSystemFont;
-        en_str_RF_CH, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_679
         FONT_BIG, // eSystemFont;
         en_str_colon, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_680
         FONT_NORMAL, // eSystemFont;
-        en_str_DTV, // StringID;
+        en_str_Percentdot, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7356,24 +7356,51 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_681
         FONT_NORMAL, // eSystemFont;
-        en_str_SOUND, // StringID;
+        en_str_RF_CH, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_682
-        FONT_NORMAL, // eSystemFont;
-        en_str_SOUND, // StringID;
-        0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        FONT_BIG, // eSystemFont;
+        en_str_colon, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_683
         FONT_NORMAL, // eSystemFont;
+        en_str_DTV, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_684
+        FONT_NORMAL, // eSystemFont;
+        en_str_SOUND, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_685
+        FONT_NORMAL, // eSystemFont;
+        en_str_SOUND, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_686
+        FONT_NORMAL, // eSystemFont;
         en_str_SOUND, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -7381,38 +7408,11 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_684
+    {   // CP_TEXT_OUT_INDEX_687
         FONT_SMALL, // eSystemFont;
         en_str_colon, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_685
-        FONT_SMALL, // eSystemFont;
-        en_str_colon, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_686
-        FONT_SMALL, // eSystemFont;
-        en_str_colon, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_687
-        FONT_BIG, // eSystemFont;
-        en_str_colon, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
@@ -7420,7 +7420,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     {   // CP_TEXT_OUT_INDEX_688
         FONT_SMALL, // eSystemFont;
         en_str_colon, // StringID;
-        0xFFFFFFFF, // TextColor;
+        0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -7429,13 +7429,40 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     {   // CP_TEXT_OUT_INDEX_689
         FONT_SMALL, // eSystemFont;
         en_str_colon, // StringID;
-        0xFF000000, // TextColor;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_690
+        FONT_BIG, // eSystemFont;
+        en_str_colon, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_691
+        FONT_SMALL, // eSystemFont;
+        en_str_colon, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_692
+        FONT_SMALL, // eSystemFont;
+        en_str_colon, // StringID;
+        0xFF000000, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_693
         FONT_SMALL, // eSystemFont;
         en_str_colon, // StringID;
         0xFFC0C0C0, // TextColor;
@@ -7444,43 +7471,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_691
-        FONT_NORMAL, // eSystemFont;
-        en_str_No, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_692
-        FONT_NORMAL, // eSystemFont;
-        en_str_No, // StringID;
-        0xABCC08, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_693
-        FONT_NORMAL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_694
         FONT_NORMAL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xABCC08, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        en_str_No, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_695
+        FONT_NORMAL, // eSystemFont;
+        en_str_No, // StringID;
+        0xABCC08, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_696
+        FONT_NORMAL, // eSystemFont;
+        en_str_Yes, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_697
+        FONT_NORMAL, // eSystemFont;
+        en_str_Yes, // StringID;
+        0xABCC08, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_698
         FONT_SMALL, // eSystemFont;
         en_str_Are_you_sure_to_Auto_Scan, // StringID;
         0xFFFFFF, // TextColor;
@@ -7489,7 +7516,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_696
+    {   // CP_TEXT_OUT_INDEX_699
         FONT_NORMAL, // eSystemFont;
         en_str_Backlight, // StringID;
         0xFFFFFF, // TextColor;
@@ -7498,7 +7525,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_697
+    {   // CP_TEXT_OUT_INDEX_700
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFF, // TextColor;
@@ -7507,7 +7534,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_698
+    {   // CP_TEXT_OUT_INDEX_701
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0x80808, // TextColor;
@@ -7516,7 +7543,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_699
+    {   // CP_TEXT_OUT_INDEX_702
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0x808080, // TextColor;
@@ -7525,7 +7552,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_700
+    {   // CP_TEXT_OUT_INDEX_703
         FONT_BIG, // eSystemFont;
         en_str_NO_SIGNAL, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -7534,7 +7561,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_701
+    {   // CP_TEXT_OUT_INDEX_704
         FONT_NORMAL, // eSystemFont;
         en_str_NO_SIGNAL, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -7543,7 +7570,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_702
+    {   // CP_TEXT_OUT_INDEX_705
         FONT_SMALL, // eSystemFont;
         en_str_NO_SIGNAL, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -7552,7 +7579,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_703
+    {   // CP_TEXT_OUT_INDEX_706
         FONT_BIG, // eSystemFont;
         en_str_Channel, // StringID;
         0xFFFFFF, // TextColor;
@@ -7561,7 +7588,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_704
+    {   // CP_TEXT_OUT_INDEX_707
         FONT_BIG, // eSystemFont;
         en_str_No, // StringID;
         0xFFFFFF, // TextColor;
@@ -7570,7 +7597,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_705
+    {   // CP_TEXT_OUT_INDEX_708
         FONT_NORMAL, // eSystemFont;
         en_str_SD, // StringID;
         0x80808, // TextColor;
@@ -7579,7 +7606,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_706
+    {   // CP_TEXT_OUT_INDEX_709
         FONT_SMALL, // eSystemFont;
         en_str_colon, // StringID;
         0x101010, // TextColor;
@@ -7588,7 +7615,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_707
+    {   // CP_TEXT_OUT_INDEX_710
         FONT_NORMAL, // eSystemFont;
         en_str_Good, // StringID;
         0x101010, // TextColor;
@@ -7597,7 +7624,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_708
+    {   // CP_TEXT_OUT_INDEX_711
         FONT_NORMAL, // eSystemFont;
         en_str_No_Title, // StringID;
         0x101010, // TextColor;
@@ -7606,7 +7633,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_709
+    {   // CP_TEXT_OUT_INDEX_712
         FONT_NORMAL, // eSystemFont;
         en_str_FTA, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -7615,7 +7642,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_710
+    {   // CP_TEXT_OUT_INDEX_713
         FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
         0x101010, // TextColor;
@@ -7624,7 +7651,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_711
+    {   // CP_TEXT_OUT_INDEX_714
         FONT_BIG, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFFFFFF, // TextColor;
@@ -7633,7 +7660,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_712
+    {   // CP_TEXT_OUT_INDEX_715
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFF, // TextColor;
@@ -7642,7 +7669,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_713
+    {   // CP_TEXT_OUT_INDEX_716
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFF, // TextColor;
@@ -7651,7 +7678,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_714
+    {   // CP_TEXT_OUT_INDEX_717
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x2C2C2C, // TextColor;
@@ -7660,7 +7687,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_715
+    {   // CP_TEXT_OUT_INDEX_718
         FONT_BIG, // eSystemFont;
         en_str_No_Information, // StringID;
         0x80808, // TextColor;
@@ -7669,46 +7696,19 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_716
+    {   // CP_TEXT_OUT_INDEX_719
         FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF080808, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_717
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFF404040, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_718
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFF404040, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_719
-        FONT_SMALL, // eSystemFont;
-        en_str_MPEG, // StringID;
-        0xFF000000, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_720
-        FONT_BIG, // eSystemFont;
+        FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
-        0xFF080808, // TextColor;
+        0xFF404040, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -7717,13 +7717,40 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     {   // CP_TEXT_OUT_INDEX_721
         FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
-        0xFFFFFFFF, // TextColor;
+        0xFF404040, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_722
+        FONT_SMALL, // eSystemFont;
+        en_str_MPEG, // StringID;
+        0xFF000000, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_723
+        FONT_BIG, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0xFF080808, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_724
+        FONT_SMALL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_725
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x2C2C2C, // TextColor;
@@ -7732,7 +7759,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_723
+    {   // CP_TEXT_OUT_INDEX_726
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x2C2C2C, // TextColor;
@@ -7741,7 +7768,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_724
+    {   // CP_TEXT_OUT_INDEX_727
         FONT_NORMAL, // eSystemFont;
         en_str_No_Information, // StringID;
         0x80808, // TextColor;
@@ -7750,7 +7777,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_725
+    {   // CP_TEXT_OUT_INDEX_728
         FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF2C2C2C, // TextColor;
@@ -7759,36 +7786,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_726
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF000000, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_727
-        FONT_SMALL, // eSystemFont;
-        en_str_DK, // StringID;
-        0xFF000000, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_728
-        FONT_SMALL, // eSystemFont;
-        en_str_DTV, // StringID;
-        0xFF000000, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_729
         FONT_SMALL, // eSystemFont;
-        en_str_SD, // StringID;
+        en_str_dashdash, // StringID;
         0xFF000000, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7797,7 +7797,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_730
         FONT_SMALL, // eSystemFont;
-        en_str_NICAM_DUAL_IplusII, // StringID;
+        en_str_DK, // StringID;
         0xFF000000, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -7806,6 +7806,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_731
         FONT_SMALL, // eSystemFont;
+        en_str_DTV, // StringID;
+        0xFF000000, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_732
+        FONT_SMALL, // eSystemFont;
+        en_str_SD, // StringID;
+        0xFF000000, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_733
+        FONT_SMALL, // eSystemFont;
+        en_str_NICAM_DUAL_IplusII, // StringID;
+        0xFF000000, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_734
+        FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF080808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -7813,7 +7840,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_732
+    {   // CP_TEXT_OUT_INDEX_735
         FONT_BIG, // eSystemFont;
         en_str_Programme_Edit, // StringID;
         0xFFFFFF, // TextColor;
@@ -7822,7 +7849,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_733
+    {   // CP_TEXT_OUT_INDEX_736
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFF, // TextColor;
@@ -7831,7 +7858,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_734
+    {   // CP_TEXT_OUT_INDEX_737
         FONT_SMALL, // eSystemFont;
         en_str_0, // StringID;
         0x80808, // TextColor;
@@ -7840,7 +7867,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_735
+    {   // CP_TEXT_OUT_INDEX_738
         FONT_SMALL, // eSystemFont;
         en_str_Q, // StringID;
         0xFF080808, // TextColor;
@@ -7849,7 +7876,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_736
+    {   // CP_TEXT_OUT_INDEX_739
         FONT_SMALL, // eSystemFont;
         en_str_A, // StringID;
         0xFF080808, // TextColor;
@@ -7858,7 +7885,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_737
+    {   // CP_TEXT_OUT_INDEX_740
         FONT_SMALL, // eSystemFont;
         en_str_Z, // StringID;
         0xFF080808, // TextColor;
@@ -7867,7 +7894,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_738
+    {   // CP_TEXT_OUT_INDEX_741
         FONT_SMALL, // eSystemFont;
         en_str_1, // StringID;
         0xFF080808, // TextColor;
@@ -7876,7 +7903,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_739
+    {   // CP_TEXT_OUT_INDEX_742
         FONT_SMALL, // eSystemFont;
         en_str_W, // StringID;
         0xFF080808, // TextColor;
@@ -7885,7 +7912,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_740
+    {   // CP_TEXT_OUT_INDEX_743
         FONT_SMALL, // eSystemFont;
         en_str_S, // StringID;
         0xFF080808, // TextColor;
@@ -7894,7 +7921,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_741
+    {   // CP_TEXT_OUT_INDEX_744
         FONT_SMALL, // eSystemFont;
         en_str_X, // StringID;
         0xFF080808, // TextColor;
@@ -7903,7 +7930,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_742
+    {   // CP_TEXT_OUT_INDEX_745
         FONT_SMALL, // eSystemFont;
         en_str_2, // StringID;
         0xFF080808, // TextColor;
@@ -7912,7 +7939,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_743
+    {   // CP_TEXT_OUT_INDEX_746
         FONT_SMALL, // eSystemFont;
         en_str_E, // StringID;
         0xFF080808, // TextColor;
@@ -7921,7 +7948,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_744
+    {   // CP_TEXT_OUT_INDEX_747
         FONT_SMALL, // eSystemFont;
         en_str_D, // StringID;
         0xFF080808, // TextColor;
@@ -7930,7 +7957,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_745
+    {   // CP_TEXT_OUT_INDEX_748
         FONT_SMALL, // eSystemFont;
         en_str_C, // StringID;
         0x80808, // TextColor;
@@ -7939,7 +7966,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_746
+    {   // CP_TEXT_OUT_INDEX_749
         FONT_SMALL, // eSystemFont;
         en_str_3, // StringID;
         0xFF080808, // TextColor;
@@ -7948,7 +7975,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_747
+    {   // CP_TEXT_OUT_INDEX_750
         FONT_SMALL, // eSystemFont;
         en_str_R, // StringID;
         0xFF080808, // TextColor;
@@ -7957,7 +7984,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_748
+    {   // CP_TEXT_OUT_INDEX_751
         FONT_SMALL, // eSystemFont;
         en_str_F, // StringID;
         0xFF080808, // TextColor;
@@ -7966,7 +7993,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_749
+    {   // CP_TEXT_OUT_INDEX_752
         FONT_SMALL, // eSystemFont;
         en_str_V, // StringID;
         0xFF080808, // TextColor;
@@ -7975,7 +8002,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_750
+    {   // CP_TEXT_OUT_INDEX_753
         FONT_SMALL, // eSystemFont;
         en_str_4, // StringID;
         0xFF080808, // TextColor;
@@ -7984,7 +8011,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_751
+    {   // CP_TEXT_OUT_INDEX_754
         FONT_SMALL, // eSystemFont;
         en_str_T, // StringID;
         0xFF080808, // TextColor;
@@ -7993,7 +8020,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_752
+    {   // CP_TEXT_OUT_INDEX_755
         FONT_SMALL, // eSystemFont;
         en_str_G, // StringID;
         0xFF080808, // TextColor;
@@ -8002,7 +8029,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_753
+    {   // CP_TEXT_OUT_INDEX_756
         FONT_SMALL, // eSystemFont;
         en_str_B, // StringID;
         0xFF080808, // TextColor;
@@ -8011,7 +8038,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_754
+    {   // CP_TEXT_OUT_INDEX_757
         FONT_SMALL, // eSystemFont;
         en_str_5, // StringID;
         0xFF080808, // TextColor;
@@ -8020,7 +8047,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_755
+    {   // CP_TEXT_OUT_INDEX_758
         FONT_SMALL, // eSystemFont;
         en_str_Y, // StringID;
         0xFF080808, // TextColor;
@@ -8029,7 +8056,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_756
+    {   // CP_TEXT_OUT_INDEX_759
         FONT_SMALL, // eSystemFont;
         en_str_H, // StringID;
         0xFF080808, // TextColor;
@@ -8038,7 +8065,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_757
+    {   // CP_TEXT_OUT_INDEX_760
         FONT_SMALL, // eSystemFont;
         en_str_N, // StringID;
         0xFF080808, // TextColor;
@@ -8047,7 +8074,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_758
+    {   // CP_TEXT_OUT_INDEX_761
         FONT_SMALL, // eSystemFont;
         en_str_6, // StringID;
         0xFF080808, // TextColor;
@@ -8056,7 +8083,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_759
+    {   // CP_TEXT_OUT_INDEX_762
         FONT_SMALL, // eSystemFont;
         en_str_U, // StringID;
         0xFF080808, // TextColor;
@@ -8065,7 +8092,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_760
+    {   // CP_TEXT_OUT_INDEX_763
         FONT_SMALL, // eSystemFont;
         en_str_J, // StringID;
         0xFF080808, // TextColor;
@@ -8074,7 +8101,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_761
+    {   // CP_TEXT_OUT_INDEX_764
         FONT_SMALL, // eSystemFont;
         en_str_M, // StringID;
         0xFF080808, // TextColor;
@@ -8083,7 +8110,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_762
+    {   // CP_TEXT_OUT_INDEX_765
         FONT_SMALL, // eSystemFont;
         en_str_7, // StringID;
         0xFF080808, // TextColor;
@@ -8092,7 +8119,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_763
+    {   // CP_TEXT_OUT_INDEX_766
         FONT_SMALL, // eSystemFont;
         en_str_I, // StringID;
         0xFF080808, // TextColor;
@@ -8101,7 +8128,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_764
+    {   // CP_TEXT_OUT_INDEX_767
         FONT_SMALL, // eSystemFont;
         en_str_K, // StringID;
         0xFF080808, // TextColor;
@@ -8110,7 +8137,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_765
+    {   // CP_TEXT_OUT_INDEX_768
         FONT_SMALL, // eSystemFont;
         en_str_8, // StringID;
         0xFF080808, // TextColor;
@@ -8119,7 +8146,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_766
+    {   // CP_TEXT_OUT_INDEX_769
         FONT_SMALL, // eSystemFont;
         en_str_O, // StringID;
         0xFF080808, // TextColor;
@@ -8128,7 +8155,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_767
+    {   // CP_TEXT_OUT_INDEX_770
         FONT_SMALL, // eSystemFont;
         en_str_L, // StringID;
         0xFF080808, // TextColor;
@@ -8137,7 +8164,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_768
+    {   // CP_TEXT_OUT_INDEX_771
         FONT_SMALL, // eSystemFont;
         en_str_9, // StringID;
         0xFF080808, // TextColor;
@@ -8146,7 +8173,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_769
+    {   // CP_TEXT_OUT_INDEX_772
         FONT_SMALL, // eSystemFont;
         en_str_P, // StringID;
         0xFF080808, // TextColor;
@@ -8155,7 +8182,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_770
+    {   // CP_TEXT_OUT_INDEX_773
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x404040, // TextColor;
@@ -8164,7 +8191,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_771
+    {   // CP_TEXT_OUT_INDEX_774
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0x404040, // TextColor;
@@ -8173,7 +8200,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_772
+    {   // CP_TEXT_OUT_INDEX_775
         FONT_NORMAL, // eSystemFont;
         en_str_DTV_Manual_Tuning, // StringID;
         0xFFFFFF, // TextColor;
@@ -8182,7 +8209,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_773
+    {   // CP_TEXT_OUT_INDEX_776
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0x2C2C2C, // TextColor;
@@ -8191,7 +8218,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_774
+    {   // CP_TEXT_OUT_INDEX_777
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0x2C2C2C, // TextColor;
@@ -8200,7 +8227,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_775
+    {   // CP_TEXT_OUT_INDEX_778
         FONT_NORMAL, // eSystemFont;
         en_str_Radio, // StringID;
         0xFFFFFF, // TextColor;
@@ -8209,36 +8236,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_776
+    {   // CP_TEXT_OUT_INDEX_779
         FONT_NORMAL, // eSystemFont;
         en_str_Data, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_777
-        FONT_SMALL, // eSystemFont;
-        en_str_NO_SIGNAL, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_778
-        FONT_SMALL, // eSystemFont;
-        en_str_Searching_Please_Wait3dot, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_779
-        FONT_SMALL, // eSystemFont;
-        en_str_Bad, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8247,7 +8247,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_780
         FONT_SMALL, // eSystemFont;
-        en_str_Normal, // StringID;
+        en_str_NO_SIGNAL, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8256,7 +8256,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_781
         FONT_SMALL, // eSystemFont;
-        en_str_Good, // StringID;
+        en_str_Searching_Please_Wait3dot, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8265,7 +8265,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_782
         FONT_SMALL, // eSystemFont;
-        en_str_Press_ENTER_to_search, // StringID;
+        en_str_Bad, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8273,6 +8273,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_783
+        FONT_SMALL, // eSystemFont;
+        en_str_Normal, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_784
+        FONT_SMALL, // eSystemFont;
+        en_str_Good, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_785
+        FONT_SMALL, // eSystemFont;
+        en_str_Press_ENTER_to_search, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_786
         FONT_NORMAL, // eSystemFont;
         en_str_ATV_Manual_Tuning, // StringID;
         0xFFFFFF, // TextColor;
@@ -8281,37 +8308,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_784
-        FONT_NORMAL, // eSystemFont;
-        en_str_Storage_To, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_785
-        FONT_NORMAL, // eSystemFont;
-        en_str_Storage_To, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_786
-        FONT_NORMAL, // eSystemFont;
-        en_str_Sound_Standard, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_787
         FONT_NORMAL, // eSystemFont;
-        en_str_Sound_Standard, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Storage_To, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8319,8 +8319,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_788
         FONT_NORMAL, // eSystemFont;
-        en_str_Video_Standard, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Storage_To, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8328,8 +8328,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_789
         FONT_NORMAL, // eSystemFont;
-        en_str_Video_Standard, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Sound_Standard, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8337,8 +8337,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_790
         FONT_NORMAL, // eSystemFont;
-        en_str_Current_CH, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Sound_Standard, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8346,8 +8346,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_791
         FONT_NORMAL, // eSystemFont;
-        en_str_Current_CH, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Video_Standard, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8355,8 +8355,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_792
         FONT_NORMAL, // eSystemFont;
-        en_str_Search, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Video_Standard, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8364,8 +8364,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_793
         FONT_NORMAL, // eSystemFont;
-        en_str_Search, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Current_CH, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8373,8 +8373,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_794
         FONT_NORMAL, // eSystemFont;
-        en_str_FinedashTune, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Current_CH, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8382,17 +8382,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_795
         FONT_NORMAL, // eSystemFont;
-        en_str_FinedashTune, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Search, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_796
-        FONT_SMALL, // eSystemFont;
-        en_str_Frequency, // StringID;
-        0xC0C0C0, // TextColor;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Search, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8400,7 +8400,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_797
         FONT_NORMAL, // eSystemFont;
-        en_str_Channel_Tuning, // StringID;
+        en_str_FinedashTune, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8409,34 +8409,34 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_798
         FONT_NORMAL, // eSystemFont;
-        en_str_TV, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_FinedashTune, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_799
-        FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        FONT_SMALL, // eSystemFont;
+        en_str_Frequency, // StringID;
+        0xC0C0C0, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_800
         FONT_NORMAL, // eSystemFont;
-        en_str_Programmes, // StringID;
+        en_str_Channel_Tuning, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_801
         FONT_NORMAL, // eSystemFont;
-        en_str_Radio, // StringID;
+        en_str_TV, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8445,16 +8445,16 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_802
         FONT_NORMAL, // eSystemFont;
-        en_str_Data, // StringID;
+        en_str_3Dot, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_803
         FONT_NORMAL, // eSystemFont;
-        en_str_CATV, // StringID;
+        en_str_Programmes, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8462,8 +8462,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_804
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Radio, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8471,17 +8471,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_805
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Data, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_806
-        FONT_SMALL, // eSystemFont;
-        en_str_Percentdot, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_CATV, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8494,22 +8494,22 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        1, // u8dis;
+        2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_808
         FONT_SMALL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_3Dot, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_809
         FONT_SMALL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xABCC08, // TextColor;
+        en_str_Percentdot, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8517,6 +8517,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_810
         FONT_SMALL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        1, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_811
+        FONT_SMALL, // eSystemFont;
+        en_str_Yes, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_812
+        FONT_SMALL, // eSystemFont;
+        en_str_Yes, // StringID;
+        0xABCC08, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_813
+        FONT_SMALL, // eSystemFont;
         en_str_No, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignRight, // eTextAttrib;
@@ -8524,7 +8551,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_811
+    {   // CP_TEXT_OUT_INDEX_814
         FONT_SMALL, // eSystemFont;
         en_str_No, // StringID;
         0xABCC08, // TextColor;
@@ -8533,7 +8560,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_812
+    {   // CP_TEXT_OUT_INDEX_815
         FONT_SMALL, // eSystemFont;
         en_str_Do_you_want_to_exit_tuning, // StringID;
         0xFFFFFF, // TextColor;
@@ -8542,7 +8569,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_813
+    {   // CP_TEXT_OUT_INDEX_816
         FONT_SMALL, // eSystemFont;
         en_str_Do_you_want_to_skip_ATV_tuning, // StringID;
         0xFFFFFF, // TextColor;
@@ -8551,7 +8578,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_814
+    {   // CP_TEXT_OUT_INDEX_817
         FONT_SMALL, // eSystemFont;
         en_str_Do_you_want_to_skip_DTV_tuning, // StringID;
         0xFFFFFF, // TextColor;
@@ -8560,7 +8587,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_815
+    {   // CP_TEXT_OUT_INDEX_818
         FONT_SMALL, // eSystemFont;
         en_str_TV, // StringID;
         0x80808, // TextColor;
@@ -8569,7 +8596,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_816
+    {   // CP_TEXT_OUT_INDEX_819
         FONT_SMALL, // eSystemFont;
         en_str_DTV, // StringID;
         0x80808, // TextColor;
@@ -8578,7 +8605,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_817
+    {   // CP_TEXT_OUT_INDEX_820
         FONT_SMALL, // eSystemFont;
         en_str_Programmes, // StringID;
         0x80808, // TextColor;
@@ -8587,7 +8614,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_818
+    {   // CP_TEXT_OUT_INDEX_821
         FONT_SMALL, // eSystemFont;
         en_str_Radio, // StringID;
         0x80808, // TextColor;
@@ -8596,36 +8623,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_819
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x80808, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_820
-        FONT_SMALL, // eSystemFont;
-        en_str_Saving, // StringID;
-        0x80808, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_821
-        FONT_SMALL, // eSystemFont;
-        en_str_Data, // StringID;
-        0x80808, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_822
         FONT_SMALL, // eSystemFont;
-        en_str_CATV, // StringID;
+        en_str_3Dot, // StringID;
         0x80808, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8634,6 +8634,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_823
         FONT_SMALL, // eSystemFont;
+        en_str_Saving, // StringID;
+        0x80808, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_824
+        FONT_SMALL, // eSystemFont;
+        en_str_Data, // StringID;
+        0x80808, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_825
+        FONT_SMALL, // eSystemFont;
+        en_str_CATV, // StringID;
+        0x80808, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_826
+        FONT_SMALL, // eSystemFont;
         en_str_Do_you_want_to_skip_CATV_tuning, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -8641,46 +8668,19 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_824
+    {   // CP_TEXT_OUT_INDEX_827
         FONT_NORMAL, // eSystemFont;
         en_str_Target_Region_Setting, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_825
-        FONT_NORMAL, // eSystemFont;
-        en_str_Target_Region_Setting, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_826
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_827
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_828
-        FONT_SMALL, // eSystemFont;
-        en_str_Country_Code, // StringID;
-        0xFFFFFF, // TextColor;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Target_Region_Setting, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8688,25 +8688,25 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_829
         FONT_SMALL, // eSystemFont;
-        en_str_Country_Code, // StringID;
+        en_str_3Dot, // StringID;
         0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_830
         FONT_SMALL, // eSystemFont;
-        en_str_Country_Code, // StringID;
+        en_str_3Dot, // StringID;
         0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_831
         FONT_SMALL, // eSystemFont;
-        en_str_Primary_Region, // StringID;
+        en_str_Country_Code, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8715,7 +8715,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_832
         FONT_SMALL, // eSystemFont;
-        en_str_Primary_Region, // StringID;
+        en_str_Country_Code, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8724,7 +8724,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_833
         FONT_SMALL, // eSystemFont;
-        en_str_Primary_Region, // StringID;
+        en_str_Country_Code, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8733,7 +8733,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_834
         FONT_SMALL, // eSystemFont;
-        en_str_Secondary_Region, // StringID;
+        en_str_Primary_Region, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8742,7 +8742,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_835
         FONT_SMALL, // eSystemFont;
-        en_str_Secondary_Region, // StringID;
+        en_str_Primary_Region, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8751,7 +8751,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_836
         FONT_SMALL, // eSystemFont;
-        en_str_Secondary_Region, // StringID;
+        en_str_Primary_Region, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8760,7 +8760,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_837
         FONT_SMALL, // eSystemFont;
-        en_str_Teritary_Region, // StringID;
+        en_str_Secondary_Region, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8769,7 +8769,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_838
         FONT_SMALL, // eSystemFont;
-        en_str_Teritary_Region, // StringID;
+        en_str_Secondary_Region, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8778,7 +8778,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_839
         FONT_SMALL, // eSystemFont;
-        en_str_Teritary_Region, // StringID;
+        en_str_Secondary_Region, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8787,6 +8787,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_840
         FONT_SMALL, // eSystemFont;
+        en_str_Teritary_Region, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_841
+        FONT_SMALL, // eSystemFont;
+        en_str_Teritary_Region, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_842
+        FONT_SMALL, // eSystemFont;
+        en_str_Teritary_Region, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_843
+        FONT_SMALL, // eSystemFont;
         en_str_Conflicts_in_channel_numberingsemicolonPerform_an_automatic_resolution, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -8794,43 +8821,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_841
-        FONT_NORMAL, // eSystemFont;
-        en_str_Lcn_Conflict_Setting, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_842
-        FONT_NORMAL, // eSystemFont;
-        en_str_Lcn_Conflict_Setting, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_843
-        FONT_SMALL, // eSystemFont;
-        en_str_Conflict_for_channel_num_colon, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_844
-        FONT_SMALL, // eSystemFont;
-        en_str_Conflict_for_channel_num_colon, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Lcn_Conflict_Setting, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_845
+        FONT_NORMAL, // eSystemFont;
+        en_str_Lcn_Conflict_Setting, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_846
+        FONT_SMALL, // eSystemFont;
+        en_str_Conflict_for_channel_num_colon, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_847
+        FONT_SMALL, // eSystemFont;
+        en_str_Conflict_for_channel_num_colon, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_848
         FONT_SMALL, // eSystemFont;
         en_str_Conflict_for_channel_num_colon, // StringID;
         0x808080, // TextColor;
@@ -8839,37 +8866,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_846
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_847
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_848
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_849
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
-        0x2C2C2C, // TextColor;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8878,13 +8878,40 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     {   // CP_TEXT_OUT_INDEX_850
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
-        0x808080, // TextColor;
+        0xFF2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_851
+        FONT_SMALL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_852
+        FONT_SMALL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_853
+        FONT_SMALL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0x808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_854
         FONT_NORMAL, // eSystemFont;
         en_str_OAD_Tuning, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -8893,7 +8920,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_852
+    {   // CP_TEXT_OUT_INDEX_855
         FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFFFFFF, // TextColor;
@@ -8902,7 +8929,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_853
+    {   // CP_TEXT_OUT_INDEX_856
         FONT_NORMAL, // eSystemFont;
         en_str_Favorite_Network, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -8911,7 +8938,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_854
+    {   // CP_TEXT_OUT_INDEX_857
         FONT_SMALL, // eSystemFont;
         en_str_Select, // StringID;
         0xFFFFFF, // TextColor;
@@ -8920,7 +8947,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_855
+    {   // CP_TEXT_OUT_INDEX_858
         FONT_BIG, // eSystemFont;
         en_str_Input_Source, // StringID;
         0xFFFFFF, // TextColor;
@@ -8929,37 +8956,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_856
-        FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashS2, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_857
-        FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashS2, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_858
-        FONT_NORMAL, // eSystemFont;
-        en_str_ATSC, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_859
         FONT_NORMAL, // eSystemFont;
-        en_str_ATSC, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_DVBdashS2, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8967,7 +8967,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_860
         FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashT, // StringID;
+        en_str_DVBdashS2, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -8976,8 +8976,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_861
         FONT_NORMAL, // eSystemFont;
-        en_str_DVBdashC, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_ATSC, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8985,8 +8985,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_862
         FONT_NORMAL, // eSystemFont;
-        en_str_ISDB, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_ATSC, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -8994,7 +8994,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_863
         FONT_NORMAL, // eSystemFont;
-        en_str_ISDB, // StringID;
+        en_str_DVBdashT, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9003,8 +9003,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_864
         FONT_NORMAL, // eSystemFont;
-        en_str_DTMB, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_DVBdashC, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9012,8 +9012,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_865
         FONT_NORMAL, // eSystemFont;
-        en_str_DTMB, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_ISDB, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9021,8 +9021,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_866
         FONT_NORMAL, // eSystemFont;
-        en_str_ATV, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_ISDB, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9030,8 +9030,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_867
         FONT_NORMAL, // eSystemFont;
-        en_str_ATV, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_DTMB, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9039,8 +9039,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_868
         FONT_NORMAL, // eSystemFont;
-        en_str_SCART_1, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_DTMB, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9048,8 +9048,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_869
         FONT_NORMAL, // eSystemFont;
-        en_str_SCART_1, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_ATV, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9057,8 +9057,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_870
         FONT_NORMAL, // eSystemFont;
-        en_str_SCART_2, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_ATV, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9066,8 +9066,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_871
         FONT_NORMAL, // eSystemFont;
-        en_str_SCART_2, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_SCART_1, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9075,8 +9075,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_872
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI1, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_SCART_1, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9084,8 +9084,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_873
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI1, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_SCART_2, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9093,8 +9093,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_874
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI2, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_SCART_2, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9102,8 +9102,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_875
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI2, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_HDMI1, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9111,8 +9111,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_876
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI4, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_HDMI1, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9120,8 +9120,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_877
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI4, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_HDMI2, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9129,8 +9129,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_878
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI3, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_HDMI2, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9138,8 +9138,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_879
         FONT_NORMAL, // eSystemFont;
-        en_str_HDMI3, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_HDMI4, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9147,8 +9147,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_880
         FONT_NORMAL, // eSystemFont;
-        en_str_PCdashRGB, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_HDMI4, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9156,8 +9156,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_881
         FONT_NORMAL, // eSystemFont;
-        en_str_PCdashRGB, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_HDMI3, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9165,8 +9165,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_882
         FONT_NORMAL, // eSystemFont;
-        en_str_Component, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_HDMI3, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9174,8 +9174,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_883
         FONT_NORMAL, // eSystemFont;
-        en_str_Component, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_PCdashRGB, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9183,8 +9183,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_884
         FONT_NORMAL, // eSystemFont;
-        en_str_Component2, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_PCdashRGB, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9192,8 +9192,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_885
         FONT_NORMAL, // eSystemFont;
-        en_str_Component2, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Component, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9201,8 +9201,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_886
         FONT_NORMAL, // eSystemFont;
-        en_str_AV, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Component, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9210,8 +9210,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_887
         FONT_NORMAL, // eSystemFont;
-        en_str_AV, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Component2, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9219,8 +9219,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_888
         FONT_NORMAL, // eSystemFont;
-        en_str_AV_2, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Component2, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9228,8 +9228,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_889
         FONT_NORMAL, // eSystemFont;
-        en_str_AV_2, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_AV, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9237,8 +9237,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_890
         FONT_NORMAL, // eSystemFont;
-        en_str_AV_3, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_AV, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9246,8 +9246,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_891
         FONT_NORMAL, // eSystemFont;
-        en_str_AV_3, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_AV_2, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9255,8 +9255,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_892
         FONT_NORMAL, // eSystemFont;
-        en_str_SdashVideo, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_AV_2, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9264,6 +9264,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_893
         FONT_NORMAL, // eSystemFont;
+        en_str_AV_3, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_894
+        FONT_NORMAL, // eSystemFont;
+        en_str_AV_3, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_895
+        FONT_NORMAL, // eSystemFont;
+        en_str_SdashVideo, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_896
+        FONT_NORMAL, // eSystemFont;
         en_str_SdashVideo, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -9271,7 +9298,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_894
+    {   // CP_TEXT_OUT_INDEX_897
         FONT_NORMAL, // eSystemFont;
         en_str_SdashVideo_2, // StringID;
         0xFFFFFF, // TextColor;
@@ -9280,7 +9307,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_895
+    {   // CP_TEXT_OUT_INDEX_898
         FONT_NORMAL, // eSystemFont;
         en_str_SdashVideo_2, // StringID;
         0x2C2C2C, // TextColor;
@@ -9289,7 +9316,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_896
+    {   // CP_TEXT_OUT_INDEX_899
         FONT_NORMAL, // eSystemFont;
         en_str_Are_you_sure_to_change_SOURCE, // StringID;
         0xFFFFFF, // TextColor;
@@ -9298,7 +9325,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_897
+    {   // CP_TEXT_OUT_INDEX_900
         FONT_NORMAL, // eSystemFont;
         en_str_It_will_stop_PVR, // StringID;
         0xFFFFFF, // TextColor;
@@ -9307,43 +9334,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_898
-        FONT_SMALL, // eSystemFont;
-        en_str_OK, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_899
-        FONT_SMALL, // eSystemFont;
-        en_str_OK, // StringID;
-        0xABCC08, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_900
-        FONT_SMALL, // eSystemFont;
-        en_str_Exit, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_901
         FONT_SMALL, // eSystemFont;
-        en_str_Exit, // StringID;
-        0xABCC08, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        en_str_OK, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_902
+        FONT_SMALL, // eSystemFont;
+        en_str_OK, // StringID;
+        0xABCC08, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_903
+        FONT_SMALL, // eSystemFont;
+        en_str_Exit, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_904
+        FONT_SMALL, // eSystemFont;
+        en_str_Exit, // StringID;
+        0xABCC08, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_905
         FONT_BIG, // eSystemFont;
         en_str_Channel_List, // StringID;
         0xFFFFFF, // TextColor;
@@ -9352,7 +9379,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_903
+    {   // CP_TEXT_OUT_INDEX_906
         FONT_NORMAL, // eSystemFont;
         en_str_find, // StringID;
         0xFFF5F5F5, // TextColor;
@@ -9361,7 +9388,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_904
+    {   // CP_TEXT_OUT_INDEX_907
         FONT_NORMAL, // eSystemFont;
         en_str_Sort, // StringID;
         0xFFF5F5F5, // TextColor;
@@ -9370,7 +9397,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_905
+    {   // CP_TEXT_OUT_INDEX_908
         FONT_SMALL, // eSystemFont;
         en_str_DVBdashT, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9379,7 +9406,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_906
+    {   // CP_TEXT_OUT_INDEX_909
         FONT_NORMAL, // eSystemFont;
         en_str_By_Freq, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9388,7 +9415,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_907
+    {   // CP_TEXT_OUT_INDEX_910
         FONT_NORMAL, // eSystemFont;
         en_str_By_Service_Name, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9397,7 +9424,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_908
+    {   // CP_TEXT_OUT_INDEX_911
         FONT_NORMAL, // eSystemFont;
         en_str_By_Satellite_Name, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9406,7 +9433,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_909
+    {   // CP_TEXT_OUT_INDEX_912
         FONT_NORMAL, // eSystemFont;
         en_str_By_Encrypt, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9415,7 +9442,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_910
+    {   // CP_TEXT_OUT_INDEX_913
         FONT_NORMAL, // eSystemFont;
         en_str_By_Program_Prepare, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9424,7 +9451,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_911
+    {   // CP_TEXT_OUT_INDEX_914
         FONT_NORMAL, // eSystemFont;
         en_str_By_Default, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9433,7 +9460,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_912
+    {   // CP_TEXT_OUT_INDEX_915
         FONT_NORMAL, // eSystemFont;
         en_str_Sort_Type, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9442,7 +9469,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_913
+    {   // CP_TEXT_OUT_INDEX_916
         FONT_SMALL, // eSystemFont;
         en_str_When_pressOK_Please_wait3dot, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9451,7 +9478,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_914
+    {   // CP_TEXT_OUT_INDEX_917
         FONT_BIG, // eSystemFont;
         en_str_Extend, // StringID;
         0xFF080808, // TextColor;
@@ -9460,7 +9487,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_915
+    {   // CP_TEXT_OUT_INDEX_918
         FONT_BIG, // eSystemFont;
         en_str_Caps_On, // StringID;
         0xFF080808, // TextColor;
@@ -9469,7 +9496,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_916
+    {   // CP_TEXT_OUT_INDEX_919
         FONT_BIG, // eSystemFont;
         en_str_Back, // StringID;
         0xFF080808, // TextColor;
@@ -9478,7 +9505,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_917
+    {   // CP_TEXT_OUT_INDEX_920
         FONT_BIG, // eSystemFont;
         en_str_OK, // StringID;
         0xFF080808, // TextColor;
@@ -9487,7 +9514,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_918
+    {   // CP_TEXT_OUT_INDEX_921
         FONT_BIG, // eSystemFont;
         en_str_Space, // StringID;
         0xFF080808, // TextColor;
@@ -9496,7 +9523,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_919
+    {   // CP_TEXT_OUT_INDEX_922
         FONT_SMALL, // eSystemFont;
         en_str_OP_MsgBox_Delete_OP, // StringID;
         0xFFFFFF, // TextColor;
@@ -9505,7 +9532,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_920
+    {   // CP_TEXT_OUT_INDEX_923
         FONT_SMALL, // eSystemFont;
         en_str_OP_MsgBox_Delete_OP_1, // StringID;
         0xFFFFFF, // TextColor;
@@ -9514,7 +9541,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_921
+    {   // CP_TEXT_OUT_INDEX_924
         FONT_BIG, // eSystemFont;
         en_str_Audio_Language, // StringID;
         0xFFFFFF, // TextColor;
@@ -9523,7 +9550,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_922
+    {   // CP_TEXT_OUT_INDEX_925
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x80808, // TextColor;
@@ -9532,7 +9559,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_923
+    {   // CP_TEXT_OUT_INDEX_926
         FONT_BIG, // eSystemFont;
         en_str_Subtitle_Language, // StringID;
         0xFFFFFF, // TextColor;
@@ -9541,7 +9568,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_924
+    {   // CP_TEXT_OUT_INDEX_927
         FONT_BIG, // eSystemFont;
         en_str_English, // StringID;
         0x2C2C2C, // TextColor;
@@ -9550,7 +9577,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_925
+    {   // CP_TEXT_OUT_INDEX_928
         FONT_BIG, // eSystemFont;
         en_str_Setup_Wizard, // StringID;
         0xFFFFFF, // TextColor;
@@ -9559,7 +9586,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_926
+    {   // CP_TEXT_OUT_INDEX_929
         FONT_NORMAL, // eSystemFont;
         en_str_Please_select_your_prefer_language, // StringID;
         0xFF8000, // TextColor;
@@ -9568,63 +9595,36 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_927
-        FONT_NORMAL, // eSystemFont;
-        en_str_Menu_Language, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_928
-        FONT_NORMAL, // eSystemFont;
-        en_str_Menu_Language, // StringID;
-        0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_929
-        FONT_NORMAL, // eSystemFont;
-        en_str_Menu_Language, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_930
         FONT_NORMAL, // eSystemFont;
-        en_str_English, // StringID;
+        en_str_Menu_Language, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_931
         FONT_NORMAL, // eSystemFont;
-        en_str_English, // StringID;
+        en_str_Menu_Language, // StringID;
         0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_932
         FONT_NORMAL, // eSystemFont;
-        en_str_English, // StringID;
+        en_str_Menu_Language, // StringID;
         0x808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_933
         FONT_NORMAL, // eSystemFont;
-        en_str_Go_to_next_step, // StringID;
+        en_str_English, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9633,7 +9633,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_934
         FONT_NORMAL, // eSystemFont;
-        en_str_Go_to_next_step, // StringID;
+        en_str_English, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9642,7 +9642,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_935
         FONT_NORMAL, // eSystemFont;
-        en_str_Go_to_next_step, // StringID;
+        en_str_English, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9651,8 +9651,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_936
         FONT_NORMAL, // eSystemFont;
-        en_str_Select_the_time_zone_and_Daylight_saving_time, // StringID;
-        0xFF8000, // TextColor;
+        en_str_Go_to_next_step, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9660,8 +9660,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_937
         FONT_NORMAL, // eSystemFont;
-        en_str_Alaska, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Go_to_next_step, // StringID;
+        0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9669,8 +9669,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_938
         FONT_NORMAL, // eSystemFont;
-        en_str_Alaska, // StringID;
-        0x101010, // TextColor;
+        en_str_Go_to_next_step, // StringID;
+        0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9678,8 +9678,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_939
         FONT_NORMAL, // eSystemFont;
-        en_str_Alaska, // StringID;
-        0x808080, // TextColor;
+        en_str_Select_the_time_zone_and_Daylight_saving_time, // StringID;
+        0xFF8000, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9687,7 +9687,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_940
         FONT_NORMAL, // eSystemFont;
-        en_str_On, // StringID;
+        en_str_Alaska, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9696,7 +9696,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_941
         FONT_NORMAL, // eSystemFont;
-        en_str_On, // StringID;
+        en_str_Alaska, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9705,7 +9705,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_942
         FONT_NORMAL, // eSystemFont;
-        en_str_On, // StringID;
+        en_str_Alaska, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9714,7 +9714,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_943
         FONT_NORMAL, // eSystemFont;
-        en_str_12dashhour, // StringID;
+        en_str_On, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9723,7 +9723,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_944
         FONT_NORMAL, // eSystemFont;
-        en_str_12dashhour, // StringID;
+        en_str_On, // StringID;
         0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9732,7 +9732,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_945
         FONT_NORMAL, // eSystemFont;
-        en_str_12dashhour, // StringID;
+        en_str_On, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9741,8 +9741,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_946
         FONT_NORMAL, // eSystemFont;
-        en_str_Select_the_antenna_type_then_auto_scan, // StringID;
-        0xFF8000, // TextColor;
+        en_str_12dashhour, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9750,8 +9750,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_947
         FONT_NORMAL, // eSystemFont;
-        en_str_Cable, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_12dashhour, // StringID;
+        0x101010, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9759,8 +9759,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_948
         FONT_NORMAL, // eSystemFont;
-        en_str_Cable, // StringID;
-        0x101010, // TextColor;
+        en_str_12dashhour, // StringID;
+        0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9768,8 +9768,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_949
         FONT_NORMAL, // eSystemFont;
-        en_str_Cable, // StringID;
-        0x808080, // TextColor;
+        en_str_Select_the_antenna_type_then_auto_scan, // StringID;
+        0xFF8000, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -9777,7 +9777,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_950
         FONT_NORMAL, // eSystemFont;
-        en_str_colon, // StringID;
+        en_str_Cable, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9786,6 +9786,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_951
         FONT_NORMAL, // eSystemFont;
+        en_str_Cable, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_952
+        FONT_NORMAL, // eSystemFont;
+        en_str_Cable, // StringID;
+        0x808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_953
+        FONT_NORMAL, // eSystemFont;
+        en_str_colon, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_954
+        FONT_NORMAL, // eSystemFont;
         en_str_colon, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignRight, // eTextAttrib;
@@ -9793,7 +9820,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_952
+    {   // CP_TEXT_OUT_INDEX_955
         FONT_NORMAL, // eSystemFont;
         en_str_DTV_plus_ATV, // StringID;
         0xFFFFFF, // TextColor;
@@ -9802,7 +9829,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_953
+    {   // CP_TEXT_OUT_INDEX_956
         FONT_BIG, // eSystemFont;
         en_str_Please_select_an_OSD_Language, // StringID;
         0xFFFFFF, // TextColor;
@@ -9811,36 +9838,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_954
-        FONT_BIG, // eSystemFont;
-        en_str_Install_ScanCheck_TEXT1, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_955
-        FONT_BIG, // eSystemFont;
-        en_str_Install_ScanCheck_TEXT1, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_956
-        FONT_BIG, // eSystemFont;
-        en_str_Install_ScanCheck_TEXT1, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_957
         FONT_BIG, // eSystemFont;
-        en_str_Install_ScanCheck_TEXT2, // StringID;
+        en_str_Install_ScanCheck_TEXT1, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9849,7 +9849,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_958
         FONT_BIG, // eSystemFont;
-        en_str_Install_ScanCheck_TEXT2, // StringID;
+        en_str_Install_ScanCheck_TEXT1, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9858,7 +9858,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_959
         FONT_BIG, // eSystemFont;
-        en_str_Install_ScanCheck_TEXT2, // StringID;
+        en_str_Install_ScanCheck_TEXT1, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -9866,6 +9866,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_960
+        FONT_BIG, // eSystemFont;
+        en_str_Install_ScanCheck_TEXT2, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_961
+        FONT_BIG, // eSystemFont;
+        en_str_Install_ScanCheck_TEXT2, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_962
+        FONT_BIG, // eSystemFont;
+        en_str_Install_ScanCheck_TEXT2, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_963
         FONT_NORMAL, // eSystemFont;
         en_str_Power_Amplifier, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9874,7 +9901,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_961
+    {   // CP_TEXT_OUT_INDEX_964
         FONT_NORMAL, // eSystemFont;
         en_str_Disconnect_ARC_Device, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9883,7 +9910,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_962
+    {   // CP_TEXT_OUT_INDEX_965
         FONT_NORMAL, // eSystemFont;
         en_str_MUTE, // StringID;
         0xFFFFFF, // TextColor;
@@ -9892,7 +9919,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_963
+    {   // CP_TEXT_OUT_INDEX_966
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9901,7 +9928,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_964
+    {   // CP_TEXT_OUT_INDEX_967
         FONT_SMALL, // eSystemFont;
         en_str_Standard, // StringID;
         0xFFFFFF, // TextColor;
@@ -9910,7 +9937,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_965
+    {   // CP_TEXT_OUT_INDEX_968
         FONT_SMALL, // eSystemFont;
         en_str_Auto, // StringID;
         0xFFFFFF, // TextColor;
@@ -9919,7 +9946,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_966
+    {   // CP_TEXT_OUT_INDEX_969
         FONT_SMALL, // eSystemFont;
         en_str_Off, // StringID;
         0xFFFFFF, // TextColor;
@@ -9928,7 +9955,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_967
+    {   // CP_TEXT_OUT_INDEX_970
         FONT_SMALL, // eSystemFont;
         en_str_Mono, // StringID;
         0xFFFFFF, // TextColor;
@@ -9937,7 +9964,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_968
+    {   // CP_TEXT_OUT_INDEX_971
         FONT_BIG, // eSystemFont;
         en_str_AWAS0, // StringID;
         0xFF080808, // TextColor;
@@ -9946,7 +9973,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_969
+    {   // CP_TEXT_OUT_INDEX_972
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFF080808, // TextColor;
@@ -9955,7 +9982,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_970
+    {   // CP_TEXT_OUT_INDEX_973
         FONT_NORMAL, // eSystemFont;
         en_str_Bencana, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9964,7 +9991,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_971
+    {   // CP_TEXT_OUT_INDEX_974
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFF00, // TextColor;
@@ -9973,7 +10000,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_972
+    {   // CP_TEXT_OUT_INDEX_975
         FONT_NORMAL, // eSystemFont;
         en_str_Tanggal, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9982,7 +10009,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_973
+    {   // CP_TEXT_OUT_INDEX_976
         FONT_NORMAL, // eSystemFont;
         en_str_Posisi, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -9991,7 +10018,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_974
+    {   // CP_TEXT_OUT_INDEX_977
         FONT_NORMAL, // eSystemFont;
         en_str_Karakter, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -10000,7 +10027,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_975
+    {   // CP_TEXT_OUT_INDEX_978
         FONT_NORMAL, // eSystemFont;
         en_str_Pesan, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -10009,7 +10036,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_976
+    {   // CP_TEXT_OUT_INDEX_979
         FONT_BIG, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFF080808, // TextColor;
@@ -10018,7 +10045,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_977
+    {   // CP_TEXT_OUT_INDEX_980
         FONT_BIG, // eSystemFont;
         en_str_WASPADA0, // StringID;
         0xFF80FF00, // TextColor;
@@ -10027,7 +10054,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_978
+    {   // CP_TEXT_OUT_INDEX_981
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFF080808, // TextColor;
@@ -10036,53 +10063,53 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_979
-        FONT_BIG, // eSystemFont;
-        en_str_PROGRAMME_GUIDE, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_980
-        FONT_BIG, // eSystemFont;
-        en_str_PROGRAMME_GUIDE, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_981
-        FONT_NORMAL, // eSystemFont;
-        en_str_Channel, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_982
-        FONT_NORMAL, // eSystemFont;
-        en_str_Channel, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        FONT_BIG, // eSystemFont;
+        en_str_PROGRAMME_GUIDE, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_983
-        FONT_NORMAL, // eSystemFont;
-        en_str_TIME, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        FONT_BIG, // eSystemFont;
+        en_str_PROGRAMME_GUIDE, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_984
         FONT_NORMAL, // eSystemFont;
+        en_str_Channel, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_985
+        FONT_NORMAL, // eSystemFont;
+        en_str_Channel, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_986
+        FONT_NORMAL, // eSystemFont;
+        en_str_TIME, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_987
+        FONT_NORMAL, // eSystemFont;
         en_str_TIME, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignRight, // eTextAttrib;
@@ -10090,7 +10117,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_985
+    {   // CP_TEXT_OUT_INDEX_988
         FONT_SMALL, // eSystemFont;
         en_str_CH, // StringID;
         0x2C2C2C, // TextColor;
@@ -10099,7 +10126,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_986
+    {   // CP_TEXT_OUT_INDEX_989
         FONT_BIG, // eSystemFont;
         en_str_Channel, // StringID;
         0x2C2C2C, // TextColor;
@@ -10108,7 +10135,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_987
+    {   // CP_TEXT_OUT_INDEX_990
         FONT_NORMAL, // eSystemFont;
         en_str_TIME, // StringID;
         0xFFFFFF, // TextColor;
@@ -10117,7 +10144,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_988
+    {   // CP_TEXT_OUT_INDEX_991
         FONT_NORMAL, // eSystemFont;
         en_str_TIME, // StringID;
         0x2C2C2C, // TextColor;
@@ -10126,7 +10153,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_989
+    {   // CP_TEXT_OUT_INDEX_992
         FONT_SMALL, // eSystemFont;
         en_str_Date, // StringID;
         0x2C2C2C, // TextColor;
@@ -10135,7 +10162,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_990
+    {   // CP_TEXT_OUT_INDEX_993
         FONT_BIG, // eSystemFont;
         en_str_TIME, // StringID;
         0x2C2C2C, // TextColor;
@@ -10144,7 +10171,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_991
+    {   // CP_TEXT_OUT_INDEX_994
         FONT_NORMAL, // eSystemFont;
         en_str_Channel, // StringID;
         0xFFFFFF, // TextColor;
@@ -10153,7 +10180,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_992
+    {   // CP_TEXT_OUT_INDEX_995
         FONT_NORMAL, // eSystemFont;
         en_str_Channel, // StringID;
         0x2C2C2C, // TextColor;
@@ -10162,7 +10189,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_993
+    {   // CP_TEXT_OUT_INDEX_996
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x101010, // TextColor;
@@ -10171,7 +10198,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_994
+    {   // CP_TEXT_OUT_INDEX_997
         FONT_SMALL, // eSystemFont;
         en_str_No_Information, // StringID;
         0x101010, // TextColor;
@@ -10180,7 +10207,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_995
+    {   // CP_TEXT_OUT_INDEX_998
         FONT_BIG, // eSystemFont;
         en_str_Reminder_setting, // StringID;
         0xFFFFFF, // TextColor;
@@ -10189,37 +10216,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_996
-        FONT_NORMAL, // eSystemFont;
-        en_str_Programme, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_997
-        FONT_NORMAL, // eSystemFont;
-        en_str_Programme, // StringID;
-        0x2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_998
-        FONT_NORMAL, // eSystemFont;
-        en_str_Minute, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_999
         FONT_NORMAL, // eSystemFont;
-        en_str_Minute, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Programme, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10227,8 +10227,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1000
         FONT_NORMAL, // eSystemFont;
-        en_str_Hour, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Programme, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10236,8 +10236,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1001
         FONT_NORMAL, // eSystemFont;
-        en_str_Hour, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Minute, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10245,8 +10245,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1002
         FONT_NORMAL, // eSystemFont;
-        en_str_Month, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Minute, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10254,8 +10254,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1003
         FONT_NORMAL, // eSystemFont;
-        en_str_Month, // StringID;
-        0x2C2C2C, // TextColor;
+        en_str_Hour, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10263,8 +10263,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1004
         FONT_NORMAL, // eSystemFont;
-        en_str_Date, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Hour, // StringID;
+        0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10272,6 +10272,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1005
         FONT_NORMAL, // eSystemFont;
+        en_str_Month, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1006
+        FONT_NORMAL, // eSystemFont;
+        en_str_Month, // StringID;
+        0x2C2C2C, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1007
+        FONT_NORMAL, // eSystemFont;
+        en_str_Date, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1008
+        FONT_NORMAL, // eSystemFont;
         en_str_Date, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -10279,7 +10306,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1006
+    {   // CP_TEXT_OUT_INDEX_1009
         FONT_NORMAL, // eSystemFont;
         en_str_Mode, // StringID;
         0xFFFFFF, // TextColor;
@@ -10288,7 +10315,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1007
+    {   // CP_TEXT_OUT_INDEX_1010
         FONT_NORMAL, // eSystemFont;
         en_str_Mode, // StringID;
         0x2C2C2C, // TextColor;
@@ -10297,7 +10324,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1008
+    {   // CP_TEXT_OUT_INDEX_1011
         FONT_NORMAL, // eSystemFont;
         en_str_Schedule_List, // StringID;
         0xFFFFFF, // TextColor;
@@ -10306,36 +10333,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1009
-        FONT_SMALL, // eSystemFont;
-        en_str_Time, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1010
-        FONT_SMALL, // eSystemFont;
-        en_str_Date, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1011
-        FONT_SMALL, // eSystemFont;
-        en_str_Programme_Title, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1012
         FONT_SMALL, // eSystemFont;
-        en_str_Channel_Name, // StringID;
+        en_str_Time, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -10344,6 +10344,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1013
         FONT_SMALL, // eSystemFont;
+        en_str_Date, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1014
+        FONT_SMALL, // eSystemFont;
+        en_str_Programme_Title, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1015
+        FONT_SMALL, // eSystemFont;
+        en_str_Channel_Name, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1016
+        FONT_SMALL, // eSystemFont;
         en_str_3Dot, // StringID;
         0x2C2C2C, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -10351,7 +10378,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1014
+    {   // CP_TEXT_OUT_INDEX_1017
         FONT_NORMAL, // eSystemFont;
         en_str_Delete, // StringID;
         0xFFFF0000, // TextColor;
@@ -10360,7 +10387,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1015
+    {   // CP_TEXT_OUT_INDEX_1018
         FONT_BIG, // eSystemFont;
         en_str_RECORDER, // StringID;
         0xFFFFFF, // TextColor;
@@ -10369,7 +10396,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1016
+    {   // CP_TEXT_OUT_INDEX_1019
         FONT_SMALL, // eSystemFont;
         en_str_Start_Time, // StringID;
         0xFFFFFF, // TextColor;
@@ -10378,7 +10405,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1017
+    {   // CP_TEXT_OUT_INDEX_1020
         FONT_SMALL, // eSystemFont;
         en_str_End_Time, // StringID;
         0xFFFFFF, // TextColor;
@@ -10387,82 +10414,55 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1018
-        FONT_BIG, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1019
-        FONT_BIG, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x13A5F, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1020
-        FONT_BIG, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1021
-        FONT_SMALL, // eSystemFont;
-        en_str_Minute, // StringID;
+        FONT_BIG, // eSystemFont;
+        en_str_3Dot, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1022
-        FONT_SMALL, // eSystemFont;
-        en_str_Minute, // StringID;
+        FONT_BIG, // eSystemFont;
+        en_str_3Dot, // StringID;
         0x13A5F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1023
-        FONT_SMALL, // eSystemFont;
-        en_str_Minute, // StringID;
+        FONT_BIG, // eSystemFont;
+        en_str_3Dot, // StringID;
         0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1024
         FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x13A5F, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        en_str_Minute, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1025
         FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x808080, // TextColor;
-        eTextAlignRight, // eTextAttrib;
+        en_str_Minute, // StringID;
+        0x13A5F, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1026
         FONT_SMALL, // eSystemFont;
-        en_str_Hour, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Minute, // StringID;
+        0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10470,25 +10470,25 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1027
         FONT_SMALL, // eSystemFont;
-        en_str_Hour, // StringID;
+        en_str_3Dot, // StringID;
         0x13A5F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1028
         FONT_SMALL, // eSystemFont;
-        en_str_Hour, // StringID;
+        en_str_3Dot, // StringID;
         0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1029
         FONT_SMALL, // eSystemFont;
-        en_str_Month, // StringID;
+        en_str_Hour, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -10497,7 +10497,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1030
         FONT_SMALL, // eSystemFont;
-        en_str_Month, // StringID;
+        en_str_Hour, // StringID;
         0x13A5F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -10506,7 +10506,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1031
         FONT_SMALL, // eSystemFont;
-        en_str_Month, // StringID;
+        en_str_Hour, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -10515,6 +10515,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1032
         FONT_SMALL, // eSystemFont;
+        en_str_Month, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1033
+        FONT_SMALL, // eSystemFont;
+        en_str_Month, // StringID;
+        0x13A5F, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1034
+        FONT_SMALL, // eSystemFont;
+        en_str_Month, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1035
+        FONT_SMALL, // eSystemFont;
         en_str_Date, // StringID;
         0x13A5F, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -10522,7 +10549,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1033
+    {   // CP_TEXT_OUT_INDEX_1036
         FONT_SMALL, // eSystemFont;
         en_str_Date, // StringID;
         0x808080, // TextColor;
@@ -10531,7 +10558,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1034
+    {   // CP_TEXT_OUT_INDEX_1037
         FONT_SMALL, // eSystemFont;
         en_str_Mode, // StringID;
         0xFFFFFF, // TextColor;
@@ -10540,43 +10567,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1035
-        FONT_SMALL, // eSystemFont;
-        en_str_Mode, // StringID;
-        0x13A5F, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1036
-        FONT_SMALL, // eSystemFont;
-        en_str_Mode, // StringID;
-        0x808080, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1037
-        FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x13A5F, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1038
         FONT_SMALL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_Mode, // StringID;
+        0x13A5F, // TextColor;
+        eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1039
+        FONT_SMALL, // eSystemFont;
+        en_str_Mode, // StringID;
+        0x808080, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1040
+        FONT_SMALL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0x13A5F, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1041
+        FONT_SMALL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1042
         FONT_SMALL, // eSystemFont;
         en_str_Yes, // StringID;
         0xFFFFFF, // TextColor;
@@ -10585,36 +10612,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1040
-        FONT_NORMAL, // eSystemFont;
-        en_str_Year, // StringID;
-        0xFF404040, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1041
-        FONT_NORMAL, // eSystemFont;
-        en_str_Year, // StringID;
-        0xFF080808, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1042
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF404040, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1043
         FONT_NORMAL, // eSystemFont;
-        en_str_Month, // StringID;
+        en_str_Year, // StringID;
         0xFF404040, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -10623,7 +10623,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1044
         FONT_NORMAL, // eSystemFont;
-        en_str_Month, // StringID;
+        en_str_Year, // StringID;
         0xFF080808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -10632,17 +10632,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1045
         FONT_NORMAL, // eSystemFont;
-        en_str_Date, // StringID;
+        en_str_dashdash, // StringID;
         0xFF404040, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1046
         FONT_NORMAL, // eSystemFont;
-        en_str_Date, // StringID;
-        0xFF080808, // TextColor;
+        en_str_Month, // StringID;
+        0xFF404040, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10650,8 +10650,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1047
         FONT_NORMAL, // eSystemFont;
-        en_str_Hour, // StringID;
-        0xFF404040, // TextColor;
+        en_str_Month, // StringID;
+        0xFF080808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -10659,6 +10659,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1048
         FONT_NORMAL, // eSystemFont;
+        en_str_Date, // StringID;
+        0xFF404040, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1049
+        FONT_NORMAL, // eSystemFont;
+        en_str_Date, // StringID;
+        0xFF080808, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1050
+        FONT_NORMAL, // eSystemFont;
+        en_str_Hour, // StringID;
+        0xFF404040, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1051
+        FONT_NORMAL, // eSystemFont;
         en_str_Hour, // StringID;
         0xFF080808, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -10666,7 +10693,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1049
+    {   // CP_TEXT_OUT_INDEX_1052
         FONT_NORMAL, // eSystemFont;
         en_str_Minute, // StringID;
         0xFF404040, // TextColor;
@@ -10675,7 +10702,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1050
+    {   // CP_TEXT_OUT_INDEX_1053
         FONT_NORMAL, // eSystemFont;
         en_str_Minute, // StringID;
         0xFF080808, // TextColor;
@@ -10684,7 +10711,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1051
+    {   // CP_TEXT_OUT_INDEX_1054
         FONT_NORMAL, // eSystemFont;
         en_str_Close, // StringID;
         0xFF404040, // TextColor;
@@ -10693,7 +10720,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1052
+    {   // CP_TEXT_OUT_INDEX_1055
         FONT_NORMAL, // eSystemFont;
         en_str_Close, // StringID;
         0xFF149DD1, // TextColor;
@@ -10702,7 +10729,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1053
+    {   // CP_TEXT_OUT_INDEX_1056
         FONT_NORMAL, // eSystemFont;
         en_str_RECORDER_LIST, // StringID;
         0xFFC55A, // TextColor;
@@ -10711,7 +10738,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1054
+    {   // CP_TEXT_OUT_INDEX_1057
         FONT_NORMAL, // eSystemFont;
         en_str_Title, // StringID;
         0xFF202020, // TextColor;
@@ -10720,7 +10747,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1055
+    {   // CP_TEXT_OUT_INDEX_1058
         FONT_NORMAL, // eSystemFont;
         en_str_Start_Date, // StringID;
         0xFF202020, // TextColor;
@@ -10729,7 +10756,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1056
+    {   // CP_TEXT_OUT_INDEX_1059
         FONT_NORMAL, // eSystemFont;
         en_str_End_Date, // StringID;
         0xFF202020, // TextColor;
@@ -10738,7 +10765,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1057
+    {   // CP_TEXT_OUT_INDEX_1060
         FONT_NORMAL, // eSystemFont;
         en_str_Programme, // StringID;
         0xFF202020, // TextColor;
@@ -10747,7 +10774,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1058
+    {   // CP_TEXT_OUT_INDEX_1061
         FONT_NORMAL, // eSystemFont;
         en_str_Mode, // StringID;
         0xFF202020, // TextColor;
@@ -10756,7 +10783,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1059
+    {   // CP_TEXT_OUT_INDEX_1062
         FONT_NORMAL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -10765,7 +10792,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1060
+    {   // CP_TEXT_OUT_INDEX_1063
         FONT_SMALL, // eSystemFont;
         en_str_Delete, // StringID;
         0xFFFF0000, // TextColor;
@@ -10774,7 +10801,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         1, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1061
+    {   // CP_TEXT_OUT_INDEX_1064
         FONT_SMALL, // eSystemFont;
         en_str_Delete, // StringID;
         0xFFFF80C0, // TextColor;
@@ -10783,7 +10810,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         1, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1062
+    {   // CP_TEXT_OUT_INDEX_1065
         FONT_NORMAL, // eSystemFont;
         en_str_Are_you_sure_to_change_RF, // StringID;
         0xFFFFFF, // TextColor;
@@ -10792,7 +10819,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1063
+    {   // CP_TEXT_OUT_INDEX_1066
         FONT_NORMAL, // eSystemFont;
         en_str_Are_you_sure_to_change_RF, // StringID;
         0x0, // TextColor;
@@ -10801,7 +10828,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1064
+    {   // CP_TEXT_OUT_INDEX_1067
         FONT_NORMAL, // eSystemFont;
         en_str_It_will_stop_PVR, // StringID;
         0xFF080808, // TextColor;
@@ -10810,7 +10837,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1065
+    {   // CP_TEXT_OUT_INDEX_1068
         FONT_SMALL, // eSystemFont;
         en_str_Yes, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -10819,7 +10846,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1066
+    {   // CP_TEXT_OUT_INDEX_1069
         FONT_SMALL, // eSystemFont;
         en_str_No, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -10828,7 +10855,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1067
+    {   // CP_TEXT_OUT_INDEX_1070
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -10837,7 +10864,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1068
+    {   // CP_TEXT_OUT_INDEX_1071
         FONT_SMALL, // eSystemFont;
         en_str_Change_to_program, // StringID;
         0xFFFFFF, // TextColor;
@@ -10846,7 +10873,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1069
+    {   // CP_TEXT_OUT_INDEX_1072
         FONT_SMALL, // eSystemFont;
         en_str_Record_from, // StringID;
         0xFFFFFF, // TextColor;
@@ -10855,7 +10882,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1070
+    {   // CP_TEXT_OUT_INDEX_1073
         FONT_NORMAL, // eSystemFont;
         en_str_Timer_Overlay, // StringID;
         0xFFFFFF, // TextColor;
@@ -10864,62 +10891,62 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1071
-        FONT_NORMAL, // eSystemFont;
-        en_str_PROGRAMME_GUIDE, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1072
-        FONT_NORMAL, // eSystemFont;
-        en_str_PROGRAMME_GUIDE, // StringID;
-        0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1073
-        FONT_NORMAL, // eSystemFont;
-        en_str_Channel, // StringID;
-        0x101010, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1074
-        FONT_SMALL, // eSystemFont;
-        en_str_Channel, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_PROGRAMME_GUIDE, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1075
-        FONT_SMALL, // eSystemFont;
-        en_str_Channel, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_PROGRAMME_GUIDE, // StringID;
         0x101010, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1076
-        FONT_SMALL, // eSystemFont;
-        en_str_Today, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Channel, // StringID;
+        0x101010, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1077
         FONT_SMALL, // eSystemFont;
+        en_str_Channel, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1078
+        FONT_SMALL, // eSystemFont;
+        en_str_Channel, // StringID;
+        0x101010, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1079
+        FONT_SMALL, // eSystemFont;
+        en_str_Today, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1080
+        FONT_SMALL, // eSystemFont;
         en_str_Today, // StringID;
         0x101010, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -10927,7 +10954,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1078
+    {   // CP_TEXT_OUT_INDEX_1081
         FONT_SMALL, // eSystemFont;
         en_str_Time, // StringID;
         0x101010, // TextColor;
@@ -10936,7 +10963,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1079
+    {   // CP_TEXT_OUT_INDEX_1082
         FONT_BIG, // eSystemFont;
         en_str_No_Information, // StringID;
         0x101010, // TextColor;
@@ -10945,7 +10972,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1080
+    {   // CP_TEXT_OUT_INDEX_1083
         FONT_BIG, // eSystemFont;
         en_str_Up, // StringID;
         0xFF080808, // TextColor;
@@ -10954,7 +10981,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1081
+    {   // CP_TEXT_OUT_INDEX_1084
         FONT_BIG, // eSystemFont;
         en_str_Down, // StringID;
         0xFF080808, // TextColor;
@@ -10963,37 +10990,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1082
+    {   // CP_TEXT_OUT_INDEX_1085
         FONT_SMALL, // eSystemFont;
         en_str_CH, // StringID;
         0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1083
-        FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFF2C2C2C, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1084
-        FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1085
-        FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -11003,7 +11003,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         FONT_NORMAL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF2C2C2C, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
@@ -11012,14 +11012,14 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         FONT_NORMAL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1088
-        FONT_BIG, // eSystemFont;
-        en_str_dashdash, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_3Dot, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11028,6 +11028,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1089
         FONT_NORMAL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0xFF2C2C2C, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1090
+        FONT_NORMAL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1091
+        FONT_BIG, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1092
+        FONT_NORMAL, // eSystemFont;
         en_str_Input_Source, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -11035,45 +11062,18 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1090
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1091
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1092
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        1, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1093
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
-        0xFFFFFFFF, // TextColor;
+        0xFFC0C0C0, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        1, // u8dis;
+        2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1094
         FONT_NORMAL, // eSystemFont;
-        en_str_PQ_Key_Help1, // StringID;
+        en_str_dashdash, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11082,6 +11082,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1095
         FONT_NORMAL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFFC0C0C0, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        1, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1096
+        FONT_NORMAL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        1, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1097
+        FONT_NORMAL, // eSystemFont;
+        en_str_PQ_Key_Help1, // StringID;
+        0xFFC0C0C0, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1098
+        FONT_NORMAL, // eSystemFont;
         en_str_PQ_Key_Help2, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -11089,7 +11116,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1096
+    {   // CP_TEXT_OUT_INDEX_1099
         FONT_NORMAL, // eSystemFont;
         en_str_VERSION, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11098,7 +11125,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1097
+    {   // CP_TEXT_OUT_INDEX_1100
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11107,7 +11134,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1098
+    {   // CP_TEXT_OUT_INDEX_1101
         FONT_NORMAL, // eSystemFont;
         en_str_CI_Information, // StringID;
         0xFFFFFF, // TextColor;
@@ -11116,7 +11143,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1099
+    {   // CP_TEXT_OUT_INDEX_1102
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x101010, // TextColor;
@@ -11125,7 +11152,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1100
+    {   // CP_TEXT_OUT_INDEX_1103
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x101010, // TextColor;
@@ -11134,7 +11161,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1101
+    {   // CP_TEXT_OUT_INDEX_1104
         FONT_SMALL, // eSystemFont;
         en_str_OP_MsgBox_Refresh, // StringID;
         0xFFFFFF, // TextColor;
@@ -11143,7 +11170,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1102
+    {   // CP_TEXT_OUT_INDEX_1105
         FONT_SMALL, // eSystemFont;
         en_str_operator_profile_refreshbrackets5s, // StringID;
         0xFFFFFF, // TextColor;
@@ -11152,7 +11179,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1103
+    {   // CP_TEXT_OUT_INDEX_1106
         FONT_NORMAL, // eSystemFont;
         en_str_Select_Disk, // StringID;
         0xFFFFFF, // TextColor;
@@ -11161,7 +11188,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1104
+    {   // CP_TEXT_OUT_INDEX_1107
         FONT_NORMAL, // eSystemFont;
         en_str_Select_Disk, // StringID;
         0x8080, // TextColor;
@@ -11170,7 +11197,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1105
+    {   // CP_TEXT_OUT_INDEX_1108
         FONT_NORMAL, // eSystemFont;
         en_str_Select_Disk, // StringID;
         0x808080, // TextColor;
@@ -11179,7 +11206,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1106
+    {   // CP_TEXT_OUT_INDEX_1109
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x8080, // TextColor;
@@ -11188,36 +11215,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1107
-        FONT_NORMAL, // eSystemFont;
-        en_str_Check_PVR_File_System, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1108
-        FONT_NORMAL, // eSystemFont;
-        en_str_Check_PVR_File_System, // StringID;
-        0x8080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1109
-        FONT_NORMAL, // eSystemFont;
-        en_str_Check_PVR_File_System, // StringID;
-        0x808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1110
         FONT_NORMAL, // eSystemFont;
-        en_str_USB_Disk, // StringID;
+        en_str_Check_PVR_File_System, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11226,7 +11226,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1111
         FONT_NORMAL, // eSystemFont;
-        en_str_USB_Disk, // StringID;
+        en_str_Check_PVR_File_System, // StringID;
         0x8080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11235,7 +11235,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1112
         FONT_NORMAL, // eSystemFont;
-        en_str_USB_Disk, // StringID;
+        en_str_Check_PVR_File_System, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11244,7 +11244,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1113
         FONT_NORMAL, // eSystemFont;
-        en_str_Format, // StringID;
+        en_str_USB_Disk, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11253,7 +11253,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1114
         FONT_NORMAL, // eSystemFont;
-        en_str_Format, // StringID;
+        en_str_USB_Disk, // StringID;
         0x8080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11262,7 +11262,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1115
         FONT_NORMAL, // eSystemFont;
-        en_str_Format, // StringID;
+        en_str_USB_Disk, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11271,7 +11271,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1116
         FONT_NORMAL, // eSystemFont;
-        en_str_Time_Shift_Size, // StringID;
+        en_str_Format, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11280,7 +11280,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1117
         FONT_NORMAL, // eSystemFont;
-        en_str_Time_Shift_Size, // StringID;
+        en_str_Format, // StringID;
         0x8080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11289,7 +11289,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1118
         FONT_NORMAL, // eSystemFont;
-        en_str_Time_Shift_Size, // StringID;
+        en_str_Format, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11298,7 +11298,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1119
         FONT_NORMAL, // eSystemFont;
-        en_str_Speed, // StringID;
+        en_str_Time_Shift_Size, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11307,7 +11307,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1120
         FONT_NORMAL, // eSystemFont;
-        en_str_Speed, // StringID;
+        en_str_Time_Shift_Size, // StringID;
         0x8080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11316,7 +11316,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1121
         FONT_NORMAL, // eSystemFont;
-        en_str_Speed, // StringID;
+        en_str_Time_Shift_Size, // StringID;
         0x808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11324,17 +11324,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1122
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xC0C0C0, // TextColor;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Speed, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1123
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Speed, // StringID;
         0x8080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11343,6 +11343,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1124
         FONT_NORMAL, // eSystemFont;
+        en_str_Speed, // StringID;
+        0x808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1125
+        FONT_SMALL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xC0C0C0, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1126
+        FONT_SMALL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0x8080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1127
+        FONT_NORMAL, // eSystemFont;
         en_str_Free_Record_Limit, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -11350,7 +11377,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1125
+    {   // CP_TEXT_OUT_INDEX_1128
         FONT_NORMAL, // eSystemFont;
         en_str_Free_Record_Limit, // StringID;
         0x8080, // TextColor;
@@ -11359,7 +11386,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1126
+    {   // CP_TEXT_OUT_INDEX_1129
         FONT_NORMAL, // eSystemFont;
         en_str_Free_Record_Limit, // StringID;
         0x808080, // TextColor;
@@ -11368,7 +11395,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1127
+    {   // CP_TEXT_OUT_INDEX_1130
         FONT_NORMAL, // eSystemFont;
         en_str_Select_Disk, // StringID;
         0xFFFF8000, // TextColor;
@@ -11377,43 +11404,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1128
-        FONT_NORMAL, // eSystemFont;
-        en_str_USB, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1129
-        FONT_NORMAL, // eSystemFont;
-        en_str_USB, // StringID;
-        0x8080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1130
-        FONT_NORMAL, // eSystemFont;
-        en_str_Disk, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1131
         FONT_NORMAL, // eSystemFont;
-        en_str_Disk, // StringID;
-        0x8080, // TextColor;
+        en_str_USB, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1132
+        FONT_NORMAL, // eSystemFont;
+        en_str_USB, // StringID;
+        0x8080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1133
+        FONT_NORMAL, // eSystemFont;
+        en_str_Disk, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1134
+        FONT_NORMAL, // eSystemFont;
+        en_str_Disk, // StringID;
+        0x8080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1135
         FONT_SMALL, // eSystemFont;
         en_str_Create_partition, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11422,7 +11449,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1133
+    {   // CP_TEXT_OUT_INDEX_1136
         FONT_SMALL, // eSystemFont;
         en_str_Create_disk_partition, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11431,7 +11458,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1134
+    {   // CP_TEXT_OUT_INDEX_1137
         FONT_SMALL, // eSystemFont;
         en_str_Warning_All_data_will_be_lost, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11440,7 +11467,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1135
+    {   // CP_TEXT_OUT_INDEX_1138
         FONT_SMALL, // eSystemFont;
         en_str_Start, // StringID;
         0xFFFFFF, // TextColor;
@@ -11449,7 +11476,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1136
+    {   // CP_TEXT_OUT_INDEX_1139
         FONT_SMALL, // eSystemFont;
         en_str_Start, // StringID;
         0xABCC08, // TextColor;
@@ -11458,7 +11485,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1137
+    {   // CP_TEXT_OUT_INDEX_1140
         FONT_NORMAL, // eSystemFont;
         en_str_File_System_Size, // StringID;
         0xFFFF8000, // TextColor;
@@ -11467,43 +11494,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1138
-        FONT_NORMAL, // eSystemFont;
-        en_str_PVR_File_System_Type, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1139
-        FONT_NORMAL, // eSystemFont;
-        en_str_PVR_File_System_Type, // StringID;
-        0x8080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1140
-        FONT_NORMAL, // eSystemFont;
-        en_str_PVR_File_System_Size, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1141
         FONT_NORMAL, // eSystemFont;
-        en_str_PVR_File_System_Size, // StringID;
-        0x8080, // TextColor;
+        en_str_PVR_File_System_Type, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1142
+        FONT_NORMAL, // eSystemFont;
+        en_str_PVR_File_System_Type, // StringID;
+        0x8080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1143
+        FONT_NORMAL, // eSystemFont;
+        en_str_PVR_File_System_Size, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1144
+        FONT_NORMAL, // eSystemFont;
+        en_str_PVR_File_System_Size, // StringID;
+        0x8080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1145
         FONT_NORMAL, // eSystemFont;
         en_str_PVR_File_System_Size, // StringID;
         0xFFC0C0C0, // TextColor;
@@ -11512,7 +11539,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1143
+    {   // CP_TEXT_OUT_INDEX_1146
         FONT_NORMAL, // eSystemFont;
         en_str_Format_disk, // StringID;
         0xFFFF8000, // TextColor;
@@ -11521,7 +11548,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1144
+    {   // CP_TEXT_OUT_INDEX_1147
         FONT_NORMAL, // eSystemFont;
         en_str_Do_not_unplug_USB_devicedot, // StringID;
         0xFFFFFF, // TextColor;
@@ -11530,7 +11557,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1145
+    {   // CP_TEXT_OUT_INDEX_1148
         FONT_NORMAL, // eSystemFont;
         en_str_FormattingcommaPlease_Wait, // StringID;
         0xFFFFFF, // TextColor;
@@ -11539,7 +11566,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1146
+    {   // CP_TEXT_OUT_INDEX_1149
         FONT_NORMAL, // eSystemFont;
         en_str_Create_PVR_file_SystemsemicolonPlease_Wait3dot, // StringID;
         0xFFFFFF, // TextColor;
@@ -11548,7 +11575,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1147
+    {   // CP_TEXT_OUT_INDEX_1150
         FONT_NORMAL, // eSystemFont;
         en_str_Time_Shift_Size, // StringID;
         0xFFFF8000, // TextColor;
@@ -11557,7 +11584,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1148
+    {   // CP_TEXT_OUT_INDEX_1151
         FONT_NORMAL, // eSystemFont;
         en_str_Time_Shift_Disk_Size, // StringID;
         0xFFFFFF, // TextColor;
@@ -11566,7 +11593,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1149
+    {   // CP_TEXT_OUT_INDEX_1152
         FONT_NORMAL, // eSystemFont;
         en_str_Time_Shift_Disk_Size, // StringID;
         0x8080, // TextColor;
@@ -11575,7 +11602,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1150
+    {   // CP_TEXT_OUT_INDEX_1153
         FONT_SMALL, // eSystemFont;
         en_str_Are_you_sure_to_change_RF, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11584,7 +11611,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1151
+    {   // CP_TEXT_OUT_INDEX_1154
         FONT_SMALL, // eSystemFont;
         en_str_It_will_stop_PVR, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11593,7 +11620,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1152
+    {   // CP_TEXT_OUT_INDEX_1155
         FONT_NORMAL, // eSystemFont;
         en_str_PVR_Initialing, // StringID;
         0xFFFFFF, // TextColor;
@@ -11602,7 +11629,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1153
+    {   // CP_TEXT_OUT_INDEX_1156
         FONT_SMALL, // eSystemFont;
         en_str_Play, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11611,37 +11638,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1154
-        FONT_SMALL, // eSystemFont;
-        en_str_FB, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1155
-        FONT_SMALL, // eSystemFont;
-        en_str_FB, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1156
-        FONT_SMALL, // eSystemFont;
-        en_str_FF, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1157
         FONT_SMALL, // eSystemFont;
-        en_str_FF, // StringID;
-        0xFF808080, // TextColor;
+        en_str_FB, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -11649,8 +11649,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1158
         FONT_SMALL, // eSystemFont;
-        en_str_Prev, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_FB, // StringID;
+        0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -11658,8 +11658,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1159
         FONT_SMALL, // eSystemFont;
-        en_str_Prev, // StringID;
-        0xFF808080, // TextColor;
+        en_str_FF, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -11667,8 +11667,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1160
         FONT_SMALL, // eSystemFont;
-        en_str_Next, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_FF, // StringID;
+        0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -11676,6 +11676,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1161
         FONT_SMALL, // eSystemFont;
+        en_str_Prev, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1162
+        FONT_SMALL, // eSystemFont;
+        en_str_Prev, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1163
+        FONT_SMALL, // eSystemFont;
+        en_str_Next, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1164
+        FONT_SMALL, // eSystemFont;
         en_str_Next, // StringID;
         0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -11683,7 +11710,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1162
+    {   // CP_TEXT_OUT_INDEX_1165
         FONT_SMALL, // eSystemFont;
         en_str_Pause, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11692,7 +11719,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1163
+    {   // CP_TEXT_OUT_INDEX_1166
         FONT_SMALL, // eSystemFont;
         en_str_Pause, // StringID;
         0xFF808080, // TextColor;
@@ -11701,7 +11728,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1164
+    {   // CP_TEXT_OUT_INDEX_1167
         FONT_SMALL, // eSystemFont;
         en_str_Stop, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11710,7 +11737,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1165
+    {   // CP_TEXT_OUT_INDEX_1168
         FONT_NORMAL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11719,7 +11746,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1166
+    {   // CP_TEXT_OUT_INDEX_1169
         FONT_NORMAL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF000017, // TextColor;
@@ -11728,7 +11755,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1167
+    {   // CP_TEXT_OUT_INDEX_1170
         FONT_BIG, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF0000A0, // TextColor;
@@ -11737,7 +11764,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1168
+    {   // CP_TEXT_OUT_INDEX_1171
         FONT_SMALL, // eSystemFont;
         en_str_Format_disk, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11746,7 +11773,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1169
+    {   // CP_TEXT_OUT_INDEX_1172
         FONT_BIG, // eSystemFont;
         en_str_Recorded_List, // StringID;
         0xFFFFFF, // TextColor;
@@ -11755,7 +11782,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1170
+    {   // CP_TEXT_OUT_INDEX_1173
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFF1E506C, // TextColor;
@@ -11764,7 +11791,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1171
+    {   // CP_TEXT_OUT_INDEX_1174
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
         0xFF000017, // TextColor;
@@ -11773,7 +11800,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1172
+    {   // CP_TEXT_OUT_INDEX_1175
         FONT_NORMAL, // eSystemFont;
         en_str_CADTV_Manual_Tuning, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -11782,7 +11809,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1173
+    {   // CP_TEXT_OUT_INDEX_1176
         FONT_NORMAL, // eSystemFont;
         en_str_CADTV_Manual_Tuning, // StringID;
         0xFF000000, // TextColor;
@@ -11791,36 +11818,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1174
-        FONT_NORMAL, // eSystemFont;
-        en_str_Frequency, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1175
-        FONT_NORMAL, // eSystemFont;
-        en_str_Frequency, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignRight, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1176
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1177
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Frequency, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11829,7 +11829,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1178
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Frequency, // StringID;
         0xFF008080, // TextColor;
         eTextAlignRight, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11838,6 +11838,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1179
         FONT_NORMAL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1180
+        FONT_NORMAL, // eSystemFont;
+        en_str_Symbol, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1181
+        FONT_NORMAL, // eSystemFont;
+        en_str_Symbol, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignRight, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1182
+        FONT_NORMAL, // eSystemFont;
         en_str_QAM_Type, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignRight, // eTextAttrib;
@@ -11845,7 +11872,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1180
+    {   // CP_TEXT_OUT_INDEX_1183
         FONT_NORMAL, // eSystemFont;
         en_str_QAM_Type, // StringID;
         0xFF008080, // TextColor;
@@ -11854,7 +11881,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1181
+    {   // CP_TEXT_OUT_INDEX_1184
         FONT_NORMAL, // eSystemFont;
         en_str_DVBdashC_Scan_Menu, // StringID;
         0xFFFFFF, // TextColor;
@@ -11863,7 +11890,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1182
+    {   // CP_TEXT_OUT_INDEX_1185
         FONT_NORMAL, // eSystemFont;
         en_str_Scan_type, // StringID;
         0xFFFFFF, // TextColor;
@@ -11872,7 +11899,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1183
+    {   // CP_TEXT_OUT_INDEX_1186
         FONT_NORMAL, // eSystemFont;
         en_str_Scan_type, // StringID;
         0x202020, // TextColor;
@@ -11881,7 +11908,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1184
+    {   // CP_TEXT_OUT_INDEX_1187
         FONT_NORMAL, // eSystemFont;
         en_str_Full, // StringID;
         0xFFFFFF, // TextColor;
@@ -11890,7 +11917,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1185
+    {   // CP_TEXT_OUT_INDEX_1188
         FONT_NORMAL, // eSystemFont;
         en_str_Full, // StringID;
         0x2C2C2C, // TextColor;
@@ -11899,7 +11926,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1186
+    {   // CP_TEXT_OUT_INDEX_1189
         FONT_NORMAL, // eSystemFont;
         en_str_Frequency, // StringID;
         0xFFFFFF, // TextColor;
@@ -11908,7 +11935,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1187
+    {   // CP_TEXT_OUT_INDEX_1190
         FONT_NORMAL, // eSystemFont;
         en_str_Frequency, // StringID;
         0x202020, // TextColor;
@@ -11917,7 +11944,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1188
+    {   // CP_TEXT_OUT_INDEX_1191
         FONT_NORMAL, // eSystemFont;
         en_str_Frequency, // StringID;
         0x808080, // TextColor;
@@ -11926,7 +11953,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1189
+    {   // CP_TEXT_OUT_INDEX_1192
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
         0x202020, // TextColor;
@@ -11935,36 +11962,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1190
-        FONT_NORMAL, // eSystemFont;
-        en_str_Network_ID, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1191
-        FONT_NORMAL, // eSystemFont;
-        en_str_Network_ID, // StringID;
-        0x202020, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1192
-        FONT_NORMAL, // eSystemFont;
-        en_str_Network_ID, // StringID;
-        0x808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1193
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Network_ID, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11973,7 +11973,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1194
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Network_ID, // StringID;
         0x202020, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11982,7 +11982,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1195
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Network_ID, // StringID;
         0x808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -11990,6 +11990,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1196
+        FONT_NORMAL, // eSystemFont;
+        en_str_Symbol, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1197
+        FONT_NORMAL, // eSystemFont;
+        en_str_Symbol, // StringID;
+        0x202020, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1198
+        FONT_NORMAL, // eSystemFont;
+        en_str_Symbol, // StringID;
+        0x808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1199
         FONT_BIG, // eSystemFont;
         en_str_3D_Effect_Setting, // StringID;
         0xFFFFFF, // TextColor;
@@ -11998,7 +12025,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1197
+    {   // CP_TEXT_OUT_INDEX_1200
         FONT_BIG, // eSystemFont;
         en_str_3D_Effect_Setting, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12007,7 +12034,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1198
+    {   // CP_TEXT_OUT_INDEX_1201
         FONT_NORMAL, // eSystemFont;
         en_str_Main_Page, // StringID;
         0xFFFFFF, // TextColor;
@@ -12016,7 +12043,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1199
+    {   // CP_TEXT_OUT_INDEX_1202
         FONT_NORMAL, // eSystemFont;
         en_str_Main_Page, // StringID;
         0x0, // TextColor;
@@ -12025,7 +12052,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1200
+    {   // CP_TEXT_OUT_INDEX_1203
         FONT_NORMAL, // eSystemFont;
         en_str_Main_Page, // StringID;
         0xFF808080, // TextColor;
@@ -12034,45 +12061,18 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1201
-        FONT_NORMAL, // eSystemFont;
-        en_str_Motion_Transdot, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1202
-        FONT_NORMAL, // eSystemFont;
-        en_str_Motion_Transdot, // StringID;
-        0x0, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1203
-        FONT_NORMAL, // eSystemFont;
-        en_str_Main_Menu_Open, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1204
         FONT_NORMAL, // eSystemFont;
-        en_str_Main_Menu_Open, // StringID;
-        0x0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_Motion_Transdot, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1205
         FONT_NORMAL, // eSystemFont;
-        en_str_Off, // StringID;
+        en_str_Motion_Transdot, // StringID;
         0x0, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12081,17 +12081,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1206
         FONT_NORMAL, // eSystemFont;
-        en_str_Off, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_Main_Menu_Open, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1207
         FONT_NORMAL, // eSystemFont;
-        en_str_Main_Menu_Close, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Main_Menu_Open, // StringID;
+        0x0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12099,25 +12099,25 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1208
         FONT_NORMAL, // eSystemFont;
-        en_str_Main_Menu_Close, // StringID;
+        en_str_Off, // StringID;
         0x0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1209
         FONT_NORMAL, // eSystemFont;
-        en_str_Main_Menu_Close, // StringID;
+        en_str_Off, // StringID;
         0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1210
         FONT_NORMAL, // eSystemFont;
-        en_str_Main_Menu_Item, // StringID;
+        en_str_Main_Menu_Close, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12126,7 +12126,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1211
         FONT_NORMAL, // eSystemFont;
-        en_str_Main_Menu_Item, // StringID;
+        en_str_Main_Menu_Close, // StringID;
         0x0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12135,8 +12135,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1212
         FONT_NORMAL, // eSystemFont;
-        en_str_Popup_Dialog, // StringID;
-        0xFFFFFF, // TextColor;
+        en_str_Main_Menu_Close, // StringID;
+        0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12144,8 +12144,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1213
         FONT_NORMAL, // eSystemFont;
-        en_str_Popup_Dialog, // StringID;
-        0x0, // TextColor;
+        en_str_Main_Menu_Item, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12153,6 +12153,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1214
         FONT_NORMAL, // eSystemFont;
+        en_str_Main_Menu_Item, // StringID;
+        0x0, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1215
+        FONT_NORMAL, // eSystemFont;
+        en_str_Popup_Dialog, // StringID;
+        0xFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1216
+        FONT_NORMAL, // eSystemFont;
+        en_str_Popup_Dialog, // StringID;
+        0x0, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1217
+        FONT_NORMAL, // eSystemFont;
         en_str_Assistant_Menu, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -12160,7 +12187,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1215
+    {   // CP_TEXT_OUT_INDEX_1218
         FONT_NORMAL, // eSystemFont;
         en_str_Assistant_Menu, // StringID;
         0x0, // TextColor;
@@ -12169,36 +12196,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1216
-        FONT_SMALL, // eSystemFont;
-        en_str_Exit, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1217
-        FONT_SMALL, // eSystemFont;
-        en_str_Are_you_sure, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1218
-        FONT_SMALL, // eSystemFont;
-        en_str_TV_Version, // StringID;
-        0xFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1219
         FONT_SMALL, // eSystemFont;
-        en_str_Stream_Version, // StringID;
+        en_str_Exit, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12207,7 +12207,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1220
         FONT_SMALL, // eSystemFont;
-        en_str_Yes_to_upgrade, // StringID;
+        en_str_Are_you_sure, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12216,7 +12216,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1221
         FONT_SMALL, // eSystemFont;
-        en_str_No_to_ignore_this_upgrade, // StringID;
+        en_str_TV_Version, // StringID;
         0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12224,27 +12224,27 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1222
-        FONT_NORMAL, // eSystemFont;
-        en_str_PHOTO, // StringID;
-        0xFFFFFFFF, // TextColor;
+        FONT_SMALL, // eSystemFont;
+        en_str_Stream_Version, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1223
-        FONT_NORMAL, // eSystemFont;
-        en_str_PHOTO, // StringID;
-        0xFFFFFF00, // TextColor;
+        FONT_SMALL, // eSystemFont;
+        en_str_Yes_to_upgrade, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1224
-        FONT_NORMAL, // eSystemFont;
-        en_str_Music, // StringID;
-        0xFFFFFFFF, // TextColor;
+        FONT_SMALL, // eSystemFont;
+        en_str_No_to_ignore_this_upgrade, // StringID;
+        0xFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12252,8 +12252,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1225
         FONT_NORMAL, // eSystemFont;
-        en_str_Music, // StringID;
-        0xFFFFFF00, // TextColor;
+        en_str_PHOTO, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12261,8 +12261,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1226
         FONT_NORMAL, // eSystemFont;
-        en_str_Movie, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_PHOTO, // StringID;
+        0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12270,8 +12270,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1227
         FONT_NORMAL, // eSystemFont;
-        en_str_Movie, // StringID;
-        0xFFFFFF00, // TextColor;
+        en_str_Music, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12279,7 +12279,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1228
         FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
+        en_str_Music, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12288,7 +12288,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1229
         FONT_NORMAL, // eSystemFont;
-        en_str_Slash, // StringID;
+        en_str_Movie, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12297,25 +12297,25 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1230
         FONT_NORMAL, // eSystemFont;
-        en_str_Return, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Movie, // StringID;
+        0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1231
-        FONT_SMALL, // eSystemFont;
+        FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        0xFFFFFF00, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1232
         FONT_NORMAL, // eSystemFont;
-        en_str_Copy, // StringID;
+        en_str_Slash, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12324,25 +12324,25 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1233
         FONT_NORMAL, // eSystemFont;
-        en_str_Copy, // StringID;
-        0xFFFFFF00, // TextColor;
+        en_str_Return, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1234
-        FONT_NORMAL, // eSystemFont;
-        en_str_Copy, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        FONT_SMALL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1235
         FONT_NORMAL, // eSystemFont;
-        en_str_Delete, // StringID;
+        en_str_Copy, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12351,7 +12351,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1236
         FONT_NORMAL, // eSystemFont;
-        en_str_Delete, // StringID;
+        en_str_Copy, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12360,7 +12360,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1237
         FONT_NORMAL, // eSystemFont;
-        en_str_Delete, // StringID;
+        en_str_Copy, // StringID;
         0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12369,7 +12369,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1238
         FONT_NORMAL, // eSystemFont;
-        en_str_Format, // StringID;
+        en_str_Delete, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12378,7 +12378,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1239
         FONT_NORMAL, // eSystemFont;
-        en_str_Format, // StringID;
+        en_str_Delete, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12387,7 +12387,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1240
         FONT_NORMAL, // eSystemFont;
-        en_str_Format, // StringID;
+        en_str_Delete, // StringID;
         0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12396,7 +12396,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1241
         FONT_NORMAL, // eSystemFont;
-        en_str_Cancel, // StringID;
+        en_str_Format, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12405,7 +12405,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1242
         FONT_NORMAL, // eSystemFont;
-        en_str_Cancel, // StringID;
+        en_str_Format, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12414,7 +12414,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1243
         FONT_NORMAL, // eSystemFont;
-        en_str_Cancel, // StringID;
+        en_str_Format, // StringID;
         0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12423,7 +12423,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1244
         FONT_NORMAL, // eSystemFont;
-        en_str_No_Sort, // StringID;
+        en_str_Cancel, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12432,7 +12432,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1245
         FONT_NORMAL, // eSystemFont;
-        en_str_No_Sort, // StringID;
+        en_str_Cancel, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12441,7 +12441,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1246
         FONT_NORMAL, // eSystemFont;
-        en_str_No_Sort, // StringID;
+        en_str_Cancel, // StringID;
         0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12449,27 +12449,27 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1247
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF00FFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_No_Sort, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1248
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_No_Sort, // StringID;
+        0xFFFFFF00, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1249
-        FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF00FFFF, // TextColor;
+        FONT_NORMAL, // eSystemFont;
+        en_str_No_Sort, // StringID;
+        0xFF808080, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12478,25 +12478,25 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     {   // CP_TEXT_OUT_INDEX_1250
         FONT_SMALL, // eSystemFont;
         en_str_dashdash, // StringID;
-        0xFF80FFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        0xFF00FFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1251
         FONT_SMALL, // eSystemFont;
-        en_str_Close, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_dashdash, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1252
         FONT_SMALL, // eSystemFont;
-        en_str_Close, // StringID;
-        0xFFFFFF00, // TextColor;
+        en_str_dashdash, // StringID;
+        0xFF00FFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12504,8 +12504,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1253
         FONT_SMALL, // eSystemFont;
-        en_str_Slash, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_dashdash, // StringID;
+        0xFF80FFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12513,7 +12513,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1254
         FONT_SMALL, // eSystemFont;
-        en_str_Playlist, // StringID;
+        en_str_Close, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12522,6 +12522,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1255
         FONT_SMALL, // eSystemFont;
+        en_str_Close, // StringID;
+        0xFFFFFF00, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1256
+        FONT_SMALL, // eSystemFont;
+        en_str_Slash, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1257
+        FONT_SMALL, // eSystemFont;
+        en_str_Playlist, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1258
+        FONT_SMALL, // eSystemFont;
         en_str_Cancel, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -12529,7 +12556,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1256
+    {   // CP_TEXT_OUT_INDEX_1259
         FONT_SMALL, // eSystemFont;
         en_str_Cancel, // StringID;
         0xFFFFFF00, // TextColor;
@@ -12538,7 +12565,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1257
+    {   // CP_TEXT_OUT_INDEX_1260
         FONT_SMALL, // eSystemFont;
         en_str_Resolutioncolon, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12547,7 +12574,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1258
+    {   // CP_TEXT_OUT_INDEX_1261
         FONT_SMALL, // eSystemFont;
         en_str_AudioTrackcolon, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12556,7 +12583,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1259
+    {   // CP_TEXT_OUT_INDEX_1262
         FONT_SMALL, // eSystemFont;
         en_str_Subtitlecolon, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12565,36 +12592,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1260
-        FONT_SMALL, // eSystemFont;
-        en_str_Synccolon, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1261
-        FONT_SMALL, // eSystemFont;
-        en_str_Synccolon, // StringID;
-        0xFF80FFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1262
-        FONT_SMALL, // eSystemFont;
-        en_str_Synccolon, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1263
         FONT_SMALL, // eSystemFont;
-        en_str_Code_Pagecolon, // StringID;
+        en_str_Synccolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12603,7 +12603,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1264
         FONT_SMALL, // eSystemFont;
-        en_str_Code_Pagecolon, // StringID;
+        en_str_Synccolon, // StringID;
         0xFF80FFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12612,7 +12612,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1265
         FONT_SMALL, // eSystemFont;
-        en_str_Code_Pagecolon, // StringID;
+        en_str_Synccolon, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12621,7 +12621,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1266
         FONT_SMALL, // eSystemFont;
-        en_str_Programcolon, // StringID;
+        en_str_Code_Pagecolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12630,8 +12630,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1267
         FONT_SMALL, // eSystemFont;
-        en_str_Sizecolon, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Code_Pagecolon, // StringID;
+        0xFF80FFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12639,8 +12639,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1268
         FONT_SMALL, // eSystemFont;
-        en_str_Datecolon, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Code_Pagecolon, // StringID;
+        0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12648,7 +12648,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1269
         FONT_SMALL, // eSystemFont;
-        en_str_Timecolon, // StringID;
+        en_str_Programcolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12657,7 +12657,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1270
         FONT_SMALL, // eSystemFont;
-        en_str_Albumcolon, // StringID;
+        en_str_Sizecolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12666,7 +12666,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1271
         FONT_SMALL, // eSystemFont;
-        en_str_Titlecolon, // StringID;
+        en_str_Datecolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12675,7 +12675,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1272
         FONT_SMALL, // eSystemFont;
-        en_str_Bit_Ratecolon, // StringID;
+        en_str_Timecolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12684,7 +12684,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1273
         FONT_SMALL, // eSystemFont;
-        en_str_Artistcolon, // StringID;
+        en_str_Albumcolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12693,7 +12693,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1274
         FONT_SMALL, // eSystemFont;
-        en_str_Samplingcolon, // StringID;
+        en_str_Titlecolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12702,7 +12702,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1275
         FONT_SMALL, // eSystemFont;
-        en_str_Yearcolon, // StringID;
+        en_str_Bit_Ratecolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12711,35 +12711,35 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1276
         FONT_SMALL, // eSystemFont;
-        en_str_Yes, // StringID;
+        en_str_Artistcolon, // StringID;
         0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1277
         FONT_SMALL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xFFFFFF00, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_Samplingcolon, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1278
         FONT_SMALL, // eSystemFont;
-        en_str_No, // StringID;
+        en_str_Yearcolon, // StringID;
         0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1279
         FONT_SMALL, // eSystemFont;
-        en_str_No, // StringID;
-        0xFFFFFF00, // TextColor;
+        en_str_Yes, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12747,8 +12747,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1280
         FONT_SMALL, // eSystemFont;
-        en_str_Input_search_timecolon, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Yes, // StringID;
+        0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12756,7 +12756,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1281
         FONT_SMALL, // eSystemFont;
-        en_str_colon, // StringID;
+        en_str_No, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12765,7 +12765,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1282
         FONT_SMALL, // eSystemFont;
-        en_str_dashdash, // StringID;
+        en_str_No, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12774,7 +12774,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1283
         FONT_SMALL, // eSystemFont;
-        en_str_OK, // StringID;
+        en_str_Input_search_timecolon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -12783,6 +12783,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1284
         FONT_SMALL, // eSystemFont;
+        en_str_colon, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1285
+        FONT_SMALL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFFFFFF00, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1286
+        FONT_SMALL, // eSystemFont;
+        en_str_OK, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1287
+        FONT_SMALL, // eSystemFont;
         en_str_OK, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -12790,7 +12817,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1285
+    {   // CP_TEXT_OUT_INDEX_1288
         FONT_BIG, // eSystemFont;
         en_str_Divx_Setting, // StringID;
         0xFF080808, // TextColor;
@@ -12799,7 +12826,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1286
+    {   // CP_TEXT_OUT_INDEX_1289
         FONT_NORMAL, // eSystemFont;
         en_str_Divx_Setting, // StringID;
         0xFF80FFFF, // TextColor;
@@ -12808,37 +12835,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1287
-        FONT_SMALL, // eSystemFont;
-        en_str_Change_Title, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1288
-        FONT_SMALL, // eSystemFont;
-        en_str_Change_Title, // StringID;
-        0xFFFFFF00, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1289
-        FONT_SMALL, // eSystemFont;
-        en_str_Change_Edition, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1290
         FONT_SMALL, // eSystemFont;
-        en_str_Change_Edition, // StringID;
-        0xFFFFFF00, // TextColor;
+        en_str_Change_Title, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12846,8 +12846,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1291
         FONT_SMALL, // eSystemFont;
-        en_str_Change_Chapter, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Change_Title, // StringID;
+        0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -12855,6 +12855,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1292
         FONT_SMALL, // eSystemFont;
+        en_str_Change_Edition, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1293
+        FONT_SMALL, // eSystemFont;
+        en_str_Change_Edition, // StringID;
+        0xFFFFFF00, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1294
+        FONT_SMALL, // eSystemFont;
+        en_str_Change_Chapter, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1295
+        FONT_SMALL, // eSystemFont;
         en_str_Change_Chapter, // StringID;
         0xFFFFFF00, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -12862,7 +12889,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1293
+    {   // CP_TEXT_OUT_INDEX_1296
         FONT_SMALL, // eSystemFont;
         en_str_Change_Auto_Chapter, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12871,7 +12898,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1294
+    {   // CP_TEXT_OUT_INDEX_1297
         FONT_SMALL, // eSystemFont;
         en_str_Change_Auto_Chapter, // StringID;
         0xFFFFFF00, // TextColor;
@@ -12880,7 +12907,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1295
+    {   // CP_TEXT_OUT_INDEX_1298
         FONT_SMALL, // eSystemFont;
         en_str_Editioncolon, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12889,7 +12916,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1296
+    {   // CP_TEXT_OUT_INDEX_1299
         FONT_SMALL, // eSystemFont;
         en_str_Chaptercolon, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12898,7 +12925,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1297
+    {   // CP_TEXT_OUT_INDEX_1300
         FONT_NORMAL, // eSystemFont;
         en_str_OPTION, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12907,43 +12934,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1298
-        FONT_NORMAL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1299
-        FONT_NORMAL, // eSystemFont;
-        en_str_Yes, // StringID;
-        0xFFFFFF00, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1300
-        FONT_NORMAL, // eSystemFont;
-        en_str_No, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1301
         FONT_NORMAL, // eSystemFont;
-        en_str_No, // StringID;
-        0xFFFFFF00, // TextColor;
+        en_str_Yes, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1302
+        FONT_NORMAL, // eSystemFont;
+        en_str_Yes, // StringID;
+        0xFFFFFF00, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1303
+        FONT_NORMAL, // eSystemFont;
+        en_str_No, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1304
+        FONT_NORMAL, // eSystemFont;
+        en_str_No, // StringID;
+        0xFFFFFF00, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1305
         FONT_NORMAL, // eSystemFont;
         en_str_Stop, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12952,7 +12979,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1303
+    {   // CP_TEXT_OUT_INDEX_1306
         FONT_SMALL, // eSystemFont;
         en_str_Start, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12961,7 +12988,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1304
+    {   // CP_TEXT_OUT_INDEX_1307
         FONT_SMALL, // eSystemFont;
         en_str_Start, // StringID;
         0xFFFFFF00, // TextColor;
@@ -12970,7 +12997,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1305
+    {   // CP_TEXT_OUT_INDEX_1308
         FONT_SMALL, // eSystemFont;
         en_str_Power_Amplifier, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12979,7 +13006,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1306
+    {   // CP_TEXT_OUT_INDEX_1309
         FONT_NORMAL, // eSystemFont;
         en_str_OK, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -12988,7 +13015,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1307
+    {   // CP_TEXT_OUT_INDEX_1310
         FONT_NORMAL, // eSystemFont;
         en_str_OK, // StringID;
         0xFFFFFF00, // TextColor;
@@ -12997,7 +13024,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1308
+    {   // CP_TEXT_OUT_INDEX_1311
         FONT_NORMAL, // eSystemFont;
         en_str_UART_DEBUG, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -13006,7 +13033,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1309
+    {   // CP_TEXT_OUT_INDEX_1312
         FONT_NORMAL, // eSystemFont;
         en_str_UART_DEBUG, // StringID;
         0xFF2C2C2C, // TextColor;
@@ -13015,7 +13042,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1310
+    {   // CP_TEXT_OUT_INDEX_1313
         FONT_NORMAL, // eSystemFont;
         en_str_UART_DEBUG, // StringID;
         0xFF808080, // TextColor;
@@ -13024,43 +13051,43 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1311
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF400040, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1312
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1313
-        FONT_NORMAL, // eSystemFont;
-        en_str_dashdash, // StringID;
-        0xFF400040, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1314
         FONT_NORMAL, // eSystemFont;
         en_str_dashdash, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        0xFF400040, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1315
+        FONT_NORMAL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1316
+        FONT_NORMAL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFF400040, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1317
+        FONT_NORMAL, // eSystemFont;
+        en_str_dashdash, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1318
         FONT_BIG, // eSystemFont;
         en_str_OK, // StringID;
         0xFF080808, // TextColor;
@@ -13069,7 +13096,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1316
+    {   // CP_TEXT_OUT_INDEX_1319
         FONT_BIG, // eSystemFont;
         en_str_Exit, // StringID;
         0xFF080808, // TextColor;
@@ -13078,7 +13105,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1317
+    {   // CP_TEXT_OUT_INDEX_1320
         FONT_BIG, // eSystemFont;
         en_str_Dish_Setup, // StringID;
         0xFFFFFF, // TextColor;
@@ -13087,37 +13114,10 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1318
-        FONT_SMALL, // eSystemFont;
-        en_str_Exit, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1319
-        FONT_SMALL, // eSystemFont;
-        en_str_Exit, // StringID;
-        0xFF0080C0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1320
-        FONT_SMALL, // eSystemFont;
-        en_str_Confirm, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1321
         FONT_SMALL, // eSystemFont;
-        en_str_Confirm, // StringID;
-        0xFF0080C0, // TextColor;
+        en_str_Exit, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13125,8 +13125,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1322
         FONT_SMALL, // eSystemFont;
-        en_str_Scan, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Exit, // StringID;
+        0xFF0080C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13134,8 +13134,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1323
         FONT_SMALL, // eSystemFont;
-        en_str_Scan, // StringID;
-        0xFF149DD1, // TextColor;
+        en_str_Confirm, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13143,8 +13143,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1324
         FONT_SMALL, // eSystemFont;
-        en_str_TransPonder, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Confirm, // StringID;
+        0xFF0080C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13152,8 +13152,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1325
         FONT_SMALL, // eSystemFont;
-        en_str_TransPonder, // StringID;
-        0xFF0080C0, // TextColor;
+        en_str_Scan, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13161,8 +13161,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1326
         FONT_SMALL, // eSystemFont;
-        en_str_Edit, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Scan, // StringID;
+        0xFF149DD1, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13170,8 +13170,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1327
         FONT_SMALL, // eSystemFont;
-        en_str_Edit, // StringID;
-        0xFF149DD1, // TextColor;
+        en_str_TransPonder, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13179,8 +13179,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1328
         FONT_SMALL, // eSystemFont;
-        en_str_Add, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_TransPonder, // StringID;
+        0xFF0080C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13188,8 +13188,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1329
         FONT_SMALL, // eSystemFont;
-        en_str_Add, // StringID;
-        0xFF149DD1, // TextColor;
+        en_str_Edit, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13197,8 +13197,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1330
         FONT_SMALL, // eSystemFont;
-        en_str_Delete, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Edit, // StringID;
+        0xFF149DD1, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13206,8 +13206,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1331
         FONT_SMALL, // eSystemFont;
-        en_str_Delete, // StringID;
-        0xFF149DD1, // TextColor;
+        en_str_Add, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13215,8 +13215,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1332
         FONT_SMALL, // eSystemFont;
-        en_str_Select, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Add, // StringID;
+        0xFF149DD1, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13224,8 +13224,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1333
         FONT_SMALL, // eSystemFont;
-        en_str_Select, // StringID;
-        0xFF0080C0, // TextColor;
+        en_str_Delete, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13233,8 +13233,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1334
         FONT_SMALL, // eSystemFont;
-        en_str_Set_Limit, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Delete, // StringID;
+        0xFF149DD1, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13242,8 +13242,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1335
         FONT_SMALL, // eSystemFont;
-        en_str_Set_Limit, // StringID;
-        0xFF149DD1, // TextColor;
+        en_str_Select, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13252,7 +13252,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     {   // CP_TEXT_OUT_INDEX_1336
         FONT_SMALL, // eSystemFont;
         en_str_Select, // StringID;
-        0xFF149DD1, // TextColor;
+        0xFF0080C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13260,7 +13260,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1337
         FONT_SMALL, // eSystemFont;
-        en_str_Set_Location, // StringID;
+        en_str_Set_Limit, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13269,7 +13269,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1338
         FONT_SMALL, // eSystemFont;
-        en_str_Set_Location, // StringID;
+        en_str_Set_Limit, // StringID;
         0xFF149DD1, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13277,6 +13277,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1339
+        FONT_SMALL, // eSystemFont;
+        en_str_Select, // StringID;
+        0xFF149DD1, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1340
+        FONT_SMALL, // eSystemFont;
+        en_str_Set_Location, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1341
+        FONT_SMALL, // eSystemFont;
+        en_str_Set_Location, // StringID;
+        0xFF149DD1, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1342
         FONT_NORMAL, // eSystemFont;
         en_str_Satellite, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -13285,7 +13312,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1340
+    {   // CP_TEXT_OUT_INDEX_1343
         FONT_NORMAL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF008080, // TextColor;
@@ -13294,36 +13321,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1341
-        FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Type, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1342
-        FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Type, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1343
-        FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Type, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1344
         FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Power, // StringID;
+        en_str_LNB_Type, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13332,7 +13332,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1345
         FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Power, // StringID;
+        en_str_LNB_Type, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13341,7 +13341,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1346
         FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Power, // StringID;
+        en_str_LNB_Type, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13350,7 +13350,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1347
         FONT_NORMAL, // eSystemFont;
-        en_str_22KHz, // StringID;
+        en_str_LNB_Power, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13359,7 +13359,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1348
         FONT_NORMAL, // eSystemFont;
-        en_str_22KHz, // StringID;
+        en_str_LNB_Power, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13368,7 +13368,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1349
         FONT_NORMAL, // eSystemFont;
-        en_str_22KHz, // StringID;
+        en_str_LNB_Power, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13377,7 +13377,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1350
         FONT_NORMAL, // eSystemFont;
-        en_str_ToneBurst, // StringID;
+        en_str_22KHz, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13386,7 +13386,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1351
         FONT_NORMAL, // eSystemFont;
-        en_str_ToneBurst, // StringID;
+        en_str_22KHz, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13395,7 +13395,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1352
         FONT_NORMAL, // eSystemFont;
-        en_str_ToneBurst, // StringID;
+        en_str_22KHz, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13404,7 +13404,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1353
         FONT_NORMAL, // eSystemFont;
-        en_str_DiSEqC1dot0, // StringID;
+        en_str_ToneBurst, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13413,7 +13413,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1354
         FONT_NORMAL, // eSystemFont;
-        en_str_DiSEqC1dot0, // StringID;
+        en_str_ToneBurst, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13422,7 +13422,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1355
         FONT_NORMAL, // eSystemFont;
-        en_str_DiSEqC1dot0, // StringID;
+        en_str_ToneBurst, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13431,7 +13431,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1356
         FONT_NORMAL, // eSystemFont;
-        en_str_DiSEqC1dot1, // StringID;
+        en_str_DiSEqC1dot0, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13440,7 +13440,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1357
         FONT_NORMAL, // eSystemFont;
-        en_str_DiSEqC1dot1, // StringID;
+        en_str_DiSEqC1dot0, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13449,7 +13449,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1358
         FONT_NORMAL, // eSystemFont;
-        en_str_DiSEqC1dot1, // StringID;
+        en_str_DiSEqC1dot0, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13458,7 +13458,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1359
         FONT_NORMAL, // eSystemFont;
-        en_str_Motor, // StringID;
+        en_str_DiSEqC1dot1, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13467,7 +13467,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1360
         FONT_NORMAL, // eSystemFont;
-        en_str_Motor, // StringID;
+        en_str_DiSEqC1dot1, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13476,7 +13476,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1361
         FONT_NORMAL, // eSystemFont;
-        en_str_Motor, // StringID;
+        en_str_DiSEqC1dot1, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13485,6 +13485,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1362
         FONT_NORMAL, // eSystemFont;
+        en_str_Motor, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1363
+        FONT_NORMAL, // eSystemFont;
+        en_str_Motor, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1364
+        FONT_NORMAL, // eSystemFont;
+        en_str_Motor, // StringID;
+        0xFF808080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1365
+        FONT_NORMAL, // eSystemFont;
         en_str_Satellite, // StringID;
         0xFFFFFF80, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -13492,7 +13519,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1363
+    {   // CP_TEXT_OUT_INDEX_1366
         FONT_NORMAL, // eSystemFont;
         en_str_Quality, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -13501,36 +13528,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1364
-        FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Low, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1365
-        FONT_NORMAL, // eSystemFont;
-        en_str_LNB_Low, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1366
-        FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1367
         FONT_NORMAL, // eSystemFont;
-        en_str_LNB_High, // StringID;
+        en_str_LNB_Low, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13539,7 +13539,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1368
         FONT_NORMAL, // eSystemFont;
-        en_str_LNB_High, // StringID;
+        en_str_LNB_Low, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13548,6 +13548,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1369
         FONT_NORMAL, // eSystemFont;
+        en_str_3Dot, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1370
+        FONT_NORMAL, // eSystemFont;
+        en_str_LNB_High, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1371
+        FONT_NORMAL, // eSystemFont;
+        en_str_LNB_High, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1372
+        FONT_NORMAL, // eSystemFont;
         en_str_LNB_High, // StringID;
         0xFF6A6A6A, // TextColor;
         eTextAlignLeft, // eTextAttrib;
@@ -13555,7 +13582,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1370
+    {   // CP_TEXT_OUT_INDEX_1373
         FONT_NORMAL, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF6A6A6A, // TextColor;
@@ -13564,54 +13591,27 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1371
-        FONT_NORMAL, // eSystemFont;
-        en_str_Channel_ID, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1372
-        FONT_NORMAL, // eSystemFont;
-        en_str_Channel_ID, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1373
-        FONT_NORMAL, // eSystemFont;
-        en_str_Frequence, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1374
         FONT_NORMAL, // eSystemFont;
-        en_str_Frequence, // StringID;
-        0xFF008080, // TextColor;
+        en_str_Channel_ID, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1375
-        FONT_BIG, // eSystemFont;
-        en_str_Set_Limit, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Channel_ID, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1376
         FONT_NORMAL, // eSystemFont;
-        en_str_Move_Continue, // StringID;
+        en_str_Frequence, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13620,7 +13620,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1377
         FONT_NORMAL, // eSystemFont;
-        en_str_Move_Continue, // StringID;
+        en_str_Frequence, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13628,17 +13628,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1378
-        FONT_NORMAL, // eSystemFont;
-        en_str_Move_Continue, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        FONT_BIG, // eSystemFont;
+        en_str_Set_Limit, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1379
         FONT_NORMAL, // eSystemFont;
-        en_str_Move_Step, // StringID;
+        en_str_Move_Continue, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13647,7 +13647,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1380
         FONT_NORMAL, // eSystemFont;
-        en_str_Move_Step, // StringID;
+        en_str_Move_Continue, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13656,7 +13656,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1381
         FONT_NORMAL, // eSystemFont;
-        en_str_Move_Step, // StringID;
+        en_str_Move_Continue, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13665,7 +13665,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1382
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_West_Limit, // StringID;
+        en_str_Move_Step, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13674,7 +13674,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1383
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_West_Limit, // StringID;
+        en_str_Move_Step, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13683,7 +13683,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1384
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_West_Limit, // StringID;
+        en_str_Move_Step, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13692,7 +13692,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1385
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_East_Limit, // StringID;
+        en_str_Set_West_Limit, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13701,7 +13701,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1386
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_East_Limit, // StringID;
+        en_str_Set_West_Limit, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13710,7 +13710,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1387
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_East_Limit, // StringID;
+        en_str_Set_West_Limit, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13719,7 +13719,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1388
         FONT_NORMAL, // eSystemFont;
-        en_str_Goto_Reference, // StringID;
+        en_str_Set_East_Limit, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13728,7 +13728,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1389
         FONT_NORMAL, // eSystemFont;
-        en_str_Goto_Reference, // StringID;
+        en_str_Set_East_Limit, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13737,7 +13737,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1390
         FONT_NORMAL, // eSystemFont;
-        en_str_Goto_Reference, // StringID;
+        en_str_Set_East_Limit, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13746,7 +13746,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1391
         FONT_NORMAL, // eSystemFont;
-        en_str_Disable_Limit, // StringID;
+        en_str_Goto_Reference, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13755,7 +13755,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1392
         FONT_NORMAL, // eSystemFont;
-        en_str_Disable_Limit, // StringID;
+        en_str_Goto_Reference, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13764,7 +13764,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1393
         FONT_NORMAL, // eSystemFont;
-        en_str_Disable_Limit, // StringID;
+        en_str_Goto_Reference, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13773,17 +13773,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1394
         FONT_NORMAL, // eSystemFont;
-        en_str_Set_Location, // StringID;
+        en_str_Disable_Limit, // StringID;
         0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1395
         FONT_NORMAL, // eSystemFont;
-        en_str_Location, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Disable_Limit, // StringID;
+        0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13791,8 +13791,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1396
         FONT_NORMAL, // eSystemFont;
-        en_str_Location, // StringID;
-        0xFF008080, // TextColor;
+        en_str_Disable_Limit, // StringID;
+        0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13800,16 +13800,16 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1397
         FONT_NORMAL, // eSystemFont;
-        en_str_Location, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_Set_Location, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1398
         FONT_NORMAL, // eSystemFont;
-        en_str_Longitude_Direction, // StringID;
+        en_str_Location, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13818,7 +13818,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1399
         FONT_NORMAL, // eSystemFont;
-        en_str_Longitude_Direction, // StringID;
+        en_str_Location, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13827,8 +13827,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1400
         FONT_NORMAL, // eSystemFont;
-        en_str_Longitude_Direction, // StringID;
-        0xFF929292, // TextColor;
+        en_str_Location, // StringID;
+        0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13836,7 +13836,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1401
         FONT_NORMAL, // eSystemFont;
-        en_str_East, // StringID;
+        en_str_Longitude_Direction, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13845,7 +13845,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1402
         FONT_NORMAL, // eSystemFont;
-        en_str_East, // StringID;
+        en_str_Longitude_Direction, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13854,7 +13854,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1403
         FONT_NORMAL, // eSystemFont;
-        en_str_East, // StringID;
+        en_str_Longitude_Direction, // StringID;
         0xFF929292, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13863,7 +13863,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1404
         FONT_NORMAL, // eSystemFont;
-        en_str_Longitude_Angle, // StringID;
+        en_str_East, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13872,7 +13872,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1405
         FONT_NORMAL, // eSystemFont;
-        en_str_Longitude_Angle, // StringID;
+        en_str_East, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13881,7 +13881,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1406
         FONT_NORMAL, // eSystemFont;
-        en_str_Longitude_Angle, // StringID;
+        en_str_East, // StringID;
         0xFF929292, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13890,8 +13890,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1407
         FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFF929292, // TextColor;
+        en_str_Longitude_Angle, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13899,8 +13899,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1408
         FONT_NORMAL, // eSystemFont;
-        en_str_Latitude_Direction, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Longitude_Angle, // StringID;
+        0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13908,8 +13908,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1409
         FONT_NORMAL, // eSystemFont;
-        en_str_Latitude_Direction, // StringID;
-        0xFF008080, // TextColor;
+        en_str_Longitude_Angle, // StringID;
+        0xFF929292, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -13917,7 +13917,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1410
         FONT_NORMAL, // eSystemFont;
-        en_str_Latitude_Direction, // StringID;
+        en_str_3Dot, // StringID;
         0xFF929292, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13926,7 +13926,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1411
         FONT_NORMAL, // eSystemFont;
-        en_str_North, // StringID;
+        en_str_Latitude_Direction, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13935,7 +13935,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1412
         FONT_NORMAL, // eSystemFont;
-        en_str_North, // StringID;
+        en_str_Latitude_Direction, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13944,7 +13944,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1413
         FONT_NORMAL, // eSystemFont;
-        en_str_North, // StringID;
+        en_str_Latitude_Direction, // StringID;
         0xFF929292, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13953,7 +13953,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1414
         FONT_NORMAL, // eSystemFont;
-        en_str_Latitude_Angle, // StringID;
+        en_str_North, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13962,7 +13962,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1415
         FONT_NORMAL, // eSystemFont;
-        en_str_Latitude_Angle, // StringID;
+        en_str_North, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13971,7 +13971,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1416
         FONT_NORMAL, // eSystemFont;
-        en_str_Latitude_Angle, // StringID;
+        en_str_North, // StringID;
         0xFF929292, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -13980,6 +13980,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1417
         FONT_NORMAL, // eSystemFont;
+        en_str_Latitude_Angle, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1418
+        FONT_NORMAL, // eSystemFont;
+        en_str_Latitude_Angle, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1419
+        FONT_NORMAL, // eSystemFont;
+        en_str_Latitude_Angle, // StringID;
+        0xFF929292, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1420
+        FONT_NORMAL, // eSystemFont;
         en_str_Set_Position, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -13987,7 +14014,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1418
+    {   // CP_TEXT_OUT_INDEX_1421
         FONT_NORMAL, // eSystemFont;
         en_str_Move_Auto, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -13996,7 +14023,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1419
+    {   // CP_TEXT_OUT_INDEX_1422
         FONT_NORMAL, // eSystemFont;
         en_str_Move_Auto, // StringID;
         0xFF008080, // TextColor;
@@ -14005,7 +14032,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1420
+    {   // CP_TEXT_OUT_INDEX_1423
         FONT_NORMAL, // eSystemFont;
         en_str_Move_Auto, // StringID;
         0xFFC0C0C0, // TextColor;
@@ -14014,7 +14041,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1421
+    {   // CP_TEXT_OUT_INDEX_1424
         FONT_NORMAL, // eSystemFont;
         en_str_Stop, // StringID;
         0xFF008080, // TextColor;
@@ -14023,36 +14050,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1422
-        FONT_NORMAL, // eSystemFont;
-        en_str_Store_Positon, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1423
-        FONT_NORMAL, // eSystemFont;
-        en_str_Store_Positon, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1424
-        FONT_NORMAL, // eSystemFont;
-        en_str_Store_Positon, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1425
         FONT_NORMAL, // eSystemFont;
-        en_str_Goto_Positon, // StringID;
+        en_str_Store_Positon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14061,7 +14061,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1426
         FONT_NORMAL, // eSystemFont;
-        en_str_Goto_Positon, // StringID;
+        en_str_Store_Positon, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14070,7 +14070,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1427
         FONT_NORMAL, // eSystemFont;
-        en_str_Goto_Positon, // StringID;
+        en_str_Store_Positon, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14079,7 +14079,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1428
         FONT_NORMAL, // eSystemFont;
-        en_str_GotoX, // StringID;
+        en_str_Goto_Positon, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14088,7 +14088,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1429
         FONT_NORMAL, // eSystemFont;
-        en_str_GotoX, // StringID;
+        en_str_Goto_Positon, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14097,7 +14097,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1430
         FONT_NORMAL, // eSystemFont;
-        en_str_GotoX, // StringID;
+        en_str_Goto_Positon, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14106,17 +14106,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1431
         FONT_NORMAL, // eSystemFont;
-        en_str_Edit, // StringID;
+        en_str_GotoX, // StringID;
         0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1432
         FONT_NORMAL, // eSystemFont;
-        en_str_Nodot, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_GotoX, // StringID;
+        0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14124,8 +14124,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1433
         FONT_NORMAL, // eSystemFont;
-        en_str_Nodot, // StringID;
-        0xFF008080, // TextColor;
+        en_str_GotoX, // StringID;
+        0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14133,16 +14133,16 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1434
         FONT_NORMAL, // eSystemFont;
-        en_str_Nodot, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_Edit, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1435
         FONT_NORMAL, // eSystemFont;
-        en_str_Satellite_Name, // StringID;
+        en_str_Nodot, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14151,7 +14151,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1436
         FONT_NORMAL, // eSystemFont;
-        en_str_Satellite_Name, // StringID;
+        en_str_Nodot, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14160,7 +14160,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1437
         FONT_NORMAL, // eSystemFont;
-        en_str_Satellite_Name, // StringID;
+        en_str_Nodot, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14169,8 +14169,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1438
         FONT_NORMAL, // eSystemFont;
-        en_str_Longitude_Angle, // StringID;
-        0xFFC0C0C0, // TextColor;
+        en_str_Satellite_Name, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14178,8 +14178,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1439
         FONT_NORMAL, // eSystemFont;
-        en_str_Band, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Satellite_Name, // StringID;
+        0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14187,8 +14187,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1440
         FONT_NORMAL, // eSystemFont;
-        en_str_Band, // StringID;
-        0xFF008080, // TextColor;
+        en_str_Satellite_Name, // StringID;
+        0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14196,7 +14196,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1441
         FONT_NORMAL, // eSystemFont;
-        en_str_Band, // StringID;
+        en_str_Longitude_Angle, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14205,34 +14205,34 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1442
         FONT_NORMAL, // eSystemFont;
-        en_str_3Dot, // StringID;
-        0xFF080808, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        en_str_Band, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1443
-        FONT_SMALL, // eSystemFont;
-        en_str_Extend, // StringID;
-        0xFF080808, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Band, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1444
-        FONT_SMALL, // eSystemFont;
-        en_str_Caps_On, // StringID;
-        0xFF080808, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        FONT_NORMAL, // eSystemFont;
+        en_str_Band, // StringID;
+        0xFFC0C0C0, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1445
-        FONT_SMALL, // eSystemFont;
-        en_str_Back, // StringID;
+        FONT_NORMAL, // eSystemFont;
+        en_str_3Dot, // StringID;
         0xFF080808, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14241,7 +14241,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1446
         FONT_SMALL, // eSystemFont;
-        en_str_OK, // StringID;
+        en_str_Extend, // StringID;
         0xFF080808, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14250,7 +14250,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1447
         FONT_SMALL, // eSystemFont;
-        en_str_Space, // StringID;
+        en_str_Caps_On, // StringID;
         0xFF080808, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14258,6 +14258,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1448
+        FONT_SMALL, // eSystemFont;
+        en_str_Back, // StringID;
+        0xFF080808, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1449
+        FONT_SMALL, // eSystemFont;
+        en_str_OK, // StringID;
+        0xFF080808, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1450
+        FONT_SMALL, // eSystemFont;
+        en_str_Space, // StringID;
+        0xFF080808, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1451
         FONT_BIG, // eSystemFont;
         en_str_3Dot, // StringID;
         0xFF080008, // TextColor;
@@ -14266,36 +14293,9 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1449
-        FONT_NORMAL, // eSystemFont;
-        en_str_TransPonder, // StringID;
-        0xFFFFFFFF, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1450
-        FONT_NORMAL, // eSystemFont;
-        en_str_TransPonder, // StringID;
-        0xFF008080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
-    {   // CP_TEXT_OUT_INDEX_1451
-        FONT_NORMAL, // eSystemFont;
-        en_str_TransPonder, // StringID;
-        0xFFC0C0C0, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
-        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
-        2, // u8dis;
-        //FALSE, // bShadow;
-    },
     {   // CP_TEXT_OUT_INDEX_1452
         FONT_NORMAL, // eSystemFont;
-        en_str_Frequency, // StringID;
+        en_str_TransPonder, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14304,7 +14304,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1453
         FONT_NORMAL, // eSystemFont;
-        en_str_Frequency, // StringID;
+        en_str_TransPonder, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14313,7 +14313,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1454
         FONT_NORMAL, // eSystemFont;
-        en_str_Frequency, // StringID;
+        en_str_TransPonder, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14322,7 +14322,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1455
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Frequency, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14331,7 +14331,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1456
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Frequency, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14340,7 +14340,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1457
         FONT_NORMAL, // eSystemFont;
-        en_str_Symbol, // StringID;
+        en_str_Frequency, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14349,7 +14349,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1458
         FONT_NORMAL, // eSystemFont;
-        en_str_Polarity, // StringID;
+        en_str_Symbol, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14358,7 +14358,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1459
         FONT_NORMAL, // eSystemFont;
-        en_str_Polarity, // StringID;
+        en_str_Symbol, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14367,7 +14367,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1460
         FONT_NORMAL, // eSystemFont;
-        en_str_Polarity, // StringID;
+        en_str_Symbol, // StringID;
         0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14376,17 +14376,17 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1461
         FONT_NORMAL, // eSystemFont;
-        en_str_Channel_Search, // StringID;
+        en_str_Polarity, // StringID;
         0xFFFFFFFF, // TextColor;
-        eTextAlignMiddleWH, // eTextAttrib;
+        eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1462
         FONT_NORMAL, // eSystemFont;
-        en_str_Scan_Mode, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Polarity, // StringID;
+        0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14394,8 +14394,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1463
         FONT_NORMAL, // eSystemFont;
-        en_str_Scan_Mode, // StringID;
-        0xFF008080, // TextColor;
+        en_str_Polarity, // StringID;
+        0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14403,16 +14403,16 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1464
         FONT_NORMAL, // eSystemFont;
-        en_str_Scan_Mode, // StringID;
-        0xFF808080, // TextColor;
-        eTextAlignLeft, // eTextAttrib;
+        en_str_Channel_Search, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignMiddleWH, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
         //FALSE, // bShadow;
     },
     {   // CP_TEXT_OUT_INDEX_1465
         FONT_NORMAL, // eSystemFont;
-        en_str_Default, // StringID;
+        en_str_Scan_Mode, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14421,7 +14421,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1466
         FONT_NORMAL, // eSystemFont;
-        en_str_Default, // StringID;
+        en_str_Scan_Mode, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14430,7 +14430,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1467
         FONT_NORMAL, // eSystemFont;
-        en_str_Default, // StringID;
+        en_str_Scan_Mode, // StringID;
         0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14439,7 +14439,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1468
         FONT_NORMAL, // eSystemFont;
-        en_str_Crypted, // StringID;
+        en_str_Default, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14448,7 +14448,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1469
         FONT_NORMAL, // eSystemFont;
-        en_str_Crypted, // StringID;
+        en_str_Default, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14457,8 +14457,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1470
         FONT_NORMAL, // eSystemFont;
-        en_str_Crypted, // StringID;
-        0xFFC0C0C0, // TextColor;
+        en_str_Default, // StringID;
+        0xFF808080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14466,7 +14466,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1471
         FONT_NORMAL, // eSystemFont;
-        en_str_All_Channels, // StringID;
+        en_str_Crypted, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14475,7 +14475,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1472
         FONT_NORMAL, // eSystemFont;
-        en_str_All_Channels, // StringID;
+        en_str_Crypted, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14484,8 +14484,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1473
         FONT_NORMAL, // eSystemFont;
-        en_str_Service_Type, // StringID;
-        0xFFFFFFFF, // TextColor;
+        en_str_Crypted, // StringID;
+        0xFFC0C0C0, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14493,8 +14493,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1474
         FONT_NORMAL, // eSystemFont;
-        en_str_Service_Type, // StringID;
-        0xFF008080, // TextColor;
+        en_str_All_Channels, // StringID;
+        0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14502,8 +14502,8 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1475
         FONT_NORMAL, // eSystemFont;
-        en_str_Service_Type, // StringID;
-        0xFFC0C0C0, // TextColor;
+        en_str_All_Channels, // StringID;
+        0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
         2, // u8dis;
@@ -14511,7 +14511,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1476
         FONT_NORMAL, // eSystemFont;
-        en_str_DTV, // StringID;
+        en_str_Service_Type, // StringID;
         0xFFFFFFFF, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14520,7 +14520,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1477
         FONT_NORMAL, // eSystemFont;
-        en_str_DTV, // StringID;
+        en_str_Service_Type, // StringID;
         0xFF008080, // TextColor;
         eTextAlignLeft, // eTextAttrib;
         GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
@@ -14529,6 +14529,33 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
     },
     {   // CP_TEXT_OUT_INDEX_1478
         FONT_NORMAL, // eSystemFont;
+        en_str_Service_Type, // StringID;
+        0xFFC0C0C0, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1479
+        FONT_NORMAL, // eSystemFont;
+        en_str_DTV, // StringID;
+        0xFFFFFFFF, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1480
+        FONT_NORMAL, // eSystemFont;
+        en_str_DTV, // StringID;
+        0xFF008080, // TextColor;
+        eTextAlignLeft, // eTextAttrib;
+        GEFONT_FLAG_VARWIDTH | GEFONT_FLAG_GAP, // flag;
+        2, // u8dis;
+        //FALSE, // bShadow;
+    },
+    {   // CP_TEXT_OUT_INDEX_1481
+        FONT_NORMAL, // eSystemFont;
         en_str_Confirm, // StringID;
         0xFFFFFF33, // TextColor;
         eTextAlignMiddleWH, // eTextAttrib;
@@ -14536,7 +14563,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1479
+    {   // CP_TEXT_OUT_INDEX_1482
         FONT_NORMAL, // eSystemFont;
         en_str_Confirm, // StringID;
         0xFFFFFF15, // TextColor;
@@ -14545,7 +14572,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1480
+    {   // CP_TEXT_OUT_INDEX_1483
         FONT_NORMAL, // eSystemFont;
         en_str_Delete_all_exist_channels_of_selected_satellites, // StringID;
         0xFFFFFFFF, // TextColor;
@@ -14554,7 +14581,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1481
+    {   // CP_TEXT_OUT_INDEX_1484
         FONT_SMALL, // eSystemFont;
         en_str_BracketsOK_colonYes, // StringID;
         0xFF080808, // TextColor;
@@ -14563,7 +14590,7 @@ DRAW_TEXT_OUT _MP_TBLSEG _Zui_TextOut_List[] =
         2, // u8dis;
         //FALSE, // bShadow;
     },
-    {   // CP_TEXT_OUT_INDEX_1482
+    {   // CP_TEXT_OUT_INDEX_1485
         FONT_SMALL, // eSystemFont;
         en_str_BracketsExit_colonNo, // StringID;
         0xFF080808, // TextColor;

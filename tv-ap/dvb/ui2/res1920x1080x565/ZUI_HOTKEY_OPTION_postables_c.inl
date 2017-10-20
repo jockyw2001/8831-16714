@@ -29,7 +29,7 @@ WINDOWPOSDATA _MP_TBLSEG _GUI_WindowPositionList_Zui_Hotkey_Option[] =
 {
     // 0 = HWND_MAINFRAME
     {
-        HWND_MAINFRAME, HWND_HOTKEY_LEVEL_TITLE_TEXT,
+        HWND_MAINFRAME, HWND_HOTKEY_TEXT_PANE_TEXT,
         { 0, 0, 1920, 1071 },
     },
 
@@ -163,6 +163,18 @@ WINDOWPOSDATA _MP_TBLSEG _GUI_WindowPositionList_Zui_Hotkey_Option[] =
     {
         HWND_HOTKEY_LEVEL_PANE, HWND_HOTKEY_LEVEL_TITLE_TEXT,
         { 300, 891, 250, 70 },
+    },
+
+    // 23 = HWND_HOTKEY_TEXT_PANE
+    {
+        HWND_MAINFRAME, HWND_HOTKEY_TEXT_PANE_TEXT,
+        { 900, 891, 91, 81 },
+    },
+
+    // 24 = HWND_HOTKEY_TEXT_PANE_TEXT
+    {
+        HWND_HOTKEY_TEXT_PANE, HWND_HOTKEY_TEXT_PANE_TEXT,
+        { 990, 891, 165, 81 },
     },
 
 };

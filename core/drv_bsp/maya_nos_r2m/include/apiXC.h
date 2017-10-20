@@ -2096,6 +2096,27 @@ typedef struct
 
 } MS_OSDC_DST_DispInfo;
 
+//Ray HKY 2017.10.04: Define available hot keys
+typedef enum{
+  HotKey_Input,
+  HotKey_Backlight,
+  HotKey_Contrast,
+  HotKey_Brightness,
+  HotKey_Saturation,
+  HotKey_Sharpness,
+  HotKey_Hue,
+  HotKey_AspectRatio,
+  HotKey_Volume,
+  HotKey_NoFunction,
+}HOT_KEY;
+
+//Ray HKY 2017.10.20: Define 2 hot key type
+typedef enum{
+  HotKeyTypeNone,		//Currently no hot key shown
+  HotKeyType1,			//+ve/-ve is hot key 1 type
+  HotKeyType2,			//up/down is hot key 2 type
+}HOTKEY_TYPE;
+
 //-------------------------------------------------------------------------------------------------
 //  Function and Variable
 //-------------------------------------------------------------------------------------------------

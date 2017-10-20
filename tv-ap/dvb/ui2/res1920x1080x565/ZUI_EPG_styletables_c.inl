@@ -107,12 +107,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Focus_R_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_979 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_982 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_980 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_983 },
     { CP_NOON, 0 },
 };
 
@@ -139,12 +139,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Right_Arrow_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Type_Channel_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_981 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_984 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Type_Channel_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_982 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_985 },
     { CP_NOON, 0 },
 };
 
@@ -153,12 +153,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Type_Channel_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Type_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_983 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_986 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Type_Time_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_984 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_987 },
     { CP_NOON, 0 },
 };
 
@@ -176,7 +176,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Title_Channel_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channel_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_985 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_988 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Channel_Focus_DrawStyle _Zui_Epg_Channel_Normal_DrawStyle
@@ -186,7 +186,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channel_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channel_Service_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_986 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_989 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Channel_Service_Focus_DrawStyle _Zui_Epg_Channel_Service_Normal_DrawStyle
@@ -245,12 +245,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pro_Guide_Channel_Item_1_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channelitem1_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_987 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_990 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channelitem1_Time_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_988 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_991 },
     { CP_NOON, 0 },
 };
 
@@ -264,7 +264,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channelitem1_Event_Normal_DrawStyle[] =
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channelitem1_Event_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_714 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_717 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channelitem1_Event_Disabled_DrawStyle[] =
@@ -453,7 +453,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Channelitem1_Arrow_Icon_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Page_Date_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_989 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_992 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Page_Date_Focus_DrawStyle _Zui_Epg_Page_Date_Normal_DrawStyle
@@ -463,7 +463,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Page_Date_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_System_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_990 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_993 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_System_Time_Focus_DrawStyle _Zui_Epg_System_Time_Normal_DrawStyle
@@ -502,12 +502,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_System_Time_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Timeitem1_Service_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_991 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_994 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Timeitem1_Service_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_992 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_995 },
     { CP_NOON, 0 },
 };
 
@@ -802,7 +802,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Event_Date_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Event_Start_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_993 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_996 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Info_Event_Start_Time_Focus_DrawStyle _Zui_Epg_Info_Event_Start_Time_Normal_DrawStyle
@@ -818,7 +818,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Event_Start_Time_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Info_Desc_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_994 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_997 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Info_Desc_Text_Focus_DrawStyle _Zui_Epg_Info_Desc_Text_Normal_DrawStyle
@@ -860,7 +860,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Page_Bg_R_Normal_DrawStyle[] =
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Page_Bg_Top_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_27 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_995 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_998 },
     { CP_NOON, 0 },
 };
 
@@ -878,12 +878,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Page_Bg_Top_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Programme_Setting_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_996 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_999 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Programme_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_997 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1000 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Reminder_Programme_Setting_Disabled_DrawStyle _Zui_Epg_Reminder_Programme_Setting_Normal_DrawStyle
@@ -918,12 +918,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Programme_Setting_Focus_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Minute_Setting_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_998 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1001 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Minute_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_999 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1002 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Reminder_Minute_Setting_Disabled_DrawStyle _Zui_Epg_Reminder_Minute_Setting_Normal_DrawStyle
@@ -958,12 +958,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Minute_Setting_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Hour_Setting_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1000 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1003 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Hour_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1001 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1004 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Reminder_Hour_Setting_Disabled_DrawStyle _Zui_Epg_Reminder_Hour_Setting_Normal_DrawStyle
@@ -998,12 +998,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Hour_Setting_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Month_Setting_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1002 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1005 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Month_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1003 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1006 },
     { CP_NOON, 0 },
 };
 
@@ -1037,12 +1037,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Month_Setting_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Date_Setting_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1004 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1007 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Date_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1005 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1008 },
     { CP_NOON, 0 },
 };
 
@@ -1076,12 +1076,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Date_Setting_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Mode_Setting_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1006 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1009 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Mode_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1007 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1010 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Reminder_Mode_Setting_Disabled_DrawStyle _Zui_Epg_Reminder_Mode_Setting_Normal_DrawStyle
@@ -1200,7 +1200,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Timer_Save_Dlg_Bg_L_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Reminder_Timer_Save_Dlg_Msgbox_Text1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_480 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_483 },
     { CP_NOON, 0 },
 };
 
@@ -1278,7 +1278,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Bgnd_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Bgnd_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1008 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1011 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Bgnd_Title_Text_Focus_DrawStyle _Zui_Epg_Schedule_List_Bgnd_Title_Text_Normal_DrawStyle
@@ -1288,7 +1288,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Bgnd_Title_Text_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Bgnd_Title_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_852 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_855 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Bgnd_Title_Time_Focus_DrawStyle _Zui_Epg_Schedule_List_Bgnd_Title_Time_Normal_DrawStyle
@@ -1298,7 +1298,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Bgnd_Title_Time_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Bgnd_Title_Date_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_804 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_807 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Bgnd_Title_Date_Focus_DrawStyle _Zui_Epg_Schedule_List_Bgnd_Title_Date_Normal_DrawStyle
@@ -1318,7 +1318,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1009 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1012 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Head_Time_Focus_DrawStyle _Zui_Epg_Schedule_List_Head_Time_Normal_DrawStyle
@@ -1328,7 +1328,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Time_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Date_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1010 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1013 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Head_Date_Focus_DrawStyle _Zui_Epg_Schedule_List_Head_Date_Normal_DrawStyle
@@ -1338,7 +1338,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Date_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Programme_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1011 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1014 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Head_Programme_Title_Focus_DrawStyle _Zui_Epg_Schedule_List_Head_Programme_Title_Normal_DrawStyle
@@ -1348,7 +1348,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Programme_Title_Normal_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Head_Channel_Name_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1012 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1015 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Head_Channel_Name_Focus_DrawStyle _Zui_Epg_Schedule_List_Head_Channel_Name_Normal_DrawStyle
@@ -1376,12 +1376,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_710 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_713 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Schedule_List_Item_0_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1013 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1016 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Schedule_List_Item_0_Title_Disabled_DrawStyle _Zui_Epg_Schedule_List_Bgnd_Title_Date_Normal_DrawStyle
@@ -1604,7 +1604,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg__Help_Btn_Schedule_List_Delete_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Help_Btn_Schedule_List_Delete_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1014 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1017 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Help_Btn_Schedule_List_Delete_Txt_Focus_DrawStyle _Zui_Epg_Help_Btn_Schedule_List_Delete_Txt_Normal_DrawStyle
@@ -1671,7 +1671,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bg_Back_Normal_DrawStyle[] =
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bgnd_Title_Normal_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_27 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1015 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1018 },
     { CP_NOON, 0 },
 };
 
@@ -1680,7 +1680,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bgnd_Title_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bgnd_Start_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1016 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1019 },
     { CP_NOON, 0 },
 };
 
@@ -1689,7 +1689,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bgnd_Start_Time_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bgnd_End_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1017 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1020 },
     { CP_NOON, 0 },
 };
 
@@ -1715,17 +1715,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Bgnd_End_Time_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Programme_Setting_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1018 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1021 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Programme_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1019 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1022 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Programme_Setting_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1020 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1023 },
     { CP_NOON, 0 },
 };
 
@@ -1759,17 +1759,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Programme_Setting_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Min_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1021 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1024 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Min_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1022 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1025 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Min_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1023 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1026 },
     { CP_NOON, 0 },
 };
 
@@ -1779,12 +1779,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Min_Text_Disabled_DrawS
 #define _Zui_Epg_Recorder_Start_Time_Min_Setting_Normal_DrawStyle _Zui_Epg_Schedule_List_Bgnd_Title_Time_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Min_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1024 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1027 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Min_Setting_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1025 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1028 },
     { CP_NOON, 0 },
 };
 
@@ -1818,17 +1818,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Min_Setting_Disabled_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Hour_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1026 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1029 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Hour_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1027 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1030 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Hour_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1028 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1031 },
     { CP_NOON, 0 },
 };
 
@@ -1869,17 +1869,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Hour_Text_Disabled_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Month_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1029 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1032 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Month_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1030 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1033 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Month_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1031 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1034 },
     { CP_NOON, 0 },
 };
 
@@ -1921,12 +1921,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Month_Text_Disabled_Dra
 #define _Zui_Epg_Recorder_Start_Time_Date_Txt_Normal_DrawStyle _Zui_Epg_Schedule_List_Head_Date_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Date_Txt_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1032 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1035 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Date_Txt_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1033 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1036 },
     { CP_NOON, 0 },
 };
 
@@ -2123,17 +2123,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Start_Time_Date_Txt_Disabled_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Mode_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1034 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1037 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Mode_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1035 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1038 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Mode_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1036 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1039 },
     { CP_NOON, 0 },
 };
 
@@ -2143,12 +2143,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Mode_Text_Disabled_DrawStyle[] =
 #define _Zui_Epg_Recorder_Mode_Setting_Normal_DrawStyle _Zui_Epg_Schedule_List_Bgnd_Title_Date_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Mode_Setting_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1037 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1040 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Mode_Setting_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1038 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1041 },
     { CP_NOON, 0 },
 };
 
@@ -2272,7 +2272,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Popup_Dlg_Yes_Left_Arrow_Normal_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Popup_Dlg_Yes_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1039 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1042 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Recorder_Popup_Dlg_Yes_Txt_Focus_DrawStyle _Zui_Epg_Recorder_Popup_Dlg_Yes_Txt_Normal_DrawStyle
@@ -2296,7 +2296,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Popup_Dlg_No_Right_Arrow_Normal_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Popup_Dlg_No_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_810 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_813 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Recorder_Popup_Dlg_No_Txt_Focus_DrawStyle _Zui_Epg_Recorder_Popup_Dlg_No_Txt_Normal_DrawStyle
@@ -2328,12 +2328,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Item_Focus_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1040 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1043 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Txt_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1041 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1044 },
     { CP_NOON, 0 },
 };
 
@@ -2362,12 +2362,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_R_Arrow_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1042 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1045 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_427 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_430 },
     { CP_NOON, 0 },
 };
 
@@ -2381,12 +2381,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Year_Option_Focus_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Month_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1043 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1046 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Month_Txt_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1044 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1047 },
     { CP_NOON, 0 },
 };
 
@@ -2418,12 +2418,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Month_Txt_Focus_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Date_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1045 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1048 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Date_Txt_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1046 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1049 },
     { CP_NOON, 0 },
 };
 
@@ -2455,12 +2455,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Date_Txt_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Hour_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1047 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1050 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Hour_Txt_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1048 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1051 },
     { CP_NOON, 0 },
 };
 
@@ -2492,12 +2492,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Hour_Txt_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Min_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1049 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1052 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Min_Txt_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1050 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1053 },
     { CP_NOON, 0 },
 };
 
@@ -2534,13 +2534,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Bar_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Close_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1051 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1054 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Close_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1052 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1055 },
     { CP_NOON, 0 },
 };
 
@@ -2553,7 +2553,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Rec_Time_Steeing_Close_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Bgnd_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1053 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1056 },
     { CP_NOON, 0 },
 };
 
@@ -2591,7 +2591,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Head_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1054 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1057 },
     { CP_NOON, 0 },
 };
 
@@ -2600,7 +2600,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Title_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Time_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1055 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1058 },
     { CP_NOON, 0 },
 };
 
@@ -2609,7 +2609,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Time_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Date_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1056 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1059 },
     { CP_NOON, 0 },
 };
 
@@ -2618,7 +2618,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Date_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Prom_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1057 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1060 },
     { CP_NOON, 0 },
 };
 
@@ -2627,7 +2627,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Prom_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Mode_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1058 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1061 },
     { CP_NOON, 0 },
 };
 
@@ -2663,7 +2663,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Item_0_Title_Normal_
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Item_0_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1059 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1062 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Recorder_Schedule_List_Item_0_Title_Disabled_DrawStyle _Zui_Epg_Recorder_Schedule_List_Item_0_Title_Normal_DrawStyle
@@ -2875,12 +2875,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Schedule_List_Item_0_Title_Focus_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Help_Btn_Schedule_List_Delete_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1060 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1063 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Help_Btn_Schedule_List_Delete_Txt_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1061 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1064 },
     { CP_NOON, 0 },
 };
 
@@ -2913,12 +2913,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Recorder_Help_Btn_Schedule_List_Delete_Txt_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Txt_1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1062 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1065 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Txt_1_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1063 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1066 },
     { CP_NOON, 0 },
 };
 
@@ -2927,12 +2927,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Txt_1_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Txt_2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_897 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_900 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Txt_2_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1064 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1067 },
     { CP_NOON, 0 },
 };
 
@@ -2959,12 +2959,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Ok_Left_Arrow_F
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Ok_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_898 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_901 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Ok_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_899 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_902 },
     { CP_NOON, 0 },
 };
 
@@ -2987,12 +2987,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Exit_Right_Arro
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Cancel_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_900 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_903 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Cancel_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_901 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_904 },
     { CP_NOON, 0 },
 };
 
@@ -3043,7 +3043,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_Cancel_Focus_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Countdown_Btn_Clear_Left_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1065 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1068 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Countdown_Btn_Clear_Left_Txt_Focus_DrawStyle _Zui_Epg_Countdown_Btn_Clear_Left_Txt_Normal_DrawStyle
@@ -3063,7 +3063,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Countdown_Btn_Clear_Left_Txt_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Countdown_Btn_Clear_Ok_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1066 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1069 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Countdown_Btn_Clear_Ok_Txt_Focus_DrawStyle _Zui_Epg_Countdown_Btn_Clear_Ok_Txt_Normal_DrawStyle
@@ -3073,7 +3073,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Countdown_Btn_Clear_Ok_Txt_Normal_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Countdown_Msg_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1067 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1070 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Countdown_Msg_Txt_Focus_DrawStyle _Zui_Epg_Countdown_Msg_Txt_Normal_DrawStyle
@@ -3117,7 +3117,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Countdown_Msg_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Change_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1068 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1071 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Pvr_Alternate_Change_Txt_Focus_DrawStyle _Zui_Epg_Pvr_Alternate_Change_Txt_Normal_DrawStyle
@@ -3127,7 +3127,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Change_Txt_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Recording_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1069 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1072 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Pvr_Alternate_Recording_Txt_Focus_DrawStyle _Zui_Epg_Pvr_Alternate_Recording_Txt_Normal_DrawStyle
@@ -3148,7 +3148,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Warning_Dlg_Confirm_Btn_1_Focus_DrawSty
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Btn_Ok_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_898 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_901 },
     { CP_NOON, 0 },
 };
 
@@ -3157,13 +3157,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Btn_Ok_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Cancel_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_453 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_456 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Cancel_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_241 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_453 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_456 },
     { CP_NOON, 0 },
 };
 
@@ -3184,7 +3184,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Btn_Cancel_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Timer_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1070 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1073 },
     { CP_NOON, 0 },
 };
 
@@ -3193,7 +3193,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Timer_Txt_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Pvr_Alternate_Dynamic_Txt_1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_436 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_439 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Pvr_Alternate_Dynamic_Txt_1_Focus_DrawStyle _Zui_Epg_Pvr_Alternate_Dynamic_Txt_1_Normal_DrawStyle
@@ -3249,12 +3249,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Panel_Bg_R_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1071 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1074 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Title_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1072 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1075 },
     { CP_NOON, 0 },
 };
 
@@ -3268,7 +3268,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Pro_Guide_Title_Text_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Prog_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1073 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1076 },
     { CP_NOON, 0 },
 };
 #define _Zui_Epg_Atsc_Prog_Title_Text_Focus_DrawStyle _Zui_Epg_Atsc_Prog_Title_Text_Normal_DrawStyle
@@ -3319,12 +3319,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Prog_Title_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1074 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1077 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1075 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1078 },
     { CP_NOON, 0 },
 };
 
@@ -3333,12 +3333,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Day_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1076 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1079 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Day_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1077 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1080 },
     { CP_NOON, 0 },
 };
 
@@ -3348,7 +3348,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Day_Text_Focus_DrawStyle
 #define _Zui_Epg_Event_Panel_Event1_Time_Text_Normal_DrawStyle _Zui_Epg_Schedule_List_Head_Time_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Time_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1078 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1081 },
     { CP_NOON, 0 },
 };
 
@@ -3577,7 +3577,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Event_Panel_Event1_Time_Text_Focus_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Panel_Ett_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1079 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1082 },
     { CP_NOON, 0 },
 };
 
@@ -3595,7 +3595,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Up_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Up_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1080 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1083 },
     { CP_NOON, 0 },
 };
 
@@ -3613,7 +3613,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Down_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Epg_Atsc_Event_Info_Down_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1081 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_1084 },
     { CP_NOON, 0 },
 };
 

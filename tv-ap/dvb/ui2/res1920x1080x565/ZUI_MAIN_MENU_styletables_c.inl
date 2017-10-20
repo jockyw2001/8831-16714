@@ -2794,30 +2794,6 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Setupwizard_Text_Disabled_DrawStyle
 };
 
 /////////////////////////////////////////////////////
-// MENU_OPTION_FACTORY_RESET styles..
-
-#define _Zui_Menu_Option_Factory_Reset_Focus_DrawStyle _Zui_Menu_Channel_Autotune_Focus_DrawStyle
-
-/////////////////////////////////////////////////////
-// MENU_OPTION_FACTORY_RESET_TEXT styles..
-
-static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Factory_Reset_Text_Normal_DrawStyle[] =
-{
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_281 },
-    { CP_NOON, 0 },
-};
-static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Factory_Reset_Text_Focus_DrawStyle[] =
-{
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_282 },
-    { CP_NOON, 0 },
-};
-static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Factory_Reset_Text_Disabled_DrawStyle[] =
-{
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_283 },
-    { CP_NOON, 0 },
-};
-
-/////////////////////////////////////////////////////
 // MENU_OPTION_IMG_ORIENT styles..
 
 #define _Zui_Menu_Option_Img_Orient_Focus_DrawStyle _Zui_Menu_Channel_Autotune_Focus_DrawStyle
@@ -2827,17 +2803,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Factory_Reset_Text_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_284 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_281 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_285 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_282 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_286 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_283 },
     { CP_NOON, 0 },
 };
 
@@ -2846,17 +2822,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Text_Disabled_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_287 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_284 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_288 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_285 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_289 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_286 },
     { CP_NOON, 0 },
 };
 
@@ -2870,17 +2846,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Img_Orient_Option_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Cec_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_290 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_287 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Cec_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_291 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_288 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Cec_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_292 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_289 },
     { CP_NOON, 0 },
 };
 
@@ -2900,17 +2876,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Cec_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Arc_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_293 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_290 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Arc_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_294 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_291 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Arc_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_295 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_292 },
     { CP_NOON, 0 },
 };
 
@@ -2930,17 +2906,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hdmi_Arc_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osd_Effect_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_296 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_293 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osd_Effect_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_297 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_294 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osd_Effect_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_298 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_295 },
     { CP_NOON, 0 },
 };
 
@@ -2960,17 +2936,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osd_Effect_Text_Disabled_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Divx_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_299 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_296 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Divx_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_300 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_297 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Divx_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_301 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_298 },
     { CP_NOON, 0 },
 };
 
@@ -2984,17 +2960,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Divx_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Mode_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_303 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_300 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Mode_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_304 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_301 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Mode_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_305 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_302 },
     { CP_NOON, 0 },
 };
 
@@ -3003,12 +2979,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Mode_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Mode_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_306 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_303 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Mode_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_307 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_304 },
     { CP_NOON, 0 },
 };
 
@@ -3029,12 +3005,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Mode_Option_Disabled_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Option_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_309 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_306 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Option_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_310 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_307 },
     { CP_NOON, 0 },
 };
 
@@ -3049,7 +3025,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Cc_Option_Option_Disabled_DrawStyle
 #define _Zui_Menu_Option_Color_Range_Text_Normal_DrawStyle _Zui_Menu_Picture_Colrange_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Color_Range_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_311 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_308 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Option_Color_Range_Text_Disabled_DrawStyle _Zui_Menu_Picture_Colrange_Text_Disabled_DrawStyle
@@ -3059,12 +3035,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Color_Range_Text_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Color_Range_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_312 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_309 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Color_Range_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_313 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_310 },
     { CP_NOON, 0 },
 };
 
@@ -3078,17 +3054,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Color_Range_Option_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_314 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_311 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Type_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_315 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_312 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Type_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_316 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_313 },
     { CP_NOON, 0 },
 };
 
@@ -3108,17 +3084,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Type_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_To_2d_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_317 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_314 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_To_2d_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_318 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_315 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_To_2d_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_319 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_316 },
     { CP_NOON, 0 },
 };
 
@@ -3138,17 +3114,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_To_2d_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Detect_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_320 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_317 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Detect_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_321 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_318 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Detect_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_322 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_319 },
     { CP_NOON, 0 },
 };
 
@@ -3168,17 +3144,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Detect_Text_Disabled_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Lr_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_323 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_320 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Lr_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_324 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_321 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Lr_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_325 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_322 },
     { CP_NOON, 0 },
 };
 
@@ -3198,17 +3174,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Lr_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Hshift_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_326 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_323 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Hshift_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_327 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_324 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Hshift_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_328 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_325 },
     { CP_NOON, 0 },
 };
 
@@ -3228,17 +3204,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_Hshift_Text_Disabled_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_View_Point_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_329 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_326 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_View_Point_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_330 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_327 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_View_Point_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_331 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_328 },
     { CP_NOON, 0 },
 };
 
@@ -3258,17 +3234,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_3d_View_Point_Text_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Mfc_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_332 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_329 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Mfc_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_333 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_330 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Mfc_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_334 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_331 },
     { CP_NOON, 0 },
 };
 
@@ -3282,17 +3258,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Mfc_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Mirror_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_335 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_332 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Mirror_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_336 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_333 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Mirror_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_337 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_334 },
     { CP_NOON, 0 },
 };
 
@@ -3301,12 +3277,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Mirror_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Mirror_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_338 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_335 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Mirror_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_339 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_336 },
     { CP_NOON, 0 },
 };
 
@@ -3320,17 +3296,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Mirror_Option_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Version_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_340 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_337 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Version_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_341 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_338 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Version_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_342 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_339 },
     { CP_NOON, 0 },
 };
 
@@ -3351,17 +3327,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_6m30_Version_Text_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Epop_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_343 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_340 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Epop_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_344 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_341 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Epop_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_345 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_342 },
     { CP_NOON, 0 },
 };
 
@@ -3381,17 +3357,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Epop_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Edid_Switch_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_346 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_343 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Edid_Switch_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_347 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_344 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Edid_Switch_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_348 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_345 },
     { CP_NOON, 0 },
 };
 
@@ -3400,12 +3376,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Edid_Switch_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Edid_Switch_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_349 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_346 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Edid_Switch_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_350 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_347 },
     { CP_NOON, 0 },
 };
 
@@ -3419,17 +3395,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Edid_Switch_Option_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Transparent_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_351 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_348 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Transparent_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_352 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_349 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Transparent_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_353 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_350 },
     { CP_NOON, 0 },
 };
 
@@ -3438,12 +3414,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Transparent_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Transparent_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_354 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_351 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Transparent_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_355 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_352 },
     { CP_NOON, 0 },
 };
 
@@ -3457,17 +3433,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Transparent_Option_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Scart_In_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_356 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_353 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Scart_In_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_357 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_354 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Scart_In_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_358 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_355 },
     { CP_NOON, 0 },
 };
 
@@ -3485,31 +3461,19 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Scart_In_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Tts_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_359 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_356 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Tts_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_360 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_357 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Tts_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_361 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_358 },
     { CP_NOON, 0 },
 };
-
-/////////////////////////////////////////////////////
-// MENU_OPTION_SW_USB_UPGRADE styles..
-
-#define _Zui_Menu_Option_Sw_Usb_Upgrade_Focus_DrawStyle _Zui_Menu_Channel_Autotune_Focus_DrawStyle
-
-/////////////////////////////////////////////////////
-// MENU_OPTION_SW_USB_UPGRADE_TEXT styles..
-
-#define _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Normal_DrawStyle _Zui_Menu_Channel_Sw_Usb_Upgrade_Text_Normal_DrawStyle
-#define _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Focus_DrawStyle _Zui_Menu_Channel_Sw_Usb_Upgrade_Text_Focus_DrawStyle
-#define _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Disabled_DrawStyle _Zui_Menu_Channel_Sw_Usb_Upgrade_Text_Disabled_DrawStyle
 
 /////////////////////////////////////////////////////
 // MENU_OPTION_AUTO_SEEK styles..
@@ -3521,17 +3485,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Tts_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Auto_Seek_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_362 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_359 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Auto_Seek_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_363 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_360 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Auto_Seek_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_364 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_361 },
     { CP_NOON, 0 },
 };
 
@@ -3552,17 +3516,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Auto_Seek_Text_Disabled_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Failover_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_365 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_362 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Failover_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_366 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_363 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Failover_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_367 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_364 },
     { CP_NOON, 0 },
 };
 
@@ -3583,17 +3547,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Failover_Text_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Default_Power_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_368 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_365 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Default_Power_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_369 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_366 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Default_Power_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_370 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_367 },
     { CP_NOON, 0 },
 };
 
@@ -3605,6 +3569,66 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Default_Power_Text_Disabled_DrawSty
 #define _Zui_Menu_Option_Default_Power_Option_Disabled_DrawStyle _Zui_Menu_Channel_5v_Antenna_Option_Disabled_DrawStyle
 
 /////////////////////////////////////////////////////
+// MENU_OPTION_FACTORY_RESET styles..
+
+#define _Zui_Menu_Option_Factory_Reset_Focus_DrawStyle _Zui_Menu_Channel_Autotune_Focus_DrawStyle
+
+/////////////////////////////////////////////////////
+// MENU_OPTION_FACTORY_RESET_TEXT styles..
+
+static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Factory_Reset_Text_Normal_DrawStyle[] =
+{
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_368 },
+    { CP_NOON, 0 },
+};
+static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Factory_Reset_Text_Focus_DrawStyle[] =
+{
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_369 },
+    { CP_NOON, 0 },
+};
+static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Factory_Reset_Text_Disabled_DrawStyle[] =
+{
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_370 },
+    { CP_NOON, 0 },
+};
+
+/////////////////////////////////////////////////////
+// MENU_OPTION_SW_USB_UPGRADE styles..
+
+#define _Zui_Menu_Option_Sw_Usb_Upgrade_Focus_DrawStyle _Zui_Menu_Channel_Autotune_Focus_DrawStyle
+
+/////////////////////////////////////////////////////
+// MENU_OPTION_SW_USB_UPGRADE_TEXT styles..
+
+#define _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Normal_DrawStyle _Zui_Menu_Channel_Sw_Usb_Upgrade_Text_Normal_DrawStyle
+#define _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Focus_DrawStyle _Zui_Menu_Channel_Sw_Usb_Upgrade_Text_Focus_DrawStyle
+#define _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Disabled_DrawStyle _Zui_Menu_Channel_Sw_Usb_Upgrade_Text_Disabled_DrawStyle
+
+/////////////////////////////////////////////////////
+// MENU_OPTION_HOTKEY styles..
+
+#define _Zui_Menu_Option_Hotkey_Focus_DrawStyle _Zui_Menu_Channel_Autotune_Focus_DrawStyle
+
+/////////////////////////////////////////////////////
+// MENU_OPTION_HOTKEY_TEXT styles..
+
+static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hotkey_Text_Normal_DrawStyle[] =
+{
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_371 },
+    { CP_NOON, 0 },
+};
+static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hotkey_Text_Focus_DrawStyle[] =
+{
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_372 },
+    { CP_NOON, 0 },
+};
+static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Hotkey_Text_Disabled_DrawStyle[] =
+{
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_373 },
+    { CP_NOON, 0 },
+};
+
+/////////////////////////////////////////////////////
 // MENU_OPTION_BL_SETUP styles..
 
 #define _Zui_Menu_Option_Bl_Setup_Focus_DrawStyle _Zui_Menu_Channel_Autotune_Focus_DrawStyle
@@ -3614,17 +3638,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Default_Power_Text_Disabled_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Bl_Setup_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_371 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_374 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Bl_Setup_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_372 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_375 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Bl_Setup_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_373 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_376 },
     { CP_NOON, 0 },
 };
 
@@ -3648,13 +3672,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Icon_Option_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_374 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_377 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Title_Focus_DrawStyle[] =
 {
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_0 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_374 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_377 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Lock_Title_Disabled_DrawStyle _Zui_Menu_Lock_Title_Normal_DrawStyle
@@ -3673,17 +3697,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Title_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_System_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_375 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_378 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_System_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_376 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_379 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_System_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_377 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_380 },
     { CP_NOON, 0 },
 };
 
@@ -3703,17 +3727,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_System_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Set_Password_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_378 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_381 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Set_Password_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_379 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_382 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Set_Password_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_380 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_383 },
     { CP_NOON, 0 },
 };
 
@@ -3727,17 +3751,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Set_Password_Text_Disabled_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Block_Program_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_381 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_384 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Block_Program_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_382 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_385 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Block_Program_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_383 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_386 },
     { CP_NOON, 0 },
 };
 
@@ -3751,17 +3775,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Block_Program_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Parental_Guidance_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_384 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_387 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Parental_Guidance_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_385 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_388 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Parental_Guidance_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_386 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_389 },
     { CP_NOON, 0 },
 };
 
@@ -3781,17 +3805,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Parental_Guidance_Text_Disabled_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Enter_Password_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_387 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_390 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Enter_Password_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_388 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_391 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Enter_Password_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_389 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_392 },
     { CP_NOON, 0 },
 };
 
@@ -3811,17 +3835,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Enter_Password_Text_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_390 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_393 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_391 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_394 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_392 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_395 },
     { CP_NOON, 0 },
 };
 
@@ -3831,7 +3855,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Text_Disa
 #define _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Option_Focus_DrawStyle _Zui_Menu_Channel_Channel_No_Option_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_393 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_396 },
     { CP_NOON, 0 },
 };
 
@@ -3845,17 +3869,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Option_Di
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_394 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_397 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_395 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_398 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_396 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_399 },
     { CP_NOON, 0 },
 };
 
@@ -3869,17 +3893,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Text_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Us_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_397 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_400 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Us_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_398 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_401 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Us_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_399 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_402 },
     { CP_NOON, 0 },
 };
 
@@ -3893,17 +3917,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Us_Text_Disabled_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Canada_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_400 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_403 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Canada_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_401 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_404 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Canada_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_402 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_405 },
     { CP_NOON, 0 },
 };
 
@@ -3917,17 +3941,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Canada_Text_Disabled
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_403 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_406 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_404 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_407 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_405 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_408 },
     { CP_NOON, 0 },
 };
 
@@ -3941,17 +3965,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Text_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_406 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_409 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_407 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_410 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_408 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_411 },
     { CP_NOON, 0 },
 };
 
@@ -3965,17 +3989,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_409 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_412 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_410 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_413 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_411 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_414 },
     { CP_NOON, 0 },
 };
 
@@ -4013,13 +4037,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Icon_Lock_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_App_Title_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_412 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_415 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_App_Title_Text_Focus_DrawStyle _Zui_Menu_App_Title_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_App_Title_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_413 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_416 },
     { CP_NOON, 0 },
 };
 
@@ -4033,17 +4057,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_App_Title_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_App_Dmp_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_414 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_417 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_App_Dmp_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_415 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_418 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_App_Dmp_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_416 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_419 },
     { CP_NOON, 0 },
 };
 
@@ -4138,17 +4162,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Hpos_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Hpos_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_417 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_420 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Hpos_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_418 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_421 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Hpos_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_419 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_422 },
     { CP_NOON, 0 },
 };
 
@@ -4303,17 +4327,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Adjust_Cover_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Adjust_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_420 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_423 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Adjust_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_421 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_424 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Adjust_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_422 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_425 },
     { CP_NOON, 0 },
 };
 
@@ -4331,17 +4355,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Adjust_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Gain_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_423 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_426 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Gain_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_424 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_427 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Gain_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_425 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_428 },
     { CP_NOON, 0 },
 };
 
@@ -4350,12 +4374,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Gain_Text_Disabled_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Gain_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_426 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_429 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Auto_Gain_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_427 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_430 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Pcmode_Auto_Gain_Option_Disabled_DrawStyle _Zui_Menu_Pcmode_Auto_Gain_Option_Focus_DrawStyle
@@ -4375,7 +4399,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Title_Focus_DrawStyle[] =
 #define _Zui_Menu_Pcmode_Title_Text_Normal_DrawStyle _Zui_Menu_Picture_Vga_Setup_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pcmode_Title_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_428 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_431 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Pcmode_Title_Text_Disabled_DrawStyle _Zui_Menu_Picture_Vga_Setup_Text_Disabled_DrawStyle
@@ -4465,12 +4489,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_Yes_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_429 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_432 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_Yes_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_430 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_433 },
     { CP_NOON, 0 },
 };
 
@@ -4479,12 +4503,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_Yes_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_No_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_431 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_434 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_No_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_432 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_435 },
     { CP_NOON, 0 },
 };
 
@@ -4493,12 +4517,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_No_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_Done_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_433 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_436 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_Done_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_434 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_437 },
     { CP_NOON, 0 },
 };
 
@@ -4511,7 +4535,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Divx_Done_Focus_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_435 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_438 },
     { CP_NOON, 0 },
 };
 
@@ -4520,7 +4544,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text1_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_436 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_439 },
     { CP_NOON, 0 },
 };
 
@@ -4529,7 +4553,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text2_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text3_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_437 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_440 },
     { CP_NOON, 0 },
 };
 
@@ -4538,7 +4562,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text3_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text4_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_438 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_441 },
     { CP_NOON, 0 },
 };
 
@@ -4547,7 +4571,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text4_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text5_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_439 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_442 },
     { CP_NOON, 0 },
 };
 
@@ -4561,7 +4585,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text5_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text7_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_440 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_443 },
     { CP_NOON, 0 },
 };
 
@@ -4603,12 +4627,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Text7_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Input0_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_441 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_444 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Input0_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_442 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_445 },
     { CP_NOON, 0 },
 };
 
@@ -4697,12 +4721,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Pressed_Pane0_1_Disabled_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Input1_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_443 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_446 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Input1_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_444 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_447 },
     { CP_NOON, 0 },
 };
 
@@ -4767,12 +4791,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Input1_Text_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Input2_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_445 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_448 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Password_Input2_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_446 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_449 },
     { CP_NOON, 0 },
 };
 
@@ -4855,12 +4879,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Yes_Left_Arrow_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Yes_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_447 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_450 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Yes_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_448 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_451 },
     { CP_NOON, 0 },
 };
 
@@ -4887,12 +4911,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_No_Right_Arrow_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_No_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_449 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_452 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_No_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_450 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_453 },
     { CP_NOON, 0 },
 };
 
@@ -4911,12 +4935,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_No_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Ok_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_451 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_454 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Ok_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_452 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_455 },
     { CP_NOON, 0 },
 };
 
@@ -4935,12 +4959,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Ok_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Cancel_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_453 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_456 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Btn_Cancel_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_454 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_457 },
     { CP_NOON, 0 },
 };
 
@@ -5013,7 +5037,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Common_Loadanimation_Bg_Normal_DrawSty
 #define _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_Yes_Normal_DrawStyle _Zui_Menu_Dlg_Common_Btn_Divx_Yes_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_Yes_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_455 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_458 },
     { CP_NOON, 0 },
 };
 
@@ -5023,7 +5047,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_Yes_Focu
 #define _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_No_Normal_DrawStyle _Zui_Menu_Dlg_Common_Btn_Divx_No_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_No_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_456 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_459 },
     { CP_NOON, 0 },
 };
 
@@ -5036,12 +5060,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_No_Focus
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_457 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_460 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_458 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_461 },
     { CP_NOON, 0 },
 };
 
@@ -5051,18 +5075,18 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Tex
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_1_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_2 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_459 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_462 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_1_Focus_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_2 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_460 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_463 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_1_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_461 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_464 },
     { CP_NOON, 0 },
 };
 
@@ -5099,12 +5123,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Tex
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_462 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_465 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text2_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_463 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_466 },
     { CP_NOON, 0 },
 };
 
@@ -5175,7 +5199,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Bar1_Normal_DrawStyle[] =
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_01_Focus_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_3 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_464 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_467 },
     { CP_NOON, 0 },
 };
 
@@ -5365,12 +5389,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_08_Right_Arr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_465 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_468 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_466 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_469 },
     { CP_NOON, 0 },
 };
 
@@ -5379,12 +5403,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Text_Focus_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_467 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_470 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_468 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_471 },
     { CP_NOON, 0 },
 };
 
@@ -5443,7 +5467,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Menu_Bg_R_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Tune_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_469 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_472 },
     { CP_NOON, 0 },
 };
 
@@ -5457,12 +5481,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Tune_Type_Text_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Dvbt_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_470 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_473 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Dvbt_Type_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_471 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_474 },
     { CP_NOON, 0 },
 };
 
@@ -5476,12 +5500,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Dvbt_Type_Text_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Dvbc_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_472 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_475 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Dvbc_Type_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_473 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_476 },
     { CP_NOON, 0 },
 };
 
@@ -5509,7 +5533,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvb_Select_Dvbc_Type_Text_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_Tune_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_474 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_477 },
     { CP_NOON, 0 },
 };
 
@@ -5523,12 +5547,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_Tune_Type_Text_N
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_7m_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_475 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_478 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_7m_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_476 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_479 },
     { CP_NOON, 0 },
 };
 
@@ -5542,12 +5566,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_7m_Text_Focus_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_8m_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_477 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_480 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_8m_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_478 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_481 },
     { CP_NOON, 0 },
 };
 
@@ -5609,7 +5633,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Signal_Informat_Bg_4_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Signal_Informat_Title_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_479 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_482 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Dlg_Signal_Informat_Title_Txt_Focus_DrawStyle _Zui_Menu_Dlg_Signal_Informat_Title_Txt_Normal_DrawStyle
@@ -5668,7 +5692,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Signal_Informat_Title_Txt_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Signal_Informat_Quality_Index_String_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_480 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_483 },
     { CP_NOON, 0 },
 };
 
@@ -5738,17 +5762,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Dlg_Signal_Informat_Quality_Index_String_N
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_481 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_484 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_482 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_485 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_483 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_486 },
     { CP_NOON, 0 },
 };
 
@@ -5757,17 +5781,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_484 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_487 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_485 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_488 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_486 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_489 },
     { CP_NOON, 0 },
 };
 
@@ -5796,17 +5820,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Pipmode_Option_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Subsrc_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_487 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_490 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Subsrc_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_488 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_491 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Subsrc_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_489 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_492 },
     { CP_NOON, 0 },
 };
 
@@ -5840,17 +5864,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Subsrc_Option_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Size_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_490 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_493 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Size_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_491 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_494 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Size_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_492 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_495 },
     { CP_NOON, 0 },
 };
 
@@ -5884,17 +5908,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Size_Option_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Position_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_493 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_496 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Position_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_494 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_497 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Position_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_495 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_498 },
     { CP_NOON, 0 },
 };
 
@@ -5960,17 +5984,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Position_Option_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Sound_Src_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_496 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_499 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Sound_Src_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_497 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_500 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Sound_Src_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_498 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_501 },
     { CP_NOON, 0 },
 };
 
@@ -6004,17 +6028,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Sound_Src_Option_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Swap_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_499 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_502 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Swap_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_500 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_503 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Swap_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_501 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_504 },
     { CP_NOON, 0 },
 };
 
@@ -6090,12 +6114,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Pip_Swap_Text_Disabled_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Common_Adj_Item1_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_502 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_505 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Common_Adj_Item1_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_503 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_506 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Common_Adj_Item1_Text_Disabled_DrawStyle _Zui_Menu_Common_Adj_Item1_Text_Normal_DrawStyle
@@ -6105,17 +6129,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Common_Adj_Item1_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Common_Adj_Item1_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_504 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_507 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Common_Adj_Item1_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_505 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_508 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Common_Adj_Item1_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_506 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_509 },
     { CP_NOON, 0 },
 };
 
@@ -6347,7 +6371,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Common_Adj_Item1_Option_Disabled_DrawStyle
 #define _Zui_Menu_Sndmode_Sndmode_Text_Normal_DrawStyle _Zui_Menu_Sound_Sndmode_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sndmode_Sndmode_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_507 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_510 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Sndmode_Sndmode_Text_Disabled_DrawStyle _Zui_Menu_Sound_Sndmode_Text_Disabled_DrawStyle
@@ -6804,7 +6828,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sndmode_Sndmode_Text_Focus_DrawStyle[] =
 #define _Zui_Menu_Option_Audiolang_Primary_Text_Normal_DrawStyle _Zui_Menu_Sound_Audio_Language_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Audiolang_Primary_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_508 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_511 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Option_Audiolang_Primary_Text_Disabled_DrawStyle _Zui_Menu_Sound_Audio_Language_Text_Disabled_DrawStyle
@@ -6814,17 +6838,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Audiolang_Primary_Text_Focus_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Audiolang_Primary_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_509 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_512 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Audiolang_Primary_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_510 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_513 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Audiolang_Primary_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_511 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_514 },
     { CP_NOON, 0 },
 };
 
@@ -6980,7 +7004,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Audiolang_Primary_Option_Disabled_D
 #define _Zui_Menu_Option_Sublang_Primary_Text_Normal_DrawStyle _Zui_Menu_Option_Subtitle_Lang_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Sublang_Primary_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_512 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_515 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Option_Sublang_Primary_Text_Disabled_DrawStyle _Zui_Menu_Option_Subtitle_Lang_Text_Disabled_DrawStyle
@@ -7044,17 +7068,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Sublang_Primary_Text_Focus_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osdlang_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_513 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_516 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osdlang_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_514 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_517 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osdlang_Title_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_515 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_518 },
     { CP_NOON, 0 },
 };
 
@@ -7396,12 +7420,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Osdlang_Title_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Singlelist_Title_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_516 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_519 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Singlelist_Title_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_517 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_520 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Singlelist_Title_Option_Disabled_DrawStyle _Zui_Menu_Sound_Audio_Delay_Option_Disabled_DrawStyle
@@ -7444,7 +7468,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Singlelist_Title_Option_Focus_DrawStyle[] 
 #define _Zui_Menu_Time_Timezone_Page_Title_Normal_DrawStyle _Zui_Menu_Time_Set_Timezone_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Time_Timezone_Page_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_518 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_521 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Time_Timezone_Page_Title_Disabled_DrawStyle _Zui_Menu_Time_Set_Timezone_Text_Disabled_DrawStyle
@@ -7753,7 +7777,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Alert_Icon_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Alert_String_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_519 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_522 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Alert_String_Focus_DrawStyle _Zui_Menu_Alert_String_Normal_DrawStyle
@@ -7795,7 +7819,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Alert_String_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Tittle_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_520 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_523 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Hdmi_Cec_Tittle_Focus_DrawStyle _Zui_Menu_Pcmode_Title_Focus_DrawStyle
@@ -7815,7 +7839,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Tittle_Normal_DrawStyle[] =
 #define _Zui_Menu_Hdmi_Cec_Hdmi_Text_Normal_DrawStyle _Zui_Menu_Option_Hdmi_Cec_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Hdmi_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_521 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_524 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Hdmi_Cec_Hdmi_Text_Disabled_DrawStyle _Zui_Menu_Option_Hdmi_Cec_Text_Disabled_DrawStyle
@@ -7825,17 +7849,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Hdmi_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Hdmi_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_522 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_525 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Hdmi_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_523 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_526 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Hdmi_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_524 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_527 },
     { CP_NOON, 0 },
 };
 
@@ -7850,7 +7874,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Hdmi_Option_Disabled_DrawStyle[] 
 #define _Zui_Menu_Hdmi_Cec_Arc_Text_Normal_DrawStyle _Zui_Menu_Option_Hdmi_Arc_Text_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Arc_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_525 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_528 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Hdmi_Cec_Arc_Text_Disabled_DrawStyle _Zui_Menu_Option_Hdmi_Arc_Text_Disabled_DrawStyle
@@ -7872,17 +7896,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Arc_Text_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Standby_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_526 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_529 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Standby_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_527 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_530 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Standby_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_528 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_531 },
     { CP_NOON, 0 },
 };
 
@@ -7903,17 +7927,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Standby_Text_Disabled_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Test_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_529 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_532 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Test_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_530 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_533 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Test_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_531 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_534 },
     { CP_NOON, 0 },
 };
 
@@ -7934,17 +7958,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Test_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_Control_Test_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_532 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_535 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_Control_Test_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_533 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_536 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_Control_Test_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_534 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_537 },
     { CP_NOON, 0 },
 };
 
@@ -7965,17 +7989,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_Control_Test_Disabled_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_535 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_538 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_536 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_539 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_537 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_540 },
     { CP_NOON, 0 },
 };
 
@@ -8015,7 +8039,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_Page_Bg_Right_Normal_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_Page_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_538 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_541 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Hdmi_Cec_Device_List_Page_Title_Focus_DrawStyle _Zui_Menu_Hdmi_Cec_Device_List_Page_Title_Normal_DrawStyle
@@ -8040,7 +8064,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_Page_Title_Normal_Dra
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_A_Port_Text_Focus_DrawStyle[] =
 {
     { CP_BITMAP, CP_ZUI_BITMAP_INDEX_19 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_539 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_542 },
     { CP_NOON, 0 },
 };
 
@@ -8209,7 +8233,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_List_A_Port_Text_Focus_Dra
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Hdmi_Cec_Device_Searching_Normal_DrawStyle[] =
 {
     { CP_RECT, CP_ZUI_RECT_INDEX_2 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_540 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_543 },
     { CP_NOON, 0 },
 };
 
@@ -8280,17 +8304,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Page_Bg_R_Normal_Draw
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Ccmode_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_541 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_544 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Ccmode_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_542 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_545 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Ccmode_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_543 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_546 },
     { CP_NOON, 0 },
 };
 
@@ -8314,17 +8338,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Ccmode_Option_Di
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Basicselection_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_544 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_547 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Basicselection_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_545 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_548 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Basicselection_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_546 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_549 },
     { CP_NOON, 0 },
 };
 
@@ -8349,12 +8373,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Basicselection_O
 #define _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Option_Normal_DrawStyle _Zui_Menu_Pip_Pipmode_Option_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_547 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_550 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_548 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_551 },
     { CP_NOON, 0 },
 };
 
@@ -8373,17 +8397,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Advanceselection
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Option_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_549 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_552 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Option_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_550 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_553 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Option_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_551 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_554 },
     { CP_NOON, 0 },
 };
 
@@ -8447,17 +8471,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Closedcaption_Item_Option_Text_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Mode_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_552 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_555 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Mode_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_553 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_556 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Mode_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_554 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_557 },
     { CP_NOON, 0 },
 };
 
@@ -8471,12 +8495,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Mode_Text_Disabled_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Mode_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_555 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_558 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Mode_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_556 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_559 },
     { CP_NOON, 0 },
 };
 
@@ -8495,17 +8519,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Mode_Option_Focus_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontstyle_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_557 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_560 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontstyle_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_558 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_561 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontstyle_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_559 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_562 },
     { CP_NOON, 0 },
 };
 
@@ -8521,7 +8545,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontstyle_Text_Disabl
 #define _Zui_Menu_Option_Ccoption_Item_Fontstyle_Option_Focus_DrawStyle _Zui_Menu_Option_Ccoption_Item_Mode_Option_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontstyle_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_560 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_563 },
     { CP_NOON, 0 },
 };
 
@@ -8540,17 +8564,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontstyle_Option_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontsize_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_561 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_564 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontsize_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_562 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_565 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontsize_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_563 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_566 },
     { CP_NOON, 0 },
 };
 
@@ -8581,17 +8605,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontsize_Text_Disable
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_564 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_567 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_565 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_568 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_566 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_569 },
     { CP_NOON, 0 },
 };
 
@@ -8622,17 +8646,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Text_Di
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_567 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_570 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_568 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_571 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_569 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_572 },
     { CP_NOON, 0 },
 };
 
@@ -8663,17 +8687,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Text_Di
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgcolor_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_570 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_573 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgcolor_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_571 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_574 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgcolor_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_572 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_575 },
     { CP_NOON, 0 },
 };
 
@@ -8704,17 +8728,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgcolor_Text_Disabled
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgcolor_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_573 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_576 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgcolor_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_574 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_577 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgcolor_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_575 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_578 },
     { CP_NOON, 0 },
 };
 
@@ -8745,17 +8769,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgcolor_Text_Disabled
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgopacity_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_576 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_579 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgopacity_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_577 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_580 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgopacity_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_578 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_581 },
     { CP_NOON, 0 },
 };
 
@@ -8786,17 +8810,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Fgopacity_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgopacity_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_579 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_582 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgopacity_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_580 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_583 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgopacity_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_581 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_584 },
     { CP_NOON, 0 },
 };
 
@@ -8827,17 +8851,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Bgopacity_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Windowcolor_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_582 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_585 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Windowcolor_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_583 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_586 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Windowcolor_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_584 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_587 },
     { CP_NOON, 0 },
 };
 
@@ -8868,17 +8892,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Windowcolor_Text_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Windowopacity_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_585 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_588 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Windowopacity_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_586 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_589 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Option_Ccoption_Item_Windowopacity_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_587 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_590 },
     { CP_NOON, 0 },
 };
 
@@ -8945,7 +8969,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Bg_C_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_588 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_591 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Lock_Inputblocksubpage_Title_Focus_DrawStyle _Zui_Menu_Lock_Inputblocksubpage_Title_Normal_DrawStyle
@@ -8965,17 +8989,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Title_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_589 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_592 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_590 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_593 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_591 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_594 },
     { CP_NOON, 0 },
 };
 
@@ -8989,12 +9013,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_592 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_595 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_593 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_596 },
     { CP_NOON, 0 },
 };
 
@@ -9013,17 +9037,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focu
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_594 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_597 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_595 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_598 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_596 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_599 },
     { CP_NOON, 0 },
 };
 
@@ -9039,7 +9063,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Text_Disabl
 #define _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Option_Focus_DrawStyle _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_597 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_600 },
     { CP_NOON, 0 },
 };
 
@@ -9058,17 +9082,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Option_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_598 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_601 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_599 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_602 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_600 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_603 },
     { CP_NOON, 0 },
 };
 
@@ -9099,17 +9123,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Text_Di
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_601 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_604 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_602 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_605 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_603 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_606 },
     { CP_NOON, 0 },
 };
 
@@ -9140,17 +9164,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Text
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_604 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_607 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_605 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_608 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_606 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_609 },
     { CP_NOON, 0 },
 };
 
@@ -9181,17 +9205,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Text_Disa
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_607 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_610 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_608 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_611 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_609 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_612 },
     { CP_NOON, 0 },
 };
 
@@ -9250,17 +9274,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Text_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_610 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_613 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_611 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_614 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Title_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_612 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_615 },
     { CP_NOON, 0 },
 };
 
@@ -9274,17 +9298,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Title_Disabled_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Tv_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_613 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_616 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Tv_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_614 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_617 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Tv_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_615 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_618 },
     { CP_NOON, 0 },
 };
 
@@ -9298,17 +9322,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Tv_Text_Disabled_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_616 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_619 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_617 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_620 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_618 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_621 },
     { CP_NOON, 0 },
 };
 
@@ -9354,17 +9378,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Text_Disabled_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_619 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_622 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_620 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_623 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Title_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_621 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_624 },
     { CP_NOON, 0 },
 };
 
@@ -9382,17 +9406,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Title_Disabled_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Eng_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_622 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_625 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Eng_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_623 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_626 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Eng_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_624 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_627 },
     { CP_NOON, 0 },
 };
 
@@ -9406,17 +9430,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Eng_Text_Disabled_
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Fre_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_625 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_628 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Fre_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_626 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_629 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Fre_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_627 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_630 },
     { CP_NOON, 0 },
 };
 
@@ -9464,7 +9488,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Canadasubpage_Item_Fre_Text_Disabled_
 #define _Zui_Menu_Lock_Vchipsubpage_Title_Focus_DrawStyle _Zui_Menu_Pcmode_Auto_Gain_Option_Normal_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Vchipsubpage_Title_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_628 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_631 },
     { CP_NOON, 0 },
 };
 
@@ -9484,7 +9508,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Vchipsubpage_Title_Disabled_DrawStyle
 #define _Zui_Menu_Lock_Vchipsubpage_Item1_Text_Focus_DrawStyle _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Vchipsubpage_Item1_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_629 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_632 },
     { CP_NOON, 0 },
 };
 
@@ -9507,7 +9531,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Vchipsubpage_Item1_Text_Disabled_Draw
 #define _Zui_Menu_Lock_Vchipsubpage_Item2_Text_Focus_DrawStyle _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Vchipsubpage_Item2_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_630 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_633 },
     { CP_NOON, 0 },
 };
 
@@ -9587,7 +9611,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Vchipsubpage_Item2_Text_Disabled_Draw
 #define _Zui_Menu_Lock_Vchipsubpage_Item6_Text_Focus_DrawStyle _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Vchipsubpage_Item6_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_631 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_634 },
     { CP_NOON, 0 },
 };
 
@@ -9657,7 +9681,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_R_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tvrating_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_632 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_635 },
     { CP_NOON, 0 },
 };
 
@@ -9690,7 +9714,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tvrating_Normal_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_None_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_633 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_636 },
     { CP_NOON, 0 },
 };
 
@@ -9699,7 +9723,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_None_Normal_Dra
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Y_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_634 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_637 },
     { CP_NOON, 0 },
 };
 
@@ -9708,7 +9732,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Y_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Y7_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_635 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_638 },
     { CP_NOON, 0 },
 };
 
@@ -9717,7 +9741,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Y7_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_G_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_636 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_639 },
     { CP_NOON, 0 },
 };
 
@@ -9726,7 +9750,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_G_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Pg_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_637 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_640 },
     { CP_NOON, 0 },
 };
 
@@ -9735,7 +9759,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Pg_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_14_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_638 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_641 },
     { CP_NOON, 0 },
 };
 
@@ -9744,7 +9768,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_14_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Ma_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_639 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_642 },
     { CP_NOON, 0 },
 };
 
@@ -10199,17 +10223,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_D_Bmp_Focus
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtdimentionsubpage_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_640 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_643 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtdimentionsubpage_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_641 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_644 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtdimentionsubpage_Title_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_642 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_645 },
     { CP_NOON, 0 },
 };
 
@@ -10375,17 +10399,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtdimentionsubpage_Title_Disabled_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtadjustsubpage_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_643 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_646 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtadjustsubpage_Title_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_644 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_647 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtadjustsubpage_Title_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_645 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_648 },
     { CP_NOON, 0 },
 };
 
@@ -10416,7 +10440,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtadjustsubpage_Title_Disabled_DrawS
 #define _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Option_Focus_DrawStyle _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focus_DrawStyle
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_646 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_649 },
     { CP_NOON, 0 },
 };
 
@@ -10734,17 +10758,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Option_Disable
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Subpage_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_647 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_650 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Subpage_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_648 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_651 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Subpage_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_649 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_652 },
     { CP_NOON, 0 },
 };
 
@@ -10782,17 +10806,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Subpage_Text_Disabled_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_650 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_653 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_1_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_651 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_654 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_1_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_652 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_655 },
     { CP_NOON, 0 },
 };
 
@@ -10801,17 +10825,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_1_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_653 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_656 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_2_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_654 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_657 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_2_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_655 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_658 },
     { CP_NOON, 0 },
 };
 
@@ -10835,17 +10859,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Accessibility_Value_2_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_656 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_659 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_1_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_657 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_660 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_1_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_658 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_661 },
     { CP_NOON, 0 },
 };
 
@@ -10854,17 +10878,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_1_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_2_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_659 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_662 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_2_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_660 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_663 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_2_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_661 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_664 },
     { CP_NOON, 0 },
 };
 
@@ -10888,17 +10912,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Audio_Option_Language_Value_2_Disabl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Primary_Parameter_Value_1_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_662 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_665 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Primary_Parameter_Value_1_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_663 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_666 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Primary_Parameter_Value_1_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_664 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_667 },
     { CP_NOON, 0 },
 };
 
@@ -10956,17 +10980,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Primary_Parameter_Value_1_Disabled_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Eq_Equalizer_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_665 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_668 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Eq_Equalizer_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_666 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_669 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Eq_Equalizer_Text_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_667 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_670 },
     { CP_NOON, 0 },
 };
 
@@ -10975,17 +10999,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Eq_Equalizer_Text_Disabled_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Eq_Equalizer_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_668 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_671 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Eq_Equalizer_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_669 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_672 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Sound_Eq_Equalizer_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_670 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_673 },
     { CP_NOON, 0 },
 };
 
@@ -11231,7 +11255,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Sub_Page_Bg_R_Nor
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Digital_Text_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_671 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_674 },
     { CP_NOON, 0 },
 };
 
@@ -11249,7 +11273,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Digital_Text_Titl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Found_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_672 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_675 },
     { CP_NOON, 0 },
 };
 
@@ -11263,7 +11287,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Found_Text_Normal
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Found_Program_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_673 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_676 },
     { CP_NOON, 0 },
 };
 
@@ -11276,7 +11300,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Found_Program_Nor
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Analog_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_674 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_677 },
     { CP_NOON, 0 },
 };
 
@@ -11299,7 +11323,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Analog_Text_Norma
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Digital_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_675 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_678 },
     { CP_NOON, 0 },
 };
 
@@ -11322,7 +11346,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Digital_Text_Norm
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Percent_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_676 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_679 },
     { CP_NOON, 0 },
 };
 
@@ -11331,7 +11355,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Percent_Normal_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Percent_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_677 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_680 },
     { CP_NOON, 0 },
 };
 
@@ -11340,7 +11364,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Percent_Text_Norm
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Rf_Channel_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_678 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_681 },
     { CP_NOON, 0 },
 };
 
@@ -11349,7 +11373,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Rf_Channel_Text_N
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Rf_Channel_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_679 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_682 },
     { CP_NOON, 0 },
 };
 
@@ -11358,7 +11382,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Rf_Channel_Option
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Ch_Type_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_680 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_683 },
     { CP_NOON, 0 },
 };
 
@@ -11403,17 +11427,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Scan_Result_Progress_Bar_Norm
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Bg_Selection_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_681 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_684 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Bg_Selection_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_682 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_685 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Bg_Selection_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_683 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_686 },
     { CP_NOON, 0 },
 };
 
@@ -11439,17 +11463,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item0_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item0_Channelno_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_684 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_687 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item0_Channelno_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_685 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_688 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item0_Channelno_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_686 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_689 },
     { CP_NOON, 0 },
 };
 
@@ -11522,7 +11546,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item0_Hide_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item1_Selection_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_687 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_690 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Channel_List_Item1_Selection_Focus_DrawStyle _Zui_Menu_Lock_Vchipsubpage_Item6_Text_Disabled_DrawStyle
@@ -11817,17 +11841,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item1_Selection_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item9_Channelname_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_688 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_691 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item9_Channelname_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_689 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_692 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item9_Channelname_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_690 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_693 },
     { CP_NOON, 0 },
 };
 
@@ -11877,13 +11901,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_List_Item9_Channelname_Disabled_Dr
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_No_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_691 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_694 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_No_Focus_DrawStyle[] =
 {
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_1 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_692 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_695 },
     { CP_NOON, 0 },
 };
 
@@ -11901,13 +11925,13 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_No_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_Yes_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_693 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_696 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_Yes_Focus_DrawStyle[] =
 {
     { CP_RECT_BORDER, CP_ZUI_RECT_BORDER_INDEX_1 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_694 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_697 },
     { CP_NOON, 0 },
 };
 
@@ -11921,7 +11945,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_Yes_Focus_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_Bg_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_695 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_698 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Channel_Auto_Tuning_Bg_Text_Focus_DrawStyle _Zui_Menu_Channel_Auto_Tuning_Bg_Text_Normal_DrawStyle
@@ -11969,7 +11993,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Auto_Tuning_Bg_Text_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Picture_Adjust_Backlight_Top_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_696 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_699 },
     { CP_NOON, 0 },
 };
 
@@ -11993,17 +12017,17 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Picture_Adjust_Backlight_Top_Text_Normal_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Picture_Adjust_Backlight_Sub_Option_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_697 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_700 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Picture_Adjust_Backlight_Sub_Option_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_698 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_701 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Picture_Adjust_Backlight_Sub_Option_Disabled_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_699 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_702 },
     { CP_NOON, 0 },
 };
 
@@ -12045,7 +12069,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Label_Edit_Char1_Focus_DrawStyle[]
 static DRAWSTYLE _MP_TBLSEG _Zui_Menu_Channel_Label_Edit_Char1_Text_Normal_DrawStyle[] =
 {
     { CP_FILL_RECT, CP_ZUI_FILL_RECT_INDEX_7 },
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_687 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_690 },
     { CP_NOON, 0 },
 };
 #define _Zui_Menu_Channel_Label_Edit_Char1_Text_Focus_DrawStyle _Zui_Menu_Channel_Label_Edit_Char1_Text_Normal_DrawStyle
@@ -12898,3946 +12922,3952 @@ WINDOWDRAWSTYLEDATA _MP_TBLSEG _GUI_WindowsDrawStyleList_Zui_Main_Menu[] =
     // 256 = HWND_MENU_OPTION_SETUPWIZARD_TEXT
     { _Zui_Menu_Option_Setupwizard_Text_Normal_DrawStyle, _Zui_Menu_Option_Setupwizard_Text_Focus_DrawStyle, _Zui_Menu_Option_Setupwizard_Text_Disabled_DrawStyle     },
 
-    // 257 = HWND_MENU_OPTION_FACTORY_RESET
-    { NULL, _Zui_Menu_Option_Factory_Reset_Focus_DrawStyle, NULL     },
-
-    // 258 = HWND_MENU_OPTION_FACTORY_RESET_TEXT
-    { _Zui_Menu_Option_Factory_Reset_Text_Normal_DrawStyle, _Zui_Menu_Option_Factory_Reset_Text_Focus_DrawStyle, _Zui_Menu_Option_Factory_Reset_Text_Disabled_DrawStyle     },
-
-    // 259 = HWND_MENU_OPTION_IMG_ORIENT
+    // 257 = HWND_MENU_OPTION_IMG_ORIENT
     { NULL, _Zui_Menu_Option_Img_Orient_Focus_DrawStyle, NULL     },
 
-    // 260 = HWND_MENU_OPTION_IMG_ORIENT_TEXT
+    // 258 = HWND_MENU_OPTION_IMG_ORIENT_TEXT
     { _Zui_Menu_Option_Img_Orient_Text_Normal_DrawStyle, _Zui_Menu_Option_Img_Orient_Text_Focus_DrawStyle, _Zui_Menu_Option_Img_Orient_Text_Disabled_DrawStyle     },
 
-    // 261 = HWND_MENU_OPTION_IMG_ORIENT_OPTION
+    // 259 = HWND_MENU_OPTION_IMG_ORIENT_OPTION
     { _Zui_Menu_Option_Img_Orient_Option_Normal_DrawStyle, _Zui_Menu_Option_Img_Orient_Option_Focus_DrawStyle, _Zui_Menu_Option_Img_Orient_Option_Disabled_DrawStyle     },
 
-    // 262 = HWND_MENU_OPTION_HDMI_CEC
+    // 260 = HWND_MENU_OPTION_HDMI_CEC
     { NULL, _Zui_Menu_Option_Hdmi_Cec_Focus_DrawStyle, NULL     },
 
-    // 263 = HWND_MENU_OPTION_HDMI_CEC_TEXT
+    // 261 = HWND_MENU_OPTION_HDMI_CEC_TEXT
     { _Zui_Menu_Option_Hdmi_Cec_Text_Normal_DrawStyle, _Zui_Menu_Option_Hdmi_Cec_Text_Focus_DrawStyle, _Zui_Menu_Option_Hdmi_Cec_Text_Disabled_DrawStyle     },
 
-    // 264 = HWND_MENU_OPTION_HDMI_CEC_OPTION
+    // 262 = HWND_MENU_OPTION_HDMI_CEC_OPTION
     { NULL, _Zui_Menu_Option_Hdmi_Cec_Option_Focus_DrawStyle, _Zui_Menu_Option_Hdmi_Cec_Option_Disabled_DrawStyle     },
 
-    // 265 = HWND_MENU_OPTION_HDMI_ARC
+    // 263 = HWND_MENU_OPTION_HDMI_ARC
     { NULL, _Zui_Menu_Option_Hdmi_Arc_Focus_DrawStyle, NULL     },
 
-    // 266 = HWND_MENU_OPTION_HDMI_ARC_TEXT
+    // 264 = HWND_MENU_OPTION_HDMI_ARC_TEXT
     { _Zui_Menu_Option_Hdmi_Arc_Text_Normal_DrawStyle, _Zui_Menu_Option_Hdmi_Arc_Text_Focus_DrawStyle, _Zui_Menu_Option_Hdmi_Arc_Text_Disabled_DrawStyle     },
 
-    // 267 = HWND_MENU_OPTION_HDMI_ARC_OPTION
+    // 265 = HWND_MENU_OPTION_HDMI_ARC_OPTION
     { NULL, _Zui_Menu_Option_Hdmi_Arc_Option_Focus_DrawStyle, _Zui_Menu_Option_Hdmi_Arc_Option_Disabled_DrawStyle     },
 
-    // 268 = HWND_MENU_OPTION_OSD_EFFECT
+    // 266 = HWND_MENU_OPTION_OSD_EFFECT
     { NULL, _Zui_Menu_Option_Osd_Effect_Focus_DrawStyle, NULL     },
 
-    // 269 = HWND_MENU_OPTION_OSD_EFFECT_TEXT
+    // 267 = HWND_MENU_OPTION_OSD_EFFECT_TEXT
     { _Zui_Menu_Option_Osd_Effect_Text_Normal_DrawStyle, _Zui_Menu_Option_Osd_Effect_Text_Focus_DrawStyle, _Zui_Menu_Option_Osd_Effect_Text_Disabled_DrawStyle     },
 
-    // 270 = HWND_MENU_OPTION_OSD_EFFECT_OPTION
+    // 268 = HWND_MENU_OPTION_OSD_EFFECT_OPTION
     { NULL, _Zui_Menu_Option_Osd_Effect_Option_Focus_DrawStyle, _Zui_Menu_Option_Osd_Effect_Option_Disabled_DrawStyle     },
 
-    // 271 = HWND_MENU_OPTION_DIVX
+    // 269 = HWND_MENU_OPTION_DIVX
     { NULL, _Zui_Menu_Option_Divx_Focus_DrawStyle, NULL     },
 
-    // 272 = HWND_MENU_OPTION_DIVX_TEXT
+    // 270 = HWND_MENU_OPTION_DIVX_TEXT
     { _Zui_Menu_Option_Divx_Text_Normal_DrawStyle, _Zui_Menu_Option_Divx_Text_Focus_DrawStyle, _Zui_Menu_Option_Divx_Text_Disabled_DrawStyle     },
 
-    // 273 = HWND_MENU_OPTION_CC_MODE
+    // 271 = HWND_MENU_OPTION_CC_MODE
     { NULL, _Zui_Menu_Option_Cc_Mode_Focus_DrawStyle, NULL     },
 
-    // 274 = HWND_MENU_OPTION_CC_MODE_TEXT
+    // 272 = HWND_MENU_OPTION_CC_MODE_TEXT
     { _Zui_Menu_Option_Cc_Mode_Text_Normal_DrawStyle, _Zui_Menu_Option_Cc_Mode_Text_Focus_DrawStyle, _Zui_Menu_Option_Cc_Mode_Text_Disabled_DrawStyle     },
 
-    // 275 = HWND_MENU_OPTION_CC_MODE_OPTION
+    // 273 = HWND_MENU_OPTION_CC_MODE_OPTION
     { NULL, _Zui_Menu_Option_Cc_Mode_Option_Focus_DrawStyle, _Zui_Menu_Option_Cc_Mode_Option_Disabled_DrawStyle     },
 
-    // 276 = HWND_MENU_OPTION_CC_OPTION
+    // 274 = HWND_MENU_OPTION_CC_OPTION
     { NULL, _Zui_Menu_Option_Cc_Option_Focus_DrawStyle, NULL     },
 
-    // 277 = HWND_MENU_OPTION_CC_OPTION_TEXT
+    // 275 = HWND_MENU_OPTION_CC_OPTION_TEXT
     { _Zui_Menu_Option_Cc_Option_Text_Normal_DrawStyle, _Zui_Menu_Option_Cc_Option_Text_Focus_DrawStyle, _Zui_Menu_Option_Cc_Option_Text_Disabled_DrawStyle     },
 
-    // 278 = HWND_MENU_OPTION_CC_OPTION_OPTION
+    // 276 = HWND_MENU_OPTION_CC_OPTION_OPTION
     { NULL, _Zui_Menu_Option_Cc_Option_Option_Focus_DrawStyle, _Zui_Menu_Option_Cc_Option_Option_Disabled_DrawStyle     },
 
-    // 279 = HWND_MENU_OPTION_COLOR_RANGE
+    // 277 = HWND_MENU_OPTION_COLOR_RANGE
     { NULL, _Zui_Menu_Option_Color_Range_Focus_DrawStyle, NULL     },
 
-    // 280 = HWND_MENU_OPTION_COLOR_RANGE_TEXT
+    // 278 = HWND_MENU_OPTION_COLOR_RANGE_TEXT
     { _Zui_Menu_Option_Color_Range_Text_Normal_DrawStyle, _Zui_Menu_Option_Color_Range_Text_Focus_DrawStyle, _Zui_Menu_Option_Color_Range_Text_Disabled_DrawStyle     },
 
-    // 281 = HWND_MENU_OPTION_COLOR_RANGE_OPTION
+    // 279 = HWND_MENU_OPTION_COLOR_RANGE_OPTION
     { NULL, _Zui_Menu_Option_Color_Range_Option_Focus_DrawStyle, _Zui_Menu_Option_Color_Range_Option_Disabled_DrawStyle     },
 
-    // 282 = HWND_MENU_OPTION_3D_TYPE
+    // 280 = HWND_MENU_OPTION_3D_TYPE
     { NULL, _Zui_Menu_Option_3d_Type_Focus_DrawStyle, NULL     },
 
-    // 283 = HWND_MENU_OPTION_3D_TYPE_TEXT
+    // 281 = HWND_MENU_OPTION_3D_TYPE_TEXT
     { _Zui_Menu_Option_3d_Type_Text_Normal_DrawStyle, _Zui_Menu_Option_3d_Type_Text_Focus_DrawStyle, _Zui_Menu_Option_3d_Type_Text_Disabled_DrawStyle     },
 
-    // 284 = HWND_MENU_OPTION_3D_TYPE_OPTION
+    // 282 = HWND_MENU_OPTION_3D_TYPE_OPTION
     { NULL, _Zui_Menu_Option_3d_Type_Option_Focus_DrawStyle, _Zui_Menu_Option_3d_Type_Option_Disabled_DrawStyle     },
 
-    // 285 = HWND_MENU_OPTION_3D_TO_2D
+    // 283 = HWND_MENU_OPTION_3D_TO_2D
     { NULL, _Zui_Menu_Option_3d_To_2d_Focus_DrawStyle, NULL     },
 
-    // 286 = HWND_MENU_OPTION_3D_TO_2D_TEXT
+    // 284 = HWND_MENU_OPTION_3D_TO_2D_TEXT
     { _Zui_Menu_Option_3d_To_2d_Text_Normal_DrawStyle, _Zui_Menu_Option_3d_To_2d_Text_Focus_DrawStyle, _Zui_Menu_Option_3d_To_2d_Text_Disabled_DrawStyle     },
 
-    // 287 = HWND_MENU_OPTION_3D_TO_2D_OPTION
+    // 285 = HWND_MENU_OPTION_3D_TO_2D_OPTION
     { NULL, _Zui_Menu_Option_3d_To_2d_Option_Focus_DrawStyle, _Zui_Menu_Option_3d_To_2d_Option_Disabled_DrawStyle     },
 
-    // 288 = HWND_MENU_OPTION_3D_DETECT
+    // 286 = HWND_MENU_OPTION_3D_DETECT
     { NULL, _Zui_Menu_Option_3d_Detect_Focus_DrawStyle, NULL     },
 
-    // 289 = HWND_MENU_OPTION_3D_DETECT_TEXT
+    // 287 = HWND_MENU_OPTION_3D_DETECT_TEXT
     { _Zui_Menu_Option_3d_Detect_Text_Normal_DrawStyle, _Zui_Menu_Option_3d_Detect_Text_Focus_DrawStyle, _Zui_Menu_Option_3d_Detect_Text_Disabled_DrawStyle     },
 
-    // 290 = HWND_MENU_OPTION_3D_DETECT_OPTION
+    // 288 = HWND_MENU_OPTION_3D_DETECT_OPTION
     { NULL, _Zui_Menu_Option_3d_Detect_Option_Focus_DrawStyle, _Zui_Menu_Option_3d_Detect_Option_Disabled_DrawStyle     },
 
-    // 291 = HWND_MENU_OPTION_3D_LR
+    // 289 = HWND_MENU_OPTION_3D_LR
     { NULL, _Zui_Menu_Option_3d_Lr_Focus_DrawStyle, NULL     },
 
-    // 292 = HWND_MENU_OPTION_3D_LR_TEXT
+    // 290 = HWND_MENU_OPTION_3D_LR_TEXT
     { _Zui_Menu_Option_3d_Lr_Text_Normal_DrawStyle, _Zui_Menu_Option_3d_Lr_Text_Focus_DrawStyle, _Zui_Menu_Option_3d_Lr_Text_Disabled_DrawStyle     },
 
-    // 293 = HWND_MENU_OPTION_3D_LR_OPTION
+    // 291 = HWND_MENU_OPTION_3D_LR_OPTION
     { NULL, _Zui_Menu_Option_3d_Lr_Option_Focus_DrawStyle, _Zui_Menu_Option_3d_Lr_Option_Disabled_DrawStyle     },
 
-    // 294 = HWND_MENU_OPTION_3D_HSHIFT
+    // 292 = HWND_MENU_OPTION_3D_HSHIFT
     { NULL, _Zui_Menu_Option_3d_Hshift_Focus_DrawStyle, NULL     },
 
-    // 295 = HWND_MENU_OPTION_3D_HSHIFT_TEXT
+    // 293 = HWND_MENU_OPTION_3D_HSHIFT_TEXT
     { _Zui_Menu_Option_3d_Hshift_Text_Normal_DrawStyle, _Zui_Menu_Option_3d_Hshift_Text_Focus_DrawStyle, _Zui_Menu_Option_3d_Hshift_Text_Disabled_DrawStyle     },
 
-    // 296 = HWND_MENU_OPTION_3D_HSHIFT_OPTION
+    // 294 = HWND_MENU_OPTION_3D_HSHIFT_OPTION
     { NULL, _Zui_Menu_Option_3d_Hshift_Option_Focus_DrawStyle, _Zui_Menu_Option_3d_Hshift_Option_Disabled_DrawStyle     },
 
-    // 297 = HWND_MENU_OPTION_3D_VIEW_POINT
+    // 295 = HWND_MENU_OPTION_3D_VIEW_POINT
     { NULL, _Zui_Menu_Option_3d_View_Point_Focus_DrawStyle, NULL     },
 
-    // 298 = HWND_MENU_OPTION_3D_VIEW_POINT_TEXT
+    // 296 = HWND_MENU_OPTION_3D_VIEW_POINT_TEXT
     { _Zui_Menu_Option_3d_View_Point_Text_Normal_DrawStyle, _Zui_Menu_Option_3d_View_Point_Text_Focus_DrawStyle, _Zui_Menu_Option_3d_View_Point_Text_Disabled_DrawStyle     },
 
-    // 299 = HWND_MENU_OPTION_3D_VIEW_POINT_OPTION
+    // 297 = HWND_MENU_OPTION_3D_VIEW_POINT_OPTION
     { NULL, _Zui_Menu_Option_3d_View_Point_Option_Focus_DrawStyle, _Zui_Menu_Option_3d_View_Point_Option_Disabled_DrawStyle     },
 
-    // 300 = HWND_MENU_OPTION_MFC
+    // 298 = HWND_MENU_OPTION_MFC
     { NULL, _Zui_Menu_Option_Mfc_Focus_DrawStyle, NULL     },
 
-    // 301 = HWND_MENU_OPTION_MFC_TEXT
+    // 299 = HWND_MENU_OPTION_MFC_TEXT
     { _Zui_Menu_Option_Mfc_Text_Normal_DrawStyle, _Zui_Menu_Option_Mfc_Text_Focus_DrawStyle, _Zui_Menu_Option_Mfc_Text_Disabled_DrawStyle     },
 
-    // 302 = HWND_MENU_OPTION_6M30_MIRROR
+    // 300 = HWND_MENU_OPTION_6M30_MIRROR
     { NULL, _Zui_Menu_Option_6m30_Mirror_Focus_DrawStyle, NULL     },
 
-    // 303 = HWND_MENU_OPTION_6M30_MIRROR_TEXT
+    // 301 = HWND_MENU_OPTION_6M30_MIRROR_TEXT
     { _Zui_Menu_Option_6m30_Mirror_Text_Normal_DrawStyle, _Zui_Menu_Option_6m30_Mirror_Text_Focus_DrawStyle, _Zui_Menu_Option_6m30_Mirror_Text_Disabled_DrawStyle     },
 
-    // 304 = HWND_MENU_OPTION_6M30_MIRROR_OPTION
+    // 302 = HWND_MENU_OPTION_6M30_MIRROR_OPTION
     { NULL, _Zui_Menu_Option_6m30_Mirror_Option_Focus_DrawStyle, _Zui_Menu_Option_6m30_Mirror_Option_Disabled_DrawStyle     },
 
-    // 305 = HWND_MENU_OPTION_6M30_VERSION
+    // 303 = HWND_MENU_OPTION_6M30_VERSION
     { NULL, _Zui_Menu_Option_6m30_Version_Focus_DrawStyle, NULL     },
 
-    // 306 = HWND_MENU_OPTION_6M30_VERSION_TEXT
+    // 304 = HWND_MENU_OPTION_6M30_VERSION_TEXT
     { _Zui_Menu_Option_6m30_Version_Text_Normal_DrawStyle, _Zui_Menu_Option_6m30_Version_Text_Focus_DrawStyle, _Zui_Menu_Option_6m30_Version_Text_Disabled_DrawStyle     },
 
-    // 307 = HWND_MENU_OPTION_6M30_VERSION_OPTION
+    // 305 = HWND_MENU_OPTION_6M30_VERSION_OPTION
     { _Zui_Menu_Option_6m30_Version_Option_Normal_DrawStyle, _Zui_Menu_Option_6m30_Version_Option_Focus_DrawStyle, _Zui_Menu_Option_6m30_Version_Option_Disabled_DrawStyle     },
 
-    // 308 = HWND_MENU_OPTION_EPOP
+    // 306 = HWND_MENU_OPTION_EPOP
     { NULL, _Zui_Menu_Option_Epop_Focus_DrawStyle, NULL     },
 
-    // 309 = HWND_MENU_OPTION_EPOP_TEXT
+    // 307 = HWND_MENU_OPTION_EPOP_TEXT
     { _Zui_Menu_Option_Epop_Text_Normal_DrawStyle, _Zui_Menu_Option_Epop_Text_Focus_DrawStyle, _Zui_Menu_Option_Epop_Text_Disabled_DrawStyle     },
 
-    // 310 = HWND_MENU_OPTION_EPOP_OPTION
+    // 308 = HWND_MENU_OPTION_EPOP_OPTION
     { NULL, _Zui_Menu_Option_Epop_Option_Focus_DrawStyle, _Zui_Menu_Option_Epop_Option_Disabled_DrawStyle     },
 
-    // 311 = HWND_MENU_OPTION_EDID_SWITCH
+    // 309 = HWND_MENU_OPTION_EDID_SWITCH
     { NULL, _Zui_Menu_Option_Edid_Switch_Focus_DrawStyle, NULL     },
 
-    // 312 = HWND_MENU_OPTION_EDID_SWITCH_TEXT
+    // 310 = HWND_MENU_OPTION_EDID_SWITCH_TEXT
     { _Zui_Menu_Option_Edid_Switch_Text_Normal_DrawStyle, _Zui_Menu_Option_Edid_Switch_Text_Focus_DrawStyle, _Zui_Menu_Option_Edid_Switch_Text_Disabled_DrawStyle     },
 
-    // 313 = HWND_MENU_OPTION_EDID_SWITCH_OPTION
+    // 311 = HWND_MENU_OPTION_EDID_SWITCH_OPTION
     { NULL, _Zui_Menu_Option_Edid_Switch_Option_Focus_DrawStyle, _Zui_Menu_Option_Edid_Switch_Option_Disabled_DrawStyle     },
 
-    // 314 = HWND_MENU_OPTION_TRANSPARENT
+    // 312 = HWND_MENU_OPTION_TRANSPARENT
     { NULL, _Zui_Menu_Option_Transparent_Focus_DrawStyle, NULL     },
 
-    // 315 = HWND_MENU_OPTION_TRANSPARENT_TEXT
+    // 313 = HWND_MENU_OPTION_TRANSPARENT_TEXT
     { _Zui_Menu_Option_Transparent_Text_Normal_DrawStyle, _Zui_Menu_Option_Transparent_Text_Focus_DrawStyle, _Zui_Menu_Option_Transparent_Text_Disabled_DrawStyle     },
 
-    // 316 = HWND_MENU_OPTION_TRANSPARENT_OPTION
+    // 314 = HWND_MENU_OPTION_TRANSPARENT_OPTION
     { NULL, _Zui_Menu_Option_Transparent_Option_Focus_DrawStyle, _Zui_Menu_Option_Transparent_Option_Disabled_DrawStyle     },
 
-    // 317 = HWND_MENU_OPTION_SCART_IN
+    // 315 = HWND_MENU_OPTION_SCART_IN
     { NULL, _Zui_Menu_Option_Scart_In_Focus_DrawStyle, NULL     },
 
-    // 318 = HWND_MENU_OPTION_SCART_IN_TEXT
+    // 316 = HWND_MENU_OPTION_SCART_IN_TEXT
     { _Zui_Menu_Option_Scart_In_Text_Normal_DrawStyle, _Zui_Menu_Option_Scart_In_Text_Focus_DrawStyle, _Zui_Menu_Option_Scart_In_Text_Disabled_DrawStyle     },
 
-    // 319 = HWND_MENU_OPTION_SCART_IN_OPTION
+    // 317 = HWND_MENU_OPTION_SCART_IN_OPTION
     { NULL, NULL, NULL     },
 
-    // 320 = HWND_MENU_OPTION_TTS
+    // 318 = HWND_MENU_OPTION_TTS
     { NULL, _Zui_Menu_Option_Tts_Focus_DrawStyle, NULL     },
 
-    // 321 = HWND_MENU_OPTION_TTS_TEXT
+    // 319 = HWND_MENU_OPTION_TTS_TEXT
     { _Zui_Menu_Option_Tts_Text_Normal_DrawStyle, _Zui_Menu_Option_Tts_Text_Focus_DrawStyle, _Zui_Menu_Option_Tts_Text_Disabled_DrawStyle     },
 
-    // 322 = HWND_MENU_OPTION_SW_USB_UPGRADE
-    { NULL, _Zui_Menu_Option_Sw_Usb_Upgrade_Focus_DrawStyle, NULL     },
-
-    // 323 = HWND_MENU_OPTION_SW_USB_UPGRADE_TEXT
-    { _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Normal_DrawStyle, _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Focus_DrawStyle, _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Disabled_DrawStyle     },
-
-    // 324 = HWND_MENU_OPTION_AUTO_SEEK
+    // 320 = HWND_MENU_OPTION_AUTO_SEEK
     { NULL, _Zui_Menu_Option_Auto_Seek_Focus_DrawStyle, NULL     },
 
-    // 325 = HWND_MENU_OPTION_AUTO_SEEK_TEXT
+    // 321 = HWND_MENU_OPTION_AUTO_SEEK_TEXT
     { _Zui_Menu_Option_Auto_Seek_Text_Normal_DrawStyle, _Zui_Menu_Option_Auto_Seek_Text_Focus_DrawStyle, _Zui_Menu_Option_Auto_Seek_Text_Disabled_DrawStyle     },
 
-    // 326 = HWND_MENU_OPTION_AUTO_SEEK_OPTION
+    // 322 = HWND_MENU_OPTION_AUTO_SEEK_OPTION
     { _Zui_Menu_Option_Auto_Seek_Option_Normal_DrawStyle, _Zui_Menu_Option_Auto_Seek_Option_Focus_DrawStyle, _Zui_Menu_Option_Auto_Seek_Option_Disabled_DrawStyle     },
 
-    // 327 = HWND_MENU_OPTION_FAILOVER
+    // 323 = HWND_MENU_OPTION_FAILOVER
     { NULL, _Zui_Menu_Option_Failover_Focus_DrawStyle, NULL     },
 
-    // 328 = HWND_MENU_OPTION_FAILOVER_TEXT
+    // 324 = HWND_MENU_OPTION_FAILOVER_TEXT
     { _Zui_Menu_Option_Failover_Text_Normal_DrawStyle, _Zui_Menu_Option_Failover_Text_Focus_DrawStyle, _Zui_Menu_Option_Failover_Text_Disabled_DrawStyle     },
 
-    // 329 = HWND_MENU_OPTION_FAILOVER_OPTION
+    // 325 = HWND_MENU_OPTION_FAILOVER_OPTION
     { _Zui_Menu_Option_Failover_Option_Normal_DrawStyle, _Zui_Menu_Option_Failover_Option_Focus_DrawStyle, _Zui_Menu_Option_Failover_Option_Disabled_DrawStyle     },
 
-    // 330 = HWND_MENU_OPTION_DEFAULT_POWER
+    // 326 = HWND_MENU_OPTION_DEFAULT_POWER
     { NULL, _Zui_Menu_Option_Default_Power_Focus_DrawStyle, NULL     },
 
-    // 331 = HWND_MENU_OPTION_DEFAULT_POWER_TEXT
+    // 327 = HWND_MENU_OPTION_DEFAULT_POWER_TEXT
     { _Zui_Menu_Option_Default_Power_Text_Normal_DrawStyle, _Zui_Menu_Option_Default_Power_Text_Focus_DrawStyle, _Zui_Menu_Option_Default_Power_Text_Disabled_DrawStyle     },
 
-    // 332 = HWND_MENU_OPTION_DEFAULT_POWER_OPTION
+    // 328 = HWND_MENU_OPTION_DEFAULT_POWER_OPTION
     { _Zui_Menu_Option_Default_Power_Option_Normal_DrawStyle, _Zui_Menu_Option_Default_Power_Option_Focus_DrawStyle, _Zui_Menu_Option_Default_Power_Option_Disabled_DrawStyle     },
 
-    // 333 = HWND_MENU_OPTION_BL_SETUP
+    // 329 = HWND_MENU_OPTION_FACTORY_RESET
+    { NULL, _Zui_Menu_Option_Factory_Reset_Focus_DrawStyle, NULL     },
+
+    // 330 = HWND_MENU_OPTION_FACTORY_RESET_TEXT
+    { _Zui_Menu_Option_Factory_Reset_Text_Normal_DrawStyle, _Zui_Menu_Option_Factory_Reset_Text_Focus_DrawStyle, _Zui_Menu_Option_Factory_Reset_Text_Disabled_DrawStyle     },
+
+    // 331 = HWND_MENU_OPTION_SW_USB_UPGRADE
+    { NULL, _Zui_Menu_Option_Sw_Usb_Upgrade_Focus_DrawStyle, NULL     },
+
+    // 332 = HWND_MENU_OPTION_SW_USB_UPGRADE_TEXT
+    { _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Normal_DrawStyle, _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Focus_DrawStyle, _Zui_Menu_Option_Sw_Usb_Upgrade_Text_Disabled_DrawStyle     },
+
+    // 333 = HWND_MENU_OPTION_HOTKEY
+    { NULL, _Zui_Menu_Option_Hotkey_Focus_DrawStyle, NULL     },
+
+    // 334 = HWND_MENU_OPTION_HOTKEY_TEXT
+    { _Zui_Menu_Option_Hotkey_Text_Normal_DrawStyle, _Zui_Menu_Option_Hotkey_Text_Focus_DrawStyle, _Zui_Menu_Option_Hotkey_Text_Disabled_DrawStyle     },
+
+    // 335 = HWND_MENU_OPTION_BL_SETUP
     { NULL, _Zui_Menu_Option_Bl_Setup_Focus_DrawStyle, NULL     },
 
-    // 334 = HWND_MENU_OPTION_BL_SETUP_TEXT
+    // 336 = HWND_MENU_OPTION_BL_SETUP_TEXT
     { _Zui_Menu_Option_Bl_Setup_Text_Normal_DrawStyle, _Zui_Menu_Option_Bl_Setup_Text_Focus_DrawStyle, _Zui_Menu_Option_Bl_Setup_Text_Disabled_DrawStyle     },
 
-    // 335 = HWND_MENU_ICON_OPTION
+    // 337 = HWND_MENU_ICON_OPTION
     { _Zui_Menu_Icon_Option_Normal_DrawStyle, _Zui_Menu_Icon_Option_Focus_DrawStyle, _Zui_Menu_Icon_Option_Disabled_DrawStyle     },
 
-    // 336 = HWND_MENU_LOCK_PAGE
+    // 338 = HWND_MENU_LOCK_PAGE
     { NULL, NULL, NULL     },
 
-    // 337 = HWND_MENU_LOCK_TITLE
+    // 339 = HWND_MENU_LOCK_TITLE
     { _Zui_Menu_Lock_Title_Normal_DrawStyle, _Zui_Menu_Lock_Title_Focus_DrawStyle, _Zui_Menu_Lock_Title_Disabled_DrawStyle     },
 
-    // 338 = HWND_MENU_LOCK_PAGE_LIST
+    // 340 = HWND_MENU_LOCK_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 339 = HWND_MENU_LOCK_SYSTEM
+    // 341 = HWND_MENU_LOCK_SYSTEM
     { NULL, _Zui_Menu_Lock_System_Focus_DrawStyle, NULL     },
 
-    // 340 = HWND_MENU_LOCK_SYSTEM_TEXT
+    // 342 = HWND_MENU_LOCK_SYSTEM_TEXT
     { _Zui_Menu_Lock_System_Text_Normal_DrawStyle, _Zui_Menu_Lock_System_Text_Focus_DrawStyle, _Zui_Menu_Lock_System_Text_Disabled_DrawStyle     },
 
-    // 341 = HWND_MENU_LOCK_SYSTEM_OPTION
+    // 343 = HWND_MENU_LOCK_SYSTEM_OPTION
     { NULL, _Zui_Menu_Lock_System_Option_Focus_DrawStyle, _Zui_Menu_Lock_System_Option_Disabled_DrawStyle     },
 
-    // 342 = HWND_MENU_LOCK_SET_PASSWORD
+    // 344 = HWND_MENU_LOCK_SET_PASSWORD
     { NULL, _Zui_Menu_Lock_Set_Password_Focus_DrawStyle, NULL     },
 
-    // 343 = HWND_MENU_LOCK_SET_PASSWORD_TEXT
+    // 345 = HWND_MENU_LOCK_SET_PASSWORD_TEXT
     { _Zui_Menu_Lock_Set_Password_Text_Normal_DrawStyle, _Zui_Menu_Lock_Set_Password_Text_Focus_DrawStyle, _Zui_Menu_Lock_Set_Password_Text_Disabled_DrawStyle     },
 
-    // 344 = HWND_MENU_LOCK_BLOCK_PROGRAM
+    // 346 = HWND_MENU_LOCK_BLOCK_PROGRAM
     { NULL, _Zui_Menu_Lock_Block_Program_Focus_DrawStyle, NULL     },
 
-    // 345 = HWND_MENU_LOCK_BLOCK_PROGRAM_TEXT
+    // 347 = HWND_MENU_LOCK_BLOCK_PROGRAM_TEXT
     { _Zui_Menu_Lock_Block_Program_Text_Normal_DrawStyle, _Zui_Menu_Lock_Block_Program_Text_Focus_DrawStyle, _Zui_Menu_Lock_Block_Program_Text_Disabled_DrawStyle     },
 
-    // 346 = HWND_MENU_LOCK_PARENTAL_GUIDANCE
+    // 348 = HWND_MENU_LOCK_PARENTAL_GUIDANCE
     { NULL, _Zui_Menu_Lock_Parental_Guidance_Focus_DrawStyle, NULL     },
 
-    // 347 = HWND_MENU_LOCK_PARENTAL_GUIDANCE_TEXT
+    // 349 = HWND_MENU_LOCK_PARENTAL_GUIDANCE_TEXT
     { _Zui_Menu_Lock_Parental_Guidance_Text_Normal_DrawStyle, _Zui_Menu_Lock_Parental_Guidance_Text_Focus_DrawStyle, _Zui_Menu_Lock_Parental_Guidance_Text_Disabled_DrawStyle     },
 
-    // 348 = HWND_MENU_LOCK_PARENTAL_GUIDANCE_OPTION
+    // 350 = HWND_MENU_LOCK_PARENTAL_GUIDANCE_OPTION
     { NULL, _Zui_Menu_Lock_Parental_Guidance_Option_Focus_DrawStyle, _Zui_Menu_Lock_Parental_Guidance_Option_Disabled_DrawStyle     },
 
-    // 349 = HWND_MENU_LOCK_ENTER_PASSWORD
+    // 351 = HWND_MENU_LOCK_ENTER_PASSWORD
     { NULL, _Zui_Menu_Lock_Enter_Password_Focus_DrawStyle, NULL     },
 
-    // 350 = HWND_MENU_LOCK_ENTER_PASSWORD_TEXT
+    // 352 = HWND_MENU_LOCK_ENTER_PASSWORD_TEXT
     { _Zui_Menu_Lock_Enter_Password_Text_Normal_DrawStyle, _Zui_Menu_Lock_Enter_Password_Text_Focus_DrawStyle, _Zui_Menu_Lock_Enter_Password_Text_Disabled_DrawStyle     },
 
-    // 351 = HWND_MENU_LOCK_ENTER_PASSWORD_OPTION
+    // 353 = HWND_MENU_LOCK_ENTER_PASSWORD_OPTION
     { NULL, _Zui_Menu_Lock_Enter_Password_Option_Focus_DrawStyle, _Zui_Menu_Lock_Enter_Password_Option_Disabled_DrawStyle     },
 
-    // 352 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_SYSTEMLOCK
+    // 354 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_SYSTEMLOCK
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Focus_DrawStyle, NULL     },
 
-    // 353 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_SYSTEMLOCK_TEXT
+    // 355 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_SYSTEMLOCK_TEXT
     { _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Text_Normal_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Text_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Text_Disabled_DrawStyle     },
 
-    // 354 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_SYSTEMLOCK_OPTION
+    // 356 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_SYSTEMLOCK_OPTION
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Option_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Systemlock_Option_Disabled_DrawStyle     },
 
-    // 355 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_INPUTBLOCK
+    // 357 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_INPUTBLOCK
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Focus_DrawStyle, NULL     },
 
-    // 356 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_INPUTBLOCK_TEXT
+    // 358 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_INPUTBLOCK_TEXT
     { _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Text_Normal_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Text_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Inputblock_Text_Disabled_DrawStyle     },
 
-    // 357 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_US
+    // 359 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_US
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Us_Focus_DrawStyle, NULL     },
 
-    // 358 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_US_TEXT
+    // 360 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_US_TEXT
     { _Zui_Menu_Lock_Mainsubpage_Item_Us_Text_Normal_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Us_Text_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Us_Text_Disabled_DrawStyle     },
 
-    // 359 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_CANADA
+    // 361 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_CANADA
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Canada_Focus_DrawStyle, NULL     },
 
-    // 360 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_CANADA_TEXT
+    // 362 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_CANADA_TEXT
     { _Zui_Menu_Lock_Mainsubpage_Item_Canada_Text_Normal_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Canada_Text_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Canada_Text_Disabled_DrawStyle     },
 
-    // 361 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RRTSETTING
+    // 363 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RRTSETTING
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Focus_DrawStyle, NULL     },
 
-    // 362 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RRTSETTING_TEXT
+    // 364 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RRTSETTING_TEXT
     { _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Text_Normal_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Text_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Rrtsetting_Text_Disabled_DrawStyle     },
 
-    // 363 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RESETRRT
+    // 365 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RESETRRT
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Focus_DrawStyle, NULL     },
 
-    // 364 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RESETRRT_TEXT
+    // 366 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_RESETRRT_TEXT
     { _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Text_Normal_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Text_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Resetrrt_Text_Disabled_DrawStyle     },
 
-    // 365 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_UNRATED
+    // 367 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_UNRATED
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Focus_DrawStyle, NULL     },
 
-    // 366 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_UNRATED_TEXT
+    // 368 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_UNRATED_TEXT
     { _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Text_Normal_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Text_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Text_Disabled_DrawStyle     },
 
-    // 367 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_UNRATED_OPTION
+    // 369 = HWND_MENU_LOCK_MAINSUBPAGE_ITEM_UNRATED_OPTION
     { NULL, _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Option_Focus_DrawStyle, _Zui_Menu_Lock_Mainsubpage_Item_Unrated_Option_Disabled_DrawStyle     },
 
-    // 368 = HWND_MENU_ICON_LOCK
+    // 370 = HWND_MENU_ICON_LOCK
     { _Zui_Menu_Icon_Lock_Normal_DrawStyle, _Zui_Menu_Icon_Lock_Focus_DrawStyle, _Zui_Menu_Icon_Lock_Disabled_DrawStyle     },
 
-    // 369 = HWND_MENU_APP_PAGE
+    // 371 = HWND_MENU_APP_PAGE
     { NULL, NULL, NULL     },
 
-    // 370 = HWND_MENU_APP_PAGE_LIST
+    // 372 = HWND_MENU_APP_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 371 = HWND_MENU_APP_TITLE
+    // 373 = HWND_MENU_APP_TITLE
     { NULL, NULL, NULL     },
 
-    // 372 = HWND_MENU_APP_TITLE_TEXT
+    // 374 = HWND_MENU_APP_TITLE_TEXT
     { _Zui_Menu_App_Title_Text_Normal_DrawStyle, _Zui_Menu_App_Title_Text_Focus_DrawStyle, _Zui_Menu_App_Title_Text_Disabled_DrawStyle     },
 
-    // 373 = HWND_MENU_APP_DMP
+    // 375 = HWND_MENU_APP_DMP
     { NULL, _Zui_Menu_App_Dmp_Focus_DrawStyle, NULL     },
 
-    // 374 = HWND_MENU_APP_DMP_TEXT
+    // 376 = HWND_MENU_APP_DMP_TEXT
     { _Zui_Menu_App_Dmp_Text_Normal_DrawStyle, _Zui_Menu_App_Dmp_Text_Focus_DrawStyle, _Zui_Menu_App_Dmp_Text_Disabled_DrawStyle     },
 
-    // 375 = HWND_MENU_ICON_APP
+    // 377 = HWND_MENU_ICON_APP
     { _Zui_Menu_Icon_App_Normal_DrawStyle, _Zui_Menu_Icon_App_Focus_DrawStyle, _Zui_Menu_Icon_App_Disabled_DrawStyle     },
 
-    // 376 = HWND_MENU_PCMODE_PAGE
+    // 378 = HWND_MENU_PCMODE_PAGE
     { NULL, NULL, NULL     },
 
-    // 377 = HWND_MENU_PCMODE_PAGE_BG_TOP
+    // 379 = HWND_MENU_PCMODE_PAGE_BG_TOP
     { _Zui_Menu_Pcmode_Page_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 378 = HWND_MENU_PCMODE_PAGE_BG_L
+    // 380 = HWND_MENU_PCMODE_PAGE_BG_L
     { _Zui_Menu_Pcmode_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 379 = HWND_MENU_PCMODE_PAGE_BG_C
+    // 381 = HWND_MENU_PCMODE_PAGE_BG_C
     { _Zui_Menu_Pcmode_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 380 = HWND_MENU_PCMODE_PAGE_BG_R
+    // 382 = HWND_MENU_PCMODE_PAGE_BG_R
     { _Zui_Menu_Pcmode_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 381 = HWND_PCMODE_UP_ARROW
+    // 383 = HWND_PCMODE_UP_ARROW
     { _Zui_Pcmode_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 382 = HWND_PCMODE_DOWN_ARROW
+    // 384 = HWND_PCMODE_DOWN_ARROW
     { _Zui_Pcmode_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 383 = HWND_PCMODE_MENU
+    // 385 = HWND_PCMODE_MENU
     { NULL, NULL, NULL     },
 
-    // 384 = HWND_MENU_PCMODE_PAGE_LIST
+    // 386 = HWND_MENU_PCMODE_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 385 = HWND_MENU_PCMODE_HPOS
+    // 387 = HWND_MENU_PCMODE_HPOS
     { NULL, _Zui_Menu_Pcmode_Hpos_Focus_DrawStyle, NULL     },
 
-    // 386 = HWND_MENU_PCMODE_HPOS_OPTION
+    // 388 = HWND_MENU_PCMODE_HPOS_OPTION
     { _Zui_Menu_Pcmode_Hpos_Option_Normal_DrawStyle, _Zui_Menu_Pcmode_Hpos_Option_Focus_DrawStyle, _Zui_Menu_Pcmode_Hpos_Option_Disabled_DrawStyle     },
 
-    // 387 = HWND_MENU_PCMODE_HPOS_LEFT_ARROW
+    // 389 = HWND_MENU_PCMODE_HPOS_LEFT_ARROW
     { NULL, _Zui_Menu_Pcmode_Hpos_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 388 = HWND_MENU_PCMODE_HPOS_RIGHT_ARROW
+    // 390 = HWND_MENU_PCMODE_HPOS_RIGHT_ARROW
     { NULL, _Zui_Menu_Pcmode_Hpos_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 389 = HWND_MENU_PCMODE_HPOS_INC
+    // 391 = HWND_MENU_PCMODE_HPOS_INC
     { NULL, _Zui_Menu_Pcmode_Hpos_Inc_Focus_DrawStyle, NULL     },
 
-    // 390 = HWND_MENU_PCMODE_HPOS_DEC
+    // 392 = HWND_MENU_PCMODE_HPOS_DEC
     { NULL, _Zui_Menu_Pcmode_Hpos_Dec_Focus_DrawStyle, NULL     },
 
-    // 391 = HWND_MENU_PCMODE_VPOS
+    // 393 = HWND_MENU_PCMODE_VPOS
     { NULL, _Zui_Menu_Pcmode_Vpos_Focus_DrawStyle, NULL     },
 
-    // 392 = HWND_MENU_PCMODE_VPOS_OPTION
+    // 394 = HWND_MENU_PCMODE_VPOS_OPTION
     { _Zui_Menu_Pcmode_Vpos_Option_Normal_DrawStyle, _Zui_Menu_Pcmode_Vpos_Option_Focus_DrawStyle, _Zui_Menu_Pcmode_Vpos_Option_Disabled_DrawStyle     },
 
-    // 393 = HWND_MENU_PCMODE_VPOS_LEFT_ARROW
+    // 395 = HWND_MENU_PCMODE_VPOS_LEFT_ARROW
     { NULL, _Zui_Menu_Pcmode_Vpos_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 394 = HWND_MENU_PCMODE_VPOS_RIGHT_ARROW
+    // 396 = HWND_MENU_PCMODE_VPOS_RIGHT_ARROW
     { NULL, _Zui_Menu_Pcmode_Vpos_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 395 = HWND_MENU_PCMODE_VPOS_INC
+    // 397 = HWND_MENU_PCMODE_VPOS_INC
     { NULL, _Zui_Menu_Pcmode_Vpos_Inc_Focus_DrawStyle, NULL     },
 
-    // 396 = HWND_MENU_PCMODE_VPOS_DEC
+    // 398 = HWND_MENU_PCMODE_VPOS_DEC
     { NULL, _Zui_Menu_Pcmode_Vpos_Dec_Focus_DrawStyle, NULL     },
 
-    // 397 = HWND_MENU_PCMODE_SIZE
+    // 399 = HWND_MENU_PCMODE_SIZE
     { NULL, _Zui_Menu_Pcmode_Size_Focus_DrawStyle, NULL     },
 
-    // 398 = HWND_MENU_PCMODE_SIZE_OPTION
+    // 400 = HWND_MENU_PCMODE_SIZE_OPTION
     { _Zui_Menu_Pcmode_Size_Option_Normal_DrawStyle, _Zui_Menu_Pcmode_Size_Option_Focus_DrawStyle, _Zui_Menu_Pcmode_Size_Option_Disabled_DrawStyle     },
 
-    // 399 = HWND_MENU_PCMODE_SIZE_LEFT_ARROW
+    // 401 = HWND_MENU_PCMODE_SIZE_LEFT_ARROW
     { NULL, _Zui_Menu_Pcmode_Size_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 400 = HWND_MENU_PCMODE_SIZE_RIGHT_ARROW
+    // 402 = HWND_MENU_PCMODE_SIZE_RIGHT_ARROW
     { NULL, _Zui_Menu_Pcmode_Size_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 401 = HWND_MENU_PCMODE_SIZE_INC
+    // 403 = HWND_MENU_PCMODE_SIZE_INC
     { NULL, _Zui_Menu_Pcmode_Size_Inc_Focus_DrawStyle, NULL     },
 
-    // 402 = HWND_MENU_PCMODE_SIZE_DEC
+    // 404 = HWND_MENU_PCMODE_SIZE_DEC
     { NULL, _Zui_Menu_Pcmode_Size_Dec_Focus_DrawStyle, NULL     },
 
-    // 403 = HWND_MENU_PCMODE_PHASE
+    // 405 = HWND_MENU_PCMODE_PHASE
     { NULL, _Zui_Menu_Pcmode_Phase_Focus_DrawStyle, NULL     },
 
-    // 404 = HWND_MENU_PCMODE_PHASE_OPTION
+    // 406 = HWND_MENU_PCMODE_PHASE_OPTION
     { _Zui_Menu_Pcmode_Phase_Option_Normal_DrawStyle, _Zui_Menu_Pcmode_Phase_Option_Focus_DrawStyle, _Zui_Menu_Pcmode_Phase_Option_Disabled_DrawStyle     },
 
-    // 405 = HWND_MENU_PCMODE_PHASE_LEFT_ARROW
+    // 407 = HWND_MENU_PCMODE_PHASE_LEFT_ARROW
     { NULL, _Zui_Menu_Pcmode_Phase_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 406 = HWND_MENU_PCMODE_PHASE_RIGHT_ARROW
+    // 408 = HWND_MENU_PCMODE_PHASE_RIGHT_ARROW
     { NULL, _Zui_Menu_Pcmode_Phase_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 407 = HWND_MENU_PCMODE_PHASE_INC
+    // 409 = HWND_MENU_PCMODE_PHASE_INC
     { NULL, _Zui_Menu_Pcmode_Phase_Inc_Focus_DrawStyle, NULL     },
 
-    // 408 = HWND_MENU_PCMODE_PHASE_DEC
+    // 410 = HWND_MENU_PCMODE_PHASE_DEC
     { NULL, _Zui_Menu_Pcmode_Phase_Dec_Focus_DrawStyle, NULL     },
 
-    // 409 = HWND_MENU_PCMODE_AUTO_ADJUST
+    // 411 = HWND_MENU_PCMODE_AUTO_ADJUST
     { NULL, _Zui_Menu_Pcmode_Auto_Adjust_Focus_DrawStyle, NULL     },
 
-    // 410 = HWND_MENU_PCMODE_AUTO_ADJUST_COVER
+    // 412 = HWND_MENU_PCMODE_AUTO_ADJUST_COVER
     { NULL, _Zui_Menu_Pcmode_Auto_Adjust_Cover_Focus_DrawStyle, NULL     },
 
-    // 411 = HWND_MENU_PCMODE_AUTO_ADJUST_TEXT
+    // 413 = HWND_MENU_PCMODE_AUTO_ADJUST_TEXT
     { _Zui_Menu_Pcmode_Auto_Adjust_Text_Normal_DrawStyle, _Zui_Menu_Pcmode_Auto_Adjust_Text_Focus_DrawStyle, _Zui_Menu_Pcmode_Auto_Adjust_Text_Disabled_DrawStyle     },
 
-    // 412 = HWND_MENU_PCMODE_AUTO_ADJUST_OK
+    // 414 = HWND_MENU_PCMODE_AUTO_ADJUST_OK
     { NULL, NULL, NULL     },
 
-    // 413 = HWND_MENU_PCMODE_AUTO_GAIN
+    // 415 = HWND_MENU_PCMODE_AUTO_GAIN
     { NULL, _Zui_Menu_Pcmode_Auto_Gain_Focus_DrawStyle, NULL     },
 
-    // 414 = HWND_MENU_PCMODE_AUTO_GAIN_TEXT
+    // 416 = HWND_MENU_PCMODE_AUTO_GAIN_TEXT
     { _Zui_Menu_Pcmode_Auto_Gain_Text_Normal_DrawStyle, _Zui_Menu_Pcmode_Auto_Gain_Text_Focus_DrawStyle, _Zui_Menu_Pcmode_Auto_Gain_Text_Disabled_DrawStyle     },
 
-    // 415 = HWND_MENU_PCMODE_AUTO_GAIN_OPTION
+    // 417 = HWND_MENU_PCMODE_AUTO_GAIN_OPTION
     { _Zui_Menu_Pcmode_Auto_Gain_Option_Normal_DrawStyle, _Zui_Menu_Pcmode_Auto_Gain_Option_Focus_DrawStyle, _Zui_Menu_Pcmode_Auto_Gain_Option_Disabled_DrawStyle     },
 
-    // 416 = HWND_MENU_PCMODE_TITLE
+    // 418 = HWND_MENU_PCMODE_TITLE
     { NULL, _Zui_Menu_Pcmode_Title_Focus_DrawStyle, NULL     },
 
-    // 417 = HWND_MENU_PCMODE_TITLE_TEXT
+    // 419 = HWND_MENU_PCMODE_TITLE_TEXT
     { _Zui_Menu_Pcmode_Title_Text_Normal_DrawStyle, _Zui_Menu_Pcmode_Title_Text_Focus_DrawStyle, _Zui_Menu_Pcmode_Title_Text_Disabled_DrawStyle     },
 
-    // 418 = HWND_MENU_DLG_COMMON
+    // 420 = HWND_MENU_DLG_COMMON
     { NULL, NULL, NULL     },
 
-    // 419 = HWND_MENU_DLG_COMMON_BG
+    // 421 = HWND_MENU_DLG_COMMON_BG
     { NULL, NULL, NULL     },
 
-    // 420 = HWND_MENU_DLG_COMMON_BG_TOP
+    // 422 = HWND_MENU_DLG_COMMON_BG_TOP
     { _Zui_Menu_Dlg_Common_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 421 = HWND_MENU_DLG_COMMON_NEW_BG_L
+    // 423 = HWND_MENU_DLG_COMMON_NEW_BG_L
     { _Zui_Menu_Dlg_Common_New_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 422 = HWND_MENU_DLG_COMMON_NEW_BG_C
+    // 424 = HWND_MENU_DLG_COMMON_NEW_BG_C
     { _Zui_Menu_Dlg_Common_New_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 423 = HWND_MENU_DLG_COMMON_NEW_BG_R
+    // 425 = HWND_MENU_DLG_COMMON_NEW_BG_R
     { _Zui_Menu_Dlg_Common_New_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 424 = HWND_MENU_DLG_COMMON_BG_C_SETPW
+    // 426 = HWND_MENU_DLG_COMMON_BG_C_SETPW
     { _Zui_Menu_Dlg_Common_Bg_C_Setpw_Normal_DrawStyle, NULL, NULL     },
 
-    // 425 = HWND_MENU_DLG_COMMON_BG_L
+    // 427 = HWND_MENU_DLG_COMMON_BG_L
     { _Zui_Menu_Dlg_Common_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 426 = HWND_MENU_DLG_COMMON_BG_C
+    // 428 = HWND_MENU_DLG_COMMON_BG_C
     { _Zui_Menu_Dlg_Common_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 427 = HWND_MENU_DLG_COMMON_BG_R
+    // 429 = HWND_MENU_DLG_COMMON_BG_R
     { _Zui_Menu_Dlg_Common_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 428 = HWND_MENU_DLG_COMMON_BTN_DIVX_YES
+    // 430 = HWND_MENU_DLG_COMMON_BTN_DIVX_YES
     { _Zui_Menu_Dlg_Common_Btn_Divx_Yes_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Divx_Yes_Focus_DrawStyle, NULL     },
 
-    // 429 = HWND_MENU_DLG_COMMON_BTN_DIVX_NO
+    // 431 = HWND_MENU_DLG_COMMON_BTN_DIVX_NO
     { _Zui_Menu_Dlg_Common_Btn_Divx_No_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Divx_No_Focus_DrawStyle, NULL     },
 
-    // 430 = HWND_MENU_DLG_COMMON_BTN_DIVX_DONE
+    // 432 = HWND_MENU_DLG_COMMON_BTN_DIVX_DONE
     { _Zui_Menu_Dlg_Common_Btn_Divx_Done_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Divx_Done_Focus_DrawStyle, NULL     },
 
-    // 431 = HWND_MENU_DLG_COMMON_ICON
+    // 433 = HWND_MENU_DLG_COMMON_ICON
     { NULL, NULL, NULL     },
 
-    // 432 = HWND_MENU_DLG_COMMON_TEXT1
+    // 434 = HWND_MENU_DLG_COMMON_TEXT1
     { _Zui_Menu_Dlg_Common_Text1_Normal_DrawStyle, NULL, NULL     },
 
-    // 433 = HWND_MENU_DLG_COMMON_TEXT2
+    // 435 = HWND_MENU_DLG_COMMON_TEXT2
     { _Zui_Menu_Dlg_Common_Text2_Normal_DrawStyle, NULL, NULL     },
 
-    // 434 = HWND_MENU_DLG_COMMON_TEXT3
+    // 436 = HWND_MENU_DLG_COMMON_TEXT3
     { _Zui_Menu_Dlg_Common_Text3_Normal_DrawStyle, NULL, NULL     },
 
-    // 435 = HWND_MENU_DLG_COMMON_TEXT4
+    // 437 = HWND_MENU_DLG_COMMON_TEXT4
     { _Zui_Menu_Dlg_Common_Text4_Normal_DrawStyle, NULL, NULL     },
 
-    // 436 = HWND_MENU_DLG_COMMON_TEXT5
+    // 438 = HWND_MENU_DLG_COMMON_TEXT5
     { _Zui_Menu_Dlg_Common_Text5_Normal_DrawStyle, NULL, NULL     },
 
-    // 437 = HWND_MENU_DLG_COMMON_TEXT6
+    // 439 = HWND_MENU_DLG_COMMON_TEXT6
     { _Zui_Menu_Dlg_Common_Text6_Normal_DrawStyle, NULL, NULL     },
 
-    // 438 = HWND_MENU_DLG_COMMON_TEXT7
+    // 440 = HWND_MENU_DLG_COMMON_TEXT7
     { _Zui_Menu_Dlg_Common_Text7_Normal_DrawStyle, NULL, NULL     },
 
-    // 439 = HWND_MENU_DLG_COMMON_TEXT8
+    // 441 = HWND_MENU_DLG_COMMON_TEXT8
     { _Zui_Menu_Dlg_Common_Text8_Normal_DrawStyle, NULL, NULL     },
 
-    // 440 = HWND_MENU_DLG_COMMON_TEXT9
+    // 442 = HWND_MENU_DLG_COMMON_TEXT9
     { _Zui_Menu_Dlg_Common_Text9_Normal_DrawStyle, NULL, NULL     },
 
-    // 441 = HWND_MENU_DLG_COMMON_TEXT10
+    // 443 = HWND_MENU_DLG_COMMON_TEXT10
     { _Zui_Menu_Dlg_Common_Text10_Normal_DrawStyle, NULL, NULL     },
 
-    // 442 = HWND_MENU_DLG_COMMON_TEXT11
+    // 444 = HWND_MENU_DLG_COMMON_TEXT11
     { _Zui_Menu_Dlg_Common_Text11_Normal_DrawStyle, NULL, NULL     },
 
-    // 443 = HWND_MENU_DLG_COMMON_TEXT12
+    // 445 = HWND_MENU_DLG_COMMON_TEXT12
     { _Zui_Menu_Dlg_Common_Text12_Normal_DrawStyle, NULL, NULL     },
 
-    // 444 = HWND_MENU_DLG_COMMON_BAR
+    // 446 = HWND_MENU_DLG_COMMON_BAR
     { NULL, NULL, NULL     },
 
-    // 445 = HWND_MENU_DLG_PASSWORD_PANE0
+    // 447 = HWND_MENU_DLG_PASSWORD_PANE0
     { NULL, NULL, NULL     },
 
-    // 446 = HWND_MENU_DLG_PASSWORD_INPUT0_TEXT
+    // 448 = HWND_MENU_DLG_PASSWORD_INPUT0_TEXT
     { _Zui_Menu_Dlg_Password_Input0_Text_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Password_Input0_Text_Disabled_DrawStyle     },
 
-    // 447 = HWND_MENU_DLG_PASSWORD_INPUT0_1
+    // 449 = HWND_MENU_DLG_PASSWORD_INPUT0_1
     { _Zui_Menu_Dlg_Password_Input0_1_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input0_1_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input0_1_Disabled_DrawStyle     },
 
-    // 448 = HWND_MENU_DLG_PASSWORD_INPUT0_2
+    // 450 = HWND_MENU_DLG_PASSWORD_INPUT0_2
     { _Zui_Menu_Dlg_Password_Input0_2_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input0_2_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input0_2_Disabled_DrawStyle     },
 
-    // 449 = HWND_MENU_DLG_PASSWORD_INPUT0_3
+    // 451 = HWND_MENU_DLG_PASSWORD_INPUT0_3
     { _Zui_Menu_Dlg_Password_Input0_3_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input0_3_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input0_3_Disabled_DrawStyle     },
 
-    // 450 = HWND_MENU_DLG_PASSWORD_INPUT0_4
+    // 452 = HWND_MENU_DLG_PASSWORD_INPUT0_4
     { _Zui_Menu_Dlg_Password_Input0_4_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input0_4_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input0_4_Disabled_DrawStyle     },
 
-    // 451 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0
+    // 453 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0
     { NULL, NULL, NULL     },
 
-    // 452 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_1
+    // 454 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_1
     { _Zui_Menu_Dlg_Password_Pressed_Pane0_1_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Password_Pressed_Pane0_1_Disabled_DrawStyle     },
 
-    // 453 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_2
+    // 455 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_2
     { _Zui_Menu_Dlg_Password_Pressed_Pane0_2_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Password_Pressed_Pane0_2_Disabled_DrawStyle     },
 
-    // 454 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_3
+    // 456 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_3
     { _Zui_Menu_Dlg_Password_Pressed_Pane0_3_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Password_Pressed_Pane0_3_Disabled_DrawStyle     },
 
-    // 455 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_4
+    // 457 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE0_4
     { _Zui_Menu_Dlg_Password_Pressed_Pane0_4_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Password_Pressed_Pane0_4_Disabled_DrawStyle     },
 
-    // 456 = HWND_MENU_DLG_PASSWORD_PANE1
+    // 458 = HWND_MENU_DLG_PASSWORD_PANE1
     { NULL, NULL, NULL     },
 
-    // 457 = HWND_MENU_DLG_PASSWORD_INPUT1_TEXT
+    // 459 = HWND_MENU_DLG_PASSWORD_INPUT1_TEXT
     { _Zui_Menu_Dlg_Password_Input1_Text_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Password_Input1_Text_Disabled_DrawStyle     },
 
-    // 458 = HWND_MENU_DLG_PASSWORD_INPUT1_1
+    // 460 = HWND_MENU_DLG_PASSWORD_INPUT1_1
     { _Zui_Menu_Dlg_Password_Input1_1_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input1_1_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input1_1_Disabled_DrawStyle     },
 
-    // 459 = HWND_MENU_DLG_PASSWORD_INPUT1_2
+    // 461 = HWND_MENU_DLG_PASSWORD_INPUT1_2
     { _Zui_Menu_Dlg_Password_Input1_2_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input1_2_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input1_2_Disabled_DrawStyle     },
 
-    // 460 = HWND_MENU_DLG_PASSWORD_INPUT1_3
+    // 462 = HWND_MENU_DLG_PASSWORD_INPUT1_3
     { _Zui_Menu_Dlg_Password_Input1_3_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input1_3_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input1_3_Disabled_DrawStyle     },
 
-    // 461 = HWND_MENU_DLG_PASSWORD_INPUT1_4
+    // 463 = HWND_MENU_DLG_PASSWORD_INPUT1_4
     { _Zui_Menu_Dlg_Password_Input1_4_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input1_4_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input1_4_Disabled_DrawStyle     },
 
-    // 462 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1
+    // 464 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1
     { NULL, NULL, NULL     },
 
-    // 463 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_1
+    // 465 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_1
     { _Zui_Menu_Dlg_Password_Pressed_Pane1_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 464 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_2
+    // 466 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_2
     { _Zui_Menu_Dlg_Password_Pressed_Pane1_2_Normal_DrawStyle, NULL, NULL     },
 
-    // 465 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_3
+    // 467 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_3
     { _Zui_Menu_Dlg_Password_Pressed_Pane1_3_Normal_DrawStyle, NULL, NULL     },
 
-    // 466 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_4
+    // 468 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE1_4
     { _Zui_Menu_Dlg_Password_Pressed_Pane1_4_Normal_DrawStyle, NULL, NULL     },
 
-    // 467 = HWND_MENU_DLG_PASSWORD_PANE2
+    // 469 = HWND_MENU_DLG_PASSWORD_PANE2
     { NULL, NULL, NULL     },
 
-    // 468 = HWND_MENU_DLG_PASSWORD_INPUT2_TEXT
+    // 470 = HWND_MENU_DLG_PASSWORD_INPUT2_TEXT
     { _Zui_Menu_Dlg_Password_Input2_Text_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Password_Input2_Text_Disabled_DrawStyle     },
 
-    // 469 = HWND_MENU_DLG_PASSWORD_INPUT2_1
+    // 471 = HWND_MENU_DLG_PASSWORD_INPUT2_1
     { _Zui_Menu_Dlg_Password_Input2_1_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input2_1_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input2_1_Disabled_DrawStyle     },
 
-    // 470 = HWND_MENU_DLG_PASSWORD_INPUT2_2
+    // 472 = HWND_MENU_DLG_PASSWORD_INPUT2_2
     { _Zui_Menu_Dlg_Password_Input2_2_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input2_2_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input2_2_Disabled_DrawStyle     },
 
-    // 471 = HWND_MENU_DLG_PASSWORD_INPUT2_3
+    // 473 = HWND_MENU_DLG_PASSWORD_INPUT2_3
     { _Zui_Menu_Dlg_Password_Input2_3_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input2_3_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input2_3_Disabled_DrawStyle     },
 
-    // 472 = HWND_MENU_DLG_PASSWORD_INPUT2_4
+    // 474 = HWND_MENU_DLG_PASSWORD_INPUT2_4
     { _Zui_Menu_Dlg_Password_Input2_4_Normal_DrawStyle, _Zui_Menu_Dlg_Password_Input2_4_Focus_DrawStyle, _Zui_Menu_Dlg_Password_Input2_4_Disabled_DrawStyle     },
 
-    // 473 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2
+    // 475 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2
     { NULL, NULL, NULL     },
 
-    // 474 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_1
+    // 476 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_1
     { _Zui_Menu_Dlg_Password_Pressed_Pane2_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 475 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_2
+    // 477 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_2
     { _Zui_Menu_Dlg_Password_Pressed_Pane2_2_Normal_DrawStyle, NULL, NULL     },
 
-    // 476 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_3
+    // 478 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_3
     { _Zui_Menu_Dlg_Password_Pressed_Pane2_3_Normal_DrawStyle, NULL, NULL     },
 
-    // 477 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_4
+    // 479 = HWND_MENU_DLG_PASSWORD_PRESSED_PANE2_4
     { _Zui_Menu_Dlg_Password_Pressed_Pane2_4_Normal_DrawStyle, NULL, NULL     },
 
-    // 478 = HWND_MENU_DLG_COMMON_BTN_PANE
+    // 480 = HWND_MENU_DLG_COMMON_BTN_PANE
     { NULL, NULL, NULL     },
 
-    // 479 = HWND_MENU_DLG_COMMON_BTN_YES
+    // 481 = HWND_MENU_DLG_COMMON_BTN_YES
     { NULL, NULL, NULL     },
 
-    // 480 = HWND_MENU_DLG_COMMON_BTN_YES_LEFT_ARROW
+    // 482 = HWND_MENU_DLG_COMMON_BTN_YES_LEFT_ARROW
     { _Zui_Menu_Dlg_Common_Btn_Yes_Left_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Yes_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 481 = HWND_MENU_DLG_COMMON_BTN_YES_TEXT
+    // 483 = HWND_MENU_DLG_COMMON_BTN_YES_TEXT
     { _Zui_Menu_Dlg_Common_Btn_Yes_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Yes_Text_Focus_DrawStyle, NULL     },
 
-    // 482 = HWND_MENU_DLG_COMMON_BTN_NO
+    // 484 = HWND_MENU_DLG_COMMON_BTN_NO
     { NULL, NULL, NULL     },
 
-    // 483 = HWND_MENU_DLG_COMMON_BTN_NO_RIGHT_ARROW
+    // 485 = HWND_MENU_DLG_COMMON_BTN_NO_RIGHT_ARROW
     { _Zui_Menu_Dlg_Common_Btn_No_Right_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_No_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 484 = HWND_MENU_DLG_COMMON_BTN_NO_TEXT
+    // 486 = HWND_MENU_DLG_COMMON_BTN_NO_TEXT
     { _Zui_Menu_Dlg_Common_Btn_No_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_No_Text_Focus_DrawStyle, NULL     },
 
-    // 485 = HWND_MENU_DLG_COMMON_BTN_OK
+    // 487 = HWND_MENU_DLG_COMMON_BTN_OK
     { NULL, NULL, NULL     },
 
-    // 486 = HWND_MENU_DLG_COMMON_BTN_OK_LEFT_ARROW
+    // 488 = HWND_MENU_DLG_COMMON_BTN_OK_LEFT_ARROW
     { _Zui_Menu_Dlg_Common_Btn_Ok_Left_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Ok_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 487 = HWND_MENU_DLG_COMMON_BTN_OK_TEXT
+    // 489 = HWND_MENU_DLG_COMMON_BTN_OK_TEXT
     { _Zui_Menu_Dlg_Common_Btn_Ok_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Ok_Text_Focus_DrawStyle, NULL     },
 
-    // 488 = HWND_MENU_DLG_COMMON_BTN_CANCEL
+    // 490 = HWND_MENU_DLG_COMMON_BTN_CANCEL
     { NULL, NULL, NULL     },
 
-    // 489 = HWND_MENU_DLG_COMMON_BTN_CANCEL_RIGHT_ARROW
+    // 491 = HWND_MENU_DLG_COMMON_BTN_CANCEL_RIGHT_ARROW
     { _Zui_Menu_Dlg_Common_Btn_Cancel_Right_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Cancel_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 490 = HWND_MENU_DLG_COMMON_BTN_CANCEL_TEXT
+    // 492 = HWND_MENU_DLG_COMMON_BTN_CANCEL_TEXT
     { _Zui_Menu_Dlg_Common_Btn_Cancel_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Btn_Cancel_Text_Focus_DrawStyle, NULL     },
 
-    // 491 = HWND_MENU_DLG_COMMON_LOADANIMATION_BG
+    // 493 = HWND_MENU_DLG_COMMON_LOADANIMATION_BG
     { _Zui_Menu_Dlg_Common_Loadanimation_Bg_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_Bg_Focus_DrawStyle, NULL     },
 
-    // 492 = HWND_MENU_DLG_COMMON_LOADANIMATION
+    // 494 = HWND_MENU_DLG_COMMON_LOADANIMATION
     { _Zui_Menu_Dlg_Common_Loadanimation_Normal_DrawStyle, NULL, NULL     },
 
-    // 493 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON
+    // 495 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON
     { NULL, NULL, NULL     },
 
-    // 494 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG
+    // 496 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG
     { NULL, NULL, NULL     },
 
-    // 495 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_TOP
+    // 497 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_TOP
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 496 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_NEW_BG_L
+    // 498 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_NEW_BG_L
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_New_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 497 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_NEW_BG_C
+    // 499 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_NEW_BG_C
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_New_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 498 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_NEW_BG_R
+    // 500 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_NEW_BG_R
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_New_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 499 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_C_SETPW
+    // 501 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_C_SETPW
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_Bg_C_Setpw_Normal_DrawStyle, NULL, NULL     },
 
-    // 500 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_L
+    // 502 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_L
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 501 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_C
+    // 503 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_C
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 502 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_R
+    // 504 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BG_R
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 503 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BTN_YES
+    // 505 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BTN_YES
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_Yes_Normal_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_Yes_Focus_DrawStyle, NULL     },
 
-    // 504 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BTN_NO
+    // 506 = HWND_MENU_DLG_INPUT_EWS_LOCATION_COMMON_BTN_NO
     { _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_No_Normal_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Common_Btn_No_Focus_DrawStyle, NULL     },
 
-    // 505 = HWND_MENU_DLG_INPUT_EWS_LOCATION_CODE_PANE0
+    // 507 = HWND_MENU_DLG_INPUT_EWS_LOCATION_CODE_PANE0
     { NULL, NULL, NULL     },
 
-    // 506 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT
+    // 508 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT
     { _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_Disabled_DrawStyle     },
 
-    // 507 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_1
+    // 509 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_1
     { _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_1_Normal_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_1_Focus_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_1_Disabled_DrawStyle     },
 
-    // 508 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_2
+    // 510 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_2
     { _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_2_Normal_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_2_Focus_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_2_Disabled_DrawStyle     },
 
-    // 509 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_3
+    // 511 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_3
     { _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_3_Normal_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_3_Focus_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_3_Disabled_DrawStyle     },
 
-    // 510 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_4
+    // 512 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_4
     { _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_4_Normal_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_4_Focus_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_4_Disabled_DrawStyle     },
 
-    // 511 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_5
+    // 513 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT_5
     { _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_5_Normal_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_5_Focus_DrawStyle, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text_5_Disabled_DrawStyle     },
 
-    // 512 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT2
+    // 514 = HWND_MENU_DLG_INPUT_EWS_LOCATION_PASSWORD_INPUT0_TEXT2
     { _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text2_Normal_DrawStyle, NULL, _Zui_Menu_Dlg_Input_Ews_Location_Password_Input0_Text2_Disabled_DrawStyle     },
 
-    // 513 = HWND_MENU_DLG_TUNE_CONFIRM
+    // 515 = HWND_MENU_DLG_TUNE_CONFIRM
     { NULL, NULL, NULL     },
 
-    // 514 = HWND_MENU_DLG_TUNE_CONFIRM_BG_TOP
+    // 516 = HWND_MENU_DLG_TUNE_CONFIRM_BG_TOP
     { _Zui_Menu_Dlg_Tune_Confirm_Bg_Top_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Bg_Top_Focus_DrawStyle, NULL     },
 
-    // 515 = HWND_MENU_DLG_TUNE_CONFIRM_BG_L
+    // 517 = HWND_MENU_DLG_TUNE_CONFIRM_BG_L
     { _Zui_Menu_Dlg_Tune_Confirm_Bg_L_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Bg_L_Focus_DrawStyle, NULL     },
 
-    // 516 = HWND_MENU_DLG_TUNE_CONFIRM_BG_C
+    // 518 = HWND_MENU_DLG_TUNE_CONFIRM_BG_C
     { _Zui_Menu_Dlg_Tune_Confirm_Bg_C_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Bg_C_Focus_DrawStyle, NULL     },
 
-    // 517 = HWND_MENU_DLG_TUNE_CONFIRM_BG_R
+    // 519 = HWND_MENU_DLG_TUNE_CONFIRM_BG_R
     { _Zui_Menu_Dlg_Tune_Confirm_Bg_R_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Bg_R_Focus_DrawStyle, NULL     },
 
-    // 518 = HWND_MENU_DLG_TUNE_CONFIRM_BAR1
+    // 520 = HWND_MENU_DLG_TUNE_CONFIRM_BAR1
     { _Zui_Menu_Dlg_Tune_Confirm_Bar1_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Bar1_Focus_DrawStyle, NULL     },
 
-    // 519 = HWND_MENU_DLG_TUNE_CONFIRM_BAR2
+    // 521 = HWND_MENU_DLG_TUNE_CONFIRM_BAR2
     { _Zui_Menu_Dlg_Tune_Confirm_Bar2_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Bar2_Focus_DrawStyle, NULL     },
 
-    // 520 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID
+    // 522 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID
     { NULL, NULL, NULL     },
 
-    // 521 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_01
+    // 523 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_01
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_01_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_01_Focus_DrawStyle, NULL     },
 
-    // 522 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_01_MENU
+    // 524 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_01_MENU
     { NULL, NULL, NULL     },
 
-    // 523 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_01_OK
+    // 525 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_01_OK
     { NULL, NULL, NULL     },
 
-    // 524 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02
+    // 526 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_02_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_02_Focus_DrawStyle, NULL     },
 
-    // 525 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02_LEFT_ARROW
+    // 527 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02_LEFT_ARROW
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_02_Left_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_02_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 526 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02_MENU
+    // 528 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02_MENU
     { NULL, NULL, NULL     },
 
-    // 527 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02_OK
+    // 529 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_02_OK
     { NULL, NULL, NULL     },
 
-    // 528 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_03
+    // 530 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_03
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_03_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_03_Focus_DrawStyle, NULL     },
 
-    // 529 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_03_MENU
+    // 531 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_03_MENU
     { NULL, NULL, NULL     },
 
-    // 530 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_03_OK
+    // 532 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_03_OK
     { NULL, NULL, NULL     },
 
-    // 531 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04
+    // 533 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_04_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_04_Focus_DrawStyle, NULL     },
 
-    // 532 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04_UP_ARROW
+    // 534 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04_UP_ARROW
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_04_Up_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_04_Up_Arrow_Focus_DrawStyle, NULL     },
 
-    // 533 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04_MENU
+    // 535 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04_MENU
     { NULL, NULL, NULL     },
 
-    // 534 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04_OK
+    // 536 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_04_OK
     { NULL, NULL, NULL     },
 
-    // 535 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_05
+    // 537 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_05
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_05_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_05_Focus_DrawStyle, NULL     },
 
-    // 536 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_05_MENU
+    // 538 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_05_MENU
     { NULL, NULL, NULL     },
 
-    // 537 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_05_OK
+    // 539 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_05_OK
     { NULL, NULL, NULL     },
 
-    // 538 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06
+    // 540 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_06_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_06_Focus_DrawStyle, NULL     },
 
-    // 539 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06_DOWN_ARROW
+    // 541 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06_DOWN_ARROW
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_06_Down_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_06_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 540 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06_MENU
+    // 542 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06_MENU
     { NULL, NULL, NULL     },
 
-    // 541 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06_OK
+    // 543 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_06_OK
     { NULL, NULL, NULL     },
 
-    // 542 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_07
+    // 544 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_07
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_07_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_07_Focus_DrawStyle, NULL     },
 
-    // 543 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_07_MENU
+    // 545 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_07_MENU
     { NULL, NULL, NULL     },
 
-    // 544 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_07_OK
+    // 546 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_07_OK
     { NULL, NULL, NULL     },
 
-    // 545 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08
+    // 547 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_08_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_08_Focus_DrawStyle, NULL     },
 
-    // 546 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08_RIGHT_ARROW
+    // 548 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08_RIGHT_ARROW
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_08_Right_Arrow_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_08_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 547 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08_MENU
+    // 549 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08_MENU
     { NULL, NULL, NULL     },
 
-    // 548 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08_OK
+    // 550 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_08_OK
     { NULL, NULL, NULL     },
 
-    // 549 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_09
+    // 551 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_09
     { _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_09_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Country_Grid_09_Focus_DrawStyle, NULL     },
 
-    // 550 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_09_MENU
+    // 552 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_09_MENU
     { NULL, NULL, NULL     },
 
-    // 551 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_09_OK
+    // 553 = HWND_MENU_DLG_TUNE_CONFIRM_COUNTRY_GRID_09_OK
     { NULL, NULL, NULL     },
 
-    // 552 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE
+    // 554 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE
     { NULL, _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Focus_DrawStyle, NULL     },
 
-    // 553 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_TEXT
+    // 555 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_TEXT
     { _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Text_Focus_DrawStyle, NULL     },
 
-    // 554 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_OPTION
+    // 556 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_OPTION
     { _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Option_Normal_DrawStyle, _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Option_Focus_DrawStyle, NULL     },
 
-    // 555 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_LEFT_ARROW
+    // 557 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_LEFT_ARROW
     { NULL, _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 556 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_RIGHT_ARROW
+    // 558 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_RIGHT_ARROW
     { NULL, _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 557 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_DOWN_ARROW
+    // 559 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_DOWN_ARROW
     { NULL, _Zui_Menu_Dlg_Tune_Confirm_Tune_Type_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 558 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_MENU
+    // 560 = HWND_MENU_DLG_TUNE_CONFIRM_TUNE_TYPE_MENU
     { NULL, NULL, NULL     },
 
-    // 559 = HWND_MENU_DLG_DVB_SELECT_MENU
+    // 561 = HWND_MENU_DLG_DVB_SELECT_MENU
     { NULL, NULL, NULL     },
 
-    // 560 = HWND_MENU_DLG_DVB_SELECT_MENU_BG_C
+    // 562 = HWND_MENU_DLG_DVB_SELECT_MENU_BG_C
     { _Zui_Menu_Dlg_Dvb_Select_Menu_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 561 = HWND_MENU_DLG_DVB_SELECT_MENU_BG_L
+    // 563 = HWND_MENU_DLG_DVB_SELECT_MENU_BG_L
     { _Zui_Menu_Dlg_Dvb_Select_Menu_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 562 = HWND_MENU_DLG_DVB_SELECT_MENU_BG_R
+    // 564 = HWND_MENU_DLG_DVB_SELECT_MENU_BG_R
     { _Zui_Menu_Dlg_Dvb_Select_Menu_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 563 = HWND_MENU_DLG_DVB_SELECT_TUNE_TYPE_TEXT
+    // 565 = HWND_MENU_DLG_DVB_SELECT_TUNE_TYPE_TEXT
     { _Zui_Menu_Dlg_Dvb_Select_Tune_Type_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 564 = HWND_SELECTED_DVBT_BG
+    // 566 = HWND_SELECTED_DVBT_BG
     { NULL, _Zui_Selected_Dvbt_Bg_Focus_DrawStyle, NULL     },
 
-    // 565 = HWND_MENU_DLG_DVB_SELECT_DVBT_TYPE_TEXT
+    // 567 = HWND_MENU_DLG_DVB_SELECT_DVBT_TYPE_TEXT
     { _Zui_Menu_Dlg_Dvb_Select_Dvbt_Type_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Dvb_Select_Dvbt_Type_Text_Focus_DrawStyle, NULL     },
 
-    // 566 = HWND_SELECTED_DVBC_BG
+    // 568 = HWND_SELECTED_DVBC_BG
     { NULL, _Zui_Selected_Dvbc_Bg_Focus_DrawStyle, NULL     },
 
-    // 567 = HWND_MENU_DLG_DVB_SELECT_DVBC_TYPE_TEXT
+    // 569 = HWND_MENU_DLG_DVB_SELECT_DVBC_TYPE_TEXT
     { _Zui_Menu_Dlg_Dvb_Select_Dvbc_Type_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Dvb_Select_Dvbc_Type_Text_Focus_DrawStyle, NULL     },
 
-    // 568 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU
+    // 570 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU
     { NULL, NULL, NULL     },
 
-    // 569 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU_BG_C
+    // 571 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU_BG_C
     { _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_Menu_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 570 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU_BG_L
+    // 572 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU_BG_L
     { _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_Menu_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 571 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU_BG_R
+    // 573 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_MENU_BG_R
     { _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_Menu_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 572 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_TUNE_TYPE_TEXT
+    // 574 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_TUNE_TYPE_TEXT
     { _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_Tune_Type_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 573 = HWND_SELECTED_BANDWIDTH_7M_BG
+    // 575 = HWND_SELECTED_BANDWIDTH_7M_BG
     { NULL, _Zui_Selected_Bandwidth_7m_Bg_Focus_DrawStyle, NULL     },
 
-    // 574 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_7M_TEXT
+    // 576 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_7M_TEXT
     { _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_7m_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_7m_Text_Focus_DrawStyle, NULL     },
 
-    // 575 = HWND_SELECTED_BANDWIDTH_8M_BG
+    // 577 = HWND_SELECTED_BANDWIDTH_8M_BG
     { NULL, _Zui_Selected_Bandwidth_8m_Bg_Focus_DrawStyle, NULL     },
 
-    // 576 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_8M_TEXT
+    // 578 = HWND_MENU_DLG_DVBT_BANDWIDTH_SELECT_8M_TEXT
     { _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_8m_Text_Normal_DrawStyle, _Zui_Menu_Dlg_Dvbt_Bandwidth_Select_8m_Text_Focus_DrawStyle, NULL     },
 
-    // 577 = HWND_MENU_DLG_SIGNAL_INFORMAT
+    // 579 = HWND_MENU_DLG_SIGNAL_INFORMAT
     { NULL, NULL, NULL     },
 
-    // 578 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG
+    // 580 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG
     { NULL, NULL, NULL     },
 
-    // 579 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_TOP
+    // 581 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_TOP
     { _Zui_Menu_Dlg_Signal_Informat_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 580 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_1
+    // 582 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_1
     { _Zui_Menu_Dlg_Signal_Informat_Bg_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 581 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_2
+    // 583 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_2
     { _Zui_Menu_Dlg_Signal_Informat_Bg_2_Normal_DrawStyle, NULL, NULL     },
 
-    // 582 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_3
+    // 584 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_3
     { _Zui_Menu_Dlg_Signal_Informat_Bg_3_Normal_DrawStyle, NULL, NULL     },
 
-    // 583 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_4
+    // 585 = HWND_MENU_DLG_SIGNAL_INFORMAT_BG_4
     { _Zui_Menu_Dlg_Signal_Informat_Bg_4_Normal_DrawStyle, NULL, NULL     },
 
-    // 584 = HWND_MENU_DLG_SIGNAL_INFORMAT_TITLE
+    // 586 = HWND_MENU_DLG_SIGNAL_INFORMAT_TITLE
     { NULL, NULL, NULL     },
 
-    // 585 = HWND_MENU_DLG_SIGNAL_INFORMAT_TITLE_TXT
+    // 587 = HWND_MENU_DLG_SIGNAL_INFORMAT_TITLE_TXT
     { _Zui_Menu_Dlg_Signal_Informat_Title_Txt_Normal_DrawStyle, _Zui_Menu_Dlg_Signal_Informat_Title_Txt_Focus_DrawStyle, NULL     },
 
-    // 586 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL
+    // 588 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL
     { NULL, NULL, NULL     },
 
-    // 587 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL_NAME
+    // 589 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL_NAME
     { _Zui_Menu_Dlg_Signal_Informat_Channel_Name_Normal_DrawStyle, _Zui_Menu_Dlg_Signal_Informat_Channel_Name_Focus_DrawStyle, NULL     },
 
-    // 588 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL_UHF
+    // 590 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL_UHF
     { _Zui_Menu_Dlg_Signal_Informat_Channel_Uhf_Normal_DrawStyle, NULL, NULL     },
 
-    // 589 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL_FREQ
+    // 591 = HWND_MENU_DLG_SIGNAL_INFORMAT_CHANNEL_FREQ
     { _Zui_Menu_Dlg_Signal_Informat_Channel_Freq_Normal_DrawStyle, NULL, NULL     },
 
-    // 590 = HWND_MENU_DLG_SIGNAL_INFORMAT_NETWORK
+    // 592 = HWND_MENU_DLG_SIGNAL_INFORMAT_NETWORK
     { NULL, NULL, NULL     },
 
-    // 591 = HWND_MENU_DLG_SIGNAL_INFORMAT_NETWORK_NAME
+    // 593 = HWND_MENU_DLG_SIGNAL_INFORMAT_NETWORK_NAME
     { _Zui_Menu_Dlg_Signal_Informat_Network_Name_Normal_DrawStyle, _Zui_Menu_Dlg_Signal_Informat_Network_Name_Focus_DrawStyle, NULL     },
 
-    // 592 = HWND_MENU_DLG_SIGNAL_INFORMAT_MODULATION
+    // 594 = HWND_MENU_DLG_SIGNAL_INFORMAT_MODULATION
     { NULL, NULL, NULL     },
 
-    // 593 = HWND_MENU_DLG_SIGNAL_INFORMAT_MODULATION_NAME
+    // 595 = HWND_MENU_DLG_SIGNAL_INFORMAT_MODULATION_NAME
     { _Zui_Menu_Dlg_Signal_Informat_Modulation_Name_Normal_DrawStyle, _Zui_Menu_Dlg_Signal_Informat_Modulation_Name_Focus_DrawStyle, NULL     },
 
-    // 594 = HWND_MENU_DLG_SIGNAL_INFORMAT_QUALITY
+    // 596 = HWND_MENU_DLG_SIGNAL_INFORMAT_QUALITY
     { NULL, NULL, NULL     },
 
-    // 595 = HWND_MENU_DLG_SIGNAL_INFORMAT_QUALITY_PERCENT_VAL
+    // 597 = HWND_MENU_DLG_SIGNAL_INFORMAT_QUALITY_PERCENT_VAL
     { _Zui_Menu_Dlg_Signal_Informat_Quality_Percent_Val_Normal_DrawStyle, NULL, NULL     },
 
-    // 596 = HWND_MENU_DLG_SIGNAL_INFORMAT_QUALITY_INDEX_STRING
+    // 598 = HWND_MENU_DLG_SIGNAL_INFORMAT_QUALITY_INDEX_STRING
     { _Zui_Menu_Dlg_Signal_Informat_Quality_Index_String_Normal_DrawStyle, NULL, NULL     },
 
-    // 597 = HWND_MENU_DLG_SIGNAL_INFORMAT_STRENGTH
+    // 599 = HWND_MENU_DLG_SIGNAL_INFORMAT_STRENGTH
     { NULL, NULL, NULL     },
 
-    // 598 = HWND_MENU_DLG_SIGNAL_INFORMAT_STRENGTH_PERCENT_VAL
+    // 600 = HWND_MENU_DLG_SIGNAL_INFORMAT_STRENGTH_PERCENT_VAL
     { _Zui_Menu_Dlg_Signal_Informat_Strength_Percent_Val_Normal_DrawStyle, NULL, NULL     },
 
-    // 599 = HWND_MENU_DLG_SIGNAL_INFORMAT_STRENGTH_INDEX_STRING
+    // 601 = HWND_MENU_DLG_SIGNAL_INFORMAT_STRENGTH_INDEX_STRING
     { _Zui_Menu_Dlg_Signal_Informat_Strength_Index_String_Normal_DrawStyle, NULL, NULL     },
 
-    // 600 = HWND_MENU_PIP_PAGE
+    // 602 = HWND_MENU_PIP_PAGE
     { NULL, NULL, NULL     },
 
-    // 601 = HWND_MENU_PIP_PAGE_BG_TOP
+    // 603 = HWND_MENU_PIP_PAGE_BG_TOP
     { _Zui_Menu_Pip_Page_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 602 = HWND_MENU_PIP_PAGE_BG_L
+    // 604 = HWND_MENU_PIP_PAGE_BG_L
     { _Zui_Menu_Pip_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 603 = HWND_MENU_PIP_PAGE_BG_C
+    // 605 = HWND_MENU_PIP_PAGE_BG_C
     { _Zui_Menu_Pip_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 604 = HWND_MENU_PIP_PAGE_BG_R
+    // 606 = HWND_MENU_PIP_PAGE_BG_R
     { _Zui_Menu_Pip_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 605 = HWND_PIP_UP_ARROW
+    // 607 = HWND_PIP_UP_ARROW
     { _Zui_Pip_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 606 = HWND_PIP_DOWN_ARROW
+    // 608 = HWND_PIP_DOWN_ARROW
     { _Zui_Pip_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 607 = HWND_PIPMODE_MENU
+    // 609 = HWND_PIPMODE_MENU
     { NULL, NULL, NULL     },
 
-    // 608 = HWND_MENU_PIP_PAGE_LIST
+    // 610 = HWND_MENU_PIP_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 609 = HWND_MENU_PIP_PIPMODE
+    // 611 = HWND_MENU_PIP_PIPMODE
     { NULL, _Zui_Menu_Pip_Pipmode_Focus_DrawStyle, NULL     },
 
-    // 610 = HWND_MENU_PIP_PIPMODE_TEXT
+    // 612 = HWND_MENU_PIP_PIPMODE_TEXT
     { _Zui_Menu_Pip_Pipmode_Text_Normal_DrawStyle, _Zui_Menu_Pip_Pipmode_Text_Focus_DrawStyle, _Zui_Menu_Pip_Pipmode_Text_Disabled_DrawStyle     },
 
-    // 611 = HWND_MENU_PIP_PIPMODE_OPTION
+    // 613 = HWND_MENU_PIP_PIPMODE_OPTION
     { _Zui_Menu_Pip_Pipmode_Option_Normal_DrawStyle, _Zui_Menu_Pip_Pipmode_Option_Focus_DrawStyle, _Zui_Menu_Pip_Pipmode_Option_Disabled_DrawStyle     },
 
-    // 612 = HWND_MENU_PIP_PIPMODE_LEFT_ARROW
+    // 614 = HWND_MENU_PIP_PIPMODE_LEFT_ARROW
     { NULL, _Zui_Menu_Pip_Pipmode_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 613 = HWND_MENU_PIP_PIPMODE_RIGHT_ARROW
+    // 615 = HWND_MENU_PIP_PIPMODE_RIGHT_ARROW
     { NULL, _Zui_Menu_Pip_Pipmode_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 614 = HWND_MENU_PIP_PIPMODE_COVER
+    // 616 = HWND_MENU_PIP_PIPMODE_COVER
     { NULL, _Zui_Menu_Pip_Pipmode_Cover_Focus_DrawStyle, NULL     },
 
-    // 615 = HWND_MENU_PIP_SUBSRC
+    // 617 = HWND_MENU_PIP_SUBSRC
     { NULL, _Zui_Menu_Pip_Subsrc_Focus_DrawStyle, NULL     },
 
-    // 616 = HWND_MENU_PIP_SUBSRC_OPTION
+    // 618 = HWND_MENU_PIP_SUBSRC_OPTION
     { _Zui_Menu_Pip_Subsrc_Option_Normal_DrawStyle, _Zui_Menu_Pip_Subsrc_Option_Focus_DrawStyle, _Zui_Menu_Pip_Subsrc_Option_Disabled_DrawStyle     },
 
-    // 617 = HWND_MENU_PIP_SUBSRC_LEFT_ARROW
+    // 619 = HWND_MENU_PIP_SUBSRC_LEFT_ARROW
     { NULL, _Zui_Menu_Pip_Subsrc_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 618 = HWND_MENU_PIP_SUBSRC_RIGHT_ARROW
+    // 620 = HWND_MENU_PIP_SUBSRC_RIGHT_ARROW
     { NULL, _Zui_Menu_Pip_Subsrc_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 619 = HWND_MENU_PIP_SUBSRC_INC
+    // 621 = HWND_MENU_PIP_SUBSRC_INC
     { NULL, _Zui_Menu_Pip_Subsrc_Inc_Focus_DrawStyle, NULL     },
 
-    // 620 = HWND_MENU_PIP_SUBSRC_DEC
+    // 622 = HWND_MENU_PIP_SUBSRC_DEC
     { NULL, _Zui_Menu_Pip_Subsrc_Dec_Focus_DrawStyle, NULL     },
 
-    // 621 = HWND_MENU_PIP_SIZE
+    // 623 = HWND_MENU_PIP_SIZE
     { NULL, _Zui_Menu_Pip_Size_Focus_DrawStyle, NULL     },
 
-    // 622 = HWND_MENU_PIP_SIZE_OPTION
+    // 624 = HWND_MENU_PIP_SIZE_OPTION
     { _Zui_Menu_Pip_Size_Option_Normal_DrawStyle, _Zui_Menu_Pip_Size_Option_Focus_DrawStyle, _Zui_Menu_Pip_Size_Option_Disabled_DrawStyle     },
 
-    // 623 = HWND_MENU_PIP_SIZE_LEFT_ARROW
+    // 625 = HWND_MENU_PIP_SIZE_LEFT_ARROW
     { NULL, _Zui_Menu_Pip_Size_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 624 = HWND_MENU_PIP_SIZE_RIGHT_ARROW
+    // 626 = HWND_MENU_PIP_SIZE_RIGHT_ARROW
     { NULL, _Zui_Menu_Pip_Size_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 625 = HWND_MENU_PIP_SIZE_INC
+    // 627 = HWND_MENU_PIP_SIZE_INC
     { NULL, _Zui_Menu_Pip_Size_Inc_Focus_DrawStyle, NULL     },
 
-    // 626 = HWND_MENU_PIP_SIZE_DEC
+    // 628 = HWND_MENU_PIP_SIZE_DEC
     { NULL, _Zui_Menu_Pip_Size_Dec_Focus_DrawStyle, NULL     },
 
-    // 627 = HWND_MENU_PIP_POSITION
+    // 629 = HWND_MENU_PIP_POSITION
     { NULL, _Zui_Menu_Pip_Position_Focus_DrawStyle, NULL     },
 
-    // 628 = HWND_MENU_PIP_POSITION_OPTION
+    // 630 = HWND_MENU_PIP_POSITION_OPTION
     { _Zui_Menu_Pip_Position_Option_Normal_DrawStyle, _Zui_Menu_Pip_Position_Option_Focus_DrawStyle, _Zui_Menu_Pip_Position_Option_Disabled_DrawStyle     },
 
-    // 629 = HWND_MENU_PIP_POSITION_LEFT_ARROW
+    // 631 = HWND_MENU_PIP_POSITION_LEFT_ARROW
     { NULL, _Zui_Menu_Pip_Position_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 630 = HWND_MENU_PIP_POSITION_RIGHT_ARROW
+    // 632 = HWND_MENU_PIP_POSITION_RIGHT_ARROW
     { NULL, _Zui_Menu_Pip_Position_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 631 = HWND_MENU_PIP_POSITION_INC
+    // 633 = HWND_MENU_PIP_POSITION_INC
     { NULL, _Zui_Menu_Pip_Position_Inc_Focus_DrawStyle, NULL     },
 
-    // 632 = HWND_MENU_PIP_POSITION_DEC
+    // 634 = HWND_MENU_PIP_POSITION_DEC
     { NULL, _Zui_Menu_Pip_Position_Dec_Focus_DrawStyle, NULL     },
 
-    // 633 = HWND_MENU_PIP_BORDER
+    // 635 = HWND_MENU_PIP_BORDER
     { NULL, _Zui_Menu_Pip_Border_Focus_DrawStyle, NULL     },
 
-    // 634 = HWND_MENU_PIP_BORDER_OPTION
+    // 636 = HWND_MENU_PIP_BORDER_OPTION
     { _Zui_Menu_Pip_Border_Option_Normal_DrawStyle, _Zui_Menu_Pip_Border_Option_Focus_DrawStyle, _Zui_Menu_Pip_Border_Option_Disabled_DrawStyle     },
 
-    // 635 = HWND_MENU_PIP_BORDER_LEFT_ARROW
+    // 637 = HWND_MENU_PIP_BORDER_LEFT_ARROW
     { NULL, _Zui_Menu_Pip_Border_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 636 = HWND_MENU_PIP_BORDER_RIGHT_ARROW
+    // 638 = HWND_MENU_PIP_BORDER_RIGHT_ARROW
     { NULL, _Zui_Menu_Pip_Border_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 637 = HWND_MENU_PIP_BORDER_INC
+    // 639 = HWND_MENU_PIP_BORDER_INC
     { NULL, _Zui_Menu_Pip_Border_Inc_Focus_DrawStyle, NULL     },
 
-    // 638 = HWND_MENU_PIP_BORDER_DEC
+    // 640 = HWND_MENU_PIP_BORDER_DEC
     { NULL, _Zui_Menu_Pip_Border_Dec_Focus_DrawStyle, NULL     },
 
-    // 639 = HWND_MENU_PIP_SOUND_SRC
+    // 641 = HWND_MENU_PIP_SOUND_SRC
     { NULL, _Zui_Menu_Pip_Sound_Src_Focus_DrawStyle, NULL     },
 
-    // 640 = HWND_MENU_PIP_SOUND_SRC_OPTION
+    // 642 = HWND_MENU_PIP_SOUND_SRC_OPTION
     { _Zui_Menu_Pip_Sound_Src_Option_Normal_DrawStyle, _Zui_Menu_Pip_Sound_Src_Option_Focus_DrawStyle, _Zui_Menu_Pip_Sound_Src_Option_Disabled_DrawStyle     },
 
-    // 641 = HWND_MENU_PIP_SOUND_SRC_LEFT_ARROW
+    // 643 = HWND_MENU_PIP_SOUND_SRC_LEFT_ARROW
     { NULL, _Zui_Menu_Pip_Sound_Src_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 642 = HWND_MENU_PIP_SOUND_SRC_RIGHT_ARROW
+    // 644 = HWND_MENU_PIP_SOUND_SRC_RIGHT_ARROW
     { NULL, _Zui_Menu_Pip_Sound_Src_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 643 = HWND_MENU_PIP_SOUND_SRC_INC
+    // 645 = HWND_MENU_PIP_SOUND_SRC_INC
     { NULL, _Zui_Menu_Pip_Sound_Src_Inc_Focus_DrawStyle, NULL     },
 
-    // 644 = HWND_MENU_PIP_SOUND_SRC_DEC
+    // 646 = HWND_MENU_PIP_SOUND_SRC_DEC
     { NULL, _Zui_Menu_Pip_Sound_Src_Dec_Focus_DrawStyle, NULL     },
 
-    // 645 = HWND_MENU_PIP_SWAP
+    // 647 = HWND_MENU_PIP_SWAP
     { NULL, _Zui_Menu_Pip_Swap_Focus_DrawStyle, NULL     },
 
-    // 646 = HWND_MENU_PIP_SWAP_TEXT
+    // 648 = HWND_MENU_PIP_SWAP_TEXT
     { _Zui_Menu_Pip_Swap_Text_Normal_DrawStyle, _Zui_Menu_Pip_Swap_Text_Focus_DrawStyle, _Zui_Menu_Pip_Swap_Text_Disabled_DrawStyle     },
 
-    // 647 = HWND_MENU_PIP_SWAP_LEFT_ARROW
+    // 649 = HWND_MENU_PIP_SWAP_LEFT_ARROW
     { NULL, _Zui_Menu_Pip_Swap_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 648 = HWND_MENU_PIP_SWAP_RIGHT_ARROW
+    // 650 = HWND_MENU_PIP_SWAP_RIGHT_ARROW
     { NULL, _Zui_Menu_Pip_Swap_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 649 = HWND_MENU_PIP_SWAP_INC
+    // 651 = HWND_MENU_PIP_SWAP_INC
     { NULL, _Zui_Menu_Pip_Swap_Inc_Focus_DrawStyle, NULL     },
 
-    // 650 = HWND_MENU_PIP_SWAP_DEC
+    // 652 = HWND_MENU_PIP_SWAP_DEC
     { NULL, _Zui_Menu_Pip_Swap_Dec_Focus_DrawStyle, NULL     },
 
-    // 651 = HWND_MENU_COMMON_ADJ_PAGE
+    // 653 = HWND_MENU_COMMON_ADJ_PAGE
     { NULL, NULL, NULL     },
 
-    // 652 = HWND_MENU_COMMON_ADJ_PAGE_BG_TOP
+    // 654 = HWND_MENU_COMMON_ADJ_PAGE_BG_TOP
     { _Zui_Menu_Common_Adj_Page_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 653 = HWND_MENU_COMMON_ADJ_PAGE_BG_L
+    // 655 = HWND_MENU_COMMON_ADJ_PAGE_BG_L
     { _Zui_Menu_Common_Adj_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 654 = HWND_MENU_COMMON_ADJ_PAGE_BG_C
+    // 656 = HWND_MENU_COMMON_ADJ_PAGE_BG_C
     { _Zui_Menu_Common_Adj_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 655 = HWND_MENU_COMMON_ADJ_PAGE_BG_R
+    // 657 = HWND_MENU_COMMON_ADJ_PAGE_BG_R
     { _Zui_Menu_Common_Adj_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 656 = HWND_COMMON_ADJ_UP_ARROW
+    // 658 = HWND_COMMON_ADJ_UP_ARROW
     { _Zui_Common_Adj_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 657 = HWND_COMMON_ADJ_DOWN_ARROW
+    // 659 = HWND_COMMON_ADJ_DOWN_ARROW
     { _Zui_Common_Adj_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 658 = HWND_COMMON_ADJ_MENU
+    // 660 = HWND_COMMON_ADJ_MENU
     { NULL, NULL, NULL     },
 
-    // 659 = HWND_MENU_COMMON_ADJ_PAGE_LIST
+    // 661 = HWND_MENU_COMMON_ADJ_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 660 = HWND_MENU_COMMON_ADJ_ITEM1
+    // 662 = HWND_MENU_COMMON_ADJ_ITEM1
     { NULL, _Zui_Menu_Common_Adj_Item1_Focus_DrawStyle, NULL     },
 
-    // 661 = HWND_MENU_COMMON_ADJ_ITEM1_TEXT
+    // 663 = HWND_MENU_COMMON_ADJ_ITEM1_TEXT
     { _Zui_Menu_Common_Adj_Item1_Text_Normal_DrawStyle, _Zui_Menu_Common_Adj_Item1_Text_Focus_DrawStyle, _Zui_Menu_Common_Adj_Item1_Text_Disabled_DrawStyle     },
 
-    // 662 = HWND_MENU_COMMON_ADJ_ITEM1_OPTION
+    // 664 = HWND_MENU_COMMON_ADJ_ITEM1_OPTION
     { _Zui_Menu_Common_Adj_Item1_Option_Normal_DrawStyle, _Zui_Menu_Common_Adj_Item1_Option_Focus_DrawStyle, _Zui_Menu_Common_Adj_Item1_Option_Disabled_DrawStyle     },
 
-    // 663 = HWND_MENU_COMMON_ADJ_ITEM1_LEFT_ARROW
+    // 665 = HWND_MENU_COMMON_ADJ_ITEM1_LEFT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item1_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 664 = HWND_MENU_COMMON_ADJ_ITEM1_RIGHT_ARROW
+    // 666 = HWND_MENU_COMMON_ADJ_ITEM1_RIGHT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item1_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 665 = HWND_MENU_COMMON_ADJ_ITEM1_COVER
+    // 667 = HWND_MENU_COMMON_ADJ_ITEM1_COVER
     { NULL, _Zui_Menu_Common_Adj_Item1_Cover_Focus_DrawStyle, NULL     },
 
-    // 666 = HWND_MENU_COMMON_ADJ_ITEM2
+    // 668 = HWND_MENU_COMMON_ADJ_ITEM2
     { NULL, _Zui_Menu_Common_Adj_Item2_Focus_DrawStyle, NULL     },
 
-    // 667 = HWND_MENU_COMMON_ADJ_ITEM2_OPTION
+    // 669 = HWND_MENU_COMMON_ADJ_ITEM2_OPTION
     { _Zui_Menu_Common_Adj_Item2_Option_Normal_DrawStyle, _Zui_Menu_Common_Adj_Item2_Option_Focus_DrawStyle, _Zui_Menu_Common_Adj_Item2_Option_Disabled_DrawStyle     },
 
-    // 668 = HWND_MENU_COMMON_ADJ_ITEM2_LEFT_ARROW
+    // 670 = HWND_MENU_COMMON_ADJ_ITEM2_LEFT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item2_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 669 = HWND_MENU_COMMON_ADJ_ITEM2_RIGHT_ARROW
+    // 671 = HWND_MENU_COMMON_ADJ_ITEM2_RIGHT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item2_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 670 = HWND_MENU_COMMON_ADJ_ITEM2_INC
+    // 672 = HWND_MENU_COMMON_ADJ_ITEM2_INC
     { NULL, _Zui_Menu_Common_Adj_Item2_Inc_Focus_DrawStyle, NULL     },
 
-    // 671 = HWND_MENU_COMMON_ADJ_ITEM2_DEC
+    // 673 = HWND_MENU_COMMON_ADJ_ITEM2_DEC
     { NULL, _Zui_Menu_Common_Adj_Item2_Dec_Focus_DrawStyle, NULL     },
 
-    // 672 = HWND_MENU_COMMON_ADJ_ITEM3
+    // 674 = HWND_MENU_COMMON_ADJ_ITEM3
     { NULL, _Zui_Menu_Common_Adj_Item3_Focus_DrawStyle, NULL     },
 
-    // 673 = HWND_MENU_COMMON_ADJ_ITEM3_OPTION
+    // 675 = HWND_MENU_COMMON_ADJ_ITEM3_OPTION
     { _Zui_Menu_Common_Adj_Item3_Option_Normal_DrawStyle, _Zui_Menu_Common_Adj_Item3_Option_Focus_DrawStyle, _Zui_Menu_Common_Adj_Item3_Option_Disabled_DrawStyle     },
 
-    // 674 = HWND_MENU_COMMON_ADJ_ITEM3_LEFT_ARROW
+    // 676 = HWND_MENU_COMMON_ADJ_ITEM3_LEFT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item3_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 675 = HWND_MENU_COMMON_ADJ_ITEM3_RIGHT_ARROW
+    // 677 = HWND_MENU_COMMON_ADJ_ITEM3_RIGHT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item3_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 676 = HWND_MENU_COMMON_ADJ_ITEM3_INC
+    // 678 = HWND_MENU_COMMON_ADJ_ITEM3_INC
     { NULL, _Zui_Menu_Common_Adj_Item3_Inc_Focus_DrawStyle, NULL     },
 
-    // 677 = HWND_MENU_COMMON_ADJ_ITEM3_DEC
+    // 679 = HWND_MENU_COMMON_ADJ_ITEM3_DEC
     { NULL, _Zui_Menu_Common_Adj_Item3_Dec_Focus_DrawStyle, NULL     },
 
-    // 678 = HWND_MENU_COMMON_ADJ_ITEM4
+    // 680 = HWND_MENU_COMMON_ADJ_ITEM4
     { NULL, _Zui_Menu_Common_Adj_Item4_Focus_DrawStyle, NULL     },
 
-    // 679 = HWND_MENU_COMMON_ADJ_ITEM4_OPTION
+    // 681 = HWND_MENU_COMMON_ADJ_ITEM4_OPTION
     { _Zui_Menu_Common_Adj_Item4_Option_Normal_DrawStyle, _Zui_Menu_Common_Adj_Item4_Option_Focus_DrawStyle, _Zui_Menu_Common_Adj_Item4_Option_Disabled_DrawStyle     },
 
-    // 680 = HWND_MENU_COMMON_ADJ_ITEM4_LEFT_ARROW
+    // 682 = HWND_MENU_COMMON_ADJ_ITEM4_LEFT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item4_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 681 = HWND_MENU_COMMON_ADJ_ITEM4_RIGHT_ARROW
+    // 683 = HWND_MENU_COMMON_ADJ_ITEM4_RIGHT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item4_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 682 = HWND_MENU_COMMON_ADJ_ITEM4_INC
+    // 684 = HWND_MENU_COMMON_ADJ_ITEM4_INC
     { NULL, _Zui_Menu_Common_Adj_Item4_Inc_Focus_DrawStyle, NULL     },
 
-    // 683 = HWND_MENU_COMMON_ADJ_ITEM4_DEC
+    // 685 = HWND_MENU_COMMON_ADJ_ITEM4_DEC
     { NULL, _Zui_Menu_Common_Adj_Item4_Dec_Focus_DrawStyle, NULL     },
 
-    // 684 = HWND_MENU_COMMON_ADJ_ITEM5
+    // 686 = HWND_MENU_COMMON_ADJ_ITEM5
     { NULL, _Zui_Menu_Common_Adj_Item5_Focus_DrawStyle, NULL     },
 
-    // 685 = HWND_MENU_COMMON_ADJ_ITEM5_OPTION
+    // 687 = HWND_MENU_COMMON_ADJ_ITEM5_OPTION
     { _Zui_Menu_Common_Adj_Item5_Option_Normal_DrawStyle, _Zui_Menu_Common_Adj_Item5_Option_Focus_DrawStyle, _Zui_Menu_Common_Adj_Item5_Option_Disabled_DrawStyle     },
 
-    // 686 = HWND_MENU_COMMON_ADJ_ITEM5_LEFT_ARROW
+    // 688 = HWND_MENU_COMMON_ADJ_ITEM5_LEFT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item5_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 687 = HWND_MENU_COMMON_ADJ_ITEM5_RIGHT_ARROW
+    // 689 = HWND_MENU_COMMON_ADJ_ITEM5_RIGHT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item5_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 688 = HWND_MENU_COMMON_ADJ_ITEM5_INC
+    // 690 = HWND_MENU_COMMON_ADJ_ITEM5_INC
     { NULL, _Zui_Menu_Common_Adj_Item5_Inc_Focus_DrawStyle, NULL     },
 
-    // 689 = HWND_MENU_COMMON_ADJ_ITEM5_DEC
+    // 691 = HWND_MENU_COMMON_ADJ_ITEM5_DEC
     { NULL, _Zui_Menu_Common_Adj_Item5_Dec_Focus_DrawStyle, NULL     },
 
-    // 690 = HWND_MENU_COMMON_ADJ_ITEM6
+    // 692 = HWND_MENU_COMMON_ADJ_ITEM6
     { NULL, _Zui_Menu_Common_Adj_Item6_Focus_DrawStyle, NULL     },
 
-    // 691 = HWND_MENU_COMMON_ADJ_ITEM6_OPTION
+    // 693 = HWND_MENU_COMMON_ADJ_ITEM6_OPTION
     { _Zui_Menu_Common_Adj_Item6_Option_Normal_DrawStyle, _Zui_Menu_Common_Adj_Item6_Option_Focus_DrawStyle, _Zui_Menu_Common_Adj_Item6_Option_Disabled_DrawStyle     },
 
-    // 692 = HWND_MENU_COMMON_ADJ_ITEM6_LEFT_ARROW
+    // 694 = HWND_MENU_COMMON_ADJ_ITEM6_LEFT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item6_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 693 = HWND_MENU_COMMON_ADJ_ITEM6_RIGHT_ARROW
+    // 695 = HWND_MENU_COMMON_ADJ_ITEM6_RIGHT_ARROW
     { NULL, _Zui_Menu_Common_Adj_Item6_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 694 = HWND_MENU_COMMON_ADJ_ITEM6_INC
+    // 696 = HWND_MENU_COMMON_ADJ_ITEM6_INC
     { NULL, _Zui_Menu_Common_Adj_Item6_Inc_Focus_DrawStyle, NULL     },
 
-    // 695 = HWND_MENU_COMMON_ADJ_ITEM6_DEC
+    // 697 = HWND_MENU_COMMON_ADJ_ITEM6_DEC
     { NULL, _Zui_Menu_Common_Adj_Item6_Dec_Focus_DrawStyle, NULL     },
 
-    // 696 = HWND_MENU_SOUND_MODE_PAGE
+    // 698 = HWND_MENU_SOUND_MODE_PAGE
     { NULL, NULL, NULL     },
 
-    // 697 = HWND_MENU_SOUND_MODE_PAGE_BG_TOP
+    // 699 = HWND_MENU_SOUND_MODE_PAGE_BG_TOP
     { _Zui_Menu_Sound_Mode_Page_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 698 = HWND_MENU_SOUND_MODE_PAGE_BG_L
+    // 700 = HWND_MENU_SOUND_MODE_PAGE_BG_L
     { _Zui_Menu_Sound_Mode_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 699 = HWND_MENU_SOUND_MODE_PAGE_BG_C
+    // 701 = HWND_MENU_SOUND_MODE_PAGE_BG_C
     { _Zui_Menu_Sound_Mode_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 700 = HWND_MENU_SOUND_MODE_PAGE_BG_R
+    // 702 = HWND_MENU_SOUND_MODE_PAGE_BG_R
     { _Zui_Menu_Sound_Mode_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 701 = HWND_SNDMODE_UP_ARROW
+    // 703 = HWND_SNDMODE_UP_ARROW
     { _Zui_Sndmode_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 702 = HWND_SNDMODE_DOWN_ARROW
+    // 704 = HWND_SNDMODE_DOWN_ARROW
     { _Zui_Sndmode_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 703 = HWND_SNDMODE_MENU
+    // 705 = HWND_SNDMODE_MENU
     { NULL, NULL, NULL     },
 
-    // 704 = HWND_MENU_SOUND_MODE_PAGE_LIST
+    // 706 = HWND_MENU_SOUND_MODE_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 705 = HWND_MENU_SNDMODE_SNDMODE
+    // 707 = HWND_MENU_SNDMODE_SNDMODE
     { NULL, _Zui_Menu_Sndmode_Sndmode_Focus_DrawStyle, NULL     },
 
-    // 706 = HWND_MENU_SNDMODE_SNDMODE_TEXT
+    // 708 = HWND_MENU_SNDMODE_SNDMODE_TEXT
     { _Zui_Menu_Sndmode_Sndmode_Text_Normal_DrawStyle, _Zui_Menu_Sndmode_Sndmode_Text_Focus_DrawStyle, _Zui_Menu_Sndmode_Sndmode_Text_Disabled_DrawStyle     },
 
-    // 707 = HWND_MENU_SNDMODE_SNDMODE_OPTION
+    // 709 = HWND_MENU_SNDMODE_SNDMODE_OPTION
     { _Zui_Menu_Sndmode_Sndmode_Option_Normal_DrawStyle, _Zui_Menu_Sndmode_Sndmode_Option_Focus_DrawStyle, _Zui_Menu_Sndmode_Sndmode_Option_Disabled_DrawStyle     },
 
-    // 708 = HWND_MENU_SNDMODE_SNDMODE_LEFT_ARROW
+    // 710 = HWND_MENU_SNDMODE_SNDMODE_LEFT_ARROW
     { NULL, _Zui_Menu_Sndmode_Sndmode_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 709 = HWND_MENU_SNDMODE_SNDMODE_RIGHT_ARROW
+    // 711 = HWND_MENU_SNDMODE_SNDMODE_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndmode_Sndmode_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 710 = HWND_MENU_SNDMODE_SNDMODE_COVER
+    // 712 = HWND_MENU_SNDMODE_SNDMODE_COVER
     { NULL, _Zui_Menu_Sndmode_Sndmode_Cover_Focus_DrawStyle, NULL     },
 
-    // 711 = HWND_MENU_SNDEQ_120_HZ
+    // 713 = HWND_MENU_SNDEQ_120_HZ
     { NULL, _Zui_Menu_Sndeq_120_Hz_Focus_DrawStyle, NULL     },
 
-    // 712 = HWND_MENU_SNDEQ_120_HZ_OPTION
+    // 714 = HWND_MENU_SNDEQ_120_HZ_OPTION
     { _Zui_Menu_Sndeq_120_Hz_Option_Normal_DrawStyle, _Zui_Menu_Sndeq_120_Hz_Option_Focus_DrawStyle, _Zui_Menu_Sndeq_120_Hz_Option_Disabled_DrawStyle     },
 
-    // 713 = HWND_MENU_SNDEQ_120_HZ_LEFT_ARROW
+    // 715 = HWND_MENU_SNDEQ_120_HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sndeq_120_Hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 714 = HWND_MENU_SNDEQ_120_HZ_RIGHT_ARROW
+    // 716 = HWND_MENU_SNDEQ_120_HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndeq_120_Hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 715 = HWND_MENU_SNDEQ_120_HZ_INC
+    // 717 = HWND_MENU_SNDEQ_120_HZ_INC
     { NULL, _Zui_Menu_Sndeq_120_Hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 716 = HWND_MENU_SNDEQ_120_HZ_DEC
+    // 718 = HWND_MENU_SNDEQ_120_HZ_DEC
     { NULL, _Zui_Menu_Sndeq_120_Hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 717 = HWND_MENU_SNDEQ_200_HZ
+    // 719 = HWND_MENU_SNDEQ_200_HZ
     { NULL, _Zui_Menu_Sndeq_200_Hz_Focus_DrawStyle, NULL     },
 
-    // 718 = HWND_MENU_SNDEQ_200_HZ_OPTION
+    // 720 = HWND_MENU_SNDEQ_200_HZ_OPTION
     { _Zui_Menu_Sndeq_200_Hz_Option_Normal_DrawStyle, _Zui_Menu_Sndeq_200_Hz_Option_Focus_DrawStyle, _Zui_Menu_Sndeq_200_Hz_Option_Disabled_DrawStyle     },
 
-    // 719 = HWND_MENU_SNDEQ_200_HZ_LEFT_ARROW
+    // 721 = HWND_MENU_SNDEQ_200_HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sndeq_200_Hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 720 = HWND_MENU_SNDEQ_200_HZ_RIGHT_ARROW
+    // 722 = HWND_MENU_SNDEQ_200_HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndeq_200_Hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 721 = HWND_MENU_SNDEQ_200_HZ_INC
+    // 723 = HWND_MENU_SNDEQ_200_HZ_INC
     { NULL, _Zui_Menu_Sndeq_200_Hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 722 = HWND_MENU_SNDEQ_200_HZ_DEC
+    // 724 = HWND_MENU_SNDEQ_200_HZ_DEC
     { NULL, _Zui_Menu_Sndeq_200_Hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 723 = HWND_MENU_SNDEQ_500_HZ
+    // 725 = HWND_MENU_SNDEQ_500_HZ
     { NULL, _Zui_Menu_Sndeq_500_Hz_Focus_DrawStyle, NULL     },
 
-    // 724 = HWND_MENU_SNDEQ_500_HZ_OPTION
+    // 726 = HWND_MENU_SNDEQ_500_HZ_OPTION
     { _Zui_Menu_Sndeq_500_Hz_Option_Normal_DrawStyle, _Zui_Menu_Sndeq_500_Hz_Option_Focus_DrawStyle, _Zui_Menu_Sndeq_500_Hz_Option_Disabled_DrawStyle     },
 
-    // 725 = HWND_MENU_SNDEQ_500_HZ_LEFT_ARROW
+    // 727 = HWND_MENU_SNDEQ_500_HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sndeq_500_Hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 726 = HWND_MENU_SNDEQ_500_HZ_RIGHT_ARROW
+    // 728 = HWND_MENU_SNDEQ_500_HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndeq_500_Hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 727 = HWND_MENU_SNDEQ_500_HZ_INC
+    // 729 = HWND_MENU_SNDEQ_500_HZ_INC
     { NULL, _Zui_Menu_Sndeq_500_Hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 728 = HWND_MENU_SNDEQ_500_HZ_DEC
+    // 730 = HWND_MENU_SNDEQ_500_HZ_DEC
     { NULL, _Zui_Menu_Sndeq_500_Hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 729 = HWND_MENU_SNDEQ_1_2_KHZ
+    // 731 = HWND_MENU_SNDEQ_1_2_KHZ
     { NULL, _Zui_Menu_Sndeq_1_2_Khz_Focus_DrawStyle, NULL     },
 
-    // 730 = HWND_MENU_SNDEQ_1_2_KHZ_OPTION
+    // 732 = HWND_MENU_SNDEQ_1_2_KHZ_OPTION
     { _Zui_Menu_Sndeq_1_2_Khz_Option_Normal_DrawStyle, _Zui_Menu_Sndeq_1_2_Khz_Option_Focus_DrawStyle, _Zui_Menu_Sndeq_1_2_Khz_Option_Disabled_DrawStyle     },
 
-    // 731 = HWND_MENU_SNDEQ_1_2_KHZ_LEFT_ARROW
+    // 733 = HWND_MENU_SNDEQ_1_2_KHZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sndeq_1_2_Khz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 732 = HWND_MENU_SNDEQ_1_2_KHZ_RIGHT_ARROW
+    // 734 = HWND_MENU_SNDEQ_1_2_KHZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndeq_1_2_Khz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 733 = HWND_MENU_SNDEQ_1_2_KHZ_INC
+    // 735 = HWND_MENU_SNDEQ_1_2_KHZ_INC
     { NULL, _Zui_Menu_Sndeq_1_2_Khz_Inc_Focus_DrawStyle, NULL     },
 
-    // 734 = HWND_MENU_SNDEQ_1_2_KHZ_DEC
+    // 736 = HWND_MENU_SNDEQ_1_2_KHZ_DEC
     { NULL, _Zui_Menu_Sndeq_1_2_Khz_Dec_Focus_DrawStyle, NULL     },
 
-    // 735 = HWND_MENU_SNDEQ_3_KHZ
+    // 737 = HWND_MENU_SNDEQ_3_KHZ
     { NULL, _Zui_Menu_Sndeq_3_Khz_Focus_DrawStyle, NULL     },
 
-    // 736 = HWND_MENU_SNDEQ_3_KHZ_OPTION
+    // 738 = HWND_MENU_SNDEQ_3_KHZ_OPTION
     { _Zui_Menu_Sndeq_3_Khz_Option_Normal_DrawStyle, _Zui_Menu_Sndeq_3_Khz_Option_Focus_DrawStyle, _Zui_Menu_Sndeq_3_Khz_Option_Disabled_DrawStyle     },
 
-    // 737 = HWND_MENU_SNDEQ_3_KHZ_LEFT_ARROW
+    // 739 = HWND_MENU_SNDEQ_3_KHZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sndeq_3_Khz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 738 = HWND_MENU_SNDEQ_3_KHZ_RIGHT_ARROW
+    // 740 = HWND_MENU_SNDEQ_3_KHZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndeq_3_Khz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 739 = HWND_MENU_SNDEQ_3_KHZ_INC
+    // 741 = HWND_MENU_SNDEQ_3_KHZ_INC
     { NULL, _Zui_Menu_Sndeq_3_Khz_Inc_Focus_DrawStyle, NULL     },
 
-    // 740 = HWND_MENU_SNDEQ_3_KHZ_DEC
+    // 742 = HWND_MENU_SNDEQ_3_KHZ_DEC
     { NULL, _Zui_Menu_Sndeq_3_Khz_Dec_Focus_DrawStyle, NULL     },
 
-    // 741 = HWND_MENU_SNDEQ_7_5_KHZ
+    // 743 = HWND_MENU_SNDEQ_7_5_KHZ
     { NULL, _Zui_Menu_Sndeq_7_5_Khz_Focus_DrawStyle, NULL     },
 
-    // 742 = HWND_MENU_SNDEQ_7_5_KHZ_OPTION
+    // 744 = HWND_MENU_SNDEQ_7_5_KHZ_OPTION
     { _Zui_Menu_Sndeq_7_5_Khz_Option_Normal_DrawStyle, _Zui_Menu_Sndeq_7_5_Khz_Option_Focus_DrawStyle, _Zui_Menu_Sndeq_7_5_Khz_Option_Disabled_DrawStyle     },
 
-    // 743 = HWND_MENU_SNDEQ_7_5_KHZ_LEFT_ARROW
+    // 745 = HWND_MENU_SNDEQ_7_5_KHZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sndeq_7_5_Khz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 744 = HWND_MENU_SNDEQ_7_5_KHZ_RIGHT_ARROW
+    // 746 = HWND_MENU_SNDEQ_7_5_KHZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndeq_7_5_Khz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 745 = HWND_MENU_SNDEQ_7_5_KHZ_INC
+    // 747 = HWND_MENU_SNDEQ_7_5_KHZ_INC
     { NULL, _Zui_Menu_Sndeq_7_5_Khz_Inc_Focus_DrawStyle, NULL     },
 
-    // 746 = HWND_MENU_SNDEQ_7_5_KHZ_DEC
+    // 748 = HWND_MENU_SNDEQ_7_5_KHZ_DEC
     { NULL, _Zui_Menu_Sndeq_7_5_Khz_Dec_Focus_DrawStyle, NULL     },
 
-    // 747 = HWND_MENU_SNDEQ_12_KHZ
+    // 749 = HWND_MENU_SNDEQ_12_KHZ
     { NULL, _Zui_Menu_Sndeq_12_Khz_Focus_DrawStyle, NULL     },
 
-    // 748 = HWND_MENU_SNDEQ_12_KHZ_OPTION
+    // 750 = HWND_MENU_SNDEQ_12_KHZ_OPTION
     { _Zui_Menu_Sndeq_12_Khz_Option_Normal_DrawStyle, _Zui_Menu_Sndeq_12_Khz_Option_Focus_DrawStyle, _Zui_Menu_Sndeq_12_Khz_Option_Disabled_DrawStyle     },
 
-    // 749 = HWND_MENU_SNDEQ_12_KHZ_LEFT_ARROW
+    // 751 = HWND_MENU_SNDEQ_12_KHZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sndeq_12_Khz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 750 = HWND_MENU_SNDEQ_12_KHZ_RIGHT_ARROW
+    // 752 = HWND_MENU_SNDEQ_12_KHZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndeq_12_Khz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 751 = HWND_MENU_SNDEQ_12_KHZ_INC
+    // 753 = HWND_MENU_SNDEQ_12_KHZ_INC
     { NULL, _Zui_Menu_Sndeq_12_Khz_Inc_Focus_DrawStyle, NULL     },
 
-    // 752 = HWND_MENU_SNDEQ_12_KHZ_DEC
+    // 754 = HWND_MENU_SNDEQ_12_KHZ_DEC
     { NULL, _Zui_Menu_Sndeq_12_Khz_Dec_Focus_DrawStyle, NULL     },
 
-    // 753 = HWND_MENU_SNDMODE_TREBLE
+    // 755 = HWND_MENU_SNDMODE_TREBLE
     { NULL, _Zui_Menu_Sndmode_Treble_Focus_DrawStyle, NULL     },
 
-    // 754 = HWND_MENU_SNDMODE_TREBLE_OPTION
+    // 756 = HWND_MENU_SNDMODE_TREBLE_OPTION
     { _Zui_Menu_Sndmode_Treble_Option_Normal_DrawStyle, _Zui_Menu_Sndmode_Treble_Option_Focus_DrawStyle, _Zui_Menu_Sndmode_Treble_Option_Disabled_DrawStyle     },
 
-    // 755 = HWND_MENU_SNDMODE_TREBLE_LEFT_ARROW
+    // 757 = HWND_MENU_SNDMODE_TREBLE_LEFT_ARROW
     { NULL, _Zui_Menu_Sndmode_Treble_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 756 = HWND_MENU_SNDMODE_TREBLE_RIGHT_ARROW
+    // 758 = HWND_MENU_SNDMODE_TREBLE_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndmode_Treble_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 757 = HWND_MENU_SNDMODE_TREBLE_INC
+    // 759 = HWND_MENU_SNDMODE_TREBLE_INC
     { NULL, _Zui_Menu_Sndmode_Treble_Inc_Focus_DrawStyle, NULL     },
 
-    // 758 = HWND_MENU_SNDMODE_TREBLE_DEC
+    // 760 = HWND_MENU_SNDMODE_TREBLE_DEC
     { NULL, _Zui_Menu_Sndmode_Treble_Dec_Focus_DrawStyle, NULL     },
 
-    // 759 = HWND_MENU_SNDMODE_SNDMODE_EMPTY
+    // 761 = HWND_MENU_SNDMODE_SNDMODE_EMPTY
     { NULL, _Zui_Menu_Sndmode_Sndmode_Empty_Focus_DrawStyle, NULL     },
 
-    // 760 = HWND_MENU_SNDMODE_BASS
+    // 762 = HWND_MENU_SNDMODE_BASS
     { NULL, _Zui_Menu_Sndmode_Bass_Focus_DrawStyle, NULL     },
 
-    // 761 = HWND_MENU_SNDMODE_BASS_OPTION
+    // 763 = HWND_MENU_SNDMODE_BASS_OPTION
     { _Zui_Menu_Sndmode_Bass_Option_Normal_DrawStyle, _Zui_Menu_Sndmode_Bass_Option_Focus_DrawStyle, _Zui_Menu_Sndmode_Bass_Option_Disabled_DrawStyle     },
 
-    // 762 = HWND_MENU_SNDMODE_BASS_LEFT_ARROW
+    // 764 = HWND_MENU_SNDMODE_BASS_LEFT_ARROW
     { NULL, _Zui_Menu_Sndmode_Bass_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 763 = HWND_MENU_SNDMODE_BASS_RIGHT_ARROW
+    // 765 = HWND_MENU_SNDMODE_BASS_RIGHT_ARROW
     { NULL, _Zui_Menu_Sndmode_Bass_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 764 = HWND_MMENU_SNDMODE_BASS_INC
+    // 766 = HWND_MMENU_SNDMODE_BASS_INC
     { NULL, _Zui_Mmenu_Sndmode_Bass_Inc_Focus_DrawStyle, NULL     },
 
-    // 765 = HWND_MENU_SNDMODE_BASS_DEC
+    // 767 = HWND_MENU_SNDMODE_BASS_DEC
     { NULL, _Zui_Menu_Sndmode_Bass_Dec_Focus_DrawStyle, NULL     },
 
-    // 766 = HWND_MENU_OPTION_AUDIOLANG_PAGE
+    // 768 = HWND_MENU_OPTION_AUDIOLANG_PAGE
     { NULL, NULL, NULL     },
 
-    // 767 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_TOP
+    // 769 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_TOP
     { _Zui_Menu_Option_Audiolang_Page_Bg_Top_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Bg_Top_Focus_DrawStyle, NULL     },
 
-    // 768 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_L
+    // 770 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_L
     { _Zui_Menu_Option_Audiolang_Page_Bg_L_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Bg_L_Focus_DrawStyle, NULL     },
 
-    // 769 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_C
+    // 771 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_C
     { _Zui_Menu_Option_Audiolang_Page_Bg_C_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Bg_C_Focus_DrawStyle, NULL     },
 
-    // 770 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_R
+    // 772 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BG_R
     { _Zui_Menu_Option_Audiolang_Page_Bg_R_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Bg_R_Focus_DrawStyle, NULL     },
 
-    // 771 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BAR1
+    // 773 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BAR1
     { _Zui_Menu_Option_Audiolang_Page_Bar1_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Bar1_Focus_DrawStyle, NULL     },
 
-    // 772 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BAR2
+    // 774 = HWND_MENU_OPTION_AUDIOLANG_PAGE_BAR2
     { _Zui_Menu_Option_Audiolang_Page_Bar2_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Bar2_Focus_DrawStyle, NULL     },
 
-    // 773 = HWND_MENU_OPTION_AUDIOLANG_PAGE_MENU
+    // 775 = HWND_MENU_OPTION_AUDIOLANG_PAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 774 = HWND_MENU_OPTION_AUDIOLANG_GRID
+    // 776 = HWND_MENU_OPTION_AUDIOLANG_GRID
     { NULL, NULL, NULL     },
 
-    // 775 = HWND_MENU_OPTION_AUDIOLANG_01
+    // 777 = HWND_MENU_OPTION_AUDIOLANG_01
     { _Zui_Menu_Option_Audiolang_01_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_01_Focus_DrawStyle, NULL     },
 
-    // 776 = HWND_MENU_OPTION_AUDIOLANG_02
+    // 778 = HWND_MENU_OPTION_AUDIOLANG_02
     { _Zui_Menu_Option_Audiolang_02_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_02_Focus_DrawStyle, NULL     },
 
-    // 777 = HWND_MENU_OPTION_AUDIOLANG_PAGE_LEFT_ARROW
+    // 779 = HWND_MENU_OPTION_AUDIOLANG_PAGE_LEFT_ARROW
     { _Zui_Menu_Option_Audiolang_Page_Left_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 778 = HWND_MENU_OPTION_AUDIOLANG_03
+    // 780 = HWND_MENU_OPTION_AUDIOLANG_03
     { _Zui_Menu_Option_Audiolang_03_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_03_Focus_DrawStyle, NULL     },
 
-    // 779 = HWND_MENU_OPTION_AUDIOLANG_04
+    // 781 = HWND_MENU_OPTION_AUDIOLANG_04
     { _Zui_Menu_Option_Audiolang_04_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_04_Focus_DrawStyle, NULL     },
 
-    // 780 = HWND_MENU_OPTION_AUDIOLANG_PAGE_UP_ARROW
+    // 782 = HWND_MENU_OPTION_AUDIOLANG_PAGE_UP_ARROW
     { _Zui_Menu_Option_Audiolang_Page_Up_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Up_Arrow_Focus_DrawStyle, NULL     },
 
-    // 781 = HWND_MENU_OPTION_AUDIOLANG_05
+    // 783 = HWND_MENU_OPTION_AUDIOLANG_05
     { _Zui_Menu_Option_Audiolang_05_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_05_Focus_DrawStyle, NULL     },
 
-    // 782 = HWND_MENU_OPTION_AUDIOLANG_06
+    // 784 = HWND_MENU_OPTION_AUDIOLANG_06
     { _Zui_Menu_Option_Audiolang_06_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_06_Focus_DrawStyle, NULL     },
 
-    // 783 = HWND_MENU_OPTION_AUDIOLANG_PAGE_DOWN_ARROW
+    // 785 = HWND_MENU_OPTION_AUDIOLANG_PAGE_DOWN_ARROW
     { _Zui_Menu_Option_Audiolang_Page_Down_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 784 = HWND_MENU_OPTION_AUDIOLANG_07
+    // 786 = HWND_MENU_OPTION_AUDIOLANG_07
     { _Zui_Menu_Option_Audiolang_07_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_07_Focus_DrawStyle, NULL     },
 
-    // 785 = HWND_MENU_OPTION_AUDIOLANG_08
+    // 787 = HWND_MENU_OPTION_AUDIOLANG_08
     { _Zui_Menu_Option_Audiolang_08_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_08_Focus_DrawStyle, NULL     },
 
-    // 786 = HWND_MENU_OPTION_AUDIOLANG_PAGE_RIGHT_ARROW
+    // 788 = HWND_MENU_OPTION_AUDIOLANG_PAGE_RIGHT_ARROW
     { _Zui_Menu_Option_Audiolang_Page_Right_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Page_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 787 = HWND_MENU_OPTION_AUDIOLANG_09
+    // 789 = HWND_MENU_OPTION_AUDIOLANG_09
     { _Zui_Menu_Option_Audiolang_09_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_09_Focus_DrawStyle, NULL     },
 
-    // 788 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY
+    // 790 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY
     { NULL, _Zui_Menu_Option_Audiolang_Primary_Focus_DrawStyle, NULL     },
 
-    // 789 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_TEXT
+    // 791 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_TEXT
     { _Zui_Menu_Option_Audiolang_Primary_Text_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Primary_Text_Focus_DrawStyle, _Zui_Menu_Option_Audiolang_Primary_Text_Disabled_DrawStyle     },
 
-    // 790 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_OPTION
+    // 792 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_OPTION
     { _Zui_Menu_Option_Audiolang_Primary_Option_Normal_DrawStyle, _Zui_Menu_Option_Audiolang_Primary_Option_Focus_DrawStyle, _Zui_Menu_Option_Audiolang_Primary_Option_Disabled_DrawStyle     },
 
-    // 791 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_LEFT_ARROW
+    // 793 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Audiolang_Primary_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 792 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_RIGHT_ARROW
+    // 794 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Audiolang_Primary_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 793 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_DOWN_ARROW
+    // 795 = HWND_MENU_OPTION_AUDIOLANG_PRIMARY_DOWN_ARROW
     { NULL, _Zui_Menu_Option_Audiolang_Primary_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 794 = HWND_MENU_OPTION_SUBLANG_PAGE
+    // 796 = HWND_MENU_OPTION_SUBLANG_PAGE
     { NULL, NULL, NULL     },
 
-    // 795 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_TOP
+    // 797 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_TOP
     { _Zui_Menu_Option_Sublang_Page_Bg_Top_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Bg_Top_Focus_DrawStyle, NULL     },
 
-    // 796 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_L
+    // 798 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_L
     { _Zui_Menu_Option_Sublang_Page_Bg_L_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Bg_L_Focus_DrawStyle, NULL     },
 
-    // 797 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_C
+    // 799 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_C
     { _Zui_Menu_Option_Sublang_Page_Bg_C_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Bg_C_Focus_DrawStyle, NULL     },
 
-    // 798 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_R
+    // 800 = HWND_MENU_OPTION_SUBLANG_PAGE_BG_R
     { _Zui_Menu_Option_Sublang_Page_Bg_R_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Bg_R_Focus_DrawStyle, NULL     },
 
-    // 799 = HWND_MENU_OPTION_SUBLANG_PAGE_BAR1
+    // 801 = HWND_MENU_OPTION_SUBLANG_PAGE_BAR1
     { _Zui_Menu_Option_Sublang_Page_Bar1_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Bar1_Focus_DrawStyle, NULL     },
 
-    // 800 = HWND_MENU_OPTION_SUBLANG_PAGE_BAR2
+    // 802 = HWND_MENU_OPTION_SUBLANG_PAGE_BAR2
     { _Zui_Menu_Option_Sublang_Page_Bar2_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Bar2_Focus_DrawStyle, NULL     },
 
-    // 801 = HWND_MENU_OPTION_SUBLANG_PAGE_MENU
+    // 803 = HWND_MENU_OPTION_SUBLANG_PAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 802 = HWND_MENU_OPTION_SUBLANG_GRID
+    // 804 = HWND_MENU_OPTION_SUBLANG_GRID
     { NULL, NULL, NULL     },
 
-    // 803 = HWND_MENU_OPTION_SUBLANG_GRID_01
+    // 805 = HWND_MENU_OPTION_SUBLANG_GRID_01
     { _Zui_Menu_Option_Sublang_Grid_01_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_01_Focus_DrawStyle, NULL     },
 
-    // 804 = HWND_MENU_OPTION_SUBLANG_GRID_02
+    // 806 = HWND_MENU_OPTION_SUBLANG_GRID_02
     { _Zui_Menu_Option_Sublang_Grid_02_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_02_Focus_DrawStyle, NULL     },
 
-    // 805 = HWND_MENU_OPTION_SUBLANG_PAGE_LEFT_ARROW
+    // 807 = HWND_MENU_OPTION_SUBLANG_PAGE_LEFT_ARROW
     { _Zui_Menu_Option_Sublang_Page_Left_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 806 = HWND_MENU_OPTION_SUBLANG_GRID_03
+    // 808 = HWND_MENU_OPTION_SUBLANG_GRID_03
     { _Zui_Menu_Option_Sublang_Grid_03_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_03_Focus_DrawStyle, NULL     },
 
-    // 807 = HWND_MENU_OPTION_SUBLANG_GRID_04
+    // 809 = HWND_MENU_OPTION_SUBLANG_GRID_04
     { _Zui_Menu_Option_Sublang_Grid_04_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_04_Focus_DrawStyle, NULL     },
 
-    // 808 = HWND_MENU_OPTION_SUBLANG_PAGE_UP_ARROW
+    // 810 = HWND_MENU_OPTION_SUBLANG_PAGE_UP_ARROW
     { _Zui_Menu_Option_Sublang_Page_Up_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Up_Arrow_Focus_DrawStyle, NULL     },
 
-    // 809 = HWND_MENU_OPTION_SUBLANG_GRID_05
+    // 811 = HWND_MENU_OPTION_SUBLANG_GRID_05
     { _Zui_Menu_Option_Sublang_Grid_05_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_05_Focus_DrawStyle, NULL     },
 
-    // 810 = HWND_MENU_OPTION_SUBLANG_GRID_06
+    // 812 = HWND_MENU_OPTION_SUBLANG_GRID_06
     { _Zui_Menu_Option_Sublang_Grid_06_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_06_Focus_DrawStyle, NULL     },
 
-    // 811 = HWND_MENU_OPTION_SUBLANG_PAGE_DOWN_ARROW
+    // 813 = HWND_MENU_OPTION_SUBLANG_PAGE_DOWN_ARROW
     { _Zui_Menu_Option_Sublang_Page_Down_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 812 = HWND_MENU_OPTION_SUBLANG_GRID_07
+    // 814 = HWND_MENU_OPTION_SUBLANG_GRID_07
     { _Zui_Menu_Option_Sublang_Grid_07_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_07_Focus_DrawStyle, NULL     },
 
-    // 813 = HWND_MENU_OPTION_SUBLANG_GRID_08
+    // 815 = HWND_MENU_OPTION_SUBLANG_GRID_08
     { _Zui_Menu_Option_Sublang_Grid_08_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_08_Focus_DrawStyle, NULL     },
 
-    // 814 = HWND_MENU_OPTION_SUBLANG_PAGE_RIGHT_ARROW
+    // 816 = HWND_MENU_OPTION_SUBLANG_PAGE_RIGHT_ARROW
     { _Zui_Menu_Option_Sublang_Page_Right_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Page_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 815 = HWND_MENU_OPTION_SUBLANG_GRID_09
+    // 817 = HWND_MENU_OPTION_SUBLANG_GRID_09
     { _Zui_Menu_Option_Sublang_Grid_09_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Grid_09_Focus_DrawStyle, NULL     },
 
-    // 816 = HWND_MENU_OPTION_SUBLANG_PRIMARY
+    // 818 = HWND_MENU_OPTION_SUBLANG_PRIMARY
     { NULL, _Zui_Menu_Option_Sublang_Primary_Focus_DrawStyle, NULL     },
 
-    // 817 = HWND_MENU_OPTION_SUBLANG_PRIMARY_TEXT
+    // 819 = HWND_MENU_OPTION_SUBLANG_PRIMARY_TEXT
     { _Zui_Menu_Option_Sublang_Primary_Text_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Primary_Text_Focus_DrawStyle, _Zui_Menu_Option_Sublang_Primary_Text_Disabled_DrawStyle     },
 
-    // 818 = HWND_MENU_OPTION_SUBLANG_PRIMARY_OPTION
+    // 820 = HWND_MENU_OPTION_SUBLANG_PRIMARY_OPTION
     { _Zui_Menu_Option_Sublang_Primary_Option_Normal_DrawStyle, _Zui_Menu_Option_Sublang_Primary_Option_Focus_DrawStyle, _Zui_Menu_Option_Sublang_Primary_Option_Disabled_DrawStyle     },
 
-    // 819 = HWND_MENU_OPTION_SUBLANG_PRIMARY_LEFT_ARROW
+    // 821 = HWND_MENU_OPTION_SUBLANG_PRIMARY_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Sublang_Primary_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 820 = HWND_MENU_OPTION_SUBLANG_PRIMARY_RIGHT_ARROW
+    // 822 = HWND_MENU_OPTION_SUBLANG_PRIMARY_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Sublang_Primary_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 821 = HWND_MENU_OPTION_SUBLANG_PRIMARY_DOWN_ARROW
+    // 823 = HWND_MENU_OPTION_SUBLANG_PRIMARY_DOWN_ARROW
     { NULL, _Zui_Menu_Option_Sublang_Primary_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 822 = HWND_MENU_OPTION_OSDLANG_PAGE
+    // 824 = HWND_MENU_OPTION_OSDLANG_PAGE
     { NULL, NULL, NULL     },
 
-    // 823 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_TOP
+    // 825 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_TOP
     { _Zui_Menu_Option_Osdlang_Page_Bg_Top_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Bg_Top_Focus_DrawStyle, NULL     },
 
-    // 824 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_L
+    // 826 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_L
     { _Zui_Menu_Option_Osdlang_Page_Bg_L_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Bg_L_Focus_DrawStyle, NULL     },
 
-    // 825 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_C
+    // 827 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_C
     { _Zui_Menu_Option_Osdlang_Page_Bg_C_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Bg_C_Focus_DrawStyle, NULL     },
 
-    // 826 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_R
+    // 828 = HWND_MENU_OPTION_OSDLANG_PAGE_BG_R
     { _Zui_Menu_Option_Osdlang_Page_Bg_R_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Bg_R_Focus_DrawStyle, NULL     },
 
-    // 827 = HWND_MENU_OPTION_OSDLANG_PAGE_MENU
+    // 829 = HWND_MENU_OPTION_OSDLANG_PAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 828 = HWND_MENU_OPTION_OSDLANG_TITLE
+    // 830 = HWND_MENU_OPTION_OSDLANG_TITLE
     { _Zui_Menu_Option_Osdlang_Title_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Title_Focus_DrawStyle, _Zui_Menu_Option_Osdlang_Title_Disabled_DrawStyle     },
 
-    // 829 = HWND_MENU_OPTION_OSDLANG_BAR1
+    // 831 = HWND_MENU_OPTION_OSDLANG_BAR1
     { _Zui_Menu_Option_Osdlang_Bar1_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Bar1_Focus_DrawStyle, NULL     },
 
-    // 830 = HWND_MENU_OPTION_OSDLANG_BAR2
+    // 832 = HWND_MENU_OPTION_OSDLANG_BAR2
     { _Zui_Menu_Option_Osdlang_Bar2_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Bar2_Focus_DrawStyle, NULL     },
 
-    // 831 = HWND_MENU_OPTION_OSDLANG_GRID
+    // 833 = HWND_MENU_OPTION_OSDLANG_GRID
     { NULL, NULL, NULL     },
 
-    // 832 = HWND_MENU_OPTION_OSDLANG_01
+    // 834 = HWND_MENU_OPTION_OSDLANG_01
     { _Zui_Menu_Option_Osdlang_01_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_01_Focus_DrawStyle, NULL     },
 
-    // 833 = HWND_MENU_OPTION_OSDLANG_02
+    // 835 = HWND_MENU_OPTION_OSDLANG_02
     { _Zui_Menu_Option_Osdlang_02_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_02_Focus_DrawStyle, NULL     },
 
-    // 834 = HWND_MENU_OPTION_OSDLANG_PAGE_LEFT_ARROW
+    // 836 = HWND_MENU_OPTION_OSDLANG_PAGE_LEFT_ARROW
     { _Zui_Menu_Option_Osdlang_Page_Left_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 835 = HWND_MENU_OPTION_OSDLANG_03
+    // 837 = HWND_MENU_OPTION_OSDLANG_03
     { _Zui_Menu_Option_Osdlang_03_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_03_Focus_DrawStyle, NULL     },
 
-    // 836 = HWND_MENU_OPTION_OSDLANG_04
+    // 838 = HWND_MENU_OPTION_OSDLANG_04
     { _Zui_Menu_Option_Osdlang_04_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_04_Focus_DrawStyle, NULL     },
 
-    // 837 = HWND_MENU_OPTION_OSDLANG_PAGE_UP_ARROW
+    // 839 = HWND_MENU_OPTION_OSDLANG_PAGE_UP_ARROW
     { _Zui_Menu_Option_Osdlang_Page_Up_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Up_Arrow_Focus_DrawStyle, NULL     },
 
-    // 838 = HWND_MENU_OPTION_OSDLANG_05
+    // 840 = HWND_MENU_OPTION_OSDLANG_05
     { _Zui_Menu_Option_Osdlang_05_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_05_Focus_DrawStyle, NULL     },
 
-    // 839 = HWND_MENU_OPTION_OSDLANG_06
+    // 841 = HWND_MENU_OPTION_OSDLANG_06
     { _Zui_Menu_Option_Osdlang_06_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_06_Focus_DrawStyle, NULL     },
 
-    // 840 = HWND_MENU_OPTION_OSDLANG_PAGE_DOWN_ARROW
+    // 842 = HWND_MENU_OPTION_OSDLANG_PAGE_DOWN_ARROW
     { _Zui_Menu_Option_Osdlang_Page_Down_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 841 = HWND_MENU_OPTION_OSDLANG_07
+    // 843 = HWND_MENU_OPTION_OSDLANG_07
     { _Zui_Menu_Option_Osdlang_07_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_07_Focus_DrawStyle, NULL     },
 
-    // 842 = HWND_MENU_OPTION_OSDLANG_08
+    // 844 = HWND_MENU_OPTION_OSDLANG_08
     { _Zui_Menu_Option_Osdlang_08_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_08_Focus_DrawStyle, NULL     },
 
-    // 843 = HWND_MENU_OPTION_OSDLANG_PAGE_RIGHT_ARROW
+    // 845 = HWND_MENU_OPTION_OSDLANG_PAGE_RIGHT_ARROW
     { _Zui_Menu_Option_Osdlang_Page_Right_Arrow_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_Page_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 844 = HWND_MENU_OPTION_OSDLANG_09
+    // 846 = HWND_MENU_OPTION_OSDLANG_09
     { _Zui_Menu_Option_Osdlang_09_Normal_DrawStyle, _Zui_Menu_Option_Osdlang_09_Focus_DrawStyle, NULL     },
 
-    // 845 = HWND_MENU_SINGLELIST_COMMON_PAGE
+    // 847 = HWND_MENU_SINGLELIST_COMMON_PAGE
     { NULL, NULL, NULL     },
 
-    // 846 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_TOP
+    // 848 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_TOP
     { _Zui_Menu_Singlelist_Common_Page_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 847 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_L
+    // 849 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_L
     { _Zui_Menu_Singlelist_Common_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 848 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_C
+    // 850 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_C
     { _Zui_Menu_Singlelist_Common_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 849 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_R
+    // 851 = HWND_MENU_SINGLELIST_COMMON_PAGE_BG_R
     { _Zui_Menu_Singlelist_Common_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 850 = HWND_SINGLELIST_COMMON_UP_ARROW
+    // 852 = HWND_SINGLELIST_COMMON_UP_ARROW
     { _Zui_Singlelist_Common_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 851 = HWND_SINGLELIST_COMMON_DOWN_ARROW
+    // 853 = HWND_SINGLELIST_COMMON_DOWN_ARROW
     { _Zui_Singlelist_Common_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 852 = HWND_SINGLELIST_COMMON_MENU
+    // 854 = HWND_SINGLELIST_COMMON_MENU
     { NULL, NULL, NULL     },
 
-    // 853 = HWND_MENU_SINGLELIST_COMMON_PAGE_LIST
+    // 855 = HWND_MENU_SINGLELIST_COMMON_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 854 = HWND_MENU_SINGLELIST_ITEM1
+    // 856 = HWND_MENU_SINGLELIST_ITEM1
     { NULL, _Zui_Menu_Singlelist_Item1_Focus_DrawStyle, NULL     },
 
-    // 855 = HWND_MENU_SINGLELIST_ITEM1_OPTION
+    // 857 = HWND_MENU_SINGLELIST_ITEM1_OPTION
     { _Zui_Menu_Singlelist_Item1_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item1_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item1_Option_Disabled_DrawStyle     },
 
-    // 856 = HWND_MENU_SINGLELIST_ITEM2
+    // 858 = HWND_MENU_SINGLELIST_ITEM2
     { NULL, _Zui_Menu_Singlelist_Item2_Focus_DrawStyle, NULL     },
 
-    // 857 = HWND_MENU_SINGLELIST_ITEM2_OPTION
+    // 859 = HWND_MENU_SINGLELIST_ITEM2_OPTION
     { _Zui_Menu_Singlelist_Item2_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item2_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item2_Option_Disabled_DrawStyle     },
 
-    // 858 = HWND_MENU_SINGLELIST_ITEM3
+    // 860 = HWND_MENU_SINGLELIST_ITEM3
     { NULL, _Zui_Menu_Singlelist_Item3_Focus_DrawStyle, NULL     },
 
-    // 859 = HWND_MENU_SINGLELIST_ITEM3_OPTION
+    // 861 = HWND_MENU_SINGLELIST_ITEM3_OPTION
     { _Zui_Menu_Singlelist_Item3_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item3_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item3_Option_Disabled_DrawStyle     },
 
-    // 860 = HWND_MENU_SINGLELIST_ITEM4
+    // 862 = HWND_MENU_SINGLELIST_ITEM4
     { NULL, _Zui_Menu_Singlelist_Item4_Focus_DrawStyle, NULL     },
 
-    // 861 = HWND_MENU_SINGLELIST_ITEM4_OPTION
+    // 863 = HWND_MENU_SINGLELIST_ITEM4_OPTION
     { _Zui_Menu_Singlelist_Item4_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item4_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item4_Option_Disabled_DrawStyle     },
 
-    // 862 = HWND_MENU_SINGLELIST_ITEM5
+    // 864 = HWND_MENU_SINGLELIST_ITEM5
     { NULL, _Zui_Menu_Singlelist_Item5_Focus_DrawStyle, NULL     },
 
-    // 863 = HWND_MENU_SINGLELIST_ITEM5_OPTION
+    // 865 = HWND_MENU_SINGLELIST_ITEM5_OPTION
     { _Zui_Menu_Singlelist_Item5_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item5_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item5_Option_Disabled_DrawStyle     },
 
-    // 864 = HWND_MENU_SINGLELIST_ITEM6
+    // 866 = HWND_MENU_SINGLELIST_ITEM6
     { NULL, _Zui_Menu_Singlelist_Item6_Focus_DrawStyle, NULL     },
 
-    // 865 = HWND_MENU_SINGLELIST_ITEM6_OPTION
+    // 867 = HWND_MENU_SINGLELIST_ITEM6_OPTION
     { _Zui_Menu_Singlelist_Item6_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item6_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item6_Option_Disabled_DrawStyle     },
 
-    // 866 = HWND_MENU_SINGLELIST_ITEM7
+    // 868 = HWND_MENU_SINGLELIST_ITEM7
     { NULL, _Zui_Menu_Singlelist_Item7_Focus_DrawStyle, NULL     },
 
-    // 867 = HWND_MENU_SINGLELIST_ITEM7_OPTION
+    // 869 = HWND_MENU_SINGLELIST_ITEM7_OPTION
     { _Zui_Menu_Singlelist_Item7_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item7_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item7_Option_Disabled_DrawStyle     },
 
-    // 868 = HWND_MENU_SINGLELIST_ITEM8
+    // 870 = HWND_MENU_SINGLELIST_ITEM8
     { NULL, _Zui_Menu_Singlelist_Item8_Focus_DrawStyle, NULL     },
 
-    // 869 = HWND_MENU_SINGLELIST_ITEM8_OPTION
+    // 871 = HWND_MENU_SINGLELIST_ITEM8_OPTION
     { _Zui_Menu_Singlelist_Item8_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item8_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item8_Option_Disabled_DrawStyle     },
 
-    // 870 = HWND_MENU_SINGLELIST_ITEM9
+    // 872 = HWND_MENU_SINGLELIST_ITEM9
     { NULL, _Zui_Menu_Singlelist_Item9_Focus_DrawStyle, NULL     },
 
-    // 871 = HWND_MENU_SINGLELIST_ITEM9_OPTION
+    // 873 = HWND_MENU_SINGLELIST_ITEM9_OPTION
     { _Zui_Menu_Singlelist_Item9_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item9_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item9_Option_Disabled_DrawStyle     },
 
-    // 872 = HWND_MENU_SINGLELIST_ITEM10
+    // 874 = HWND_MENU_SINGLELIST_ITEM10
     { NULL, _Zui_Menu_Singlelist_Item10_Focus_DrawStyle, NULL     },
 
-    // 873 = HWND_MENU_SINGLELIST_ITEM10_OPTION
+    // 875 = HWND_MENU_SINGLELIST_ITEM10_OPTION
     { _Zui_Menu_Singlelist_Item10_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item10_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item10_Option_Disabled_DrawStyle     },
 
-    // 874 = HWND_MENU_SINGLELIST_ITEM11
+    // 876 = HWND_MENU_SINGLELIST_ITEM11
     { NULL, _Zui_Menu_Singlelist_Item11_Focus_DrawStyle, NULL     },
 
-    // 875 = HWND_MENU_SINGLELIST_ITEM11_OPTION
+    // 877 = HWND_MENU_SINGLELIST_ITEM11_OPTION
     { _Zui_Menu_Singlelist_Item11_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item11_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item11_Option_Disabled_DrawStyle     },
 
-    // 876 = HWND_MENU_SINGLELIST_ITEM12
+    // 878 = HWND_MENU_SINGLELIST_ITEM12
     { NULL, _Zui_Menu_Singlelist_Item12_Focus_DrawStyle, NULL     },
 
-    // 877 = HWND_MENU_SINGLELIST_ITEM12_OPTION
+    // 879 = HWND_MENU_SINGLELIST_ITEM12_OPTION
     { _Zui_Menu_Singlelist_Item12_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item12_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item12_Option_Disabled_DrawStyle     },
 
-    // 878 = HWND_MENU_SINGLELIST_ITEM13
+    // 880 = HWND_MENU_SINGLELIST_ITEM13
     { NULL, _Zui_Menu_Singlelist_Item13_Focus_DrawStyle, NULL     },
 
-    // 879 = HWND_MENU_SINGLELIST_ITEM13_OPTION
+    // 881 = HWND_MENU_SINGLELIST_ITEM13_OPTION
     { _Zui_Menu_Singlelist_Item13_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item13_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item13_Option_Disabled_DrawStyle     },
 
-    // 880 = HWND_MENU_SINGLELIST_ITEM14
+    // 882 = HWND_MENU_SINGLELIST_ITEM14
     { NULL, _Zui_Menu_Singlelist_Item14_Focus_DrawStyle, NULL     },
 
-    // 881 = HWND_MENU_SINGLELIST_ITEM14_OPTION
+    // 883 = HWND_MENU_SINGLELIST_ITEM14_OPTION
     { _Zui_Menu_Singlelist_Item14_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item14_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item14_Option_Disabled_DrawStyle     },
 
-    // 882 = HWND_MENU_SINGLELIST_ITEM15
+    // 884 = HWND_MENU_SINGLELIST_ITEM15
     { NULL, _Zui_Menu_Singlelist_Item15_Focus_DrawStyle, NULL     },
 
-    // 883 = HWND_MENU_SINGLELIST_ITEM15_OPTION
+    // 885 = HWND_MENU_SINGLELIST_ITEM15_OPTION
     { _Zui_Menu_Singlelist_Item15_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item15_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item15_Option_Disabled_DrawStyle     },
 
-    // 884 = HWND_MENU_SINGLELIST_ITEM16
+    // 886 = HWND_MENU_SINGLELIST_ITEM16
     { NULL, _Zui_Menu_Singlelist_Item16_Focus_DrawStyle, NULL     },
 
-    // 885 = HWND_MENU_SINGLELIST_ITEM16_OPTION
+    // 887 = HWND_MENU_SINGLELIST_ITEM16_OPTION
     { _Zui_Menu_Singlelist_Item16_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Item16_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Item16_Option_Disabled_DrawStyle     },
 
-    // 886 = HWND_MENU_SINGLELIST_TITLE
+    // 888 = HWND_MENU_SINGLELIST_TITLE
     { NULL, _Zui_Menu_Singlelist_Title_Focus_DrawStyle, NULL     },
 
-    // 887 = HWND_MENU_SINGLELIST_TITLE_OPTION
+    // 889 = HWND_MENU_SINGLELIST_TITLE_OPTION
     { _Zui_Menu_Singlelist_Title_Option_Normal_DrawStyle, _Zui_Menu_Singlelist_Title_Option_Focus_DrawStyle, _Zui_Menu_Singlelist_Title_Option_Disabled_DrawStyle     },
 
-    // 888 = HWND_MENU_TIME_TIMEZONE_PAGE
+    // 890 = HWND_MENU_TIME_TIMEZONE_PAGE
     { NULL, NULL, NULL     },
 
-    // 889 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_TOP
+    // 891 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_TOP
     { _Zui_Menu_Time_Timezone_Page_Bg_Top_Normal_DrawStyle, _Zui_Menu_Time_Timezone_Page_Bg_Top_Focus_DrawStyle, NULL     },
 
-    // 890 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_L
+    // 892 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_L
     { _Zui_Menu_Time_Timezone_Page_Bg_L_Normal_DrawStyle, _Zui_Menu_Time_Timezone_Page_Bg_L_Focus_DrawStyle, NULL     },
 
-    // 891 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_C
+    // 893 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_C
     { _Zui_Menu_Time_Timezone_Page_Bg_C_Normal_DrawStyle, _Zui_Menu_Time_Timezone_Page_Bg_C_Focus_DrawStyle, NULL     },
 
-    // 892 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_R
+    // 894 = HWND_MENU_TIME_TIMEZONE_PAGE_BG_R
     { _Zui_Menu_Time_Timezone_Page_Bg_R_Normal_DrawStyle, _Zui_Menu_Time_Timezone_Page_Bg_R_Focus_DrawStyle, NULL     },
 
-    // 893 = HWND_MENU_TIME_TIMEZONE_PAGE_MENU
+    // 895 = HWND_MENU_TIME_TIMEZONE_PAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 894 = HWND_MENU_TIME_TIMEZONE_PAGE_TITLE
+    // 896 = HWND_MENU_TIME_TIMEZONE_PAGE_TITLE
     { _Zui_Menu_Time_Timezone_Page_Title_Normal_DrawStyle, _Zui_Menu_Time_Timezone_Page_Title_Focus_DrawStyle, _Zui_Menu_Time_Timezone_Page_Title_Disabled_DrawStyle     },
 
-    // 895 = HWND_MENU_TIME_TIMEZONE_PAGE_BAR1
+    // 897 = HWND_MENU_TIME_TIMEZONE_PAGE_BAR1
     { _Zui_Menu_Time_Timezone_Page_Bar1_Normal_DrawStyle, _Zui_Menu_Time_Timezone_Page_Bar1_Focus_DrawStyle, NULL     },
 
-    // 896 = HWND_MENU_TIME_TIMEZONE_PAGE_BAR2
+    // 898 = HWND_MENU_TIME_TIMEZONE_PAGE_BAR2
     { _Zui_Menu_Time_Timezone_Page_Bar2_Normal_DrawStyle, _Zui_Menu_Time_Timezone_Page_Bar2_Focus_DrawStyle, NULL     },
 
-    // 897 = HWND_MENU_TIME_TIMEZONE_GRID
+    // 899 = HWND_MENU_TIME_TIMEZONE_GRID
     { NULL, NULL, NULL     },
 
-    // 898 = HWND_MENU_TIME_TIMEZONE_01
+    // 900 = HWND_MENU_TIME_TIMEZONE_01
     { _Zui_Menu_Time_Timezone_01_Normal_DrawStyle, _Zui_Menu_Time_Timezone_01_Focus_DrawStyle, NULL     },
 
-    // 899 = HWND_MENU_TIME_TIMEZONE_01_BG
+    // 901 = HWND_MENU_TIME_TIMEZONE_01_BG
     { NULL, _Zui_Menu_Time_Timezone_01_Bg_Focus_DrawStyle, NULL     },
 
-    // 900 = HWND_MENU_TIME_TIMEZONE_02
+    // 902 = HWND_MENU_TIME_TIMEZONE_02
     { _Zui_Menu_Time_Timezone_02_Normal_DrawStyle, _Zui_Menu_Time_Timezone_02_Focus_DrawStyle, NULL     },
 
-    // 901 = HWND_MENU_TIME_TIMEZONE_02_LEFT_ARROW
+    // 903 = HWND_MENU_TIME_TIMEZONE_02_LEFT_ARROW
     { _Zui_Menu_Time_Timezone_02_Left_Arrow_Normal_DrawStyle, _Zui_Menu_Time_Timezone_02_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 902 = HWND_MENU_TIME_TIMEZONE_02_BG
+    // 904 = HWND_MENU_TIME_TIMEZONE_02_BG
     { NULL, _Zui_Menu_Time_Timezone_02_Bg_Focus_DrawStyle, NULL     },
 
-    // 903 = HWND_MENU_TIME_TIMEZONE_03
+    // 905 = HWND_MENU_TIME_TIMEZONE_03
     { _Zui_Menu_Time_Timezone_03_Normal_DrawStyle, _Zui_Menu_Time_Timezone_03_Focus_DrawStyle, NULL     },
 
-    // 904 = HWND_MENU_TIME_TIMEZONE_03_BG
+    // 906 = HWND_MENU_TIME_TIMEZONE_03_BG
     { NULL, _Zui_Menu_Time_Timezone_03_Bg_Focus_DrawStyle, NULL     },
 
-    // 905 = HWND_MENU_TIME_TIMEZONE_04
+    // 907 = HWND_MENU_TIME_TIMEZONE_04
     { _Zui_Menu_Time_Timezone_04_Normal_DrawStyle, _Zui_Menu_Time_Timezone_04_Focus_DrawStyle, NULL     },
 
-    // 906 = HWND_MENU_TIME_TIMEZONE_04_UP_ARROW
+    // 908 = HWND_MENU_TIME_TIMEZONE_04_UP_ARROW
     { _Zui_Menu_Time_Timezone_04_Up_Arrow_Normal_DrawStyle, _Zui_Menu_Time_Timezone_04_Up_Arrow_Focus_DrawStyle, NULL     },
 
-    // 907 = HWND_MENU_TIME_TIMEZONE_04_BG
+    // 909 = HWND_MENU_TIME_TIMEZONE_04_BG
     { NULL, _Zui_Menu_Time_Timezone_04_Bg_Focus_DrawStyle, NULL     },
 
-    // 908 = HWND_MENU_TIME_TIMEZONE_05
+    // 910 = HWND_MENU_TIME_TIMEZONE_05
     { _Zui_Menu_Time_Timezone_05_Normal_DrawStyle, _Zui_Menu_Time_Timezone_05_Focus_DrawStyle, NULL     },
 
-    // 909 = HWND_MENU_TIME_TIMEZONE_05_BG
+    // 911 = HWND_MENU_TIME_TIMEZONE_05_BG
     { NULL, _Zui_Menu_Time_Timezone_05_Bg_Focus_DrawStyle, NULL     },
 
-    // 910 = HWND_MENU_TIME_TIMEZONE_06
+    // 912 = HWND_MENU_TIME_TIMEZONE_06
     { _Zui_Menu_Time_Timezone_06_Normal_DrawStyle, _Zui_Menu_Time_Timezone_06_Focus_DrawStyle, NULL     },
 
-    // 911 = HWND_MENU_TIME_TIMEZONE_06_DOWN_ARROW
+    // 913 = HWND_MENU_TIME_TIMEZONE_06_DOWN_ARROW
     { _Zui_Menu_Time_Timezone_06_Down_Arrow_Normal_DrawStyle, _Zui_Menu_Time_Timezone_06_Down_Arrow_Focus_DrawStyle, NULL     },
 
-    // 912 = HWND_MENU_TIME_TIMEZONE_06_BG
+    // 914 = HWND_MENU_TIME_TIMEZONE_06_BG
     { NULL, _Zui_Menu_Time_Timezone_06_Bg_Focus_DrawStyle, NULL     },
 
-    // 913 = HWND_MENU_TIME_TIMEZONE_07
+    // 915 = HWND_MENU_TIME_TIMEZONE_07
     { _Zui_Menu_Time_Timezone_07_Normal_DrawStyle, _Zui_Menu_Time_Timezone_07_Focus_DrawStyle, NULL     },
 
-    // 914 = HWND_MENU_TIME_TIMEZONE_07_BG
+    // 916 = HWND_MENU_TIME_TIMEZONE_07_BG
     { NULL, _Zui_Menu_Time_Timezone_07_Bg_Focus_DrawStyle, NULL     },
 
-    // 915 = HWND_MENU_TIME_TIMEZONE_08
+    // 917 = HWND_MENU_TIME_TIMEZONE_08
     { _Zui_Menu_Time_Timezone_08_Normal_DrawStyle, _Zui_Menu_Time_Timezone_08_Focus_DrawStyle, NULL     },
 
-    // 916 = HWND_MENU_TIME_TIMEZONE_08_RIGHT_ARROW
+    // 918 = HWND_MENU_TIME_TIMEZONE_08_RIGHT_ARROW
     { _Zui_Menu_Time_Timezone_08_Right_Arrow_Normal_DrawStyle, _Zui_Menu_Time_Timezone_08_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 917 = HWND_MENU_TIME_TIMEZONE_08_BG
+    // 919 = HWND_MENU_TIME_TIMEZONE_08_BG
     { NULL, _Zui_Menu_Time_Timezone_08_Bg_Focus_DrawStyle, NULL     },
 
-    // 918 = HWND_MENU_TIME_TIMEZONE_09
+    // 920 = HWND_MENU_TIME_TIMEZONE_09
     { _Zui_Menu_Time_Timezone_09_Normal_DrawStyle, _Zui_Menu_Time_Timezone_09_Focus_DrawStyle, NULL     },
 
-    // 919 = HWND_MENU_TIME_TIMEZONE_09_BG
+    // 921 = HWND_MENU_TIME_TIMEZONE_09_BG
     { NULL, _Zui_Menu_Time_Timezone_09_Bg_Focus_DrawStyle, NULL     },
 
-    // 920 = HWND_MENU_LOADING_ANIMATION
+    // 922 = HWND_MENU_LOADING_ANIMATION
     { NULL, NULL, NULL     },
 
-    // 921 = HWND_MENU_DLG_COMMON_LOADANIMATION_0
+    // 923 = HWND_MENU_DLG_COMMON_LOADANIMATION_0
     { _Zui_Menu_Dlg_Common_Loadanimation_0_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_0_Focus_DrawStyle, NULL     },
 
-    // 922 = HWND_MENU_DLG_COMMON_LOADANIMATION_1
+    // 924 = HWND_MENU_DLG_COMMON_LOADANIMATION_1
     { _Zui_Menu_Dlg_Common_Loadanimation_1_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_1_Focus_DrawStyle, NULL     },
 
-    // 923 = HWND_MENU_DLG_COMMON_LOADANIMATION_2
+    // 925 = HWND_MENU_DLG_COMMON_LOADANIMATION_2
     { _Zui_Menu_Dlg_Common_Loadanimation_2_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_2_Focus_DrawStyle, NULL     },
 
-    // 924 = HWND_MENU_DLG_COMMON_LOADANIMATION_3
+    // 926 = HWND_MENU_DLG_COMMON_LOADANIMATION_3
     { _Zui_Menu_Dlg_Common_Loadanimation_3_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_3_Focus_DrawStyle, NULL     },
 
-    // 925 = HWND_MENU_DLG_COMMON_LOADANIMATION_4
+    // 927 = HWND_MENU_DLG_COMMON_LOADANIMATION_4
     { _Zui_Menu_Dlg_Common_Loadanimation_4_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_4_Focus_DrawStyle, NULL     },
 
-    // 926 = HWND_MENU_DLG_COMMON_LOADANIMATION_5
+    // 928 = HWND_MENU_DLG_COMMON_LOADANIMATION_5
     { _Zui_Menu_Dlg_Common_Loadanimation_5_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_5_Focus_DrawStyle, NULL     },
 
-    // 927 = HWND_MENU_DLG_COMMON_LOADANIMATION_6
+    // 929 = HWND_MENU_DLG_COMMON_LOADANIMATION_6
     { _Zui_Menu_Dlg_Common_Loadanimation_6_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_6_Focus_DrawStyle, NULL     },
 
-    // 928 = HWND_MENU_DLG_COMMON_LOADANIMATION_7
+    // 930 = HWND_MENU_DLG_COMMON_LOADANIMATION_7
     { _Zui_Menu_Dlg_Common_Loadanimation_7_Normal_DrawStyle, _Zui_Menu_Dlg_Common_Loadanimation_7_Focus_DrawStyle, NULL     },
 
-    // 929 = HWND_MENU_CHECK_NETWORK
+    // 931 = HWND_MENU_CHECK_NETWORK
     { NULL, NULL, NULL     },
 
-    // 930 = HWND_MENU_NETWORK_BG
+    // 932 = HWND_MENU_NETWORK_BG
     { NULL, NULL, NULL     },
 
-    // 931 = HWND_MENU_NETWORK_BG_TOP
+    // 933 = HWND_MENU_NETWORK_BG_TOP
     { _Zui_Menu_Network_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 932 = HWND_MENU_NETWORK_BG_L
+    // 934 = HWND_MENU_NETWORK_BG_L
     { _Zui_Menu_Network_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 933 = HWND_MENU_NETWORK_BG_C
+    // 935 = HWND_MENU_NETWORK_BG_C
     { _Zui_Menu_Network_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 934 = HWND_MENU_NETWORK_BG_R
+    // 936 = HWND_MENU_NETWORK_BG_R
     { _Zui_Menu_Network_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 935 = HWND_MENU_NETWORK_HW_STATUS
+    // 937 = HWND_MENU_NETWORK_HW_STATUS
     { _Zui_Menu_Network_Hw_Status_Normal_DrawStyle, NULL, NULL     },
 
-    // 936 = HWND_MENU_NETWORK_INTRANET_STATUS
+    // 938 = HWND_MENU_NETWORK_INTRANET_STATUS
     { _Zui_Menu_Network_Intranet_Status_Normal_DrawStyle, NULL, NULL     },
 
-    // 937 = HWND_MENU_NETWORK_INTERNET_STATUS
+    // 939 = HWND_MENU_NETWORK_INTERNET_STATUS
     { _Zui_Menu_Network_Internet_Status_Normal_DrawStyle, NULL, NULL     },
 
-    // 938 = HWND_MENU_NETWORK_DNS_STATUS
+    // 940 = HWND_MENU_NETWORK_DNS_STATUS
     { _Zui_Menu_Network_Dns_Status_Normal_DrawStyle, NULL, NULL     },
 
-    // 939 = HWND_MENU_ALERT_WINDOW
+    // 941 = HWND_MENU_ALERT_WINDOW
     { _Zui_Menu_Alert_Window_Normal_DrawStyle, _Zui_Menu_Alert_Window_Focus_DrawStyle, NULL     },
 
-    // 940 = HWND_MENU_ALERT_ICON
+    // 942 = HWND_MENU_ALERT_ICON
     { _Zui_Menu_Alert_Icon_Normal_DrawStyle, _Zui_Menu_Alert_Icon_Focus_DrawStyle, NULL     },
 
-    // 941 = HWND_MENU_ALERT_STRING
+    // 943 = HWND_MENU_ALERT_STRING
     { _Zui_Menu_Alert_String_Normal_DrawStyle, _Zui_Menu_Alert_String_Focus_DrawStyle, NULL     },
 
-    // 942 = HWND_MENU_CHANNEL_SET_TARGET_REGION_PAGE_TEST
+    // 944 = HWND_MENU_CHANNEL_SET_TARGET_REGION_PAGE_TEST
     { NULL, NULL, NULL     },
 
-    // 943 = HWND_MENU_HDMI_CEC_PAGE
+    // 945 = HWND_MENU_HDMI_CEC_PAGE
     { NULL, NULL, NULL     },
 
-    // 944 = HWND_MENU_HDMI_CEC_PAGE_BG_TOP
+    // 946 = HWND_MENU_HDMI_CEC_PAGE_BG_TOP
     { _Zui_Menu_Hdmi_Cec_Page_Bg_Top_Normal_DrawStyle, NULL, NULL     },
 
-    // 945 = HWND_MENU_HDMI_CEC_PAGE_BG_L
+    // 947 = HWND_MENU_HDMI_CEC_PAGE_BG_L
     { _Zui_Menu_Hdmi_Cec_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 946 = HWND_MENU_HDMI_CEC_PAGE_BG_C
+    // 948 = HWND_MENU_HDMI_CEC_PAGE_BG_C
     { _Zui_Menu_Hdmi_Cec_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 947 = HWND_MENU_HDMI_CEC_PAGE_BG_R
+    // 949 = HWND_MENU_HDMI_CEC_PAGE_BG_R
     { _Zui_Menu_Hdmi_Cec_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 948 = HWND_MENU_HDMI_CEC_MENU
+    // 950 = HWND_MENU_HDMI_CEC_MENU
     { NULL, NULL, NULL     },
 
-    // 949 = HWND_MENU_HDMI_CEC_TITTLE
+    // 951 = HWND_MENU_HDMI_CEC_TITTLE
     { _Zui_Menu_Hdmi_Cec_Tittle_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Tittle_Focus_DrawStyle, NULL     },
 
-    // 950 = HWND_MENU_HDMI_CEC_PAGE_LIST
+    // 952 = HWND_MENU_HDMI_CEC_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 951 = HWND_MENU_HDMI_CEC_HDMI
+    // 953 = HWND_MENU_HDMI_CEC_HDMI
     { NULL, _Zui_Menu_Hdmi_Cec_Hdmi_Focus_DrawStyle, NULL     },
 
-    // 952 = HWND_MENU_HDMI_CEC_HDMI_TEXT
+    // 954 = HWND_MENU_HDMI_CEC_HDMI_TEXT
     { _Zui_Menu_Hdmi_Cec_Hdmi_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Hdmi_Text_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Hdmi_Text_Disabled_DrawStyle     },
 
-    // 953 = HWND_MENU_HDMI_CEC_HDMI_OPTION
+    // 955 = HWND_MENU_HDMI_CEC_HDMI_OPTION
     { _Zui_Menu_Hdmi_Cec_Hdmi_Option_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Hdmi_Option_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Hdmi_Option_Disabled_DrawStyle     },
 
-    // 954 = HWND_MENU_HDMI_CEC_ARC
+    // 956 = HWND_MENU_HDMI_CEC_ARC
     { NULL, _Zui_Menu_Hdmi_Cec_Arc_Focus_DrawStyle, NULL     },
 
-    // 955 = HWND_MENU_HDMI_CEC_ARC_TEXT
+    // 957 = HWND_MENU_HDMI_CEC_ARC_TEXT
     { _Zui_Menu_Hdmi_Cec_Arc_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Arc_Text_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Arc_Text_Disabled_DrawStyle     },
 
-    // 956 = HWND_MENU_HDMI_CEC_ARC_OPTION
+    // 958 = HWND_MENU_HDMI_CEC_ARC_OPTION
     { _Zui_Menu_Hdmi_Cec_Arc_Option_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Arc_Option_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Arc_Option_Disabled_DrawStyle     },
 
-    // 957 = HWND_MENU_HDMI_CEC_AUTO_STANDBY
+    // 959 = HWND_MENU_HDMI_CEC_AUTO_STANDBY
     { NULL, _Zui_Menu_Hdmi_Cec_Auto_Standby_Focus_DrawStyle, NULL     },
 
-    // 958 = HWND_MENU_HDMI_CEC_AUTO_STANDBY_TEXT
+    // 960 = HWND_MENU_HDMI_CEC_AUTO_STANDBY_TEXT
     { _Zui_Menu_Hdmi_Cec_Auto_Standby_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Standby_Text_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Standby_Text_Disabled_DrawStyle     },
 
-    // 959 = HWND_MENU_HDMI_CEC_AUTO_STANDBY_OPTION
+    // 961 = HWND_MENU_HDMI_CEC_AUTO_STANDBY_OPTION
     { _Zui_Menu_Hdmi_Cec_Auto_Standby_Option_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Standby_Option_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Standby_Option_Disabled_DrawStyle     },
 
-    // 960 = HWND_MENU_HDMI_CEC_AUTO_TV_ON
+    // 962 = HWND_MENU_HDMI_CEC_AUTO_TV_ON
     { NULL, _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Focus_DrawStyle, NULL     },
 
-    // 961 = HWND_MENU_HDMI_CEC_AUTO_TV_ON_TEST
+    // 963 = HWND_MENU_HDMI_CEC_AUTO_TV_ON_TEST
     { _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Test_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Test_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Test_Disabled_DrawStyle     },
 
-    // 962 = HWND_MENU_HDMI_CEC_AUTO_TV_ON_OPTION
+    // 964 = HWND_MENU_HDMI_CEC_AUTO_TV_ON_OPTION
     { _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Option_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Option_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Auto_Tv_On_Option_Disabled_DrawStyle     },
 
-    // 963 = HWND_MENU_HDMI_CEC_DEVICE_CONTROL
+    // 965 = HWND_MENU_HDMI_CEC_DEVICE_CONTROL
     { NULL, _Zui_Menu_Hdmi_Cec_Device_Control_Focus_DrawStyle, NULL     },
 
-    // 964 = HWND_MENU_HDMI_CEC_DEVICE_CONTROL_TEST
+    // 966 = HWND_MENU_HDMI_CEC_DEVICE_CONTROL_TEST
     { _Zui_Menu_Hdmi_Cec_Device_Control_Test_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_Control_Test_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_Control_Test_Disabled_DrawStyle     },
 
-    // 965 = HWND_MENU_HDMI_CEC_DEVICE_CONTROL_OPTION
+    // 967 = HWND_MENU_HDMI_CEC_DEVICE_CONTROL_OPTION
     { _Zui_Menu_Hdmi_Cec_Device_Control_Option_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_Control_Option_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_Control_Option_Disabled_DrawStyle     },
 
-    // 966 = HWND_MENU_HDMI_CEC_DEVICE_LIST
+    // 968 = HWND_MENU_HDMI_CEC_DEVICE_LIST
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_Focus_DrawStyle, NULL     },
 
-    // 967 = HWND_MENU_HDMI_CEC_DEVICE_LIST_TEXT
+    // 969 = HWND_MENU_HDMI_CEC_DEVICE_LIST_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_Text_Focus_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_Text_Disabled_DrawStyle     },
 
-    // 968 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE
+    // 970 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE
     { NULL, NULL, NULL     },
 
-    // 969 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_LEFT
+    // 971 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_LEFT
     { _Zui_Menu_Hdmi_Cec_Device_List_Page_Bg_Left_Normal_DrawStyle, NULL, NULL     },
 
-    // 970 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_MID
+    // 972 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_MID
     { _Zui_Menu_Hdmi_Cec_Device_List_Page_Bg_Mid_Normal_DrawStyle, NULL, NULL     },
 
-    // 971 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_RIGHT
+    // 973 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_RIGHT
     { _Zui_Menu_Hdmi_Cec_Device_List_Page_Bg_Right_Normal_DrawStyle, NULL, NULL     },
 
-    // 972 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_TITLE
+    // 974 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_TITLE
     { _Zui_Menu_Hdmi_Cec_Device_List_Page_Title_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_Page_Title_Focus_DrawStyle, NULL     },
 
-    // 973 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_MENU
+    // 975 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_BG_MENU
     { NULL, NULL, NULL     },
 
-    // 974 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_LIST
+    // 976 = HWND_MENU_HDMI_CEC_DEVICE_LIST_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 975 = HWND_MENU_HDMI_CEC_DEVICE_LIST_A
+    // 977 = HWND_MENU_HDMI_CEC_DEVICE_LIST_A
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_A_Focus_DrawStyle, NULL     },
 
-    // 976 = HWND_MENU_HDMI_CEC_DEVICE_LIST_A_PORT_TEXT
+    // 978 = HWND_MENU_HDMI_CEC_DEVICE_LIST_A_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_A_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_A_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 977 = HWND_MENU_HDMI_CEC_DEVICE_LIST_A_TEXT
+    // 979 = HWND_MENU_HDMI_CEC_DEVICE_LIST_A_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_A_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_A_Text_Focus_DrawStyle, NULL     },
 
-    // 978 = HWND_MENU_HDMI_CEC_DEVICE_LIST_B
+    // 980 = HWND_MENU_HDMI_CEC_DEVICE_LIST_B
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_B_Focus_DrawStyle, NULL     },
 
-    // 979 = HWND_MENU_HDMI_CEC_DEVICE_LIST_B_PORT_TEXT
+    // 981 = HWND_MENU_HDMI_CEC_DEVICE_LIST_B_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_B_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_B_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 980 = HWND_MENU_HDMI_CEC_DEVICE_LIST_B_TEXT
+    // 982 = HWND_MENU_HDMI_CEC_DEVICE_LIST_B_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_B_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_B_Text_Focus_DrawStyle, NULL     },
 
-    // 981 = HWND_MENU_HDMI_CEC_DEVICE_LIST_C
+    // 983 = HWND_MENU_HDMI_CEC_DEVICE_LIST_C
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_C_Focus_DrawStyle, NULL     },
 
-    // 982 = HWND_MENU_HDMI_CEC_DEVICE_LIST_C_PORT_TEXT
+    // 984 = HWND_MENU_HDMI_CEC_DEVICE_LIST_C_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_C_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_C_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 983 = HWND_MENU_HDMI_CEC_DEVICE_LIST_C_TEXT
+    // 985 = HWND_MENU_HDMI_CEC_DEVICE_LIST_C_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_C_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_C_Text_Focus_DrawStyle, NULL     },
 
-    // 984 = HWND_MENU_HDMI_CEC_DEVICE_LIST_D
+    // 986 = HWND_MENU_HDMI_CEC_DEVICE_LIST_D
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_D_Focus_DrawStyle, NULL     },
 
-    // 985 = HWND_MENU_HDMI_CEC_DEVICE_LIST_D_PORT_TEXT
+    // 987 = HWND_MENU_HDMI_CEC_DEVICE_LIST_D_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_D_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_D_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 986 = HWND_MENU_HDMI_CEC_DEVICE_LIST_D_TEXT
+    // 988 = HWND_MENU_HDMI_CEC_DEVICE_LIST_D_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_D_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_D_Text_Focus_DrawStyle, NULL     },
 
-    // 987 = HWND_MENU_HDMI_CEC_DEVICE_LIST_E
+    // 989 = HWND_MENU_HDMI_CEC_DEVICE_LIST_E
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_E_Focus_DrawStyle, NULL     },
 
-    // 988 = HWND_MENU_HDMI_CEC_DEVICE_LIST_E_PORT_TEXT
+    // 990 = HWND_MENU_HDMI_CEC_DEVICE_LIST_E_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_E_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_E_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 989 = HWND_MENU_HDMI_CEC_DEVICE_LIST_E_TEXT
+    // 991 = HWND_MENU_HDMI_CEC_DEVICE_LIST_E_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_E_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_E_Text_Focus_DrawStyle, NULL     },
 
-    // 990 = HWND_MENU_HDMI_CEC_DEVICE_LIST_F
+    // 992 = HWND_MENU_HDMI_CEC_DEVICE_LIST_F
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_F_Focus_DrawStyle, NULL     },
 
-    // 991 = HWND_MENU_HDMI_CEC_DEVICE_LIST_F_PORT_TEXT
+    // 993 = HWND_MENU_HDMI_CEC_DEVICE_LIST_F_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_F_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_F_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 992 = HWND_MENU_HDMI_CEC_DEVICE_LIST_F_TEXT
+    // 994 = HWND_MENU_HDMI_CEC_DEVICE_LIST_F_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_F_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_F_Text_Focus_DrawStyle, NULL     },
 
-    // 993 = HWND_MENU_HDMI_CEC_DEVICE_LIST_G
+    // 995 = HWND_MENU_HDMI_CEC_DEVICE_LIST_G
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_G_Focus_DrawStyle, NULL     },
 
-    // 994 = HWND_MENU_HDMI_CEC_DEVICE_LIST_G_PORT_TEXT
+    // 996 = HWND_MENU_HDMI_CEC_DEVICE_LIST_G_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_G_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_G_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 995 = HWND_MENU_HDMI_CEC_DEVICE_LIST_G_TEXT
+    // 997 = HWND_MENU_HDMI_CEC_DEVICE_LIST_G_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_G_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_G_Text_Focus_DrawStyle, NULL     },
 
-    // 996 = HWND_MENU_HDMI_CEC_DEVICE_LIST_H
+    // 998 = HWND_MENU_HDMI_CEC_DEVICE_LIST_H
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_H_Focus_DrawStyle, NULL     },
 
-    // 997 = HWND_MENU_HDMI_CEC_DEVICE_LIST_H_PORT_TEXT
+    // 999 = HWND_MENU_HDMI_CEC_DEVICE_LIST_H_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_H_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_H_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 998 = HWND_MENU_HDMI_CEC_DEVICE_LIST_H_TEXT
+    // 1000 = HWND_MENU_HDMI_CEC_DEVICE_LIST_H_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_H_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_H_Text_Focus_DrawStyle, NULL     },
 
-    // 999 = HWND_MENU_HDMI_CEC_DEVICE_LIST_I
+    // 1001 = HWND_MENU_HDMI_CEC_DEVICE_LIST_I
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_I_Focus_DrawStyle, NULL     },
 
-    // 1000 = HWND_MENU_HDMI_CEC_DEVICE_LIST_I_PORT_TEXT
+    // 1002 = HWND_MENU_HDMI_CEC_DEVICE_LIST_I_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_I_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_I_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 1001 = HWND_MENU_HDMI_CEC_DEVICE_LIST_I_TEXT
+    // 1003 = HWND_MENU_HDMI_CEC_DEVICE_LIST_I_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_I_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_I_Text_Focus_DrawStyle, NULL     },
 
-    // 1002 = HWND_MENU_HDMI_CEC_DEVICE_LIST_J
+    // 1004 = HWND_MENU_HDMI_CEC_DEVICE_LIST_J
     { NULL, _Zui_Menu_Hdmi_Cec_Device_List_J_Focus_DrawStyle, NULL     },
 
-    // 1003 = HWND_MENU_HDMI_CEC_DEVICE_LIST_J_PORT_TEXT
+    // 1005 = HWND_MENU_HDMI_CEC_DEVICE_LIST_J_PORT_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_J_Port_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_J_Port_Text_Focus_DrawStyle, NULL     },
 
-    // 1004 = HWND_MENU_HDMI_CEC_DEVICE_LIST_J_TEXT
+    // 1006 = HWND_MENU_HDMI_CEC_DEVICE_LIST_J_TEXT
     { _Zui_Menu_Hdmi_Cec_Device_List_J_Text_Normal_DrawStyle, _Zui_Menu_Hdmi_Cec_Device_List_J_Text_Focus_DrawStyle, NULL     },
 
-    // 1005 = HWND_MENU_HDMI_CEC_DEVICE_SEARCHING
+    // 1007 = HWND_MENU_HDMI_CEC_DEVICE_SEARCHING
     { _Zui_Menu_Hdmi_Cec_Device_Searching_Normal_DrawStyle, NULL, NULL     },
 
-    // 1006 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE
+    // 1008 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE
     { NULL, NULL, NULL     },
 
-    // 1007 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_BG_L
+    // 1009 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_BG_L
     { _Zui_Menu_Option_Closedcaption_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1008 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_BG_C
+    // 1010 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_BG_C
     { _Zui_Menu_Option_Closedcaption_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1009 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_BG_R
+    // 1011 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_BG_R
     { _Zui_Menu_Option_Closedcaption_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1010 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_UP_ARROW
+    // 1012 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_UP_ARROW
     { _Zui_Menu_Option_Closedcaption_Page_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1011 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_DOWN_ARROW
+    // 1013 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_DOWN_ARROW
     { _Zui_Menu_Option_Closedcaption_Page_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1012 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_MENU
+    // 1014 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1013 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE
+    // 1015 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Ccmode_Focus_DrawStyle, NULL     },
 
-    // 1014 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_TEXT
+    // 1016 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_TEXT
     { _Zui_Menu_Option_Closedcaption_Item_Ccmode_Text_Normal_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Ccmode_Text_Focus_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Ccmode_Text_Disabled_DrawStyle     },
 
-    // 1015 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_LEFT_ARROW
+    // 1017 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Ccmode_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1016 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_OPTION
+    // 1018 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_OPTION
     { _Zui_Menu_Option_Closedcaption_Item_Ccmode_Option_Normal_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Ccmode_Option_Focus_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Ccmode_Option_Disabled_DrawStyle     },
 
-    // 1017 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_RIGHT_ARROW
+    // 1019 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_CCMODE_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Ccmode_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1018 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION
+    // 1020 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Basicselection_Focus_DrawStyle, NULL     },
 
-    // 1019 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION_LEFT_ARROW
+    // 1021 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Basicselection_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1020 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION_OPTION
+    // 1022 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION_OPTION
     { _Zui_Menu_Option_Closedcaption_Item_Basicselection_Option_Normal_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Basicselection_Option_Focus_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Basicselection_Option_Disabled_DrawStyle     },
 
-    // 1021 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION_RIGHT_ARROW
+    // 1023 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_BASICSELECTION_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Basicselection_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1022 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION
+    // 1024 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Focus_DrawStyle, NULL     },
 
-    // 1023 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION_LEFT_ARROW
+    // 1025 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1024 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION_OPTION
+    // 1026 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION_OPTION
     { _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Option_Normal_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Option_Focus_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Option_Disabled_DrawStyle     },
 
-    // 1025 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION_RIGHT_ARROW
+    // 1027 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_ADVANCESELECTION_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Advanceselection_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1026 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION
+    // 1028 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION
     { NULL, _Zui_Menu_Option_Closedcaption_Item_Option_Focus_DrawStyle, NULL     },
 
-    // 1027 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION_TEXT
+    // 1029 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION_TEXT
     { _Zui_Menu_Option_Closedcaption_Item_Option_Text_Normal_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Option_Text_Focus_DrawStyle, _Zui_Menu_Option_Closedcaption_Item_Option_Text_Disabled_DrawStyle     },
 
-    // 1028 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION_MENU
+    // 1030 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION_MENU
     { NULL, NULL, NULL     },
 
-    // 1029 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION_OK
+    // 1031 = HWND_MENU_OPTION_CLOSEDCAPTION_ITEM_OPTION_OK
     { NULL, NULL, NULL     },
 
-    // 1030 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_COVER
+    // 1032 = HWND_MENU_OPTION_CLOSEDCAPTION_PAGE_COVER
     { NULL, _Zui_Menu_Option_Closedcaption_Page_Cover_Focus_DrawStyle, NULL     },
 
-    // 1031 = HWND_MENU_OPTION_CCOPTION_PAGE
+    // 1033 = HWND_MENU_OPTION_CCOPTION_PAGE
     { NULL, NULL, NULL     },
 
-    // 1032 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_BG_L
+    // 1034 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_BG_L
     { _Zui_Menu_Option_Ccoption_Item_Mode_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1033 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_BG_C
+    // 1035 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_BG_C
     { _Zui_Menu_Option_Ccoption_Item_Mode_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1034 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_BG_R
+    // 1036 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_BG_R
     { _Zui_Menu_Option_Ccoption_Item_Mode_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1035 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_UP_ARROW
+    // 1037 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_UP_ARROW
     { _Zui_Menu_Option_Ccoption_Item_Mode_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1036 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_DOWN_ARROW
+    // 1038 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_DOWN_ARROW
     { _Zui_Menu_Option_Ccoption_Item_Mode_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1037 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_MENU
+    // 1039 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_MENU
     { NULL, NULL, NULL     },
 
-    // 1038 = HWND_MENU_OPTION_CCOPTION_PAGE_LIST
+    // 1040 = HWND_MENU_OPTION_CCOPTION_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 1039 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE
+    // 1041 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE
     { NULL, _Zui_Menu_Option_Ccoption_Item_Mode_Focus_DrawStyle, NULL     },
 
-    // 1040 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_TEXT
+    // 1042 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Mode_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Mode_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Mode_Text_Disabled_DrawStyle     },
 
-    // 1041 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_LEFT_ARROW
+    // 1043 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Mode_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1042 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_OPTION
+    // 1044 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Mode_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Mode_Option_Focus_DrawStyle, NULL     },
 
-    // 1043 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_RIGHT_ARROW
+    // 1045 = HWND_MENU_OPTION_CCOPTION_ITEM_MODE_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Mode_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1044 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE
+    // 1046 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontstyle_Focus_DrawStyle, NULL     },
 
-    // 1045 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_TEXT
+    // 1047 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Fontstyle_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontstyle_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontstyle_Text_Disabled_DrawStyle     },
 
-    // 1046 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_LEFT_ARROW
+    // 1048 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontstyle_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1047 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_OPTION
+    // 1049 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Fontstyle_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontstyle_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontstyle_Option_Disabled_DrawStyle     },
 
-    // 1048 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_RIGHT_ARROW
+    // 1050 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSTYLE_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontstyle_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1049 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE
+    // 1051 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontsize_Focus_DrawStyle, NULL     },
 
-    // 1050 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_TEXT
+    // 1052 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Fontsize_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontsize_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontsize_Text_Disabled_DrawStyle     },
 
-    // 1051 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_LEFT_ARROW
+    // 1053 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontsize_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1052 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_OPTION
+    // 1054 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Fontsize_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontsize_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontsize_Option_Disabled_DrawStyle     },
 
-    // 1053 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_RIGHT_ARROW
+    // 1055 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTSIZE_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontsize_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1054 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE
+    // 1056 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Focus_DrawStyle, NULL     },
 
-    // 1055 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_TEXT
+    // 1057 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Text_Disabled_DrawStyle     },
 
-    // 1056 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_LEFT_ARROW
+    // 1058 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1057 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_OPTION
+    // 1059 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Option_Disabled_DrawStyle     },
 
-    // 1058 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_RIGHT_ARROW
+    // 1060 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGESTYLE_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontedgestyle_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1059 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR
+    // 1061 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Focus_DrawStyle, NULL     },
 
-    // 1060 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_TEXT
+    // 1062 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Text_Disabled_DrawStyle     },
 
-    // 1061 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_LEFT_ARROW
+    // 1063 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1062 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_OPTION
+    // 1064 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Option_Disabled_DrawStyle     },
 
-    // 1063 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_RIGHT_ARROW
+    // 1065 = HWND_MENU_OPTION_CCOPTION_ITEM_FONTEDGECOLOR_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fontedgecolor_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1064 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR
+    // 1066 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fgcolor_Focus_DrawStyle, NULL     },
 
-    // 1065 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_TEXT
+    // 1067 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Fgcolor_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgcolor_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgcolor_Text_Disabled_DrawStyle     },
 
-    // 1066 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_LEFT_ARROW
+    // 1068 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fgcolor_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1067 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_OPTION
+    // 1069 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Fgcolor_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgcolor_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgcolor_Option_Disabled_DrawStyle     },
 
-    // 1068 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_RIGHT_ARROW
+    // 1070 = HWND_MENU_OPTION_CCOPTION_ITEM_FGCOLOR_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fgcolor_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1069 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR
+    // 1071 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR
     { NULL, _Zui_Menu_Option_Ccoption_Item_Bgcolor_Focus_DrawStyle, NULL     },
 
-    // 1070 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_TEXT
+    // 1072 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Bgcolor_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgcolor_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgcolor_Text_Disabled_DrawStyle     },
 
-    // 1071 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_LEFT_ARROW
+    // 1073 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Bgcolor_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1072 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_OPTION
+    // 1074 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Bgcolor_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgcolor_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgcolor_Option_Disabled_DrawStyle     },
 
-    // 1073 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_RIGHT_ARROW
+    // 1075 = HWND_MENU_OPTION_CCOPTION_ITEM_BGCOLOR_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Bgcolor_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1074 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY
+    // 1076 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fgopacity_Focus_DrawStyle, NULL     },
 
-    // 1075 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_TEXT
+    // 1077 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Fgopacity_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgopacity_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgopacity_Text_Disabled_DrawStyle     },
 
-    // 1076 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_LEFT_ARROW
+    // 1078 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fgopacity_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1077 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_OPTION
+    // 1079 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Fgopacity_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgopacity_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Fgopacity_Option_Disabled_DrawStyle     },
 
-    // 1078 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_RIGHT_ARROW
+    // 1080 = HWND_MENU_OPTION_CCOPTION_ITEM_FGOPACITY_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Fgopacity_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1079 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY
+    // 1081 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY
     { NULL, _Zui_Menu_Option_Ccoption_Item_Bgopacity_Focus_DrawStyle, NULL     },
 
-    // 1080 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_TEXT
+    // 1082 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Bgopacity_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgopacity_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgopacity_Text_Disabled_DrawStyle     },
 
-    // 1081 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_LEFT_ARROW
+    // 1083 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Bgopacity_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1082 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_OPTION
+    // 1084 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Bgopacity_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgopacity_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Bgopacity_Option_Disabled_DrawStyle     },
 
-    // 1083 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_RIGHT_ARROW
+    // 1085 = HWND_MENU_OPTION_CCOPTION_ITEM_BGOPACITY_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Bgopacity_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1084 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR
+    // 1086 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR
     { NULL, _Zui_Menu_Option_Ccoption_Item_Windowcolor_Focus_DrawStyle, NULL     },
 
-    // 1085 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_TEXT
+    // 1087 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Windowcolor_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowcolor_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowcolor_Text_Disabled_DrawStyle     },
 
-    // 1086 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_LEFT_ARROW
+    // 1088 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Windowcolor_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1087 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_OPTION
+    // 1089 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Windowcolor_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowcolor_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowcolor_Option_Disabled_DrawStyle     },
 
-    // 1088 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_RIGHT_ARROW
+    // 1090 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWCOLOR_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Windowcolor_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1089 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY
+    // 1091 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY
     { NULL, _Zui_Menu_Option_Ccoption_Item_Windowopacity_Focus_DrawStyle, NULL     },
 
-    // 1090 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_TEXT
+    // 1092 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_TEXT
     { _Zui_Menu_Option_Ccoption_Item_Windowopacity_Text_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowopacity_Text_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowopacity_Text_Disabled_DrawStyle     },
 
-    // 1091 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_LEFT_ARROW
+    // 1093 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_LEFT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Windowopacity_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1092 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_OPTION
+    // 1094 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_OPTION
     { _Zui_Menu_Option_Ccoption_Item_Windowopacity_Option_Normal_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowopacity_Option_Focus_DrawStyle, _Zui_Menu_Option_Ccoption_Item_Windowopacity_Option_Disabled_DrawStyle     },
 
-    // 1093 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_RIGHT_ARROW
+    // 1095 = HWND_MENU_OPTION_CCOPTION_ITEM_WINDOWOPACITY_RIGHT_ARROW
     { NULL, _Zui_Menu_Option_Ccoption_Item_Windowopacity_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1094 = HWND_MENU_LOCK_SUBPAGE
+    // 1096 = HWND_MENU_LOCK_SUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1095 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE
+    // 1097 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1096 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_BG_L
+    // 1098 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_BG_L
     { _Zui_Menu_Lock_Inputblocksubpage_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1097 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_BG_C
+    // 1099 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_BG_C
     { _Zui_Menu_Lock_Inputblocksubpage_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1098 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_BG_R
+    // 1100 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_BG_R
     { _Zui_Menu_Lock_Inputblocksubpage_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1099 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_UP_ARROW
+    // 1101 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_UP_ARROW
     { _Zui_Menu_Lock_Inputblocksubpage_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1100 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_DOWN_ARROW
+    // 1102 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_DOWN_ARROW
     { _Zui_Menu_Lock_Inputblocksubpage_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1101 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_MENU
+    // 1103 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1102 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_TITLE
+    // 1104 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_TITLE
     { _Zui_Menu_Lock_Inputblocksubpage_Title_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Title_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Title_Disabled_DrawStyle     },
 
-    // 1103 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_LIST
+    // 1105 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 1104 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV
+    // 1106 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Focus_DrawStyle, NULL     },
 
-    // 1105 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_TEXT
+    // 1107 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_TEXT
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Text_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Text_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Text_Disabled_DrawStyle     },
 
-    // 1106 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_LEFT_ARROW
+    // 1108 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1107 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_OPTION
+    // 1109 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_OPTION
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Option_Focus_DrawStyle, NULL     },
 
-    // 1108 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_RIGHT_ARROW
+    // 1110 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_TV_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Tv_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1109 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV
+    // 1111 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Focus_DrawStyle, NULL     },
 
-    // 1110 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_TEXT
+    // 1112 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_TEXT
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Text_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Text_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Text_Disabled_DrawStyle     },
 
-    // 1111 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_LEFT_ARROW
+    // 1113 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1112 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_OPTION
+    // 1114 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_OPTION
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Option_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Option_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Option_Disabled_DrawStyle     },
 
-    // 1113 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_RIGHT_ARROW
+    // 1115 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_AV_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Av_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1114 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO
+    // 1116 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Focus_DrawStyle, NULL     },
 
-    // 1115 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_TEXT
+    // 1117 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_TEXT
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Text_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Text_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Text_Disabled_DrawStyle     },
 
-    // 1116 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_LEFT_ARROW
+    // 1118 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1117 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_OPTION
+    // 1119 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_OPTION
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Option_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Option_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Option_Disabled_DrawStyle     },
 
-    // 1118 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_RIGHT_ARROW
+    // 1120 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_SVIDEO_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Svideo_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1119 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT
+    // 1121 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Focus_DrawStyle, NULL     },
 
-    // 1120 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_TEXT
+    // 1122 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_TEXT
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Text_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Text_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Text_Disabled_DrawStyle     },
 
-    // 1121 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_LEFT_ARROW
+    // 1123 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1122 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_OPTION
+    // 1124 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_OPTION
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Option_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Option_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Option_Disabled_DrawStyle     },
 
-    // 1123 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_RIGHT_ARROW
+    // 1125 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_COMPONENT_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Component_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1124 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI
+    // 1126 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Focus_DrawStyle, NULL     },
 
-    // 1125 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_TEXT
+    // 1127 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_TEXT
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Text_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Text_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Text_Disabled_DrawStyle     },
 
-    // 1126 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_LEFT_ARROW
+    // 1128 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1127 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_OPTION
+    // 1129 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_OPTION
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Option_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Option_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Option_Disabled_DrawStyle     },
 
-    // 1128 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_RIGHT_ARROW
+    // 1130 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_HDMI_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Hdmi_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1129 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC
+    // 1131 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Focus_DrawStyle, NULL     },
 
-    // 1130 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_TEXT
+    // 1132 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_TEXT
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Text_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Text_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Text_Disabled_DrawStyle     },
 
-    // 1131 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_LEFT_ARROW
+    // 1133 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1132 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_OPTION
+    // 1134 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_OPTION
     { _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Option_Normal_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Option_Focus_DrawStyle, _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Option_Disabled_DrawStyle     },
 
-    // 1133 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_RIGHT_ARROW
+    // 1135 = HWND_MENU_LOCK_INPUTBLOCKSUBPAGE_ITEM_PC_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Inputblocksubpage_Item_Pc_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1134 = HWND_MENU_LOCK_USSUBPAGE
+    // 1136 = HWND_MENU_LOCK_USSUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1135 = HWND_MENU_LOCK_USSUBPAGE_BG_L
+    // 1137 = HWND_MENU_LOCK_USSUBPAGE_BG_L
     { _Zui_Menu_Lock_Ussubpage_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1136 = HWND_MENU_LOCK_USSUBPAGE_BG_C
+    // 1138 = HWND_MENU_LOCK_USSUBPAGE_BG_C
     { _Zui_Menu_Lock_Ussubpage_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1137 = HWND_MENU_LOCK_USSUBPAGE_BG_R
+    // 1139 = HWND_MENU_LOCK_USSUBPAGE_BG_R
     { _Zui_Menu_Lock_Ussubpage_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1138 = HWND_MENU_LOCK_USSUBPAGE_UP_ARROW
+    // 1140 = HWND_MENU_LOCK_USSUBPAGE_UP_ARROW
     { _Zui_Menu_Lock_Ussubpage_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1139 = HWND_MENU_LOCK_USSUBPAGE_DOWN_ARROW
+    // 1141 = HWND_MENU_LOCK_USSUBPAGE_DOWN_ARROW
     { _Zui_Menu_Lock_Ussubpage_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1140 = HWND_MENU_LOCK_USSUBPAGE_MENU
+    // 1142 = HWND_MENU_LOCK_USSUBPAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1141 = HWND_MENU_LOCK_USSUBPAGE_TITLE
+    // 1143 = HWND_MENU_LOCK_USSUBPAGE_TITLE
     { _Zui_Menu_Lock_Ussubpage_Title_Normal_DrawStyle, _Zui_Menu_Lock_Ussubpage_Title_Focus_DrawStyle, _Zui_Menu_Lock_Ussubpage_Title_Disabled_DrawStyle     },
 
-    // 1142 = HWND_MENU_LOCK_USSUBPAGE_ITEM_TV
+    // 1144 = HWND_MENU_LOCK_USSUBPAGE_ITEM_TV
     { NULL, _Zui_Menu_Lock_Ussubpage_Item_Tv_Focus_DrawStyle, NULL     },
 
-    // 1143 = HWND_MENU_LOCK_USSUBPAGE_ITEM_TV_TEXT
+    // 1145 = HWND_MENU_LOCK_USSUBPAGE_ITEM_TV_TEXT
     { _Zui_Menu_Lock_Ussubpage_Item_Tv_Text_Normal_DrawStyle, _Zui_Menu_Lock_Ussubpage_Item_Tv_Text_Focus_DrawStyle, _Zui_Menu_Lock_Ussubpage_Item_Tv_Text_Disabled_DrawStyle     },
 
-    // 1144 = HWND_MENU_LOCK_USSUBPAGE_ITEM_MPAA
+    // 1146 = HWND_MENU_LOCK_USSUBPAGE_ITEM_MPAA
     { NULL, _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Focus_DrawStyle, NULL     },
 
-    // 1145 = HWND_MENU_LOCK_USSUBPAGE_ITEM_MPAA_TEXT
+    // 1147 = HWND_MENU_LOCK_USSUBPAGE_ITEM_MPAA_TEXT
     { _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Text_Normal_DrawStyle, _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Text_Focus_DrawStyle, _Zui_Menu_Lock_Ussubpage_Item_Mpaa_Text_Disabled_DrawStyle     },
 
-    // 1146 = HWND_MENU_LOCK_USSUBPAGE_OK
+    // 1148 = HWND_MENU_LOCK_USSUBPAGE_OK
     { NULL, NULL, NULL     },
 
-    // 1147 = HWND_MENU_LOCK_CANADASUBPAGE
+    // 1149 = HWND_MENU_LOCK_CANADASUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1148 = HWND_MENU_LOCK_CANADASUBPAGE_BG_L
+    // 1150 = HWND_MENU_LOCK_CANADASUBPAGE_BG_L
     { _Zui_Menu_Lock_Canadasubpage_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1149 = HWND_MENU_LOCK_CANADASUBPAGE_BG_C
+    // 1151 = HWND_MENU_LOCK_CANADASUBPAGE_BG_C
     { _Zui_Menu_Lock_Canadasubpage_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1150 = HWND_MENU_LOCK_CANADASUBPAGE_BG_R
+    // 1152 = HWND_MENU_LOCK_CANADASUBPAGE_BG_R
     { _Zui_Menu_Lock_Canadasubpage_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1151 = HWND_MENU_LOCK_CANADASUBPAGE_UP_ARROW
+    // 1153 = HWND_MENU_LOCK_CANADASUBPAGE_UP_ARROW
     { _Zui_Menu_Lock_Canadasubpage_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1152 = HWND_MENU_LOCK_CANADASUBPAGE_DOWN_ARROW
+    // 1154 = HWND_MENU_LOCK_CANADASUBPAGE_DOWN_ARROW
     { _Zui_Menu_Lock_Canadasubpage_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1153 = HWND_MENU_LOCK_CANADASUBPAGE_MENU
+    // 1155 = HWND_MENU_LOCK_CANADASUBPAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1154 = HWND_MENU_LOCK_CANADASUBPAGE_TITLE
+    // 1156 = HWND_MENU_LOCK_CANADASUBPAGE_TITLE
     { _Zui_Menu_Lock_Canadasubpage_Title_Normal_DrawStyle, _Zui_Menu_Lock_Canadasubpage_Title_Focus_DrawStyle, _Zui_Menu_Lock_Canadasubpage_Title_Disabled_DrawStyle     },
 
-    // 1155 = HWND_MENU_LOCK_CANADASUBPAGE_OK
+    // 1157 = HWND_MENU_LOCK_CANADASUBPAGE_OK
     { NULL, NULL, NULL     },
 
-    // 1156 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_ENG
+    // 1158 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_ENG
     { NULL, _Zui_Menu_Lock_Canadasubpage_Item_Eng_Focus_DrawStyle, NULL     },
 
-    // 1157 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_ENG_TEXT
+    // 1159 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_ENG_TEXT
     { _Zui_Menu_Lock_Canadasubpage_Item_Eng_Text_Normal_DrawStyle, _Zui_Menu_Lock_Canadasubpage_Item_Eng_Text_Focus_DrawStyle, _Zui_Menu_Lock_Canadasubpage_Item_Eng_Text_Disabled_DrawStyle     },
 
-    // 1158 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_FRE
+    // 1160 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_FRE
     { NULL, _Zui_Menu_Lock_Canadasubpage_Item_Fre_Focus_DrawStyle, NULL     },
 
-    // 1159 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_FRE_TEXT
+    // 1161 = HWND_MENU_LOCK_CANADASUBPAGE_ITEM_FRE_TEXT
     { _Zui_Menu_Lock_Canadasubpage_Item_Fre_Text_Normal_DrawStyle, _Zui_Menu_Lock_Canadasubpage_Item_Fre_Text_Focus_DrawStyle, _Zui_Menu_Lock_Canadasubpage_Item_Fre_Text_Disabled_DrawStyle     },
 
-    // 1160 = HWND_MENU_LOCK_VCHIPSUBPAGE
+    // 1162 = HWND_MENU_LOCK_VCHIPSUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1161 = HWND_MENU_LOCK_VCHIPSUBPAGE_BG_L
+    // 1163 = HWND_MENU_LOCK_VCHIPSUBPAGE_BG_L
     { _Zui_Menu_Lock_Vchipsubpage_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1162 = HWND_MENU_LOCK_VCHIPSUBPAGE_BG_C
+    // 1164 = HWND_MENU_LOCK_VCHIPSUBPAGE_BG_C
     { _Zui_Menu_Lock_Vchipsubpage_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1163 = HWND_MENU_LOCK_VCHIPSUBPAGE_BG_R
+    // 1165 = HWND_MENU_LOCK_VCHIPSUBPAGE_BG_R
     { _Zui_Menu_Lock_Vchipsubpage_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1164 = HWND_MENU_LOCK_VCHIPSUBPAGE_UP_ARROW
+    // 1166 = HWND_MENU_LOCK_VCHIPSUBPAGE_UP_ARROW
     { _Zui_Menu_Lock_Vchipsubpage_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1165 = HWND_MENU_LOCK_VCHIPSUBPAGE_DOWN_ARROW
+    // 1167 = HWND_MENU_LOCK_VCHIPSUBPAGE_DOWN_ARROW
     { _Zui_Menu_Lock_Vchipsubpage_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1166 = HWND_MENU_LOCK_VCHIPSUBPAGE_MENU
+    // 1168 = HWND_MENU_LOCK_VCHIPSUBPAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1167 = HWND_MENU_LOCK_VCHIPSUBPAGE_OK
+    // 1169 = HWND_MENU_LOCK_VCHIPSUBPAGE_OK
     { NULL, NULL, NULL     },
 
-    // 1168 = HWND_MENU_LOCK_VCHIPSUBPAGE_TITLE
+    // 1170 = HWND_MENU_LOCK_VCHIPSUBPAGE_TITLE
     { _Zui_Menu_Lock_Vchipsubpage_Title_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Title_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Title_Disabled_DrawStyle     },
 
-    // 1169 = HWND_MENU_LOCK_VCHIPSUBPAGE_LIST
+    // 1171 = HWND_MENU_LOCK_VCHIPSUBPAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 1170 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM1
+    // 1172 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM1
     { NULL, _Zui_Menu_Lock_Vchipsubpage_Item1_Focus_DrawStyle, NULL     },
 
-    // 1171 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM1_TEXT
+    // 1173 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM1_TEXT
     { _Zui_Menu_Lock_Vchipsubpage_Item1_Text_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item1_Text_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item1_Text_Disabled_DrawStyle     },
 
-    // 1172 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM1_OPTION
+    // 1174 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM1_OPTION
     { _Zui_Menu_Lock_Vchipsubpage_Item1_Option_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item1_Option_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item1_Option_Disabled_DrawStyle     },
 
-    // 1173 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM2
+    // 1175 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM2
     { NULL, _Zui_Menu_Lock_Vchipsubpage_Item2_Focus_DrawStyle, NULL     },
 
-    // 1174 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM2_TEXT
+    // 1176 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM2_TEXT
     { _Zui_Menu_Lock_Vchipsubpage_Item2_Text_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item2_Text_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item2_Text_Disabled_DrawStyle     },
 
-    // 1175 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM2_OPTION
+    // 1177 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM2_OPTION
     { _Zui_Menu_Lock_Vchipsubpage_Item2_Option_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item2_Option_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item2_Option_Disabled_DrawStyle     },
 
-    // 1176 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM3
+    // 1178 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM3
     { NULL, _Zui_Menu_Lock_Vchipsubpage_Item3_Focus_DrawStyle, NULL     },
 
-    // 1177 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM3_TEXT
+    // 1179 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM3_TEXT
     { _Zui_Menu_Lock_Vchipsubpage_Item3_Text_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item3_Text_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item3_Text_Disabled_DrawStyle     },
 
-    // 1178 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM3_OPTION
+    // 1180 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM3_OPTION
     { _Zui_Menu_Lock_Vchipsubpage_Item3_Option_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item3_Option_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item3_Option_Disabled_DrawStyle     },
 
-    // 1179 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM4
+    // 1181 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM4
     { NULL, _Zui_Menu_Lock_Vchipsubpage_Item4_Focus_DrawStyle, NULL     },
 
-    // 1180 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM4_TEXT
+    // 1182 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM4_TEXT
     { _Zui_Menu_Lock_Vchipsubpage_Item4_Text_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item4_Text_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item4_Text_Disabled_DrawStyle     },
 
-    // 1181 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM4_OPTION
+    // 1183 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM4_OPTION
     { _Zui_Menu_Lock_Vchipsubpage_Item4_Option_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item4_Option_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item4_Option_Disabled_DrawStyle     },
 
-    // 1182 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM5
+    // 1184 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM5
     { NULL, _Zui_Menu_Lock_Vchipsubpage_Item5_Focus_DrawStyle, NULL     },
 
-    // 1183 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM5_TEXT
+    // 1185 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM5_TEXT
     { _Zui_Menu_Lock_Vchipsubpage_Item5_Text_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item5_Text_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item5_Text_Disabled_DrawStyle     },
 
-    // 1184 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM5_OPTION
+    // 1186 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM5_OPTION
     { _Zui_Menu_Lock_Vchipsubpage_Item5_Option_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item5_Option_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item5_Option_Disabled_DrawStyle     },
 
-    // 1185 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM6
+    // 1187 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM6
     { NULL, _Zui_Menu_Lock_Vchipsubpage_Item6_Focus_DrawStyle, NULL     },
 
-    // 1186 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM6_TEXT
+    // 1188 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM6_TEXT
     { _Zui_Menu_Lock_Vchipsubpage_Item6_Text_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item6_Text_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item6_Text_Disabled_DrawStyle     },
 
-    // 1187 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM6_OPTION
+    // 1189 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM6_OPTION
     { _Zui_Menu_Lock_Vchipsubpage_Item6_Option_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item6_Option_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item6_Option_Disabled_DrawStyle     },
 
-    // 1188 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM7
+    // 1190 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM7
     { NULL, _Zui_Menu_Lock_Vchipsubpage_Item7_Focus_DrawStyle, NULL     },
 
-    // 1189 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM7_TEXT
+    // 1191 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM7_TEXT
     { _Zui_Menu_Lock_Vchipsubpage_Item7_Text_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item7_Text_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item7_Text_Disabled_DrawStyle     },
 
-    // 1190 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM7_OPTION
+    // 1192 = HWND_MENU_LOCK_VCHIPSUBPAGE_ITEM7_OPTION
     { _Zui_Menu_Lock_Vchipsubpage_Item7_Option_Normal_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item7_Option_Focus_DrawStyle, _Zui_Menu_Lock_Vchipsubpage_Item7_Option_Disabled_DrawStyle     },
 
-    // 1191 = HWND_MENU_LOCK_TVRATINGSUBPAGE
+    // 1193 = HWND_MENU_LOCK_TVRATINGSUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1192 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_PANE
+    // 1194 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_PANE
     { NULL, NULL, NULL     },
 
-    // 1193 = HWND_MENU_LOCK_TVRATINGSUBPAGE_L
+    // 1195 = HWND_MENU_LOCK_TVRATINGSUBPAGE_L
     { _Zui_Menu_Lock_Tvratingsubpage_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1194 = HWND_MENU_LOCK_TVRATINGSUBPAGE_C
+    // 1196 = HWND_MENU_LOCK_TVRATINGSUBPAGE_C
     { _Zui_Menu_Lock_Tvratingsubpage_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1195 = HWND_MENU_LOCK_TVRATINGSUBPAGE_R
+    // 1197 = HWND_MENU_LOCK_TVRATINGSUBPAGE_R
     { _Zui_Menu_Lock_Tvratingsubpage_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1196 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TVRATING
+    // 1198 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TVRATING
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tvrating_Normal_DrawStyle, NULL, NULL     },
 
-    // 1197 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_ALL
+    // 1199 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_ALL
     { NULL, NULL, NULL     },
 
-    // 1198 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_FV
+    // 1200 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_FV
     { NULL, NULL, NULL     },
 
-    // 1199 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_V
+    // 1201 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_V
     { NULL, NULL, NULL     },
 
-    // 1200 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_S
+    // 1202 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_S
     { NULL, NULL, NULL     },
 
-    // 1201 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_L
+    // 1203 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_L
     { NULL, NULL, NULL     },
 
-    // 1202 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_D
+    // 1204 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_D
     { NULL, NULL, NULL     },
 
-    // 1203 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_NONE
+    // 1205 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_NONE
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_None_Normal_DrawStyle, NULL, NULL     },
 
-    // 1204 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_Y
+    // 1206 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_Y
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Y_Normal_DrawStyle, NULL, NULL     },
 
-    // 1205 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_Y7
+    // 1207 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_Y7
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Y7_Normal_DrawStyle, NULL, NULL     },
 
-    // 1206 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_G
+    // 1208 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_G
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_G_Normal_DrawStyle, NULL, NULL     },
 
-    // 1207 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_PG
+    // 1209 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_PG
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Pg_Normal_DrawStyle, NULL, NULL     },
 
-    // 1208 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_14
+    // 1210 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_14
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_14_Normal_DrawStyle, NULL, NULL     },
 
-    // 1209 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_MA
+    // 1211 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_TV_MA
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Tv_Ma_Normal_DrawStyle, NULL, NULL     },
 
-    // 1210 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_BMP
+    // 1212 = HWND_MENU_LOCK_TVRATINGSUBPAGE_BG_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Bg_Bmp_Normal_DrawStyle, NULL, NULL     },
 
-    // 1211 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV_NONE_ALL
+    // 1213 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV_NONE_ALL
     { NULL, NULL, NULL     },
 
-    // 1212 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV_NONE_ALL_BG
+    // 1214 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV_NONE_ALL_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv_None_All_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv_None_All_Bg_Focus_DrawStyle, NULL     },
 
-    // 1213 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV_NONE_ALL_BMP
+    // 1215 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV_NONE_ALL_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv_None_All_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv_None_All_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1214 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY_ALL
+    // 1216 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY_ALL
     { NULL, NULL, NULL     },
 
-    // 1215 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY_ALL_BG
+    // 1217 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY_ALL_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy_All_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy_All_Bg_Focus_DrawStyle, NULL     },
 
-    // 1216 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY_ALL_BMP
+    // 1218 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY_ALL_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy_All_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy_All_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1217 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_ALL
+    // 1219 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_ALL
     { NULL, NULL, NULL     },
 
-    // 1218 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_ALL_BG
+    // 1220 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_ALL_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_All_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_All_Bg_Focus_DrawStyle, NULL     },
 
-    // 1219 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_ALL_BMP
+    // 1221 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_ALL_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_All_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_All_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1220 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVG_ALL
+    // 1222 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVG_ALL
     { NULL, NULL, NULL     },
 
-    // 1221 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVG_ALL_BG
+    // 1223 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVG_ALL_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvg_All_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvg_All_Bg_Focus_DrawStyle, NULL     },
 
-    // 1222 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVG_ALL_BMP
+    // 1224 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVG_ALL_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvg_All_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvg_All_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1223 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_ALL
+    // 1225 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_ALL
     { NULL, NULL, NULL     },
 
-    // 1224 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_ALL_BG
+    // 1226 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_ALL_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_All_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_All_Bg_Focus_DrawStyle, NULL     },
 
-    // 1225 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_ALL_BMP
+    // 1227 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_ALL_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_All_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_All_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1226 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_ALL
+    // 1228 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_ALL
     { NULL, NULL, NULL     },
 
-    // 1227 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_ALL_BG
+    // 1229 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_ALL_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_All_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_All_Bg_Focus_DrawStyle, NULL     },
 
-    // 1228 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_ALL_BMP
+    // 1230 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_ALL_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_All_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_All_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1229 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_ALL
+    // 1231 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_ALL
     { NULL, NULL, NULL     },
 
-    // 1230 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_ALL_BG
+    // 1232 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_ALL_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_All_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_All_Bg_Focus_DrawStyle, NULL     },
 
-    // 1231 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_ALL_BMP
+    // 1233 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_ALL_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_All_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_All_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1232 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_FV
+    // 1234 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_FV
     { NULL, NULL, NULL     },
 
-    // 1233 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_FV_BG
+    // 1235 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_FV_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_Fv_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_Fv_Bg_Focus_DrawStyle, NULL     },
 
-    // 1234 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_FV_BMP
+    // 1236 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVY7_FV_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_Fv_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvy7_Fv_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1235 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_V
+    // 1237 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_V
     { NULL, NULL, NULL     },
 
-    // 1236 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_V_BG
+    // 1238 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_V_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_V_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_V_Bg_Focus_DrawStyle, NULL     },
 
-    // 1237 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_V_BMP
+    // 1239 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_V_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_V_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_V_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1238 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_V
+    // 1240 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_V
     { NULL, NULL, NULL     },
 
-    // 1239 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_V_BG
+    // 1241 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_V_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_V_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_V_Bg_Focus_DrawStyle, NULL     },
 
-    // 1240 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_V_BMP
+    // 1242 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_V_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_V_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_V_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1241 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_V
+    // 1243 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_V
     { NULL, NULL, NULL     },
 
-    // 1242 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_V_BG
+    // 1244 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_V_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_V_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_V_Bg_Focus_DrawStyle, NULL     },
 
-    // 1243 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_V_BMP
+    // 1245 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_V_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_V_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_V_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1244 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_S
+    // 1246 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_S
     { NULL, NULL, NULL     },
 
-    // 1245 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_S_BG
+    // 1247 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_S_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_S_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_S_Bg_Focus_DrawStyle, NULL     },
 
-    // 1246 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_S_BMP
+    // 1248 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_S_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_S_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_S_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1247 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_S
+    // 1249 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_S
     { NULL, NULL, NULL     },
 
-    // 1248 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_S_BG
+    // 1250 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_S_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_S_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_S_Bg_Focus_DrawStyle, NULL     },
 
-    // 1249 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_S_BMP
+    // 1251 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_S_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_S_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_S_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1250 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_S
+    // 1252 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_S
     { NULL, NULL, NULL     },
 
-    // 1251 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_S_BG
+    // 1253 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_S_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_S_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_S_Bg_Focus_DrawStyle, NULL     },
 
-    // 1252 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_S_BMP
+    // 1254 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_S_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_S_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_S_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1253 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_L
+    // 1255 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_L
     { NULL, NULL, NULL     },
 
-    // 1254 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_L_BG
+    // 1256 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_L_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_L_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_L_Bg_Focus_DrawStyle, NULL     },
 
-    // 1255 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_L_BMP
+    // 1257 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_L_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_L_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_L_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1256 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_L
+    // 1258 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_L
     { NULL, NULL, NULL     },
 
-    // 1257 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_L_BG
+    // 1259 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_L_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_L_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_L_Bg_Focus_DrawStyle, NULL     },
 
-    // 1258 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_L_BMP
+    // 1260 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_L_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_L_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_L_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1259 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_L
+    // 1261 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_L
     { NULL, NULL, NULL     },
 
-    // 1260 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_L_BG
+    // 1262 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_L_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_L_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_L_Bg_Focus_DrawStyle, NULL     },
 
-    // 1261 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_L_BMP
+    // 1263 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVMA_L_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_L_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvma_L_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1262 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_D
+    // 1264 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_D
     { NULL, NULL, NULL     },
 
-    // 1263 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_D_BG
+    // 1265 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_D_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_D_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_D_Bg_Focus_DrawStyle, NULL     },
 
-    // 1264 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_D_BMP
+    // 1266 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TVPG_D_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_D_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tvpg_D_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1265 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_D
+    // 1267 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_D
     { NULL, NULL, NULL     },
 
-    // 1266 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_D_BG
+    // 1268 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_D_BG
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_D_Bg_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_D_Bg_Focus_DrawStyle, NULL     },
 
-    // 1267 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_D_BMP
+    // 1269 = HWND_MENU_LOCK_TVRATINGSUBPAGE_ITEM_TV14_D_BMP
     { _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_D_Bmp_Normal_DrawStyle, _Zui_Menu_Lock_Tvratingsubpage_Item_Tv14_D_Bmp_Focus_DrawStyle, NULL     },
 
-    // 1268 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE
+    // 1270 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1269 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_BG_L
+    // 1271 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_BG_L
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1270 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_BG_C
+    // 1272 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_BG_C
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1271 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_BG_R
+    // 1273 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_BG_R
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1272 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_UP_ARROW
+    // 1274 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_UP_ARROW
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1273 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_DOWN_ARROW
+    // 1275 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_DOWN_ARROW
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1274 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_MENU
+    // 1276 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1275 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_OK
+    // 1277 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_OK
     { NULL, NULL, NULL     },
 
-    // 1276 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_TITLE
+    // 1278 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_TITLE
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Title_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Title_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Title_Disabled_DrawStyle     },
 
-    // 1277 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_LIST
+    // 1279 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 1278 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM0
+    // 1280 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM0
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item0_Focus_DrawStyle, NULL     },
 
-    // 1279 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM0_TEXT
+    // 1281 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM0_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item0_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item0_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item0_Text_Disabled_DrawStyle     },
 
-    // 1280 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM1
+    // 1282 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM1
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item1_Focus_DrawStyle, NULL     },
 
-    // 1281 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM1_TEXT
+    // 1283 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM1_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item1_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item1_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item1_Text_Disabled_DrawStyle     },
 
-    // 1282 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM2
+    // 1284 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM2
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item2_Focus_DrawStyle, NULL     },
 
-    // 1283 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM2_TEXT
+    // 1285 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM2_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item2_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item2_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item2_Text_Disabled_DrawStyle     },
 
-    // 1284 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM3
+    // 1286 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM3
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item3_Focus_DrawStyle, NULL     },
 
-    // 1285 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM3_TEXT
+    // 1287 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM3_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item3_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item3_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item3_Text_Disabled_DrawStyle     },
 
-    // 1286 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM4
+    // 1288 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM4
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item4_Focus_DrawStyle, NULL     },
 
-    // 1287 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM4_TEXT
+    // 1289 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM4_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item4_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item4_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item4_Text_Disabled_DrawStyle     },
 
-    // 1288 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM5
+    // 1290 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM5
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item5_Focus_DrawStyle, NULL     },
 
-    // 1289 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM5_TEXT
+    // 1291 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM5_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item5_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item5_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item5_Text_Disabled_DrawStyle     },
 
-    // 1290 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM6
+    // 1292 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM6
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item6_Focus_DrawStyle, NULL     },
 
-    // 1291 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM6_TEXT
+    // 1293 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM6_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item6_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item6_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item6_Text_Disabled_DrawStyle     },
 
-    // 1292 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM7
+    // 1294 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM7
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item7_Focus_DrawStyle, NULL     },
 
-    // 1293 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM7_TEXT
+    // 1295 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM7_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item7_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item7_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item7_Text_Disabled_DrawStyle     },
 
-    // 1294 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM8
+    // 1296 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM8
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item8_Focus_DrawStyle, NULL     },
 
-    // 1295 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM8_TEXT
+    // 1297 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM8_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item8_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item8_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item8_Text_Disabled_DrawStyle     },
 
-    // 1296 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM9
+    // 1298 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM9
     { NULL, _Zui_Menu_Lock_Rrtdimentionsubpage_Item9_Focus_DrawStyle, NULL     },
 
-    // 1297 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM9_TEXT
+    // 1299 = HWND_MENU_LOCK_RRTDIMENTIONSUBPAGE_ITEM9_TEXT
     { _Zui_Menu_Lock_Rrtdimentionsubpage_Item9_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item9_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtdimentionsubpage_Item9_Text_Disabled_DrawStyle     },
 
-    // 1298 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE
+    // 1300 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1299 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_BG_L
+    // 1301 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_BG_L
     { _Zui_Menu_Lock_Rrtadjustsubpage_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1300 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_BG_C
+    // 1302 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_BG_C
     { _Zui_Menu_Lock_Rrtadjustsubpage_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1301 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_BG_R
+    // 1303 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_BG_R
     { _Zui_Menu_Lock_Rrtadjustsubpage_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1302 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_UP_ARROW
+    // 1304 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_UP_ARROW
     { _Zui_Menu_Lock_Rrtadjustsubpage_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1303 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_DOWN_ARROW
+    // 1305 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_DOWN_ARROW
     { _Zui_Menu_Lock_Rrtadjustsubpage_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1304 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_MENU
+    // 1306 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1305 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_TITLE
+    // 1307 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_TITLE
     { _Zui_Menu_Lock_Rrtadjustsubpage_Title_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Title_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Title_Disabled_DrawStyle     },
 
-    // 1306 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_OK
+    // 1308 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_OK
     { NULL, NULL, NULL     },
 
-    // 1307 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_LIST
+    // 1309 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 1308 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0
+    // 1310 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Focus_DrawStyle, NULL     },
 
-    // 1309 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_TEXT
+    // 1311 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Text_Disabled_DrawStyle     },
 
-    // 1310 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_OPTION
+    // 1312 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Option_Disabled_DrawStyle     },
 
-    // 1311 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_LEFT_ARROW
+    // 1313 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1312 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_RIGHT_ARROW
+    // 1314 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM0_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item0_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1313 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1
+    // 1315 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Focus_DrawStyle, NULL     },
 
-    // 1314 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_TEXT
+    // 1316 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Text_Disabled_DrawStyle     },
 
-    // 1315 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_OPTION
+    // 1317 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Option_Disabled_DrawStyle     },
 
-    // 1316 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_LEFT_ARROW
+    // 1318 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1317 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_RIGHT_ARROW
+    // 1319 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM1_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item1_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1318 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2
+    // 1320 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Focus_DrawStyle, NULL     },
 
-    // 1319 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_TEXT
+    // 1321 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Text_Disabled_DrawStyle     },
 
-    // 1320 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_OPTION
+    // 1322 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Option_Disabled_DrawStyle     },
 
-    // 1321 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_LEFT_ARROW
+    // 1323 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1322 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_RIGHT_ARROW
+    // 1324 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM2_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item2_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1323 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3
+    // 1325 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Focus_DrawStyle, NULL     },
 
-    // 1324 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_TEXT
+    // 1326 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Text_Disabled_DrawStyle     },
 
-    // 1325 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_OPTION
+    // 1327 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Option_Disabled_DrawStyle     },
 
-    // 1326 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_LEFT_ARROW
+    // 1328 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1327 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_RIGHT_ARROW
+    // 1329 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM3_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item3_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1328 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4
+    // 1330 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Focus_DrawStyle, NULL     },
 
-    // 1329 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_TEXT
+    // 1331 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Text_Disabled_DrawStyle     },
 
-    // 1330 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_OPTION
+    // 1332 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Option_Disabled_DrawStyle     },
 
-    // 1331 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_LEFT_ARROW
+    // 1333 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1332 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_RIGHT_ARROW
+    // 1334 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM4_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item4_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1333 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5
+    // 1335 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Focus_DrawStyle, NULL     },
 
-    // 1334 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_TEXT
+    // 1336 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Text_Disabled_DrawStyle     },
 
-    // 1335 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_OPTION
+    // 1337 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Option_Disabled_DrawStyle     },
 
-    // 1336 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_LEFT_ARROW
+    // 1338 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1337 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_RIGHT_ARROW
+    // 1339 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM5_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item5_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1338 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6
+    // 1340 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Focus_DrawStyle, NULL     },
 
-    // 1339 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_TEXT
+    // 1341 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Text_Disabled_DrawStyle     },
 
-    // 1340 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_OPTION
+    // 1342 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Option_Disabled_DrawStyle     },
 
-    // 1341 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_LEFT_ARROW
+    // 1343 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1342 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_RIGHT_ARROW
+    // 1344 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM6_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item6_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1343 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7
+    // 1345 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Focus_DrawStyle, NULL     },
 
-    // 1344 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_TEXT
+    // 1346 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Text_Disabled_DrawStyle     },
 
-    // 1345 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_OPTION
+    // 1347 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Option_Disabled_DrawStyle     },
 
-    // 1346 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_LEFT_ARROW
+    // 1348 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1347 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_RIGHT_ARROW
+    // 1349 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM7_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item7_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1348 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8
+    // 1350 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Focus_DrawStyle, NULL     },
 
-    // 1349 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_TEXT
+    // 1351 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Text_Disabled_DrawStyle     },
 
-    // 1350 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_OPTION
+    // 1352 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Option_Disabled_DrawStyle     },
 
-    // 1351 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_LEFT_ARROW
+    // 1353 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1352 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_RIGHT_ARROW
+    // 1354 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM8_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item8_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1353 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9
+    // 1355 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Focus_DrawStyle, NULL     },
 
-    // 1354 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_TEXT
+    // 1356 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_TEXT
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Text_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Text_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Text_Disabled_DrawStyle     },
 
-    // 1355 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_OPTION
+    // 1357 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_OPTION
     { _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Option_Normal_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Option_Focus_DrawStyle, _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Option_Disabled_DrawStyle     },
 
-    // 1356 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_LEFT_ARROW
+    // 1358 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_LEFT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1357 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_RIGHT_ARROW
+    // 1359 = HWND_MENU_LOCK_RRTADJUSTSUBPAGE_ITEM9_RIGHT_ARROW
     { NULL, _Zui_Menu_Lock_Rrtadjustsubpage_Item9_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1358 = HWND_MENU_SOUND_AUDIO_OPTION_SUBPAGE
+    // 1360 = HWND_MENU_SOUND_AUDIO_OPTION_SUBPAGE
     { NULL, NULL, NULL     },
 
-    // 1359 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_L_1
+    // 1361 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_L_1
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Bg_L_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 1360 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_C_1
+    // 1362 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_C_1
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Bg_C_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 1361 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_R_1
+    // 1363 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_R_1
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Bg_R_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 1362 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_UP_ARROW_1
+    // 1364 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_UP_ARROW_1
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Up_Arrow_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 1363 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_DOWN_ARROW_1
+    // 1365 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_DOWN_ARROW_1
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Down_Arrow_1_Normal_DrawStyle, NULL, NULL     },
 
-    // 1364 = HWND_MENU_SOUND_AUDIO_OPTION_ADVANCE_LIST
+    // 1366 = HWND_MENU_SOUND_AUDIO_OPTION_ADVANCE_LIST
     { NULL, NULL, NULL     },
 
-    // 1365 = HWND_MENU_SOUND_AUDIO_OPTION_TITLE
+    // 1367 = HWND_MENU_SOUND_AUDIO_OPTION_TITLE
     { NULL, _Zui_Menu_Sound_Audio_Option_Title_Focus_DrawStyle, NULL     },
 
-    // 1366 = HWND_MENU_SOUND_AUDIO_OPTION_SUBPAGE_TEXT
+    // 1368 = HWND_MENU_SOUND_AUDIO_OPTION_SUBPAGE_TEXT
     { _Zui_Menu_Sound_Audio_Option_Subpage_Text_Normal_DrawStyle, _Zui_Menu_Sound_Audio_Option_Subpage_Text_Focus_DrawStyle, _Zui_Menu_Sound_Audio_Option_Subpage_Text_Disabled_DrawStyle     },
 
-    // 1367 = HWND_MENU_SOUND_EQ_EQUALIZER_OPTION_1
+    // 1369 = HWND_MENU_SOUND_EQ_EQUALIZER_OPTION_1
     { NULL, NULL, NULL     },
 
-    // 1368 = HWND_MENU_SOUND_EQ_EQUALIZER_LEFT_ARROW_1
+    // 1370 = HWND_MENU_SOUND_EQ_EQUALIZER_LEFT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Equalizer_Left_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1369 = HWND_MENU_SOUND_EQ_EQUALIZER_RIGHT_ARROW_1
+    // 1371 = HWND_MENU_SOUND_EQ_EQUALIZER_RIGHT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Equalizer_Right_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1370 = HWND_MENU_SOUND_AUDIO_OPTION_ACCESSIBILITY
+    // 1372 = HWND_MENU_SOUND_AUDIO_OPTION_ACCESSIBILITY
     { NULL, _Zui_Menu_Sound_Audio_Option_Accessibility_Focus_DrawStyle, NULL     },
 
-    // 1371 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_LEFT_ARROW_1
+    // 1373 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_LEFT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Advance_150hz_Left_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1372 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_RIGHT_ARROW_1
+    // 1374 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_RIGHT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Advance_150hz_Right_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1373 = HWND_MENU_SOUND_AUDIO_OPTION_ACCESSIBILITY_VALUE_1
+    // 1375 = HWND_MENU_SOUND_AUDIO_OPTION_ACCESSIBILITY_VALUE_1
     { _Zui_Menu_Sound_Audio_Option_Accessibility_Value_1_Normal_DrawStyle, _Zui_Menu_Sound_Audio_Option_Accessibility_Value_1_Focus_DrawStyle, _Zui_Menu_Sound_Audio_Option_Accessibility_Value_1_Disabled_DrawStyle     },
 
-    // 1374 = HWND_MENU_SOUND_AUDIO_OPTION_ACCESSIBILITY_VALUE_2
+    // 1376 = HWND_MENU_SOUND_AUDIO_OPTION_ACCESSIBILITY_VALUE_2
     { _Zui_Menu_Sound_Audio_Option_Accessibility_Value_2_Normal_DrawStyle, _Zui_Menu_Sound_Audio_Option_Accessibility_Value_2_Focus_DrawStyle, _Zui_Menu_Sound_Audio_Option_Accessibility_Value_2_Disabled_DrawStyle     },
 
-    // 1375 = HWND_MENU_SOUND_AUDIO_OPTION_LANGUAGE
+    // 1377 = HWND_MENU_SOUND_AUDIO_OPTION_LANGUAGE
     { NULL, _Zui_Menu_Sound_Audio_Option_Language_Focus_DrawStyle, NULL     },
 
-    // 1376 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_LEFT_ARROW_1
+    // 1378 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_LEFT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Advance_500hz_Left_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1377 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_RIGHT_ARROW_1
+    // 1379 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_RIGHT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Advance_500hz_Right_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1378 = HWND_MENU_SOUND_AUDIO_OPTION_LANGUAGE_VALUE_1
+    // 1380 = HWND_MENU_SOUND_AUDIO_OPTION_LANGUAGE_VALUE_1
     { _Zui_Menu_Sound_Audio_Option_Language_Value_1_Normal_DrawStyle, _Zui_Menu_Sound_Audio_Option_Language_Value_1_Focus_DrawStyle, _Zui_Menu_Sound_Audio_Option_Language_Value_1_Disabled_DrawStyle     },
 
-    // 1379 = HWND_MENU_SOUND_AUDIO_OPTION_LANGUAGE_VALUE_2
+    // 1381 = HWND_MENU_SOUND_AUDIO_OPTION_LANGUAGE_VALUE_2
     { _Zui_Menu_Sound_Audio_Option_Language_Value_2_Normal_DrawStyle, _Zui_Menu_Sound_Audio_Option_Language_Value_2_Focus_DrawStyle, _Zui_Menu_Sound_Audio_Option_Language_Value_2_Disabled_DrawStyle     },
 
-    // 1380 = HWND_MENU_SOUND_PRIMARY_PARAMETER
+    // 1382 = HWND_MENU_SOUND_PRIMARY_PARAMETER
     { NULL, _Zui_Menu_Sound_Primary_Parameter_Focus_DrawStyle, NULL     },
 
-    // 1381 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_LEFT_ARROW_1
+    // 1383 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_LEFT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Advance_1000hz_Left_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1382 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_RIGHT_ARROW_1
+    // 1384 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_RIGHT_ARROW_1
     { NULL, _Zui_Menu_Sound_Eq_Advance_1000hz_Right_Arrow_1_Focus_DrawStyle, NULL     },
 
-    // 1383 = HWND_MENU_SOUND_PRIMARY_PARAMETER_VALUE_1
+    // 1385 = HWND_MENU_SOUND_PRIMARY_PARAMETER_VALUE_1
     { _Zui_Menu_Sound_Primary_Parameter_Value_1_Normal_DrawStyle, _Zui_Menu_Sound_Primary_Parameter_Value_1_Focus_DrawStyle, _Zui_Menu_Sound_Primary_Parameter_Value_1_Disabled_DrawStyle     },
 
-    // 1384 = HWND_MENU_SOUND_PRIMARY_PARAMETER_VALUE_2
+    // 1386 = HWND_MENU_SOUND_PRIMARY_PARAMETER_VALUE_2
     { _Zui_Menu_Sound_Primary_Parameter_Value_2_Normal_DrawStyle, _Zui_Menu_Sound_Primary_Parameter_Value_2_Focus_DrawStyle, _Zui_Menu_Sound_Primary_Parameter_Value_2_Disabled_DrawStyle     },
 
-    // 1385 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_MENU_2
+    // 1387 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_MENU_2
     { NULL, NULL, NULL     },
 
-    // 1386 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS
+    // 1388 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS
     { NULL, NULL, NULL     },
 
-    // 1387 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_L
+    // 1389 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_L
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1388 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_C
+    // 1390 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_C
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1389 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_R
+    // 1391 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_BG_R
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1390 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_UP_ARROW
+    // 1392 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_UP_ARROW
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1391 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_DOWN_ARROW
+    // 1393 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_DOWN_ARROW
     { _Zui_Menu_Sound_Eq_Advance_Subpage_Items_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1392 = HWND_MENU_SOUND_EQ_ADVANCE_LIST
+    // 1394 = HWND_MENU_SOUND_EQ_ADVANCE_LIST
     { NULL, NULL, NULL     },
 
-    // 1393 = HWND_MENU_SOUND_EQ_EQUALIZER
+    // 1395 = HWND_MENU_SOUND_EQ_EQUALIZER
     { NULL, _Zui_Menu_Sound_Eq_Equalizer_Focus_DrawStyle, NULL     },
 
-    // 1394 = HWND_MENU_SOUND_EQ_EQUALIZER_TEXT
+    // 1396 = HWND_MENU_SOUND_EQ_EQUALIZER_TEXT
     { _Zui_Menu_Sound_Eq_Equalizer_Text_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Equalizer_Text_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Equalizer_Text_Disabled_DrawStyle     },
 
-    // 1395 = HWND_MENU_SOUND_EQ_EQUALIZER_OPTION
+    // 1397 = HWND_MENU_SOUND_EQ_EQUALIZER_OPTION
     { _Zui_Menu_Sound_Eq_Equalizer_Option_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Equalizer_Option_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Equalizer_Option_Disabled_DrawStyle     },
 
-    // 1396 = HWND_MENU_SOUND_EQ_EQUALIZER_LEFT_ARROW
+    // 1398 = HWND_MENU_SOUND_EQ_EQUALIZER_LEFT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Equalizer_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1397 = HWND_MENU_SOUND_EQ_EQUALIZER_RIGHT_ARROW
+    // 1399 = HWND_MENU_SOUND_EQ_EQUALIZER_RIGHT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Equalizer_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1398 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ
+    // 1400 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ
     { NULL, _Zui_Menu_Sound_Eq_Advance_150hz_Focus_DrawStyle, NULL     },
 
-    // 1399 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_LEFT_ARROW
+    // 1401 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_150hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1400 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_RIGHT_ARROW
+    // 1402 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_150hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1401 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_VALUE
+    // 1403 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_VALUE
     { _Zui_Menu_Sound_Eq_Advance_150hz_Value_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Advance_150hz_Value_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Advance_150hz_Value_Disabled_DrawStyle     },
 
-    // 1402 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_DEC
+    // 1404 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_DEC
     { NULL, _Zui_Menu_Sound_Eq_Advance_150hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 1403 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_INC
+    // 1405 = HWND_MENU_SOUND_EQ_ADVANCE_150HZ_INC
     { NULL, _Zui_Menu_Sound_Eq_Advance_150hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 1404 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ
+    // 1406 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ
     { NULL, _Zui_Menu_Sound_Eq_Advance_500hz_Focus_DrawStyle, NULL     },
 
-    // 1405 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_LEFT_ARROW
+    // 1407 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_500hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1406 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_RIGHT_ARROW
+    // 1408 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_500hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1407 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_VALUE
+    // 1409 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_VALUE
     { _Zui_Menu_Sound_Eq_Advance_500hz_Value_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Advance_500hz_Value_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Advance_500hz_Value_Disabled_DrawStyle     },
 
-    // 1408 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_DEC
+    // 1410 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_DEC
     { NULL, _Zui_Menu_Sound_Eq_Advance_500hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 1409 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_INC
+    // 1411 = HWND_MENU_SOUND_EQ_ADVANCE_500HZ_INC
     { NULL, _Zui_Menu_Sound_Eq_Advance_500hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 1410 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ
+    // 1412 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ
     { NULL, _Zui_Menu_Sound_Eq_Advance_1000hz_Focus_DrawStyle, NULL     },
 
-    // 1411 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_LEFT_ARROW
+    // 1413 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_1000hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1412 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_RIGHT_ARROW
+    // 1414 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_1000hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1413 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_VALUE
+    // 1415 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_VALUE
     { _Zui_Menu_Sound_Eq_Advance_1000hz_Value_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Advance_1000hz_Value_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Advance_1000hz_Value_Disabled_DrawStyle     },
 
-    // 1414 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_DEC
+    // 1416 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_DEC
     { NULL, _Zui_Menu_Sound_Eq_Advance_1000hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 1415 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_INC
+    // 1417 = HWND_MENU_SOUND_EQ_ADVANCE_1000HZ_INC
     { NULL, _Zui_Menu_Sound_Eq_Advance_1000hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 1416 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ
+    // 1418 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ
     { NULL, _Zui_Menu_Sound_Eq_Advance_2000hz_Focus_DrawStyle, NULL     },
 
-    // 1417 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_LEFT_ARROW
+    // 1419 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_2000hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1418 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_RIGHT_ARROW
+    // 1420 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_2000hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1419 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_VALUE
+    // 1421 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_VALUE
     { _Zui_Menu_Sound_Eq_Advance_2000hz_Value_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Advance_2000hz_Value_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Advance_2000hz_Value_Disabled_DrawStyle     },
 
-    // 1420 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_DEC
+    // 1422 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_DEC
     { NULL, _Zui_Menu_Sound_Eq_Advance_2000hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 1421 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_INC
+    // 1423 = HWND_MENU_SOUND_EQ_ADVANCE_2000HZ_INC
     { NULL, _Zui_Menu_Sound_Eq_Advance_2000hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 1422 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ
+    // 1424 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ
     { NULL, _Zui_Menu_Sound_Eq_Advance_4000hz_Focus_DrawStyle, NULL     },
 
-    // 1423 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_LEFT_ARROW
+    // 1425 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_LEFT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_4000hz_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1424 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_RIGHT_ARROW
+    // 1426 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_RIGHT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_4000hz_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1425 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_VALUE
+    // 1427 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_VALUE
     { _Zui_Menu_Sound_Eq_Advance_4000hz_Value_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Advance_4000hz_Value_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Advance_4000hz_Value_Disabled_DrawStyle     },
 
-    // 1426 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_DEC
+    // 1428 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_DEC
     { NULL, _Zui_Menu_Sound_Eq_Advance_4000hz_Dec_Focus_DrawStyle, NULL     },
 
-    // 1427 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_INC
+    // 1429 = HWND_MENU_SOUND_EQ_ADVANCE_4000HZ_INC
     { NULL, _Zui_Menu_Sound_Eq_Advance_4000hz_Inc_Focus_DrawStyle, NULL     },
 
-    // 1428 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE
+    // 1430 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE
     { NULL, _Zui_Menu_Sound_Eq_Advance_Balance_Focus_DrawStyle, NULL     },
 
-    // 1429 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_LEFT_ARROW
+    // 1431 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_LEFT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_Balance_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1430 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_RIGHT_ARROW
+    // 1432 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_RIGHT_ARROW
     { NULL, _Zui_Menu_Sound_Eq_Advance_Balance_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1431 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_VALUE
+    // 1433 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_VALUE
     { _Zui_Menu_Sound_Eq_Advance_Balance_Value_Normal_DrawStyle, _Zui_Menu_Sound_Eq_Advance_Balance_Value_Focus_DrawStyle, _Zui_Menu_Sound_Eq_Advance_Balance_Value_Disabled_DrawStyle     },
 
-    // 1432 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_DEC
+    // 1434 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_DEC
     { NULL, _Zui_Menu_Sound_Eq_Advance_Balance_Dec_Focus_DrawStyle, NULL     },
 
-    // 1433 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_INC
+    // 1435 = HWND_MENU_SOUND_EQ_ADVANCE_BALANCE_INC
     { NULL, _Zui_Menu_Sound_Eq_Advance_Balance_Inc_Focus_DrawStyle, NULL     },
 
-    // 1434 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_MENU
+    // 1436 = HWND_MENU_SOUND_EQ_ADVANCE_SUBPAGE_ITEMS_MENU
     { NULL, NULL, NULL     },
 
-    // 1435 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_ITEM
+    // 1437 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_ITEM
     { NULL, NULL, NULL     },
 
-    // 1436 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_BG_L
+    // 1438 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_BG_L
     { _Zui_Menu_Channel_Auto_Scan_Result_Sub_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1437 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_BG_C
+    // 1439 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_BG_C
     { _Zui_Menu_Channel_Auto_Scan_Result_Sub_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1438 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_BG_R
+    // 1440 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_SUB_PAGE_BG_R
     { _Zui_Menu_Channel_Auto_Scan_Result_Sub_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1439 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_TEXT_TITLE
+    // 1441 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_TEXT_TITLE
     { _Zui_Menu_Channel_Auto_Scan_Result_Digital_Text_Title_Normal_DrawStyle, NULL, NULL     },
 
-    // 1440 = HWND_MENU_CHANNEL_AUTO_SCAN_TYPE_OPTION
+    // 1442 = HWND_MENU_CHANNEL_AUTO_SCAN_TYPE_OPTION
     { _Zui_Menu_Channel_Auto_Scan_Type_Option_Normal_DrawStyle, NULL, NULL     },
 
-    // 1441 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND
+    // 1443 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND
     { NULL, NULL, NULL     },
 
-    // 1442 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND_TEXT
+    // 1444 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND_TEXT
     { _Zui_Menu_Channel_Auto_Scan_Result_Found_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 1443 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND_OPTION
+    // 1445 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND_OPTION
     { _Zui_Menu_Channel_Auto_Scan_Result_Found_Option_Normal_DrawStyle, NULL, NULL     },
 
-    // 1444 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND_PROGRAM
+    // 1446 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_FOUND_PROGRAM
     { _Zui_Menu_Channel_Auto_Scan_Result_Found_Program_Normal_DrawStyle, NULL, NULL     },
 
-    // 1445 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG
+    // 1447 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG
     { NULL, NULL, NULL     },
 
-    // 1446 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG_TEXT
+    // 1448 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG_TEXT
     { _Zui_Menu_Channel_Auto_Scan_Result_Analog_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 1447 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG_OPTION
+    // 1449 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG_OPTION
     { _Zui_Menu_Channel_Auto_Scan_Result_Analog_Option_Normal_DrawStyle, NULL, NULL     },
 
-    // 1448 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG_PROGRAM
+    // 1450 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_ANALOG_PROGRAM
     { _Zui_Menu_Channel_Auto_Scan_Result_Analog_Program_Normal_DrawStyle, NULL, NULL     },
 
-    // 1449 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL
+    // 1451 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL
     { NULL, NULL, NULL     },
 
-    // 1450 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_TEXT
+    // 1452 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_TEXT
     { _Zui_Menu_Channel_Auto_Scan_Result_Digital_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 1451 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_OPTION
+    // 1453 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_OPTION
     { _Zui_Menu_Channel_Auto_Scan_Result_Digital_Option_Normal_DrawStyle, NULL, NULL     },
 
-    // 1452 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_PROGRAM
+    // 1454 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_DIGITAL_PROGRAM
     { _Zui_Menu_Channel_Auto_Scan_Result_Digital_Program_Normal_DrawStyle, NULL, NULL     },
 
-    // 1453 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT
+    // 1455 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT
     { NULL, NULL, NULL     },
 
-    // 1454 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_PERCENT
+    // 1456 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_PERCENT
     { _Zui_Menu_Channel_Auto_Scan_Result_Percent_Normal_DrawStyle, NULL, NULL     },
 
-    // 1455 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_PERCENT_TEXT
+    // 1457 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_PERCENT_TEXT
     { _Zui_Menu_Channel_Auto_Scan_Result_Percent_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 1456 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_RF_CHANNEL_TEXT
+    // 1458 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_RF_CHANNEL_TEXT
     { _Zui_Menu_Channel_Auto_Scan_Result_Rf_Channel_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 1457 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_RF_CHANNEL_OPTION
+    // 1459 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_RF_CHANNEL_OPTION
     { _Zui_Menu_Channel_Auto_Scan_Result_Rf_Channel_Option_Normal_DrawStyle, NULL, NULL     },
 
-    // 1458 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_CH_TYPE_OPTION
+    // 1460 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_CH_TYPE_OPTION
     { _Zui_Menu_Channel_Auto_Scan_Result_Ch_Type_Option_Normal_DrawStyle, NULL, NULL     },
 
-    // 1459 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_PROGRESS_BAR
+    // 1461 = HWND_MENU_CHANNEL_AUTO_SCAN_RESULT_PROGRESS_BAR
     { _Zui_Menu_Channel_Auto_Scan_Result_Progress_Bar_Normal_DrawStyle, NULL, NULL     },
 
-    // 1460 = HWND_MENU_CHANNEL_LIST_PAGE
+    // 1462 = HWND_MENU_CHANNEL_LIST_PAGE
     { NULL, NULL, NULL     },
 
-    // 1461 = HWND_MENU_CHANNEL_LIST_BG
+    // 1463 = HWND_MENU_CHANNEL_LIST_BG
     { NULL, NULL, NULL     },
 
-    // 1462 = HWND_MENU_CHANNEL_LIST_BG_L
+    // 1464 = HWND_MENU_CHANNEL_LIST_BG_L
     { _Zui_Menu_Channel_List_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1463 = HWND_MENU_CHANNEL_LIST_BG_C
+    // 1465 = HWND_MENU_CHANNEL_LIST_BG_C
     { _Zui_Menu_Channel_List_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1464 = HWND_MENU_CHANNEL_LIST_BG_R
+    // 1466 = HWND_MENU_CHANNEL_LIST_BG_R
     { _Zui_Menu_Channel_List_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1465 = HWND_MENU_CHANNEL_LIST_BG_MENU
+    // 1467 = HWND_MENU_CHANNEL_LIST_BG_MENU
     { NULL, NULL, NULL     },
 
-    // 1466 = HWND_MENU_CHANNEL_LIST_BG_SELECTION
+    // 1468 = HWND_MENU_CHANNEL_LIST_BG_SELECTION
     { _Zui_Menu_Channel_List_Bg_Selection_Normal_DrawStyle, _Zui_Menu_Channel_List_Bg_Selection_Focus_DrawStyle, _Zui_Menu_Channel_List_Bg_Selection_Disabled_DrawStyle     },
 
-    // 1467 = HWND_MENU_CHANNEL_LIST_BG_MENU_1
+    // 1469 = HWND_MENU_CHANNEL_LIST_BG_MENU_1
     { NULL, NULL, NULL     },
 
-    // 1468 = HWND_MENU_CHANNEL_LIST_ITEMS
+    // 1470 = HWND_MENU_CHANNEL_LIST_ITEMS
     { NULL, NULL, NULL     },
 
-    // 1469 = HWND_MENU_CHANNEL_LIST_ITEM0
+    // 1471 = HWND_MENU_CHANNEL_LIST_ITEM0
     { NULL, _Zui_Menu_Channel_List_Item0_Focus_DrawStyle, NULL     },
 
-    // 1470 = HWND_MENU_CHANNEL_LIST_ITEM0_CHANNELNO
+    // 1472 = HWND_MENU_CHANNEL_LIST_ITEM0_CHANNELNO
     { _Zui_Menu_Channel_List_Item0_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item0_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item0_Channelno_Disabled_DrawStyle     },
 
-    // 1471 = HWND_MENU_CHANNEL_LIST_ITEM0_CHANNELNAME
+    // 1473 = HWND_MENU_CHANNEL_LIST_ITEM0_CHANNELNAME
     { _Zui_Menu_Channel_List_Item0_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item0_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item0_Channelname_Disabled_DrawStyle     },
 
-    // 1472 = HWND_MENU_CHANNEL_LIST_ITEM0_UPDOWN
+    // 1474 = HWND_MENU_CHANNEL_LIST_ITEM0_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item0_Updown_Focus_DrawStyle, NULL     },
 
-    // 1473 = HWND_MENU_CHANNEL_LIST_ITEM0_FAV
+    // 1475 = HWND_MENU_CHANNEL_LIST_ITEM0_FAV
     { _Zui_Menu_Channel_List_Item0_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item0_Fav_Focus_DrawStyle, NULL     },
 
-    // 1474 = HWND_MENU_CHANNEL_LIST_ITEM0_HIDE
+    // 1476 = HWND_MENU_CHANNEL_LIST_ITEM0_HIDE
     { _Zui_Menu_Channel_List_Item0_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item0_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item0_Hide_Disabled_DrawStyle     },
 
-    // 1475 = HWND_MENU_CHANNEL_LIST_ITEM1
+    // 1477 = HWND_MENU_CHANNEL_LIST_ITEM1
     { NULL, _Zui_Menu_Channel_List_Item1_Focus_DrawStyle, NULL     },
 
-    // 1476 = HWND_MENU_CHANNEL_LIST_ITEM1_CHANNELNO
+    // 1478 = HWND_MENU_CHANNEL_LIST_ITEM1_CHANNELNO
     { _Zui_Menu_Channel_List_Item1_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item1_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item1_Channelno_Disabled_DrawStyle     },
 
-    // 1477 = HWND_MENU_CHANNEL_LIST_ITEM1_CHANNELNAME
+    // 1479 = HWND_MENU_CHANNEL_LIST_ITEM1_CHANNELNAME
     { _Zui_Menu_Channel_List_Item1_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item1_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item1_Channelname_Disabled_DrawStyle     },
 
-    // 1478 = HWND_MENU_CHANNEL_LIST_ITEM1_SELECTION
+    // 1480 = HWND_MENU_CHANNEL_LIST_ITEM1_SELECTION
     { _Zui_Menu_Channel_List_Item1_Selection_Normal_DrawStyle, _Zui_Menu_Channel_List_Item1_Selection_Focus_DrawStyle, _Zui_Menu_Channel_List_Item1_Selection_Disabled_DrawStyle     },
 
-    // 1479 = HWND_MENU_CHANNEL_LIST_ITEM1_FAV
+    // 1481 = HWND_MENU_CHANNEL_LIST_ITEM1_FAV
     { _Zui_Menu_Channel_List_Item1_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item1_Fav_Focus_DrawStyle, NULL     },
 
-    // 1480 = HWND_MENU_CHANNEL_LIST_ITEM1_HIDE
+    // 1482 = HWND_MENU_CHANNEL_LIST_ITEM1_HIDE
     { _Zui_Menu_Channel_List_Item1_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item1_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item1_Hide_Disabled_DrawStyle     },
 
-    // 1481 = HWND_MENU_CHANNEL_LIST_ITEM2
+    // 1483 = HWND_MENU_CHANNEL_LIST_ITEM2
     { NULL, _Zui_Menu_Channel_List_Item2_Focus_DrawStyle, NULL     },
 
-    // 1482 = HWND_MENU_CHANNEL_LIST_ITEM2_CHANNELNO
+    // 1484 = HWND_MENU_CHANNEL_LIST_ITEM2_CHANNELNO
     { _Zui_Menu_Channel_List_Item2_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item2_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item2_Channelno_Disabled_DrawStyle     },
 
-    // 1483 = HWND_MENU_CHANNEL_LIST_ITEM2_CHANNELNAME
+    // 1485 = HWND_MENU_CHANNEL_LIST_ITEM2_CHANNELNAME
     { _Zui_Menu_Channel_List_Item2_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item2_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item2_Channelname_Disabled_DrawStyle     },
 
-    // 1484 = HWND_MENU_CHANNEL_LIST_ITEM2_UPDOWN
+    // 1486 = HWND_MENU_CHANNEL_LIST_ITEM2_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item2_Updown_Focus_DrawStyle, NULL     },
 
-    // 1485 = HWND_MENU_CHANNEL_LIST_ITEM2_FAV
+    // 1487 = HWND_MENU_CHANNEL_LIST_ITEM2_FAV
     { _Zui_Menu_Channel_List_Item2_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item2_Fav_Focus_DrawStyle, NULL     },
 
-    // 1486 = HWND_MENU_CHANNEL_LIST_ITEM2_HIDE
+    // 1488 = HWND_MENU_CHANNEL_LIST_ITEM2_HIDE
     { _Zui_Menu_Channel_List_Item2_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item2_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item2_Hide_Disabled_DrawStyle     },
 
-    // 1487 = HWND_MENU_CHANNEL_LIST_ITEM3
+    // 1489 = HWND_MENU_CHANNEL_LIST_ITEM3
     { NULL, _Zui_Menu_Channel_List_Item3_Focus_DrawStyle, NULL     },
 
-    // 1488 = HWND_MENU_CHANNEL_LIST_ITEM3_CHANNELNO
+    // 1490 = HWND_MENU_CHANNEL_LIST_ITEM3_CHANNELNO
     { _Zui_Menu_Channel_List_Item3_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item3_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item3_Channelno_Disabled_DrawStyle     },
 
-    // 1489 = HWND_MENU_CHANNEL_LIST_ITEM3_CHANNELNAME
+    // 1491 = HWND_MENU_CHANNEL_LIST_ITEM3_CHANNELNAME
     { _Zui_Menu_Channel_List_Item3_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item3_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item3_Channelname_Disabled_DrawStyle     },
 
-    // 1490 = HWND_MENU_CHANNEL_LIST_ITEM3_UPDOWN
+    // 1492 = HWND_MENU_CHANNEL_LIST_ITEM3_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item3_Updown_Focus_DrawStyle, NULL     },
 
-    // 1491 = HWND_MENU_CHANNEL_LIST_ITEM3_FAV
+    // 1493 = HWND_MENU_CHANNEL_LIST_ITEM3_FAV
     { _Zui_Menu_Channel_List_Item3_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item3_Fav_Focus_DrawStyle, NULL     },
 
-    // 1492 = HWND_MENU_CHANNEL_LIST_ITEM3_HIDE
+    // 1494 = HWND_MENU_CHANNEL_LIST_ITEM3_HIDE
     { _Zui_Menu_Channel_List_Item3_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item3_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item3_Hide_Disabled_DrawStyle     },
 
-    // 1493 = HWND_MENU_CHANNEL_LIST_ITEM4
+    // 1495 = HWND_MENU_CHANNEL_LIST_ITEM4
     { NULL, _Zui_Menu_Channel_List_Item4_Focus_DrawStyle, NULL     },
 
-    // 1494 = HWND_MENU_CHANNEL_LIST_ITEM4_CHANNELNO
+    // 1496 = HWND_MENU_CHANNEL_LIST_ITEM4_CHANNELNO
     { _Zui_Menu_Channel_List_Item4_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item4_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item4_Channelno_Disabled_DrawStyle     },
 
-    // 1495 = HWND_MENU_CHANNEL_LIST_ITEM4_CHANNELNAME
+    // 1497 = HWND_MENU_CHANNEL_LIST_ITEM4_CHANNELNAME
     { _Zui_Menu_Channel_List_Item4_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item4_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item4_Channelname_Disabled_DrawStyle     },
 
-    // 1496 = HWND_MENU_CHANNEL_LIST_ITEM4_UPDOWN
+    // 1498 = HWND_MENU_CHANNEL_LIST_ITEM4_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item4_Updown_Focus_DrawStyle, NULL     },
 
-    // 1497 = HWND_MENU_CHANNEL_LIST_ITEM4_FAV
+    // 1499 = HWND_MENU_CHANNEL_LIST_ITEM4_FAV
     { _Zui_Menu_Channel_List_Item4_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item4_Fav_Focus_DrawStyle, NULL     },
 
-    // 1498 = HWND_MENU_CHANNEL_LIST_ITEM4_HIDE
+    // 1500 = HWND_MENU_CHANNEL_LIST_ITEM4_HIDE
     { _Zui_Menu_Channel_List_Item4_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item4_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item4_Hide_Disabled_DrawStyle     },
 
-    // 1499 = HWND_MENU_CHANNEL_LIST_ITEM5
+    // 1501 = HWND_MENU_CHANNEL_LIST_ITEM5
     { NULL, _Zui_Menu_Channel_List_Item5_Focus_DrawStyle, NULL     },
 
-    // 1500 = HWND_MENU_CHANNEL_LIST_ITEM5_CHANNELNO
+    // 1502 = HWND_MENU_CHANNEL_LIST_ITEM5_CHANNELNO
     { _Zui_Menu_Channel_List_Item5_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item5_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item5_Channelno_Disabled_DrawStyle     },
 
-    // 1501 = HWND_MENU_CHANNEL_LIST_ITEM5_CHANNELNAME
+    // 1503 = HWND_MENU_CHANNEL_LIST_ITEM5_CHANNELNAME
     { _Zui_Menu_Channel_List_Item5_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item5_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item5_Channelname_Disabled_DrawStyle     },
 
-    // 1502 = HWND_MENU_CHANNEL_LIST_ITEM5_UPDOWN
+    // 1504 = HWND_MENU_CHANNEL_LIST_ITEM5_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item5_Updown_Focus_DrawStyle, NULL     },
 
-    // 1503 = HWND_MENU_CHANNEL_LIST_ITEM5_FAV
+    // 1505 = HWND_MENU_CHANNEL_LIST_ITEM5_FAV
     { _Zui_Menu_Channel_List_Item5_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item5_Fav_Focus_DrawStyle, NULL     },
 
-    // 1504 = HWND_MENU_CHANNEL_LIST_ITEM5_HIDE
+    // 1506 = HWND_MENU_CHANNEL_LIST_ITEM5_HIDE
     { _Zui_Menu_Channel_List_Item5_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item5_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item5_Hide_Disabled_DrawStyle     },
 
-    // 1505 = HWND_MENU_CHANNEL_LIST_ITEM6
+    // 1507 = HWND_MENU_CHANNEL_LIST_ITEM6
     { NULL, _Zui_Menu_Channel_List_Item6_Focus_DrawStyle, NULL     },
 
-    // 1506 = HWND_MENU_CHANNEL_LIST_ITEM6_CHANNELNO
+    // 1508 = HWND_MENU_CHANNEL_LIST_ITEM6_CHANNELNO
     { _Zui_Menu_Channel_List_Item6_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item6_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item6_Channelno_Disabled_DrawStyle     },
 
-    // 1507 = HWND_MENU_CHANNEL_LIST_ITEM6_CHANNELNAME
+    // 1509 = HWND_MENU_CHANNEL_LIST_ITEM6_CHANNELNAME
     { _Zui_Menu_Channel_List_Item6_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item6_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item6_Channelname_Disabled_DrawStyle     },
 
-    // 1508 = HWND_MENU_CHANNEL_LIST_ITEM6_UPDOWN
+    // 1510 = HWND_MENU_CHANNEL_LIST_ITEM6_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item6_Updown_Focus_DrawStyle, NULL     },
 
-    // 1509 = HWND_MENU_CHANNEL_LIST_ITEM6_FAV
+    // 1511 = HWND_MENU_CHANNEL_LIST_ITEM6_FAV
     { _Zui_Menu_Channel_List_Item6_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item6_Fav_Focus_DrawStyle, NULL     },
 
-    // 1510 = HWND_MENU_CHANNEL_LIST_ITEM6_HIDE
+    // 1512 = HWND_MENU_CHANNEL_LIST_ITEM6_HIDE
     { _Zui_Menu_Channel_List_Item6_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item6_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item6_Hide_Disabled_DrawStyle     },
 
-    // 1511 = HWND_MENU_CHANNEL_LIST_ITEM7
+    // 1513 = HWND_MENU_CHANNEL_LIST_ITEM7
     { NULL, _Zui_Menu_Channel_List_Item7_Focus_DrawStyle, NULL     },
 
-    // 1512 = HWND_MENU_CHANNEL_LIST_ITEM7_CHANNELNO
+    // 1514 = HWND_MENU_CHANNEL_LIST_ITEM7_CHANNELNO
     { _Zui_Menu_Channel_List_Item7_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item7_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item7_Channelno_Disabled_DrawStyle     },
 
-    // 1513 = HWND_MENU_CHANNEL_LIST_ITEM7_CHANNELNAME
+    // 1515 = HWND_MENU_CHANNEL_LIST_ITEM7_CHANNELNAME
     { _Zui_Menu_Channel_List_Item7_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item7_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item7_Channelname_Disabled_DrawStyle     },
 
-    // 1514 = HWND_MENU_CHANNEL_LIST_ITEM7_UPDOWN
+    // 1516 = HWND_MENU_CHANNEL_LIST_ITEM7_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item7_Updown_Focus_DrawStyle, NULL     },
 
-    // 1515 = HWND_MENU_CHANNEL_LIST_ITEM7_FAV
+    // 1517 = HWND_MENU_CHANNEL_LIST_ITEM7_FAV
     { _Zui_Menu_Channel_List_Item7_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item7_Fav_Focus_DrawStyle, NULL     },
 
-    // 1516 = HWND_MENU_CHANNEL_LIST_ITEM7_HIDE
+    // 1518 = HWND_MENU_CHANNEL_LIST_ITEM7_HIDE
     { _Zui_Menu_Channel_List_Item7_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item7_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item7_Hide_Disabled_DrawStyle     },
 
-    // 1517 = HWND_MENU_CHANNEL_LIST_ITEM8
+    // 1519 = HWND_MENU_CHANNEL_LIST_ITEM8
     { NULL, _Zui_Menu_Channel_List_Item8_Focus_DrawStyle, NULL     },
 
-    // 1518 = HWND_MENU_CHANNEL_LIST_ITEM8_CHANNELNO
+    // 1520 = HWND_MENU_CHANNEL_LIST_ITEM8_CHANNELNO
     { _Zui_Menu_Channel_List_Item8_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item8_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item8_Channelno_Disabled_DrawStyle     },
 
-    // 1519 = HWND_MENU_CHANNEL_LIST_ITEM8_CHANNELNAME
+    // 1521 = HWND_MENU_CHANNEL_LIST_ITEM8_CHANNELNAME
     { _Zui_Menu_Channel_List_Item8_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item8_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item8_Channelname_Disabled_DrawStyle     },
 
-    // 1520 = HWND_MENU_CHANNEL_LIST_ITEM8_UPDOWN
+    // 1522 = HWND_MENU_CHANNEL_LIST_ITEM8_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item8_Updown_Focus_DrawStyle, NULL     },
 
-    // 1521 = HWND_MENU_CHANNEL_LIST_ITEM8_FAV
+    // 1523 = HWND_MENU_CHANNEL_LIST_ITEM8_FAV
     { _Zui_Menu_Channel_List_Item8_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item8_Fav_Focus_DrawStyle, NULL     },
 
-    // 1522 = HWND_MENU_CHANNEL_LIST_ITEM8_HIDE
+    // 1524 = HWND_MENU_CHANNEL_LIST_ITEM8_HIDE
     { _Zui_Menu_Channel_List_Item8_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item8_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item8_Hide_Disabled_DrawStyle     },
 
-    // 1523 = HWND_MENU_CHANNEL_LIST_ITEM9
+    // 1525 = HWND_MENU_CHANNEL_LIST_ITEM9
     { NULL, _Zui_Menu_Channel_List_Item9_Focus_DrawStyle, NULL     },
 
-    // 1524 = HWND_MENU_CHANNEL_LIST_ITEM9_CHANNELNO
+    // 1526 = HWND_MENU_CHANNEL_LIST_ITEM9_CHANNELNO
     { _Zui_Menu_Channel_List_Item9_Channelno_Normal_DrawStyle, _Zui_Menu_Channel_List_Item9_Channelno_Focus_DrawStyle, _Zui_Menu_Channel_List_Item9_Channelno_Disabled_DrawStyle     },
 
-    // 1525 = HWND_MENU_CHANNEL_LIST_ITEM9_CHANNELNAME
+    // 1527 = HWND_MENU_CHANNEL_LIST_ITEM9_CHANNELNAME
     { _Zui_Menu_Channel_List_Item9_Channelname_Normal_DrawStyle, _Zui_Menu_Channel_List_Item9_Channelname_Focus_DrawStyle, _Zui_Menu_Channel_List_Item9_Channelname_Disabled_DrawStyle     },
 
-    // 1526 = HWND_MENU_CHANNEL_LIST_ITEM9_UPDOWN
+    // 1528 = HWND_MENU_CHANNEL_LIST_ITEM9_UPDOWN
     { NULL, _Zui_Menu_Channel_List_Item9_Updown_Focus_DrawStyle, NULL     },
 
-    // 1527 = HWND_MENU_CHANNEL_LIST_ITEM9_FAV
+    // 1529 = HWND_MENU_CHANNEL_LIST_ITEM9_FAV
     { _Zui_Menu_Channel_List_Item9_Fav_Normal_DrawStyle, _Zui_Menu_Channel_List_Item9_Fav_Focus_DrawStyle, NULL     },
 
-    // 1528 = HWND_MENU_CHANNEL_LIST_ITEM9_HIDE
+    // 1530 = HWND_MENU_CHANNEL_LIST_ITEM9_HIDE
     { _Zui_Menu_Channel_List_Item9_Hide_Normal_DrawStyle, _Zui_Menu_Channel_List_Item9_Hide_Focus_DrawStyle, _Zui_Menu_Channel_List_Item9_Hide_Disabled_DrawStyle     },
 
-    // 1529 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE
+    // 1531 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE
     { NULL, NULL, NULL     },
 
-    // 1530 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_BG_L
+    // 1532 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_BG_L
     { _Zui_Menu_Channel_Auto_Tuning_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1531 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_BG_C
+    // 1533 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_BG_C
     { _Zui_Menu_Channel_Auto_Tuning_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1532 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_BG_R
+    // 1534 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_BG_R
     { _Zui_Menu_Channel_Auto_Tuning_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1533 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_NO
+    // 1535 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_NO
     { NULL, NULL, NULL     },
 
-    // 1534 = HWND_MENU_CHANNEL_AUTO_TUNING_NO
+    // 1536 = HWND_MENU_CHANNEL_AUTO_TUNING_NO
     { _Zui_Menu_Channel_Auto_Tuning_No_Normal_DrawStyle, _Zui_Menu_Channel_Auto_Tuning_No_Focus_DrawStyle, NULL     },
 
-    // 1535 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_LEFT_ARROW
+    // 1537 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_LEFT_ARROW
     { _Zui_Menu_Channel_Auto_Tuning_Page_Left_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1536 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_YES
+    // 1538 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_YES
     { NULL, NULL, NULL     },
 
-    // 1537 = HWND_MENU_CHANNEL_AUTO_TUNING_YES
+    // 1539 = HWND_MENU_CHANNEL_AUTO_TUNING_YES
     { _Zui_Menu_Channel_Auto_Tuning_Yes_Normal_DrawStyle, _Zui_Menu_Channel_Auto_Tuning_Yes_Focus_DrawStyle, NULL     },
 
-    // 1538 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_RIGHT_ARROW
+    // 1540 = HWND_MENU_CHANNEL_AUTO_TUNING_PAGE_RIGHT_ARROW
     { _Zui_Menu_Channel_Auto_Tuning_Page_Right_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1539 = HWND_MENU_CHANNEL_AUTO_TUNING_BG_TEXT
+    // 1541 = HWND_MENU_CHANNEL_AUTO_TUNING_BG_TEXT
     { _Zui_Menu_Channel_Auto_Tuning_Bg_Text_Normal_DrawStyle, _Zui_Menu_Channel_Auto_Tuning_Bg_Text_Focus_DrawStyle, NULL     },
 
-    // 1540 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE
+    // 1542 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE
     { NULL, NULL, NULL     },
 
-    // 1541 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_BG_L
+    // 1543 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_BG_L
     { _Zui_Menu_Picture_Adjust_Backlight_Page_Bg_L_Normal_DrawStyle, NULL, NULL     },
 
-    // 1542 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_BG_C
+    // 1544 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_BG_C
     { _Zui_Menu_Picture_Adjust_Backlight_Page_Bg_C_Normal_DrawStyle, NULL, NULL     },
 
-    // 1543 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_BG_R
+    // 1545 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_BG_R
     { _Zui_Menu_Picture_Adjust_Backlight_Page_Bg_R_Normal_DrawStyle, NULL, NULL     },
 
-    // 1544 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_UP_ARROW
+    // 1546 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_UP_ARROW
     { _Zui_Menu_Picture_Adjust_Backlight_Page_Up_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1545 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_DOWN_ARROW
+    // 1547 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_DOWN_ARROW
     { _Zui_Menu_Picture_Adjust_Backlight_Page_Down_Arrow_Normal_DrawStyle, NULL, NULL     },
 
-    // 1546 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_LIST
+    // 1548 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_LIST
     { NULL, NULL, NULL     },
 
-    // 1547 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_TOP
+    // 1549 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_TOP
     { NULL, _Zui_Menu_Picture_Adjust_Backlight_Top_Focus_DrawStyle, NULL     },
 
-    // 1548 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_TOP_TEXT
+    // 1550 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_TOP_TEXT
     { _Zui_Menu_Picture_Adjust_Backlight_Top_Text_Normal_DrawStyle, NULL, NULL     },
 
-    // 1549 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB
+    // 1551 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB
     { NULL, _Zui_Menu_Picture_Adjust_Backlight_Sub_Focus_DrawStyle, NULL     },
 
-    // 1550 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_LEFT_ARROW
+    // 1552 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_LEFT_ARROW
     { NULL, _Zui_Menu_Picture_Adjust_Backlight_Sub_Left_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1551 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_RIGHT_ARROW
+    // 1553 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_RIGHT_ARROW
     { NULL, _Zui_Menu_Picture_Adjust_Backlight_Sub_Right_Arrow_Focus_DrawStyle, NULL     },
 
-    // 1552 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_OPTION
+    // 1554 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_OPTION
     { _Zui_Menu_Picture_Adjust_Backlight_Sub_Option_Normal_DrawStyle, _Zui_Menu_Picture_Adjust_Backlight_Sub_Option_Focus_DrawStyle, _Zui_Menu_Picture_Adjust_Backlight_Sub_Option_Disabled_DrawStyle     },
 
-    // 1553 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_DEC
+    // 1555 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_DEC
     { NULL, _Zui_Menu_Picture_Adjust_Backlight_Sub_Dec_Focus_DrawStyle, NULL     },
 
-    // 1554 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_INC
+    // 1556 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_SUB_INC
     { NULL, _Zui_Menu_Picture_Adjust_Backlight_Sub_Inc_Focus_DrawStyle, NULL     },
 
-    // 1555 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_MENU
+    // 1557 = HWND_MENU_PICTURE_ADJUST_BACKLIGHT_PAGE_MENU
     { NULL, NULL, NULL     },
 
-    // 1556 = HWND_MENU_CHANNEL_LABEL_EDIT_PAGE
+    // 1558 = HWND_MENU_CHANNEL_LABEL_EDIT_PAGE
     { NULL, NULL, NULL     },
 
-    // 1557 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR1
+    // 1559 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR1
     { _Zui_Menu_Channel_Label_Edit_Char1_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char1_Focus_DrawStyle, NULL     },
 
-    // 1558 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR1_TEXT
+    // 1560 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR1_TEXT
     { _Zui_Menu_Channel_Label_Edit_Char1_Text_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char1_Text_Focus_DrawStyle, NULL     },
 
-    // 1559 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR2
+    // 1561 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR2
     { _Zui_Menu_Channel_Label_Edit_Char2_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char2_Focus_DrawStyle, NULL     },
 
-    // 1560 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR2_TEXT
+    // 1562 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR2_TEXT
     { _Zui_Menu_Channel_Label_Edit_Char2_Text_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char2_Text_Focus_DrawStyle, NULL     },
 
-    // 1561 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR3
+    // 1563 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR3
     { _Zui_Menu_Channel_Label_Edit_Char3_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char3_Focus_DrawStyle, NULL     },
 
-    // 1562 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR3_TEXT
+    // 1564 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR3_TEXT
     { _Zui_Menu_Channel_Label_Edit_Char3_Text_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char3_Text_Focus_DrawStyle, NULL     },
 
-    // 1563 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR4
+    // 1565 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR4
     { _Zui_Menu_Channel_Label_Edit_Char4_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char4_Focus_DrawStyle, NULL     },
 
-    // 1564 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR4_TEXT
+    // 1566 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR4_TEXT
     { _Zui_Menu_Channel_Label_Edit_Char4_Text_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char4_Text_Focus_DrawStyle, NULL     },
 
-    // 1565 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR5
+    // 1567 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR5
     { _Zui_Menu_Channel_Label_Edit_Char5_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char5_Focus_DrawStyle, NULL     },
 
-    // 1566 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR5_TEXT
+    // 1568 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR5_TEXT
     { _Zui_Menu_Channel_Label_Edit_Char5_Text_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char5_Text_Focus_DrawStyle, NULL     },
 
-    // 1567 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR6
+    // 1569 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR6
     { _Zui_Menu_Channel_Label_Edit_Char6_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char6_Focus_DrawStyle, NULL     },
 
-    // 1568 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR6_TEXT
+    // 1570 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR6_TEXT
     { _Zui_Menu_Channel_Label_Edit_Char6_Text_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char6_Text_Focus_DrawStyle, NULL     },
 
-    // 1569 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR7
+    // 1571 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR7
     { _Zui_Menu_Channel_Label_Edit_Char7_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char7_Focus_DrawStyle, NULL     },
 
-    // 1570 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR7_TEXT
+    // 1572 = HWND_MENU_CHANNEL_LABEL_EDIT_CHAR7_TEXT
     { _Zui_Menu_Channel_Label_Edit_Char7_Text_Normal_DrawStyle, _Zui_Menu_Channel_Label_Edit_Char7_Text_Focus_DrawStyle, NULL     },
 
 };

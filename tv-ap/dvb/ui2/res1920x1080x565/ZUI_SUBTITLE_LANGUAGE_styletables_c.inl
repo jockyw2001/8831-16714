@@ -65,7 +65,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Bg_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Top_Half_Banner_Title_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_923 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_926 },
     { CP_NOON, 0 },
 };
 #define _Zui_Sublang_Top_Half_Banner_Title_Focus_DrawStyle _Zui_Sublang_Top_Half_Banner_Title_Normal_DrawStyle
@@ -120,12 +120,12 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Icon_Hoh_Focus_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_659 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_662 },
     { CP_NOON, 0 },
 };
 static DRAWSTYLE _MP_TBLSEG _Zui_Sublang_Item0_Text_Focus_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_924 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_927 },
     { CP_NOON, 0 },
 };
 

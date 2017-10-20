@@ -93,7 +93,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Btm_Ext_Pane_Extention_Bg_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Prog_Num_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_703 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_706 },
     { CP_NOON, 0 },
 };
 
@@ -102,7 +102,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Prog_Num_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Prog_Name_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_704 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_707 },
     { CP_NOON, 0 },
 };
 
@@ -134,7 +134,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Content_1st_Row_Cc_Icon_Normal_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Content_2nd_Row_Vid_Res_Icon_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_705 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_708 },
     { CP_NOON, 0 },
 };
 
@@ -152,7 +152,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Content_3rd_Row_Time_Text_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Content_1st_Row_Event_Info_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_706 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_709 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chinfo_Content_1st_Row_Event_Info_Focus_DrawStyle _Zui_Chinfo_Content_1st_Row_Event_Info_Normal_DrawStyle
@@ -171,7 +171,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Content_1st_Row_Event_Info_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Content_3rd_Row_Signal_Bar_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_707 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_710 },
     { CP_NOON, 0 },
 };
 
@@ -220,7 +220,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Content_3rd_Row_Signal_Bar_Blue_Normal_D
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ett_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_708 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_711 },
     { CP_NOON, 0 },
 };
 
@@ -242,7 +242,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Banner_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Banner_Prog_Num_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_687 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_690 },
     { CP_NOON, 0 },
 };
 
@@ -256,7 +256,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Banner_Prog_Num_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Banner_Prog_Scramble_Info_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_709 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_712 },
     { CP_NOON, 0 },
 };
 
@@ -283,7 +283,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Direct_Tune_Panel_Bg_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Direct_Tune_Panel_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_592 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_595 },
     { CP_NOON, 0 },
 };
 #define _Zui_Chinfo_Direct_Tune_Panel_Text_Focus_DrawStyle _Zui_Chinfo_Direct_Tune_Panel_Text_Normal_DrawStyle

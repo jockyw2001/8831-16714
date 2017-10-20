@@ -62,7 +62,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Bg_Pane_R_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Title_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_772 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_775 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Title_Txt_Focus_DrawStyle _Zui_Dtune_Title_Txt_Normal_DrawStyle
@@ -115,7 +115,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Bg_Pane_Dec_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Manual_Scan_Ufh_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_773 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_776 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Manual_Scan_Ufh_Txt_Focus_DrawStyle _Zui_Dtune_Manual_Scan_Ufh_Txt_Normal_DrawStyle
@@ -125,7 +125,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Manual_Scan_Ufh_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Manual_Scan_Channel_Name_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_774 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_777 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Manual_Scan_Channel_Name_Txt_Focus_DrawStyle _Zui_Dtune_Manual_Scan_Channel_Name_Txt_Normal_DrawStyle
@@ -143,7 +143,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Manual_Scan_Channel_Name_Txt_Normal_DrawS
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Dtv_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_487 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_490 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Scan_Result_Dtv_Txt_Focus_DrawStyle _Zui_Dtune_Scan_Result_Dtv_Txt_Normal_DrawStyle
@@ -153,7 +153,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Dtv_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Dtv_Number_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_426 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_429 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Scan_Result_Dtv_Number_Txt_Focus_DrawStyle _Zui_Dtune_Scan_Result_Dtv_Number_Txt_Normal_DrawStyle
@@ -163,7 +163,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Dtv_Number_Txt_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Radio_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_775 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_778 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Scan_Result_Radio_Txt_Focus_DrawStyle _Zui_Dtune_Scan_Result_Radio_Txt_Normal_DrawStyle
@@ -179,7 +179,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Radio_Txt_Normal_DrawStyle[] 
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Data_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_776 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_779 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Scan_Result_Data_Txt_Focus_DrawStyle _Zui_Dtune_Scan_Result_Data_Txt_Normal_DrawStyle
@@ -208,7 +208,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_No_Signal_Btn_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_No_Signal_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_777 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_780 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Scan_Result_No_Signal_Txt_Focus_DrawStyle _Zui_Dtune_Scan_Result_No_Signal_Txt_Normal_DrawStyle
@@ -218,7 +218,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_No_Signal_Txt_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Searching_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_778 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_781 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Scan_Result_Searching_Txt_Focus_DrawStyle _Zui_Dtune_Scan_Result_Searching_Txt_Normal_DrawStyle
@@ -228,7 +228,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Result_Searching_Txt_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Bad_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_779 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_782 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Bad_Txt_Focus_DrawStyle _Zui_Dtune_Bad_Txt_Normal_DrawStyle
@@ -238,7 +238,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Bad_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Normal_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_780 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_783 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Normal_Txt_Focus_DrawStyle _Zui_Dtune_Normal_Txt_Normal_DrawStyle
@@ -248,7 +248,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Normal_Txt_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Good_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_781 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_784 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Good_Txt_Focus_DrawStyle _Zui_Dtune_Good_Txt_Normal_DrawStyle
@@ -271,7 +271,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Signal_Bar_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Dtune_Scan_Enterkey_Remind_Txt_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_782 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_785 },
     { CP_NOON, 0 },
 };
 #define _Zui_Dtune_Scan_Enterkey_Remind_Txt_Focus_DrawStyle _Zui_Dtune_Scan_Enterkey_Remind_Txt_Normal_DrawStyle

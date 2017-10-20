@@ -88,7 +88,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Content_Extension_Bg_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Content_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_710 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_713 },
     { CP_NOON, 0 },
 };
 
@@ -128,7 +128,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Larrow_Icon_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Ch_Number_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_711 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_714 },
     { CP_NOON, 0 },
 };
 
@@ -142,7 +142,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Ch_Number_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Top_Time_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_712 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_715 },
     { CP_NOON, 0 },
 };
 
@@ -151,7 +151,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Top_Time_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Top_Date_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_713 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_716 },
     { CP_NOON, 0 },
 };
 
@@ -160,7 +160,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Top_Date_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Time_Start_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_523 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_526 },
     { CP_NOON, 0 },
 };
 
@@ -169,7 +169,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Time_Start_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Time_End_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_714 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_717 },
     { CP_NOON, 0 },
 };
 
@@ -178,7 +178,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Time_End_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Name_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_715 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_718 },
     { CP_NOON, 0 },
 };
 
@@ -187,7 +187,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Name_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Genre_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_716 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_719 },
     { CP_NOON, 0 },
 };
 
@@ -196,7 +196,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Genre_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Age_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_717 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
     { CP_NOON, 0 },
 };
 
@@ -205,7 +205,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Age_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Video_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_718 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_721 },
     { CP_NOON, 0 },
 };
 
@@ -244,7 +244,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Video_Type_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Ch_Audio_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_719 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_722 },
     { CP_NOON, 0 },
 };
 
@@ -282,7 +282,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_Ch_Audio_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Ext_S2_Satlitename_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_720 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_723 },
     { CP_NOON, 0 },
 };
 
@@ -327,7 +327,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pip_Src1_Info_Bg_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pip_Src1_Source_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_721 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_724 },
     { CP_NOON, 0 },
 };
 
@@ -404,7 +404,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Tv_Bg_Down_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Number_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_516 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_519 },
     { CP_NOON, 0 },
 };
 
@@ -437,7 +437,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Number_Text_Normal_DrawStyle
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Time_Start_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_722 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_725 },
     { CP_NOON, 0 },
 };
 
@@ -446,7 +446,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Time_Start_Text_Normal_DrawStyl
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Time_End_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_723 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_726 },
     { CP_NOON, 0 },
 };
 
@@ -455,7 +455,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Time_End_Text_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Name_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_724 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_727 },
     { CP_NOON, 0 },
 };
 
@@ -464,7 +464,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Name_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Genre_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_725 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_728 },
     { CP_NOON, 0 },
 };
 
@@ -483,7 +483,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Genre_Text_Normal_DrawStyle[] =
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Color_Sys_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_726 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_729 },
     { CP_NOON, 0 },
 };
 
@@ -492,7 +492,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Color_Sys_Text_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Sound_Sys_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_727 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_730 },
     { CP_NOON, 0 },
 };
 
@@ -501,7 +501,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Sound_Sys_Text_Normal_DrawSt
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Input_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_728 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_731 },
     { CP_NOON, 0 },
 };
 
@@ -510,7 +510,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Input_Text_Normal_DrawStyle[
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Sdhd_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_729 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_732 },
     { CP_NOON, 0 },
 };
 
@@ -519,7 +519,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Sdhd_Text_Normal_DrawStyle[]
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Mts_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_730 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_733 },
     { CP_NOON, 0 },
 };
 
@@ -572,7 +572,7 @@ static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Ch_Mts_Type_Text_Normal_DrawSty
 
 static DRAWSTYLE _MP_TBLSEG _Zui_Chinfo_Pop_Left_Source_Type_Text_Normal_DrawStyle[] =
 {
-    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_731 },
+    { CP_TEXT_OUT, CP_ZUI_TEXT_OUT_INDEX_734 },
     { CP_NOON, 0 },
 };
 

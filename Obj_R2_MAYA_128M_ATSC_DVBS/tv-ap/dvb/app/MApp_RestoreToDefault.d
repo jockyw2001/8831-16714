@@ -312,7 +312,9 @@ Obj_R2_MAYA_128M_ATSC_DVBS/./tv-ap/dvb/app/MApp_RestoreToDefault.o:  \
   core/api/include/msAPI_Timer.h tv-ap/atsc/app/include/MApp_VChip.h \
   core/middleware/closedcaption/lib/include/mapi_cc_monitor.h \
   tv-ap/dvb/app/include/MApp_GlobalSettingSt.h \
-  tv-ap/dvb/app/include/MApp_Main.h
+  tv-ap/dvb/app/include/MApp_Main.h \
+  tv-ap/dvb/app/include/MApp_InputSource.h \
+  core/drv_bsp/maya_nos_r2m/include/MsCommon.h
 
 project/boarddef/Board.h:
 
@@ -1089,3 +1091,7 @@ core/middleware/closedcaption/lib/include/mapi_cc_monitor.h:
 tv-ap/dvb/app/include/MApp_GlobalSettingSt.h:
 
 tv-ap/dvb/app/include/MApp_Main.h:
+
+tv-ap/dvb/app/include/MApp_InputSource.h:
+
+core/drv_bsp/maya_nos_r2m/include/MsCommon.h:

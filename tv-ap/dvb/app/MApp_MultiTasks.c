@@ -481,6 +481,141 @@ U8 g_test_encode = 0x00;
 /*                               Functions                                      */
 /********************************************************************************/
 
+
+//Ray FWD 2017.10.24: USB firmware download routine
+void dv_usbFirmwareDownload(void)
+{
+  U8 u8PortEnStatus = 0;
+  U8 u8USB1FirmwareDetected = 0;		//Ray FWD 2017.04.11: First denote no firmware found in USB 1
+
+  u8PortEnStatus = MDrv_USBGetPortEnableStatus();
+
+    if((u8PortEnStatus & BIT0) == BIT0)
+    {
+        if (!MDrv_UsbDeviceConnect())
+        {
+            MsOS_DelayTask(1000);
+        }
+
+        if (!MDrv_UsbDeviceConnect())
+        {
+            if((u8PortEnStatus & BIT1) != BIT1)
+            {
+                printf("Ray: USB 1 is not detected\n");
+                return;
+            }
+        }
+        else
+        {
+            MApp_UsbDownload_Init(BIT0, MApp_ZUI_SwUpdate_ProgressBar);
+            if (!MW_UsbDownload_Search())
+            {
+        	//no sw file detected
+                {
+                    MApp_UsbDownload_Exit();
+                }
+
+                if((u8PortEnStatus & BIT1) != BIT1)
+                {
+                    printf("Ray: USB firmware file is not detected\n");
+                    return;
+                }
+            }
+            else{
+        	u8USB1FirmwareDetected = 1;	//Ray FWD 2017.04.11: Denote firmware detected in USB 1
+            }
+        }
+    }
+    //Ray FWD 2017.04.11: If USB 2 is enabled and no firmware is detected in USB 1, it will go to detect USB 2.
+    if(((u8PortEnStatus & BIT1) == BIT1)&&(u8USB1FirmwareDetected==0))
+    {
+        if (!MDrv_UsbDeviceConnect_Port2())
+        {
+            MsOS_DelayTask(1000);
+        }
+
+        if (!MDrv_UsbDeviceConnect_Port2())
+        {
+            printf("Ray: USB 2 is not detected\n");
+            return;
+        }
+        else
+        {
+            MApp_UsbDownload_Init(BIT1, MApp_ZUI_SwUpdate_ProgressBar);
+
+            if (!MW_UsbDownload_Search())
+            {
+        	 //no sw file detected
+                {
+                		//printf("MingYuan No SW File Detected 1 \n");
+                    MApp_UsbDownload_Exit();
+                }
+                printf("Ray: USB firmware file is not detected\n");
+                return;
+            }
+        }
+    }
+
+  //Ray FWD 2017.01.25: Copied from MApp_ZUI_ACTmainpage.c
+  /*
+  *  Disable Some HW Engines for Downloading
+  */
+  {
+      MS_VE_Output_Ctrl OutputCtrl;
+      // disable VE
+      OutputCtrl.bEnable = FALSE;
+      msAPI_VE_SetOutputCtrl(&OutputCtrl);
+				  #if HW_AUTO_NO_SIGNAL
+      if (IsYPbPrInUse()|| IsVgaInUse()||IsHDMIInUse())
+      {
+	  MApi_XC_EnableIPAutoNoSignal(DISABLE, MAIN_WINDOW);
+      }
+				  #endif
+      // disable DNR buffer
+      MApi_XC_DisableInputSource(TRUE, MAIN_WINDOW);
+      //MW_AUD_SetSoundMute(SOUND_MUTE_ALL, E_MUTE_ON);
+
+      if(IsSrcTypeATV(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW))||IsSrcTypeDTV(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+      {
+	  MApp_ChannelChange_DisableChannel(TRUE,MAIN_WINDOW);
+      }
+      else
+      {
+	  MApp_ChannelChange_DisableAV(MAIN_WINDOW);
+      }
+
+      // disable vd
+      msAPI_AVD_Exit();
+  }
+
+  //Ray FWD 2017.01.25: Refer to MApp_ZUI_ACTmenudlgfunc.c MApp_ZUI_ACT_MenuCommonDialogRootWinProc  _eCommonDlgMode == EN_COMMON_DLG_MODE_USB_UPGRADING
+  if(IsSrcTypeATV(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW))||IsSrcTypeDTV(SYS_INPUT_SOURCE_TYPE(MAIN_WINDOW)))
+  {
+      MApp_ChannelChange_DisableChannel(TRUE,MAIN_WINDOW);
+  }
+#if ENABLE_DMP
+  // for dmp
+  if( UI_INPUT_SOURCE_TYPE == UI_INPUT_SOURCE_DMP)
+  {
+      //MApp_DMP_SetDMPStat(DMP_STATE_GOTO_PREV_SRC);
+      MApp_DMP_Exit();
+  }
+#endif // #if ENABLE_DMP
+  if(!_bOCPFromMem)
+  {
+      msAPI_OCP_LoadAllStringToMem();
+  }
+
+
+  if (MW_UsbDownload_Start())
+  {
+      msAPI_BLoader_Reboot();
+  }
+
+
+}
+
+
 //=======================================================
 // Local function:
 #if ENABLE_DTV
@@ -2892,6 +3027,7 @@ void MApp_PreProcessUserInput(void)
         //Ray FWD 2017.01.24: USB firmware download
         case KEY_USB_DOWNLOAD:
           u8KeyCode = KEY_NULL;
+
           U8 u8PortEnStatus = 0;
           U8 u8USB1FirmwareDetected = 0;		//Ray FWD 2017.04.11: First denote no firmware found in USB 1
 
@@ -3018,7 +3154,6 @@ void MApp_PreProcessUserInput(void)
           {
               msAPI_BLoader_Reboot();
           }
-
 
 
           break;

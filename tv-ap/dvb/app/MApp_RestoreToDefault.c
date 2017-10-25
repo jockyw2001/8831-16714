@@ -176,6 +176,8 @@
 #include "MApp_TTSControlHandler.h"
 #endif
 
+#include "MApp_InputSource.h"		//Ray LDF 2017.10.24: To call MApp_InputSource_ChangeInputSource
+
 //*************************************************************************
 //              Local variables
 //*************************************************************************
@@ -4814,6 +4816,9 @@ void MApp_DataBase_RestoreDefaultSystem(U16 u16KeepSetting) //MingYuan Default
 	//Ray LDF 2017.03.31: Set default source as HDMI1
     UI_INPUT_SOURCE_TYPE = UI_INPUT_SOURCE_HDMI;
     UI_PREV_INPUT_SOURCE_TYPE = UI_INPUT_SOURCE_HDMI;
+    //Ray SRC 2017.10.25: We save current & previous input source to EEPROM
+    UI_INPUT_SOURCE_TYPE_EEPROM = UI_INPUT_SOURCE_TYPE;
+    UI_PREV_INPUT_SOURCE_TYPE_EEPROM = UI_PREV_INPUT_SOURCE_TYPE;
 
     //Ray LDF 2017.06.13: We reset DV setting only if it is not request to keep, or backlight PWM frequency is out of range = 0
     if(((u16KeepSetting & RESTORE_KEEP_DV_SETTING)==0)||(GET_BACKLIGHT_PWM_FREQ()==0)){
@@ -6079,7 +6084,6 @@ void MApp_DataBase_RestoreDefaultValue(U16 u16KeepSetting) //MingYuan Default
     // Restore default SystemSetting
     //*************************************************************************
     MApp_DataBase_RestoreDefaultSystem(u16KeepSetting);
-
 
     // Restore Video setting
     MApp_DataBase_RestoreDefaultVideo(DATA_INPUT_SOURCE_NUM);

@@ -156,6 +156,7 @@ extern void MApp_DMP_Exit(void);							//Ray DMP 2017.06.22
 extern void MApp_PCMode_SetFirstNoSignalSource(E_UI_INPUT_SOURCE eUiInputSource);	//Ray DMP 2017.06.22
 extern void MApp_InputSource_RestoreSource(void);					//Ray DMP 2017.06.22
 extern void MApp_TV_ShowHotKeyOSD(HOT_KEY hotkey);						//Ray HKY 2017.09.29
+extern void dv_usbFirmwareDownload(void);		//Ray FWD 2017.10.24
 
 
 
@@ -796,6 +797,11 @@ void dv_RS232_bCmdParaPtr_1(BYTE ucCmd, BYTE *ucCmdPara)
       dv_Serial_CopyRight_Para0(ucCmdPara[0]);	//Transmit "DIGITALVIEW LTD." text to UART
       break;
 
+    case Serial_Command_Extend:			//Ray FWD 2017.10.24: Command 0xEE 0x75, USB firmware download
+      if(*ucCmdPara==Serial_ISP_Programming){
+	  dv_TxByteToUART('1');			//Tx 0x31 to acknowledge
+	  dv_usbFirmwareDownload();
+      }
 
 
 
@@ -1056,6 +1062,7 @@ void dv_RS232_bCmdParaPtr_2(BYTE ucCmd, BYTE *ucCmdPara)
 	  ucCmdPara++;						//Go to parameter byte
 	  dv_Serial_MinBackLightValue_Para0(ucCmdPara[0]);
       }
+
       /*
       if(*ucCmdPara==Serial_OSDSwitchMountLock){		//Command 0x62, OSD switch mount lock
 	  ucCmdPara++;						//Go to parameter byte
@@ -5827,6 +5834,8 @@ void dv_Serial_DefaultPower_Para2(BYTE *ucCmdPara)
 
 
 }
+
+
 
 #if 0			//Ray 2017.02.20
 //*********************************************************

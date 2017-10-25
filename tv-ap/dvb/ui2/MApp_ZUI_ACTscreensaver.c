@@ -440,6 +440,7 @@ LPTSTR MApp_ZUI_ACT_GetScreenSaverDynamicText(HWND hwnd)
                 case EN_SCREENSAVER_NOSIGNAL:
 #if(_CUSTOMER_SVDU6==_ON)
 		    //Ray NSG 2017.08.30: Test no signal string defined in array
+                    //printf("\nRay: screen saver type: %d",(int)SYS_SCREEN_SAVER_TYPE(MAIN_WINDOW));
 		    strcpy(u8NoSignalStr, tmpString);
                     return  MApp_ZUI_API_StringBuffU8toU16(CHAR_BUFFER, (U8*)u8NoSignalStr, strlen(tmpString));
 #else

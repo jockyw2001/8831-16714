@@ -917,7 +917,6 @@ void MApp_FactoryResetGenSetting(void)
 {
 
     MApp_DataBase_RestoreDefaultValue(RESTORE_KEEP_DV_SETTING);
-
     MApp_SaveGenSetting();
 }
 

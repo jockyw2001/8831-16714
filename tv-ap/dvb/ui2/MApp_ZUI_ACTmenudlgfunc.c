@@ -257,7 +257,6 @@ static void MApp_ZUI_ACT_FactoryReset(void)
 	//store to flash immediately
 	//MApp_DB_SaveNowGenSetting();
     MApp_DB_GEN_SaveData_RightNow();
-
     MDrv_Sys_WholeChipReset();
 }
 
@@ -361,6 +360,7 @@ void MApp_FactoryReset(void)
   msAPI_AUD_AdjustAudioFactor(E_ADJUST_AUDIOMUTE, E_AUDIO_BYUSER_MUTEON, E_AUDIOMUTESOURCE_ACTIVESOURCE);//Mute before reset audio
   MApp_ZUI_ACT_FactoryReset_SoundReset();
   MApp_ZUI_ACT_FactoryReset();
+
   _eCommonDlgMode = EN_COMMON_DLG_MODE_INVALID;
   MApp_ZUI_API_ShowWindow(HWND_MENU_DLG_COMMON, SW_HIDE);
   MApp_ZUI_API_RestoreFocusCheckpoint();

@@ -149,6 +149,7 @@ extern MS_BOOL MDrv_FLASH_AddressErase(MS_U32 u32StartAddr, MS_U32 u32Size, MS_U
 extern MS_BOOL MDrv_FLASH_Read(MS_U32 u32addr, MS_U32 u32size, MS_U8 *pdat);
 extern MS_BOOL MDrv_FLASH_Write(MS_U32 u32addr, MS_U32 u32size, MS_U8 *pdat);
 extern BOOLEAN msFlash_ChipSelect(U8 u8FlashID);
+extern void dv_SerialTransmitHex(BYTE Data);			//Ray FWD 2017.10.24
 
 /******************************************************************************/
 /*                               Functions                                    */
@@ -684,7 +685,7 @@ static void _MApp_SwUpdate_ProgressBar_ShowByPercent( U8 u8Percent )
 
     _u8CurPercent = u8Percent;
     BURN_DBG( printf( "\r%d%%", (int)_u8CurPercent ) );
-
+    dv_SerialTransmitHex((BYTE)u8Percent);				//Ray FWD 2017.10.24: Dump firmware update percentage to UART
     if (pZUIDrawPercentageCB != NULL)
     {
         pZUIDrawPercentageCB(_u8CurPercent);

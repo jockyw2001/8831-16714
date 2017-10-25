@@ -134,6 +134,7 @@
   #define Serial_ColorEffectExt		0x7130		//0x71 0x30 color effect command
   #define Serial_Vx1PinState		0x73
   #define Serial_EEPanelTime		0x74
+  #define Serial_ISP_Programming	0x75		//Ray FWD 2017.10.24: firmware download through USB
   #define Serial_UserEDID		0x76 		//Ray 2016.11.30: User EDID download through RS-232
   #define Serial_NT72324		0x78		//Ray 2016.08.22: NT72324 generic command
 

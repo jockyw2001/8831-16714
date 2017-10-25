@@ -186,7 +186,7 @@
 #else
 #define CustomerSubVersionNumber						"00"			//Ray VER 2017.05.09
 #endif
-#define DigitalViewRevisionNumber						".01"			//Ray VER 2017.05.09
+#define DigitalViewRevisionNumber						".02"			//Ray VER 2017.05.09
 //#define NameDigitalViewBoardPCBA						"41755"			//Ray VER 2017.05.09: Temporary use SVX-4096 PCBA no. for Controller Utility support
 #define NameDigitalViewBoardPCBA						"41761"			//Ray VER 2017.05.09: SP-4096 PCBA no.
 
